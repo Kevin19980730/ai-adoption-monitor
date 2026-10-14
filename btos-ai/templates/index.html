@@ -34,7 +34,7 @@
       <a href="#ramp" role="tab" data-tab="ramp">Business tokens (Ramp)</a>
       <a href="#arr" role="tab" data-tab="arr">Lab ARR (OpenAI &amp; Anthropic)</a>
       <a href="#gpu" role="tab" data-tab="gpu">GPU prices (Silicon Data)</a>
-      <a href="#credit" role="tab" data-tab="credit">Credit spreads (HY)</a>
+      <a href="#credit" role="tab" data-tab="credit">Rates &amp; credit</a>
       <a href="#data" role="tab" data-tab="data">Data &amp; updates</a>
     </nav>
   </div>
@@ -399,6 +399,16 @@
 <section id="tab-credit" class="tab" hidden>
   <div class="tiles" id="hy-tiles"></div>
   <div class="card">
+    <div class="card-head"><div><h2>US 10-year yield: real yield and term premium</h2>
+      <p class="muted">Percent, daily. <b>Real yield</b> = 10-year TIPS yield (FRED <i>DFII10</i>, from 2003): the inflation-adjusted discount rate for long-duration assets such as AI equities. <b>Term premium</b> = the extra yield investors demand to hold a 10-year bond rather than roll short bills, from the Fed Board&rsquo;s Kim&ndash;Wright model (FRED <i>THREEFYTP10</i>, from 1990; published about a week late). Nominal 10-year yield (<i>DGS10</i>) and breakeven inflation (nominal &minus; real) for context. Shaded = NBER recessions.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-rates">Table</button></div>
+    <div class="filters inner"><label>Range <select id="rt-range"><option value="365">1 year</option><option value="1095">3 years</option><option value="3650" selected>10 years</option><option value="0">All</option></select></label>
+      <label class="check"><input type="checkbox" id="rt-nominal" checked> Nominal yield</label>
+      <label class="check"><input type="checkbox" id="rt-be"> Breakeven inflation</label></div>
+    <div class="legend" id="lg-rates"></div>
+    <div class="chart" id="c-rates"></div>
+  </div>
+  <div class="card">
     <div class="card-head"><div><h2>US high-yield option-adjusted spreads, BB vs CCC &amp; lower</h2>
       <p class="muted">ICE BofA index OAS over Treasuries, daily close, percent. FRED <i>BAMLH0A1HYBB</i> and <i>BAMLH0A3HYC</i>. FRED only serves the last 3 years (ICE licence), so 1996&ndash;2023 comes from archived copies of FRED&rsquo;s full-history files; the two match exactly where they overlap. Shaded = NBER recessions.</p></div>
       <button class="btn small tbl-toggle" data-for="c-hy">Table</button></div>
@@ -421,7 +431,7 @@
   </div>
   <div class="card">
     <h3>Latest readings and history</h3>
-    <p class="muted small">Changes in basis points (bp). Percentile = share of trading days at or below today&rsquo;s level; low = tight / complacent, high = stressed.</p>
+    <p class="muted small">Changes in basis points (bp). Real yield history starts 2003, term premium 1990, nominal 1962, spreads 1996. Percentile = share of trading days at or below today&rsquo;s level; low = tight / complacent, high = stressed.</p>
     <div id="hy-latest" class="tblwrap"></div>
     <div id="hy-checks"></div>
   </div>
@@ -453,6 +463,7 @@
         <li>AI assistant user counts: <code>codex-user-trend/*.csv</code>, edited by hand. Each row cites its source.</li>
         <li><a href="https://openrouter.ai/rankings#top-models" target="_blank" rel="noopener noreferrer">OpenRouter rankings, Top Models</a> (weekly tokens; <code>openrouter_data/*.csv</code>)</li>
         <li><a href="https://www.silicondata.com/products/silicon-index" target="_blank" rel="noopener noreferrer">Silicon Data indices</a> (GPU rental + LLM token; <code>silicon-data/*.csv</code>, history from the Research workbook)</li>
+        <li><a href="https://fred.stlouisfed.org/series/DFII10" target="_blank" rel="noopener noreferrer">10-year real yield (DFII10)</a>, <a href="https://fred.stlouisfed.org/series/THREEFYTP10" target="_blank" rel="noopener noreferrer">10-year term premium (THREEFYTP10, Kim&ndash;Wright)</a> and <a href="https://fred.stlouisfed.org/series/DGS10" target="_blank" rel="noopener noreferrer">10-year Treasury (DGS10)</a> via FRED (<code>credit-spreads/macro_daily.csv</code>)</li>
         <li><a href="https://fred.stlouisfed.org/series/BAMLH0A1HYBB" target="_blank" rel="noopener noreferrer">ICE BofA BB</a> and <a href="https://fred.stlouisfed.org/series/BAMLH0A3HYC" target="_blank" rel="noopener noreferrer">CCC &amp; lower</a> US High Yield OAS via FRED (<code>credit-spreads/*.csv</code>; pre-2023 history from Wayback copies in <code>credit-spreads/source/</code>)</li>
         <li><a href="https://ramp.com/data/ai-index?metric=token-volume&amp;detail=maker&amp;mode=volume" target="_blank" rel="noopener noreferrer">Ramp AI Index, tokenomics</a> (weekly token volume / spend by model, daily price by token type; <code>ramp-ai-index/*.csv</code>)</li>
         <li>OpenAI &amp; Anthropic ARR: Research workbook <i>Anthropic &amp; OpenAI ARR trend</i> (<code>ai-lab-arr/source/</code>) + approved news headlines (<code>ai-lab-arr/arr_additions.csv</code>)</li>

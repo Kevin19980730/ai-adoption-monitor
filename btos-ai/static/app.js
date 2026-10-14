@@ -311,7 +311,7 @@ $("#themeBtn").addEventListener("click", () => {
 async function loadOverview() {
   const d = await api("/api/overview");
   const host = $("#tiles"); host.replaceChildren();
-  const link = {btos7: "#firms", btos24: "#firms", ChatGPT: "#assistants", "Gemini app": "#assistants", codex: "#assistants", openrouter: "#tokens", ramp: "#ramp", silicon: "#gpu", hy_BAMLH0A1HYBB: "#credit", hy_BAMLH0A3HYC: "#credit", arr_Anthropic: "#arr", arr_OpenAI: "#arr"};
+  const link = {btos7: "#firms", btos24: "#firms", ChatGPT: "#assistants", "Gemini app": "#assistants", codex: "#assistants", openrouter: "#tokens", ramp: "#ramp", silicon: "#gpu", hy_BAMLH0A1HYBB: "#credit", hy_BAMLH0A3HYC: "#credit", hy_DFII10: "#credit", hy_THREEFYTP10: "#credit", arr_Anthropic: "#arr", arr_OpenAI: "#arr"};
   d.tiles.forEach(t => {
     const a = h("a", {class: "tile", href: link[t.id] || "#workers"}, host);
     h("div", {class: "t"}, a, t.title);
@@ -899,18 +899,28 @@ function hyPts(key, start) {
 function median(a) { const b = [...a].sort((x, y) => x - y), m = b.length >> 1; return b.length % 2 ? b[m] : (b[m - 1] + b[m]) / 2; }
 function drawCredit() {
   const st = HY.stats, host = $("#hy-tiles"); host.replaceChildren();
-  [["BAMLH0A1HYBB", "BB spread (OAS)"], ["BAMLH0A3HYC", "CCC & lower spread (OAS)"], ["gap", "CCC minus BB"]].forEach(([k, title]) => {
+  [["DFII10", "10-year real yield"], ["THREEFYTP10", "10-year term premium"], ["BAMLH0A1HYBB", "BB spread (OAS)"], ["BAMLH0A3HYC", "CCC & lower spread (OAS)"], ["gap", "CCC minus BB"]].forEach(([k, title]) => {
     const r = st[k]; if (!r) return;
     const a = h("div", {class: "tile"}, host);
     h("div", {class: "t"}, a, title);
     h("div", {class: "v"}, a, k === "gap" ? r.value.toFixed(2) + "pp" : r.value.toFixed(2) + "%");
     if (r.d7 != null) { const g = r.value - r.d7, dd = h("div", {class: "d"}, a); h("span", {class: g > 0.004 ? "down" : g < -0.004 ? "up" : ""}, dd, (g > 0.004 ? "▲ " : g < -0.004 ? "▼ " : "● ") + bp(g)); dd.appendChild(document.createTextNode(` vs a week earlier · ${bp(r.value - r.d365)} vs a year`)); }
-    h("div", {class: "s"}, a, `${fmtDate(T(r.date))} · ${ord(r.pctile_all)} percentile since 1996 (${ord(r.pctile_2010)} since 2010)`);
+    h("div", {class: "s"}, a, `${fmtDate(T(r.date))} · ${ord(r.pctile_all)} percentile since ${r.first.slice(0, 4)} (${ord(r.pctile_2010)} since 2010)`);
     const sp = spark(HY.series[k].points.slice(-260).map(p => p[1]), "var(--s1)"); if (sp) a.appendChild(sp);
   });
 
-  const days = +$("#hy-range").value, end = T(st.BAMLH0A3HYC.date), start = days ? end - days * 864e5 : null;
   const marks = NBER.map(([a, b]) => ({x0: T(a), x1: T(b), label: "Recession"}));
+  if (HY.series.DFII10) {
+    const rd = +$("#rt-range").value, rend = Math.max(...["DFII10", "DGS10"].filter(k => st[k]).map(k => T(st[k].date))), rstart = rd ? rend - rd * 864e5 : T("2003-01-01");
+    const R = [["DGS10", "var(--ink-2)", $("#rt-nominal").checked], ["DFII10", "var(--s1)", true], ["THREEFYTP10", "var(--s2)", true], ["breakeven", "var(--s3)", $("#rt-be").checked]]
+      .filter(([k, , on]) => on && HY.series[k]).map(([k, col]) => ({name: HY.series[k].label, short: HY.series[k].short, color: col, dash: k === "DGS10", markers: false, points: hyPts(k, rstart)}));
+    legend("lg-rates", R.map(s => ({name: s.name, color: s.color, dash: s.dash})));
+    const lo = Math.min(0, ...R.flatMap(s => s.points.map(p => p.y)));
+    view("c-rates", hst => lineChart(hst, R, {height: 340, yFmt: (v, tick) => tick ? +v.toFixed(1) + "%" : v.toFixed(2) + "%", yMin: Math.floor(lo), mode: "cross", title: x => fmtDate(x), marks}),
+      hst => { const L = Object.fromEntries(R.map(s => [s.short, Object.fromEntries(s.points.map(p => [p.x, p.y]))])), dates = [...new Set(R.flatMap(s => s.points.map(p => p.x)))].sort((a, b) => b - a);
+        table(hst, [{label: "Date", get: x => new Date(x).toISOString().slice(0, 10)}].concat(R.map(s => ({label: s.short, n: 1, get: x => L[s.short][x] == null ? "–" : L[s.short][x].toFixed(2) + "%"}))), dates); });
+  }
+  const days = +$("#hy-range").value, end = T(st.BAMLH0A3HYC.date), start = days ? end - days * 864e5 : null;
   const S = [["BAMLH0A3HYC", "var(--s2)"], ["BAMLH0A1HYBB", "var(--s1)"]].filter(([k]) => HY.series[k]).map(([k, col]) => ({name: HY.series[k].label, short: HY.series[k].short, color: col, markers: false, points: hyPts(k, start)}));
   legend("lg-hy", S.map(s => ({name: s.name, color: s.color})));
   const log = $("#hy-scale").value === "log";
@@ -927,13 +937,13 @@ function drawCredit() {
       hst => table(hst, [{label: "Date", get: r => new Date(r.x).toISOString().slice(0, 10)}, {label: HY.series[k].label, n: 1, get: r => f(r.y)}], [...pts].reverse()));
   });
 
-  const rows = ["BAMLH0A1HYBB", "BAMLH0A3HYC", "gap", "ratio"].map(k => st[k] && {k, ...st[k]}).filter(Boolean);
+  const rows = ["DFII10", "THREEFYTP10", "DGS10", "breakeven", "BAMLH0A1HYBB", "BAMLH0A3HYC", "gap", "ratio"].map(k => st[k] && {k, ...st[k]}).filter(Boolean);
   const fv = r => r.k === "ratio" ? r.value.toFixed(2) + "×" : r.value.toFixed(2) + (r.k === "gap" ? "pp" : "%");
   const fx = (r, v) => r.k === "ratio" ? v.toFixed(2) + "×" : v.toFixed(2) + (r.k === "gap" ? "pp" : "%");
   const ch = (r, b) => b == null ? "–" : r.k === "ratio" ? (r.value - b >= 0 ? "+" : "−") + Math.abs(r.value - b).toFixed(2) + "×" : bp(r.value - b);
-  table($("#hy-latest"), [{label: "Series", get: r => r.label + (/^BAML/.test(r.k) ? ` (${r.k})` : "")}, {label: "Latest", n: 1, get: fv}, {label: "As of", key: "date"},
+  table($("#hy-latest"), [{label: "Series", get: r => r.label + (/^[A-Z0-9]+$/.test(r.k) ? ` (${r.k})` : "")}, {label: "Latest", n: 1, get: fv}, {label: "As of", key: "date"},
     {label: "1 week", n: 1, get: r => ch(r, r.d7)}, {label: "1 month", n: 1, get: r => ch(r, r.d30)}, {label: "1 year", n: 1, get: r => ch(r, r.d365)}, {label: "YTD", n: 1, get: r => ch(r, r.ytd_base)},
-    {label: "Pctile since 1996", n: 1, get: r => ord(r.pctile_all)}, {label: "Pctile since 2010", n: 1, get: r => ord(r.pctile_2010)},
+    {label: "Pctile, full history", n: 1, get: r => ord(r.pctile_all) + " (" + r.first.slice(0, 4) + "+)"}, {label: "Pctile since 2010", n: 1, get: r => ord(r.pctile_2010)},
     {label: "Low", n: 1, get: r => `${fx(r, r.min)} (${r.min_date.slice(0, 7)})`}, {label: "High", n: 1, get: r => `${fx(r, r.max)} (${r.max_date.slice(0, 7)})`}], rows);
   const ck = $("#hy-checks"); ck.replaceChildren();
   if (HY.checks.length) { h("h3", null, ck, "Revisions found (FRED now reports a different value for a stored day; FRED's value was kept)"); const box = h("div", {class: "tblwrap"}, ck);
@@ -944,6 +954,7 @@ async function loadCredit() {
   if (!HY.stats.BAMLH0A3HYC) { $("#hy-tiles").textContent = "No spread data yet - run credit-spreads/spreads_update.py."; return; }
   $("#hy-range").addEventListener("change", drawCredit);
   $("#hy-scale").addEventListener("change", drawCredit);
+  ["#rt-range", "#rt-nominal", "#rt-be"].forEach(id => $(id).addEventListener("change", drawCredit));
   drawCredit();
 }
 

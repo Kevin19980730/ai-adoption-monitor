@@ -7,7 +7,8 @@ One page over four sources, all read from files so it runs with no Claude:
   codex-user-trend/*.csv                   AI assistant user disclosures, Codex vs Claude Code npm,
                                            enterprise seat estimates (edited by hand)
   ramp-ai-index/*.csv                      Ramp AI Index business token volume / spend / prices
-  credit-spreads/hy_spreads_daily.csv     ICE BofA BB and CCC & lower HY OAS (FRED + Wayback history)
+  credit-spreads/macro_daily.csv          ICE BofA BB / CCC HY OAS (FRED + Wayback history), US 10y real yield,
+                                           term premium and nominal yield (FRED)
 
 The weekly Windows task refreshes the BTOS/tracker files; "Update now" on the Data tab runs
 the same btos_ai.py. Files are re-read whenever they change on disk.
@@ -400,14 +401,17 @@ def silicon():
                     "gpus_per_gw": GPUS_PER_GW})
 
 
-# ---------------------------------------------------------------- HY credit spreads (ICE BofA via FRED)
+# ---------------------------------------------------------------- HY credit spreads + US 10y rates (FRED)
 CSD = HERE.parent / "credit-spreads"
 HY_META = {"BAMLH0A1HYBB": ("BB", "ICE BofA BB US High Yield OAS"),
            "BAMLH0A3HYC": ("CCC & lower", "ICE BofA CCC & Lower US High Yield OAS")}
+RATE_META = {"DFII10": ("Real yield", "10-year real yield (TIPS)"),
+             "THREEFYTP10": ("Term premium", "10-year term premium (Kim-Wright)"),
+             "DGS10": ("Nominal", "10-year Treasury yield")}
 
 
 def hy_frame():
-    p = CSD / "hy_spreads_daily.csv"
+    p = CSD / "macro_daily.csv"
     return cached("hy", [p], lambda: pd.read_csv(p) if p.exists() else pd.DataFrame())
 
 
@@ -449,6 +453,16 @@ def spreads():
         series["ratio"] = {"label": "CCC ÷ BB", "points": [[i.strftime("%Y-%m-%d"), float(v)] for i, v in ratio.items()]}
         stats["gap"] = {"label": "CCC minus BB", "short": "CCC − BB", **_hy_stats(gap)}
         stats["ratio"] = {"label": "CCC ÷ BB", "short": "CCC ÷ BB", **_hy_stats(ratio)}
+    for sid, (short, label) in RATE_META.items():
+        if sid in w:
+            s = w[sid].dropna()
+            series[sid] = {"label": label, "short": short, "points": [[i.strftime("%Y-%m-%d"), float(v)] for i, v in s.items()]}
+            stats[sid] = {"label": label, "short": short, **_hy_stats(s)}
+    if {"DGS10", "DFII10"} <= set(w):
+        be = (w["DGS10"] - w["DFII10"]).dropna()  # breakeven inflation = nominal - real
+        series["breakeven"] = {"label": "10-year breakeven inflation (nominal − real)", "short": "Breakeven",
+                               "points": [[i.strftime("%Y-%m-%d"), float(v)] for i, v in be.items()]}
+        stats["breakeven"] = {"label": "10-year breakeven inflation (nominal − real)", "short": "Breakeven", **_hy_stats(be)}
     chk = CSD / "spreads_checks.csv"
     return jsonify({"series": series, "stats": stats,
                     "checks": records(pd.read_csv(chk).tail(20)) if chk.exists() else []})
@@ -758,15 +772,17 @@ def overview():
                           "spark": [float(x) for x in t.tail(26)]})
     hy = hy_frame()
     if not hy.empty:
-        for sid, (short, label) in HY_META.items():
+        tile_meta = [(sid, f"{short} high-yield spread (OAS)", "ICE BofA via FRED") for sid, (short, _) in HY_META.items()] + \
+                    [("DFII10", "US 10-year real yield", "FRED, TIPS"), ("THREEFYTP10", "US 10-year term premium", "FRED, Kim-Wright model")]
+        for sid, title, src in tile_meta:
             g = hy[hy.series == sid].sort_values("date")
             if len(g) > 8:
                 s = g.set_index(pd.to_datetime(g.date)).value.astype(float)
                 wk = s[s.index <= s.index[-1] - pd.Timedelta(days=7)]
-                tiles.append({"id": "hy_" + sid, "title": f"{short} high-yield spread (OAS)", "value": float(s.iloc[-1]),
+                tiles.append({"id": "hy_" + sid, "title": title, "value": float(s.iloc[-1]),
                               "prev": float(wk.iloc[-1]) if len(wk) else None, "delta_label": "vs a week earlier",
                               "unit": "oas", "date": f"{nice_date(g.date.iloc[-1])} · {sid}",
-                              "source": f"ICE BofA via FRED · {(s <= s.iloc[-1]).mean() * 100:.0f}th pctile since 1996",
+                              "source": f"{src} · {(s <= s.iloc[-1]).mean() * 100:.0f}th pctile since {s.index[0].year}",
                               "spark": [float(v) for v in s.tail(260)]})
     ort = or_csv("openrouter_weekly_totals.csv")
     if not ort.empty:
