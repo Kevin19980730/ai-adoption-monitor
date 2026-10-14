@@ -1,0 +1,100 @@
+group,cohort,n,technology,currently_using,expect_next_3y
+Full sample,Full sample (Employment-weighted),1032,Autonomous vehicles,0.045,0.145
+Full sample,Full sample (Employment-weighted),1032,Data processing (ML),0.369,0.45899999999999996
+Full sample,Full sample (Employment-weighted),1032,Image processing (ML),0.267,0.316
+Full sample,Full sample (Employment-weighted),1032,Robotics,0.13,0.223
+Full sample,Full sample (Employment-weighted),1032,Text generation (LLM),0.535,0.28800000000000003
+Full sample,Full sample (Employment-weighted),1032,Visual content creation,0.325,0.32799999999999996
+Full sample,Full sample (Employment-weighted),1032,Other,0.34,0.34700000000000003
+Full sample,Full sample (Employment-weighted),1032,None,0.225,0.23399999999999999
+Full sample,Full sample (Employment-weighted),1032,Any AI,0.775,0.7659999999999999
+Full sample,Full sample (Equal-weighted),1032,Autonomous vehicles,0.03,0.106
+Full sample,Full sample (Equal-weighted),1032,Data processing (ML),0.26899999999999996,0.41100000000000003
+Full sample,Full sample (Equal-weighted),1032,Image processing (ML),0.196,0.271
+Full sample,Full sample (Equal-weighted),1032,Robotics,0.071,0.174
+Full sample,Full sample (Equal-weighted),1032,Text generation (LLM),0.46399999999999997,0.272
+Full sample,Full sample (Equal-weighted),1032,Visual content creation,0.261,0.297
+Full sample,Full sample (Equal-weighted),1032,Other,0.297,0.307
+Full sample,Full sample (Equal-weighted),1032,None,0.306,0.312
+Full sample,Full sample (Equal-weighted),1032,Any AI,0.6940000000000001,0.688
+Industry,"Construct., Real Estate, Mining, and Util.",179,Autonomous vehicles,0.04,0.175
+Industry,"Construct., Real Estate, Mining, and Util.",179,Data processing (ML),0.39799999999999996,0.384
+Industry,"Construct., Real Estate, Mining, and Util.",179,Image processing (ML),0.175,0.397
+Industry,"Construct., Real Estate, Mining, and Util.",179,Robotics,0.078,0.265
+Industry,"Construct., Real Estate, Mining, and Util.",179,Text generation (LLM),0.557,0.237
+Industry,"Construct., Real Estate, Mining, and Util.",179,Visual content creation,0.32299999999999995,0.299
+Industry,"Construct., Real Estate, Mining, and Util.",179,Other,0.28300000000000003,0.366
+Industry,"Construct., Real Estate, Mining, and Util.",179,None,0.228,0.204
+Industry,"Construct., Real Estate, Mining, and Util.",179,Any AI,0.772,0.7959999999999999
+Industry,Manufacturing,177,Autonomous vehicles,0.083,0.11699999999999999
+Industry,Manufacturing,177,Data processing (ML),0.175,0.5589999999999999
+Industry,Manufacturing,177,Image processing (ML),0.22399999999999998,0.371
+Industry,Manufacturing,177,Robotics,0.271,0.371
+Industry,Manufacturing,177,Text generation (LLM),0.499,0.315
+Industry,Manufacturing,177,Visual content creation,0.322,0.325
+Industry,Manufacturing,177,Other,0.28600000000000003,0.461
+Industry,Manufacturing,177,None,0.235,0.187
+Industry,Manufacturing,177,Any AI,0.765,0.813
+Industry,"Retail, Wholesale, and Transport.",179,Autonomous vehicles,0.083,0.163
+Industry,"Retail, Wholesale, and Transport.",179,Data processing (ML),0.387,0.502
+Industry,"Retail, Wholesale, and Transport.",179,Image processing (ML),0.23800000000000002,0.27899999999999997
+Industry,"Retail, Wholesale, and Transport.",179,Robotics,0.11599999999999999,0.285
+Industry,"Retail, Wholesale, and Transport.",179,Text generation (LLM),0.541,0.231
+Industry,"Retail, Wholesale, and Transport.",179,Visual content creation,0.35,0.262
+Industry,"Retail, Wholesale, and Transport.",179,Other,0.364,0.251
+Industry,"Retail, Wholesale, and Transport.",179,None,0.259,0.22
+Industry,"Retail, Wholesale, and Transport.",179,Any AI,0.741,0.78
+Industry,Business and Professional Services,374,Autonomous vehicles,0.024,0.128
+Industry,Business and Professional Services,374,Data processing (ML),0.41100000000000003,0.431
+Industry,Business and Professional Services,374,Image processing (ML),0.359,0.257
+Industry,Business and Professional Services,374,Robotics,0.11,0.14300000000000002
+Industry,Business and Professional Services,374,Text generation (LLM),0.5489999999999999,0.315
+Industry,Business and Professional Services,374,Visual content creation,0.35100000000000003,0.32
+Industry,Business and Professional Services,374,Other,0.366,0.33799999999999997
+Industry,Business and Professional Services,374,None,0.215,0.28800000000000003
+Industry,Business and Professional Services,374,Any AI,0.785,0.7120000000000001
+Industry,Other Services,122,Autonomous vehicles,0.016,0.166
+Industry,Other Services,122,Data processing (ML),0.423,0.441
+Industry,Other Services,122,Image processing (ML),0.213,0.36700000000000005
+Industry,Other Services,122,Robotics,0.094,0.152
+Industry,Other Services,122,Text generation (LLM),0.511,0.307
+Industry,Other Services,122,Visual content creation,0.245,0.442
+Industry,Other Services,122,Other,0.358,0.345
+Industry,Other Services,122,None,0.201,0.201
+Industry,Other Services,122,Any AI,0.799,0.799
+Firm Size,0-50 Employees,394,Autonomous vehicles,0.027000000000000003,0.063
+Firm Size,0-50 Employees,394,Data processing (ML),0.226,0.32899999999999996
+Firm Size,0-50 Employees,394,Image processing (ML),0.145,0.21899999999999997
+Firm Size,0-50 Employees,394,Robotics,0.027999999999999997,0.128
+Firm Size,0-50 Employees,394,Text generation (LLM),0.457,0.23399999999999999
+Firm Size,0-50 Employees,394,Visual content creation,0.223,0.27
+Firm Size,0-50 Employees,394,Other,0.275,0.231
+Firm Size,0-50 Employees,394,None,0.33799999999999997,0.40299999999999997
+Firm Size,0-50 Employees,394,Any AI,0.662,0.597
+Firm Size,50-99 Employees,154,Autonomous vehicles,0.015,0.07400000000000001
+Firm Size,50-99 Employees,154,Data processing (ML),0.228,0.41600000000000004
+Firm Size,50-99 Employees,154,Image processing (ML),0.142,0.29600000000000004
+Firm Size,50-99 Employees,154,Robotics,0.052000000000000005,0.149
+Firm Size,50-99 Employees,154,Text generation (LLM),0.433,0.27
+Firm Size,50-99 Employees,154,Visual content creation,0.177,0.302
+Firm Size,50-99 Employees,154,Other,0.26,0.318
+Firm Size,50-99 Employees,154,None,0.34,0.34
+Firm Size,50-99 Employees,154,Any AI,0.66,0.66
+Firm Size,99-249 Employees,201,Autonomous vehicles,0.035,0.11900000000000001
+Firm Size,99-249 Employees,201,Data processing (ML),0.293,0.525
+Firm Size,99-249 Employees,201,Image processing (ML),0.19,0.316
+Firm Size,99-249 Employees,201,Robotics,0.091,0.222
+Firm Size,99-249 Employees,201,Text generation (LLM),0.47100000000000003,0.327
+Firm Size,99-249 Employees,201,Visual content creation,0.267,0.353
+Firm Size,99-249 Employees,201,Other,0.249,0.37200000000000005
+Firm Size,99-249 Employees,201,None,0.27399999999999997,0.19399999999999998
+Firm Size,99-249 Employees,201,Any AI,0.726,0.8059999999999999
+Firm Size,250+ Employees,283,Autonomous vehicles,0.051,0.163
+Firm Size,250+ Employees,283,Data processing (ML),0.41,0.45399999999999996
+Firm Size,250+ Employees,283,Image processing (ML),0.306,0.324
+Firm Size,250+ Employees,283,Robotics,0.153,0.235
+Firm Size,250+ Employees,283,Text generation (LLM),0.565,0.28300000000000003
+Firm Size,250+ Employees,283,Visual content creation,0.36,0.327
+Firm Size,250+ Employees,283,Other,0.375,0.35100000000000003
+Firm Size,250+ Employees,283,None,0.196,0.225
+Firm Size,250+ Employees,283,Any AI,0.804,0.775

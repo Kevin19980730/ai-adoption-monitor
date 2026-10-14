@@ -1,0 +1,16 @@
+date,users_m,series,metric_as_stated,scope,who,source_url
+2026-02-02,1.0,Codex WAU (OpenAI-stated),"more than 1M developers used Codex in the month before the app launch (monthly, not weekly)",Codex,Reuters (via Wikipedia),https://en.wikipedia.org/wiki/Codex_(AI_agent)
+2026-03-04,1.6,Codex WAU (OpenAI-stated),1.6M+ weekly active users,Codex,OpenAI via Fortune,https://fortune.com/2026/03/04/openai-codex-growth-enterprise-ai-agents/
+2026-03-19,2.0,Codex WAU (OpenAI-stated),"2M+ weekly active users, usage up 5x since start of 2026",Codex,OpenAI via Reuters (Wikipedia),https://en.wikipedia.org/wiki/Codex_(AI_agent)
+2026-04-08,3.0,Codex WAU (OpenAI-stated),3M weekly users,Codex,Sam Altman,https://codex.danielvaughan.com/2026/04/09/codex-3-million-users-growth-usage-limits/
+2026-04-21,4.0,Codex WAU (OpenAI-stated),4M+ weekly active users (1M added in two weeks),Codex,OpenAI via Neowin,https://www.neowin.net/news/openais-codex-hits-4-million-weekly-active-users-adding-1-million-in-just-two-weeks/
+2026-06-02,5.0,Codex WAU (OpenAI-stated),"5M+ weekly active users, ~20% knowledge workers",Codex,OpenAI Newsroom,https://x.com/OpenAINewsroom/status/2061834718224777579
+2026-07-12,6.0,Milestone posts (active users),"6M users, no activity window stated",Codex,Tibo Sottiaux via The New Stack,https://thenewstack.io/gpt-5-6-codex-user-surge/
+2026-07-13,7.0,Milestone posts (active users),"7M users, no activity window stated",Codex,Tibo Sottiaux via The New Stack,https://thenewstack.io/gpt-5-6-codex-user-surge/
+2026-07-14,8.0,Milestone posts (active users),8M active users across Codex and ChatGPT Work,Codex + ChatGPT Work,Tibo Sottiaux via The New Stack,https://thenewstack.io/gpt-5-6-codex-user-surge/
+2026-07-16,9.0,Milestone posts (active users),9M users (reset milestone),Codex + ChatGPT Work,Reset tracker,https://aiidelist.com/codex-reset
+2026-07-21,10.0,Milestone posts (active users),10M people using Codex and ChatGPT Work,Codex + ChatGPT Work,Bloomberg via Startup Fortune,https://startupfortune.com/openais-codex-and-chatgpt-work-just-crossed-10-million-weekly-users-and-the-coding-wars-have-a-new-shape/
+2026-08-13,15.0,Milestone posts (active users),"15M active users, reached several days earlier",Codex + ChatGPT Work,Tibo Sottiaux via Memeburn,https://memeburn.com/openai-codex-crosses-15-million-users-after-rapid-growth/
+2026-08-21,20.0,Milestone posts (active users),20M active users for Codex some time this week,Codex + ChatGPT Work,Tibo Sottiaux (X),https://x.com/thsottiaux/status/2090766694897619318
+2026-08-31,25.0,Milestone posts (active users),25M active users (paid-plan reset),Codex + ChatGPT Work,Tibo Sottiaux via reset tracker,https://opentherank.com/codex-reset/
+2026-10-07,40.0,Milestone posts (active users),new high of 40M active users across Codex and ChatGPT Work,Codex + ChatGPT Work,Tibo Sottiaux (X),https://x.com/thsottiaux/status/2107913674593644711

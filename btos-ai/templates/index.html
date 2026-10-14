@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Adoption Monitor</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 26 L12 16 L18 20 L28 6' fill='none' stroke='%232a78d6' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}?v={{ ver }}">
+<script>
+  try { var t = localStorage.getItem('aam-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="title-row">
+      <div>
+        <h1>AI Adoption Monitor</h1>
+        <p class="sub">How fast US firms, workers and consumers are taking up AI &mdash; Census BTOS, the GenAI Adoption Tracker, the Fed&rsquo;s monitoring note and AI assistant user counts</p>
+      </div>
+      <div class="top-actions">
+        <span id="asof" class="muted"></span>
+        <button class="btn small" id="themeBtn" type="button" title="Switch light / dark">Theme</button>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <a href="#overview" role="tab" data-tab="overview">Overview</a>
+      <a href="#firms" role="tab" data-tab="firms">Firms (BTOS)</a>
+      <a href="#workers" role="tab" data-tab="workers">Workers (RPS)</a>
+      <a href="#compare" role="tab" data-tab="compare">Firms vs workers</a>
+      <a href="#fed" role="tab" data-tab="fed">Fed note</a>
+      <a href="#assistants" role="tab" data-tab="assistants">AI assistants</a>
+      <a href="#tokens" role="tab" data-tab="tokens">Tokens (OpenRouter)</a>
+      <a href="#ramp" role="tab" data-tab="ramp">Business tokens (Ramp)</a>
+      <a href="#arr" role="tab" data-tab="arr">Lab ARR (OpenAI &amp; Anthropic)</a>
+      <a href="#gpu" role="tab" data-tab="gpu">GPU prices (Silicon Data)</a>
+      <a href="#credit" role="tab" data-tab="credit">Credit spreads (HY)</a>
+      <a href="#data" role="tab" data-tab="data">Data &amp; updates</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ===================================================== OVERVIEW -->
+<section id="tab-overview" class="tab" hidden>
+  <div class="tiles" id="tiles"></div>
+  <div class="note-grid">
+    <div class="note">
+      <h3>Three different questions</h3>
+      <p><b>Firms</b> (Census BTOS): the share of employer businesses that used any AI in a business function in the last two weeks. Each firm counts once, so the many small firms dominate.</p>
+      <p><b>Workers</b> (Real-Time Population Survey): the share of employed adults who use generative AI for their job.</p>
+      <p><b>Consumers</b>: company-stated weekly or monthly users of ChatGPT, Gemini and Meta AI.</p>
+    </div>
+    <div class="note warn">
+      <h3><span class="ico" aria-hidden="true">!</span> BTOS changed its AI question</h3>
+      <p>Until Oct 2025 the question asked about AI &ldquo;in producing goods or services&rdquo;. Since Dec 2025 it asks about AI &ldquo;in any of its business functions&rdquo;. That jump is the new wording, not real adoption. Charts show the old series dashed and never join the two. There is no data for 6 Oct&ndash;16 Nov 2025 (government shutdown).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== FIRMS -->
+<section id="tab-firms" class="tab" hidden>
+  <div class="filters" role="group" aria-label="Firm filters">
+    <label>Question
+      <select id="f-q"><option value="7">Used AI, last 2 weeks</option><option value="24">Expects to use AI, next 6 months</option></select>
+    </label>
+    <label>Smoothing
+      <select id="f-smooth"><option value="raw">Each fortnight</option><option value="ma">4-period moving average (Fed method)</option></select>
+    </label>
+    <label class="check"><input type="checkbox" id="f-se" checked> 95% band</label>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div><h2 id="fs-title">Share of firms using AI</h2><p class="muted" id="fs-sub"></p></div>
+      <button class="btn small tbl-toggle" data-for="c-firm-series">Table</button>
+    </div>
+    <div class="picker">
+      <label>Add
+        <select id="pick-level"></select>
+      </label>
+      <input id="pick-entity" list="pick-list" placeholder="Type a sector, subsector or size class..." autocomplete="off">
+      <datalist id="pick-list"></datalist>
+      <button class="btn small" id="pick-add" type="button">Add</button>
+      <div id="chips" class="chips" aria-label="Compared series"></div>
+    </div>
+    <div class="legend" id="lg-firm-series"></div>
+    <div class="chart" id="c-firm-series"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div><h2 id="fr-title">Ranking, latest fortnight</h2><p class="muted" id="fr-sub"></p></div>
+      <button class="btn small tbl-toggle" data-for="c-firm-rank">Table</button>
+    </div>
+    <div class="filters inner">
+      <label>Level <select id="r-level"></select></label>
+      <label id="r-sector-wrap" hidden>Sector <select id="r-sector"></select></label>
+      <label>Sort <select id="r-sort"><option value="y">Latest value</option><option value="chg">Change vs prior</option><option value="label">Name</option></select></label>
+    </div>
+    <p class="muted small">Bars: latest fortnight. Whisker: 95% interval (&plusmn;1.96 SE). Tick: prior fortnight. Click a bar to add it to the chart above. Blank rows were suppressed by Census.</p>
+    <div class="chart" id="c-firm-rank"></div>
+  </div>
+</section>
+
+<!-- ===================================================== WORKERS -->
+<section id="tab-workers" class="tab" hidden>
+  <div class="filters" role="group" aria-label="Worker filters">
+    <label>Frequency
+      <select id="w-freq">
+        <option value="Share Using GenAI">Uses genAI at all</option>
+        <option value="Share Used GenAI Last Week">Used it last week</option>
+        <option value="Share Used GenAI Every Day Last Week">Used it every day last week</option>
+      </select>
+    </label>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Share of US adults using generative AI</h2><p class="muted">Real-Time Population Survey, ages 18&ndash;64, quarterly</p></div>
+        <button class="btn small tbl-toggle" data-for="c-w-nat">Table</button></div>
+      <div class="legend" id="lg-w-nat"></div>
+      <div class="chart" id="c-w-nat"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Work hours spent with genAI, and time saved</h2><p class="muted">Share of all work hours, users and non-users. Not asked in Aug 2024.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-w-hours">Table</button></div>
+      <div class="legend" id="lg-w-hours"></div>
+      <div class="chart" id="c-w-hours"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2 id="wr-title">By industry</h2><p class="muted" id="wr-sub"></p></div>
+      <button class="btn small tbl-toggle" data-for="c-w-rank">Table</button></div>
+    <div class="filters inner">
+      <label>Breakdown <select id="wr-dim"><option>Industry</option><option>Occupation</option></select></label>
+      <label>Measure <select id="wr-meas">
+        <option>Share of workers using genAI at work</option>
+        <option>Share of work hours using genAI</option>
+        <option>Time saved by genAI (% of work hours)</option></select></label>
+      <label>Survey <select id="wr-wave"></select></label>
+    </div>
+    <p class="muted small">Whisker: 95% interval. Tick: the same survey a year earlier.</p>
+    <div class="chart" id="c-w-rank"></div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2>GenAI vs the PC and the internet</h2><p class="muted">Adoption by years since each technology&rsquo;s mass-market launch</p></div>
+      <button class="btn small tbl-toggle" data-for="c-w-pc">Table</button></div>
+    <div class="filters inner"><label>Who <select id="pc-who"><option value="all">All adults</option><option value="work">At work</option><option value="home">At home</option></select></label></div>
+    <div class="legend" id="lg-w-pc"></div>
+    <div class="chart" id="c-w-pc"></div>
+  </div>
+</section>
+
+<!-- ===================================================== COMPARE -->
+<section id="tab-compare" class="tab" hidden>
+  <div class="card">
+    <div class="card-head"><div><h2>Firms using AI vs workers using genAI, by sector</h2><p class="muted" id="cmp-sub"></p></div>
+      <button class="btn small tbl-toggle" data-for="c-cmp">Table</button></div>
+    <p class="small">The levels are not comparable: a firm counts once whatever its size, and the worker survey asks about genAI only. Look at the <b>ranking</b>. Sectors where firms use more AI also have more workers using genAI.</p>
+    <div class="chart" id="c-cmp"></div>
+  </div>
+</section>
+
+<!-- ===================================================== FED -->
+<section id="tab-fed" class="tab" hidden>
+  <div class="card">
+    <div class="card-head"><div><h2>&ldquo;Monitoring AI Adoption in the US Economy&rdquo; &mdash; rebuilt on live data</h2>
+      <p class="muted">J. Allen, FEDS Notes, Federal Reserve Board, 3 Apr 2026 &middot; <a id="fed-link" target="_blank" rel="noopener noreferrer">open the note</a></p></div></div>
+    <p class="small">Method used throughout: a 4-period moving average of BTOS within one question wording, and size 1&ndash;49 = the simple average of the four smallest size classes. RPS = GenAI Adoption Tracker. SBU = the Atlanta Fed Survey of Business Uncertainty, asked once (Nov 2025) and employment-weighted.</p>
+    <h3>Table 1 &middot; Adoption rates, latest vs the note</h3>
+    <div id="fed-t1" class="tblwrap"></div>
+    <h3>Replication check &middot; this app&rsquo;s data at the note&rsquo;s dates</h3>
+    <div id="fed-check" class="tblwrap"></div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2>Figure 2 &middot; US firms using AI, 4-period moving average</h2><p class="muted">Dashed = old wording. Solid = new wording.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-fed2">Table</button></div>
+    <div class="legend" id="lg-fed2"></div>
+    <div class="chart" id="c-fed2"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Figure 3 &middot; By firm size</h2><p class="muted">BTOS MA4, employees</p></div>
+        <button class="btn small tbl-toggle" data-for="c-fed3">Table</button></div>
+      <div class="legend" id="lg-fed3"></div>
+      <div class="chart" id="c-fed3"></div>
+      <div id="fed-t3" class="tblwrap"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Figure 4 &middot; Five peer industries</h2><p class="muted">BTOS MA4</p></div>
+        <button class="btn small tbl-toggle" data-for="c-fed4">Table</button></div>
+      <div class="legend" id="lg-fed4"></div>
+      <div class="chart" id="c-fed4"></div>
+      <div id="fed-t4" class="tblwrap"></div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Table 2 &middot; GenAI use at work by intensity (RPS)</h3>
+    <div id="fed-t2" class="tblwrap"></div>
+    <h3>Atlanta Fed SBU, Nov 2025 &middot; firm AI technology use (employment-weighted, one-off)</h3>
+    <div id="fed-sbu" class="tblwrap"></div>
+  </div>
+</section>
+
+<!-- ===================================================== ASSISTANTS -->
+<section id="tab-assistants" class="tab" hidden>
+  <div class="card review" id="a-review" hidden>
+    <div class="card-head"><div><h2>New user-count headlines to review</h2>
+      <p class="muted">Found by the weekly news scan. Check the article, fix any field, then <b>Add</b> it to the series or <b>Dismiss</b> it. Nothing is added automatically.</p></div></div>
+    <div id="a-review-list"></div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2>Consumer AI assistants &mdash; company-stated users</h2>
+      <p class="muted">ChatGPT reports <b>weekly</b> users. Gemini app and Meta AI report <b>monthly</b> users. Hollow markers are court exhibits.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-a-cons">Table</button></div>
+    <div class="filters inner"><label>Scale <select id="a-scale"><option value="lin">Linear</option><option value="log">Log</option></select></label></div>
+    <div class="legend" id="lg-a-cons"></div>
+    <div class="chart" id="c-a-cons"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Codex users</h2><p class="muted">Through June: OpenAI&rsquo;s weekly users of Codex. From July: milestone posts, Codex + ChatGPT Work, no activity window stated.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-a-codex">Table</button></div>
+      <div class="legend" id="lg-a-codex"></div>
+      <div class="chart" id="c-a-codex"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Coding agents on npm, installs per day</h2><p class="muted">Monthly average. Codex is corrected for double-counting from 11 Feb 2026. Claude Code&rsquo;s npm install was deprecated on 21 Jan 2026, so npm understates it more each month.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-a-npm">Table</button></div>
+      <div class="filters inner"><label>Scale <select id="npm-scale"><option value="log">Log</option><option value="lin">Linear</option></select></label></div>
+      <div class="legend" id="lg-a-npm"></div>
+      <div class="chart" id="c-a-npm"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2>Enterprise seats, Oct 2026 estimate</h2><p class="muted">Bar = estimate. Whisker = range. Tick = last officially disclosed figure. Bundled entitlements are listed separately below.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-a-seats">Table</button></div>
+    <div class="chart" id="c-a-seats"></div>
+    <div id="a-bundled" class="tblwrap"></div>
+  </div>
+  <div class="card">
+    <h3>Every disclosure</h3>
+    <div id="a-list" class="tblwrap"></div>
+  </div>
+</section>
+
+<!-- ===================================================== TOKENS -->
+<section id="tab-tokens" class="tab" hidden>
+  <div class="tiles" id="tok-tiles"></div>
+  <div class="card">
+    <div class="card-head"><div><h2>Tokens processed through OpenRouter each week</h2>
+      <p class="muted">All models, prompt + completion, Monday-to-Sunday weeks. Source: openrouter.ai/rankings, Top Models chart (its nine named models plus &ldquo;Others&rdquo; sum to the total). The current week is still in progress and is drawn hollow.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-tok-total">Table</button></div>
+    <div class="filters inner"><label>Scale <select id="tok-scale"><option value="log">Log</option><option value="lin">Linear</option></select></label></div>
+    <div class="chart" id="c-tok-total"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Requests through OpenRouter each week</h2>
+        <p class="muted">Requests (calls) to all models, Monday-to-Sunday weeks, from the same rankings chart with its requests metric. Starts with the week of 13 Oct 2025, the first week the requests series covers.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-tok-req">Table</button></div>
+      <div class="chart" id="c-tok-req"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Tokens per request through OpenRouter</h2>
+        <p class="muted">Weekly tokens divided by weekly requests, both from the rankings chart. Tokens per request has risen as requests grew, so a rise here means each call carries more tokens.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-tok-tpr">Table</button></div>
+      <div class="chart" id="c-tok-tpr"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2>Whose models carry the tokens &mdash; share of each week by lab origin</h2>
+      <p class="muted">The nine models OpenRouter names each week, grouped by the lab that made them. All other models are &ldquo;not named&rdquo;, because OpenRouter only names the top nine. Shares jump when a model enters or leaves the named nine. Stealth models are unannounced, often a big lab testing under a code name.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-tok-origin">Table</button></div>
+    <div class="legend" id="lg-tok-origin"></div>
+    <div class="chart" id="c-tok-origin"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2 id="tok-top-title">Top 9 models, last full week</h2><p class="muted">Bar colour = lab origin (as in the chart above). Tick = the same model the week before (no tick: it was not named that week).</p><div class="legend" id="lg-tok-top"></div></div>
+        <button class="btn small tbl-toggle" data-for="c-tok-top">Table</button></div>
+      <div class="chart" id="c-tok-top"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Top public apps by tokens, last 7 days</h2><p class="muted" id="tok-apps-sub"></p></div>
+        <button class="btn small tbl-toggle" data-for="c-tok-apps">Table</button></div>
+      <div class="chart" id="c-tok-apps"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== RAMP -->
+<section id="tab-ramp" class="tab" hidden>
+  <div class="tiles" id="rp-tiles"></div>
+  <div class="note warn"><h3><span class="ico" aria-hidden="true">!</span> A growing sample, not the market</h3>
+    <p>These are the businesses that connect their AI provider accounts to Ramp&rsquo;s Token Spend Management product. More firms join every month, so growth in the levels mixes real usage growth with new customers. <b>Shares</b> and <b>prices</b> are the cleaner reads. Ramp&rsquo;s own page shows only indexes and shares; the levels here come from the data embedded in that page.</p></div>
+  <div class="card">
+    <div class="card-head"><div><h2 id="rp-main-title">Weekly token volume by model maker</h2>
+      <p class="muted">Ramp AI Index, Monday-to-Sunday weeks, API usage attributed to a model. Source: ramp.com/data/ai-index.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-rp-main">Table</button></div>
+    <div class="filters inner">
+      <label>Metric <select id="rp-metric"><option value="token_volume">Token volume</option><option value="token_spend">Token spend (USD)</option><option value="price">Blended price ($ / M tokens)</option></select></label>
+      <label>Show <select id="rp-mode"><option value="level">Levels</option><option value="share">Share of total</option></select></label>
+      <label>Scale <select id="rp-scale"><option value="log">Log</option><option value="lin">Linear</option></select></label>
+      <label>Range <select id="rp-range"><option value="26">6 months</option><option value="52">1 year</option><option value="0" selected>All</option></select></label>
+    </div>
+    <div class="legend" id="lg-rp-main"></div>
+    <div class="chart" id="c-rp-main"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Price paid per million tokens, by token type</h2><p class="muted">Trailing 7 days, cost &divide; tokens. Cached input = all tokens minus output minus uncached input. Ramp publishes this split for Anthropic and OpenAI only.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-rp-px">Table</button></div>
+      <div class="filters inner"><label>Maker <select id="rp-px-maker"></select></label></div>
+      <div class="legend" id="lg-rp-px"></div>
+      <div class="chart" id="c-rp-px"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Share of input tokens served from cache</h2><p class="muted">Cached input &divide; all input, trailing 7 days. A higher cache share is why the blended price falls faster than list prices.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-rp-cache">Table</button></div>
+      <div class="legend" id="lg-rp-cache"></div>
+      <div class="chart" id="c-rp-cache"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2 id="rp-top-title">Top models by tokens, latest week</h2><p class="muted" id="rp-top-sub"></p></div>
+      <button class="btn small tbl-toggle" data-for="c-rp-top">Table</button></div>
+    <div class="legend" id="lg-rp-top"></div>
+    <div class="chart" id="c-rp-top"></div>
+  </div>
+</section>
+
+<!-- ===================================================== LAB ARR -->
+<section id="tab-arr" class="tab" hidden>
+  <div class="card review" id="arr-review" hidden>
+    <div class="card-head"><div><h2>New ARR headlines to review</h2>
+      <p class="muted">Found by the weekly news scan. Check the article, fix any field, then <b>Add</b> it to the series or <b>Dismiss</b> it. Nothing is added automatically.</p></div></div>
+    <div id="arr-review-list"></div>
+  </div>
+  <div class="tiles" id="arr-tiles"></div>
+  <div class="card">
+    <div class="card-head"><div><h2>Annualised revenue run-rate, OpenAI vs Anthropic</h2>
+      <p class="muted">Each point is a reported run-rate (last month's revenue × 12, or company-stated ARR). Filled = company disclosure or rated <i>Confident</i>; hollow = media report rated <i>Likely</i>, or no source on file. The dashed stub is the workbook's year-end extrapolation, not a reported figure.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-arr">Table</button></div>
+    <div class="filters inner"><label>Scale <select id="arr-scale"><option value="log">Log</option><option value="lin">Linear</option></select></label>
+      <label class="check"><input type="checkbox" id="arr-extrap" checked> Show year-end extrapolation</label></div>
+    <div class="legend" id="lg-arr"></div>
+    <div class="chart" id="c-arr"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>AI revenue landscape</h2><p class="muted">ARR by lab or AI product, latest figure in the workbook's <i>Total</i> sheet (each at its own date). Share = of the listed total.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-arr-land">Table</button></div>
+      <div class="chart" id="c-arr-land"></div>
+    </div>
+    <div class="card">
+      <h2>Other revenue measures</h2>
+      <p class="muted small">Recognised revenue for a period and product/division ARR are different measures from the company run-rate, so they are kept out of the chart.</p>
+      <div id="arr-other" class="tblwrap"></div>
+      <h3>Compute and inference revenue per GW</h3>
+      <div id="arr-gw" class="tblwrap"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== GPU PRICES -->
+<section id="tab-gpu" class="tab" hidden>
+  <div class="tiles" id="gpu-tiles"></div>
+  <div class="card">
+    <div class="card-head"><div><h2>GPU rental price indices, neo-cloud</h2>
+      <p class="muted">Silicon Data daily indices, USD per GPU-hour, standardised for term, cluster size and interconnect. Bloomberg tickers SDH100RT / SDB200RT / SDA100RT. History from the Research workbook <i>GPU rental price_2026-02-24.xlsx</i>; new days from silicondata.com. H200, B300 and MI300X start when tracking began here.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-gpu-price">Table</button></div>
+    <div class="filters inner"><label>Range <select id="gpu-range"><option value="90">3 months</option><option value="182">6 months</option><option value="365" selected>1 year</option><option value="0">All</option></select></label></div>
+    <div class="legend" id="lg-gpu-price"></div>
+    <div class="chart" id="c-gpu-price"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>LLM token cost vs B200 rental, indexed</h2><p class="muted">Both series = 100 on 1 Dec 2025, when the LLM Token Expenditure Index (SDLLMTK, USD per million tokens) starts. One axis, so the two can be compared directly.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-gpu-token">Table</button></div>
+      <div class="legend" id="lg-gpu-token"></div>
+      <div class="chart" id="c-gpu-token"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Hyperscaler vs neo-cloud</h2><p class="muted">Hyperscaler readings are hand-entered in the workbook (the site only shows them in its login-gated chart). Premium = hyperscaler ÷ neo-cloud on the same day.</p></div></div>
+      <div id="gpu-hyp" class="tblwrap"></div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Latest readings and implied revenue</h3>
+    <p class="muted small">Implied revenue per GW per year uses the workbook's method: 6.5 kW per 8-GPU server ≈ 1.23 million GPUs per GW, rented 24×365 at the index price (100% utilisation, so an upper bound).</p>
+    <div id="gpu-latest" class="tblwrap"></div>
+    <div id="gpu-checks"></div>
+  </div>
+</section>
+
+<!-- ===================================================== CREDIT SPREADS -->
+<section id="tab-credit" class="tab" hidden>
+  <div class="tiles" id="hy-tiles"></div>
+  <div class="card">
+    <div class="card-head"><div><h2>US high-yield option-adjusted spreads, BB vs CCC &amp; lower</h2>
+      <p class="muted">ICE BofA index OAS over Treasuries, daily close, percent. FRED <i>BAMLH0A1HYBB</i> and <i>BAMLH0A3HYC</i>. FRED only serves the last 3 years (ICE licence), so 1996&ndash;2023 comes from archived copies of FRED&rsquo;s full-history files; the two match exactly where they overlap. Shaded = NBER recessions.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-hy">Table</button></div>
+    <div class="filters inner"><label>Range <select id="hy-range"><option value="365">1 year</option><option value="1095" selected>3 years</option><option value="3650">10 years</option><option value="0">All (since 1996)</option></select></label>
+      <label>Scale <select id="hy-scale"><option value="lin">Linear</option><option value="log">Log</option></select></label></div>
+    <div class="legend" id="lg-hy"></div>
+    <div class="chart" id="c-hy"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Quality decompression: CCC minus BB</h2><p class="muted">Percentage points. A widening gap while BB stays tight means stress is building in the weakest credits first. Dashed line = median since 1996.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-hy-gap">Table</button></div>
+      <div class="chart" id="c-hy-gap"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>CCC &divide; BB ratio</h2><p class="muted">Times. Removes the common market level, so it isolates how much extra the weakest borrowers pay. Dashed line = median since 1996.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-hy-ratio">Table</button></div>
+      <div class="chart" id="c-hy-ratio"></div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Latest readings and history</h3>
+    <p class="muted small">Changes in basis points (bp). Percentile = share of trading days at or below today&rsquo;s level; low = tight / complacent, high = stressed.</p>
+    <div id="hy-latest" class="tblwrap"></div>
+    <div id="hy-checks"></div>
+  </div>
+</section>
+
+<!-- ===================================================== DATA -->
+<section id="tab-data" class="tab" hidden>
+  <div class="grid2">
+    <div class="card">
+      <h2>Status</h2>
+      <dl class="kv" id="d-state"></dl>
+      <p class="small hosted-only">This is the published copy. It is refreshed automatically from the source PC after each data job (weekly on Fridays, daily for GPU prices and credit spreads).</p>
+      <div class="btn-row local-only">
+        <button class="btn" id="d-run" type="button">Check for new data now</button>
+        <button class="btn ghost" id="d-force" type="button">Rebuild anyway</button>
+      </div>
+      <p class="muted small local-only">Runs weekly_update.py, the same job as the Windows task <b>AI Adoption Monitor Weekly</b> (Fridays 07:00). It does three things: refreshes BTOS and the GenAI tracker (BTOS publishes every other Thursday, the tracker quarterly), rebuilds the Codex / Claude Code npm series, scans the news for new assistant user counts to review on the AI assistants tab, refreshes the OpenRouter weekly token series, adds the latest Silicon Data GPU prices (which also update daily at 08:05 on their own task), scans the news for new OpenAI / Anthropic ARR figures to review on the Lab ARR tab, refreshes the Ramp AI Index token data, and adds the latest ICE BofA high-yield spreads from FRED (which also update daily at 08:10 on their own task). Enterprise-seat estimates are still edited by hand in <code>codex-user-trend/enterprise_seats_oct2026.csv</code>.</p>
+      <pre id="d-log" class="log local-only"></pre>
+    </div>
+    <div class="card">
+      <h2>Downloads</h2>
+      <ul id="d-files" class="files"></ul>
+      <h2>Sources</h2>
+      <ul class="files small">
+        <li><a href="https://www.census.gov/hfp/btos/data_downloads" target="_blank" rel="noopener noreferrer">Census Business Trends and Outlook Survey &mdash; data downloads</a></li>
+        <li><a href="https://www.genaiadoptiontracker.com/" target="_blank" rel="noopener noreferrer">GenAI Adoption Tracker</a> (Bick, Blandin &amp; Deming, Real-Time Population Survey)</li>
+        <li><a href="https://www.federalreserve.gov/econres/notes/feds-notes/monitoring-ai-adoption-in-the-u-s-economy-20260403.html" target="_blank" rel="noopener noreferrer">Fed FEDS Note, Allen (2026)</a></li>
+        <li><a href="https://www.atlantafed.org/research-and-data/surveys/business-uncertainty" target="_blank" rel="noopener noreferrer">Atlanta Fed Survey of Business Uncertainty</a></li>
+        <li>AI assistant user counts: <code>codex-user-trend/*.csv</code>, edited by hand. Each row cites its source.</li>
+        <li><a href="https://openrouter.ai/rankings#top-models" target="_blank" rel="noopener noreferrer">OpenRouter rankings, Top Models</a> (weekly tokens; <code>openrouter_data/*.csv</code>)</li>
+        <li><a href="https://www.silicondata.com/products/silicon-index" target="_blank" rel="noopener noreferrer">Silicon Data indices</a> (GPU rental + LLM token; <code>silicon-data/*.csv</code>, history from the Research workbook)</li>
+        <li><a href="https://fred.stlouisfed.org/series/BAMLH0A1HYBB" target="_blank" rel="noopener noreferrer">ICE BofA BB</a> and <a href="https://fred.stlouisfed.org/series/BAMLH0A3HYC" target="_blank" rel="noopener noreferrer">CCC &amp; lower</a> US High Yield OAS via FRED (<code>credit-spreads/*.csv</code>; pre-2023 history from Wayback copies in <code>credit-spreads/source/</code>)</li>
+        <li><a href="https://ramp.com/data/ai-index?metric=token-volume&amp;detail=maker&amp;mode=volume" target="_blank" rel="noopener noreferrer">Ramp AI Index, tokenomics</a> (weekly token volume / spend by model, daily price by token type; <code>ramp-ai-index/*.csv</code>)</li>
+        <li>OpenAI &amp; Anthropic ARR: Research workbook <i>Anthropic &amp; OpenAI ARR trend</i> (<code>ai-lab-arr/source/</code>) + approved news headlines (<code>ai-lab-arr/arr_additions.csv</code>)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="tip" class="tip" hidden role="status"></div>
+<script src="{{ url_for('static', filename='app.js') }}?v={{ ver }}"></script>
+</body>
+</html>

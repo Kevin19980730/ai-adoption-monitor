@@ -1,0 +1,1011 @@
+file,dimension,category,measure,wave,mean,se,naics
+GenAI_All,National,All adults - Any,Share Used GenAI Every Day Last Week,2024-08-01,0.1205274966,0.007283804859,
+GenAI_All,National,All adults - Any,Share Used GenAI Every Day Last Week,2024-11-01,0.08922570301,0.0056923319900000005,
+GenAI_All,National,All adults - Any,Share Used GenAI Every Day Last Week,2025-02-01,0.10977279429999999,0.007659627783,
+GenAI_All,National,All adults - Any,Share Used GenAI Every Day Last Week,2025-05-01,0.12276509940000001,0.007541857212000001,
+GenAI_All,National,All adults - Any,Share Used GenAI Every Day Last Week,2025-08-01,0.1384826045,0.007030239441,
+GenAI_All,National,All adults - Any,Share Used GenAI Every Day Last Week,2025-11-01,0.1320068177,0.006475252707,
+GenAI_All,National,All adults - Any,Share Used GenAI Every Day Last Week,2026-02-01,0.1437517368,0.007089411891000001,
+GenAI_All,National,All adults - Any,Share Used GenAI Every Day Last Week,2026-05-01,0.1543863183,0.007086381719,
+GenAI_All,National,All adults - Any,Share Used GenAI Last Week,2024-08-01,0.36058636200000005,0.01048698732,
+GenAI_All,National,All adults - Any,Share Used GenAI Last Week,2024-11-01,0.3819923669,0.009775946771,
+GenAI_All,National,All adults - Any,Share Used GenAI Last Week,2025-02-01,0.4037903823,0.01093369571,
+GenAI_All,National,All adults - Any,Share Used GenAI Last Week,2025-05-01,0.44016587809999996,0.011319902449999999,
+GenAI_All,National,All adults - Any,Share Used GenAI Last Week,2025-08-01,0.4684735646,0.0108369534,
+GenAI_All,National,All adults - Any,Share Used GenAI Last Week,2025-11-01,0.47806345450000004,0.010549920070000001,
+GenAI_All,National,All adults - Any,Share Used GenAI Last Week,2026-02-01,0.5081558437,0.01096109091,
+GenAI_All,National,All adults - Any,Share Used GenAI Last Week,2026-05-01,0.5420874249,0.01088208016,
+GenAI_All,National,All adults - Any,Share Using GenAI,2024-08-01,0.4461920346,0.01081540279,
+GenAI_All,National,All adults - Any,Share Using GenAI,2024-11-01,0.46336949070000005,0.009851901516,
+GenAI_All,National,All adults - Any,Share Using GenAI,2025-02-01,0.4797555285,0.01102918204,
+GenAI_All,National,All adults - Any,Share Using GenAI,2025-05-01,0.5186488737,0.01131402348,
+GenAI_All,National,All adults - Any,Share Using GenAI,2025-08-01,0.545391472,0.01089957671,
+GenAI_All,National,All adults - Any,Share Using GenAI,2025-11-01,0.5592530085,0.01066571637,
+GenAI_All,National,All adults - Any,Share Using GenAI,2026-02-01,0.5786560277,0.01095735057,
+GenAI_All,National,All adults - Any,Share Using GenAI,2026-05-01,0.617802431,0.01071449051,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Every Day Last Week,2024-08-01,0.06884756094,0.00568153012,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Every Day Last Week,2024-11-01,0.044217380320000006,0.0042116221059999995,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Every Day Last Week,2025-02-01,0.0575622554,0.005730040332,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Every Day Last Week,2025-05-01,0.07235041175,0.006024762784,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Every Day Last Week,2025-08-01,0.08329429849,0.005940235578000001,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Every Day Last Week,2025-11-01,0.0761859869,0.005181416239999999,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Every Day Last Week,2026-02-01,0.08706961069000001,0.0056434614900000004,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Every Day Last Week,2026-05-01,0.09659274391,0.0059050816539999995,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Last Week,2024-08-01,0.2865203499,0.009957863394,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Last Week,2024-11-01,0.3204731987,0.009478724659,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Last Week,2025-02-01,0.34420178020000003,0.010682462509999999,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Last Week,2025-05-01,0.3828776291,0.01110443856,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Last Week,2025-08-01,0.4185008044,0.010670107239999999,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Last Week,2025-11-01,0.4272021243,0.01035487844,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Last Week,2026-02-01,0.4464048872,0.01076272225,
+GenAI_All,National,All adults - Non-Work,Share Used GenAI Last Week,2026-05-01,0.47919544090000005,0.01081676319,
+GenAI_All,National,All adults - Non-Work,Share Using GenAI,2024-08-01,0.36029872570000004,0.01056744135,
+GenAI_All,National,All adults - Non-Work,Share Using GenAI,2024-11-01,0.3928059115,0.009778827434,
+GenAI_All,National,All adults - Non-Work,Share Using GenAI,2025-02-01,0.4193577638,0.01098243881,
+GenAI_All,National,All adults - Non-Work,Share Using GenAI,2025-05-01,0.4594212263,0.01133914184,
+GenAI_All,National,All adults - Non-Work,Share Using GenAI,2025-08-01,0.4858716828,0.01088995541,
+GenAI_All,National,All adults - Non-Work,Share Using GenAI,2025-11-01,0.4968852763,0.010613034109999999,
+GenAI_All,National,All adults - Non-Work,Share Using GenAI,2026-02-01,0.5133110642,0.01095981469,
+GenAI_All,National,All adults - Non-Work,Share Using GenAI,2026-05-01,0.5480779605,0.01084108684,
+GenAI_All,National,Employed - For Work,Share Used GenAI Every Day Last Week,2024-08-01,0.1210226107,0.008433290257,
+GenAI_All,National,Employed - For Work,Share Used GenAI Every Day Last Week,2024-11-01,0.09090076442999999,0.006417751344,
+GenAI_All,National,Employed - For Work,Share Used GenAI Every Day Last Week,2025-02-01,0.10698748,0.008712141526,
+GenAI_All,National,Employed - For Work,Share Used GenAI Every Day Last Week,2025-05-01,0.1115003283,0.007793967731,
+GenAI_All,National,Employed - For Work,Share Used GenAI Every Day Last Week,2025-08-01,0.1256318435,0.006951740471,
+GenAI_All,National,Employed - For Work,Share Used GenAI Every Day Last Week,2025-11-01,0.1199246163,0.006733107537,
+GenAI_All,National,Employed - For Work,Share Used GenAI Every Day Last Week,2026-02-01,0.1257040526,0.007369465945,
+GenAI_All,National,Employed - For Work,Share Used GenAI Every Day Last Week,2026-05-01,0.1369335283,0.00720456911,
+GenAI_All,National,Employed - For Work,Share Used GenAI Last Week,2024-08-01,0.2819400297,0.01096958196,
+GenAI_All,National,Employed - For Work,Share Used GenAI Last Week,2024-11-01,0.2636424676,0.010095437249999999,
+GenAI_All,National,Employed - For Work,Share Used GenAI Last Week,2025-02-01,0.2927846031,0.011569065569999998,
+GenAI_All,National,Employed - For Work,Share Used GenAI Last Week,2025-05-01,0.3055298002,0.01127861414,
+GenAI_All,National,Employed - For Work,Share Used GenAI Last Week,2025-08-01,0.32011610079999997,0.01040254039,
+GenAI_All,National,Employed - For Work,Share Used GenAI Last Week,2025-11-01,0.3519527408,0.01042205415,
+GenAI_All,National,Employed - For Work,Share Used GenAI Last Week,2026-02-01,0.37827354319999995,0.01124888489,
+GenAI_All,National,Employed - For Work,Share Used GenAI Last Week,2026-05-01,0.3923369721,0.01120886926,
+GenAI_All,National,Employed - For Work,Share Using GenAI,2024-08-01,0.3327128314,0.01161414639,
+GenAI_All,National,Employed - For Work,Share Using GenAI,2024-11-01,0.3100843899,0.01060268124,
+GenAI_All,National,Employed - For Work,Share Using GenAI,2025-02-01,0.32746580039999995,0.01193110694,
+GenAI_All,National,Employed - For Work,Share Using GenAI,2025-05-01,0.3507946376,0.0117283228,
+GenAI_All,National,Employed - For Work,Share Using GenAI,2025-08-01,0.3735947427,0.01098522335,
+GenAI_All,National,Employed - For Work,Share Using GenAI,2025-11-01,0.4073303622,0.010864708590000001,
+GenAI_All,National,Employed - For Work,Share Using GenAI,2026-02-01,0.4341252811,0.01170295632,
+GenAI_All,National,Employed - For Work,Share Using GenAI,2026-05-01,0.4519931812,0.011661962029999999,
+GenAI_HoursShare_All,National,Employed,Share of work hours using genAI,2024-11-01,0.04100778383,0.0032146766110000002,
+GenAI_HoursShare_All,National,Employed,Share of work hours using genAI,2025-02-01,0.04677482774,0.004251517818,
+GenAI_HoursShare_All,National,Employed,Share of work hours using genAI,2025-05-01,0.04902470665,0.003854454423,
+GenAI_HoursShare_All,National,Employed,Share of work hours using genAI,2025-08-01,0.057208928730000004,0.003895952897,
+GenAI_HoursShare_All,National,Employed,Share of work hours using genAI,2025-11-01,0.055643169629999996,0.003023039884,
+GenAI_HoursShare_All,National,Employed,Share of work hours using genAI,2026-02-01,0.0601117726,0.0034303725080000002,
+GenAI_HoursShare_All,National,Employed,Share of work hours using genAI,2026-05-01,0.06266876899,0.003279111857,
+GenAI_HoursShare_Ind,Industry,Accommodation and Food Services,Share of work hours using genAI,2024-11-01,0.01495638884,0.005097706855,72
+GenAI_HoursShare_Ind,Industry,Accommodation and Food Services,Share of work hours using genAI,2025-02-01,0.01779491855,0.006203091562,72
+GenAI_HoursShare_Ind,Industry,Accommodation and Food Services,Share of work hours using genAI,2025-05-01,0.020108063199999998,0.006240101929000001,72
+GenAI_HoursShare_Ind,Industry,Accommodation and Food Services,Share of work hours using genAI,2025-08-01,0.04093869435,0.012320562390000001,72
+GenAI_HoursShare_Ind,Industry,Accommodation and Food Services,Share of work hours using genAI,2025-11-01,0.02444247657,0.008024897499,72
+GenAI_HoursShare_Ind,Industry,Accommodation and Food Services,Share of work hours using genAI,2026-02-01,0.03563482299,0.009394353128,72
+GenAI_HoursShare_Ind,Industry,Accommodation and Food Services,Share of work hours using genAI,2026-05-01,0.02613535037,0.007677737254,72
+GenAI_HoursShare_Ind,Industry,Administrative and support and waste management services,Share of work hours using genAI,2024-11-01,0.01949207747,0.007123644663999999,56
+GenAI_HoursShare_Ind,Industry,Administrative and support and waste management services,Share of work hours using genAI,2025-02-01,0.04136896866,0.030218362390000003,56
+GenAI_HoursShare_Ind,Industry,Administrative and support and waste management services,Share of work hours using genAI,2025-05-01,0.026626646749999996,0.009220484291,56
+GenAI_HoursShare_Ind,Industry,Administrative and support and waste management services,Share of work hours using genAI,2025-08-01,0.02915891942,0.011106124680000001,56
+GenAI_HoursShare_Ind,Industry,Administrative and support and waste management services,Share of work hours using genAI,2025-11-01,0.01616058785,0.004940171295,56
+GenAI_HoursShare_Ind,Industry,Administrative and support and waste management services,Share of work hours using genAI,2026-02-01,0.05941170918,0.033051072210000004,56
+GenAI_HoursShare_Ind,Industry,Administrative and support and waste management services,Share of work hours using genAI,2026-05-01,0.08179451341,0.029975308470000003,56
+GenAI_HoursShare_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of work hours using genAI,2024-11-01,0.04330249069,0.01578511562,11
+GenAI_HoursShare_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of work hours using genAI,2025-02-01,0.06419406338,0.038748647580000004,11
+GenAI_HoursShare_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of work hours using genAI,2025-05-01,0.02730430895,0.008914787909,11
+GenAI_HoursShare_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of work hours using genAI,2025-08-01,0.043025828749999995,0.0311990557,11
+GenAI_HoursShare_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of work hours using genAI,2025-11-01,0.05936138231,0.02360162624,11
+GenAI_HoursShare_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of work hours using genAI,2026-02-01,0.05270324504999999,0.032276759030000005,11
+GenAI_HoursShare_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of work hours using genAI,2026-05-01,0.058635393990000007,0.02743921171,11
+GenAI_HoursShare_Ind,Industry,"Arts, Entertainment, and Recreation",Share of work hours using genAI,2024-11-01,0.04468121387,0.03156850909,71
+GenAI_HoursShare_Ind,Industry,"Arts, Entertainment, and Recreation",Share of work hours using genAI,2025-02-01,0.045645715100000005,0.01891347215,71
+GenAI_HoursShare_Ind,Industry,"Arts, Entertainment, and Recreation",Share of work hours using genAI,2025-05-01,0.07329428368,0.028864105539999997,71
+GenAI_HoursShare_Ind,Industry,"Arts, Entertainment, and Recreation",Share of work hours using genAI,2025-08-01,0.048794854049999996,0.01634086349,71
+GenAI_HoursShare_Ind,Industry,"Arts, Entertainment, and Recreation",Share of work hours using genAI,2025-11-01,0.08431580396999999,0.0365528196,71
+GenAI_HoursShare_Ind,Industry,"Arts, Entertainment, and Recreation",Share of work hours using genAI,2026-02-01,0.06737555247999999,0.02607683634,71
+GenAI_HoursShare_Ind,Industry,"Arts, Entertainment, and Recreation",Share of work hours using genAI,2026-05-01,0.05419192854,0.022239939020000002,71
+GenAI_HoursShare_Ind,Industry,Construction,Share of work hours using genAI,2024-11-01,0.04005563361,0.02301698157,23
+GenAI_HoursShare_Ind,Industry,Construction,Share of work hours using genAI,2025-02-01,0.008673669151,0.0021408896920000003,23
+GenAI_HoursShare_Ind,Industry,Construction,Share of work hours using genAI,2025-05-01,0.05244200408,0.026932879019999998,23
+GenAI_HoursShare_Ind,Industry,Construction,Share of work hours using genAI,2025-08-01,0.07421502873,0.03759731741,23
+GenAI_HoursShare_Ind,Industry,Construction,Share of work hours using genAI,2025-11-01,0.05046078045,0.025543652620000003,23
+GenAI_HoursShare_Ind,Industry,Construction,Share of work hours using genAI,2026-02-01,0.02166771221,0.0064451799970000005,23
+GenAI_HoursShare_Ind,Industry,Construction,Share of work hours using genAI,2026-05-01,0.01760201651,0.005766971591,23
+GenAI_HoursShare_Ind,Industry,Educational Services,Share of work hours using genAI,2024-11-01,0.02295121747,0.008918291678,61
+GenAI_HoursShare_Ind,Industry,Educational Services,Share of work hours using genAI,2025-02-01,0.05742017306,0.01959405963,61
+GenAI_HoursShare_Ind,Industry,Educational Services,Share of work hours using genAI,2025-05-01,0.02571823672,0.007150706252,61
+GenAI_HoursShare_Ind,Industry,Educational Services,Share of work hours using genAI,2025-08-01,0.05023869733,0.0159987849,61
+GenAI_HoursShare_Ind,Industry,Educational Services,Share of work hours using genAI,2025-11-01,0.05081628102,0.01273686768,61
+GenAI_HoursShare_Ind,Industry,Educational Services,Share of work hours using genAI,2026-02-01,0.06095261242,0.01043171987,61
+GenAI_HoursShare_Ind,Industry,Educational Services,Share of work hours using genAI,2026-05-01,0.044429038,0.0117194122,61
+GenAI_HoursShare_Ind,Industry,Finance and Insurance,Share of work hours using genAI,2024-11-01,0.09578302207,0.02088794585,52
+GenAI_HoursShare_Ind,Industry,Finance and Insurance,Share of work hours using genAI,2025-02-01,0.04756636899,0.008748473135,52
+GenAI_HoursShare_Ind,Industry,Finance and Insurance,Share of work hours using genAI,2025-05-01,0.07034220454,0.02031735997,52
+GenAI_HoursShare_Ind,Industry,Finance and Insurance,Share of work hours using genAI,2025-08-01,0.09594028945,0.02013471955,52
+GenAI_HoursShare_Ind,Industry,Finance and Insurance,Share of work hours using genAI,2025-11-01,0.08432519640000001,0.01399891463,52
+GenAI_HoursShare_Ind,Industry,Finance and Insurance,Share of work hours using genAI,2026-02-01,0.10999383489999999,0.022622229539999997,52
+GenAI_HoursShare_Ind,Industry,Finance and Insurance,Share of work hours using genAI,2026-05-01,0.09669450658,0.01350567494,52
+GenAI_HoursShare_Ind,Industry,Health Care and Social Assistance,Share of work hours using genAI,2024-11-01,0.050322068319999996,0.013762389580000001,62
+GenAI_HoursShare_Ind,Industry,Health Care and Social Assistance,Share of work hours using genAI,2025-02-01,0.03366114791,0.01113521293,62
+GenAI_HoursShare_Ind,Industry,Health Care and Social Assistance,Share of work hours using genAI,2025-05-01,0.02993427198,0.007500790831000001,62
+GenAI_HoursShare_Ind,Industry,Health Care and Social Assistance,Share of work hours using genAI,2025-08-01,0.02148984519,0.004853655967,62
+GenAI_HoursShare_Ind,Industry,Health Care and Social Assistance,Share of work hours using genAI,2025-11-01,0.03579906983,0.006948873702,62
+GenAI_HoursShare_Ind,Industry,Health Care and Social Assistance,Share of work hours using genAI,2026-02-01,0.04776481607,0.009591907751,62
+GenAI_HoursShare_Ind,Industry,Health Care and Social Assistance,Share of work hours using genAI,2026-05-01,0.03610421298,0.006593212322999999,62
+GenAI_HoursShare_Ind,Industry,Information,Share of work hours using genAI,2024-11-01,0.09308478762,0.01655528498,51
+GenAI_HoursShare_Ind,Industry,Information,Share of work hours using genAI,2025-02-01,0.11702802159999999,0.02146223024,51
+GenAI_HoursShare_Ind,Industry,Information,Share of work hours using genAI,2025-05-01,0.10492828259999999,0.01543679456,51
+GenAI_HoursShare_Ind,Industry,Information,Share of work hours using genAI,2025-08-01,0.132376835,0.01906160325,51
+GenAI_HoursShare_Ind,Industry,Information,Share of work hours using genAI,2025-11-01,0.1192623216,0.01802387153,51
+GenAI_HoursShare_Ind,Industry,Information,Share of work hours using genAI,2026-02-01,0.1240000695,0.01651960686,51
+GenAI_HoursShare_Ind,Industry,Information,Share of work hours using genAI,2026-05-01,0.1603216497,0.01895459043,51
+GenAI_HoursShare_Ind,Industry,Management of companies and enterprises,Share of work hours using genAI,2024-11-01,0.05378040407,0.01488940565,55
+GenAI_HoursShare_Ind,Industry,Management of companies and enterprises,Share of work hours using genAI,2025-02-01,0.0652099802,0.02397931872,55
+GenAI_HoursShare_Ind,Industry,Management of companies and enterprises,Share of work hours using genAI,2025-05-01,0.06469965999,0.01838576532,55
+GenAI_HoursShare_Ind,Industry,Management of companies and enterprises,Share of work hours using genAI,2025-08-01,0.08768165039999999,0.02507144987,55
+GenAI_HoursShare_Ind,Industry,Management of companies and enterprises,Share of work hours using genAI,2025-11-01,0.1312727466,0.03468349432,55
+GenAI_HoursShare_Ind,Industry,Management of companies and enterprises,Share of work hours using genAI,2026-02-01,0.09025707789,0.020910622110000002,55
+GenAI_HoursShare_Ind,Industry,Management of companies and enterprises,Share of work hours using genAI,2026-05-01,0.1573184455,0.03827608223,55
+GenAI_HoursShare_Ind,Industry,Manufacturing,Share of work hours using genAI,2024-11-01,0.03378606254,0.006672305361999999,31
+GenAI_HoursShare_Ind,Industry,Manufacturing,Share of work hours using genAI,2025-02-01,0.05893618937,0.02102867083,31
+GenAI_HoursShare_Ind,Industry,Manufacturing,Share of work hours using genAI,2025-05-01,0.04451418193,0.009506812451,31
+GenAI_HoursShare_Ind,Industry,Manufacturing,Share of work hours using genAI,2025-08-01,0.06369387635,0.014750900039999999,31
+GenAI_HoursShare_Ind,Industry,Manufacturing,Share of work hours using genAI,2025-11-01,0.06739169137,0.01209323752,31
+GenAI_HoursShare_Ind,Industry,Manufacturing,Share of work hours using genAI,2026-02-01,0.07064711221,0.010095931019999999,31
+GenAI_HoursShare_Ind,Industry,Manufacturing,Share of work hours using genAI,2026-05-01,0.054632646400000005,0.009469108524999999,31
+GenAI_HoursShare_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of work hours using genAI,2024-11-01,0.021520983290000004,0.008427684979999999,21
+GenAI_HoursShare_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of work hours using genAI,2025-02-01,0.027406487410000003,0.02605366965,21
+GenAI_HoursShare_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of work hours using genAI,2025-05-01,0.0315070488,0.021554519509999998,21
+GenAI_HoursShare_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of work hours using genAI,2025-08-01,0.06150314852,0.02924821843,21
+GenAI_HoursShare_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of work hours using genAI,2025-11-01,0.01159705571,0.008426838085,21
+GenAI_HoursShare_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of work hours using genAI,2026-02-01,0.00844571852,0.004994883332,21
+GenAI_HoursShare_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of work hours using genAI,2026-05-01,0.03807384911,0.024103809219999998,21
+GenAI_HoursShare_Ind,Industry,"Other Services, Except Public Administration",Share of work hours using genAI,2024-11-01,0.01546614334,0.003704048097,81
+GenAI_HoursShare_Ind,Industry,"Other Services, Except Public Administration",Share of work hours using genAI,2025-02-01,0.04478889866,0.0196918154,81
+GenAI_HoursShare_Ind,Industry,"Other Services, Except Public Administration",Share of work hours using genAI,2025-05-01,0.055978468440000005,0.02064374983,81
+GenAI_HoursShare_Ind,Industry,"Other Services, Except Public Administration",Share of work hours using genAI,2025-08-01,0.030998826450000003,0.008626592068999999,81
+GenAI_HoursShare_Ind,Industry,"Other Services, Except Public Administration",Share of work hours using genAI,2025-11-01,0.035820022119999996,0.008902845058999999,81
+GenAI_HoursShare_Ind,Industry,"Other Services, Except Public Administration",Share of work hours using genAI,2026-02-01,0.03691812676,0.009847607040000001,81
+GenAI_HoursShare_Ind,Industry,"Other Services, Except Public Administration",Share of work hours using genAI,2026-05-01,0.0385032099,0.010627731849999999,81
+GenAI_HoursShare_Ind,Industry,"Professional, Scientific, and Technical Services",Share of work hours using genAI,2024-11-01,0.06706105611,0.0152417395,54
+GenAI_HoursShare_Ind,Industry,"Professional, Scientific, and Technical Services",Share of work hours using genAI,2025-02-01,0.06687221562000001,0.01404876822,54
+GenAI_HoursShare_Ind,Industry,"Professional, Scientific, and Technical Services",Share of work hours using genAI,2025-05-01,0.1096992959,0.026562877239999998,54
+GenAI_HoursShare_Ind,Industry,"Professional, Scientific, and Technical Services",Share of work hours using genAI,2025-08-01,0.06327957634999999,0.00784997565,54
+GenAI_HoursShare_Ind,Industry,"Professional, Scientific, and Technical Services",Share of work hours using genAI,2025-11-01,0.10252466639999999,0.012687589919999999,54
+GenAI_HoursShare_Ind,Industry,"Professional, Scientific, and Technical Services",Share of work hours using genAI,2026-02-01,0.1005361387,0.01046379457,54
+GenAI_HoursShare_Ind,Industry,"Professional, Scientific, and Technical Services",Share of work hours using genAI,2026-05-01,0.11359728179999999,0.01356185872,54
+GenAI_HoursShare_Ind,Industry,Public Administration,Share of work hours using genAI,2024-11-01,0.013695461200000002,0.006372286304,92
+GenAI_HoursShare_Ind,Industry,Public Administration,Share of work hours using genAI,2025-02-01,0.009662126113,0.005181704154,92
+GenAI_HoursShare_Ind,Industry,Public Administration,Share of work hours using genAI,2025-05-01,0.0060938934,0.003223809442,92
+GenAI_HoursShare_Ind,Industry,Public Administration,Share of work hours using genAI,2025-08-01,0.03145230695,0.01863082501,92
+GenAI_HoursShare_Ind,Industry,Public Administration,Share of work hours using genAI,2025-11-01,0.008535430173,0.003267404547,92
+GenAI_HoursShare_Ind,Industry,Public Administration,Share of work hours using genAI,2026-02-01,0.03665609747,0.02220882538,92
+GenAI_HoursShare_Ind,Industry,Public Administration,Share of work hours using genAI,2026-05-01,0.01458685612,0.007053808179,92
+GenAI_HoursShare_Ind,Industry,Real Estate and Rental and Leasing,Share of work hours using genAI,2024-11-01,0.03197705053,0.01356024076,53
+GenAI_HoursShare_Ind,Industry,Real Estate and Rental and Leasing,Share of work hours using genAI,2025-02-01,0.04878319094,0.01704831438,53
+GenAI_HoursShare_Ind,Industry,Real Estate and Rental and Leasing,Share of work hours using genAI,2025-05-01,0.033341269,0.01076415673,53
+GenAI_HoursShare_Ind,Industry,Real Estate and Rental and Leasing,Share of work hours using genAI,2025-08-01,0.08150882578999999,0.032535056560000004,53
+GenAI_HoursShare_Ind,Industry,Real Estate and Rental and Leasing,Share of work hours using genAI,2025-11-01,0.07913743918999999,0.02836442693,53
+GenAI_HoursShare_Ind,Industry,Real Estate and Rental and Leasing,Share of work hours using genAI,2026-02-01,0.06672602936,0.024149004039999998,53
+GenAI_HoursShare_Ind,Industry,Real Estate and Rental and Leasing,Share of work hours using genAI,2026-05-01,0.1163190793,0.0463132252,53
+GenAI_HoursShare_Ind,Industry,Retail Trade,Share of work hours using genAI,2024-11-01,0.059977933580000004,0.041537231009999995,44
+GenAI_HoursShare_Ind,Industry,Retail Trade,Share of work hours using genAI,2025-02-01,0.048252169660000004,0.02185903021,44
+GenAI_HoursShare_Ind,Industry,Retail Trade,Share of work hours using genAI,2025-05-01,0.019409145189999998,0.008591334499,44
+GenAI_HoursShare_Ind,Industry,Retail Trade,Share of work hours using genAI,2025-08-01,0.04409041836,0.02035966034,44
+GenAI_HoursShare_Ind,Industry,Retail Trade,Share of work hours using genAI,2025-11-01,0.122194935,0.03471391861,44
+GenAI_HoursShare_Ind,Industry,Retail Trade,Share of work hours using genAI,2026-02-01,0.01971742704,0.007737552608,44
+GenAI_HoursShare_Ind,Industry,Retail Trade,Share of work hours using genAI,2026-05-01,0.055901659209999996,0.01749153023,44
+GenAI_HoursShare_Ind,Industry,Transportation and Warehousing,Share of work hours using genAI,2024-11-01,0.03986747528,0.010116698969999999,48
+GenAI_HoursShare_Ind,Industry,Transportation and Warehousing,Share of work hours using genAI,2025-02-01,0.059980000779999994,0.016144138580000002,48
+GenAI_HoursShare_Ind,Industry,Transportation and Warehousing,Share of work hours using genAI,2025-05-01,0.048005210140000004,0.01690858137,48
+GenAI_HoursShare_Ind,Industry,Transportation and Warehousing,Share of work hours using genAI,2025-08-01,0.03889060917,0.006953123765,48
+GenAI_HoursShare_Ind,Industry,Transportation and Warehousing,Share of work hours using genAI,2025-11-01,0.04034199955,0.006701553059000001,48
+GenAI_HoursShare_Ind,Industry,Transportation and Warehousing,Share of work hours using genAI,2026-02-01,0.04271134188,0.009100020084,48
+GenAI_HoursShare_Ind,Industry,Transportation and Warehousing,Share of work hours using genAI,2026-05-01,0.05843523672,0.01062210262,48
+GenAI_HoursShare_Ind,Industry,Utilities,Share of work hours using genAI,2024-11-01,0.02312489121,0.007879176106,22
+GenAI_HoursShare_Ind,Industry,Utilities,Share of work hours using genAI,2025-02-01,0.01666505009,0.007274767293,22
+GenAI_HoursShare_Ind,Industry,Utilities,Share of work hours using genAI,2025-05-01,0.01753355257,0.006109627531,22
+GenAI_HoursShare_Ind,Industry,Utilities,Share of work hours using genAI,2025-08-01,0.07147131397,0.03193300937,22
+GenAI_HoursShare_Ind,Industry,Utilities,Share of work hours using genAI,2025-11-01,0.01875189642,0.005048845208,22
+GenAI_HoursShare_Ind,Industry,Utilities,Share of work hours using genAI,2026-02-01,0.03701411734,0.01671673982,22
+GenAI_HoursShare_Ind,Industry,Utilities,Share of work hours using genAI,2026-05-01,0.03141243942,0.0101652692,22
+GenAI_HoursShare_Ind,Industry,Wholesale Trade,Share of work hours using genAI,2024-11-01,0.03124931855,0.00752625377,42
+GenAI_HoursShare_Ind,Industry,Wholesale Trade,Share of work hours using genAI,2025-02-01,0.034906896879999996,0.00659621925,42
+GenAI_HoursShare_Ind,Industry,Wholesale Trade,Share of work hours using genAI,2025-05-01,0.06215204603,0.01294167442,42
+GenAI_HoursShare_Ind,Industry,Wholesale Trade,Share of work hours using genAI,2025-08-01,0.07873865401999999,0.01374737126,42
+GenAI_HoursShare_Ind,Industry,Wholesale Trade,Share of work hours using genAI,2025-11-01,0.061090478719999994,0.008399376992000001,42
+GenAI_HoursShare_Ind,Industry,Wholesale Trade,Share of work hours using genAI,2026-02-01,0.05249832574,0.008281682087,42
+GenAI_HoursShare_Ind,Industry,Wholesale Trade,Share of work hours using genAI,2026-05-01,0.06708427596,0.010210369070000001,42
+GenAI_HoursShare_Occ,Occupation,Architecture and Engineering Occupations,Share of work hours using genAI,2024-11-01,0.04118305814,0.016519698359999998,
+GenAI_HoursShare_Occ,Occupation,Architecture and Engineering Occupations,Share of work hours using genAI,2025-02-01,0.03141199987,0.01121136225,
+GenAI_HoursShare_Occ,Occupation,Architecture and Engineering Occupations,Share of work hours using genAI,2025-05-01,0.03723017392,0.011784238019999999,
+GenAI_HoursShare_Occ,Occupation,Architecture and Engineering Occupations,Share of work hours using genAI,2025-08-01,0.062035100600000004,0.0257752523,
+GenAI_HoursShare_Occ,Occupation,Architecture and Engineering Occupations,Share of work hours using genAI,2025-11-01,0.07782596953,0.028467468920000003,
+GenAI_HoursShare_Occ,Occupation,Architecture and Engineering Occupations,Share of work hours using genAI,2026-02-01,0.09204754100000001,0.023060905580000002,
+GenAI_HoursShare_Occ,Occupation,Architecture and Engineering Occupations,Share of work hours using genAI,2026-05-01,0.055555644720000005,0.01322325925,
+GenAI_HoursShare_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of work hours using genAI,2024-11-01,0.08359714586999999,0.0392781749,
+GenAI_HoursShare_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of work hours using genAI,2025-02-01,0.07068495924,0.015596039820000001,
+GenAI_HoursShare_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of work hours using genAI,2025-05-01,0.10446464280000001,0.02323863742,
+GenAI_HoursShare_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of work hours using genAI,2025-08-01,0.09749104273,0.01733751946,
+GenAI_HoursShare_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of work hours using genAI,2025-11-01,0.11433420849999999,0.03640909911,
+GenAI_HoursShare_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of work hours using genAI,2026-02-01,0.08697057556000001,0.02221856174,
+GenAI_HoursShare_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of work hours using genAI,2026-05-01,0.06644294292,0.01458341444,
+GenAI_HoursShare_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of work hours using genAI,2024-11-01,0.009452431926,0.004258840176,
+GenAI_HoursShare_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of work hours using genAI,2025-02-01,0.05209938861999999,0.04905110132,
+GenAI_HoursShare_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of work hours using genAI,2025-05-01,0.007731243229,0.005044376762,
+GenAI_HoursShare_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of work hours using genAI,2025-08-01,0.01456024797,0.010562534660000001,
+GenAI_HoursShare_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of work hours using genAI,2025-11-01,0.005134598367,0.0025381770180000003,
+GenAI_HoursShare_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of work hours using genAI,2026-02-01,0.011374675,0.007257208120999999,
+GenAI_HoursShare_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of work hours using genAI,2026-05-01,0.007684949907,0.0035121728349999997,
+GenAI_HoursShare_Occ,Occupation,Business and Financial Operations Occupations,Share of work hours using genAI,2024-11-01,0.04740681587,0.01485895892,
+GenAI_HoursShare_Occ,Occupation,Business and Financial Operations Occupations,Share of work hours using genAI,2025-02-01,0.024241115639999998,0.005082939594,
+GenAI_HoursShare_Occ,Occupation,Business and Financial Operations Occupations,Share of work hours using genAI,2025-05-01,0.052454295010000006,0.01392534951,
+GenAI_HoursShare_Occ,Occupation,Business and Financial Operations Occupations,Share of work hours using genAI,2025-08-01,0.06103491141,0.01008228393,
+GenAI_HoursShare_Occ,Occupation,Business and Financial Operations Occupations,Share of work hours using genAI,2025-11-01,0.07471240263000001,0.011097455519999999,
+GenAI_HoursShare_Occ,Occupation,Business and Financial Operations Occupations,Share of work hours using genAI,2026-02-01,0.08811690894,0.01231987601,
+GenAI_HoursShare_Occ,Occupation,Business and Financial Operations Occupations,Share of work hours using genAI,2026-05-01,0.08400262663,0.012745952389999999,
+GenAI_HoursShare_Occ,Occupation,Community and Social Service Occupations,Share of work hours using genAI,2024-11-01,0.02356083908,0.006538426303,
+GenAI_HoursShare_Occ,Occupation,Community and Social Service Occupations,Share of work hours using genAI,2025-02-01,0.022817549179999997,0.009375419319,
+GenAI_HoursShare_Occ,Occupation,Community and Social Service Occupations,Share of work hours using genAI,2025-05-01,0.06878519146999999,0.0428637633,
+GenAI_HoursShare_Occ,Occupation,Community and Social Service Occupations,Share of work hours using genAI,2025-08-01,0.01621400725,0.007711729493,
+GenAI_HoursShare_Occ,Occupation,Community and Social Service Occupations,Share of work hours using genAI,2025-11-01,0.0391703182,0.01190545422,
+GenAI_HoursShare_Occ,Occupation,Community and Social Service Occupations,Share of work hours using genAI,2026-02-01,0.11483208989999999,0.03651013338,
+GenAI_HoursShare_Occ,Occupation,Community and Social Service Occupations,Share of work hours using genAI,2026-05-01,0.04553752322,0.01330907571,
+GenAI_HoursShare_Occ,Occupation,Computer and mathematical occupations,Share of work hours using genAI,2024-11-01,0.09151221793,0.015490950859999998,
+GenAI_HoursShare_Occ,Occupation,Computer and mathematical occupations,Share of work hours using genAI,2025-02-01,0.09609351259,0.01965202907,
+GenAI_HoursShare_Occ,Occupation,Computer and mathematical occupations,Share of work hours using genAI,2025-05-01,0.11915123579999999,0.02040057032,
+GenAI_HoursShare_Occ,Occupation,Computer and mathematical occupations,Share of work hours using genAI,2025-08-01,0.1043515262,0.013568341880000001,
+GenAI_HoursShare_Occ,Occupation,Computer and mathematical occupations,Share of work hours using genAI,2025-11-01,0.09666078408,0.01206125125,
+GenAI_HoursShare_Occ,Occupation,Computer and mathematical occupations,Share of work hours using genAI,2026-02-01,0.1181298553,0.0135481988,
+GenAI_HoursShare_Occ,Occupation,Computer and mathematical occupations,Share of work hours using genAI,2026-05-01,0.1513627129,0.015318624979999999,
+GenAI_HoursShare_Occ,Occupation,Construction and Extraction Occupations,Share of work hours using genAI,2024-11-01,0.02524937037,0.009938015308,
+GenAI_HoursShare_Occ,Occupation,Construction and Extraction Occupations,Share of work hours using genAI,2025-02-01,0.046175854520000004,0.02636901758,
+GenAI_HoursShare_Occ,Occupation,Construction and Extraction Occupations,Share of work hours using genAI,2025-05-01,0.033284919579999996,0.01254809933,
+GenAI_HoursShare_Occ,Occupation,Construction and Extraction Occupations,Share of work hours using genAI,2025-08-01,0.07018923029,0.02440382526,
+GenAI_HoursShare_Occ,Occupation,Construction and Extraction Occupations,Share of work hours using genAI,2025-11-01,0.042440104099999994,0.011465043900000001,
+GenAI_HoursShare_Occ,Occupation,Construction and Extraction Occupations,Share of work hours using genAI,2026-02-01,0.02960628636,0.007720011903,
+GenAI_HoursShare_Occ,Occupation,Construction and Extraction Occupations,Share of work hours using genAI,2026-05-01,0.035606857129999996,0.01094149604,
+GenAI_HoursShare_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of work hours using genAI,2024-11-01,0.03812891378,0.013052553350000001,
+GenAI_HoursShare_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of work hours using genAI,2025-02-01,0.06517360313000001,0.02600602119,
+GenAI_HoursShare_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of work hours using genAI,2025-05-01,0.02790917967,0.00646554342,
+GenAI_HoursShare_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of work hours using genAI,2025-08-01,0.0650193217,0.015375512309999999,
+GenAI_HoursShare_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of work hours using genAI,2025-11-01,0.07160693643,0.01790942444,
+GenAI_HoursShare_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of work hours using genAI,2026-02-01,0.05916985054999999,0.008685053629,
+GenAI_HoursShare_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of work hours using genAI,2026-05-01,0.05149775042,0.01383219117,
+GenAI_HoursShare_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of work hours using genAI,2024-11-01,0.01950796734,0.008017616317000001,
+GenAI_HoursShare_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of work hours using genAI,2025-02-01,0.010598567889999999,0.004803530539,
+GenAI_HoursShare_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of work hours using genAI,2025-05-01,0.1290718586,0.1046076041,
+GenAI_HoursShare_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of work hours using genAI,2025-08-01,0.01056310882,0.005408447233,
+GenAI_HoursShare_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of work hours using genAI,2025-11-01,0.07942513197,0.03670613679,
+GenAI_HoursShare_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of work hours using genAI,2026-02-01,0.01089551815,0.006669825274,
+GenAI_HoursShare_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of work hours using genAI,2026-05-01,0.04854237847,0.04058057248,
+GenAI_HoursShare_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of work hours using genAI,2024-11-01,0.012614583720000001,0.008419525907,
+GenAI_HoursShare_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of work hours using genAI,2025-02-01,0.012661885429999999,0.005708658127,
+GenAI_HoursShare_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of work hours using genAI,2025-05-01,0.016742618849999998,0.006658022656,
+GenAI_HoursShare_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of work hours using genAI,2025-08-01,0.025456667149999997,0.01232646923,
+GenAI_HoursShare_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of work hours using genAI,2025-11-01,0.01404880319,0.007760069614000001,
+GenAI_HoursShare_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of work hours using genAI,2026-02-01,0.04089496196,0.01574896726,
+GenAI_HoursShare_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of work hours using genAI,2026-05-01,0.032000219749999996,0.013841106110000001,
+GenAI_HoursShare_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of work hours using genAI,2024-11-01,0.08835246060999999,0.02453562678,
+GenAI_HoursShare_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of work hours using genAI,2025-02-01,0.037269260559999996,0.01346461978,
+GenAI_HoursShare_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of work hours using genAI,2025-05-01,0.033862890060000005,0.01125973924,
+GenAI_HoursShare_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of work hours using genAI,2025-08-01,0.02734612577,0.0071753130089999995,
+GenAI_HoursShare_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of work hours using genAI,2025-11-01,0.05515111187,0.01179268469,
+GenAI_HoursShare_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of work hours using genAI,2026-02-01,0.07458969524999999,0.02361225324,
+GenAI_HoursShare_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of work hours using genAI,2026-05-01,0.03839569914,0.009982456017,
+GenAI_HoursShare_Occ,Occupation,Healthcare Support Occupations,Share of work hours using genAI,2024-11-01,0.009953920423,0.004705186146,
+GenAI_HoursShare_Occ,Occupation,Healthcare Support Occupations,Share of work hours using genAI,2025-02-01,0.04828953424,0.02894132668,
+GenAI_HoursShare_Occ,Occupation,Healthcare Support Occupations,Share of work hours using genAI,2025-05-01,0.0323419649,0.01277264365,
+GenAI_HoursShare_Occ,Occupation,Healthcare Support Occupations,Share of work hours using genAI,2025-08-01,0.006227459253,0.003952990073,
+GenAI_HoursShare_Occ,Occupation,Healthcare Support Occupations,Share of work hours using genAI,2025-11-01,0.027160967440000003,0.011295658319999999,
+GenAI_HoursShare_Occ,Occupation,Healthcare Support Occupations,Share of work hours using genAI,2026-02-01,0.01798723365,0.006534176761,
+GenAI_HoursShare_Occ,Occupation,Healthcare Support Occupations,Share of work hours using genAI,2026-05-01,0.03933589705,0.01380480729,
+GenAI_HoursShare_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of work hours using genAI,2024-11-01,0.05430528283,0.0209796042,
+GenAI_HoursShare_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of work hours using genAI,2025-02-01,0.03161391878,0.01323223455,
+GenAI_HoursShare_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of work hours using genAI,2025-05-01,0.04339824933,0.01957970723,
+GenAI_HoursShare_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of work hours using genAI,2025-08-01,0.062093644899999995,0.023004802,
+GenAI_HoursShare_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of work hours using genAI,2025-11-01,0.053780667080000004,0.01763930647,
+GenAI_HoursShare_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of work hours using genAI,2026-02-01,0.04842637979,0.017329190640000002,
+GenAI_HoursShare_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of work hours using genAI,2026-05-01,0.041699849479999995,0.01682907766,
+GenAI_HoursShare_Occ,Occupation,Legal Occupations,Share of work hours using genAI,2024-11-01,0.005627307171,0.0029733983390000003,
+GenAI_HoursShare_Occ,Occupation,Legal Occupations,Share of work hours using genAI,2025-02-01,0.07216600363,0.02952495339,
+GenAI_HoursShare_Occ,Occupation,Legal Occupations,Share of work hours using genAI,2025-05-01,0.1232934736,0.06166335746,
+GenAI_HoursShare_Occ,Occupation,Legal Occupations,Share of work hours using genAI,2025-08-01,0.05289416248,0.015430968560000001,
+GenAI_HoursShare_Occ,Occupation,Legal Occupations,Share of work hours using genAI,2025-11-01,0.1212816009,0.03738215287,
+GenAI_HoursShare_Occ,Occupation,Legal Occupations,Share of work hours using genAI,2026-02-01,0.0467118156,0.02220680326,
+GenAI_HoursShare_Occ,Occupation,Legal Occupations,Share of work hours using genAI,2026-05-01,0.051472646500000004,0.017403328790000002,
+GenAI_HoursShare_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of work hours using genAI,2024-11-01,0.03140531966,0.016581845770000003,
+GenAI_HoursShare_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of work hours using genAI,2025-02-01,0.013419894779999999,0.004570294566,
+GenAI_HoursShare_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of work hours using genAI,2025-05-01,0.0386651508,0.01575503709,
+GenAI_HoursShare_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of work hours using genAI,2025-08-01,0.03241546148,0.010534163780000001,
+GenAI_HoursShare_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of work hours using genAI,2025-11-01,0.06108500852,0.02311018887,
+GenAI_HoursShare_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of work hours using genAI,2026-02-01,0.1274300654,0.05148773464,
+GenAI_HoursShare_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of work hours using genAI,2026-05-01,0.1009314571,0.04045046393,
+GenAI_HoursShare_Occ,Occupation,Management Occupations,Share of work hours using genAI,2024-11-01,0.06975248816,0.008065721777,
+GenAI_HoursShare_Occ,Occupation,Management Occupations,Share of work hours using genAI,2025-02-01,0.08296365434,0.009433384024,
+GenAI_HoursShare_Occ,Occupation,Management Occupations,Share of work hours using genAI,2025-05-01,0.07681972932,0.008146325877,
+GenAI_HoursShare_Occ,Occupation,Management Occupations,Share of work hours using genAI,2025-08-01,0.115007649,0.011209376909999999,
+GenAI_HoursShare_Occ,Occupation,Management Occupations,Share of work hours using genAI,2025-11-01,0.09413744797,0.007577151099,
+GenAI_HoursShare_Occ,Occupation,Management Occupations,Share of work hours using genAI,2026-02-01,0.09555679666,0.007396012159,
+GenAI_HoursShare_Occ,Occupation,Management Occupations,Share of work hours using genAI,2026-05-01,0.1250610932,0.01088962148,
+GenAI_HoursShare_Occ,Occupation,Office and Administrative Support Occupations,Share of work hours using genAI,2024-11-01,0.027977795419999996,0.00714132206,
+GenAI_HoursShare_Occ,Occupation,Office and Administrative Support Occupations,Share of work hours using genAI,2025-02-01,0.021951697029999998,0.005195260282000001,
+GenAI_HoursShare_Occ,Occupation,Office and Administrative Support Occupations,Share of work hours using genAI,2025-05-01,0.06721450159,0.02137775619,
+GenAI_HoursShare_Occ,Occupation,Office and Administrative Support Occupations,Share of work hours using genAI,2025-08-01,0.05594643272,0.02088709885,
+GenAI_HoursShare_Occ,Occupation,Office and Administrative Support Occupations,Share of work hours using genAI,2025-11-01,0.044942814569999996,0.009892285624,
+GenAI_HoursShare_Occ,Occupation,Office and Administrative Support Occupations,Share of work hours using genAI,2026-02-01,0.03584510839,0.0075894780669999995,
+GenAI_HoursShare_Occ,Occupation,Office and Administrative Support Occupations,Share of work hours using genAI,2026-05-01,0.0521838445,0.011238760350000002,
+GenAI_HoursShare_Occ,Occupation,Personal Care and Service Occupations,Share of work hours using genAI,2024-11-01,0.005734407796,0.002362981908,
+GenAI_HoursShare_Occ,Occupation,Personal Care and Service Occupations,Share of work hours using genAI,2025-02-01,0.1055060502,0.06272986481000001,
+GenAI_HoursShare_Occ,Occupation,Personal Care and Service Occupations,Share of work hours using genAI,2025-05-01,0.004902593008,0.002938363484,
+GenAI_HoursShare_Occ,Occupation,Personal Care and Service Occupations,Share of work hours using genAI,2025-08-01,0.01852017302,0.009462973836,
+GenAI_HoursShare_Occ,Occupation,Personal Care and Service Occupations,Share of work hours using genAI,2025-11-01,0.01281747296,0.005048182653,
+GenAI_HoursShare_Occ,Occupation,Personal Care and Service Occupations,Share of work hours using genAI,2026-02-01,0.03301330149,0.011287746860000001,
+GenAI_HoursShare_Occ,Occupation,Personal Care and Service Occupations,Share of work hours using genAI,2026-05-01,0.01902690064,0.0144841648,
+GenAI_HoursShare_Occ,Occupation,Production Occupations,Share of work hours using genAI,2024-11-01,0.019257695640000003,0.00600360147,
+GenAI_HoursShare_Occ,Occupation,Production Occupations,Share of work hours using genAI,2025-02-01,0.030467888959999998,0.01102204026,
+GenAI_HoursShare_Occ,Occupation,Production Occupations,Share of work hours using genAI,2025-05-01,0.03208543292,0.010892570740000001,
+GenAI_HoursShare_Occ,Occupation,Production Occupations,Share of work hours using genAI,2025-08-01,0.05720822837,0.01841674529,
+GenAI_HoursShare_Occ,Occupation,Production Occupations,Share of work hours using genAI,2025-11-01,0.03650652993,0.01279956117,
+GenAI_HoursShare_Occ,Occupation,Production Occupations,Share of work hours using genAI,2026-02-01,0.057475110450000005,0.01263693509,
+GenAI_HoursShare_Occ,Occupation,Production Occupations,Share of work hours using genAI,2026-05-01,0.04550942113,0.01157454289,
+GenAI_HoursShare_Occ,Occupation,Protective Service Occupations,Share of work hours using genAI,2024-11-01,0.007856835278,0.006537708943,
+GenAI_HoursShare_Occ,Occupation,Protective Service Occupations,Share of work hours using genAI,2025-02-01,0.001484386114,0.001077844985,
+GenAI_HoursShare_Occ,Occupation,Protective Service Occupations,Share of work hours using genAI,2025-05-01,0.005920828118,0.005307636758,
+GenAI_HoursShare_Occ,Occupation,Protective Service Occupations,Share of work hours using genAI,2025-08-01,0.02599191275,0.012372006069999998,
+GenAI_HoursShare_Occ,Occupation,Protective Service Occupations,Share of work hours using genAI,2025-11-01,0.02092425396,0.01012315793,
+GenAI_HoursShare_Occ,Occupation,Protective Service Occupations,Share of work hours using genAI,2026-02-01,0.006387889819,0.004874172148,
+GenAI_HoursShare_Occ,Occupation,Protective Service Occupations,Share of work hours using genAI,2026-05-01,0.01247582234,0.009306177145999999,
+GenAI_HoursShare_Occ,Occupation,Sales and Related Occupations,Share of work hours using genAI,2024-11-01,0.03596603945,0.01251351792,
+GenAI_HoursShare_Occ,Occupation,Sales and Related Occupations,Share of work hours using genAI,2025-02-01,0.051821791719999996,0.01928108707,
+GenAI_HoursShare_Occ,Occupation,Sales and Related Occupations,Share of work hours using genAI,2025-05-01,0.049551114529999996,0.01900270422,
+GenAI_HoursShare_Occ,Occupation,Sales and Related Occupations,Share of work hours using genAI,2025-08-01,0.0350037072,0.008036669606,
+GenAI_HoursShare_Occ,Occupation,Sales and Related Occupations,Share of work hours using genAI,2025-11-01,0.043472551240000004,0.01016696207,
+GenAI_HoursShare_Occ,Occupation,Sales and Related Occupations,Share of work hours using genAI,2026-02-01,0.0493223234,0.01335761639,
+GenAI_HoursShare_Occ,Occupation,Sales and Related Occupations,Share of work hours using genAI,2026-05-01,0.07195111304,0.01589496984,
+GenAI_HoursShare_Occ,Occupation,Transportation and Material Moving Occupations,Share of work hours using genAI,2024-11-01,0.01071059051,0.0042404081719999995,
+GenAI_HoursShare_Occ,Occupation,Transportation and Material Moving Occupations,Share of work hours using genAI,2025-02-01,0.02140906807,0.01041830563,
+GenAI_HoursShare_Occ,Occupation,Transportation and Material Moving Occupations,Share of work hours using genAI,2025-05-01,0.014532551440000001,0.004752354605,
+GenAI_HoursShare_Occ,Occupation,Transportation and Material Moving Occupations,Share of work hours using genAI,2025-08-01,0.031153030789999998,0.016678310039999998,
+GenAI_HoursShare_Occ,Occupation,Transportation and Material Moving Occupations,Share of work hours using genAI,2025-11-01,0.0243508111,0.006923110728,
+GenAI_HoursShare_Occ,Occupation,Transportation and Material Moving Occupations,Share of work hours using genAI,2026-02-01,0.026462938779999997,0.01405591879,
+GenAI_HoursShare_Occ,Occupation,Transportation and Material Moving Occupations,Share of work hours using genAI,2026-05-01,0.03091679062,0.008448073455,
+GenAI_Ind,Industry,Accommodation and Food Services,Share of workers using genAI at work,2024-08-01,0.1458695242,0.0353241679,72
+GenAI_Ind,Industry,Accommodation and Food Services,Share of workers using genAI at work,2024-11-01,0.13611890799999998,0.031059439119999997,72
+GenAI_Ind,Industry,Accommodation and Food Services,Share of workers using genAI at work,2025-02-01,0.1936692055,0.04691147553,72
+GenAI_Ind,Industry,Accommodation and Food Services,Share of workers using genAI at work,2025-05-01,0.2283536795,0.04986437554,72
+GenAI_Ind,Industry,Accommodation and Food Services,Share of workers using genAI at work,2025-08-01,0.1655818105,0.03090126804,72
+GenAI_Ind,Industry,Accommodation and Food Services,Share of workers using genAI at work,2025-11-01,0.208648159,0.03271563196,72
+GenAI_Ind,Industry,Accommodation and Food Services,Share of workers using genAI at work,2026-02-01,0.2950890488,0.04175378841,72
+GenAI_Ind,Industry,Accommodation and Food Services,Share of workers using genAI at work,2026-05-01,0.3052520052,0.04334025779,72
+GenAI_Ind,Industry,Administrative and support and waste management services,Share of workers using genAI at work,2024-08-01,0.2103854007,0.06469836138,56
+GenAI_Ind,Industry,Administrative and support and waste management services,Share of workers using genAI at work,2024-11-01,0.1932683273,0.049016145680000005,56
+GenAI_Ind,Industry,Administrative and support and waste management services,Share of workers using genAI at work,2025-02-01,0.20748470609999997,0.06820561324,56
+GenAI_Ind,Industry,Administrative and support and waste management services,Share of workers using genAI at work,2025-05-01,0.2750995859,0.06072995616,56
+GenAI_Ind,Industry,Administrative and support and waste management services,Share of workers using genAI at work,2025-08-01,0.2940458111,0.061228310290000004,56
+GenAI_Ind,Industry,Administrative and support and waste management services,Share of workers using genAI at work,2025-11-01,0.2843247373,0.06157871984,56
+GenAI_Ind,Industry,Administrative and support and waste management services,Share of workers using genAI at work,2026-02-01,0.2934596991,0.06359110044,56
+GenAI_Ind,Industry,Administrative and support and waste management services,Share of workers using genAI at work,2026-05-01,0.40460115729999996,0.06975617502,56
+GenAI_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of workers using genAI at work,2024-08-01,0.381192949,0.08078407821000001,11
+GenAI_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of workers using genAI at work,2024-11-01,0.3759196686,0.06762329194,11
+GenAI_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of workers using genAI at work,2025-02-01,0.2715303396,0.09573801474,11
+GenAI_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of workers using genAI at work,2025-05-01,0.3703131085,0.07934096444,11
+GenAI_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of workers using genAI at work,2025-08-01,0.3025786943,0.06978193520999999,11
+GenAI_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of workers using genAI at work,2025-11-01,0.357396735,0.08660487667,11
+GenAI_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of workers using genAI at work,2026-02-01,0.3606680922,0.09083155517,11
+GenAI_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Share of workers using genAI at work,2026-05-01,0.3477067699,0.08603151800999999,11
+GenAI_Ind,Industry,"Arts, Entertainment, and Recreation",Share of workers using genAI at work,2024-08-01,0.226317678,0.05726301302,71
+GenAI_Ind,Industry,"Arts, Entertainment, and Recreation",Share of workers using genAI at work,2024-11-01,0.2881129428,0.07247376015000001,71
+GenAI_Ind,Industry,"Arts, Entertainment, and Recreation",Share of workers using genAI at work,2025-02-01,0.3005803525,0.07316280437,71
+GenAI_Ind,Industry,"Arts, Entertainment, and Recreation",Share of workers using genAI at work,2025-05-01,0.34379473380000003,0.07696724053,71
+GenAI_Ind,Industry,"Arts, Entertainment, and Recreation",Share of workers using genAI at work,2025-08-01,0.2908051478,0.06447095091999999,71
+GenAI_Ind,Industry,"Arts, Entertainment, and Recreation",Share of workers using genAI at work,2025-11-01,0.429412976,0.06633928148,71
+GenAI_Ind,Industry,"Arts, Entertainment, and Recreation",Share of workers using genAI at work,2026-02-01,0.2851326695,0.06748339112,71
+GenAI_Ind,Industry,"Arts, Entertainment, and Recreation",Share of workers using genAI at work,2026-05-01,0.31999208079999997,0.06212477871,71
+GenAI_Ind,Industry,Construction,Share of workers using genAI at work,2024-08-01,0.37775806289999997,0.040408191489999995,23
+GenAI_Ind,Industry,Construction,Share of workers using genAI at work,2024-11-01,0.3394365683,0.03684947031,23
+GenAI_Ind,Industry,Construction,Share of workers using genAI at work,2025-02-01,0.3089267405,0.03901886945,23
+GenAI_Ind,Industry,Construction,Share of workers using genAI at work,2025-05-01,0.3736144837,0.03975315189,23
+GenAI_Ind,Industry,Construction,Share of workers using genAI at work,2025-08-01,0.37936159259999996,0.036944143469999996,23
+GenAI_Ind,Industry,Construction,Share of workers using genAI at work,2025-11-01,0.42801263900000003,0.03571629954,23
+GenAI_Ind,Industry,Construction,Share of workers using genAI at work,2026-02-01,0.5135781629,0.0381854924,23
+GenAI_Ind,Industry,Construction,Share of workers using genAI at work,2026-05-01,0.4354248334,0.03870957595,23
+GenAI_Ind,Industry,Educational Services,Share of workers using genAI at work,2024-08-01,0.40793926810000003,0.041037397889999994,61
+GenAI_Ind,Industry,Educational Services,Share of workers using genAI at work,2024-11-01,0.3162665901,0.03830499821,61
+GenAI_Ind,Industry,Educational Services,Share of workers using genAI at work,2025-02-01,0.3789387199,0.039284522690000004,61
+GenAI_Ind,Industry,Educational Services,Share of workers using genAI at work,2025-05-01,0.3705509136,0.04014812204,61
+GenAI_Ind,Industry,Educational Services,Share of workers using genAI at work,2025-08-01,0.43069290289999995,0.03943443295,61
+GenAI_Ind,Industry,Educational Services,Share of workers using genAI at work,2025-11-01,0.5050641036,0.042229768449999996,61
+GenAI_Ind,Industry,Educational Services,Share of workers using genAI at work,2026-02-01,0.5456185692,0.03898347539,61
+GenAI_Ind,Industry,Educational Services,Share of workers using genAI at work,2026-05-01,0.5258518629000001,0.04166160578999999,61
+GenAI_Ind,Industry,Finance and Insurance,Share of workers using genAI at work,2024-08-01,0.5187336083,0.04450649303,52
+GenAI_Ind,Industry,Finance and Insurance,Share of workers using genAI at work,2024-11-01,0.4845279615,0.04752055769,52
+GenAI_Ind,Industry,Finance and Insurance,Share of workers using genAI at work,2025-02-01,0.3786030406,0.04321365061,52
+GenAI_Ind,Industry,Finance and Insurance,Share of workers using genAI at work,2025-05-01,0.4544433014,0.047794248389999995,52
+GenAI_Ind,Industry,Finance and Insurance,Share of workers using genAI at work,2025-08-01,0.5609357131,0.046227683490000004,52
+GenAI_Ind,Industry,Finance and Insurance,Share of workers using genAI at work,2025-11-01,0.6318259479,0.040478937720000004,52
+GenAI_Ind,Industry,Finance and Insurance,Share of workers using genAI at work,2026-02-01,0.6613085169999999,0.04352837056,52
+GenAI_Ind,Industry,Finance and Insurance,Share of workers using genAI at work,2026-05-01,0.6733240401,0.043433561159999995,52
+GenAI_Ind,Industry,Health Care and Social Assistance,Share of workers using genAI at work,2024-08-01,0.23442599860000002,0.03197860602,62
+GenAI_Ind,Industry,Health Care and Social Assistance,Share of workers using genAI at work,2024-11-01,0.29628209250000004,0.03182522476,62
+GenAI_Ind,Industry,Health Care and Social Assistance,Share of workers using genAI at work,2025-02-01,0.3105881499,0.03463303221,62
+GenAI_Ind,Industry,Health Care and Social Assistance,Share of workers using genAI at work,2025-05-01,0.2691590983,0.03421956803,62
+GenAI_Ind,Industry,Health Care and Social Assistance,Share of workers using genAI at work,2025-08-01,0.23013887400000002,0.026176240320000002,62
+GenAI_Ind,Industry,Health Care and Social Assistance,Share of workers using genAI at work,2025-11-01,0.319074292,0.02828914263,62
+GenAI_Ind,Industry,Health Care and Social Assistance,Share of workers using genAI at work,2026-02-01,0.3460777808,0.03303940806,62
+GenAI_Ind,Industry,Health Care and Social Assistance,Share of workers using genAI at work,2026-05-01,0.3716530346,0.029769226670000003,62
+GenAI_Ind,Industry,Information,Share of workers using genAI at work,2024-08-01,0.6470635838,0.04904549647,51
+GenAI_Ind,Industry,Information,Share of workers using genAI at work,2024-11-01,0.5655108441,0.041048818279999996,51
+GenAI_Ind,Industry,Information,Share of workers using genAI at work,2025-02-01,0.5971484726,0.05230740506,51
+GenAI_Ind,Industry,Information,Share of workers using genAI at work,2025-05-01,0.5930197518,0.04017437958,51
+GenAI_Ind,Industry,Information,Share of workers using genAI at work,2025-08-01,0.6896888368999999,0.040601248449999995,51
+GenAI_Ind,Industry,Information,Share of workers using genAI at work,2025-11-01,0.70341005,0.042679688279999996,51
+GenAI_Ind,Industry,Information,Share of workers using genAI at work,2026-02-01,0.6844761164000001,0.048025890579999994,51
+GenAI_Ind,Industry,Information,Share of workers using genAI at work,2026-05-01,0.8219260365,0.030277040300000002,51
+GenAI_Ind,Industry,Management of companies and enterprises,Share of workers using genAI at work,2024-08-01,0.5824390021,0.0941740253,55
+GenAI_Ind,Industry,Management of companies and enterprises,Share of workers using genAI at work,2024-11-01,0.6846525853,0.07999523214,55
+GenAI_Ind,Industry,Management of companies and enterprises,Share of workers using genAI at work,2025-02-01,0.7261125948,0.08352990926000001,55
+GenAI_Ind,Industry,Management of companies and enterprises,Share of workers using genAI at work,2025-05-01,0.4935732309,0.08666587198,55
+GenAI_Ind,Industry,Management of companies and enterprises,Share of workers using genAI at work,2025-08-01,0.6479469731999999,0.07711574359000001,55
+GenAI_Ind,Industry,Management of companies and enterprises,Share of workers using genAI at work,2025-11-01,0.7205724766,0.07623343401999999,55
+GenAI_Ind,Industry,Management of companies and enterprises,Share of workers using genAI at work,2026-02-01,0.6389750625,0.0814714144,55
+GenAI_Ind,Industry,Management of companies and enterprises,Share of workers using genAI at work,2026-05-01,0.644594344,0.08142731162,55
+GenAI_Ind,Industry,Manufacturing,Share of workers using genAI at work,2024-08-01,0.3519984547,0.040386029690000005,31
+GenAI_Ind,Industry,Manufacturing,Share of workers using genAI at work,2024-11-01,0.25022781110000003,0.034530182310000004,31
+GenAI_Ind,Industry,Manufacturing,Share of workers using genAI at work,2025-02-01,0.3152580943,0.03957241668,31
+GenAI_Ind,Industry,Manufacturing,Share of workers using genAI at work,2025-05-01,0.3501288459,0.04302083426,31
+GenAI_Ind,Industry,Manufacturing,Share of workers using genAI at work,2025-08-01,0.41229813829999995,0.041113141740000005,31
+GenAI_Ind,Industry,Manufacturing,Share of workers using genAI at work,2025-11-01,0.3987842036,0.03669866571,31
+GenAI_Ind,Industry,Manufacturing,Share of workers using genAI at work,2026-02-01,0.4770541418,0.04429499924,31
+GenAI_Ind,Industry,Manufacturing,Share of workers using genAI at work,2026-05-01,0.476586711,0.044520941519999996,31
+GenAI_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of workers using genAI at work,2024-08-01,0.5056737987000001,0.18291884079999998,21
+GenAI_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of workers using genAI at work,2024-11-01,0.53347347,0.11386854539999999,21
+GenAI_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of workers using genAI at work,2025-02-01,0.5891864799,0.16555448770000003,21
+GenAI_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of workers using genAI at work,2025-05-01,0.5492235588,0.1556443761,21
+GenAI_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of workers using genAI at work,2025-08-01,0.6535756289,0.15267953509999999,21
+GenAI_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of workers using genAI at work,2025-11-01,0.46065918969999997,0.1879421649,21
+GenAI_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of workers using genAI at work,2026-02-01,0.4495969406,0.187350368,21
+GenAI_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Share of workers using genAI at work,2026-05-01,0.2609945654,0.10835293829999999,21
+GenAI_Ind,Industry,"Other Services, Except Public Administration",Share of workers using genAI at work,2024-08-01,0.1879049931,0.04049166937,81
+GenAI_Ind,Industry,"Other Services, Except Public Administration",Share of workers using genAI at work,2024-11-01,0.2114962286,0.03326177584,81
+GenAI_Ind,Industry,"Other Services, Except Public Administration",Share of workers using genAI at work,2025-02-01,0.2650820508,0.044188037470000004,81
+GenAI_Ind,Industry,"Other Services, Except Public Administration",Share of workers using genAI at work,2025-05-01,0.2565662125,0.03789460988,81
+GenAI_Ind,Industry,"Other Services, Except Public Administration",Share of workers using genAI at work,2025-08-01,0.28664142179999996,0.04437220441,81
+GenAI_Ind,Industry,"Other Services, Except Public Administration",Share of workers using genAI at work,2025-11-01,0.3111019124,0.03794012562,81
+GenAI_Ind,Industry,"Other Services, Except Public Administration",Share of workers using genAI at work,2026-02-01,0.2853205472,0.0427153972,81
+GenAI_Ind,Industry,"Other Services, Except Public Administration",Share of workers using genAI at work,2026-05-01,0.2467841347,0.03713392418,81
+GenAI_Ind,Industry,"Professional, Scientific, and Technical Services",Share of workers using genAI at work,2024-08-01,0.4510432975,0.043448085580000004,54
+GenAI_Ind,Industry,"Professional, Scientific, and Technical Services",Share of workers using genAI at work,2024-11-01,0.46655501520000003,0.04327910019,54
+GenAI_Ind,Industry,"Professional, Scientific, and Technical Services",Share of workers using genAI at work,2025-02-01,0.4726509438,0.043070160790000006,54
+GenAI_Ind,Industry,"Professional, Scientific, and Technical Services",Share of workers using genAI at work,2025-05-01,0.5240630187,0.04389785328,54
+GenAI_Ind,Industry,"Professional, Scientific, and Technical Services",Share of workers using genAI at work,2025-08-01,0.6243848281,0.04027933323,54
+GenAI_Ind,Industry,"Professional, Scientific, and Technical Services",Share of workers using genAI at work,2025-11-01,0.6168699361000001,0.03718844698,54
+GenAI_Ind,Industry,"Professional, Scientific, and Technical Services",Share of workers using genAI at work,2026-02-01,0.6395501052,0.03589906454,54
+GenAI_Ind,Industry,"Professional, Scientific, and Technical Services",Share of workers using genAI at work,2026-05-01,0.6954294433,0.03416261932,54
+GenAI_Ind,Industry,Public Administration,Share of workers using genAI at work,2024-08-01,0.2309523013,0.07211208643,92
+GenAI_Ind,Industry,Public Administration,Share of workers using genAI at work,2024-11-01,0.2284437243,0.06658525204,92
+GenAI_Ind,Industry,Public Administration,Share of workers using genAI at work,2025-02-01,0.132330269,0.04828651128,92
+GenAI_Ind,Industry,Public Administration,Share of workers using genAI at work,2025-05-01,0.1096019332,0.04121975163,92
+GenAI_Ind,Industry,Public Administration,Share of workers using genAI at work,2025-08-01,0.1459101491,0.04985987615,92
+GenAI_Ind,Industry,Public Administration,Share of workers using genAI at work,2025-11-01,0.26764161820000004,0.07691595242,92
+GenAI_Ind,Industry,Public Administration,Share of workers using genAI at work,2026-02-01,0.1925073287,0.05431371768,92
+GenAI_Ind,Industry,Public Administration,Share of workers using genAI at work,2026-05-01,0.2335467104,0.06746164748,92
+GenAI_Ind,Industry,Real Estate and Rental and Leasing,Share of workers using genAI at work,2024-08-01,0.45611974359999996,0.08428273494,53
+GenAI_Ind,Industry,Real Estate and Rental and Leasing,Share of workers using genAI at work,2024-11-01,0.23536502850000002,0.05367849919,53
+GenAI_Ind,Industry,Real Estate and Rental and Leasing,Share of workers using genAI at work,2025-02-01,0.2860589839,0.06510083256,53
+GenAI_Ind,Industry,Real Estate and Rental and Leasing,Share of workers using genAI at work,2025-05-01,0.42172384960000003,0.08525279071,53
+GenAI_Ind,Industry,Real Estate and Rental and Leasing,Share of workers using genAI at work,2025-08-01,0.46123989039999996,0.07703216472,53
+GenAI_Ind,Industry,Real Estate and Rental and Leasing,Share of workers using genAI at work,2025-11-01,0.5824654465,0.08065131129999999,53
+GenAI_Ind,Industry,Real Estate and Rental and Leasing,Share of workers using genAI at work,2026-02-01,0.5453759202,0.080514968,53
+GenAI_Ind,Industry,Real Estate and Rental and Leasing,Share of workers using genAI at work,2026-05-01,0.5649283584,0.07549219826,53
+GenAI_Ind,Industry,Retail Trade,Share of workers using genAI at work,2024-08-01,0.3477354903,0.03382863125,44
+GenAI_Ind,Industry,Retail Trade,Share of workers using genAI at work,2024-11-01,0.27914346290000003,0.03394915342,44
+GenAI_Ind,Industry,Retail Trade,Share of workers using genAI at work,2025-02-01,0.27156965159999996,0.0365889167,44
+GenAI_Ind,Industry,Retail Trade,Share of workers using genAI at work,2025-05-01,0.3105967639,0.03881987578,44
+GenAI_Ind,Industry,Retail Trade,Share of workers using genAI at work,2025-08-01,0.2704632431,0.03029681703,44
+GenAI_Ind,Industry,Retail Trade,Share of workers using genAI at work,2025-11-01,0.32397375269999995,0.03153771967,44
+GenAI_Ind,Industry,Retail Trade,Share of workers using genAI at work,2026-02-01,0.3359275653,0.03769504021,44
+GenAI_Ind,Industry,Retail Trade,Share of workers using genAI at work,2026-05-01,0.3945122656,0.03738902368,44
+GenAI_Ind,Industry,Transportation and Warehousing,Share of workers using genAI at work,2024-08-01,0.17769577949999998,0.052881389519999995,48
+GenAI_Ind,Industry,Transportation and Warehousing,Share of workers using genAI at work,2024-11-01,0.1986761232,0.03543222907,48
+GenAI_Ind,Industry,Transportation and Warehousing,Share of workers using genAI at work,2025-02-01,0.2315400276,0.05569264071,48
+GenAI_Ind,Industry,Transportation and Warehousing,Share of workers using genAI at work,2025-05-01,0.208097328,0.05114184164,48
+GenAI_Ind,Industry,Transportation and Warehousing,Share of workers using genAI at work,2025-08-01,0.3053552672,0.049172124860000006,48
+GenAI_Ind,Industry,Transportation and Warehousing,Share of workers using genAI at work,2025-11-01,0.20962503659999998,0.043590570499999995,48
+GenAI_Ind,Industry,Transportation and Warehousing,Share of workers using genAI at work,2026-02-01,0.2992073302,0.05048546431,48
+GenAI_Ind,Industry,Transportation and Warehousing,Share of workers using genAI at work,2026-05-01,0.2510418456,0.050089395220000006,48
+GenAI_Ind,Industry,Utilities,Share of workers using genAI at work,2024-08-01,0.3324384567,0.09770481706,22
+GenAI_Ind,Industry,Utilities,Share of workers using genAI at work,2024-11-01,0.3103317081,0.06913708389,22
+GenAI_Ind,Industry,Utilities,Share of workers using genAI at work,2025-02-01,0.40740152780000005,0.08842677715000001,22
+GenAI_Ind,Industry,Utilities,Share of workers using genAI at work,2025-05-01,0.5110371998000001,0.09163692638000001,22
+GenAI_Ind,Industry,Utilities,Share of workers using genAI at work,2025-08-01,0.43707847200000005,0.09814418406,22
+GenAI_Ind,Industry,Utilities,Share of workers using genAI at work,2025-11-01,0.5249547657,0.1009773652,22
+GenAI_Ind,Industry,Utilities,Share of workers using genAI at work,2026-02-01,0.4713774135,0.08860993602,22
+GenAI_Ind,Industry,Utilities,Share of workers using genAI at work,2026-05-01,0.5642715402999999,0.09573739746,22
+GenAI_Ind,Industry,Wholesale Trade,Share of workers using genAI at work,2024-08-01,0.40106423309999994,0.08253109758,42
+GenAI_Ind,Industry,Wholesale Trade,Share of workers using genAI at work,2024-11-01,0.3768888555,0.08049826490999999,42
+GenAI_Ind,Industry,Wholesale Trade,Share of workers using genAI at work,2025-02-01,0.33145019130000003,0.08315485434999999,42
+GenAI_Ind,Industry,Wholesale Trade,Share of workers using genAI at work,2025-05-01,0.41633456879999997,0.09154349675000001,42
+GenAI_Ind,Industry,Wholesale Trade,Share of workers using genAI at work,2025-08-01,0.3945785989,0.08496365497,42
+GenAI_Ind,Industry,Wholesale Trade,Share of workers using genAI at work,2025-11-01,0.4837608935,0.08116785857,42
+GenAI_Ind,Industry,Wholesale Trade,Share of workers using genAI at work,2026-02-01,0.3537006729,0.08296575075,42
+GenAI_Ind,Industry,Wholesale Trade,Share of workers using genAI at work,2026-05-01,0.6211654594,0.08813289713,42
+GenAI_Occ,Occupation,Architecture and Engineering Occupations,Share of workers using genAI at work,2024-08-01,0.29766723689999997,0.07033350365,
+GenAI_Occ,Occupation,Architecture and Engineering Occupations,Share of workers using genAI at work,2024-11-01,0.3570392689,0.07369244093999999,
+GenAI_Occ,Occupation,Architecture and Engineering Occupations,Share of workers using genAI at work,2025-02-01,0.2669207251,0.06643506947,
+GenAI_Occ,Occupation,Architecture and Engineering Occupations,Share of workers using genAI at work,2025-05-01,0.4192699242,0.08035106579000001,
+GenAI_Occ,Occupation,Architecture and Engineering Occupations,Share of workers using genAI at work,2025-08-01,0.4675678652,0.08353478957,
+GenAI_Occ,Occupation,Architecture and Engineering Occupations,Share of workers using genAI at work,2025-11-01,0.4816701003,0.06961820308,
+GenAI_Occ,Occupation,Architecture and Engineering Occupations,Share of workers using genAI at work,2026-02-01,0.6310834091,0.08339104465,
+GenAI_Occ,Occupation,Architecture and Engineering Occupations,Share of workers using genAI at work,2026-05-01,0.49862227670000003,0.07250040751,
+GenAI_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of workers using genAI at work,2024-08-01,0.32661470319999997,0.05951926827,
+GenAI_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of workers using genAI at work,2024-11-01,0.3442972485,0.04988753202,
+GenAI_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of workers using genAI at work,2025-02-01,0.5267292108,0.056943520879999994,
+GenAI_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of workers using genAI at work,2025-05-01,0.5585680176000001,0.0597619333,
+GenAI_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of workers using genAI at work,2025-08-01,0.5711542064999999,0.052091249150000005,
+GenAI_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of workers using genAI at work,2025-11-01,0.5649554083,0.05228421718,
+GenAI_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of workers using genAI at work,2026-02-01,0.4503315786,0.06832568881000001,
+GenAI_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Share of workers using genAI at work,2026-05-01,0.5108079822,0.06141797211,
+GenAI_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of workers using genAI at work,2024-08-01,0.18774492410000002,0.06220154752,
+GenAI_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of workers using genAI at work,2024-11-01,0.2438229501,0.06744029484,
+GenAI_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of workers using genAI at work,2025-02-01,0.092180483,0.04380119073,
+GenAI_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of workers using genAI at work,2025-05-01,0.1257334235,0.05027772401,
+GenAI_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of workers using genAI at work,2025-08-01,0.08932192594,0.03816757672,
+GenAI_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of workers using genAI at work,2025-11-01,0.10852506249999999,0.048508602219999995,
+GenAI_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of workers using genAI at work,2026-02-01,0.13771357139999998,0.044684800649999995,
+GenAI_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Share of workers using genAI at work,2026-05-01,0.2163341351,0.05863195673,
+GenAI_Occ,Occupation,Business and Financial Operations Occupations,Share of workers using genAI at work,2024-08-01,0.4798511479,0.04407266052,
+GenAI_Occ,Occupation,Business and Financial Operations Occupations,Share of workers using genAI at work,2024-11-01,0.48473351039999996,0.04652571131,
+GenAI_Occ,Occupation,Business and Financial Operations Occupations,Share of workers using genAI at work,2025-02-01,0.31189611899999997,0.04426603583,
+GenAI_Occ,Occupation,Business and Financial Operations Occupations,Share of workers using genAI at work,2025-05-01,0.418086413,0.04717140284,
+GenAI_Occ,Occupation,Business and Financial Operations Occupations,Share of workers using genAI at work,2025-08-01,0.5420402587,0.047584915900000004,
+GenAI_Occ,Occupation,Business and Financial Operations Occupations,Share of workers using genAI at work,2025-11-01,0.5832247029,0.04063121599,
+GenAI_Occ,Occupation,Business and Financial Operations Occupations,Share of workers using genAI at work,2026-02-01,0.5962556983999999,0.04247708132,
+GenAI_Occ,Occupation,Business and Financial Operations Occupations,Share of workers using genAI at work,2026-05-01,0.6032603182999999,0.04577429712,
+GenAI_Occ,Occupation,Community and Social Service Occupations,Share of workers using genAI at work,2024-08-01,0.2528329789,0.06989967556,
+GenAI_Occ,Occupation,Community and Social Service Occupations,Share of workers using genAI at work,2024-11-01,0.3451627785,0.06165154675,
+GenAI_Occ,Occupation,Community and Social Service Occupations,Share of workers using genAI at work,2025-02-01,0.3263895643,0.06677978182000001,
+GenAI_Occ,Occupation,Community and Social Service Occupations,Share of workers using genAI at work,2025-05-01,0.36775488850000004,0.1125776271,
+GenAI_Occ,Occupation,Community and Social Service Occupations,Share of workers using genAI at work,2025-08-01,0.2999498711,0.06760861083,
+GenAI_Occ,Occupation,Community and Social Service Occupations,Share of workers using genAI at work,2025-11-01,0.4307175317,0.07793144217,
+GenAI_Occ,Occupation,Community and Social Service Occupations,Share of workers using genAI at work,2026-02-01,0.5007810344,0.07507494820999999,
+GenAI_Occ,Occupation,Community and Social Service Occupations,Share of workers using genAI at work,2026-05-01,0.538323244,0.08032040851,
+GenAI_Occ,Occupation,Computer and mathematical occupations,Share of workers using genAI at work,2024-08-01,0.5427690955,0.04448586258,
+GenAI_Occ,Occupation,Computer and mathematical occupations,Share of workers using genAI at work,2024-11-01,0.5299804529,0.03448875345,
+GenAI_Occ,Occupation,Computer and mathematical occupations,Share of workers using genAI at work,2025-02-01,0.5467099779,0.04710724805,
+GenAI_Occ,Occupation,Computer and mathematical occupations,Share of workers using genAI at work,2025-05-01,0.6436782467000001,0.03216038746,
+GenAI_Occ,Occupation,Computer and mathematical occupations,Share of workers using genAI at work,2025-08-01,0.7105663777,0.03855114483,
+GenAI_Occ,Occupation,Computer and mathematical occupations,Share of workers using genAI at work,2025-11-01,0.7288958751,0.03388976698,
+GenAI_Occ,Occupation,Computer and mathematical occupations,Share of workers using genAI at work,2026-02-01,0.7194807452,0.037999919,
+GenAI_Occ,Occupation,Computer and mathematical occupations,Share of workers using genAI at work,2026-05-01,0.7761525129,0.03700919223,
+GenAI_Occ,Occupation,Construction and Extraction Occupations,Share of workers using genAI at work,2024-08-01,0.4335521218,0.05730291415,
+GenAI_Occ,Occupation,Construction and Extraction Occupations,Share of workers using genAI at work,2024-11-01,0.2728860828,0.04864659504,
+GenAI_Occ,Occupation,Construction and Extraction Occupations,Share of workers using genAI at work,2025-02-01,0.3105052789,0.06061766087,
+GenAI_Occ,Occupation,Construction and Extraction Occupations,Share of workers using genAI at work,2025-05-01,0.3239323693,0.05525455455,
+GenAI_Occ,Occupation,Construction and Extraction Occupations,Share of workers using genAI at work,2025-08-01,0.31366163490000004,0.04596928104,
+GenAI_Occ,Occupation,Construction and Extraction Occupations,Share of workers using genAI at work,2025-11-01,0.2976733433,0.04515368469,
+GenAI_Occ,Occupation,Construction and Extraction Occupations,Share of workers using genAI at work,2026-02-01,0.38518687900000004,0.05431280261,
+GenAI_Occ,Occupation,Construction and Extraction Occupations,Share of workers using genAI at work,2026-05-01,0.339348922,0.052604939030000006,
+GenAI_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of workers using genAI at work,2024-08-01,0.45971972440000003,0.04286738918,
+GenAI_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of workers using genAI at work,2024-11-01,0.3469912859,0.043131247420000005,
+GenAI_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of workers using genAI at work,2025-02-01,0.3953680251,0.04547408210000001,
+GenAI_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of workers using genAI at work,2025-05-01,0.41625812869999995,0.04889180912,
+GenAI_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of workers using genAI at work,2025-08-01,0.4981969719,0.042846944320000004,
+GenAI_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of workers using genAI at work,2025-11-01,0.5594216096,0.044754283619999995,
+GenAI_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of workers using genAI at work,2026-02-01,0.5821380547,0.03892840225,
+GenAI_Occ,Occupation,"Educational Instruction, and Library Occupations",Share of workers using genAI at work,2026-05-01,0.5629748966,0.04573302921,
+GenAI_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of workers using genAI at work,2024-08-01,0.46585236799999996,0.12234914570000001,
+GenAI_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of workers using genAI at work,2024-11-01,0.3178370916,0.1102078924,
+GenAI_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of workers using genAI at work,2025-02-01,0.2297118198,0.09488201605,
+GenAI_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of workers using genAI at work,2025-05-01,0.5399590874,0.1384519115,
+GenAI_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of workers using genAI at work,2025-08-01,0.2447656075,0.09354856353,
+GenAI_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of workers using genAI at work,2025-11-01,0.4930018666,0.1183741167,
+GenAI_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of workers using genAI at work,2026-02-01,0.5228761561999999,0.1604162548,
+GenAI_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Share of workers using genAI at work,2026-05-01,0.3819595583,0.1314556247,
+GenAI_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of workers using genAI at work,2024-08-01,0.054222827880000005,0.029597903840000002,
+GenAI_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of workers using genAI at work,2024-11-01,0.1320183319,0.046368568049999996,
+GenAI_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of workers using genAI at work,2025-02-01,0.2103849541,0.060744248550000005,
+GenAI_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of workers using genAI at work,2025-05-01,0.2510954386,0.05254901787,
+GenAI_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of workers using genAI at work,2025-08-01,0.1248282481,0.029686036869999998,
+GenAI_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of workers using genAI at work,2025-11-01,0.194864464,0.03687052978,
+GenAI_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of workers using genAI at work,2026-02-01,0.2060901617,0.04609848926,
+GenAI_Occ,Occupation,Food Preparation and Serving Related Occupations,Share of workers using genAI at work,2026-05-01,0.2914079254,0.056572171909999996,
+GenAI_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of workers using genAI at work,2024-08-01,0.3447405131,0.05479067389,
+GenAI_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of workers using genAI at work,2024-11-01,0.3831848463,0.04951823824,
+GenAI_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of workers using genAI at work,2025-02-01,0.3004071253,0.04996635447,
+GenAI_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of workers using genAI at work,2025-05-01,0.3091216717,0.05512485243,
+GenAI_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of workers using genAI at work,2025-08-01,0.2928926034,0.04547777298,
+GenAI_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of workers using genAI at work,2025-11-01,0.4362861951,0.048543297719999996,
+GenAI_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of workers using genAI at work,2026-02-01,0.3842201771,0.05134048043,
+GenAI_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Share of workers using genAI at work,2026-05-01,0.44688026319999996,0.05008320431,
+GenAI_Occ,Occupation,Healthcare Support Occupations,Share of workers using genAI at work,2024-08-01,0.1993037854,0.052107251300000004,
+GenAI_Occ,Occupation,Healthcare Support Occupations,Share of workers using genAI at work,2024-11-01,0.1614369031,0.047290763250000006,
+GenAI_Occ,Occupation,Healthcare Support Occupations,Share of workers using genAI at work,2025-02-01,0.3163038468,0.06609872958,
+GenAI_Occ,Occupation,Healthcare Support Occupations,Share of workers using genAI at work,2025-05-01,0.2251765709,0.05394277864,
+GenAI_Occ,Occupation,Healthcare Support Occupations,Share of workers using genAI at work,2025-08-01,0.1664383762,0.043162021099999996,
+GenAI_Occ,Occupation,Healthcare Support Occupations,Share of workers using genAI at work,2025-11-01,0.1888429149,0.03902962179,
+GenAI_Occ,Occupation,Healthcare Support Occupations,Share of workers using genAI at work,2026-02-01,0.211714919,0.047393117309999996,
+GenAI_Occ,Occupation,Healthcare Support Occupations,Share of workers using genAI at work,2026-05-01,0.2451643751,0.04985071475,
+GenAI_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of workers using genAI at work,2024-08-01,0.2906855141,0.07889470947999999,
+GenAI_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of workers using genAI at work,2024-11-01,0.3285762038,0.06698865267000001,
+GenAI_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of workers using genAI at work,2025-02-01,0.2011731833,0.05637342877,
+GenAI_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of workers using genAI at work,2025-05-01,0.345301801,0.07352785271000001,
+GenAI_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of workers using genAI at work,2025-08-01,0.3573335823,0.06093398133,
+GenAI_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of workers using genAI at work,2025-11-01,0.35207468820000004,0.07048351189,
+GenAI_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of workers using genAI at work,2026-02-01,0.44789549,0.08331016473,
+GenAI_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Share of workers using genAI at work,2026-05-01,0.3167363408,0.07520174781,
+GenAI_Occ,Occupation,Legal Occupations,Share of workers using genAI at work,2024-08-01,0.173623908,0.12018613589999999,
+GenAI_Occ,Occupation,Legal Occupations,Share of workers using genAI at work,2024-11-01,0.1974003109,0.07891847968,
+GenAI_Occ,Occupation,Legal Occupations,Share of workers using genAI at work,2025-02-01,0.4769980707,0.1039786265,
+GenAI_Occ,Occupation,Legal Occupations,Share of workers using genAI at work,2025-05-01,0.6353017404,0.1027434295,
+GenAI_Occ,Occupation,Legal Occupations,Share of workers using genAI at work,2025-08-01,0.5983632017,0.1137687202,
+GenAI_Occ,Occupation,Legal Occupations,Share of workers using genAI at work,2025-11-01,0.6735240481,0.1067011976,
+GenAI_Occ,Occupation,Legal Occupations,Share of workers using genAI at work,2026-02-01,0.6506653941,0.1082345679,
+GenAI_Occ,Occupation,Legal Occupations,Share of workers using genAI at work,2026-05-01,0.5326906036,0.1093887967,
+GenAI_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of workers using genAI at work,2024-08-01,0.3127100173,0.08735937032,
+GenAI_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of workers using genAI at work,2024-11-01,0.2791212637,0.07679418342,
+GenAI_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of workers using genAI at work,2025-02-01,0.3590933324,0.08958889024,
+GenAI_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of workers using genAI at work,2025-05-01,0.5565921698999999,0.1000689185,
+GenAI_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of workers using genAI at work,2025-08-01,0.4809972206,0.1139462593,
+GenAI_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of workers using genAI at work,2025-11-01,0.6274801008,0.09064585602,
+GenAI_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of workers using genAI at work,2026-02-01,0.5466252984,0.09800876587,
+GenAI_Occ,Occupation,"Life, Physical, and Social Science Occupations",Share of workers using genAI at work,2026-05-01,0.5435773108,0.10624794850000001,
+GenAI_Occ,Occupation,Management Occupations,Share of workers using genAI at work,2024-08-01,0.5593415046,0.02688309102,
+GenAI_Occ,Occupation,Management Occupations,Share of workers using genAI at work,2024-11-01,0.4807991426,0.024493810680000002,
+GenAI_Occ,Occupation,Management Occupations,Share of workers using genAI at work,2025-02-01,0.518645154,0.02818784038,
+GenAI_Occ,Occupation,Management Occupations,Share of workers using genAI at work,2025-05-01,0.4958935728,0.02739985607,
+GenAI_Occ,Occupation,Management Occupations,Share of workers using genAI at work,2025-08-01,0.6145854873,0.02493655587,
+GenAI_Occ,Occupation,Management Occupations,Share of workers using genAI at work,2025-11-01,0.6240688068,0.023581708099999998,
+GenAI_Occ,Occupation,Management Occupations,Share of workers using genAI at work,2026-02-01,0.6494606914000001,0.02357647982,
+GenAI_Occ,Occupation,Management Occupations,Share of workers using genAI at work,2026-05-01,0.7189020026999999,0.02302773476,
+GenAI_Occ,Occupation,Office and Administrative Support Occupations,Share of workers using genAI at work,2024-08-01,0.2470434238,0.03472656112,
+GenAI_Occ,Occupation,Office and Administrative Support Occupations,Share of workers using genAI at work,2024-11-01,0.212687575,0.03143880661,
+GenAI_Occ,Occupation,Office and Administrative Support Occupations,Share of workers using genAI at work,2025-02-01,0.2247747394,0.031237003080000002,
+GenAI_Occ,Occupation,Office and Administrative Support Occupations,Share of workers using genAI at work,2025-05-01,0.2958094585,0.035501276490000004,
+GenAI_Occ,Occupation,Office and Administrative Support Occupations,Share of workers using genAI at work,2025-08-01,0.27884929929999996,0.03400017841,
+GenAI_Occ,Occupation,Office and Administrative Support Occupations,Share of workers using genAI at work,2025-11-01,0.3216360719,0.03412052792,
+GenAI_Occ,Occupation,Office and Administrative Support Occupations,Share of workers using genAI at work,2026-02-01,0.36472933220000003,0.03726295367,
+GenAI_Occ,Occupation,Office and Administrative Support Occupations,Share of workers using genAI at work,2026-05-01,0.3691004993,0.035984959500000004,
+GenAI_Occ,Occupation,Personal Care and Service Occupations,Share of workers using genAI at work,2024-08-01,0.1450117659,0.06393170054,
+GenAI_Occ,Occupation,Personal Care and Service Occupations,Share of workers using genAI at work,2024-11-01,0.1772235942,0.049944722510000004,
+GenAI_Occ,Occupation,Personal Care and Service Occupations,Share of workers using genAI at work,2025-02-01,0.4325372789,0.10569193739999999,
+GenAI_Occ,Occupation,Personal Care and Service Occupations,Share of workers using genAI at work,2025-05-01,0.1456182075,0.057033524169999995,
+GenAI_Occ,Occupation,Personal Care and Service Occupations,Share of workers using genAI at work,2025-08-01,0.1975591423,0.06290371876,
+GenAI_Occ,Occupation,Personal Care and Service Occupations,Share of workers using genAI at work,2025-11-01,0.2183052206,0.05926536784,
+GenAI_Occ,Occupation,Personal Care and Service Occupations,Share of workers using genAI at work,2026-02-01,0.37253386480000006,0.08122622174,
+GenAI_Occ,Occupation,Personal Care and Service Occupations,Share of workers using genAI at work,2026-05-01,0.20764420220000002,0.05195841684,
+GenAI_Occ,Occupation,Production Occupations,Share of workers using genAI at work,2024-08-01,0.22963340370000002,0.05086745318,
+GenAI_Occ,Occupation,Production Occupations,Share of workers using genAI at work,2024-11-01,0.30224094279999997,0.049755327960000005,
+GenAI_Occ,Occupation,Production Occupations,Share of workers using genAI at work,2025-02-01,0.2384849041,0.04732851376,
+GenAI_Occ,Occupation,Production Occupations,Share of workers using genAI at work,2025-05-01,0.36607571839999997,0.053677110160000006,
+GenAI_Occ,Occupation,Production Occupations,Share of workers using genAI at work,2025-08-01,0.38459702819999997,0.056248274870000003,
+GenAI_Occ,Occupation,Production Occupations,Share of workers using genAI at work,2025-11-01,0.2843181064,0.041462736400000005,
+GenAI_Occ,Occupation,Production Occupations,Share of workers using genAI at work,2026-02-01,0.3887972115,0.0557714333,
+GenAI_Occ,Occupation,Production Occupations,Share of workers using genAI at work,2026-05-01,0.37909288269999997,0.056443066140000005,
+GenAI_Occ,Occupation,Protective Service Occupations,Share of workers using genAI at work,2024-08-01,0.1583511519,0.08520991383,
+GenAI_Occ,Occupation,Protective Service Occupations,Share of workers using genAI at work,2024-11-01,0.1297249047,0.07791122909,
+GenAI_Occ,Occupation,Protective Service Occupations,Share of workers using genAI at work,2025-02-01,0.04541756290000001,0.03433982623,
+GenAI_Occ,Occupation,Protective Service Occupations,Share of workers using genAI at work,2025-05-01,0.14273395349999998,0.09724568376,
+GenAI_Occ,Occupation,Protective Service Occupations,Share of workers using genAI at work,2025-08-01,0.3005570735,0.09570343247,
+GenAI_Occ,Occupation,Protective Service Occupations,Share of workers using genAI at work,2025-11-01,0.350806014,0.08997721283,
+GenAI_Occ,Occupation,Protective Service Occupations,Share of workers using genAI at work,2026-02-01,0.1466568874,0.06259934429,
+GenAI_Occ,Occupation,Protective Service Occupations,Share of workers using genAI at work,2026-05-01,0.15571376239999998,0.06344692202,
+GenAI_Occ,Occupation,Sales and Related Occupations,Share of workers using genAI at work,2024-08-01,0.2817451977,0.03840506408,
+GenAI_Occ,Occupation,Sales and Related Occupations,Share of workers using genAI at work,2024-11-01,0.23483470969999998,0.03739515602,
+GenAI_Occ,Occupation,Sales and Related Occupations,Share of workers using genAI at work,2025-02-01,0.3384312613,0.0485166957,
+GenAI_Occ,Occupation,Sales and Related Occupations,Share of workers using genAI at work,2025-05-01,0.2813899774,0.041380469069999995,
+GenAI_Occ,Occupation,Sales and Related Occupations,Share of workers using genAI at work,2025-08-01,0.3356861685,0.039907837380000005,
+GenAI_Occ,Occupation,Sales and Related Occupations,Share of workers using genAI at work,2025-11-01,0.3683813627,0.03841765417,
+GenAI_Occ,Occupation,Sales and Related Occupations,Share of workers using genAI at work,2026-02-01,0.3994653457,0.04395148029,
+GenAI_Occ,Occupation,Sales and Related Occupations,Share of workers using genAI at work,2026-05-01,0.4567531307,0.03968840177,
+GenAI_Occ,Occupation,Transportation and Material Moving Occupations,Share of workers using genAI at work,2024-08-01,0.1984663717,0.05165878169,
+GenAI_Occ,Occupation,Transportation and Material Moving Occupations,Share of workers using genAI at work,2024-11-01,0.1401364929,0.033711132149999996,
+GenAI_Occ,Occupation,Transportation and Material Moving Occupations,Share of workers using genAI at work,2025-02-01,0.2189646582,0.05164493071,
+GenAI_Occ,Occupation,Transportation and Material Moving Occupations,Share of workers using genAI at work,2025-05-01,0.19912124139999998,0.04476374037,
+GenAI_Occ,Occupation,Transportation and Material Moving Occupations,Share of workers using genAI at work,2025-08-01,0.17313046769999998,0.033970703649999996,
+GenAI_Occ,Occupation,Transportation and Material Moving Occupations,Share of workers using genAI at work,2025-11-01,0.19995480010000002,0.04370190408,
+GenAI_Occ,Occupation,Transportation and Material Moving Occupations,Share of workers using genAI at work,2026-02-01,0.2269307612,0.04640942582,
+GenAI_Occ,Occupation,Transportation and Material Moving Occupations,Share of workers using genAI at work,2026-05-01,0.2897543837,0.04928502371000001,
+GenAI_TimeSav_All,National,Employed,Time saved by genAI (% of work hours),2024-11-01,0.01410440009,0.0007858909084,
+GenAI_TimeSav_All,National,Employed,Time saved by genAI (% of work hours),2025-02-01,0.016178074440000002,0.0009462721064,
+GenAI_TimeSav_All,National,Employed,Time saved by genAI (% of work hours),2025-05-01,0.01811414792,0.001065420802,
+GenAI_TimeSav_All,National,Employed,Time saved by genAI (% of work hours),2025-08-01,0.01748054103,0.000789558806,
+GenAI_TimeSav_All,National,Employed,Time saved by genAI (% of work hours),2025-11-01,0.019993187699999998,0.0008029122836999999,
+GenAI_TimeSav_All,National,Employed,Time saved by genAI (% of work hours),2026-02-01,0.021590119310000003,0.0008237594738999999,
+GenAI_TimeSav_All,National,Employed,Time saved by genAI (% of work hours),2026-05-01,0.02167335893,0.0009291704628,
+GenAI_TimeSav_Ind,Industry,Accommodation and Food Services,Time saved by genAI (% of work hours),2024-11-01,0.006238806382999999,0.002491161668,72
+GenAI_TimeSav_Ind,Industry,Accommodation and Food Services,Time saved by genAI (% of work hours),2025-02-01,0.01060224146,0.006372605183,72
+GenAI_TimeSav_Ind,Industry,Accommodation and Food Services,Time saved by genAI (% of work hours),2025-05-01,0.0081426626,0.002190811493,72
+GenAI_TimeSav_Ind,Industry,Accommodation and Food Services,Time saved by genAI (% of work hours),2025-08-01,0.007302552733,0.0018579596749999999,72
+GenAI_TimeSav_Ind,Industry,Accommodation and Food Services,Time saved by genAI (% of work hours),2025-11-01,0.007517232891,0.001816039405,72
+GenAI_TimeSav_Ind,Industry,Accommodation and Food Services,Time saved by genAI (% of work hours),2026-02-01,0.01329666687,0.0031139143870000004,72
+GenAI_TimeSav_Ind,Industry,Accommodation and Food Services,Time saved by genAI (% of work hours),2026-05-01,0.01560381225,0.003383608133,72
+GenAI_TimeSav_Ind,Industry,Administrative and support and waste management services,Time saved by genAI (% of work hours),2024-11-01,0.007422211909000001,0.00268860413,56
+GenAI_TimeSav_Ind,Industry,Administrative and support and waste management services,Time saved by genAI (% of work hours),2025-02-01,0.009976743405,0.004075341679,56
+GenAI_TimeSav_Ind,Industry,Administrative and support and waste management services,Time saved by genAI (% of work hours),2025-05-01,0.01276473663,0.0035857481029999997,56
+GenAI_TimeSav_Ind,Industry,Administrative and support and waste management services,Time saved by genAI (% of work hours),2025-08-01,0.01142732575,0.00317598279,56
+GenAI_TimeSav_Ind,Industry,Administrative and support and waste management services,Time saved by genAI (% of work hours),2025-11-01,0.007421762666,0.002066766162,56
+GenAI_TimeSav_Ind,Industry,Administrative and support and waste management services,Time saved by genAI (% of work hours),2026-02-01,0.012667110450000001,0.003493409338,56
+GenAI_TimeSav_Ind,Industry,Administrative and support and waste management services,Time saved by genAI (% of work hours),2026-05-01,0.03489938698,0.01626000918,56
+GenAI_TimeSav_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Time saved by genAI (% of work hours),2024-11-01,0.011897304079999999,0.0026324933900000002,11
+GenAI_TimeSav_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Time saved by genAI (% of work hours),2025-02-01,0.008693780599,0.003941559127,11
+GenAI_TimeSav_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Time saved by genAI (% of work hours),2025-05-01,0.01991696592,0.005910168201,11
+GenAI_TimeSav_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Time saved by genAI (% of work hours),2025-08-01,0.01079103656,0.002996144442,11
+GenAI_TimeSav_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Time saved by genAI (% of work hours),2025-11-01,0.02025561068,0.007169771768,11
+GenAI_TimeSav_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Time saved by genAI (% of work hours),2026-02-01,0.011510783,0.004417160133,11
+GenAI_TimeSav_Ind,Industry,"Agriculture, Forestry, Fishing, and Hunting",Time saved by genAI (% of work hours),2026-05-01,0.01483805252,0.006373970946,11
+GenAI_TimeSav_Ind,Industry,"Arts, Entertainment, and Recreation",Time saved by genAI (% of work hours),2024-11-01,0.01203588422,0.005928257221,71
+GenAI_TimeSav_Ind,Industry,"Arts, Entertainment, and Recreation",Time saved by genAI (% of work hours),2025-02-01,0.0144128203,0.0054798312469999996,71
+GenAI_TimeSav_Ind,Industry,"Arts, Entertainment, and Recreation",Time saved by genAI (% of work hours),2025-05-01,0.02086856705,0.009344265806999999,71
+GenAI_TimeSav_Ind,Industry,"Arts, Entertainment, and Recreation",Time saved by genAI (% of work hours),2025-08-01,0.02120282966,0.006085686329999999,71
+GenAI_TimeSav_Ind,Industry,"Arts, Entertainment, and Recreation",Time saved by genAI (% of work hours),2025-11-01,0.01747209219,0.003765368129,71
+GenAI_TimeSav_Ind,Industry,"Arts, Entertainment, and Recreation",Time saved by genAI (% of work hours),2026-02-01,0.01760456124,0.004853225895,71
+GenAI_TimeSav_Ind,Industry,"Arts, Entertainment, and Recreation",Time saved by genAI (% of work hours),2026-05-01,0.01276619105,0.003079785807,71
+GenAI_TimeSav_Ind,Industry,Construction,Time saved by genAI (% of work hours),2024-11-01,0.01460417576,0.004669732362,23
+GenAI_TimeSav_Ind,Industry,Construction,Time saved by genAI (% of work hours),2025-02-01,0.01949286604,0.005458345671,23
+GenAI_TimeSav_Ind,Industry,Construction,Time saved by genAI (% of work hours),2025-05-01,0.02785186884,0.01087067225,23
+GenAI_TimeSav_Ind,Industry,Construction,Time saved by genAI (% of work hours),2025-08-01,0.01639478651,0.005043642112,23
+GenAI_TimeSav_Ind,Industry,Construction,Time saved by genAI (% of work hours),2025-11-01,0.027086890069999998,0.006497505628,23
+GenAI_TimeSav_Ind,Industry,Construction,Time saved by genAI (% of work hours),2026-02-01,0.019060784180000002,0.004034583821,23
+GenAI_TimeSav_Ind,Industry,Construction,Time saved by genAI (% of work hours),2026-05-01,0.02484115347,0.006384701392,23
+GenAI_TimeSav_Ind,Industry,Educational Services,Time saved by genAI (% of work hours),2024-11-01,0.01329849561,0.002743648345,61
+GenAI_TimeSav_Ind,Industry,Educational Services,Time saved by genAI (% of work hours),2025-02-01,0.01845986392,0.003361686745,61
+GenAI_TimeSav_Ind,Industry,Educational Services,Time saved by genAI (% of work hours),2025-05-01,0.01581379872,0.003425904983,61
+GenAI_TimeSav_Ind,Industry,Educational Services,Time saved by genAI (% of work hours),2025-08-01,0.024854874,0.004978284988,61
+GenAI_TimeSav_Ind,Industry,Educational Services,Time saved by genAI (% of work hours),2025-11-01,0.023882033900000002,0.0032630602250000003,61
+GenAI_TimeSav_Ind,Industry,Educational Services,Time saved by genAI (% of work hours),2026-02-01,0.028264285299999997,0.003206178408,61
+GenAI_TimeSav_Ind,Industry,Educational Services,Time saved by genAI (% of work hours),2026-05-01,0.01726746456,0.0027445211139999997,61
+GenAI_TimeSav_Ind,Industry,Finance and Insurance,Time saved by genAI (% of work hours),2024-11-01,0.023190714379999998,0.003160746764,52
+GenAI_TimeSav_Ind,Industry,Finance and Insurance,Time saved by genAI (% of work hours),2025-02-01,0.015511113569999999,0.002065028388,52
+GenAI_TimeSav_Ind,Industry,Finance and Insurance,Time saved by genAI (% of work hours),2025-05-01,0.02278429687,0.0032466323609999996,52
+GenAI_TimeSav_Ind,Industry,Finance and Insurance,Time saved by genAI (% of work hours),2025-08-01,0.029772074210000003,0.003931422359,52
+GenAI_TimeSav_Ind,Industry,Finance and Insurance,Time saved by genAI (% of work hours),2025-11-01,0.0315546129,0.0033134914650000003,52
+GenAI_TimeSav_Ind,Industry,Finance and Insurance,Time saved by genAI (% of work hours),2026-02-01,0.035226529320000005,0.00341707452,52
+GenAI_TimeSav_Ind,Industry,Finance and Insurance,Time saved by genAI (% of work hours),2026-05-01,0.03289746288,0.003138671239,52
+GenAI_TimeSav_Ind,Industry,Health Care and Social Assistance,Time saved by genAI (% of work hours),2024-11-01,0.01000841659,0.001642557798,62
+GenAI_TimeSav_Ind,Industry,Health Care and Social Assistance,Time saved by genAI (% of work hours),2025-02-01,0.01423873306,0.0026859573149999997,62
+GenAI_TimeSav_Ind,Industry,Health Care and Social Assistance,Time saved by genAI (% of work hours),2025-05-01,0.01353133419,0.002897125815,62
+GenAI_TimeSav_Ind,Industry,Health Care and Social Assistance,Time saved by genAI (% of work hours),2025-08-01,0.0073718955870000005,0.0014217669459999998,62
+GenAI_TimeSav_Ind,Industry,Health Care and Social Assistance,Time saved by genAI (% of work hours),2025-11-01,0.01373797046,0.002051893314,62
+GenAI_TimeSav_Ind,Industry,Health Care and Social Assistance,Time saved by genAI (% of work hours),2026-02-01,0.01760043773,0.002769894476,62
+GenAI_TimeSav_Ind,Industry,Health Care and Social Assistance,Time saved by genAI (% of work hours),2026-05-01,0.01485303308,0.0019433790549999999,62
+GenAI_TimeSav_Ind,Industry,Information,Time saved by genAI (% of work hours),2024-11-01,0.02728119742,0.002803865955,51
+GenAI_TimeSav_Ind,Industry,Information,Time saved by genAI (% of work hours),2025-02-01,0.040096190280000006,0.007455930376999999,51
+GenAI_TimeSav_Ind,Industry,Information,Time saved by genAI (% of work hours),2025-05-01,0.02867023355,0.002588727799,51
+GenAI_TimeSav_Ind,Industry,Information,Time saved by genAI (% of work hours),2025-08-01,0.038071982430000005,0.0041091838860000006,51
+GenAI_TimeSav_Ind,Industry,Information,Time saved by genAI (% of work hours),2025-11-01,0.03802303051,0.003660681182,51
+GenAI_TimeSav_Ind,Industry,Information,Time saved by genAI (% of work hours),2026-02-01,0.04053516957,0.003464139169,51
+GenAI_TimeSav_Ind,Industry,Information,Time saved by genAI (% of work hours),2026-05-01,0.04853097321,0.003017150381,51
+GenAI_TimeSav_Ind,Industry,Management of companies and enterprises,Time saved by genAI (% of work hours),2024-11-01,0.04266028283,0.01725819608,55
+GenAI_TimeSav_Ind,Industry,Management of companies and enterprises,Time saved by genAI (% of work hours),2025-02-01,0.031712224,0.008342282463,55
+GenAI_TimeSav_Ind,Industry,Management of companies and enterprises,Time saved by genAI (% of work hours),2025-05-01,0.01997144115,0.004040635315,55
+GenAI_TimeSav_Ind,Industry,Management of companies and enterprises,Time saved by genAI (% of work hours),2025-08-01,0.02978847066,0.004315008361,55
+GenAI_TimeSav_Ind,Industry,Management of companies and enterprises,Time saved by genAI (% of work hours),2025-11-01,0.03945604324,0.007946269996,55
+GenAI_TimeSav_Ind,Industry,Management of companies and enterprises,Time saved by genAI (% of work hours),2026-02-01,0.03768098901,0.00825807703,55
+GenAI_TimeSav_Ind,Industry,Management of companies and enterprises,Time saved by genAI (% of work hours),2026-05-01,0.03915145685,0.006387810046,55
+GenAI_TimeSav_Ind,Industry,Manufacturing,Time saved by genAI (% of work hours),2024-11-01,0.01592949646,0.002496484362,31
+GenAI_TimeSav_Ind,Industry,Manufacturing,Time saved by genAI (% of work hours),2025-02-01,0.01660517284,0.0028733060459999998,31
+GenAI_TimeSav_Ind,Industry,Manufacturing,Time saved by genAI (% of work hours),2025-05-01,0.02117158694,0.004109463906,31
+GenAI_TimeSav_Ind,Industry,Manufacturing,Time saved by genAI (% of work hours),2025-08-01,0.01536752623,0.001928552073,31
+GenAI_TimeSav_Ind,Industry,Manufacturing,Time saved by genAI (% of work hours),2025-11-01,0.022109875959999997,0.002499031369,31
+GenAI_TimeSav_Ind,Industry,Manufacturing,Time saved by genAI (% of work hours),2026-02-01,0.02664581101,0.0027075255599999996,31
+GenAI_TimeSav_Ind,Industry,Manufacturing,Time saved by genAI (% of work hours),2026-05-01,0.01696631489,0.002063090924,31
+GenAI_TimeSav_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Time saved by genAI (% of work hours),2024-11-01,0.023280193900000003,0.008731107104,21
+GenAI_TimeSav_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Time saved by genAI (% of work hours),2025-02-01,0.007132463748,0.004114792125999999,21
+GenAI_TimeSav_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Time saved by genAI (% of work hours),2025-05-01,0.01178364867,0.006271507258,21
+GenAI_TimeSav_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Time saved by genAI (% of work hours),2025-08-01,0.044297116799999994,0.01685578168,21
+GenAI_TimeSav_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Time saved by genAI (% of work hours),2025-11-01,0.012547042230000001,0.006569319011,21
+GenAI_TimeSav_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Time saved by genAI (% of work hours),2026-02-01,0.017108788740000002,0.009623983992,21
+GenAI_TimeSav_Ind,Industry,"Mining, Quarrying, and Oil and Gas Extraction",Time saved by genAI (% of work hours),2026-05-01,0.006776629266000001,0.0036967377680000003,21
+GenAI_TimeSav_Ind,Industry,"Other Services, Except Public Administration",Time saved by genAI (% of work hours),2024-11-01,0.007866002074000001,0.0014588309,81
+GenAI_TimeSav_Ind,Industry,"Other Services, Except Public Administration",Time saved by genAI (% of work hours),2025-02-01,0.01826512743,0.003678386567,81
+GenAI_TimeSav_Ind,Industry,"Other Services, Except Public Administration",Time saved by genAI (% of work hours),2025-05-01,0.01007639423,0.0022398204939999998,81
+GenAI_TimeSav_Ind,Industry,"Other Services, Except Public Administration",Time saved by genAI (% of work hours),2025-08-01,0.007121462176,0.0016213063150000001,81
+GenAI_TimeSav_Ind,Industry,"Other Services, Except Public Administration",Time saved by genAI (% of work hours),2025-11-01,0.014434486310000001,0.0025852938320000004,81
+GenAI_TimeSav_Ind,Industry,"Other Services, Except Public Administration",Time saved by genAI (% of work hours),2026-02-01,0.014076795259999999,0.003028700887,81
+GenAI_TimeSav_Ind,Industry,"Other Services, Except Public Administration",Time saved by genAI (% of work hours),2026-05-01,0.012556840279999999,0.0028120637100000003,81
+GenAI_TimeSav_Ind,Industry,"Professional, Scientific, and Technical Services",Time saved by genAI (% of work hours),2024-11-01,0.019947033240000002,0.0026146355180000002,54
+GenAI_TimeSav_Ind,Industry,"Professional, Scientific, and Technical Services",Time saved by genAI (% of work hours),2025-02-01,0.02553885111,0.003126933673,54
+GenAI_TimeSav_Ind,Industry,"Professional, Scientific, and Technical Services",Time saved by genAI (% of work hours),2025-05-01,0.03362548576,0.004331394606,54
+GenAI_TimeSav_Ind,Industry,"Professional, Scientific, and Technical Services",Time saved by genAI (% of work hours),2025-08-01,0.028699961809999997,0.00353110888,54
+GenAI_TimeSav_Ind,Industry,"Professional, Scientific, and Technical Services",Time saved by genAI (% of work hours),2025-11-01,0.03229683757,0.002989097419,54
+GenAI_TimeSav_Ind,Industry,"Professional, Scientific, and Technical Services",Time saved by genAI (% of work hours),2026-02-01,0.03602773334,0.00320394393,54
+GenAI_TimeSav_Ind,Industry,"Professional, Scientific, and Technical Services",Time saved by genAI (% of work hours),2026-05-01,0.03938221958,0.002836598661,54
+GenAI_TimeSav_Ind,Industry,Public Administration,Time saved by genAI (% of work hours),2024-11-01,0.009116782799999999,0.0042564475559999995,92
+GenAI_TimeSav_Ind,Industry,Public Administration,Time saved by genAI (% of work hours),2025-02-01,0.004909754195,0.001967410607,92
+GenAI_TimeSav_Ind,Industry,Public Administration,Time saved by genAI (% of work hours),2025-05-01,0.00320739093,0.001669892185,92
+GenAI_TimeSav_Ind,Industry,Public Administration,Time saved by genAI (% of work hours),2025-08-01,0.008296476958,0.0037878329230000003,92
+GenAI_TimeSav_Ind,Industry,Public Administration,Time saved by genAI (% of work hours),2025-11-01,0.008357573432,0.0037867511929999998,92
+GenAI_TimeSav_Ind,Industry,Public Administration,Time saved by genAI (% of work hours),2026-02-01,0.004980153553,0.0017733854669999998,92
+GenAI_TimeSav_Ind,Industry,Public Administration,Time saved by genAI (% of work hours),2026-05-01,0.01254182192,0.00676244986,92
+GenAI_TimeSav_Ind,Industry,Real Estate and Rental and Leasing,Time saved by genAI (% of work hours),2024-11-01,0.012740126979999999,0.0036871988,53
+GenAI_TimeSav_Ind,Industry,Real Estate and Rental and Leasing,Time saved by genAI (% of work hours),2025-02-01,0.012375552809999999,0.0028514396530000003,53
+GenAI_TimeSav_Ind,Industry,Real Estate and Rental and Leasing,Time saved by genAI (% of work hours),2025-05-01,0.02439479085,0.006193497300000001,53
+GenAI_TimeSav_Ind,Industry,Real Estate and Rental and Leasing,Time saved by genAI (% of work hours),2025-08-01,0.026069109629999997,0.0073574707610000005,53
+GenAI_TimeSav_Ind,Industry,Real Estate and Rental and Leasing,Time saved by genAI (% of work hours),2025-11-01,0.02177571118,0.004730207082999999,53
+GenAI_TimeSav_Ind,Industry,Real Estate and Rental and Leasing,Time saved by genAI (% of work hours),2026-02-01,0.02854016975,0.006681164683,53
+GenAI_TimeSav_Ind,Industry,Real Estate and Rental and Leasing,Time saved by genAI (% of work hours),2026-05-01,0.02599201416,0.004855971188,53
+GenAI_TimeSav_Ind,Industry,Retail Trade,Time saved by genAI (% of work hours),2024-11-01,0.03907809047,0.01989867981,44
+GenAI_TimeSav_Ind,Industry,Retail Trade,Time saved by genAI (% of work hours),2025-02-01,0.0128908768,0.004283981154,44
+GenAI_TimeSav_Ind,Industry,Retail Trade,Time saved by genAI (% of work hours),2025-05-01,0.01495480945,0.005183205023,44
+GenAI_TimeSav_Ind,Industry,Retail Trade,Time saved by genAI (% of work hours),2025-08-01,0.02394366357,0.007087013055,44
+GenAI_TimeSav_Ind,Industry,Retail Trade,Time saved by genAI (% of work hours),2025-11-01,0.027322921459999996,0.006227038296,44
+GenAI_TimeSav_Ind,Industry,Retail Trade,Time saved by genAI (% of work hours),2026-02-01,0.016002517650000003,0.004864709193000001,44
+GenAI_TimeSav_Ind,Industry,Retail Trade,Time saved by genAI (% of work hours),2026-05-01,0.01914207457,0.005260505331999999,44
+GenAI_TimeSav_Ind,Industry,Transportation and Warehousing,Time saved by genAI (% of work hours),2024-11-01,0.014885935729999999,0.002476655376,48
+GenAI_TimeSav_Ind,Industry,Transportation and Warehousing,Time saved by genAI (% of work hours),2025-02-01,0.013007569830000001,0.00237059669,48
+GenAI_TimeSav_Ind,Industry,Transportation and Warehousing,Time saved by genAI (% of work hours),2025-05-01,0.02008305797,0.006008126552,48
+GenAI_TimeSav_Ind,Industry,Transportation and Warehousing,Time saved by genAI (% of work hours),2025-08-01,0.01132576889,0.0017238317089999999,48
+GenAI_TimeSav_Ind,Industry,Transportation and Warehousing,Time saved by genAI (% of work hours),2025-11-01,0.0151953968,0.001968956116,48
+GenAI_TimeSav_Ind,Industry,Transportation and Warehousing,Time saved by genAI (% of work hours),2026-02-01,0.0123150106,0.001885799712,48
+GenAI_TimeSav_Ind,Industry,Transportation and Warehousing,Time saved by genAI (% of work hours),2026-05-01,0.015872747320000002,0.002118636118,48
+GenAI_TimeSav_Ind,Industry,Utilities,Time saved by genAI (% of work hours),2024-11-01,0.009868165861,0.0023273423069999997,22
+GenAI_TimeSav_Ind,Industry,Utilities,Time saved by genAI (% of work hours),2025-02-01,0.006409545369000001,0.002620196635,22
+GenAI_TimeSav_Ind,Industry,Utilities,Time saved by genAI (% of work hours),2025-05-01,0.011982936330000001,0.004707097789,22
+GenAI_TimeSav_Ind,Industry,Utilities,Time saved by genAI (% of work hours),2025-08-01,0.01526462674,0.003312563439,22
+GenAI_TimeSav_Ind,Industry,Utilities,Time saved by genAI (% of work hours),2025-11-01,0.0123741392,0.004745972463,22
+GenAI_TimeSav_Ind,Industry,Utilities,Time saved by genAI (% of work hours),2026-02-01,0.01073962901,0.002826790978,22
+GenAI_TimeSav_Ind,Industry,Utilities,Time saved by genAI (% of work hours),2026-05-01,0.01247354055,0.003324540281,22
+GenAI_TimeSav_Ind,Industry,Wholesale Trade,Time saved by genAI (% of work hours),2024-11-01,0.01062833017,0.002027075176,42
+GenAI_TimeSav_Ind,Industry,Wholesale Trade,Time saved by genAI (% of work hours),2025-02-01,0.016151094850000002,0.003843670309,42
+GenAI_TimeSav_Ind,Industry,Wholesale Trade,Time saved by genAI (% of work hours),2025-05-01,0.0190994341,0.00289907127,42
+GenAI_TimeSav_Ind,Industry,Wholesale Trade,Time saved by genAI (% of work hours),2025-08-01,0.02143834349,0.002901282236,42
+GenAI_TimeSav_Ind,Industry,Wholesale Trade,Time saved by genAI (% of work hours),2025-11-01,0.02566572454,0.003419854228,42
+GenAI_TimeSav_Ind,Industry,Wholesale Trade,Time saved by genAI (% of work hours),2026-02-01,0.02409251066,0.002740561085,42
+GenAI_TimeSav_Ind,Industry,Wholesale Trade,Time saved by genAI (% of work hours),2026-05-01,0.02826187665,0.0039294256379999995,42
+GenAI_TimeSav_Occ,Occupation,Architecture and Engineering Occupations,Time saved by genAI (% of work hours),2024-11-01,0.01531391938,0.005042187191000001,
+GenAI_TimeSav_Occ,Occupation,Architecture and Engineering Occupations,Time saved by genAI (% of work hours),2025-02-01,0.018156701600000002,0.006486286891,
+GenAI_TimeSav_Occ,Occupation,Architecture and Engineering Occupations,Time saved by genAI (% of work hours),2025-05-01,0.03245611859,0.014777311930000002,
+GenAI_TimeSav_Occ,Occupation,Architecture and Engineering Occupations,Time saved by genAI (% of work hours),2025-08-01,0.01449631936,0.003745335913,
+GenAI_TimeSav_Occ,Occupation,Architecture and Engineering Occupations,Time saved by genAI (% of work hours),2025-11-01,0.02536128389,0.00543238457,
+GenAI_TimeSav_Occ,Occupation,Architecture and Engineering Occupations,Time saved by genAI (% of work hours),2026-02-01,0.03917551837,0.008242191474,
+GenAI_TimeSav_Occ,Occupation,Architecture and Engineering Occupations,Time saved by genAI (% of work hours),2026-05-01,0.03150009566,0.0060524421650000005,
+GenAI_TimeSav_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Time saved by genAI (% of work hours),2024-11-01,0.01311068727,0.002418302212,
+GenAI_TimeSav_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Time saved by genAI (% of work hours),2025-02-01,0.029988805780000002,0.004577609568,
+GenAI_TimeSav_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Time saved by genAI (% of work hours),2025-05-01,0.03224874656,0.008136807809,
+GenAI_TimeSav_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Time saved by genAI (% of work hours),2025-08-01,0.03530677317,0.008314821083000001,
+GenAI_TimeSav_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Time saved by genAI (% of work hours),2025-11-01,0.034781491139999995,0.006576456121999999,
+GenAI_TimeSav_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Time saved by genAI (% of work hours),2026-02-01,0.02484931348,0.00535358966,
+GenAI_TimeSav_Occ,Occupation,"Arts, Design, Entertainment, Sports, and Media Occupations",Time saved by genAI (% of work hours),2026-05-01,0.02669751682,0.004184593575,
+GenAI_TimeSav_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Time saved by genAI (% of work hours),2024-11-01,0.01036442005,0.0043750541609999995,
+GenAI_TimeSav_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Time saved by genAI (% of work hours),2025-02-01,0.003922129379,0.003547725336,
+GenAI_TimeSav_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Time saved by genAI (% of work hours),2025-05-01,0.003013921476,0.0019342106740000001,
+GenAI_TimeSav_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Time saved by genAI (% of work hours),2025-08-01,0.003996651453999999,0.002265057118,
+GenAI_TimeSav_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Time saved by genAI (% of work hours),2025-11-01,0.002323920735,0.0014724292489999998,
+GenAI_TimeSav_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Time saved by genAI (% of work hours),2026-02-01,0.006115694847,0.002288252268,
+GenAI_TimeSav_Occ,Occupation,Building and Grounds Cleaning and Maintenance Occupations,Time saved by genAI (% of work hours),2026-05-01,0.020159741470000003,0.01373882881,
+GenAI_TimeSav_Occ,Occupation,Business and Financial Operations Occupations,Time saved by genAI (% of work hours),2024-11-01,0.02017733162,0.004665799047,
+GenAI_TimeSav_Occ,Occupation,Business and Financial Operations Occupations,Time saved by genAI (% of work hours),2025-02-01,0.01522199534,0.002627886478,
+GenAI_TimeSav_Occ,Occupation,Business and Financial Operations Occupations,Time saved by genAI (% of work hours),2025-05-01,0.017825477540000002,0.002707761093,
+GenAI_TimeSav_Occ,Occupation,Business and Financial Operations Occupations,Time saved by genAI (% of work hours),2025-08-01,0.02529227508,0.003130314074,
+GenAI_TimeSav_Occ,Occupation,Business and Financial Operations Occupations,Time saved by genAI (% of work hours),2025-11-01,0.03282404095,0.003572991217,
+GenAI_TimeSav_Occ,Occupation,Business and Financial Operations Occupations,Time saved by genAI (% of work hours),2026-02-01,0.03189817953,0.0030088180190000003,
+GenAI_TimeSav_Occ,Occupation,Business and Financial Operations Occupations,Time saved by genAI (% of work hours),2026-05-01,0.028935796800000003,0.0034012708679999996,
+GenAI_TimeSav_Occ,Occupation,Community and Social Service Occupations,Time saved by genAI (% of work hours),2024-11-01,0.012933972140000001,0.00364730583,
+GenAI_TimeSav_Occ,Occupation,Community and Social Service Occupations,Time saved by genAI (% of work hours),2025-02-01,0.0147235695,0.0038592557919999997,
+GenAI_TimeSav_Occ,Occupation,Community and Social Service Occupations,Time saved by genAI (% of work hours),2025-05-01,0.01670755742,0.007316095245,
+GenAI_TimeSav_Occ,Occupation,Community and Social Service Occupations,Time saved by genAI (% of work hours),2025-08-01,0.0071061496150000006,0.003164243799,
+GenAI_TimeSav_Occ,Occupation,Community and Social Service Occupations,Time saved by genAI (% of work hours),2025-11-01,0.01657234204,0.004056783586,
+GenAI_TimeSav_Occ,Occupation,Community and Social Service Occupations,Time saved by genAI (% of work hours),2026-02-01,0.02739787833,0.007518234921,
+GenAI_TimeSav_Occ,Occupation,Community and Social Service Occupations,Time saved by genAI (% of work hours),2026-05-01,0.02200136128,0.005518966478,
+GenAI_TimeSav_Occ,Occupation,Computer and mathematical occupations,Time saved by genAI (% of work hours),2024-11-01,0.02642801043,0.002477157788,
+GenAI_TimeSav_Occ,Occupation,Computer and mathematical occupations,Time saved by genAI (% of work hours),2025-02-01,0.034678304789999996,0.005258392000999999,
+GenAI_TimeSav_Occ,Occupation,Computer and mathematical occupations,Time saved by genAI (% of work hours),2025-05-01,0.037965746880000005,0.0032998399769999997,
+GenAI_TimeSav_Occ,Occupation,Computer and mathematical occupations,Time saved by genAI (% of work hours),2025-08-01,0.03467591101,0.002944589882,
+GenAI_TimeSav_Occ,Occupation,Computer and mathematical occupations,Time saved by genAI (% of work hours),2025-11-01,0.04202438676,0.006355346896,
+GenAI_TimeSav_Occ,Occupation,Computer and mathematical occupations,Time saved by genAI (% of work hours),2026-02-01,0.03941884377,0.002914321842,
+GenAI_TimeSav_Occ,Occupation,Computer and mathematical occupations,Time saved by genAI (% of work hours),2026-05-01,0.04797303385,0.0031129445169999995,
+GenAI_TimeSav_Occ,Occupation,Construction and Extraction Occupations,Time saved by genAI (% of work hours),2024-11-01,0.01274696096,0.003051513801,
+GenAI_TimeSav_Occ,Occupation,Construction and Extraction Occupations,Time saved by genAI (% of work hours),2025-02-01,0.0114147653,0.003334824157,
+GenAI_TimeSav_Occ,Occupation,Construction and Extraction Occupations,Time saved by genAI (% of work hours),2025-05-01,0.01221603858,0.002897632417,
+GenAI_TimeSav_Occ,Occupation,Construction and Extraction Occupations,Time saved by genAI (% of work hours),2025-08-01,0.01337763514,0.002465438703,
+GenAI_TimeSav_Occ,Occupation,Construction and Extraction Occupations,Time saved by genAI (% of work hours),2025-11-01,0.01223266087,0.0022452832449999997,
+GenAI_TimeSav_Occ,Occupation,Construction and Extraction Occupations,Time saved by genAI (% of work hours),2026-02-01,0.01433558729,0.002760906561,
+GenAI_TimeSav_Occ,Occupation,Construction and Extraction Occupations,Time saved by genAI (% of work hours),2026-05-01,0.01265432467,0.002778899013,
+GenAI_TimeSav_Occ,Occupation,"Educational Instruction, and Library Occupations",Time saved by genAI (% of work hours),2024-11-01,0.01649564662,0.005340625276999999,
+GenAI_TimeSav_Occ,Occupation,"Educational Instruction, and Library Occupations",Time saved by genAI (% of work hours),2025-02-01,0.02231025795,0.004753029907,
+GenAI_TimeSav_Occ,Occupation,"Educational Instruction, and Library Occupations",Time saved by genAI (% of work hours),2025-05-01,0.01982003203,0.0045424766119999994,
+GenAI_TimeSav_Occ,Occupation,"Educational Instruction, and Library Occupations",Time saved by genAI (% of work hours),2025-08-01,0.029731302409999997,0.0052130923159999995,
+GenAI_TimeSav_Occ,Occupation,"Educational Instruction, and Library Occupations",Time saved by genAI (% of work hours),2025-11-01,0.028491322929999997,0.003644766346,
+GenAI_TimeSav_Occ,Occupation,"Educational Instruction, and Library Occupations",Time saved by genAI (% of work hours),2026-02-01,0.031244049569999998,0.0032862766310000004,
+GenAI_TimeSav_Occ,Occupation,"Educational Instruction, and Library Occupations",Time saved by genAI (% of work hours),2026-05-01,0.02218150584,0.003332159546,
+GenAI_TimeSav_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Time saved by genAI (% of work hours),2024-11-01,0.01467077499,0.005711721039999999,
+GenAI_TimeSav_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Time saved by genAI (% of work hours),2025-02-01,0.006057162727999999,0.003453026448,
+GenAI_TimeSav_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Time saved by genAI (% of work hours),2025-05-01,0.02940819454,0.009903735004,
+GenAI_TimeSav_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Time saved by genAI (% of work hours),2025-08-01,0.008424498568,0.0037149786769999998,
+GenAI_TimeSav_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Time saved by genAI (% of work hours),2025-11-01,0.035285794190000004,0.011435727739999998,
+GenAI_TimeSav_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Time saved by genAI (% of work hours),2026-02-01,0.009412623336,0.004749106887999999,
+GenAI_TimeSav_Occ,Occupation,"Farming, Fishing, and Forestry Occupations",Time saved by genAI (% of work hours),2026-05-01,0.012966116370000001,0.006693375556,
+GenAI_TimeSav_Occ,Occupation,Food Preparation and Serving Related Occupations,Time saved by genAI (% of work hours),2024-11-01,0.0066348685409999995,0.0038017064259999998,
+GenAI_TimeSav_Occ,Occupation,Food Preparation and Serving Related Occupations,Time saved by genAI (% of work hours),2025-02-01,0.01369860426,0.007839044229,
+GenAI_TimeSav_Occ,Occupation,Food Preparation and Serving Related Occupations,Time saved by genAI (% of work hours),2025-05-01,0.008536033564,0.0022790187540000003,
+GenAI_TimeSav_Occ,Occupation,Food Preparation and Serving Related Occupations,Time saved by genAI (% of work hours),2025-08-01,0.00863144417,0.0034879371570000002,
+GenAI_TimeSav_Occ,Occupation,Food Preparation and Serving Related Occupations,Time saved by genAI (% of work hours),2025-11-01,0.007798676833,0.002235621773,
+GenAI_TimeSav_Occ,Occupation,Food Preparation and Serving Related Occupations,Time saved by genAI (% of work hours),2026-02-01,0.007199911456,0.002121087732,
+GenAI_TimeSav_Occ,Occupation,Food Preparation and Serving Related Occupations,Time saved by genAI (% of work hours),2026-05-01,0.011870730570000002,0.003498555552,
+GenAI_TimeSav_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Time saved by genAI (% of work hours),2024-11-01,0.01536799038,0.002865523274,
+GenAI_TimeSav_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Time saved by genAI (% of work hours),2025-02-01,0.01321674159,0.003720017128,
+GenAI_TimeSav_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Time saved by genAI (% of work hours),2025-05-01,0.01667684023,0.004614483451,
+GenAI_TimeSav_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Time saved by genAI (% of work hours),2025-08-01,0.009292140176,0.002302767607,
+GenAI_TimeSav_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Time saved by genAI (% of work hours),2025-11-01,0.016825128970000002,0.003087335262,
+GenAI_TimeSav_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Time saved by genAI (% of work hours),2026-02-01,0.01658321741,0.003095678871,
+GenAI_TimeSav_Occ,Occupation,Healthcare Practitioners and Technical Occupations,Time saved by genAI (% of work hours),2026-05-01,0.01751597397,0.003402247993,
+GenAI_TimeSav_Occ,Occupation,Healthcare Support Occupations,Time saved by genAI (% of work hours),2024-11-01,0.002829022598,0.0012662048770000001,
+GenAI_TimeSav_Occ,Occupation,Healthcare Support Occupations,Time saved by genAI (% of work hours),2025-02-01,0.01089543093,0.00318085864,
+GenAI_TimeSav_Occ,Occupation,Healthcare Support Occupations,Time saved by genAI (% of work hours),2025-05-01,0.01450392245,0.00462417822,
+GenAI_TimeSav_Occ,Occupation,Healthcare Support Occupations,Time saved by genAI (% of work hours),2025-08-01,0.003945512746,0.001517584349,
+GenAI_TimeSav_Occ,Occupation,Healthcare Support Occupations,Time saved by genAI (% of work hours),2025-11-01,0.009519583497,0.003855402616,
+GenAI_TimeSav_Occ,Occupation,Healthcare Support Occupations,Time saved by genAI (% of work hours),2026-02-01,0.01759535927,0.006164560859,
+GenAI_TimeSav_Occ,Occupation,Healthcare Support Occupations,Time saved by genAI (% of work hours),2026-05-01,0.010158185310000001,0.003120309964,
+GenAI_TimeSav_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Time saved by genAI (% of work hours),2024-11-01,0.02010158562,0.0064416177900000005,
+GenAI_TimeSav_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Time saved by genAI (% of work hours),2025-02-01,0.011705922280000001,0.0038885042209999996,
+GenAI_TimeSav_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Time saved by genAI (% of work hours),2025-05-01,0.017897251949999998,0.007621587981,
+GenAI_TimeSav_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Time saved by genAI (% of work hours),2025-08-01,0.01450681825,0.003181453552,
+GenAI_TimeSav_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Time saved by genAI (% of work hours),2025-11-01,0.01808728426,0.0043508212159999995,
+GenAI_TimeSav_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Time saved by genAI (% of work hours),2026-02-01,0.01628528936,0.003900849326,
+GenAI_TimeSav_Occ,Occupation,"Installation, Maintenance, and Repair Occupations",Time saved by genAI (% of work hours),2026-05-01,0.014976075890000001,0.004722570621,
+GenAI_TimeSav_Occ,Occupation,Legal Occupations,Time saved by genAI (% of work hours),2024-11-01,0.003958049515,0.002006260094,
+GenAI_TimeSav_Occ,Occupation,Legal Occupations,Time saved by genAI (% of work hours),2025-02-01,0.02345072416,0.007588544327,
+GenAI_TimeSav_Occ,Occupation,Legal Occupations,Time saved by genAI (% of work hours),2025-05-01,0.031837198940000005,0.01081218932,
+GenAI_TimeSav_Occ,Occupation,Legal Occupations,Time saved by genAI (% of work hours),2025-08-01,0.06230879643,0.01962510311,
+GenAI_TimeSav_Occ,Occupation,Legal Occupations,Time saved by genAI (% of work hours),2025-11-01,0.04003430543,0.010146732240000001,
+GenAI_TimeSav_Occ,Occupation,Legal Occupations,Time saved by genAI (% of work hours),2026-02-01,0.02594659497,0.008103819003,
+GenAI_TimeSav_Occ,Occupation,Legal Occupations,Time saved by genAI (% of work hours),2026-05-01,0.03518954424,0.012793188879999999,
+GenAI_TimeSav_Occ,Occupation,"Life, Physical, and Social Science Occupations",Time saved by genAI (% of work hours),2024-11-01,0.010330005259999999,0.0037852058700000002,
+GenAI_TimeSav_Occ,Occupation,"Life, Physical, and Social Science Occupations",Time saved by genAI (% of work hours),2025-02-01,0.01073984817,0.0037500751659999996,
+GenAI_TimeSav_Occ,Occupation,"Life, Physical, and Social Science Occupations",Time saved by genAI (% of work hours),2025-05-01,0.02768327303,0.008043821851000001,
+GenAI_TimeSav_Occ,Occupation,"Life, Physical, and Social Science Occupations",Time saved by genAI (% of work hours),2025-08-01,0.03491112665,0.01492032973,
+GenAI_TimeSav_Occ,Occupation,"Life, Physical, and Social Science Occupations",Time saved by genAI (% of work hours),2025-11-01,0.033335081679999996,0.008907700975,
+GenAI_TimeSav_Occ,Occupation,"Life, Physical, and Social Science Occupations",Time saved by genAI (% of work hours),2026-02-01,0.0276815666,0.006897190613000001,
+GenAI_TimeSav_Occ,Occupation,"Life, Physical, and Social Science Occupations",Time saved by genAI (% of work hours),2026-05-01,0.024771157619999998,0.007745787602000001,
+GenAI_TimeSav_Occ,Occupation,Management Occupations,Time saved by genAI (% of work hours),2024-11-01,0.02455105514,0.001923588407,
+GenAI_TimeSav_Occ,Occupation,Management Occupations,Time saved by genAI (% of work hours),2025-02-01,0.0255458447,0.002028167624,
+GenAI_TimeSav_Occ,Occupation,Management Occupations,Time saved by genAI (% of work hours),2025-05-01,0.02591200483,0.001973189448,
+GenAI_TimeSav_Occ,Occupation,Management Occupations,Time saved by genAI (% of work hours),2025-08-01,0.03176190637,0.002050275735,
+GenAI_TimeSav_Occ,Occupation,Management Occupations,Time saved by genAI (% of work hours),2025-11-01,0.03303062496,0.0018789662230000001,
+GenAI_TimeSav_Occ,Occupation,Management Occupations,Time saved by genAI (% of work hours),2026-02-01,0.03496448228,0.001891375622,
+GenAI_TimeSav_Occ,Occupation,Management Occupations,Time saved by genAI (% of work hours),2026-05-01,0.03716084272,0.001896624331,
+GenAI_TimeSav_Occ,Occupation,Office and Administrative Support Occupations,Time saved by genAI (% of work hours),2024-11-01,0.006735619183,0.001310022122,
+GenAI_TimeSav_Occ,Occupation,Office and Administrative Support Occupations,Time saved by genAI (% of work hours),2025-02-01,0.008077774680999999,0.001511395265,
+GenAI_TimeSav_Occ,Occupation,Office and Administrative Support Occupations,Time saved by genAI (% of work hours),2025-05-01,0.012767645059999999,0.001858136198,
+GenAI_TimeSav_Occ,Occupation,Office and Administrative Support Occupations,Time saved by genAI (% of work hours),2025-08-01,0.01205622206,0.0021851925610000002,
+GenAI_TimeSav_Occ,Occupation,Office and Administrative Support Occupations,Time saved by genAI (% of work hours),2025-11-01,0.013067056850000001,0.002227767318,
+GenAI_TimeSav_Occ,Occupation,Office and Administrative Support Occupations,Time saved by genAI (% of work hours),2026-02-01,0.01728387852,0.003064909126,
+GenAI_TimeSav_Occ,Occupation,Office and Administrative Support Occupations,Time saved by genAI (% of work hours),2026-05-01,0.01965985396,0.002831646205,
+GenAI_TimeSav_Occ,Occupation,Personal Care and Service Occupations,Time saved by genAI (% of work hours),2024-11-01,0.008778653955,0.003494091154,
+GenAI_TimeSav_Occ,Occupation,Personal Care and Service Occupations,Time saved by genAI (% of work hours),2025-02-01,0.0210341969,0.009400708839,
+GenAI_TimeSav_Occ,Occupation,Personal Care and Service Occupations,Time saved by genAI (% of work hours),2025-05-01,0.002791871857,0.001974283598,
+GenAI_TimeSav_Occ,Occupation,Personal Care and Service Occupations,Time saved by genAI (% of work hours),2025-08-01,0.006896803681,0.003235970319,
+GenAI_TimeSav_Occ,Occupation,Personal Care and Service Occupations,Time saved by genAI (% of work hours),2025-11-01,0.010244529300000001,0.005047818361999999,
+GenAI_TimeSav_Occ,Occupation,Personal Care and Service Occupations,Time saved by genAI (% of work hours),2026-02-01,0.01637561375,0.004686721311,
+GenAI_TimeSav_Occ,Occupation,Personal Care and Service Occupations,Time saved by genAI (% of work hours),2026-05-01,0.009351711624,0.003421109812,
+GenAI_TimeSav_Occ,Occupation,Production Occupations,Time saved by genAI (% of work hours),2024-11-01,0.01418186701,0.0032329731229999996,
+GenAI_TimeSav_Occ,Occupation,Production Occupations,Time saved by genAI (% of work hours),2025-02-01,0.01730406334,0.0057055964039999995,
+GenAI_TimeSav_Occ,Occupation,Production Occupations,Time saved by genAI (% of work hours),2025-05-01,0.02009788286,0.0050692454330000004,
+GenAI_TimeSav_Occ,Occupation,Production Occupations,Time saved by genAI (% of work hours),2025-08-01,0.019534663940000002,0.004579314936,
+GenAI_TimeSav_Occ,Occupation,Production Occupations,Time saved by genAI (% of work hours),2025-11-01,0.01340852813,0.002797815501,
+GenAI_TimeSav_Occ,Occupation,Production Occupations,Time saved by genAI (% of work hours),2026-02-01,0.020942425560000002,0.004030674578,
+GenAI_TimeSav_Occ,Occupation,Production Occupations,Time saved by genAI (% of work hours),2026-05-01,0.0156329563,0.0033933021260000003,
+GenAI_TimeSav_Occ,Occupation,Protective Service Occupations,Time saved by genAI (% of work hours),2024-11-01,0.0015513059639999998,0.001454606134,
+GenAI_TimeSav_Occ,Occupation,Protective Service Occupations,Time saved by genAI (% of work hours),2025-02-01,0.00037847661980000005,0.000380679748,
+GenAI_TimeSav_Occ,Occupation,Protective Service Occupations,Time saved by genAI (% of work hours),2025-05-01,0.0004587238342,0.00046693895290000003,
+GenAI_TimeSav_Occ,Occupation,Protective Service Occupations,Time saved by genAI (% of work hours),2025-08-01,0.009919800611,0.00508421393,
+GenAI_TimeSav_Occ,Occupation,Protective Service Occupations,Time saved by genAI (% of work hours),2025-11-01,0.01467138309,0.006229819685,
+GenAI_TimeSav_Occ,Occupation,Protective Service Occupations,Time saved by genAI (% of work hours),2026-02-01,0.0035560945640000004,0.001993736606,
+GenAI_TimeSav_Occ,Occupation,Protective Service Occupations,Time saved by genAI (% of work hours),2026-05-01,0.006328465571,0.0038826086199999998,
+GenAI_TimeSav_Occ,Occupation,Sales and Related Occupations,Time saved by genAI (% of work hours),2024-11-01,0.013361116440000001,0.002962103907,
+GenAI_TimeSav_Occ,Occupation,Sales and Related Occupations,Time saved by genAI (% of work hours),2025-02-01,0.01700582538,0.0036336069669999998,
+GenAI_TimeSav_Occ,Occupation,Sales and Related Occupations,Time saved by genAI (% of work hours),2025-05-01,0.02282200225,0.006909288033,
+GenAI_TimeSav_Occ,Occupation,Sales and Related Occupations,Time saved by genAI (% of work hours),2025-08-01,0.009979794641,0.0020956118879999997,
+GenAI_TimeSav_Occ,Occupation,Sales and Related Occupations,Time saved by genAI (% of work hours),2025-11-01,0.01441535394,0.002266504458,
+GenAI_TimeSav_Occ,Occupation,Sales and Related Occupations,Time saved by genAI (% of work hours),2026-02-01,0.01827060385,0.0030647701179999996,
+GenAI_TimeSav_Occ,Occupation,Sales and Related Occupations,Time saved by genAI (% of work hours),2026-05-01,0.01782302891,0.002385978244,
+GenAI_TimeSav_Occ,Occupation,Transportation and Material Moving Occupations,Time saved by genAI (% of work hours),2024-11-01,0.007180105316,0.002232628777,
+GenAI_TimeSav_Occ,Occupation,Transportation and Material Moving Occupations,Time saved by genAI (% of work hours),2025-02-01,0.007334628155,0.00241760911,
+GenAI_TimeSav_Occ,Occupation,Transportation and Material Moving Occupations,Time saved by genAI (% of work hours),2025-05-01,0.009965718286,0.003858401885,
+GenAI_TimeSav_Occ,Occupation,Transportation and Material Moving Occupations,Time saved by genAI (% of work hours),2025-08-01,0.008228646721,0.002206909318,
+GenAI_TimeSav_Occ,Occupation,Transportation and Material Moving Occupations,Time saved by genAI (% of work hours),2025-11-01,0.009959395031,0.0032451446150000003,
+GenAI_TimeSav_Occ,Occupation,Transportation and Material Moving Occupations,Time saved by genAI (% of work hours),2026-02-01,0.008790389613,0.002409396089,
+GenAI_TimeSav_Occ,Occupation,Transportation and Material Moving Occupations,Time saved by genAI (% of work hours),2026-05-01,0.012335700570000002,0.003652968774,

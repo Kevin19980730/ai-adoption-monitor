@@ -1,0 +1,8 @@
+company_product,estimate_m,low_m,high_m,last_disclosed_m,last_disclosed_date,basis
+Microsoft 365 Copilot (paid),40,35,45,30,2026-07-29,"30M+ at FY26Q4; net adds 5M then 10M per quarter; E7 ramp"
+OpenAI ChatGPT Business/Enterprise/Edu,15,12,19,9,2026-02-27,"9M+ paying business users; ~0.65M/mo trend plus Q3 B2B acceleration"
+Google Gemini Enterprise (paid),12,10,16,8,2026-02-04,"8M+ seats sold (incl ~3M DoD blanket); paid MAU +40% q/q Q1 then no figure"
+Anthropic Claude Team/Enterprise/Edu incl Claude Code,4,2.5,7,,,"no disclosure; named company-wide deals 1.6-2.0M people with access, discounted for activation, plus long tail"
+Microsoft 365 Copilot Chat (free entitlement),470,,,450,2026-01-28,"paid M365 commercial seats; active 'multiples of 15M'"
+Gemini in Workspace (bundled entitlement),110,60,160,,,"13M+ customer orgs x 8-10 seats; ~30M est. monthly active"
+GitHub Copilot Business/Enterprise,4.5,3.5,6,4.7,2026-01-28,"4.7M paid all tiers Dec 2025, 60-70% business assumed"
