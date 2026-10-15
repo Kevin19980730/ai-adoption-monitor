@@ -891,7 +891,7 @@ const CX_COL = {rail: "#1f3a7a", og70s: "#c41230", telecom: "#e66100", shale: "#
 const CX_SHORT = {rail: "Railroads", og70s: "O&G 70s-80s", telecom: "Telecoms", shale: "Shale", hyperLA: "Hyperscalers (LA)", hyper: "Hyperscalers"};
 /* railroads are drawn left of the axis break at 1/4 scale: 1919 sits 10 years before 1970 */
 const cxPos = (k, p) => k === "rail" ? 1960 - (1919 - p) / 4 : p;
-/* BofA draws post-1970 points three quarters early: position P = the four quarters ending P+0.75 */
+/* BofA: every post-1970 point is drawn three quarters before the end of its four-quarter window (half a year before the start of its final quarter): position P = the four quarters ending P+0.75 */
 const cxQ = p => { const e = p + 0.5, y = Math.floor(e + 1e-9); return `TTM to Q${Math.round((e - y) * 4) + 1} ${y}`; };
 const cxPosOfQ = q => +q.slice(0, 4) + (+q.slice(-1) - 1) / 4 - 0.5;  /* "2026Q2" -> chart position */
 /* hyperscaler capex by company, calendar quarters (SEC filings; Oracle calendarised) */
@@ -981,13 +981,16 @@ async function loadCapex() {
   const colOf = k => k === "exp" ? "#8a5cd6" : CX_COL[k];
   const shortOf = (k, fh) => k === "exp" ? "Eight names" : fh && k === "hyper" ? "Five (first-hand)" : CX_SHORT[k];
   const renderMain = (SS, fhMode) => {
+    /* BofA data re-dated to the true period end (+0.75 year) unless the PDF placement is asked for; railroads have no shift */
+    const shift = !fhMode && $("#cx-date").value === "end" ? 0.75 : 0, trueDates = fhMode || shift > 0;
+    $("#cx-date").disabled = fhMode;
     const series = SS.map(s => ({name: s.label, short: shortOf(s.key, fhMode), color: colOf(s.key), markers: s.key === "exp", dash: s.key === "exp",
-      points: s.points.map(p => ({x: s.key === "rail" ? cxPos("rail", p[0]) : p[0], y: p[1],
+      points: s.points.map(p => ({x: s.key === "rail" ? cxPos("rail", p[0]) : p[0] + shift, y: p[1],
         note: fhMode ? p[2] : s.key === "rail" ? null : p[2] != null ? `${p[2]} annual value` : cxQ(p[0])}))}));
     legend("lg-cx", series.map(s => ({name: s.name, color: s.color, dash: s.dash})));
     const ticks = [{x: 1955, label: "1899"}, {x: 1960, label: "1919"}, {x: 1965, label: "//"}].concat([1970, 1975, 1980, 1985, 1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025].map(y => ({x: y, label: String(y)})));
-    const title = x => x < 1965 ? String(Math.round((x - 1960) * 4 + 1919)) : fhMode ? (x > 2020 ? `Four quarters to Q${Math.round((x % 1) * 4) || 4} ${Math.round((x % 1) * 4) ? Math.floor(x) : Math.floor(x) - 1}` : String(Math.floor(x))) : x > 2020 ? cxQ(x) : "Drawn at " + x.toFixed(2);
-    view("c-cx", hst => lineChart(hst, series, {height: 380, xType: "num", xTicks: ticks, x0: 1954.5, x1: fhMode ? 2027 : 2026, yMin: 0, yMax: 3, yFmt: (v, t) => t ? v.toFixed(1) + "%" : fx(v), mode: "near", xFmt: title}),
+    const title = x => x < 1965 ? String(Math.round((x - 1960) * 4 + 1919)) : trueDates ? (x > 2020 ? `Four quarters to Q${Math.round((x % 1) * 4) || 4} ${Math.round((x % 1) * 4) ? Math.floor(x) : Math.floor(x) - 1}` : String(Math.floor(x))) : x > 2020 ? cxQ(x) : "Drawn at " + x.toFixed(2);
+    view("c-cx", hst => lineChart(hst, series, {height: 380, xType: "num", xTicks: ticks, x0: 1954.5, x1: trueDates ? 2027 : 2026, yMin: 0, yMax: 3, yFmt: (v, t) => t ? v.toFixed(1) + "%" : fx(v), mode: "near", xFmt: title}),
       hst => table(hst, [{label: "Series", key: "label"}, {label: fhMode ? "Year / four quarters to" : "Year / chart point", get: r => r.year ?? cxQ(r.pos)}, {label: "% of US GDP", n: 1, get: r => fx(r.v)}],
         fhMode ? SS.flatMap(s => s.points.filter((p, i, a) => i === a.findIndex(q => q[2] === p[2])).map(p => ({label: s.label, year: p[2], v: p[1]})))
         : SS.flatMap(s => s.key === "rail" ? s.points.map(p => ({label: s.label, year: p[0], v: p[1]}))
@@ -1015,11 +1018,14 @@ async function loadCapex() {
       {label: "Peak to last", n: 1, get: r => r.last < r.peak ? "−" + Math.round((1 - r.last / r.peak) * 100) + "%" : "still rising"}], rws);
     $("#cx-src-note").textContent = fhMode
       ? "First-hand rebuild: NBER tables, BEA Fixed Assets and GDP, SEC filings and SpaceX's prospectus - no BofA input. Annual series are calendar-year steps; hyperscalers are the four quarters to each real quarter end. BofA's lease-adjusted line can't be rebuilt; the dashed line adds CoreWeave, Nebius and SpaceX AI instead."
-      : "BofA's exhibit as published (PDF vector values). BofA draws post-1970 points three quarters early.";
+      : shift ? "BofA's exhibit values (PDF vector), re-dated: each post-1970 point moved to the true end of the period it measures (+3 quarters), so BofA's last hyperscaler point sits at Q1 2026. Railroads are unchanged. Switch Dating to see the placement in the original PDF."
+      : "BofA's exhibit exactly as drawn in the PDF: each post-1970 point sits three quarters before the end of its four-quarter window (half a year before the start of its final quarter).";
     return rws;
   };
   const rows = renderMain(S, false);
-  $("#cx-src").addEventListener("change", () => renderMain($("#cx-src").value === "fh" ? FHS : S, $("#cx-src").value === "fh"));
+  const rerenderMain = () => renderMain($("#cx-src").value === "fh" ? FHS : S, $("#cx-src").value === "fh");
+  $("#cx-src").addEventListener("change", rerenderMain);
+  $("#cx-date").addEventListener("change", rerenderMain);
 
   const host = $("#cx-tiles"); host.replaceChildren();
   const hy = rows.find(r => r.key === "hyper"), hla = rows.find(r => r.key === "hyperLA");

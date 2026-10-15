@@ -408,7 +408,8 @@
     <div class="card-head"><div><h2>Hyperscaler capex is late cycle, measured at a macro level</h2>
       <p class="muted">Sector capex as % of US GDP through each cycle&rsquo;s speculative build phase. BofA Global Research Exhibit 2, as reprinted in BofA Institute, <i>Can the AI buildout keep building?</i> (27 Aug 2026). Values are read exactly from the PDF&rsquo;s vector chart, not estimated from pixels. Railroads (annual, 1899&ndash;1920) sit on a compressed axis left of the break, as in the original. Sources: BofA Global Research, BEA, NBER.</p></div>
       <button class="btn small tbl-toggle" data-for="c-cx">Table</button></div>
-    <div class="filters inner"><label>Data <select id="cx-src"><option value="bofa">BofA exhibit (PDF values)</option><option value="fh">First-hand rebuild (filings, BEA, NBER)</option></select></label></div>
+    <div class="filters inner"><label>Data <select id="cx-src"><option value="bofa">BofA exhibit (PDF values)</option><option value="fh">First-hand rebuild (filings, BEA, NBER)</option></select></label>
+      <label>Dating <select id="cx-date"><option value="end">Re-dated to period end</option><option value="pdf">As drawn in the PDF</option></select></label></div>
     <p class="muted small" id="cx-src-note"></p>
     <div class="legend" id="lg-cx"></div>
     <div class="chart" id="c-cx"></div>
@@ -424,7 +425,7 @@
       <p class="muted">Each panel rebuilt from primary data and compared point by point with the PDF&rsquo;s vector values. Railroads: the NBER tables the footnote names. O&amp;G and telecoms (footnote: &ldquo;BEA&rdquo;): BEA Fixed Assets investment <i>by industry</i>, all asset types, over BEA GDP. Hyperscalers: SEC filings of the five companies over BEA GDP.</p></div>
       <button class="btn small tbl-toggle" data-for="c-cx-fh">Table</button></div>
     <div id="cx-fh" class="tblwrap"></div>
-    <p class="small"><b>How BofA dates the points:</b> every post-1970 point is drawn three quarters early. The hyperscaler point drawn at mid-2021 is capex for the four quarters to Q1 2022, and the last point (drawn mid-2025) is the four quarters to <b>Q1 2026</b>. Annual year Y is drawn from mid-year Y&minus;1 to Q1 of Y for the same reason. The dashed line below continues the first-hand hyperscaler series to the latest quarter all five have filed.</p>
+    <p class="small"><b>How BofA dates the points:</b> every post-1970 point is drawn three quarters before the end of its four-quarter window (half a year before the start of its final quarter). The values and the periods they belong to are confirmed by the filings; only the horizontal placement is off, and it is the same for every post-1970 cycle, so levels, peaks and cycle-to-cycle comparisons are unaffected. The hyperscaler point drawn at mid-2021 is capex for the four quarters to Q1 2022, and the last point (drawn mid-2025) is the four quarters to <b>Q1 2026</b>. Annual year Y is drawn from mid-year Y&minus;1 to Q1 of Y for the same reason. The dashed line below continues the first-hand hyperscaler series to the latest quarter all five have filed.</p>
     <div class="legend" id="lg-cx-fh"></div>
     <div class="chart" id="c-cx-fh"></div>
   </div>
