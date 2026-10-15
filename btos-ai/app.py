@@ -484,7 +484,7 @@ def capex_cycles():
         out.append({"key": key, "label": g.label.iloc[0],
                     "points": [[float(r.position), float(r.value_pct_gdp), None if pd.isna(r.year) else int(r.year)]
                                for r in g.itertuples()]})
-    books = sorted(BCD.glob("*_BofA Exhibit 2*.xlsx"))
+    books = sorted(BCD.glob("*_BofA Exhibit 2*.xlsx"), key=lambda b: b.stat().st_mtime)
     fh, ext = BCD / "firsthand" / "firsthand_vs_vector.csv", BCD / "firsthand" / "hyperscalers_firsthand_extended.csv"
     fhd = cached("bcfh", [fh], lambda: pd.read_csv(fh) if fh.exists() else pd.DataFrame())
     exd = cached("bcex", [ext], lambda: pd.read_csv(ext) if ext.exists() else pd.DataFrame())
@@ -493,7 +493,11 @@ def capex_cycles():
         a = g.diff_pp.abs()
         check.append({"key": key, "n": int(len(g)), "max": float(a.max()), "mean": float(a.mean()),
                       "rmse": float((g.diff_pp ** 2).mean() ** 0.5), "source": g.firsthand_source.iloc[0]})
+    qi, of = BCD / "firsthand" / "hyperscalers_quarterly_inputs.csv", BCD / "firsthand" / "oracle_fiscal_quarters.csv"
+    qid = cached("bcqi", [qi], lambda: pd.read_csv(qi) if qi.exists() else pd.DataFrame())
+    ofd = cached("bcof", [of], lambda: pd.read_csv(of) if of.exists() else pd.DataFrame())
     return jsonify({"series": out, "xlsx": books[-1].name if books else None, "check": check,
+                    "quarterly": records(qid) if not qid.empty else [], "oracle_fiscal": records(ofd) if not ofd.empty else [],
                     "detail": records(fhd) if not fhd.empty else [],
                     "extended": records(exd) if not exd.empty else []})
 

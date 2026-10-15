@@ -893,6 +893,39 @@ const cxPos = (k, p) => k === "rail" ? 1960 - (1919 - p) / 4 : p;
 /* BofA draws post-1970 points three quarters early: position P = the four quarters ending P+0.75 */
 const cxQ = p => { const e = p + 0.5, y = Math.floor(e + 1e-9); return `TTM to Q${Math.round((e - y) * 4) + 1} ${y}`; };
 const cxPosOfQ = q => +q.slice(0, 4) + (+q.slice(-1) - 1) / 4 - 0.5;  /* "2026Q2" -> chart position */
+/* hyperscaler capex by company, calendar quarters (SEC filings; Oracle calendarised) */
+let CXQ = null;
+const CXQ_TK = [["AMZN", "Amazon", "var(--s1)"], ["GOOGL", "Alphabet", "var(--s2)"], ["MSFT", "Microsoft", "var(--s3)"], ["META", "Meta", "var(--s4)"], ["ORCL", "Oracle (calendarised)", "var(--s5)"]];
+function drawCxQ() {
+  const Q = CXQ.quarterly, n = Q.length, mode = $("#cxq-mode").value;
+  const tot = Q.map(r => CXQ_TK.reduce((a, [k]) => a + r[k], 0));
+  const ttm = (arr, i) => i >= 3 ? arr[i] + arr[i - 1] + arr[i - 2] + arr[i - 3] : null;
+  const qx = q => +q.slice(0, 4) + (+q.slice(-1) - 1) / 4 + 0.125;
+  const val = (k, i) => {
+    const s = Q.map(r => r[k]);
+    if (mode === "q") return s[i];
+    if (mode === "ttm") return ttm(s, i);
+    if (mode === "share") { const t = ttm(tot, i); return t ? ttm(s, i) / t : null; }
+    return i >= 4 && s[i - 4] > 0 ? s[i] / s[i - 4] - 1 : null;
+  };
+  const fmt = mode === "share" || mode === "yoy" ? (v => pct(v, 0)) : (v => "$" + v.toFixed(v >= 100 ? 0 : 1) + "bn");
+  const S = CXQ_TK.map(([k, nm, col]) => ({name: nm, color: col, points: Q.map((r, i) => ({x: qx(r.cal_quarter), y: val(k, i), note: r.cal_quarter}))}));
+  if (mode === "q" || mode === "ttm") S.unshift({name: "Total, five companies", short: "Total", color: "var(--ink)", points: Q.map((r, i) => ({x: qx(r.cal_quarter), y: mode === "q" ? tot[i] : ttm(tot, i), note: r.cal_quarter}))});
+  legend("lg-cx-q", S.map(s => ({name: s.name, color: s.color})));
+  const qt = x => { const y = Math.floor(x), q = Math.floor((x - y) * 4) + 1; return `Q${q} ${y}`; };
+  view("c-cx-q", hst => lineChart(hst, S, {height: 340, xType: "num", yMin: mode === "yoy" ? null : 0, yFmt: fmt, mode: "cross", xFmt: qt,
+      xTicks: [2020, 2021, 2022, 2023, 2024, 2025, 2026].map(y => ({x: y + 0.125, label: "Q1 " + y}))}),
+    hst => table(hst, [{label: "Quarter", key: "cal_quarter"}].concat(CXQ_TK.map(([k, nm]) => ({label: nm, n: 1, get: r => "$" + r[k].toFixed(2)})),
+      [{label: "Total", n: 1, get: r => "$" + CXQ_TK.reduce((a, [k]) => a + r[k], 0).toFixed(1)}, {label: "GDP (SAAR, $bn)", n: 1, get: r => Math.round(r.gdp_saar_bn).toLocaleString()},
+       {label: "TTM % of GDP", n: 1, get: r => { const i = Q.indexOf(r), t = ttm(tot, i); return t ? (t / ((Q[i].gdp_saar_bn + Q[i - 1].gdp_saar_bn + Q[i - 2].gdp_saar_bn + Q[i - 3].gdp_saar_bn) / 4) * 100).toFixed(2) + "%" : "–"; }}]), [...Q].reverse()));
+  // tiles: latest quarter, y/y, TTM
+  const host = $("#cx-q-tiles"); host.replaceChildren();
+  const last = Q[n - 1], yago = Q[n - 5];
+  const tile = (t, v, dlt, s) => { const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, t); h("div", {class: "v"}, a, v); if (dlt != null) { const dd = h("div", {class: "d"}, a); h("span", {class: dlt >= 0 ? "up" : "down"}, dd, (dlt >= 0 ? "▲ " : "▼ ") + (Math.abs(dlt) * 100).toFixed(0) + "%"); dd.appendChild(document.createTextNode(" vs a year earlier")); } h("div", {class: "s"}, a, s); };
+  tile(`Five hyperscalers, ${last.cal_quarter}`, "$" + tot[n - 1].toFixed(0) + "bn", yago ? tot[n - 1] / tot[n - 5] - 1 : null, "capex in the quarter · SEC filings");
+  CXQ_TK.forEach(([k, nm]) => tile(nm, "$" + last[k].toFixed(1) + "bn", yago && yago[k] > 0 ? last[k] / yago[k] - 1 : null, `${last.cal_quarter} capex`));
+  table($("#cx-of"), [{label: "Fiscal quarter ends", key: "fiscal_quarter_end"}, {label: "Oracle capex ($bn)", n: 1, get: r => "$" + r.capex_bn.toFixed(2)}], [...CXQ.oracle_fiscal].reverse());
+}
 async function loadCapex() {
   const d = await api("/api/capex-cycles");
   if (!d.series.length) { $("#cx-tiles").textContent = "No data - run bofa-capex-cycles/extract_pdf.py."; return; }
@@ -954,6 +987,7 @@ async function loadCapex() {
       hst => table(hst, [{label: "Series", key: "s"}, {label: "Four quarters to", key: "q"}, {label: "BofA (PDF)", n: 1, get: r => r.v == null ? "–" : fx(r.v)}, {label: "First-hand", n: 1, get: r => fx(r.f)}, {label: "Diff", n: 1, get: r => r.v == null ? "–" : (r.v - r.f >= 0 ? "+" : "−") + Math.abs(r.v - r.f).toFixed(3) + "pp"}],
         d.extended.map(r => { const m = by.hyper.points.find(p => Math.abs(cxPosOfQ(r.ttm_ending) - p[0]) < 0.01); return {s: "Hyperscalers", q: r.ttm_ending, v: m ? m[1] : null, f: r.pct}; }).reverse()));
   }
+  if ((d.quarterly || []).length) { CXQ = d; drawCxQ(); $("#cxq-mode").addEventListener("change", drawCxQ); }
   if (d.xlsx) $("#cx-xlsx").href = "/download-capex/" + encodeURIComponent(d.xlsx);
 }
 

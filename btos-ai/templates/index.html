@@ -421,6 +421,16 @@
     <div class="legend" id="lg-cx-fh"></div>
     <div class="chart" id="c-cx-fh"></div>
   </div>
+  <div class="tiles" id="cx-q-tiles"></div>
+  <div class="card">
+    <div class="card-head"><div><h2>Hyperscaler capex by company, each calendar quarter</h2>
+      <p class="muted">Purchases of property &amp; equipment from each company&rsquo;s 10-Q / 10-K (SEC XBRL), $bn per calendar quarter. Quarters come from year-to-date cash flows (Q4 = full year minus nine months). Oracle&rsquo;s fiscal quarters end Feb / May / Aug / Nov, so it is calendarised: each calendar quarter = &#8532; &times; the Oracle quarter ending in its second month + &#8531; &times; the next one. Refreshed by the weekly job as new filings land.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-cx-q">Table</button></div>
+    <div class="filters inner"><label>Show <select id="cxq-mode"><option value="q">Quarterly capex ($bn)</option><option value="ttm">Trailing four quarters ($bn)</option><option value="share">Share of the five</option><option value="yoy">Growth vs a year earlier</option></select></label></div>
+    <div class="legend" id="lg-cx-q"></div>
+    <div class="chart" id="c-cx-q"></div>
+    <details class="small"><summary>Oracle fiscal quarters as filed</summary><div id="cx-of" class="tblwrap"></div></details>
+  </div>
   <div class="card">
     <h3>Cycle by cycle</h3>
     <div id="cx-sum" class="tblwrap"></div>
