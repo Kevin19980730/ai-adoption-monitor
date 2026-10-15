@@ -296,6 +296,7 @@ function showTab(name) {
   if (!document.getElementById("tab-" + name)) name = "overview";
   document.querySelectorAll(".tab").forEach(s => s.hidden = s.id !== "tab-" + name);
   document.querySelectorAll(".tabs a").forEach(a => a.setAttribute("aria-selected", a.dataset.tab === name));
+  const cur = document.querySelector(`.tabs a[data-tab="${name}"]`); if (cur) cur.scrollIntoView({block: "nearest", inline: "nearest"});
   if (!loaded[name]) { loaded[name] = true; LOADERS[name](); }
   else Object.keys(VIEWS).forEach(id => { const n = document.getElementById(id); if (n && n.closest(".tab").id === "tab-" + name && VIEWS[id].mode === "chart") render(id); });
 }

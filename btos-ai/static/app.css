@@ -65,7 +65,9 @@ code { font-size: 12px; background: var(--surface-2); padding: 1px 4px; border-r
 .top { background: var(--surface); border-bottom: 1px solid var(--ring); position: sticky; top: 0; z-index: 20; }
 .title-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; padding: 14px 0 8px; }
 .top-actions { display: flex; align-items: center; gap: 10px; white-space: nowrap; font-size: 12.5px; }
-.tabs { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
+/* 13 tabs no longer fit one row: wrap on desktop so every tab is visible; scroll (with a visible bar) on phones */
+.tabs { display: flex; flex-wrap: wrap; gap: 2px 2px; }
+@media (max-width: 700px) { .tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; } }
 .tabs a { padding: 8px 12px; color: var(--ink-2); text-decoration: none; border-bottom: 2px solid transparent; white-space: nowrap; font-weight: 500; }
 .tabs a:hover { color: var(--ink); background: var(--surface-2); }
 .tabs a[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
