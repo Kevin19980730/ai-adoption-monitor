@@ -7,6 +7,7 @@ One page over four sources, all read from files so it runs with no Claude:
   codex-user-trend/*.csv                   AI assistant user disclosures, Codex vs Claude Code npm,
                                            enterprise seat estimates (edited by hand)
   ramp-ai-index/*.csv                      Ramp AI Index business token volume / spend / prices
+  bofa-capex-cycles/exhibit2_*.csv        BofA Exhibit 2 capex cycles, read from the PDF's vector chart
   credit-spreads/macro_daily.csv          ICE BofA BB / CCC HY OAS (FRED + Wayback history), US 10y real yield,
                                            term premium and nominal yield (FRED)
 
@@ -466,6 +467,33 @@ def spreads():
     chk = CSD / "spreads_checks.csv"
     return jsonify({"series": series, "stats": stats,
                     "checks": records(pd.read_csv(chk).tail(20)) if chk.exists() else []})
+
+
+# ---------------------------------------------------------------- BofA Exhibit 2: capex cycles as % of GDP
+BCD = HERE.parent / "bofa-capex-cycles"
+
+
+@app.route("/api/capex-cycles")
+def capex_cycles():
+    p = BCD / "exhibit2_points.csv"
+    d = cached("bc", [p], lambda: pd.read_csv(p) if p.exists() else pd.DataFrame())
+    if d.empty:
+        return jsonify({"series": []})
+    out = []
+    for key, g in d.groupby("series", sort=False):
+        out.append({"key": key, "label": g.label.iloc[0],
+                    "points": [[float(r.position), float(r.value_pct_gdp), None if pd.isna(r.year) else int(r.year)]
+                               for r in g.itertuples()]})
+    books = sorted(BCD.glob("*_BofA Exhibit 2*.xlsx"))
+    return jsonify({"series": out, "xlsx": books[-1].name if books else None})
+
+
+@app.route("/download-capex/<path:name>")
+def download_capex(name):
+    p = (BCD / name).resolve()
+    if p.parent != BCD.resolve() or not p.exists() or p.suffix != ".xlsx":
+        abort(404)
+    return send_file(p, as_attachment=True)
 
 
 # ---------------------------------------------------------------- Ramp AI Index: business token volume / spend / price

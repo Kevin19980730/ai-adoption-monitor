@@ -142,7 +142,7 @@ function lineChart(host, series, opt) {
   el("line", {x1: M.l, x2: W - M.r, y1: H - M.b, y2: H - M.b, stroke: "var(--axis)"}, svg);
   // x ticks
   if (opt.xType === "num") {
-    niceTicks(x0, x1, 6).forEach(v => { el("text", {x: X(v), y: H - M.b + 18, "text-anchor": "middle"}, svg, opt.xFmt ? opt.xFmt(v) : v); });
+    (opt.xTicks || niceTicks(x0, x1, 6).map(v => ({x: v, label: opt.xFmt ? opt.xFmt(v) : v}))).forEach(t => { if (t.x >= x0 && t.x <= x1) el("text", {x: X(t.x), y: H - M.b + 18, "text-anchor": "middle"}, svg, t.label); });
   } else {
     const months = (x1 - x0) / 2.63e9, every = months > 60 ? 12 : months > 30 ? 6 : months > 14 ? 3 : months > 7 ? 2 : 1;
     const step = narrow ? every * 2 : every;
@@ -311,7 +311,7 @@ $("#themeBtn").addEventListener("click", () => {
 async function loadOverview() {
   const d = await api("/api/overview");
   const host = $("#tiles"); host.replaceChildren();
-  const link = {btos7: "#firms", btos24: "#firms", ChatGPT: "#assistants", "Gemini app": "#assistants", codex: "#assistants", openrouter: "#tokens", ramp: "#ramp", silicon: "#gpu", hy_BAMLH0A1HYBB: "#credit", hy_BAMLH0A3HYC: "#credit", hy_DFII10: "#credit", hy_THREEFYTP10: "#credit", arr_Anthropic: "#arr", arr_OpenAI: "#arr"};
+  const link = {btos7: "#firms", btos24: "#firms", ChatGPT: "#assistants", "Gemini app": "#assistants", codex: "#assistants", openrouter: "#tokens", ramp: "#ramp", silicon: "#gpu", capex: "#capex", hy_BAMLH0A1HYBB: "#credit", hy_BAMLH0A3HYC: "#credit", hy_DFII10: "#credit", hy_THREEFYTP10: "#credit", arr_Anthropic: "#arr", arr_OpenAI: "#arr"};
   d.tiles.forEach(t => {
     const a = h("a", {class: "tile", href: link[t.id] || "#workers"}, host);
     h("div", {class: "t"}, a, t.title);
@@ -885,6 +885,55 @@ async function loadRamp() {
   drawRamp();
 }
 
+/* ================================================================ BofA Exhibit 2: capex cycles */
+const CX_COL = {rail: "#1f3a7a", og70s: "#c41230", telecom: "#e66100", shale: "#269e00", hyperLA: "#33b5f0", hyper: "#00808f"};
+const CX_SHORT = {rail: "Railroads", og70s: "O&G 70s-80s", telecom: "Telecoms", shale: "Shale", hyperLA: "Hyperscalers (LA)", hyper: "Hyperscalers"};
+/* railroads are drawn left of the axis break at 1/4 scale: 1919 sits 10 years before 1970 */
+const cxPos = (k, p) => k === "rail" ? 1960 - (1919 - p) / 4 : p;
+const cxQ = p => { const y = Math.floor(p + 1e-9); return ["Jan", "Apr", "Jul", "Oct"][Math.round((p - y) * 4)] + " " + y; };  /* axis position, not a fiscal quarter */
+async function loadCapex() {
+  const d = await api("/api/capex-cycles");
+  if (!d.series.length) { $("#cx-tiles").textContent = "No data - run bofa-capex-cycles/extract_pdf.py."; return; }
+  const S = d.series, by = Object.fromEntries(S.map(s => [s.key, s]));
+  const fx = v => v.toFixed(2) + "%";
+  const series = S.map(s => ({name: s.label, short: CX_SHORT[s.key], color: CX_COL[s.key], markers: false,
+    points: s.points.map(p => ({x: cxPos(s.key, p[0]), y: p[1], note: s.key === "rail" ? null : p[2] != null ? `${p[2]} value (drawn ${cxQ(p[0])})` : `chart point ${cxQ(p[0])}`}))}));
+  legend("lg-cx", series.map(s => ({name: s.name, color: s.color})));
+  const ticks = [{x: 1955, label: "1899"}, {x: 1960, label: "1919"}, {x: 1965, label: "//"}].concat([1970, 1975, 1980, 1985, 1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025].map(y => ({x: y, label: String(y)})));
+  const title = x => x < 1965 ? String(Math.round((x - 1960) * 4 + 1919)) : cxQ(x);
+  view("c-cx", hst => lineChart(hst, series, {height: 380, xType: "num", xTicks: ticks, x0: 1954.5, x1: 2026, yMin: 0, yMax: 3, yFmt: (v, t) => t ? v.toFixed(1) + "%" : fx(v), mode: "near", xFmt: title}),
+    hst => table(hst, [{label: "Series", key: "label"}, {label: "Year / chart point", get: r => r.year ?? cxQ(r.pos)}, {label: "% of US GDP", n: 1, get: r => fx(r.v)}],
+      S.flatMap(s => s.key === "rail" ? s.points.map(p => ({label: s.label, year: p[0], v: p[1]}))
+        : s.key.startsWith("hyper") ? s.points.map(p => ({label: s.label, pos: p[0], v: p[1]}))
+        : s.points.filter((p, i, a) => i === a.findIndex(q => q[2] === p[2])).map(p => ({label: s.label, year: p[2], v: p[1]})))));
+
+  const al = S.map(s => ({name: s.label, short: CX_SHORT[s.key], color: CX_COL[s.key], markers: false,
+    points: s.points.map(p => ({x: p[0] - s.points[0][0], y: p[1], note: s.key === "rail" ? String(p[0]) : p[2] != null ? String(p[2]) : cxQ(p[0])}))}));
+  legend("lg-cx-al", al.map(s => ({name: s.name, color: s.color})));
+  view("c-cx-al", hst => lineChart(hst, al, {height: 340, xType: "num", x0: 0, x1: 22, yMin: 0, yMax: 3, yFmt: (v, t) => t ? v.toFixed(1) + "%" : fx(v), mode: "near", xFmt: v => `Year ${(+v).toFixed(v % 1 ? 2 : 0)} of the cycle`}),
+    hst => table(hst, [{label: "Series", key: "s"}, {label: "Years since start", n: 1, get: r => r.x.toFixed(2)}, {label: "% of US GDP", n: 1, get: r => fx(r.y)}],
+      al.flatMap(s => s.points.map(p => ({s: s.name, x: p.x, y: p.y})))));
+
+  // summary: one row per cycle
+  const rows = S.map(s => {
+    const P = s.points, pk = P.reduce((a, b) => b[1] > a[1] ? b : a), lab = p => s.key === "rail" ? String(p[0]) : p[2] != null ? String(p[2]) : cxQ(p[0]);
+    return {key: s.key, label: s.label, start: lab(P[0]), end: lab(P[P.length - 1]), v0: P[0][1], peak: pk[1], pkAt: lab(pk), last: P[P.length - 1][1],
+      yrs: s.key === "rail" ? pk[0] - P[0][0] : (pk[2] ?? pk[0]) - (P[0][2] ?? P[0][0])};
+  });
+  table($("#cx-sum"), [{label: "Cycle", key: "label"}, {label: "From", key: "start"}, {label: "To", key: "end"}, {label: "Start", n: 1, get: r => fx(r.v0)},
+    {label: "Peak", n: 1, get: r => fx(r.peak)}, {label: "Peak at", key: "pkAt"}, {label: "Years to peak", n: 1, get: r => r.yrs.toFixed(r.yrs % 1 ? 2 : 0)},
+    {label: "Last", n: 1, get: r => fx(r.last)}, {label: "Peak ÷ start", n: 1, get: r => (r.peak / r.v0).toFixed(1) + "×"},
+    {label: "Peak to last", n: 1, get: r => r.last < r.peak ? "−" + Math.round((1 - r.last / r.peak) * 100) + "%" : "still rising"}], rows);
+
+  const host = $("#cx-tiles"); host.replaceChildren();
+  const hy = rows.find(r => r.key === "hyper"), hla = rows.find(r => r.key === "hyperLA");
+  const prior = rows.filter(r => !r.key.startsWith("hyper")).sort((a, b) => b.peak - a.peak);
+  const tile = (t, v, d, s) => { const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, t); h("div", {class: "v"}, a, v); if (d) h("div", {class: "d"}, a, d); h("div", {class: "s"}, a, s); };
+  tile("Hyperscaler capex, % of US GDP", fx(hy.last), `${(hy.last / hy.v0).toFixed(1)}× since mid-2021`, `${hy.end} chart point · lease-adjusted ${fx(hla.last)}`);
+  prior.forEach(r => tile(`${CX_SHORT[r.key]} peak`, fx(r.peak), (hla.last >= r.peak ? "▲ hyperscalers (LA) already above" : "▼ hyperscalers still below") + ` by ${Math.abs(Math.round((hla.last - r.peak) * 100))}bp`, `${r.pkAt} · ${r.yrs} years after ${r.start}`));
+  if (d.xlsx) $("#cx-xlsx").href = "/download-capex/" + encodeURIComponent(d.xlsx);
+}
+
 /* ================================================================ credit spreads */
 let HY = null;
 const NBER = [["2001-03-01", "2001-11-30"], ["2007-12-01", "2009-06-30"], ["2020-02-01", "2020-04-30"]];
@@ -980,7 +1029,7 @@ function loadData() {
   refreshStatus();
 }
 
-const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, ramp: loadRamp, arr: loadArr, data: loadData};
+const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: loadCapex, ramp: loadRamp, arr: loadArr, data: loadData};
 async function boot(again) {
   META = await api("/api/meta");
   document.body.classList.toggle("hosted", !!META.hosted);

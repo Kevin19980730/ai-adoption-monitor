@@ -34,6 +34,7 @@
       <a href="#ramp" role="tab" data-tab="ramp">Business tokens (Ramp)</a>
       <a href="#arr" role="tab" data-tab="arr">Lab ARR (OpenAI &amp; Anthropic)</a>
       <a href="#gpu" role="tab" data-tab="gpu">GPU prices (Silicon Data)</a>
+      <a href="#capex" role="tab" data-tab="capex">Capex cycles</a>
       <a href="#credit" role="tab" data-tab="credit">Rates &amp; credit</a>
       <a href="#data" role="tab" data-tab="data">Data &amp; updates</a>
     </nav>
@@ -395,6 +396,29 @@
   </div>
 </section>
 
+<!-- ===================================================== CAPEX CYCLES -->
+<section id="tab-capex" class="tab" hidden>
+  <div class="tiles" id="cx-tiles"></div>
+  <div class="card">
+    <div class="card-head"><div><h2>Hyperscaler capex is late cycle, measured at a macro level</h2>
+      <p class="muted">Sector capex as % of US GDP through each cycle&rsquo;s speculative build phase. BofA Global Research Exhibit 2, as reprinted in BofA Institute, <i>Can the AI buildout keep building?</i> (27 Aug 2026). Values are read exactly from the PDF&rsquo;s vector chart, not estimated from pixels. Railroads (annual, 1899&ndash;1920) sit on a compressed axis left of the break, as in the original. Sources: BofA Global Research, BEA, NBER.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-cx">Table</button></div>
+    <div class="legend" id="lg-cx"></div>
+    <div class="chart" id="c-cx"></div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2>The same cycles aligned on their start</h2><p class="muted">Years since each series&rsquo; first point. Hyperscalers start mid-2021, so four years in they are already above telecoms&rsquo; and shale&rsquo;s peaks.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-cx-al">Table</button></div>
+    <div class="legend" id="lg-cx-al"></div>
+    <div class="chart" id="c-cx-al"></div>
+  </div>
+  <div class="card">
+    <h3>Cycle by cycle</h3>
+    <div id="cx-sum" class="tblwrap"></div>
+    <p class="muted small">How the chart is drawn: the post-1970 panels sit on a quarterly grid. Annual series hold each year&rsquo;s value from mid-year Y&minus;1 to Q1 of Y, so peaks land in the boom years: O&amp;G 1981, telecoms 2000, shale 2014. Hyperscaler lines change every quarter. Their mid-year points are within 0.07pp of calendar-year capex of MSFT + GOOGL + AMZN + META + ORCL over GDP, and railroads match the NBER tables BofA cites year for year (rebuilt in <code>bofa-capex-cycles/build.py</code>). Excel workbook with tables and charts: <a id="cx-xlsx" href="#">download</a>.</p>
+  </div>
+</section>
+
 <!-- ===================================================== CREDIT SPREADS -->
 <section id="tab-credit" class="tab" hidden>
   <div class="tiles" id="hy-tiles"></div>
@@ -463,6 +487,7 @@
         <li>AI assistant user counts: <code>codex-user-trend/*.csv</code>, edited by hand. Each row cites its source.</li>
         <li><a href="https://openrouter.ai/rankings#top-models" target="_blank" rel="noopener noreferrer">OpenRouter rankings, Top Models</a> (weekly tokens; <code>openrouter_data/*.csv</code>)</li>
         <li><a href="https://www.silicondata.com/products/silicon-index" target="_blank" rel="noopener noreferrer">Silicon Data indices</a> (GPU rental + LLM token; <code>silicon-data/*.csv</code>, history from the Research workbook)</li>
+        <li>BofA Global Research Exhibit 2 (capex cycles), from BofA Institute <i>Can the AI buildout keep building?</i> (27 Aug 2026), read from the PDF&rsquo;s vector paths (<code>bofa-capex-cycles/extract_pdf.py</code>)</li>
         <li><a href="https://fred.stlouisfed.org/series/DFII10" target="_blank" rel="noopener noreferrer">10-year real yield (DFII10)</a>, <a href="https://fred.stlouisfed.org/series/THREEFYTP10" target="_blank" rel="noopener noreferrer">10-year term premium (THREEFYTP10, Kim&ndash;Wright)</a> and <a href="https://fred.stlouisfed.org/series/DGS10" target="_blank" rel="noopener noreferrer">10-year Treasury (DGS10)</a> via FRED (<code>credit-spreads/macro_daily.csv</code>)</li>
         <li><a href="https://fred.stlouisfed.org/series/BAMLH0A1HYBB" target="_blank" rel="noopener noreferrer">ICE BofA BB</a> and <a href="https://fred.stlouisfed.org/series/BAMLH0A3HYC" target="_blank" rel="noopener noreferrer">CCC &amp; lower</a> US High Yield OAS via FRED (<code>credit-spreads/*.csv</code>; pre-2023 history from Wayback copies in <code>credit-spreads/source/</code>)</li>
         <li><a href="https://ramp.com/data/ai-index?metric=token-volume&amp;detail=maker&amp;mode=volume" target="_blank" rel="noopener noreferrer">Ramp AI Index, tokenomics</a> (weekly token volume / spend by model, daily price by token type; <code>ramp-ai-index/*.csv</code>)</li>
