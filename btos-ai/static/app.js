@@ -778,12 +778,34 @@ function drawArrTrend() {
       {label: "Combined", n: 1, get: r => bn(r.combined_bn)}, {label: "Δ $", n: 1, get: r => r.anthropic_add_bn == null || r.openai_add_bn == null ? "–" : bn(r.anthropic_add_bn + r.openai_add_bn)}, {label: "Δ %", n: 1, get: r => pc(r.combined_growth)}, {label: "Anthropic share", n: 1, get: r => pct(r.anthropic_share, 0)},
       {label: "A ÷ O", n: 1, get: r => r.anthropic_to_openai == null ? "–" : r.anthropic_to_openai.toFixed(2) + "×"}], [...D].reverse()));
 }
+/* Q/Q and M/M growth trend charts (always visible, from the ARR Trend Analysis sheet) */
+function drawArrGrowth() {
+  const TR = AR.trend || {};
+  if (!(TR.quarterly || []).length) return;
+  const COL = {anthropic: ENTITY_COLOR.Anthropic, openai: ENTITY_COLOR.OpenAI, combined: "var(--ink-2)"};
+  const pc = v => v == null ? "–" : (v >= 0 ? "+" : "−") + Math.abs(v * 100).toFixed(Math.abs(v) >= 1 ? 0 : 1) + "%";
+  const mk = (D, lab, smooth) => [["anthropic", "Anthropic"], ["openai", "OpenAI"], ["combined", "Combined"]].map(([k, nm]) => {
+    const raw = D.map(r => r[k + "_growth"]);
+    const vals = smooth ? raw.map((v, i) => i >= 2 && raw[i - 2] != null && raw[i - 1] != null && v != null ? (v + raw[i - 1] + raw[i - 2]) / 3 : null) : raw;
+    return {name: nm + (smooth ? " (3-month avg)" : ""), short: nm, color: COL[k], dash: k === "combined",
+      points: D.map((r, i) => ({x: T(r.date), y: vals[i], note: lab(r) + (smooth && raw[i] != null ? ` · this month ${pc(raw[i])}` : "")}))};
+  });
+  const tbl = (D, lab, first) => hst => table(hst, [{label: first, get: lab}, {label: "Anthropic", n: 1, get: r => pc(r.anthropic_growth)},
+    {label: "OpenAI", n: 1, get: r => pc(r.openai_growth)}, {label: "Combined", n: 1, get: r => pc(r.combined_growth)}], [...D].reverse());
+  const Q = TR.quarterly, qlab = r => r.period, SQ = mk(Q, qlab, false);
+  legend("lg-arr-qq", SQ.map(s => ({name: s.name, color: s.color, dash: s.dash})));
+  view("c-arr-qq", hst => lineChart(hst, SQ, {height: 280, yFmt: v => pct(v, 0), mode: "cross", title: x => (Q.find(r => T(r.date) === x) || {}).period || fmtDate(x)}), tbl(Q, qlab, "Quarter"));
+  const M = TR.monthly, mlab = r => fmtMonth(T(r.date)), SM = mk(M, mlab, $("#arr-mm-smooth").value === "ma3");
+  legend("lg-arr-mm", SM.map(s => ({name: s.name, color: s.color, dash: s.dash})));
+  view("c-arr-mm", hst => lineChart(hst, SM, {height: 280, yFmt: v => pct(v, 0), mode: "cross", title: x => fmtMonth(x)}), tbl(M, mlab, "Month"));
+}
 async function loadArr() {
   AR = await api("/api/arr");
   if (!AR.points.length) { $("#arr-tiles").textContent = "No ARR data yet - run ai-lab-arr/arr_update.py."; return; }
   ["#arr-scale", "#arr-extrap"].forEach(s => $(s).addEventListener("change", drawArr));
   ["#arr-tr-freq", "#arr-tr-meas", "#arr-scale"].forEach(s => $(s).addEventListener("change", drawArrTrend));
-  renderArrReview(); drawArr(); drawArrTrend();
+  $("#arr-mm-smooth").addEventListener("change", drawArrGrowth);
+  renderArrReview(); drawArr(); drawArrTrend(); drawArrGrowth();
 }
 
 /* ================================================================ GPU prices (Silicon Data) */

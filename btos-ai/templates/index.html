@@ -369,6 +369,21 @@
   </div>
   <div class="grid2">
     <div class="card">
+      <div class="card-head"><div><h2>Q/Q growth trend</h2><p class="muted">Quarter-end ARR vs the previous quarter-end. Dashed = combined.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-arr-qq">Table</button></div>
+      <div class="legend" id="lg-arr-qq"></div>
+      <div class="chart" id="c-arr-qq"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>M/M growth trend</h2><p class="muted">Month-end ARR vs the previous month-end. Monthly values between reported points are interpolated, so the 3-month average shows the trend more reliably.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-arr-mm">Table</button></div>
+      <div class="filters inner"><label>Smoothing <select id="arr-mm-smooth"><option value="ma3">3-month average</option><option value="raw">Each month</option></select></label></div>
+      <div class="legend" id="lg-arr-mm"></div>
+      <div class="chart" id="c-arr-mm"></div>
+    </div>
+  </div>
+  <div class="grid2">
+    <div class="card">
       <div class="card-head"><div><h2>AI revenue landscape</h2><p class="muted">ARR by lab or AI product, latest figure in the workbook's <i>Total</i> sheet (each at its own date). Share = of the listed total.</p></div>
         <button class="btn small tbl-toggle" data-for="c-arr-land">Table</button></div>
       <div class="chart" id="c-arr-land"></div>
