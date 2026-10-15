@@ -485,7 +485,17 @@ def capex_cycles():
                     "points": [[float(r.position), float(r.value_pct_gdp), None if pd.isna(r.year) else int(r.year)]
                                for r in g.itertuples()]})
     books = sorted(BCD.glob("*_BofA Exhibit 2*.xlsx"))
-    return jsonify({"series": out, "xlsx": books[-1].name if books else None})
+    fh, ext = BCD / "firsthand" / "firsthand_vs_vector.csv", BCD / "firsthand" / "hyperscalers_firsthand_extended.csv"
+    fhd = cached("bcfh", [fh], lambda: pd.read_csv(fh) if fh.exists() else pd.DataFrame())
+    exd = cached("bcex", [ext], lambda: pd.read_csv(ext) if ext.exists() else pd.DataFrame())
+    check = []
+    for key, g in (fhd.groupby("series", sort=False) if not fhd.empty else []):
+        a = g.diff_pp.abs()
+        check.append({"key": key, "n": int(len(g)), "max": float(a.max()), "mean": float(a.mean()),
+                      "rmse": float((g.diff_pp ** 2).mean() ** 0.5), "source": g.firsthand_source.iloc[0]})
+    return jsonify({"series": out, "xlsx": books[-1].name if books else None, "check": check,
+                    "detail": records(fhd) if not fhd.empty else [],
+                    "extended": records(exd) if not exd.empty else []})
 
 
 @app.route("/download-capex/<path:name>")

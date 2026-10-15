@@ -890,17 +890,19 @@ const CX_COL = {rail: "#1f3a7a", og70s: "#c41230", telecom: "#e66100", shale: "#
 const CX_SHORT = {rail: "Railroads", og70s: "O&G 70s-80s", telecom: "Telecoms", shale: "Shale", hyperLA: "Hyperscalers (LA)", hyper: "Hyperscalers"};
 /* railroads are drawn left of the axis break at 1/4 scale: 1919 sits 10 years before 1970 */
 const cxPos = (k, p) => k === "rail" ? 1960 - (1919 - p) / 4 : p;
-const cxQ = p => { const y = Math.floor(p + 1e-9); return ["Jan", "Apr", "Jul", "Oct"][Math.round((p - y) * 4)] + " " + y; };  /* axis position, not a fiscal quarter */
+/* BofA draws post-1970 points three quarters early: position P = the four quarters ending P+0.75 */
+const cxQ = p => { const e = p + 0.5, y = Math.floor(e + 1e-9); return `TTM to Q${Math.round((e - y) * 4) + 1} ${y}`; };
+const cxPosOfQ = q => +q.slice(0, 4) + (+q.slice(-1) - 1) / 4 - 0.5;  /* "2026Q2" -> chart position */
 async function loadCapex() {
   const d = await api("/api/capex-cycles");
   if (!d.series.length) { $("#cx-tiles").textContent = "No data - run bofa-capex-cycles/extract_pdf.py."; return; }
   const S = d.series, by = Object.fromEntries(S.map(s => [s.key, s]));
   const fx = v => v.toFixed(2) + "%";
   const series = S.map(s => ({name: s.label, short: CX_SHORT[s.key], color: CX_COL[s.key], markers: false,
-    points: s.points.map(p => ({x: cxPos(s.key, p[0]), y: p[1], note: s.key === "rail" ? null : p[2] != null ? `${p[2]} value (drawn ${cxQ(p[0])})` : `chart point ${cxQ(p[0])}`}))}));
+    points: s.points.map(p => ({x: cxPos(s.key, p[0]), y: p[1], note: s.key === "rail" ? null : p[2] != null ? `${p[2]} annual value` : cxQ(p[0])}))}));
   legend("lg-cx", series.map(s => ({name: s.name, color: s.color})));
   const ticks = [{x: 1955, label: "1899"}, {x: 1960, label: "1919"}, {x: 1965, label: "//"}].concat([1970, 1975, 1980, 1985, 1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025].map(y => ({x: y, label: String(y)})));
-  const title = x => x < 1965 ? String(Math.round((x - 1960) * 4 + 1919)) : cxQ(x);
+  const title = x => x < 1965 ? String(Math.round((x - 1960) * 4 + 1919)) : x > 2020 ? cxQ(x) : "Drawn at " + x.toFixed(2);
   view("c-cx", hst => lineChart(hst, series, {height: 380, xType: "num", xTicks: ticks, x0: 1954.5, x1: 2026, yMin: 0, yMax: 3, yFmt: (v, t) => t ? v.toFixed(1) + "%" : fx(v), mode: "near", xFmt: title}),
     hst => table(hst, [{label: "Series", key: "label"}, {label: "Year / chart point", get: r => r.year ?? cxQ(r.pos)}, {label: "% of US GDP", n: 1, get: r => fx(r.v)}],
       S.flatMap(s => s.key === "rail" ? s.points.map(p => ({label: s.label, year: p[0], v: p[1]}))
@@ -929,8 +931,29 @@ async function loadCapex() {
   const hy = rows.find(r => r.key === "hyper"), hla = rows.find(r => r.key === "hyperLA");
   const prior = rows.filter(r => !r.key.startsWith("hyper")).sort((a, b) => b.peak - a.peak);
   const tile = (t, v, d, s) => { const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, t); h("div", {class: "v"}, a, v); if (d) h("div", {class: "d"}, a, d); h("div", {class: "s"}, a, s); };
-  tile("Hyperscaler capex, % of US GDP", fx(hy.last), `${(hy.last / hy.v0).toFixed(1)}× since mid-2021`, `${hy.end} chart point · lease-adjusted ${fx(hla.last)}`);
+  const xl = (d.extended || []).slice(-1)[0];
+  tile("Hyperscaler capex, % of US GDP", fx(hy.last), `${(hy.last / hy.v0).toFixed(1)}× in four years`, `${hy.end} (BofA) · lease-adjusted ${fx(hla.last)}`);
+  if (xl) tile(`First-hand, TTM to ${xl.ttm_ending}`, fx(xl.pct), `$${Math.round(xl.capex_bn)}bn of capex · ${(xl.pct >= prior[1].peak ? "above" : "below")} the O&G 1981 peak`, "SEC filings of the five ÷ BEA GDP, one quarter past BofA");
   prior.forEach(r => tile(`${CX_SHORT[r.key]} peak`, fx(r.peak), (hla.last >= r.peak ? "▲ hyperscalers (LA) already above" : "▼ hyperscalers still below") + ` by ${Math.abs(Math.round((hla.last - r.peak) * 100))}bp`, `${r.pkAt} · ${r.yrs} years after ${r.start}`));
+  // first-hand check: table per panel + hyperscaler line, BofA vs first-hand extended
+  const VERD = {rail: "Exact", og70s: "Exact", shale: "Exact", telecom: "Exact", hyper: "Matches"};
+  const chk = (d.check || []).map(c => ({...c, label: by[c.key] ? by[c.key].label : c.key, verdict: VERD[c.key] || ""}));
+  chk.push({key: "hyperLA", label: by.hyperLA ? by.hyperLA.label : "Hyperscalers (lease adjusted)", n: null, max: null, mean: null, rmse: null, verdict: "Not reproducible",
+    source: "BofA's lease adjustment is 1–2.5× the finance-lease additions the companies tag; finance + principal repayments or operating-lease additions don't fit either. Treat it as BofA's own estimate."});
+  const pp3 = v => v == null ? "–" : v.toFixed(3) + "pp";
+  table($("#cx-fh"), [{label: "Panel", key: "label"}, {label: "First-hand definition", key: "source"}, {label: "Points", n: 1, get: r => r.n ?? "–"},
+    {label: "Max |diff|", n: 1, get: r => pp3(r.max)}, {label: "Mean |diff|", n: 1, get: r => pp3(r.mean)}, {label: "Verdict", key: "verdict"}], chk);
+  if (by.hyper && (d.extended || []).length) {
+    const FH = [{name: "BofA exhibit (PDF vector)", color: CX_COL.hyper, points: by.hyper.points.map(p => ({x: p[0] + 0.75, y: p[1], note: cxQ(p[0])}))},
+      {name: "First-hand: SEC capex of the five ÷ BEA GDP", short: "First-hand", color: "var(--s2)", dash: true,
+       points: d.extended.map(r => ({x: cxPosOfQ(r.ttm_ending) + 0.75, y: r.pct, note: `TTM to ${r.ttm_ending}: $${Math.round(r.capex_bn)}bn`}))}];
+    legend("lg-cx-fh", FH.map(s => ({name: s.name, color: s.color, dash: s.dash})));
+    const qlab = x => { const y = Math.floor(x - 0.25 + 1e-9), q = Math.round((x - 0.25 - y) * 4) + 1; return `Four quarters to Q${q} ${y}`; };
+    view("c-cx-fh", hst => lineChart(hst, FH, {height: 300, xType: "num", yMin: 0, yFmt: (v, t) => t ? v.toFixed(1) + "%" : fx(v), mode: "cross", xFmt: qlab,
+        xTicks: [2021, 2022, 2023, 2024, 2025, 2026, 2027].map(y => ({x: y + 0.25, label: "Q1 " + y}))}),
+      hst => table(hst, [{label: "Series", key: "s"}, {label: "Four quarters to", key: "q"}, {label: "BofA (PDF)", n: 1, get: r => r.v == null ? "–" : fx(r.v)}, {label: "First-hand", n: 1, get: r => fx(r.f)}, {label: "Diff", n: 1, get: r => r.v == null ? "–" : (r.v - r.f >= 0 ? "+" : "−") + Math.abs(r.v - r.f).toFixed(3) + "pp"}],
+        d.extended.map(r => { const m = by.hyper.points.find(p => Math.abs(cxPosOfQ(r.ttm_ending) - p[0]) < 0.01); return {s: "Hyperscalers", q: r.ttm_ending, v: m ? m[1] : null, f: r.pct}; }).reverse()));
+  }
   if (d.xlsx) $("#cx-xlsx").href = "/download-capex/" + encodeURIComponent(d.xlsx);
 }
 

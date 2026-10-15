@@ -407,15 +407,24 @@
     <div class="chart" id="c-cx"></div>
   </div>
   <div class="card">
-    <div class="card-head"><div><h2>The same cycles aligned on their start</h2><p class="muted">Years since each series&rsquo; first point. Hyperscalers start mid-2021, so four years in they are already above telecoms&rsquo; and shale&rsquo;s peaks.</p></div>
+    <div class="card-head"><div><h2>The same cycles aligned on their start</h2><p class="muted">Years since each series&rsquo; first point. Hyperscalers start with the four quarters to Q1 2022, so four years in they are already above telecoms&rsquo; and shale&rsquo;s peaks.</p></div>
       <button class="btn small tbl-toggle" data-for="c-cx-al">Table</button></div>
     <div class="legend" id="lg-cx-al"></div>
     <div class="chart" id="c-cx-al"></div>
   </div>
   <div class="card">
+    <div class="card-head"><div><h2>Checked against the first-hand sources behind the footnote</h2>
+      <p class="muted">Each panel rebuilt from primary data and compared point by point with the PDF&rsquo;s vector values. Railroads: the NBER tables the footnote names. O&amp;G and telecoms (footnote: &ldquo;BEA&rdquo;): BEA Fixed Assets investment <i>by industry</i>, all asset types, over BEA GDP. Hyperscalers: SEC filings of the five companies over BEA GDP.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-cx-fh">Table</button></div>
+    <div id="cx-fh" class="tblwrap"></div>
+    <p class="small"><b>How BofA dates the points:</b> every post-1970 point is drawn three quarters early. The hyperscaler point drawn at mid-2021 is capex for the four quarters to Q1 2022, and the last point (drawn mid-2025) is the four quarters to <b>Q1 2026</b>. Annual year Y is drawn from mid-year Y&minus;1 to Q1 of Y for the same reason. The dashed line below continues the first-hand hyperscaler series to the latest quarter all five have filed.</p>
+    <div class="legend" id="lg-cx-fh"></div>
+    <div class="chart" id="c-cx-fh"></div>
+  </div>
+  <div class="card">
     <h3>Cycle by cycle</h3>
     <div id="cx-sum" class="tblwrap"></div>
-    <p class="muted small">How the chart is drawn: the post-1970 panels sit on a quarterly grid. Annual series hold each year&rsquo;s value from mid-year Y&minus;1 to Q1 of Y, so peaks land in the boom years: O&amp;G 1981, telecoms 2000, shale 2014. Hyperscaler lines change every quarter. Their mid-year points are within 0.07pp of calendar-year capex of MSFT + GOOGL + AMZN + META + ORCL over GDP, and railroads match the NBER tables BofA cites year for year (rebuilt in <code>bofa-capex-cycles/build.py</code>). Excel workbook with tables and charts: <a id="cx-xlsx" href="#">download</a>.</p>
+    <p class="muted small">How the chart is drawn: the post-1970 panels sit on a quarterly grid. Annual series hold each year&rsquo;s value from mid-year Y&minus;1 to Q1 of Y, so peaks land in the boom years: O&amp;G 1981, telecoms 2000, shale 2014. Hyperscaler lines change every quarter. Each is trailing-four-quarter capex of MSFT + GOOGL + AMZN + META + ORCL over GDP (see the first-hand check above; scripts in <code>bofa-capex-cycles/firsthand/</code>). Excel workbook with tables and charts: <a id="cx-xlsx" href="#">download</a>.</p>
   </div>
 </section>
 
