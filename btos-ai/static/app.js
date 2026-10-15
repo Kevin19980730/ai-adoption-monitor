@@ -1017,6 +1017,28 @@ async function loadCapex() {
         d.extended.map(r => { const m = by.hyper.points.find(p => Math.abs(cxPosOfQ(r.ttm_ending) - p[0]) < 0.01); return {s: "Hyperscalers", q: r.ttm_ending, v: m ? m[1] : null, f: r.pct}; }).reverse()));
   }
   if ((d.quarterly || []).length) { CXQ = d; drawCxQ(); $("#cxq-mode").addEventListener("change", drawCxQ); }
+  if ((d.extended || []).length) {
+    const drawOwn = () => {
+      const pctMode = $("#cx-own-mode").value === "pct", qx = q => +q.slice(0, 4) + (+q.slice(-1) - 1) / 4 + 0.125;
+      const f = pctMode ? (v, t) => t ? v.toFixed(1) + "%" : fx(v) : v => "$" + Math.round(v) + "bn";
+      const S = [{name: "Five hyperscalers", color: CX_COL.hyper, markers: false, points: d.extended.map(r => ({x: qx(r.ttm_ending), y: pctMode ? r.pct : r.capex_bn, note: `TTM to ${r.ttm_ending}: $${Math.round(r.capex_bn)}bn, ${fx(r.pct)} of GDP`}))},
+        {name: "Five + CoreWeave + SpaceX AI", short: "Seven names", color: "#8a5cd6", dash: true, points: (d.expanded7 || []).map(r => ({x: qx(r.ttm_ending), y: pctMode ? r.total_pct : r.total_bn,
+          note: `TTM to ${r.ttm_ending}: $${Math.round(r.total_bn)}bn (CoreWeave $${r.coreweave_bn.toFixed(1)}bn, SpaceX AI $${r.spacex_ai_bn.toFixed(1)}bn), ${fx(r.total_pct)} of GDP`}))}];
+      const marks = [];
+      if (pctMode) prior.forEach(r => S.push({name: `${CX_SHORT[r.key]} peak ${r.pkAt}`, short: `${CX_SHORT[r.key]} ${r.pkAt}`, color: CX_COL[r.key], dash: true, markers: false,
+        points: [{x: qx(d.extended[0].ttm_ending), y: r.peak}, {x: qx(d.extended[d.extended.length - 1].ttm_ending), y: r.peak}]}));
+      legend("lg-cx-own", S.map(s => ({name: s.name, color: s.color, dash: s.dash})));
+      const y0 = +d.extended[0].ttm_ending.slice(0, 4);
+      view("c-cx-own", hst => lineChart(hst, S, {height: 360, xType: "num", yMin: 0, yMax: pctMode ? 2.5 : null, yFmt: f, mode: "near", xFmt: x => { const y = Math.floor(x), q = Math.floor((x - y) * 4) + 1; return `Four quarters to Q${q} ${y}`; },
+          xTicks: Array.from({length: 8}, (_, i) => y0 + i).map(y => ({x: y + 0.125, label: "Q1 " + y}))}),
+        hst => { const E7 = Object.fromEntries((d.expanded7 || []).map(r => [r.ttm_ending, r]));
+          table(hst, [{label: "Four quarters to", key: "ttm_ending"}, {label: "Five ($bn)", n: 1, get: r => Math.round(r.capex_bn)}, {label: "Five, % GDP", n: 1, get: r => fx(r.pct)},
+            {label: "CoreWeave ($bn)", n: 1, get: r => E7[r.ttm_ending] ? E7[r.ttm_ending].coreweave_bn.toFixed(1) : "–"}, {label: "SpaceX AI ($bn)", n: 1, get: r => E7[r.ttm_ending] ? E7[r.ttm_ending].spacex_ai_bn.toFixed(1) : "–"},
+            {label: "Seven ($bn)", n: 1, get: r => E7[r.ttm_ending] ? Math.round(E7[r.ttm_ending].total_bn) : "–"}, {label: "Seven, % GDP", n: 1, get: r => E7[r.ttm_ending] ? fx(E7[r.ttm_ending].total_pct) : "–"}], [...d.extended].reverse()); });
+    };
+    drawOwn();
+    $("#cx-own-mode").addEventListener("change", drawOwn);
+  }
   if (d.xlsx) $("#cx-xlsx").href = "/download-capex/" + encodeURIComponent(d.xlsx);
 }
 
