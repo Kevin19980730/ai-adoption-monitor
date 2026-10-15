@@ -896,6 +896,9 @@ const cxPosOfQ = q => +q.slice(0, 4) + (+q.slice(-1) - 1) / 4 - 0.5;  /* "2026Q2
 /* hyperscaler capex by company, calendar quarters (SEC filings; Oracle calendarised) */
 let CXQ = null;
 const CXQ_TK = [["AMZN", "Amazon", "var(--s1)"], ["GOOGL", "Alphabet", "var(--s2)"], ["MSFT", "Microsoft", "var(--s3)"], ["META", "Meta", "var(--s4)"], ["ORCL", "Oracle (calendarised)", "var(--s5)"]];
+const CXQ_NEO = [["CoreWeave", "CoreWeave", "var(--s6)"], ["SpaceX AI", "SpaceX AI segment", "#8a5cd6"]];
+/* CoreWeave / SpaceX AI: single-quarter periods only (multi-quarter FY / H2 periods are not split) */
+const neoQ = (comp, q) => { const r = (CXQ.neo_periods || []).find(p => p.company === comp && p.first_quarter === q && p.last_quarter === q); return r ? r.capex_bn : null; };
 function drawCxQ() {
   const Q = CXQ.quarterly, n = Q.length, mode = $("#cxq-mode").value;
   const tot = Q.map(r => CXQ_TK.reduce((a, [k]) => a + r[k], 0));
@@ -910,12 +913,30 @@ function drawCxQ() {
   };
   const fmt = mode === "share" || mode === "yoy" ? (v => pct(v, 0)) : (v => "$" + v.toFixed(v >= 100 ? 0 : 1) + "bn");
   const S = CXQ_TK.map(([k, nm, col]) => ({name: nm, color: col, points: Q.map((r, i) => ({x: qx(r.cal_quarter), y: val(k, i), note: r.cal_quarter}))}));
+  const E7 = Object.fromEntries((CXQ.expanded7 || []).map(r => [r.ttm_ending, r]));
+  CXQ_NEO.forEach(([comp, nm, col]) => {
+    const key = comp === "CoreWeave" ? "coreweave_bn" : "spacex_ai_bn";
+    const pts = Q.map((r, i) => {
+      const q = r.cal_quarter, v = neoQ(comp, q);
+      if (mode === "q") return {x: qx(q), y: v, note: q};
+      if (mode === "ttm") return {x: qx(q), y: E7[q] ? E7[q][key] : null, note: `TTM to ${q}`};
+      if (mode === "share") return {x: qx(q), y: E7[q] ? E7[q][key] / E7[q].total_bn : null, note: `TTM to ${q}, share of seven`};
+      const y0 = Q[i - 4] ? neoQ(comp, Q[i - 4].cal_quarter) : null;
+      return {x: qx(q), y: v != null && y0 ? v / y0 - 1 : null, note: q};
+    });
+    S.push({name: nm, color: col, dash: true, points: pts});
+  });
+  if (mode === "ttm") S.unshift({name: "Total, seven (with CoreWeave and SpaceX AI)", short: "Total, seven", color: "var(--ink-2)", dash: true,
+    points: Q.map(r => ({x: qx(r.cal_quarter), y: E7[r.cal_quarter] ? E7[r.cal_quarter].total_bn : null, note: `TTM to ${r.cal_quarter}`}))});
+  if (mode === "share") S.forEach(s => { if (!s.dash) s.points.forEach((p, i) => { const q = Q[i].cal_quarter; p.y = E7[q] ? ttm(Q.map(r => r[CXQ_TK.find(t => t[1] === s.name)[0]]), i) / E7[q].total_bn : null; }); });  /* share of all seven, only where the seven-name TTM exists */
   if (mode === "q" || mode === "ttm") S.unshift({name: "Total, five companies", short: "Total", color: "var(--ink)", points: Q.map((r, i) => ({x: qx(r.cal_quarter), y: mode === "q" ? tot[i] : ttm(tot, i), note: r.cal_quarter}))});
   legend("lg-cx-q", S.map(s => ({name: s.name, color: s.color})));
   const qt = x => { const y = Math.floor(x), q = Math.floor((x - y) * 4) + 1; return `Q${q} ${y}`; };
   view("c-cx-q", hst => lineChart(hst, S, {height: 340, xType: "num", yMin: mode === "yoy" ? null : 0, yFmt: fmt, mode: "cross", xFmt: qt,
       xTicks: [2020, 2021, 2022, 2023, 2024, 2025, 2026].map(y => ({x: y + 0.125, label: "Q1 " + y}))}),
     hst => table(hst, [{label: "Quarter", key: "cal_quarter"}].concat(CXQ_TK.map(([k, nm]) => ({label: nm, n: 1, get: r => "$" + r[k].toFixed(2)})),
+      CXQ_NEO.map(([comp, nm]) => ({label: nm, n: 1, get: r => { const v = neoQ(comp, r.cal_quarter); if (v != null) return "$" + v.toFixed(2);
+        const p = (CXQ.neo_periods || []).find(x => x.company === comp && x.last_quarter === r.cal_quarter); return p ? `$${p.capex_bn.toFixed(2)} (${p.period})` : "–"; }})),
       [{label: "Total", n: 1, get: r => "$" + CXQ_TK.reduce((a, [k]) => a + r[k], 0).toFixed(1)}, {label: "GDP (SAAR, $bn)", n: 1, get: r => Math.round(r.gdp_saar_bn).toLocaleString()},
        {label: "TTM % of GDP", n: 1, get: r => { const i = Q.indexOf(r), t = ttm(tot, i); return t ? (t / ((Q[i].gdp_saar_bn + Q[i - 1].gdp_saar_bn + Q[i - 2].gdp_saar_bn + Q[i - 3].gdp_saar_bn) / 4) * 100).toFixed(2) + "%" : "–"; }}]), [...Q].reverse()));
   // tiles: latest quarter, y/y, TTM
@@ -924,6 +945,10 @@ function drawCxQ() {
   const tile = (t, v, dlt, s) => { const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, t); h("div", {class: "v"}, a, v); if (dlt != null) { const dd = h("div", {class: "d"}, a); h("span", {class: dlt >= 0 ? "up" : "down"}, dd, (dlt >= 0 ? "▲ " : "▼ ") + (Math.abs(dlt) * 100).toFixed(0) + "%"); dd.appendChild(document.createTextNode(" vs a year earlier")); } h("div", {class: "s"}, a, s); };
   tile(`Five hyperscalers, ${last.cal_quarter}`, "$" + tot[n - 1].toFixed(0) + "bn", yago ? tot[n - 1] / tot[n - 5] - 1 : null, "capex in the quarter · SEC filings");
   CXQ_TK.forEach(([k, nm]) => tile(nm, "$" + last[k].toFixed(1) + "bn", yago && yago[k] > 0 ? last[k] / yago[k] - 1 : null, `${last.cal_quarter} capex`));
+  CXQ_NEO.forEach(([comp, nm]) => { const v = neoQ(comp, last.cal_quarter), v0 = yago ? neoQ(comp, yago.cal_quarter) : null;
+    if (v != null) tile(nm, "$" + v.toFixed(1) + "bn", v0 ? v / v0 - 1 : null, `${last.cal_quarter} capex`); });
+  const e7 = (CXQ.expanded7 || []).slice(-1)[0];
+  if (e7) tile(`Seven names, TTM to ${e7.ttm_ending}`, `${e7.total_pct.toFixed(2)}% of GDP`, null, `$${Math.round(e7.total_bn)}bn: the five + CoreWeave $${e7.coreweave_bn.toFixed(1)}bn + SpaceX AI $${e7.spacex_ai_bn.toFixed(1)}bn`);
   table($("#cx-of"), [{label: "Fiscal quarter ends", key: "fiscal_quarter_end"}, {label: "Oracle capex ($bn)", n: 1, get: r => "$" + r.capex_bn.toFixed(2)}], [...CXQ.oracle_fiscal].reverse());
 }
 async function loadCapex() {
@@ -967,6 +992,8 @@ async function loadCapex() {
   const xl = (d.extended || []).slice(-1)[0];
   tile("Hyperscaler capex, % of US GDP", fx(hy.last), `${(hy.last / hy.v0).toFixed(1)}× in four years`, `${hy.end} (BofA) · lease-adjusted ${fx(hla.last)}`);
   if (xl) tile(`First-hand, TTM to ${xl.ttm_ending}`, fx(xl.pct), `$${Math.round(xl.capex_bn)}bn of capex · ${(xl.pct >= prior[1].peak ? "above" : "below")} the O&G 1981 peak`, "SEC filings of the five ÷ BEA GDP, one quarter past BofA");
+  const x7 = (d.expanded7 || []).slice(-1)[0];
+  if (x7) tile(`+ CoreWeave + SpaceX AI, TTM to ${x7.ttm_ending}`, fx(x7.total_pct), `$${Math.round(x7.total_bn)}bn · ${Math.abs(Math.round((x7.total_pct - prior[1].peak) * 100)) === 0 ? "level with" : x7.total_pct > prior[1].peak ? "above" : "below"} the O&G 1981 peak (${fx(prior[1].peak)})`, "seven names, SEC filings + SpaceX prospectus ÷ BEA GDP");
   prior.forEach(r => tile(`${CX_SHORT[r.key]} peak`, fx(r.peak), (hla.last >= r.peak ? "▲ hyperscalers (LA) already above" : "▼ hyperscalers still below") + ` by ${Math.abs(Math.round((hla.last - r.peak) * 100))}bp`, `${r.pkAt} · ${r.yrs} years after ${r.start}`));
   // first-hand check: table per panel + hyperscaler line, BofA vs first-hand extended
   const VERD = {rail: "Exact", og70s: "Exact", shale: "Exact", telecom: "Exact", hyper: "Matches"};
@@ -980,6 +1007,8 @@ async function loadCapex() {
     const FH = [{name: "BofA exhibit (PDF vector)", color: CX_COL.hyper, points: by.hyper.points.map(p => ({x: p[0] + 0.75, y: p[1], note: cxQ(p[0])}))},
       {name: "First-hand: SEC capex of the five ÷ BEA GDP", short: "First-hand", color: "var(--s2)", dash: true,
        points: d.extended.map(r => ({x: cxPosOfQ(r.ttm_ending) + 0.75, y: r.pct, note: `TTM to ${r.ttm_ending}: $${Math.round(r.capex_bn)}bn`}))}];
+    if ((d.expanded7 || []).length) FH.push({name: "Seven: the five + CoreWeave + SpaceX AI (where reported periods allow)", short: "Seven names", color: "#8a5cd6",
+       points: d.expanded7.map(r => ({x: cxPosOfQ(r.ttm_ending) + 0.75, y: r.total_pct, note: `TTM to ${r.ttm_ending}: $${Math.round(r.total_bn)}bn`}))});
     legend("lg-cx-fh", FH.map(s => ({name: s.name, color: s.color, dash: s.dash})));
     const qlab = x => { const y = Math.floor(x - 0.25 + 1e-9), q = Math.round((x - 0.25 - y) * 4) + 1; return `Four quarters to Q${q} ${y}`; };
     view("c-cx-fh", hst => lineChart(hst, FH, {height: 300, xType: "num", yMin: 0, yFmt: (v, t) => t ? v.toFixed(1) + "%" : fx(v), mode: "cross", xFmt: qlab,

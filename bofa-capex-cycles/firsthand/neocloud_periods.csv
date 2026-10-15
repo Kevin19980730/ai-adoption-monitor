@@ -1,0 +1,19 @@
+company,period,first_quarter,last_quarter,capex_bn,source
+CoreWeave,FY2023,2023Q1,2023Q4,2.943,SEC XBRL PaymentsToAcquirePropertyPlantAndEquipment (10-Q/10-K)
+CoreWeave,2024Q1,2024Q1,2024Q1,1.7419,SEC XBRL PaymentsToAcquirePropertyPlantAndEquipment (10-Q/10-K)
+CoreWeave,2024Q2,2024Q2,2024Q2,2.2472,SEC XBRL PaymentsToAcquirePropertyPlantAndEquipment (10-Q/10-K)
+CoreWeave,2024Q3,2024Q3,2024Q3,1.2152,SEC XBRL PaymentsToAcquirePropertyPlantAndEquipment (10-Q/10-K)
+CoreWeave,2024Q4,2024Q4,2024Q4,3.4977,SEC XBRL PaymentsToAcquirePropertyPlantAndEquipment (10-Q/10-K)
+CoreWeave,2025Q1,2025Q1,2025Q1,1.407,SEC XBRL PaymentsToAcquirePropertyPlantAndEquipment (10-Q/10-K)
+CoreWeave,2025Q2,2025Q2,2025Q2,2.453,SEC XBRL PaymentsToAcquirePropertyPlantAndEquipment (10-Q/10-K)
+CoreWeave,2025Q3,2025Q3,2025Q3,2.3892,SEC XBRL PaymentsToAcquirePropertyPlantAndEquipment (10-Q/10-K)
+CoreWeave,2025Q4,2025Q4,2025Q4,4.0598,SEC XBRL PaymentsToAcquirePropertyPlantAndEquipment (10-Q/10-K)
+CoreWeave,2026Q1,2026Q1,2026Q1,7.695,SEC XBRL PaymentsToAcquirePropertyPlantAndEquipment (10-Q/10-K)
+CoreWeave,2026Q2,2026Q2,2026Q2,6.422,SEC XBRL PaymentsToAcquirePropertyPlantAndEquipment (10-Q/10-K)
+SpaceX AI,FY2023,2023Q1,2023Q4,0.463,"SpaceX 424B4 (12 Jun 2026), segment capital expenditures table"
+SpaceX AI,FY2024,2024Q1,2024Q4,5.633,"SpaceX 424B4 (12 Jun 2026), segment capital expenditures table"
+SpaceX AI,2025Q1,2025Q1,2025Q1,2.567,"SpaceX 424B4 (12 Jun 2026), segment capital expenditures table"
+SpaceX AI,2025Q2,2025Q2,2025Q2,0.749,"SEC XBRL SegmentExpenditureAdditionToLongLivedAssets, AI segment (10-Q/10-K)"
+SpaceX AI,H2 2025,2025Q3,2025Q4,9.411,"SpaceX 424B4 (12 Jun 2026), segment capital expenditures table"
+SpaceX AI,2026Q1,2026Q1,2026Q1,7.723,"SpaceX 424B4 (12 Jun 2026), segment capital expenditures table"
+SpaceX AI,2026Q2,2026Q2,2026Q2,15.828,"SEC XBRL SegmentExpenditureAdditionToLongLivedAssets, AI segment (10-Q/10-K)"
