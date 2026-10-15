@@ -354,6 +354,18 @@
     <div class="legend" id="lg-arr"></div>
     <div class="chart" id="c-arr"></div>
   </div>
+  <div class="card">
+    <div class="card-head"><div><h2>ARR trend analysis &mdash; quarter on quarter and month on month</h2>
+      <p class="muted">From the Research workbook&rsquo;s <i>ARR Trend Analysis</i> sheet. Period-end ARR is read from its <i>Daily ARR</i> sheet, which interpolates geometrically between reported run-rate points, so in-between months are estimates, not disclosures. $ in billions.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-arr-trend">Table</button></div>
+    <div id="arr-trend-metrics" class="tblwrap"></div>
+    <div class="filters inner">
+      <label>Frequency <select id="arr-tr-freq"><option value="quarterly">Quarterly (Q/Q)</option><option value="monthly">Monthly (M/M)</option></select></label>
+      <label>Show <select id="arr-tr-meas"><option value="arr">ARR ($B)</option><option value="add">ARR added in the period ($B)</option><option value="growth">Growth vs prior period</option><option value="share">Anthropic share of the two</option><option value="ratio">Anthropic ÷ OpenAI</option></select></label>
+    </div>
+    <div class="legend" id="lg-arr-trend"></div>
+    <div class="chart" id="c-arr-trend"></div>
+  </div>
   <div class="grid2">
     <div class="card">
       <div class="card-head"><div><h2>AI revenue landscape</h2><p class="muted">ARR by lab or AI product, latest figure in the workbook's <i>Total</i> sheet (each at its own date). Share = of the listed total.</p></div>
@@ -531,7 +543,7 @@
         <li><a href="https://fred.stlouisfed.org/series/DFII10" target="_blank" rel="noopener noreferrer">10-year real yield (DFII10)</a>, <a href="https://fred.stlouisfed.org/series/THREEFYTP10" target="_blank" rel="noopener noreferrer">10-year term premium (THREEFYTP10, Kim&ndash;Wright)</a> and <a href="https://fred.stlouisfed.org/series/DGS10" target="_blank" rel="noopener noreferrer">10-year Treasury (DGS10)</a> via FRED (<code>credit-spreads/macro_daily.csv</code>)</li>
         <li><a href="https://fred.stlouisfed.org/series/BAMLH0A1HYBB" target="_blank" rel="noopener noreferrer">ICE BofA BB</a> and <a href="https://fred.stlouisfed.org/series/BAMLH0A3HYC" target="_blank" rel="noopener noreferrer">CCC &amp; lower</a> US High Yield OAS via FRED (<code>credit-spreads/*.csv</code>; pre-2023 history from Wayback copies in <code>credit-spreads/source/</code>)</li>
         <li><a href="https://ramp.com/data/ai-index?metric=token-volume&amp;detail=maker&amp;mode=volume" target="_blank" rel="noopener noreferrer">Ramp AI Index, tokenomics</a> (weekly token volume / spend by model, daily price by token type; <code>ramp-ai-index/*.csv</code>)</li>
-        <li>OpenAI &amp; Anthropic ARR: Research workbook <i>Anthropic &amp; OpenAI ARR trend</i> (<code>ai-lab-arr/source/</code>) + approved news headlines (<code>ai-lab-arr/arr_additions.csv</code>)</li>
+        <li>OpenAI &amp; Anthropic ARR: Research workbook <i>Anthropic &amp; OpenAI ARR trend</i>, sheets Anthropic / OpenAI / Total and <i>ARR Trend Analysis</i> (<code>ai-lab-arr/source/</code>) + approved news headlines (<code>ai-lab-arr/arr_additions.csv</code>)</li>
       </ul>
     </div>
   </div>

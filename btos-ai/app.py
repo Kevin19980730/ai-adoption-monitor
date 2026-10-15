@@ -633,7 +633,10 @@ def arr():
     cands = json.loads(ARR_CANDS.read_text(encoding="utf-8-sig")) if ARR_CANDS.exists() else []
     return jsonify({"points": records(p), "stats": stats, "crossover": cross,
                     "landscape": records(land.fillna("")) if not land.empty else [],
-                    "candidates": [] if HOSTED else [c for c in cands if c.get("status") == "new"]})
+                    "candidates": [] if HOSTED else [c for c in cands if c.get("status") == "new"],
+                    "trend": {k: (records(t.where(t.notna(), None)) if not t.empty else [])
+                              for k, t in (("metrics", ar_csv("arr_trend_metrics.csv")), ("quarterly", ar_csv("arr_trend_quarterly.csv")),
+                                           ("monthly", ar_csv("arr_trend_monthly.csv")))}})
 
 
 @app.route("/api/arr-candidates/<cid>/<action>", methods=["POST"])

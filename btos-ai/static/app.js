@@ -729,11 +729,43 @@ function renderArrReview() {
     add.addEventListener("click", () => act("add")); dis.addEventListener("click", () => act("dismiss"));
   });
 }
+/* the Research workbook's "ARR Trend Analysis" sheet: key metrics + Q/Q and M/M tables */
+function drawArrTrend() {
+  const TR = AR.trend || {};
+  if (!(TR.quarterly || []).length) { $("#arr-trend-metrics").textContent = "No ARR Trend Analysis sheet imported yet."; return; }
+  const bn = v => v == null ? "–" : "$" + (Math.abs(v) >= 10 ? v.toFixed(1) : v.toFixed(2)) + "B";
+  const pc = v => v == null ? "–" : (v >= 0 ? "+" : "−") + Math.abs(v * 100).toFixed(v * 100 >= 100 || v * 100 <= -100 ? 0 : 1) + "%";
+  const mfmt = (name, v) => v == null || v === "" ? "–" : /\(\$B\)/.test(name) ? bn(+v) : /date|exceeds/i.test(name) ? fmtDate(T(String(v).slice(0, 10))) : /yoy/i.test(name) ? (+v + 1).toFixed(1) + "× (" + pc(+v) + ")" : pc(+v);
+  table($("#arr-trend-metrics"), [{label: "Key metric", key: "metric"}, {label: "Anthropic", n: 1, get: r => mfmt(r.metric, r.anthropic)},
+    {label: "OpenAI", n: 1, get: r => mfmt(r.metric, r.openai)}, {label: "Combined", n: 1, get: r => mfmt(r.metric, r.combined)}], TR.metrics);
+  const freq = $("#arr-tr-freq").value, meas = $("#arr-tr-meas").value, D = TR[freq];
+  const qx = r => T(r.date);
+  const lab = r => freq === "quarterly" ? r.period : fmtMonth(T(r.date));
+  const COL = {anthropic: ENTITY_COLOR.Anthropic, openai: ENTITY_COLOR.OpenAI, combined: "var(--ink-2)"};
+  let S, f;
+  if (meas === "share") { S = [{name: "Anthropic share of Anthropic + OpenAI ARR", color: COL.anthropic, points: D.map(r => ({x: qx(r), y: r.anthropic_share, note: lab(r)}))}]; f = v => pct(v, 0); }
+  else if (meas === "ratio") { S = [{name: "Anthropic ARR ÷ OpenAI ARR", color: COL.anthropic, points: D.map(r => ({x: qx(r), y: r.anthropic_to_openai, note: lab(r)}))}]; f = v => v.toFixed(2) + "×"; }
+  else {
+    const key = {arr: "_bn", add: "_add_bn", growth: "_growth"}[meas];
+    S = [["anthropic", "Anthropic"], ["openai", "OpenAI"]].map(([k, nm]) => ({name: nm, color: COL[k], points: D.map(r => ({x: qx(r), y: r[k + key], note: lab(r)}))}));
+    if (meas !== "add") S.push({name: "Combined", color: COL.combined, dash: true, points: D.map(r => ({x: qx(r), y: r["combined" + (meas === "arr" ? "_bn" : "_growth")], note: lab(r)}))});
+    f = meas === "growth" ? (v => pct(v, 0)) : bn;
+  }
+  legend("lg-arr-trend", S.map(s => ({name: s.name, color: s.color, dash: s.dash})));
+  const log = meas === "arr" && $("#arr-scale").value === "log";
+  view("c-arr-trend", hst => lineChart(hst, S, {height: 320, yFmt: f, log, yMin: log ? null : meas === "growth" ? null : 0, mode: "cross",
+      title: x => { const r = D.find(d => qx(d) === x); return r ? lab(r) : fmtDate(x); }}),
+    hst => table(hst, [{label: freq === "quarterly" ? "Quarter" : "Month", get: lab}, {label: "Anthropic", n: 1, get: r => bn(r.anthropic_bn)}, {label: "Δ $", n: 1, get: r => bn(r.anthropic_add_bn)}, {label: "Δ %", n: 1, get: r => pc(r.anthropic_growth)},
+      {label: "OpenAI", n: 1, get: r => bn(r.openai_bn)}, {label: "Δ $", n: 1, get: r => bn(r.openai_add_bn)}, {label: "Δ %", n: 1, get: r => pc(r.openai_growth)},
+      {label: "Combined", n: 1, get: r => bn(r.combined_bn)}, {label: "Δ %", n: 1, get: r => pc(r.combined_growth)}, {label: "Anthropic share", n: 1, get: r => pct(r.anthropic_share, 0)},
+      {label: "A ÷ O", n: 1, get: r => r.anthropic_to_openai == null ? "–" : r.anthropic_to_openai.toFixed(2) + "×"}], [...D].reverse()));
+}
 async function loadArr() {
   AR = await api("/api/arr");
   if (!AR.points.length) { $("#arr-tiles").textContent = "No ARR data yet - run ai-lab-arr/arr_update.py."; return; }
   ["#arr-scale", "#arr-extrap"].forEach(s => $(s).addEventListener("change", drawArr));
-  renderArrReview(); drawArr();
+  ["#arr-tr-freq", "#arr-tr-meas", "#arr-scale"].forEach(s => $(s).addEventListener("change", drawArrTrend));
+  renderArrReview(); drawArr(); drawArrTrend();
 }
 
 /* ================================================================ GPU prices (Silicon Data) */
