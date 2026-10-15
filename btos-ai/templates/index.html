@@ -403,6 +403,8 @@
     <div class="card-head"><div><h2>Hyperscaler capex is late cycle, measured at a macro level</h2>
       <p class="muted">Sector capex as % of US GDP through each cycle&rsquo;s speculative build phase. BofA Global Research Exhibit 2, as reprinted in BofA Institute, <i>Can the AI buildout keep building?</i> (27 Aug 2026). Values are read exactly from the PDF&rsquo;s vector chart, not estimated from pixels. Railroads (annual, 1899&ndash;1920) sit on a compressed axis left of the break, as in the original. Sources: BofA Global Research, BEA, NBER.</p></div>
       <button class="btn small tbl-toggle" data-for="c-cx">Table</button></div>
+    <div class="filters inner"><label>Data <select id="cx-src"><option value="bofa">BofA exhibit (PDF values)</option><option value="fh">First-hand rebuild (filings, BEA, NBER)</option></select></label></div>
+    <p class="muted small" id="cx-src-note"></p>
     <div class="legend" id="lg-cx"></div>
     <div class="chart" id="c-cx"></div>
   </div>
@@ -431,8 +433,8 @@
   </div>
   <div class="tiles" id="cx-q-tiles"></div>
   <div class="card">
-    <div class="card-head"><div><h2>Hyperscaler capex by company, each calendar quarter &mdash; plus CoreWeave and SpaceX AI</h2>
-      <p class="muted">Purchases of property &amp; equipment from each company&rsquo;s 10-Q / 10-K (SEC XBRL), $bn per calendar quarter. Quarters come from year-to-date cash flows (Q4 = full year minus nine months). Oracle&rsquo;s fiscal quarters end Feb / May / Aug / Nov, so it is calendarised: each calendar quarter = &#8532; &times; the Oracle quarter ending in its second month + &#8531; &times; the next one. <b>CoreWeave</b>: purchases of property &amp; equipment from its filings (quarterly from 2024). <b>SpaceX AI</b>: capital expenditures of SpaceX&rsquo;s AI segment (xAI) from its IPO prospectus and 10-Q segment note; SpaceX never reported Q3 or Q4 2025 alone, so H2 2025 is one period and those quarters are left blank rather than split. BofA&rsquo;s comparison above keeps its own five names. Refreshed by the weekly job as new filings land.</p></div>
+    <div class="card-head"><div><h2>Hyperscaler capex by company, each calendar quarter &mdash; plus CoreWeave, Nebius and SpaceX AI</h2>
+      <p class="muted">Purchases of property &amp; equipment from each company&rsquo;s 10-Q / 10-K (SEC XBRL), $bn per calendar quarter. Quarters come from year-to-date cash flows (Q4 = full year minus nine months). Oracle&rsquo;s fiscal quarters end Feb / May / Aug / Nov, so it is calendarised: each calendar quarter = &#8532; &times; the Oracle quarter ending in its second month + &#8531; &times; the next one. <b>CoreWeave</b>: purchases of property &amp; equipment from its filings (quarterly from 2024). <b>Nebius</b>: a foreign private issuer, so full years come from its 20-F and quarters from its 6-K interim statements / earnings releases (purchases of property, equipment and intangible assets; 9M 2024 is one period). <b>SpaceX AI</b>: capital expenditures of SpaceX&rsquo;s AI segment (xAI) from its IPO prospectus and 10-Q segment note; SpaceX never reported Q3 or Q4 2025 alone, so H2 2025 is one period and those quarters are left blank rather than split. BofA&rsquo;s comparison above keeps its own five names. Refreshed by the weekly job as new filings land.</p></div>
       <button class="btn small tbl-toggle" data-for="c-cx-q">Table</button></div>
     <div class="filters inner"><label>Show <select id="cxq-mode"><option value="q">Quarterly capex ($bn)</option><option value="ttm">Trailing four quarters ($bn)</option><option value="share">Share of the five</option><option value="yoy">Growth vs a year earlier</option></select></label></div>
     <div class="legend" id="lg-cx-q"></div>
