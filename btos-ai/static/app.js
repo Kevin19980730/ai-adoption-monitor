@@ -308,6 +308,8 @@ $("#themeBtn").addEventListener("click", () => {
   try { localStorage.setItem("aam-theme", next); } catch (e) {}
   const f = document.getElementById("circ-frame");  // same-origin frame: pass the theme on
   try { if (f && f.contentWindow.ACF_setTheme) f.contentWindow.ACF_setTheme(next); } catch (e) {}
+  const pf = document.getElementById("pop-frame");
+  try { if (pf && pf.contentWindow.POP_setTheme) pf.contentWindow.POP_setTheme(next); } catch (e) {}
 });
 
 /* ================================================================ circular financing */
@@ -324,11 +326,25 @@ function loadCircular() {
   fit(); addEventListener("resize", fit);
 }
 
+/* ================================================================ world population & AI users */
+// global-population/ builds one self-contained page (data embedded); served at /population/ and framed
+// like the circular-financing app, so its own charts and filters stay as they are.
+function loadPopulation() {
+  const f = h("iframe", {id: "pop-frame", src: "/population/?embed=1", title: "World population and AI users",
+                          style: "width:100%;border:0;display:block;border-radius:12px;background:var(--surface)"});
+  $("#pop-host").appendChild(f);
+  const fit = () => {
+    if (!f.offsetParent) return;
+    f.style.height = Math.max(480, innerHeight - document.querySelector("header.top").getBoundingClientRect().bottom - 48) + "px";
+  };
+  fit(); addEventListener("resize", fit);
+}
+
 /* ================================================================ overview */
 async function loadOverview() {
   const d = await api("/api/overview");
   const host = $("#tiles"); host.replaceChildren();
-  const link = {btos7: "#firms", btos24: "#firms", ChatGPT: "#assistants", "Gemini app": "#assistants", codex: "#assistants", openrouter: "#tokens", ramp: "#ramp", silicon: "#gpu", capex: "#capex", hy_BAMLH0A1HYBB: "#credit", hy_BAMLH0A3HYC: "#credit", hy_DFII10: "#credit", hy_THREEFYTP10: "#credit", arr_Anthropic: "#arr", arr_OpenAI: "#arr"};
+  const link = {btos7: "#firms", btos24: "#firms", ChatGPT: "#assistants", "Gemini app": "#assistants", codex: "#assistants", openrouter: "#tokens", ramp: "#ramp", silicon: "#gpu", capex: "#capex", hy_BAMLH0A1HYBB: "#credit", hy_BAMLH0A3HYC: "#credit", hy_DFII10: "#credit", hy_THREEFYTP10: "#credit", arr_Anthropic: "#arr", arr_OpenAI: "#arr", pop_ms: "#population", pop_best: "#population"};
   d.tiles.forEach(t => {
     const a = h("a", {class: "tile", href: link[t.id] || "#workers"}, host);
     h("div", {class: "t"}, a, t.title);
@@ -1251,7 +1267,7 @@ function loadData() {
   refreshStatus();
 }
 
-const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, arr: loadArr, circular: loadCircular, data: loadData};
+const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, arr: loadArr, circular: loadCircular, population: loadPopulation, data: loadData};
 async function boot(again) {
   META = await api("/api/meta");
   document.body.classList.toggle("hosted", !!META.hosted);

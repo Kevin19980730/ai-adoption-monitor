@@ -37,6 +37,7 @@
         <a href="#tokens" role="tab" data-tab="tokens">Tokens (OpenRouter)</a>
         <a href="#ramp" role="tab" data-tab="ramp">Business tokens (Ramp)</a></div>
       <div class="tab-group" role="group" aria-label="End user layer"><span class="tg-label">End user</span>
+        <a href="#population" role="tab" data-tab="population">World population &amp; AI users</a>
         <a href="#assistants" role="tab" data-tab="assistants">AI assistants</a>
         <a href="#firms" role="tab" data-tab="firms">Firms (BTOS)</a>
         <a href="#workers" role="tab" data-tab="workers">Workers (RPS)</a>
@@ -535,6 +536,12 @@
   <p class="muted small">Who funds whom, and who buys from whom, in the AI build-out: one row per flow, from company filings and press reports, with BIS Bulletin 137 and FT Alphaville / Sona data. The same app runs on its own at <span class="local-only">127.0.0.1:8920 and </span><a href="https://ai-circular-financing.onrender.com" target="_blank" rel="noopener">ai-circular-financing.onrender.com</a>. <a href="/circular/" target="_blank" rel="noopener">Open full page</a>.</p>
 </section>
 
+<!-- ===================================================== WORLD POPULATION & AI USERS (global-population page, framed) -->
+<section id="tab-population" class="tab" hidden>
+  <div id="pop-host"></div>
+  <p class="muted small">2025 population of 218 economies by World Bank region, income level and age (World Bank WDI), with AI users per country two ways: Microsoft&rsquo;s AI Diffusion Report (share of 15&ndash;64s, June 2026) and each country&rsquo;s own official statistic where one exists (Eurostat, CNNIC, Ofcom, the St. Louis Fed and others). <a href="/population/" target="_blank" rel="noopener">Open full page</a> &middot; <a href="/population/workbook">Download the workbook</a>.</p>
+</section>
+
 <!-- ===================================================== DATA -->
 <section id="tab-data" class="tab" hidden>
   <div class="grid2">
@@ -546,7 +553,7 @@
         <button class="btn" id="d-run" type="button">Check for new data now</button>
         <button class="btn ghost" id="d-force" type="button">Rebuild anyway</button>
       </div>
-      <p class="muted small local-only">Runs weekly_update.py, the same job as the Windows task <b>AI Adoption Monitor Weekly</b> (Fridays 07:00). It does three things: refreshes BTOS and the GenAI tracker (BTOS publishes every other Thursday, the tracker quarterly), rebuilds the Codex / Claude Code npm series, scans the news for new assistant user counts to review on the AI assistants tab, refreshes the OpenRouter weekly token series, adds the latest Silicon Data GPU prices (which also update daily at 08:05 on their own task), scans the news for new OpenAI / Anthropic ARR figures to review on the Lab ARR tab, refreshes the Ramp AI Index token data, and adds the latest ICE BofA high-yield spreads from FRED (which also update daily at 08:10 on their own task). Enterprise-seat estimates are still edited by hand in <code>codex-user-trend/enterprise_seats_oct2026.csv</code>.</p>
+      <p class="muted small local-only">Runs weekly_update.py, the same job as the Windows task <b>AI Adoption Monitor Weekly</b> (Fridays 07:00). It does three things: refreshes BTOS and the GenAI tracker (BTOS publishes every other Thursday, the tracker quarterly), rebuilds the Codex / Claude Code npm series, scans the news for new assistant user counts to review on the AI assistants tab, refreshes the OpenRouter weekly token series, adds the latest Silicon Data GPU prices (which also update daily at 08:05 on their own task), scans the news for new OpenAI / Anthropic ARR figures to review on the Lab ARR tab, refreshes the Ramp AI Index token data, and adds the latest ICE BofA high-yield spreads from FRED (which also update daily at 08:10 on their own task). It also rebuilds the World population &amp; AI users page and workbook from fresh World Bank, Eurostat and Microsoft AI Diffusion data; the national official AI figures are kept by hand in <code>global-population/data/national_ai_sources.json</code>. Enterprise-seat estimates are still edited by hand in <code>codex-user-trend/enterprise_seats_oct2026.csv</code>.</p>
       <pre id="d-log" class="log local-only"></pre>
     </div>
     <div class="card">

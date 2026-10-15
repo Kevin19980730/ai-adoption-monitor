@@ -10,6 +10,9 @@ One page over four sources, all read from files so it runs with no Claude:
   bofa-capex-cycles/exhibit2_*.csv        BofA Exhibit 2 capex cycles, read from the PDF's vector chart
   credit-spreads/macro_daily.csv          ICE BofA BB / CCC HY OAS (FRED + Wayback history), US 10y real yield,
                                            term premium and nominal yield (FRED)
+  global-population/                      world population by region / income / age + AI users per country
+                                           (Microsoft AI Diffusion and national official sources); the
+                                           "World population" tab frames its self-contained page at /population/
   ai-circular-financing/                  the AI Circular Financing app, mounted unchanged at /circular
                                            (its own app.py + data/); the "Circular financing" tab frames it
 
@@ -165,6 +168,33 @@ def healthz():
 def index():
     ver = int(max(f.stat().st_mtime for f in (HERE / "static").glob("app.*")))
     return render_template("index.html", ver=ver)
+
+
+# ---------------------------------------------------------------- world population & AI users
+# global-population/ builds one self-contained page (population_local.html, data embedded) plus its
+# workbook; the "World population" tab frames the page, the overview reads pop_summary.json.
+GP = HERE.parent / "global-population"
+
+
+@app.route("/population/")
+def population_page():
+    p = GP / "population_local.html"
+    if not p.exists():
+        abort(404)
+    return send_file(p, mimetype="text/html", max_age=0)
+
+
+@app.route("/population/workbook")
+def population_workbook():
+    books = sorted(GP.glob("*_Global_population_2025.xlsx"))
+    if not books:
+        abort(404)
+    return send_file(books[-1], as_attachment=True, download_name=books[-1].name, max_age=0)
+
+
+def pop_summary():
+    p = GP / "pop_summary.json"
+    return cached("pop_summary", [p], lambda: json.load(open(p))) if p.exists() else None
 
 
 @app.route("/api/meta")
@@ -856,6 +886,15 @@ def overview():
                               "unit": "oas", "date": f"{nice_date(g.date.iloc[-1])} · {sid}",
                               "source": f"{src} · {(s <= s.iloc[-1]).mean() * 100:.0f}th pctile since {s.index[0].year}",
                               "spark": [float(v) for v in s.tail(260)]})
+    ps = pop_summary()
+    if ps:
+        tiles.append({"id": "pop_ms", "title": "AI users worldwide (Microsoft, ages 15-64)", "value": ps["ms_users"] / 1e6,
+                      "unit": "users_m", "date": f"{ps['ms_period']} · {ps['ms_users'] / ps.get('ms_pop_15_64', ps['pop_15_64']) * 100:.1f}% of 15-64s",
+                      "source": f"Microsoft AI Diffusion × World Bank population, {ps['ms_economies']} economies", "spark": []})
+        tiles.append({"id": "pop_best", "title": "AI users worldwide (best available)", "value": ps["best_users"] / 1e6,
+                      "unit": "users_m", "date": f"{ps['nat_economies']} national official figures + Microsoft elsewhere",
+                      "source": f"National sources count {ps['nat_users'] / ps['nat_ms_same']:.1f}× Microsoft for the same economies",
+                      "spark": []})
     ort = or_csv("openrouter_weekly_totals.csv")
     if not ort.empty:
         f = ort[ort.partial == 0].sort_values("week")
