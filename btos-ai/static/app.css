@@ -68,6 +68,11 @@ code { font-size: 12px; background: var(--surface-2); padding: 1px 4px; border-r
 /* 13 tabs no longer fit one row: wrap on desktop so every tab is visible; scroll (with a visible bar) on phones */
 .tabs { display: flex; flex-wrap: wrap; gap: 2px 2px; }
 @media (max-width: 700px) { .tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; } }
+/* tabs grouped by layer: Macro / Infrastructure / Model / End user */
+.tab-group { display: flex; align-items: center; gap: 2px; padding-right: 10px; margin-right: 8px; border-right: 1px solid var(--ring); }
+.tab-group:last-child { border-right: 0; }
+.tg-label { font-size: 10.5px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); padding: 0 4px 0 2px; white-space: nowrap; }
+@media (max-width: 700px) { .tab-group { flex: none; } }
 .tabs a { padding: 8px 12px; color: var(--ink-2); text-decoration: none; border-bottom: 2px solid transparent; white-space: nowrap; font-weight: 500; }
 .tabs a:hover { color: var(--ink); background: var(--surface-2); }
 .tabs a[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }

@@ -24,19 +24,24 @@
       </div>
     </div>
     <nav class="tabs" role="tablist" aria-label="Sections">
-      <a href="#overview" role="tab" data-tab="overview">Overview</a>
-      <a href="#firms" role="tab" data-tab="firms">Firms (BTOS)</a>
-      <a href="#workers" role="tab" data-tab="workers">Workers (RPS)</a>
-      <a href="#compare" role="tab" data-tab="compare">Firms vs workers</a>
-      <a href="#fed" role="tab" data-tab="fed">Fed note</a>
-      <a href="#assistants" role="tab" data-tab="assistants">AI assistants</a>
-      <a href="#tokens" role="tab" data-tab="tokens">Tokens (OpenRouter)</a>
-      <a href="#ramp" role="tab" data-tab="ramp">Business tokens (Ramp)</a>
-      <a href="#arr" role="tab" data-tab="arr">Lab ARR (OpenAI &amp; Anthropic)</a>
-      <a href="#gpu" role="tab" data-tab="gpu">GPU prices (Silicon Data)</a>
-      <a href="#capex" role="tab" data-tab="capex">Capex cycles</a>
-      <a href="#credit" role="tab" data-tab="credit">Rates &amp; credit</a>
-      <a href="#data" role="tab" data-tab="data">Data &amp; updates</a>
+      <div class="tab-group"><a href="#overview" role="tab" data-tab="overview">Overview</a></div>
+      <div class="tab-group" role="group" aria-label="Macro"><span class="tg-label">Macro</span>
+        <a href="#capex" role="tab" data-tab="capex">Capex cycles</a>
+        <a href="#credit" role="tab" data-tab="credit">Rates &amp; credit</a></div>
+      <div class="tab-group" role="group" aria-label="Infrastructure layer"><span class="tg-label">Infrastructure</span>
+        <a href="#hcapex" role="tab" data-tab="hcapex">Hyperscaler capex</a>
+        <a href="#gpu" role="tab" data-tab="gpu">GPU prices (Silicon Data)</a></div>
+      <div class="tab-group" role="group" aria-label="Model layer"><span class="tg-label">Model</span>
+        <a href="#arr" role="tab" data-tab="arr">Lab ARR (OpenAI &amp; Anthropic)</a>
+        <a href="#tokens" role="tab" data-tab="tokens">Tokens (OpenRouter)</a>
+        <a href="#ramp" role="tab" data-tab="ramp">Business tokens (Ramp)</a></div>
+      <div class="tab-group" role="group" aria-label="End user layer"><span class="tg-label">End user</span>
+        <a href="#assistants" role="tab" data-tab="assistants">AI assistants</a>
+        <a href="#firms" role="tab" data-tab="firms">Firms (BTOS)</a>
+        <a href="#workers" role="tab" data-tab="workers">Workers (RPS)</a>
+        <a href="#compare" role="tab" data-tab="compare">Firms vs workers</a>
+        <a href="#fed" role="tab" data-tab="fed">Fed note</a></div>
+      <div class="tab-group"><a href="#data" role="tab" data-tab="data">Data &amp; updates</a></div>
     </nav>
   </div>
 </header>
@@ -424,6 +429,15 @@
     <div class="chart" id="c-cx-fh"></div>
   </div>
   <div class="card">
+    <h3>Cycle by cycle</h3>
+    <div id="cx-sum" class="tblwrap"></div>
+    <p class="muted small">How the chart is drawn: the post-1970 panels sit on a quarterly grid. Annual series hold each year&rsquo;s value from mid-year Y&minus;1 to Q1 of Y, so peaks land in the boom years: O&amp;G 1981, telecoms 2000, shale 2014. Hyperscaler lines change every quarter. Each is trailing-four-quarter capex of MSFT + GOOGL + AMZN + META + ORCL over GDP (see the first-hand check above; scripts in <code>bofa-capex-cycles/firsthand/</code>). Excel workbook with tables and charts: <a id="cx-xlsx" href="#">download</a>.</p>
+  </div>
+</section>
+
+<!-- ===================================================== HYPERSCALER CAPEX (infrastructure layer) -->
+<section id="tab-hcapex" class="tab" hidden>
+  <div class="card">
     <div class="card-head"><div><h2>First-hand hyperscaler capex as % of US GDP</h2>
       <p class="muted">Built only from filings, no BofA input: trailing-four-quarter capex over trailing-four-quarter BEA GDP, by calendar quarter. Solid = the five hyperscalers (Microsoft, Alphabet, Amazon, Meta, Oracle calendarised). Dots = the five + CoreWeave + SpaceX&rsquo;s AI segment, shown where the reported periods cover the window (SpaceX did not report Q3 or Q4 2025 alone). Dashed lines = the peaks of earlier cycles from the BofA exhibit.</p></div>
       <button class="btn small tbl-toggle" data-for="c-cx-own">Table</button></div>
@@ -441,11 +455,7 @@
     <div class="chart" id="c-cx-q"></div>
     <details class="small"><summary>Oracle fiscal quarters as filed</summary><div id="cx-of" class="tblwrap"></div></details>
   </div>
-  <div class="card">
-    <h3>Cycle by cycle</h3>
-    <div id="cx-sum" class="tblwrap"></div>
-    <p class="muted small">How the chart is drawn: the post-1970 panels sit on a quarterly grid. Annual series hold each year&rsquo;s value from mid-year Y&minus;1 to Q1 of Y, so peaks land in the boom years: O&amp;G 1981, telecoms 2000, shale 2014. Hyperscaler lines change every quarter. Each is trailing-four-quarter capex of MSFT + GOOGL + AMZN + META + ORCL over GDP (see the first-hand check above; scripts in <code>bofa-capex-cycles/firsthand/</code>). Excel workbook with tables and charts: <a id="cx-xlsx" href="#">download</a>.</p>
-  </div>
+  <p class="muted small">Built from company filings and BEA GDP only. How these numbers compare with BofA&rsquo;s exhibit, and the earlier capex cycles, is on the <a href="#capex">Capex cycles</a> tab (Macro).</p>
 </section>
 
 <!-- ===================================================== CREDIT SPREADS -->

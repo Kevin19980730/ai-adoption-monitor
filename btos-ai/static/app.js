@@ -953,6 +953,13 @@ function drawCxQ() {
   if (e7) tile(`Eight names, TTM to ${e7.ttm_ending}`, `${e7.total_pct.toFixed(2)}% of GDP`, null, `$${Math.round(e7.total_bn)}bn: the five + CoreWeave $${e7.coreweave_bn.toFixed(1)}bn + Nebius $${e7.nebius_bn.toFixed(1)}bn + SpaceX AI $${e7.spacex_ai_bn.toFixed(1)}bn`);
   table($("#cx-of"), [{label: "Fiscal quarter ends", key: "fiscal_quarter_end"}, {label: "Oracle capex ($bn)", n: 1, get: r => "$" + r.capex_bn.toFixed(2)}], [...CXQ.oracle_fiscal].reverse());
 }
+/* Capex cycles (Macro) and Hyperscaler capex (Infrastructure) are drawn from one API call */
+let CAPEX_ONCE = null;
+async function capexTab() {
+  CAPEX_ONCE = CAPEX_ONCE || loadCapex();
+  await CAPEX_ONCE;
+  Object.keys(VIEWS).forEach(id => { const n = document.getElementById(id); if (n && n.offsetParent && VIEWS[id].mode === "chart") render(id); });
+}
 async function loadCapex() {
   const d = await api("/api/capex-cycles");
   if (!d.series.length) { $("#cx-tiles").textContent = "No data - run bofa-capex-cycles/extract_pdf.py."; return; }
@@ -1166,7 +1173,7 @@ function loadData() {
   refreshStatus();
 }
 
-const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: loadCapex, ramp: loadRamp, arr: loadArr, data: loadData};
+const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, arr: loadArr, data: loadData};
 async function boot(again) {
   META = await api("/api/meta");
   document.body.classList.toggle("hosted", !!META.hosted);
