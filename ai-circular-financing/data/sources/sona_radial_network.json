@@ -1,0 +1,3735 @@
+{
+ "visualisation_id": 30262829,
+ "url": "https://flo.uri.sh/visualisation/30262829/embed",
+ "fetched": "2026-10-09T16:51:27",
+ "columns": {
+  "links": {
+   "source": "From",
+   "target": "To",
+   "value": "Just link"
+  },
+  "nodes": {
+   "group": "ID",
+   "id": "ID",
+   "metadata": [
+    "Making commitment",
+    "Receiving commitment"
+   ],
+   "size": "Average"
+  }
+ },
+ "data": {
+  "links": [
+   {
+    "source": "",
+    "target": "",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "",
+    "value": "0.01"
+   },
+   {
+    "source": "Amazon",
+    "target": "Adept AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "AI cloud / data center operator",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "AI cloud / data center operator",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "AI data center / cloud",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "AI infrastructure financing platform / model labs",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "AI semiconductor startup",
+    "value": "0.01"
+   },
+   {
+    "source": "Apollo",
+    "target": "AI XPV Platform / Anthropic / frontier AI labs",
+    "value": "0.01"
+   },
+   {
+    "source": "Blackstone",
+    "target": "AI XPV Platform / Anthropic / frontier AI labs",
+    "value": "0.01"
+   },
+   {
+    "source": "Broadcom",
+    "target": "AI XPV Platform / Anthropic / frontier AI labs",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "AirTrunk",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "AirTrunk",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "AirTrunk",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "AirTrunk",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "AirTrunk",
+    "value": "0.01"
+   },
+   {
+    "source": "Blackstone",
+    "target": "AirTrunk",
+    "value": "0.01"
+   },
+   {
+    "source": "DBS",
+    "target": "AirTrunk",
+    "value": "0.01"
+   },
+   {
+    "source": "ING",
+    "target": "AirTrunk",
+    "value": "0.01"
+   },
+   {
+    "source": "Oracle",
+    "target": "AirTrunk",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "Amazon",
+    "value": "0.01"
+   },
+   {
+    "source": "Meta",
+    "target": "AMD",
+    "value": "0.01"
+   },
+   {
+    "source": "Rackspace Technology",
+    "target": "AMD",
+    "value": "0.01"
+   },
+   {
+    "source": "Nscale",
+    "target": "American Intelligence & Power Corporation / Monarch Compute Campus",
+    "value": "0.01"
+   },
+   {
+    "source": "SoftBank",
+    "target": "Ampere Computing",
+    "value": "0.01"
+   },
+   {
+    "source": "Amazon",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "Amazon",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "Amazon",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "Cisco",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "Coatue",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "DE Shaw",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "Dragoneer",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "Founders Fund",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "GIC",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "Google",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "ICONIQ",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "ICONIQ",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "Lightspeed",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "MGX",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "Micron",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "Salesforce",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "AI XPV Platform / Anthropic / frontier AI labs",
+    "target": "Anthropic",
+    "value": "0.01"
+   },
+   {
+    "source": "SpaceX",
+    "target": "Anysphere / Cursor",
+    "value": "0.01"
+   },
+   {
+    "source": "SK hynix",
+    "target": "ASML",
+    "value": "0.01"
+   },
+   {
+    "source": "Volta Tydal AS",
+    "target": "Bitdeer Tydal Norway campus",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "Brium",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "Broadcom",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "Cerebras",
+    "value": "0.01"
+   },
+   {
+    "source": "Google",
+    "target": "Character.AI",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "Cohere",
+    "value": "0.01"
+   },
+   {
+    "source": "Fujitsu",
+    "target": "Cohere",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Cohere",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Cohere",
+    "value": "0.01"
+   },
+   {
+    "source": "Oracle",
+    "target": "Cohere",
+    "value": "0.01"
+   },
+   {
+    "source": "PSP",
+    "target": "Cohere",
+    "value": "0.01"
+   },
+   {
+    "source": "Salesforce",
+    "target": "Cohere",
+    "value": "0.01"
+   },
+   {
+    "source": "Salesforce",
+    "target": "Cohere",
+    "value": "0.01"
+   },
+   {
+    "source": "CoreWeave",
+    "target": "Core Scientific",
+    "value": "0.01"
+   },
+   {
+    "source": "CoreWeave",
+    "target": "Core Scientific",
+    "value": "0.01"
+   },
+   {
+    "source": "CoreWeave",
+    "target": "Core Scientific",
+    "value": "0.01"
+   },
+   {
+    "source": "Altimeter",
+    "target": "Coreweave",
+    "value": "0.01"
+   },
+   {
+    "source": "Anthropic",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "BlackRock",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "Blackstone",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "Carlyle",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "Coatue",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "Coatue",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "DigitalBridge",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "Fidelity",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "Lykos",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "Magnetar",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "Magnetar",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "PIMCO",
+    "target": "CoreWeave",
+    "value": "0.01"
+   },
+   {
+    "source": "Fidelity",
+    "target": "Crusoe",
+    "value": "0.01"
+   },
+   {
+    "source": "Founders Fund",
+    "target": "Crusoe",
+    "value": "0.01"
+   },
+   {
+    "source": "Mubadala",
+    "target": "Crusoe",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Crusoe",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "Data / AI platform",
+    "value": "0.01"
+   },
+   {
+    "source": "Blackstone",
+    "target": "Databricks",
+    "value": "0.01"
+   },
+   {
+    "source": "Coatue",
+    "target": "Databricks",
+    "value": "0.01"
+   },
+   {
+    "source": "MGX",
+    "target": "Databricks",
+    "value": "0.01"
+   },
+   {
+    "source": "T. Rowe Price",
+    "target": "Databricks",
+    "value": "0.01"
+   },
+   {
+    "source": "IREN",
+    "target": "Dell Technologies",
+    "value": "0.01"
+   },
+   {
+    "source": "IREN",
+    "target": "Dell Technologies",
+    "value": "0.01"
+   },
+   {
+    "source": "a16z",
+    "target": "ElevenLabs",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "ElevenLabs",
+    "value": "0.01"
+   },
+   {
+    "source": "ICONIQ",
+    "target": "ElevenLabs",
+    "value": "0.01"
+   },
+   {
+    "source": "Salesforce",
+    "target": "ElevenLabs",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "Enosemi",
+    "value": "0.01"
+   },
+   {
+    "source": "Cisco",
+    "target": "Enterprise customers",
+    "value": "0.01"
+   },
+   {
+    "source": "Dell Technologies",
+    "target": "Enterprise customers",
+    "value": "0.01"
+   },
+   {
+    "source": "Equinix",
+    "target": "Enterprise customers",
+    "value": "0.01"
+   },
+   {
+    "source": "Equinix",
+    "target": "Enterprise customers",
+    "value": "0.01"
+   },
+   {
+    "source": "Equinix",
+    "target": "Enterprise customers",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Enterprise customers",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Enterprise customers",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Enterprise customers",
+    "value": "0.01"
+   },
+   {
+    "source": "a16z",
+    "target": "Etched",
+    "value": "0.01"
+   },
+   {
+    "source": "Blackstone",
+    "target": "Etched",
+    "value": "0.01"
+   },
+   {
+    "source": "Jane Street",
+    "target": "Etched",
+    "value": "0.01"
+   },
+   {
+    "source": "Kleiner Perkins",
+    "target": "Etched",
+    "value": "0.01"
+   },
+   {
+    "source": "Sequoia",
+    "target": "Etched",
+    "value": "0.01"
+   },
+   {
+    "source": "Tiger Global",
+    "target": "Etched",
+    "value": "0.01"
+   },
+   {
+    "source": "Bosch",
+    "target": "European Semiconductor Manufacturing Company (ESMC)",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "European Semiconductor Manufacturing Company (ESMC)",
+    "value": "0.01"
+   },
+   {
+    "source": "Infineon",
+    "target": "European Semiconductor Manufacturing Company (ESMC)",
+    "value": "0.01"
+   },
+   {
+    "source": "NXP",
+    "target": "European Semiconductor Manufacturing Company (ESMC)",
+    "value": "0.01"
+   },
+   {
+    "source": "TSMC",
+    "target": "European Semiconductor Manufacturing Company (ESMC)",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Figure AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Intel",
+    "target": "Figure AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "Figure AI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Figure AI",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "Figure AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Anthropic",
+    "target": "Fluidstack / U.S. AI infrastructure sites",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "G42",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "Georgia Power / Project Camellia",
+    "value": "0.01"
+   },
+   {
+    "source": "Anthropic",
+    "target": "Google",
+    "value": "0.01"
+   },
+   {
+    "source": "Anthropic",
+    "target": "Google; Broadcom",
+    "value": "0.01"
+   },
+   {
+    "source": "SoftBank",
+    "target": "Graphcore",
+    "value": "0.01"
+   },
+   {
+    "source": "Amazon",
+    "target": "Hugging Face",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "Hugging Face",
+    "value": "0.01"
+   },
+   {
+    "source": "Google",
+    "target": "Hugging Face",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Hugging Face",
+    "value": "0.01"
+   },
+   {
+    "source": "IBM",
+    "target": "Hugging Face",
+    "value": "0.01"
+   },
+   {
+    "source": "Intel",
+    "target": "Hugging Face",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Hugging Face",
+    "value": "0.01"
+   },
+   {
+    "source": "Qualcomm",
+    "target": "Hugging Face",
+    "value": "0.01"
+   },
+   {
+    "source": "Salesforce",
+    "target": "Hugging Face",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Hut 8 Beacon Point AI Data Center Campus",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Hut 8 Beacon Point AI Data Center Campus",
+    "value": "0.01"
+   },
+   {
+    "source": "AirTrunk",
+    "target": "India AI and cloud data center pipeline",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "Inflection AI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Intel",
+    "value": "0.01"
+   },
+   {
+    "source": "SoftBank",
+    "target": "Intel",
+    "value": "0.01"
+   },
+   {
+    "source": "Bain Capital Ventures",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Blue Owl Capital",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Blue Owl Capital",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "CPP Investments",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "CPP Investments",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Credit Agricole CIB",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "General Atlantic",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Goldman Sachs",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Goldman Sachs",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Hyundai Motor Group",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "JPMorgan (reported)",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Michael Dell family office",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Morgan Stanley",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA (reported tenant",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA (reported tenant",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "officially unnamed high-investment-grade tenant)",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "officially unnamed high-investment-grade tenant)",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "PGIM Real Estate",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Primary Digital Infrastructure",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Primary Digital Infrastructure",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Situational Awareness",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Situational Awareness",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Sixth Street Growth",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Sony Semiconductor Solutions",
+    "target": "Investor group (synthetic)",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "IREN",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "IREN",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "IREN",
+    "value": "0.01"
+   },
+   {
+    "source": "DENSO",
+    "target": "Japan Advanced Semiconductor Manufacturing (JASM)",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Japan Advanced Semiconductor Manufacturing (JASM)",
+    "value": "0.01"
+   },
+   {
+    "source": "Toyota",
+    "target": "Japan Advanced Semiconductor Manufacturing (JASM)",
+    "value": "0.01"
+   },
+   {
+    "source": "TSMC",
+    "target": "Japan Advanced Semiconductor Manufacturing (JASM)",
+    "value": "0.01"
+   },
+   {
+    "source": "Andra Capital",
+    "target": "Lambda",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Lambda",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Lambda",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Lambda",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Lambda",
+    "value": "0.01"
+   },
+   {
+    "source": "SGW",
+    "target": "Lambda",
+    "value": "0.01"
+   },
+   {
+    "source": "Anthropic",
+    "target": "Lambda / NVIDIA / Hut 8 Beacon Point capacity",
+    "value": "0.01"
+   },
+   {
+    "source": "Crusoe",
+    "target": "Lancium Clean Campus / Abilene data center",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Lancium Clean Campus / Abilene data center",
+    "value": "0.01"
+   },
+   {
+    "source": "AirTrunk",
+    "target": "Lumina CloudInfra",
+    "value": "0.01"
+   },
+   {
+    "source": "NEXTDC",
+    "target": "M4 Melbourne AI Factory and Technology Campus",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Marvell",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "MediaTek",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Micron",
+    "value": "0.01"
+   },
+   {
+    "source": "Anthropic",
+    "target": "Microsoft",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "Microsoft",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "Mipsology",
+    "value": "0.01"
+   },
+   {
+    "source": "IREN",
+    "target": "Mirantis",
+    "value": "0.01"
+   },
+   {
+    "source": "ASML",
+    "target": "Mistral AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Cisco",
+    "target": "Mistral AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "Mistral AI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Mistral AI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Mistral AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Samsung Electronics",
+    "target": "Mistral AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "Model lab",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "Model lab",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "Model lab",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "Model lab",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "Model lab",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "Model lab",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "Model lab",
+    "value": "0.01"
+   },
+   {
+    "source": "CoreWeave",
+    "target": "Monolith AI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "NAVER",
+    "value": "0.01"
+   },
+   {
+    "source": "Brookfield",
+    "target": "NAVER AI factory infrastructure",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "Nebius",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "Neocloud / GPU cloud",
+    "value": "0.01"
+   },
+   {
+    "source": "Investor group (synthetic)",
+    "target": "Neocloud / GPU cloud",
+    "value": "0.01"
+   },
+   {
+    "source": "La Caisse",
+    "target": "NEXTDC",
+    "value": "0.01"
+   },
+   {
+    "source": "NEXTDC",
+    "target": "NEXTDC",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "NEXTDC",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "NEXTDC",
+    "value": "0.01"
+   },
+   {
+    "source": "Sharon AI",
+    "target": "NEXTDC",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "Nod.ai",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Nokia",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "Northslope",
+    "value": "0.01"
+   },
+   {
+    "source": "IREN",
+    "target": "Nostrum Group / Ingenostrum",
+    "value": "0.01"
+   },
+   {
+    "source": "Astra",
+    "target": "Nscale",
+    "value": "0.01"
+   },
+   {
+    "source": "Citadel",
+    "target": "Nscale",
+    "value": "0.01"
+   },
+   {
+    "source": "Dell Technologies",
+    "target": "Nscale",
+    "value": "0.01"
+   },
+   {
+    "source": "Jane Street",
+    "target": "Nscale",
+    "value": "0.01"
+   },
+   {
+    "source": "Lenovo",
+    "target": "Nscale",
+    "value": "0.01"
+   },
+   {
+    "source": "Linden",
+    "target": "Nscale",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "Nscale",
+    "value": "0.01"
+   },
+   {
+    "source": "Nokia",
+    "target": "Nscale",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Nscale",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Nscale",
+    "value": "0.01"
+   },
+   {
+    "source": "Point72",
+    "target": "Nscale",
+    "value": "0.01"
+   },
+   {
+    "source": "Anthropic",
+    "target": "Nscale West Virginia capacity",
+    "value": "0.01"
+   },
+   {
+    "source": "IREN",
+    "target": "NVIDIA",
+    "value": "0.01"
+   },
+   {
+    "source": "Micron",
+    "target": "NVIDIA",
+    "value": "0.01"
+   },
+   {
+    "source": "BlackRock",
+    "target": "NVIDIA ecosystem AI infrastructure",
+    "value": "0.01"
+   },
+   {
+    "source": "Apollo",
+    "target": "NVIDIA ecosystem AI infrastructure customers",
+    "value": "0.01"
+   },
+   {
+    "source": "Blackstone",
+    "target": "NVIDIA ecosystem AI infrastructure customers",
+    "value": "0.01"
+   },
+   {
+    "source": "Brookfield",
+    "target": "NVIDIA ecosystem AI infrastructure customers",
+    "value": "0.01"
+   },
+   {
+    "source": "KKR",
+    "target": "NVIDIA ecosystem AI infrastructure customers",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "NVIDIA ecosystem AI infrastructure customers",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "NVIDIA ecosystem AI infrastructure customers",
+    "value": "0.01"
+   },
+   {
+    "source": "SK Group",
+    "target": "NVIDIA-SK AI factory and memory ecosystem",
+    "value": "0.01"
+   },
+   {
+    "source": "SK Telecom",
+    "target": "NVIDIA-SK AI factory and memory ecosystem",
+    "value": "0.01"
+   },
+   {
+    "source": "SK hynix",
+    "target": "NVIDIA-SK AI factory and memory ecosystem",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "NVIDIA-SK AI factory and memory ecosystem",
+    "value": "0.01"
+   },
+   {
+    "source": "SK Group / SK Telecom / SK hynix / NVIDIA",
+    "target": "NVIDIA-SK AI factory and memory ecosystem",
+    "value": "0.01"
+   },
+   {
+    "source": "Amazon",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "Amazon",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "Amazon",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "Bank of America",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI and 19 founding investment / consulting partners",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "Samsung Electronics",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "SK hynix",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "SK Telecom",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "SoftBank",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "SoftBank",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "SoftBank",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "SoftBank",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "SoftBank",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "SoftBank",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "Thrive",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "AI XPV Platform / Anthropic / frontier AI labs",
+    "target": "OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "Crusoe",
+    "target": "OpenAI Stargate Abilene campus",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI Stargate Abilene campus investor group (CRUSOE-ABILENE-2025)",
+    "target": "OpenAI Stargate Abilene campus",
+    "value": "0.01"
+   },
+   {
+    "source": "CoreWeave",
+    "target": "OpenPipe",
+    "value": "0.01"
+   },
+   {
+    "source": "Stripe",
+    "target": "OpenRouter",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "Oracle",
+    "value": "0.01"
+   },
+   {
+    "source": "IVP",
+    "target": "Perplexity AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Jeff Bezos",
+    "target": "Perplexity AI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Perplexity AI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Perplexity AI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Perplexity AI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Perplexity AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Bain",
+    "target": "Poolside",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Poolside",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Poolside",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Run:ai",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Runway",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Runway",
+    "value": "0.01"
+   },
+   {
+    "source": "SoftBank",
+    "target": "Runway",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Safe Superintelligence Inc. (SSI)",
+    "value": "0.01"
+   },
+   {
+    "source": "Tesla",
+    "target": "Samsung Electronics",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "SB Energy",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI / SB Energy",
+    "target": "SB Energy / OpenAI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "SB Energy / PORTS-Pike Technology Campus",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "SB Energy / PORTS-Pike Technology Campus",
+    "value": "0.01"
+   },
+   {
+    "source": "Amazon",
+    "target": "Scale AI",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "Scale AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Cisco",
+    "target": "Scale AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Intel",
+    "target": "Scale AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Meta",
+    "target": "Scale AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Meta",
+    "target": "Scale AI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Scale AI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Scale AI",
+    "value": "0.01"
+   },
+   {
+    "source": "ServiceNow",
+    "target": "Scale AI",
+    "value": "0.01"
+   },
+   {
+    "source": "ESDS Software Solutions",
+    "target": "Sharon AI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Sharon AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Oaktree",
+    "target": "Sharon AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Oaktree",
+    "target": "Sharon AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Oaktree",
+    "target": "Sharon AI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Sharon AI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Sharon AI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Sharon AI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Sharon AI",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Sharon AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Two Seas",
+    "target": "Sharon AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Two Seas",
+    "target": "Sharon AI",
+    "value": "0.01"
+   },
+   {
+    "source": "Unnamed global technology company",
+    "target": "Sharon AI",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "Silo AI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "SK Group / SK Telecom / SK hynix / NVIDIA",
+    "value": "0.01"
+   },
+   {
+    "source": "SK Group",
+    "target": "SK Group / SK Telecom / SK hynix / NVIDIA",
+    "value": "0.01"
+   },
+   {
+    "source": "SK hynix",
+    "target": "SK Group / SK Telecom / SK hynix / NVIDIA",
+    "value": "0.01"
+   },
+   {
+    "source": "SK Telecom",
+    "target": "SK Group / SK Telecom / SK hynix / NVIDIA",
+    "value": "0.01"
+   },
+   {
+    "source": "KKR",
+    "target": "SK Horizon",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "SK Horizon",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "SK hynix",
+    "value": "0.01"
+   },
+   {
+    "source": "Anthropic",
+    "target": "SpaceX",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "SpaceX",
+    "value": "0.01"
+   },
+   {
+    "source": "Google",
+    "target": "SpaceX / xAI compute infrastructure",
+    "value": "0.01"
+   },
+   {
+    "source": "Reflection AI",
+    "target": "SpaceX / xAI compute infrastructure",
+    "value": "0.01"
+   },
+   {
+    "source": "Aker",
+    "target": "Stargate Norway JV",
+    "value": "0.01"
+   },
+   {
+    "source": "Nscale",
+    "target": "Stargate Norway JV",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "Stargate Norway JV",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Stargate Norway JV",
+    "value": "0.01"
+   },
+   {
+    "source": "MGX",
+    "target": "Stargate Project",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "Stargate Project",
+    "value": "0.01"
+   },
+   {
+    "source": "Oracle",
+    "target": "Stargate Project",
+    "value": "0.01"
+   },
+   {
+    "source": "SoftBank",
+    "target": "Stargate Project",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Stargate Project",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "Taiwan semiconductor ecosystem partners",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "TensorWave",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "TensorWave",
+    "value": "0.01"
+   },
+   {
+    "source": "Magnetar",
+    "target": "TensorWave",
+    "value": "0.01"
+   },
+   {
+    "source": "Magnetar",
+    "target": "TensorWave",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "TensorWave",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "TensorWave",
+    "value": "0.01"
+   },
+   {
+    "source": "Samsung Electronics",
+    "target": "Tenstorrent",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Tenstorrent",
+    "value": "0.01"
+   },
+   {
+    "source": "Anthropic",
+    "target": "TeraWulf / Justified Data Campus",
+    "value": "0.01"
+   },
+   {
+    "source": "Fluidstack",
+    "target": "TeraWulf Abernathy JV stake",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "TeraWulf Abernathy JV stake",
+    "value": "0.01"
+   },
+   {
+    "source": "OpenAI",
+    "target": "Tomoro",
+    "value": "0.01"
+   },
+   {
+    "source": "Equinix",
+    "target": "U.S. xScale data center JV",
+    "value": "0.01"
+   },
+   {
+    "source": "Equinix",
+    "target": "U.S. xScale data center JV",
+    "value": "0.01"
+   },
+   {
+    "source": "GIC",
+    "target": "U.S. xScale data center JV",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "U.S. xScale data center JV",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "U.S. xScale data center JV",
+    "value": "0.01"
+   },
+   {
+    "source": "Sharon AI",
+    "target": "VAST Data",
+    "value": "0.01"
+   },
+   {
+    "source": "a16z",
+    "target": "Volta Infrastructure",
+    "value": "0.01"
+   },
+   {
+    "source": "Altimeter",
+    "target": "Volta Infrastructure",
+    "value": "0.01"
+   },
+   {
+    "source": "Azora",
+    "target": "Volta Infrastructure",
+    "value": "0.01"
+   },
+   {
+    "source": "Matter",
+    "target": "Volta Infrastructure",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Volta Infrastructure",
+    "value": "0.01"
+   },
+   {
+    "source": "Undisclosed frontier AI lab",
+    "target": "Volta Infrastructure",
+    "value": "0.01"
+   },
+   {
+    "source": "",
+    "target": "Volta Infrastructure",
+    "value": "0.01"
+   },
+   {
+    "source": "Azora",
+    "target": "Volta Infrastructure AI factory program",
+    "value": "0.01"
+   },
+   {
+    "source": "Microsoft",
+    "target": "Wayve",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "Wayve",
+    "value": "0.01"
+   },
+   {
+    "source": "SoftBank",
+    "target": "Wayve",
+    "value": "0.01"
+   },
+   {
+    "source": "Wayve investor group (WAYVE-2024-05-SC)",
+    "target": "Wayve",
+    "value": "0.01"
+   },
+   {
+    "source": "CoreWeave",
+    "target": "Weights & Biases",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "xAI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "xAI",
+    "value": "0.01"
+   },
+   {
+    "source": "NVIDIA",
+    "target": "xAI",
+    "value": "0.01"
+   },
+   {
+    "source": "SpaceX",
+    "target": "xAI",
+    "value": "0.01"
+   },
+   {
+    "source": "Tesla",
+    "target": "xAI",
+    "value": "0.01"
+   },
+   {
+    "source": "Valor",
+    "target": "xAI",
+    "value": "0.01"
+   },
+   {
+    "source": "xAI investor group (XAI-2024-12-SC)",
+    "target": "xAI",
+    "value": "0.01"
+   },
+   {
+    "source": "xAI investor group (XAI-2026-01-SE)",
+    "target": "xAI",
+    "value": "0.01"
+   },
+   {
+    "source": "AMD",
+    "target": "ZT Systems",
+    "value": "0.01"
+   }
+  ],
+  "nodes": [
+   {
+    "group": "a16z",
+    "id": "a16z",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Adept AI",
+    "id": "Adept AI",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "AI XPV Platform / Anthropic / frontier AI labs",
+    "id": "AI XPV Platform / Anthropic / frontier AI labs",
+    "metadata": [
+     "Undisclosed",
+     "$35bn"
+    ],
+    "size": "17.5"
+   },
+   {
+    "group": "AirTrunk",
+    "id": "AirTrunk",
+    "metadata": [
+     "$30bn",
+     "$30.64bn"
+    ],
+    "size": "30.3"
+   },
+   {
+    "group": "Aker",
+    "id": "Aker",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Altimeter",
+    "id": "Altimeter",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Amazon",
+    "id": "Amazon",
+    "metadata": [
+     "$8bn",
+     "$100bn"
+    ],
+    "size": "54.0"
+   },
+   {
+    "group": "AMD",
+    "id": "AMD",
+    "metadata": [
+     "$20.565bn",
+     "Undisclosed"
+    ],
+    "size": "10.3"
+   },
+   {
+    "group": "American Intelligence & Power Corporation / Monarch Compute Campus",
+    "id": "American Intelligence & Power Corporation / Monarch Compute Campus",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Ampere Computing",
+    "id": "Ampere Computing",
+    "metadata": [
+     "Undisclosed",
+     "$6.5bn"
+    ],
+    "size": "3.3"
+   },
+   {
+    "group": "Andra Capital",
+    "id": "Andra Capital",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Anthropic",
+    "id": "Anthropic",
+    "metadata": [
+     "$219bn",
+     "$86.5bn"
+    ],
+    "size": "152.8"
+   },
+   {
+    "group": "Anysphere / Cursor",
+    "id": "Anysphere / Cursor",
+    "metadata": [
+     "Undisclosed",
+     "$60bn"
+    ],
+    "size": "30.0"
+   },
+   {
+    "group": "Apollo",
+    "id": "Apollo",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "ASML",
+    "id": "ASML",
+    "metadata": [
+     "$1.4bn",
+     "$7.97bn"
+    ],
+    "size": "4.7"
+   },
+   {
+    "group": "Astra",
+    "id": "Astra",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Azora",
+    "id": "Azora",
+    "metadata": [
+     "$5bn",
+     "Undisclosed"
+    ],
+    "size": "2.5"
+   },
+   {
+    "group": "Bain",
+    "id": "Bain",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Bain Capital Ventures",
+    "id": "Bain Capital Ventures",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Bank of America",
+    "id": "Bank of America",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Bitdeer Tydal Norway campus",
+    "id": "Bitdeer Tydal Norway campus",
+    "metadata": [
+     "Undisclosed",
+     "$4.7bn"
+    ],
+    "size": "2.4"
+   },
+   {
+    "group": "BlackRock",
+    "id": "BlackRock",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Blackstone",
+    "id": "Blackstone",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Blue Owl Capital",
+    "id": "Blue Owl Capital",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Bosch",
+    "id": "Bosch",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Brium",
+    "id": "Brium",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Broadcom",
+    "id": "Broadcom",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Brookfield",
+    "id": "Brookfield",
+    "metadata": [
+     "$9bn",
+     "Undisclosed"
+    ],
+    "size": "4.5"
+   },
+   {
+    "group": "Carlyle",
+    "id": "Carlyle",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Cerebras",
+    "id": "Cerebras",
+    "metadata": [
+     "Undisclosed",
+     "$10bn"
+    ],
+    "size": "5.0"
+   },
+   {
+    "group": "Character.AI",
+    "id": "Character.AI",
+    "metadata": [
+     "Undisclosed",
+     "$2.7bn"
+    ],
+    "size": "1.4"
+   },
+   {
+    "group": "Cisco",
+    "id": "Cisco",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Citadel",
+    "id": "Citadel",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Coatue",
+    "id": "Coatue",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Cohere",
+    "id": "Cohere",
+    "metadata": [
+     "Undisclosed",
+     "$1bn"
+    ],
+    "size": "0.5"
+   },
+   {
+    "group": "Core Scientific",
+    "id": "Core Scientific",
+    "metadata": [
+     "Undisclosed",
+     "$3.5bn"
+    ],
+    "size": "1.8"
+   },
+   {
+    "group": "CoreWeave",
+    "id": "CoreWeave",
+    "metadata": [
+     "$5.2bn",
+     "$27.65bn"
+    ],
+    "size": "16.4"
+   },
+   {
+    "group": "CPP Investments",
+    "id": "CPP Investments",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Credit Agricole CIB",
+    "id": "Credit Agricole CIB",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Crusoe",
+    "id": "Crusoe",
+    "metadata": [
+     "Undisclosed",
+     "$0.6bn"
+    ],
+    "size": "0.3"
+   },
+   {
+    "group": "Databricks",
+    "id": "Databricks",
+    "metadata": [
+     "Undisclosed",
+     "$5bn"
+    ],
+    "size": "2.5"
+   },
+   {
+    "group": "DBS",
+    "id": "DBS",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "DE Shaw",
+    "id": "DE Shaw",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Dell Technologies",
+    "id": "Dell Technologies",
+    "metadata": [
+     "Undisclosed",
+     "$7.4bn"
+    ],
+    "size": "3.7"
+   },
+   {
+    "group": "DENSO",
+    "id": "DENSO",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "DigitalBridge",
+    "id": "DigitalBridge",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Dragoneer",
+    "id": "Dragoneer",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "ElevenLabs",
+    "id": "ElevenLabs",
+    "metadata": [
+     "Undisclosed",
+     "$0.18bn"
+    ],
+    "size": "0.1"
+   },
+   {
+    "group": "Enosemi",
+    "id": "Enosemi",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Enterprise customers",
+    "id": "Enterprise customers",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Equinix",
+    "id": "Equinix",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "ESDS Software Solutions",
+    "id": "ESDS Software Solutions",
+    "metadata": [
+     "$1.25bn",
+     "Undisclosed"
+    ],
+    "size": "0.6"
+   },
+   {
+    "group": "Etched",
+    "id": "Etched",
+    "metadata": [
+     "Undisclosed",
+     "$0.7bn"
+    ],
+    "size": "0.4"
+   },
+   {
+    "group": "European Semiconductor Manufacturing Company (ESMC)",
+    "id": "European Semiconductor Manufacturing Company (ESMC)",
+    "metadata": [
+     "Undisclosed",
+     "$10.9bn"
+    ],
+    "size": "5.5"
+   },
+   {
+    "group": "Fidelity",
+    "id": "Fidelity",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Figure AI",
+    "id": "Figure AI",
+    "metadata": [
+     "Undisclosed",
+     "$0.675bn"
+    ],
+    "size": "0.3"
+   },
+   {
+    "group": "Fluidstack",
+    "id": "Fluidstack",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Fluidstack / U.S. AI infrastructure sites",
+    "id": "Fluidstack / U.S. AI infrastructure sites",
+    "metadata": [
+     "Undisclosed",
+     "$50bn"
+    ],
+    "size": "25.0"
+   },
+   {
+    "group": "Founders Fund",
+    "id": "Founders Fund",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Fujitsu",
+    "id": "Fujitsu",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "G42",
+    "id": "G42",
+    "metadata": [
+     "Undisclosed",
+     "$1.5bn"
+    ],
+    "size": "0.8"
+   },
+   {
+    "group": "General Atlantic",
+    "id": "General Atlantic",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Georgia Power / Project Camellia",
+    "id": "Georgia Power / Project Camellia",
+    "metadata": [
+     "Undisclosed",
+     "$20bn"
+    ],
+    "size": "10.0"
+   },
+   {
+    "group": "GIC",
+    "id": "GIC",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Goldman Sachs",
+    "id": "Goldman Sachs",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Google",
+    "id": "Google",
+    "metadata": [
+     "$35.06bn",
+     "Undisclosed"
+    ],
+    "size": "17.5"
+   },
+   {
+    "group": "Graphcore",
+    "id": "Graphcore",
+    "metadata": [
+     "Undisclosed",
+     "$0.5bn"
+    ],
+    "size": "0.3"
+   },
+   {
+    "group": "Hugging Face",
+    "id": "Hugging Face",
+    "metadata": [
+     "Undisclosed",
+     "$0.235bn"
+    ],
+    "size": "0.1"
+   },
+   {
+    "group": "Hut 8 Beacon Point AI Data Center Campus",
+    "id": "Hut 8 Beacon Point AI Data Center Campus",
+    "metadata": [
+     "Undisclosed",
+     "$19.6bn"
+    ],
+    "size": "9.8"
+   },
+   {
+    "group": "Hyundai Motor Group",
+    "id": "Hyundai Motor Group",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "IBM",
+    "id": "IBM",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "ICONIQ",
+    "id": "ICONIQ",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "India AI and cloud data center pipeline",
+    "id": "India AI and cloud data center pipeline",
+    "metadata": [
+     "Undisclosed",
+     "$30bn"
+    ],
+    "size": "15.0"
+   },
+   {
+    "group": "Infineon",
+    "id": "Infineon",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Inflection AI",
+    "id": "Inflection AI",
+    "metadata": [
+     "Undisclosed",
+     "$0.65bn"
+    ],
+    "size": "0.3"
+   },
+   {
+    "group": "ING",
+    "id": "ING",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Intel",
+    "id": "Intel",
+    "metadata": [
+     "Undisclosed",
+     "$7bn"
+    ],
+    "size": "3.5"
+   },
+   {
+    "group": "IREN",
+    "id": "IREN",
+    "metadata": [
+     "$8.193bn",
+     "$21.85bn"
+    ],
+    "size": "15.0"
+   },
+   {
+    "group": "IVP",
+    "id": "IVP",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Jane Street",
+    "id": "Jane Street",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Japan Advanced Semiconductor Manufacturing (JASM)",
+    "id": "Japan Advanced Semiconductor Manufacturing (JASM)",
+    "metadata": [
+     "Undisclosed",
+     "$20bn"
+    ],
+    "size": "10.0"
+   },
+   {
+    "group": "Jeff Bezos",
+    "id": "Jeff Bezos",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "JPMorgan (reported)",
+    "id": "JPMorgan (reported)",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "KKR",
+    "id": "KKR",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Kleiner Perkins",
+    "id": "Kleiner Perkins",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "La Caisse",
+    "id": "La Caisse",
+    "metadata": [
+     "$0.66bn",
+     "Undisclosed"
+    ],
+    "size": "0.3"
+   },
+   {
+    "group": "Lambda",
+    "id": "Lambda",
+    "metadata": [
+     "Undisclosed",
+     "$0.8bn"
+    ],
+    "size": "0.4"
+   },
+   {
+    "group": "Lambda / NVIDIA / Hut 8 Beacon Point capacity",
+    "id": "Lambda / NVIDIA / Hut 8 Beacon Point capacity",
+    "metadata": [
+     "Undisclosed",
+     "$35bn"
+    ],
+    "size": "17.5"
+   },
+   {
+    "group": "Lancium Clean Campus / Abilene data center",
+    "id": "Lancium Clean Campus / Abilene data center",
+    "metadata": [
+     "Undisclosed",
+     "$3.4bn"
+    ],
+    "size": "1.7"
+   },
+   {
+    "group": "Lenovo",
+    "id": "Lenovo",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Lightspeed",
+    "id": "Lightspeed",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Linden",
+    "id": "Linden",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Lumina CloudInfra",
+    "id": "Lumina CloudInfra",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Lykos",
+    "id": "Lykos",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "M4 Melbourne AI Factory and Technology Campus",
+    "id": "M4 Melbourne AI Factory and Technology Campus",
+    "metadata": [
+     "Undisclosed",
+     "$1.3bn"
+    ],
+    "size": "0.7"
+   },
+   {
+    "group": "Magnetar",
+    "id": "Magnetar",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Marvell",
+    "id": "Marvell",
+    "metadata": [
+     "Undisclosed",
+     "$2bn"
+    ],
+    "size": "1.0"
+   },
+   {
+    "group": "Matter",
+    "id": "Matter",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "MediaTek",
+    "id": "MediaTek",
+    "metadata": [
+     "Undisclosed",
+     "$3.5bn"
+    ],
+    "size": "1.8"
+   },
+   {
+    "group": "Meta",
+    "id": "Meta",
+    "metadata": [
+     "$14.3bn",
+     "Undisclosed"
+    ],
+    "size": "7.2"
+   },
+   {
+    "group": "MGX",
+    "id": "MGX",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Michael Dell family office",
+    "id": "Michael Dell family office",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Micron",
+    "id": "Micron",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Microsoft",
+    "id": "Microsoft",
+    "metadata": [
+     "$68.266bn",
+     "$280bn"
+    ],
+    "size": "174.1"
+   },
+   {
+    "group": "Mipsology",
+    "id": "Mipsology",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Mirantis",
+    "id": "Mirantis",
+    "metadata": [
+     "Undisclosed",
+     "$0.625bn"
+    ],
+    "size": "0.3"
+   },
+   {
+    "group": "Mistral AI",
+    "id": "Mistral AI",
+    "metadata": [
+     "Undisclosed",
+     "$2.06536bn"
+    ],
+    "size": "1.0"
+   },
+   {
+    "group": "Monolith AI",
+    "id": "Monolith AI",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Morgan Stanley",
+    "id": "Morgan Stanley",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Mubadala",
+    "id": "Mubadala",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "NAVER",
+    "id": "NAVER",
+    "metadata": [
+     "Undisclosed",
+     "$1bn"
+    ],
+    "size": "0.5"
+   },
+   {
+    "group": "NAVER AI factory infrastructure",
+    "id": "NAVER AI factory infrastructure",
+    "metadata": [
+     "Undisclosed",
+     "$9bn"
+    ],
+    "size": "4.5"
+   },
+   {
+    "group": "Nebius",
+    "id": "Nebius",
+    "metadata": [
+     "Undisclosed",
+     "$17.4bn"
+    ],
+    "size": "8.7"
+   },
+   {
+    "group": "NEXTDC",
+    "id": "NEXTDC",
+    "metadata": [
+     "$2.75bn",
+     "$8.16bn"
+    ],
+    "size": "5.5"
+   },
+   {
+    "group": "Nod.ai",
+    "id": "Nod.ai",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Nokia",
+    "id": "Nokia",
+    "metadata": [
+     "Undisclosed",
+     "$1bn"
+    ],
+    "size": "0.5"
+   },
+   {
+    "group": "Northslope",
+    "id": "Northslope",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Nostrum Group / Ingenostrum",
+    "id": "Nostrum Group / Ingenostrum",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Nscale",
+    "id": "Nscale",
+    "metadata": [
+     "Undisclosed",
+     "$16bn"
+    ],
+    "size": "8.0"
+   },
+   {
+    "group": "Nscale West Virginia capacity",
+    "id": "Nscale West Virginia capacity",
+    "metadata": [
+     "Undisclosed",
+     "$45bn"
+    ],
+    "size": "22.5"
+   },
+   {
+    "group": "NVIDIA",
+    "id": "NVIDIA",
+    "metadata": [
+     "$142.08bn",
+     "$0.168bn"
+    ],
+    "size": "71.1"
+   },
+   {
+    "group": "NVIDIA (reported tenant",
+    "id": "NVIDIA (reported tenant",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "NVIDIA ecosystem AI infrastructure",
+    "id": "NVIDIA ecosystem AI infrastructure",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "NVIDIA ecosystem AI infrastructure customers",
+    "id": "NVIDIA ecosystem AI infrastructure customers",
+    "metadata": [
+     "Undisclosed",
+     "$500bn"
+    ],
+    "size": "250.0"
+   },
+   {
+    "group": "NVIDIA-SK AI factory and memory ecosystem",
+    "id": "NVIDIA-SK AI factory and memory ecosystem",
+    "metadata": [
+     "Undisclosed",
+     "$500bn"
+    ],
+    "size": "250.0"
+   },
+   {
+    "group": "NXP",
+    "id": "NXP",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Oaktree",
+    "id": "Oaktree",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "officially unnamed high-investment-grade tenant)",
+    "id": "officially unnamed high-investment-grade tenant)",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "OpenAI",
+    "id": "OpenAI",
+    "metadata": [
+     "$696.85bn",
+     "$275.3bn"
+    ],
+    "size": "486.1"
+   },
+   {
+    "group": "OpenAI / SB Energy",
+    "id": "OpenAI / SB Energy",
+    "metadata": [
+     "$6bn",
+     "Undisclosed"
+    ],
+    "size": "3.0"
+   },
+   {
+    "group": "OpenAI and 19 founding investment / consulting partners",
+    "id": "OpenAI and 19 founding investment / consulting partners",
+    "metadata": [
+     "$4bn",
+     "Undisclosed"
+    ],
+    "size": "2.0"
+   },
+   {
+    "group": "OpenAI Stargate Abilene campus",
+    "id": "OpenAI Stargate Abilene campus",
+    "metadata": [
+     "Undisclosed",
+     "$11.6bn"
+    ],
+    "size": "5.8"
+   },
+   {
+    "group": "OpenPipe",
+    "id": "OpenPipe",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "OpenRouter",
+    "id": "OpenRouter",
+    "metadata": [
+     "Undisclosed",
+     "$8bn"
+    ],
+    "size": "4.0"
+   },
+   {
+    "group": "Oracle",
+    "id": "Oracle",
+    "metadata": [
+     "Undisclosed",
+     "$300bn"
+    ],
+    "size": "150.0"
+   },
+   {
+    "group": "Perplexity AI",
+    "id": "Perplexity AI",
+    "metadata": [
+     "Undisclosed",
+     "$0.5736bn"
+    ],
+    "size": "0.3"
+   },
+   {
+    "group": "PGIM Real Estate",
+    "id": "PGIM Real Estate",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "PIMCO",
+    "id": "PIMCO",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Point72",
+    "id": "Point72",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Poolside",
+    "id": "Poolside",
+    "metadata": [
+     "Undisclosed",
+     "$0.5bn"
+    ],
+    "size": "0.3"
+   },
+   {
+    "group": "Primary Digital Infrastructure",
+    "id": "Primary Digital Infrastructure",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "PSP",
+    "id": "PSP",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Qualcomm",
+    "id": "Qualcomm",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Rackspace Technology",
+    "id": "Rackspace Technology",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Reflection AI",
+    "id": "Reflection AI",
+    "metadata": [
+     "$6.3bn",
+     "Undisclosed"
+    ],
+    "size": "3.2"
+   },
+   {
+    "group": "Run:ai",
+    "id": "Run:ai",
+    "metadata": [
+     "Undisclosed",
+     "$0.7bn"
+    ],
+    "size": "0.4"
+   },
+   {
+    "group": "Runway",
+    "id": "Runway",
+    "metadata": [
+     "Undisclosed",
+     "$0.308bn"
+    ],
+    "size": "0.2"
+   },
+   {
+    "group": "Safe Superintelligence Inc. (SSI)",
+    "id": "Safe Superintelligence Inc. (SSI)",
+    "metadata": [
+     "Undisclosed",
+     "$5bn"
+    ],
+    "size": "2.5"
+   },
+   {
+    "group": "Salesforce",
+    "id": "Salesforce",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Samsung Electronics",
+    "id": "Samsung Electronics",
+    "metadata": [
+     "$0.00536bn",
+     "$16.5bn"
+    ],
+    "size": "8.3"
+   },
+   {
+    "group": "SB Energy",
+    "id": "SB Energy",
+    "metadata": [
+     "Undisclosed",
+     "$1.5bn"
+    ],
+    "size": "0.8"
+   },
+   {
+    "group": "SB Energy / OpenAI",
+    "id": "SB Energy / OpenAI",
+    "metadata": [
+     "Undisclosed",
+     "$6bn"
+    ],
+    "size": "3.0"
+   },
+   {
+    "group": "SB Energy / PORTS-Pike Technology Campus",
+    "id": "SB Energy / PORTS-Pike Technology Campus",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Scale AI",
+    "id": "Scale AI",
+    "metadata": [
+     "Undisclosed",
+     "$15.3bn"
+    ],
+    "size": "7.7"
+   },
+   {
+    "group": "Sequoia",
+    "id": "Sequoia",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "ServiceNow",
+    "id": "ServiceNow",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "SGW",
+    "id": "SGW",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Sharon AI",
+    "id": "Sharon AI",
+    "metadata": [
+     "Undisclosed",
+     "$9.155bn"
+    ],
+    "size": "4.6"
+   },
+   {
+    "group": "Silo AI",
+    "id": "Silo AI",
+    "metadata": [
+     "Undisclosed",
+     "$0.665bn"
+    ],
+    "size": "0.3"
+   },
+   {
+    "group": "Situational Awareness",
+    "id": "Situational Awareness",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Sixth Street Growth",
+    "id": "Sixth Street Growth",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "",
+    "id": "",
+    "metadata": [
+     "",
+     ""
+    ],
+    "size": ""
+   },
+   {
+    "group": "SK Horizon",
+    "id": "SK Horizon",
+    "metadata": [
+     "Undisclosed",
+     "$2.2bn"
+    ],
+    "size": "1.1"
+   },
+   {
+    "group": "SK hynix",
+    "id": "SK hynix",
+    "metadata": [
+     "$7.97bn",
+     "Undisclosed"
+    ],
+    "size": "4.0"
+   },
+   {
+    "group": "SK Telecom",
+    "id": "SK Telecom",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "SoftBank",
+    "id": "SoftBank",
+    "metadata": [
+     "$9bn",
+     "Undisclosed"
+    ],
+    "size": "4.5"
+   },
+   {
+    "group": "Sony Semiconductor Solutions",
+    "id": "Sony Semiconductor Solutions",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "SpaceX",
+    "id": "SpaceX",
+    "metadata": [
+     "$310bn",
+     "$65bn"
+    ],
+    "size": "187.5"
+   },
+   {
+    "group": "SpaceX / xAI compute infrastructure",
+    "id": "SpaceX / xAI compute infrastructure",
+    "metadata": [
+     "Undisclosed",
+     "$36.66bn"
+    ],
+    "size": "18.3"
+   },
+   {
+    "group": "Stargate Norway JV",
+    "id": "Stargate Norway JV",
+    "metadata": [
+     "Undisclosed",
+     "$1bn"
+    ],
+    "size": "0.5"
+   },
+   {
+    "group": "Stargate Project",
+    "id": "Stargate Project",
+    "metadata": [
+     "Undisclosed",
+     "$500bn"
+    ],
+    "size": "250.0"
+   },
+   {
+    "group": "Stripe",
+    "id": "Stripe",
+    "metadata": [
+     "$8bn",
+     "Undisclosed"
+    ],
+    "size": "4.0"
+   },
+   {
+    "group": "T. Rowe Price",
+    "id": "T. Rowe Price",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Taiwan semiconductor ecosystem partners",
+    "id": "Taiwan semiconductor ecosystem partners",
+    "metadata": [
+     "Undisclosed",
+     "$10bn"
+    ],
+    "size": "5.0"
+   },
+   {
+    "group": "TensorWave",
+    "id": "TensorWave",
+    "metadata": [
+     "Undisclosed",
+     "$0.45bn"
+    ],
+    "size": "0.2"
+   },
+   {
+    "group": "Tenstorrent",
+    "id": "Tenstorrent",
+    "metadata": [
+     "Undisclosed",
+     "$0.1bn"
+    ],
+    "size": "0.1"
+   },
+   {
+    "group": "TeraWulf / Justified Data Campus",
+    "id": "TeraWulf / Justified Data Campus",
+    "metadata": [
+     "Undisclosed",
+     "$19bn"
+    ],
+    "size": "9.5"
+   },
+   {
+    "group": "TeraWulf Abernathy JV stake",
+    "id": "TeraWulf Abernathy JV stake",
+    "metadata": [
+     "Undisclosed",
+     "$0.53bn"
+    ],
+    "size": "0.3"
+   },
+   {
+    "group": "Tesla",
+    "id": "Tesla",
+    "metadata": [
+     "$18.5bn",
+     "Undisclosed"
+    ],
+    "size": "9.3"
+   },
+   {
+    "group": "Thrive",
+    "id": "Thrive",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Tiger Global",
+    "id": "Tiger Global",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Tomoro",
+    "id": "Tomoro",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Toyota",
+    "id": "Toyota",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "TSMC",
+    "id": "TSMC",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Two Seas",
+    "id": "Two Seas",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "U.S. xScale data center JV",
+    "id": "U.S. xScale data center JV",
+    "metadata": [
+     "Undisclosed",
+     "$15.6bn"
+    ],
+    "size": "7.8"
+   },
+   {
+    "group": "Undisclosed frontier AI lab",
+    "id": "Undisclosed frontier AI lab",
+    "metadata": [
+     "$10bn",
+     "Undisclosed"
+    ],
+    "size": "5.0"
+   },
+   {
+    "group": "Unnamed global technology company",
+    "id": "Unnamed global technology company",
+    "metadata": [
+     "$0.95bn",
+     "Undisclosed"
+    ],
+    "size": "0.5"
+   },
+   {
+    "group": "Valor",
+    "id": "Valor",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "VAST Data",
+    "id": "VAST Data",
+    "metadata": [
+     "Undisclosed",
+     "Undisclosed"
+    ],
+    "size": "0.0"
+   },
+   {
+    "group": "Volta Infrastructure",
+    "id": "Volta Infrastructure",
+    "metadata": [
+     "Undisclosed",
+     "$10.3bn"
+    ],
+    "size": "5.2"
+   },
+   {
+    "group": "Volta Infrastructure AI factory program",
+    "id": "Volta Infrastructure AI factory program",
+    "metadata": [
+     "Undisclosed",
+     "$5bn"
+    ],
+    "size": "2.5"
+   },
+   {
+    "group": "Volta Tydal AS",
+    "id": "Volta Tydal AS",
+    "metadata": [
+     "$4.7bn",
+     "Undisclosed"
+    ],
+    "size": "2.4"
+   },
+   {
+    "group": "Wayve",
+    "id": "Wayve",
+    "metadata": [
+     "Undisclosed",
+     "$1.05bn"
+    ],
+    "size": "0.5"
+   },
+   {
+    "group": "Weights & Biases",
+    "id": "Weights & Biases",
+    "metadata": [
+     "Undisclosed",
+     "$1.7bn"
+    ],
+    "size": "0.9"
+   },
+   {
+    "group": "xAI",
+    "id": "xAI",
+    "metadata": [
+     "Undisclosed",
+     "$278bn"
+    ],
+    "size": "139.0"
+   },
+   {
+    "group": "ZT Systems",
+    "id": "ZT Systems",
+    "metadata": [
+     "Undisclosed",
+     "$4.9bn"
+    ],
+    "size": "2.5"
+   }
+  ]
+ }
+}

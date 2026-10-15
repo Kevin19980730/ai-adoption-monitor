@@ -306,7 +306,23 @@ $("#themeBtn").addEventListener("click", () => {
   const next = cur === "dark" ? "light" : "dark";
   document.documentElement.setAttribute("data-theme", next);
   try { localStorage.setItem("aam-theme", next); } catch (e) {}
+  const f = document.getElementById("circ-frame");  // same-origin frame: pass the theme on
+  try { if (f && f.contentWindow.ACF_setTheme) f.contentWindow.ACF_setTheme(next); } catch (e) {}
 });
+
+/* ================================================================ circular financing */
+// The AI Circular Financing app is mounted at /circular; framed (not merged into this page) so its
+// styles and scripts stay its own. Created on first view so it lays out at full width.
+function loadCircular() {
+  const f = h("iframe", {id: "circ-frame", src: "/circular/?embed=1", title: "AI circular financing",
+                          style: "width:100%;border:0;display:block;border-radius:12px;background:var(--surface)"});
+  $("#circ-host").appendChild(f);
+  const fit = () => {  // fill the window below the sticky header; the frame scrolls inside
+    if (!f.offsetParent) return;
+    f.style.height = Math.max(480, innerHeight - document.querySelector("header.top").getBoundingClientRect().bottom - 48) + "px";
+  };
+  fit(); addEventListener("resize", fit);
+}
 
 /* ================================================================ overview */
 async function loadOverview() {
@@ -748,7 +764,9 @@ function drawArrTrend() {
   else {
     const key = {arr: "_bn", add: "_add_bn", growth: "_growth"}[meas];
     S = [["anthropic", "Anthropic"], ["openai", "OpenAI"]].map(([k, nm]) => ({name: nm, color: COL[k], points: D.map(r => ({x: qx(r), y: r[k + key], note: lab(r)}))}));
-    if (meas !== "add") S.push({name: "Combined", color: COL.combined, dash: true, points: D.map(r => ({x: qx(r), y: r["combined" + (meas === "arr" ? "_bn" : "_growth")], note: lab(r)}))});
+    /* combined $ added = Anthropic + OpenAI (the sheet has no combined Δ$ column) */
+    const comb = r => meas === "add" ? (r.anthropic_add_bn == null || r.openai_add_bn == null ? null : r.anthropic_add_bn + r.openai_add_bn) : r["combined" + (meas === "arr" ? "_bn" : "_growth")];
+    S.push({name: "Combined", color: COL.combined, dash: true, points: D.map(r => ({x: qx(r), y: comb(r), note: lab(r)}))});
     f = meas === "growth" ? (v => pct(v, 0)) : bn;
   }
   legend("lg-arr-trend", S.map(s => ({name: s.name, color: s.color, dash: s.dash})));
@@ -757,7 +775,7 @@ function drawArrTrend() {
       title: x => { const r = D.find(d => qx(d) === x); return r ? lab(r) : fmtDate(x); }}),
     hst => table(hst, [{label: freq === "quarterly" ? "Quarter" : "Month", get: lab}, {label: "Anthropic", n: 1, get: r => bn(r.anthropic_bn)}, {label: "Δ $", n: 1, get: r => bn(r.anthropic_add_bn)}, {label: "Δ %", n: 1, get: r => pc(r.anthropic_growth)},
       {label: "OpenAI", n: 1, get: r => bn(r.openai_bn)}, {label: "Δ $", n: 1, get: r => bn(r.openai_add_bn)}, {label: "Δ %", n: 1, get: r => pc(r.openai_growth)},
-      {label: "Combined", n: 1, get: r => bn(r.combined_bn)}, {label: "Δ %", n: 1, get: r => pc(r.combined_growth)}, {label: "Anthropic share", n: 1, get: r => pct(r.anthropic_share, 0)},
+      {label: "Combined", n: 1, get: r => bn(r.combined_bn)}, {label: "Δ $", n: 1, get: r => r.anthropic_add_bn == null || r.openai_add_bn == null ? "–" : bn(r.anthropic_add_bn + r.openai_add_bn)}, {label: "Δ %", n: 1, get: r => pc(r.combined_growth)}, {label: "Anthropic share", n: 1, get: r => pct(r.anthropic_share, 0)},
       {label: "A ÷ O", n: 1, get: r => r.anthropic_to_openai == null ? "–" : r.anthropic_to_openai.toFixed(2) + "×"}], [...D].reverse()));
 }
 async function loadArr() {
@@ -1211,7 +1229,7 @@ function loadData() {
   refreshStatus();
 }
 
-const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, arr: loadArr, data: loadData};
+const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, arr: loadArr, circular: loadCircular, data: loadData};
 async function boot(again) {
   META = await api("/api/meta");
   document.body.classList.toggle("hosted", !!META.hosted);

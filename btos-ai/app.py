@@ -10,6 +10,8 @@ One page over four sources, all read from files so it runs with no Claude:
   bofa-capex-cycles/exhibit2_*.csv        BofA Exhibit 2 capex cycles, read from the PDF's vector chart
   credit-spreads/macro_daily.csv          ICE BofA BB / CCC HY OAS (FRED + Wayback history), US 10y real yield,
                                            term premium and nominal yield (FRED)
+  ai-circular-financing/                  the AI Circular Financing app, mounted unchanged at /circular
+                                           (its own app.py + data/); the "Circular financing" tab frames it
 
 The weekly Windows task refreshes the BTOS/tracker files; "Update now" on the Data tab runs
 the same btos_ai.py. Files are re-read whenever they change on disk.
@@ -31,6 +33,7 @@ from pathlib import Path
 
 import pandas as pd
 from flask import Flask, abort, jsonify, render_template, request, send_file
+from werkzeug.middleware.dispatcher import DispatcherMiddleware
 
 import btos_ai as B
 
@@ -42,6 +45,26 @@ LOG = HERE / "update.log"
 
 app = Flask(__name__)
 HOSTED = os.environ.get("AAM_HOSTED") == "1"
+
+
+def _mount_circular():
+    """Serve ai-circular-financing/app.py at /circular (read-only when the monitor is hosted).
+    Loaded by path under its own module name - both apps' files are called app.py."""
+    import importlib.util
+    path = HERE.parent / "ai-circular-financing" / "app.py"
+    if not path.exists():
+        return False
+    if HOSTED:
+        os.environ["ACF_HOSTED"] = "1"
+    spec = importlib.util.spec_from_file_location("acf_app", path)
+    mod = importlib.util.module_from_spec(spec)
+    sys.modules["acf_app"] = mod  # Flask finds its templates/static through sys.modules
+    spec.loader.exec_module(mod)
+    app.wsgi_app = DispatcherMiddleware(app.wsgi_app, {"/circular": mod.app.wsgi_app})
+    return True
+
+
+CIRCULAR = _mount_circular()
 _cache = {}
 _upd = {"running": False, "started": None, "finished": None, "rc": None}
 _lock = threading.Lock()

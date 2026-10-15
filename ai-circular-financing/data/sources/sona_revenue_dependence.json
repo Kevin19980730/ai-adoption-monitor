@@ -1,0 +1,113 @@
+{
+ "visualisation_id": 30286075,
+ "url": "https://flo.uri.sh/visualisation/30286075/embed",
+ "fetched": "2026-10-09T16:51:27",
+ "columns": {
+  "data": {
+   "label": "",
+   "metadata": [],
+   "value": [
+    "Oracle",
+    "CoreWeave",
+    "NVIDIA",
+    "Microsoft",
+    "Apple",
+    "Google",
+    "Amazon",
+    "Meta",
+    "SMCI",
+    "AMD",
+    "Qualcomm"
+   ]
+  }
+ },
+ "data": {
+  "data": [
+   {
+    "label": "Applied Digital",
+    "metadata": [],
+    "value": [
+     56,
+     30,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "label": "SK Hynix",
+    "metadata": [],
+    "value": [
+     null,
+     null,
+     27,
+     9,
+     8,
+     7,
+     7,
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "label": "CoreWeave",
+    "metadata": [],
+    "value": [
+     null,
+     null,
+     null,
+     67,
+     null,
+     5,
+     null,
+     8,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "label": "NVIDIA",
+    "metadata": [],
+    "value": [
+     null,
+     null,
+     null,
+     22,
+     null,
+     5,
+     14,
+     null,
+     10,
+     null,
+     null
+    ]
+   },
+   {
+    "label": "TSMC",
+    "metadata": [],
+    "value": [
+     null,
+     null,
+     19,
+     null,
+     17,
+     null,
+     null,
+     null,
+     null,
+     5,
+     5
+    ]
+   }
+  ]
+ }
+}

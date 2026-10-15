@@ -1,0 +1,804 @@
+{
+ "visualisation_id": 30240284,
+ "url": "https://flo.uri.sh/visualisation/30240284/embed",
+ "fetched": "2026-10-09T16:51:27",
+ "columns": {
+  "data": {
+   "facet": "Grid",
+   "metadata": [
+    "Value",
+    "Announced_Date",
+    "Transaction_Type",
+    "Deal_Description",
+    "Notes_Limitations"
+   ],
+   "source": "Making commitment",
+   "target": "Receiving commitment",
+   "value": "Announced_Value_USD_m"
+  }
+ },
+ "data": {
+  "data": [
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "Unknown",
+     "2026-06-09",
+     "Private-credit infrastructure platform / future compute financing",
+     "Broadcom, Apollo and Blackstone established the AI XPV Platform to finance AI deployments using Broadcom XPUs/networking for frontier AI labs including Anthropic and OpenAI.",
+     ""
+    ],
+    "source": "AI XPV Platform / Anthropic / frontier AI labs",
+    "target": "Anthropic",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2026-06-09",
+     "Private-credit infrastructure platform / future compute financing",
+     "Broadcom, Apollo and Blackstone established the AI XPV Platform to finance AI deployments using Broadcom XPUs/networking for frontier AI labs including Anthropic and OpenAI.",
+     ""
+    ],
+    "source": "AI XPV Platform / Anthropic / frontier AI labs*",
+    "target": "OpenAI",
+    "value": 1
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$4bn",
+     "2024-11-22",
+     "Equity investment",
+     "Amazon announced an additional $4B investment in Anthropic, bringing total Amazon investment to $8B; AWS remained primary cloud/training partner.",
+     "Cumulative figure includes prior rows; row value captures new money only."
+    ],
+    "source": "Amazon",
+    "target": "Anthropic",
+    "value": 4000
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$2.75bn",
+     "2024-03-27",
+     "Equity investment",
+     "Amazon completed the full $4B investment commitment in Anthropic with a final $2.75B investment.",
+     "Together with 2023 row, this reaches $4B total."
+    ],
+    "source": "Amazon",
+    "target": "Anthropic",
+    "value": 2750
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$1.25bn",
+     "2023-09-25",
+     "Equity investment",
+     "Amazon announced an initial $1.25B investment in Anthropic with capacity to invest up to $4B; Anthropic named AWS as primary cloud provider.",
+     "This row is the initial tranche, not the eventual total."
+    ],
+    "source": "Amazon",
+    "target": "Anthropic",
+    "value": 1250
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2026-02-27",
+     "Equity investment",
+     "OpenAI announced $110B of new investment at a $730B pre-money valuation, composed of Amazon, NVIDIA and SoftBank commitments.",
+     "Total row; component rows should not be summed separately."
+    ],
+    "source": "Amazon",
+    "target": "Amazon, NVIDIA, SoftBank",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2026-02-27",
+     "Equity investment",
+     "OpenAI announced $110B of new investment at a $730B pre-money valuation, composed of Amazon, NVIDIA and SoftBank commitments.",
+     "Total row; component rows should not be summed separately."
+    ],
+    "source": "NVIDIA",
+    "target": "Amazon, NVIDIA, SoftBank",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2026-02-27",
+     "Equity investment",
+     "OpenAI announced $110B of new investment at a $730B pre-money valuation, composed of Amazon, NVIDIA and SoftBank commitments.",
+     "Total row; component rows should not be summed separately."
+    ],
+    "source": "SoftBank",
+    "target": "Amazon, NVIDIA, SoftBank",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$110bn",
+     "2026-02-27",
+     "Equity investment",
+     "OpenAI announced $110B of new investment at a $730B pre-money valuation, composed of Amazon, NVIDIA and SoftBank commitments.",
+     "Total row; component rows should not be summed separately."
+    ],
+    "source": "Amazon, NVIDIA, SoftBank",
+    "target": "OpenAI",
+    "value": 110000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2025-10-06",
+     "Chip supply / warrant",
+     "AMD and OpenAI announced a strategic partnership for up to 6GW of AMD Instinct GPUs; AMD issued OpenAI warrants for up to 160M AMD common shares tied to deployment and share-price milestones.",
+     "No numeric value entered because supply value and warrant fair value were not disclosed in the release."
+    ],
+    "source": "AMD",
+    "target": "OpenAI",
+    "value": 1
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$5bn",
+     "2026-07-22",
+     "Chip supply / strategic equity investment",
+     "AMD and Anthropic announced a strategic partnership for Anthropic to deploy up to 2GW of AMD Instinct MI450 series GPUs, with AMD committing a strategic equity investment of up to $5B in Anthropic.",
+     "Official but up-to/forward-looking, so kept out of primary closed equity totals."
+    ],
+    "source": "AMD",
+    "target": "Anthropic",
+    "value": 5000
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "Unknown",
+     "2026-04-10",
+     "Cloud/compute purchase commitment",
+     "CoreWeave and Anthropic announced a strategic partnership for CoreWeave to support Claude compute needs beginning later in 2026.",
+     "No numeric value disclosed."
+    ],
+    "source": "Anthropic",
+    "target": "CoreWeave",
+    "value": 1
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$50bn",
+     "2025-11-12",
+     "Data center investment / infrastructure commitment",
+     "Anthropic announced a $50B investment in American computing infrastructure, building data centers with Fluidstack in Texas and New York, with more sites to come.",
+     "Reclassified from Primary to Reported/conditional in V3.1. Announced multi-site infrastructure plan, not enough public detail to treat as non-overlapping binding contract. Do not sum with Google/Broadcom/TPU or Fluidstack/TeraWulf/Hut 8/Lambda rows until overlap is clarified."
+    ],
+    "source": "Anthropic",
+    "target": "Fluidstack / U.S. AI infrastructure sites",
+    "value": 50000
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "Unknown",
+     "2025-10-23",
+     "Cloud/compute purchase commitment",
+     "Anthropic expanded its use of Google Cloud TPUs and services, with reports describing the agreement as worth tens of billions of dollars.",
+     "No numeric value entered because public value was imprecise."
+    ],
+    "source": "Anthropic",
+    "target": "Google Cloud",
+    "value": 1
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "Unknown",
+     "2026-04-06",
+     "Future compute capacity agreement / strategic partnership",
+     "Anthropic announced a partnership with Google and Broadcom to access multiple gigawatts of next-generation TPU capacity starting in 2027.",
+     "No dollar value, financing terms or supplier split disclosed."
+    ],
+    "source": "Anthropic",
+    "target": "Google; Broadcom",
+    "value": 1
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$35bn",
+     "2026-08-31",
+     "Cloud/compute purchase commitment",
+     "Reuters reported Anthropic signed a $35B cloud-computing deal with Nvidia-backed Lambda for a Texas data center developed by Hut 8, with the WSJ reporting that NVIDIA would hold the data-center lease.",
+     "Reported by Reuters/WSJ rather than official company release; value is a future compute commitment."
+    ],
+    "source": "Anthropic",
+    "target": "Lambda / NVIDIA / Hut 8 Beacon Point capacity",
+    "value": 35000
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$30bn",
+     "2025-11-18",
+     "Cloud/compute purchase commitment",
+     "Anthropic committed to purchase $30B of Azure compute and contract additional capacity up to 1GW in a Microsoft/NVIDIA/Anthropic partnership.",
+     "Commercial commitment from model lab to hyperscaler."
+    ],
+    "source": "Anthropic",
+    "target": "Microsoft Azure",
+    "value": 30000
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$45bn",
+     "2026-08-27",
+     "Cloud/compute purchase commitment",
+     "FT reported Anthropic entered a $45B six-year agreement with Nscale to rent capacity from Nscale's upcoming West Virginia data center.",
+     "Paywalled media source; no official Nscale/Anthropic release found as of cutoff."
+    ],
+    "source": "Anthropic",
+    "target": "Nscale West Virginia capacity",
+    "value": 45000
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$40bn",
+     "2026-06-03",
+     "Compute lease / future sales agreement",
+     "Anthropic reportedly agreed to pay SpaceX for access to Colossus compute capacity through May 2029.",
+     "Reported-only; contract text is not public and aggregate value is approximate."
+    ],
+    "source": "Anthropic",
+    "target": "SpaceX / xAI compute infrastructure",
+    "value": 40000
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$19bn",
+     "2026-07-06",
+     "Data center lease / future sales agreement",
+     "TeraWulf signed a 20-year lease with Anthropic for the Justified Data campus in Kentucky.",
+     "Future lease revenue rather than upfront capital; keep separate from equity/funding."
+    ],
+    "source": "Anthropic",
+    "target": "TeraWulf / Justified Data Campus",
+    "value": 19000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$4.7bn",
+     "2026-03-31",
+     "Credit facility",
+     "OpenAI said it expanded its revolving credit facility to about $4.7B undrawn capacity.",
+     "Debt capacity, not equity; bank participants not itemized in this V1."
+    ],
+    "source": "Bank syndicate",
+    "target": "OpenAI",
+    "value": 4700
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$10bn",
+     "2026-08-18",
+     "Credit facility",
+     "Bloomberg/Reuters reported Anthropic's pre-IPO credit facility was expected to exceed $10B, with bank commitments still being discussed.",
+     "Not announced by Anthropic; use as financing watchlist/conditional row."
+    ],
+    "source": "Bank syndicate led/arranged by banks incl. Morgan Stanley, Goldman Sachs and JPMorgan (reported)",
+    "target": "Anthropic",
+    "value": 10000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$35bn",
+     "2026-06-09",
+     "Private-credit infrastructure platform / future compute financing",
+     "Broadcom, Apollo and Blackstone established the AI XPV Platform to finance AI deployments using Broadcom XPUs/networking for frontier AI labs including Anthropic and OpenAI.",
+     "Platform-level financing; exact borrower, lease and lab-specific economics not fully disclosed."
+    ],
+    "source": "Broadcom; Apollo; Blackstone",
+    "target": "AI XPV Platform / Anthropic / frontier AI labs*",
+    "value": 35000
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$35bn",
+     "2026-06-09",
+     "Private-credit infrastructure platform / future compute financing",
+     "Broadcom, Apollo and Blackstone established the AI XPV Platform to finance AI deployments using Broadcom XPUs/networking for frontier AI labs including Anthropic and OpenAI.",
+     "Platform-level financing; exact borrower, lease and lab-specific economics not fully disclosed."
+    ],
+    "source": "Broadcom; Apollo; Blackstone",
+    "target": "AI XPV Platform / Anthropic / frontier AI labs",
+    "value": 35000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$11.6bn",
+     "2025-05-21",
+     "Data center JV / lease / financing",
+     "Crusoe secured $11.6B of debt and equity financing for the OpenAI Stargate Abilene 1.2GW campus, described as the second phase of a $15B JV.",
+     "Infrastructure financing may overlap with broader Stargate planned spend."
+    ],
+    "source": "Crusoe, Blue Owl Capital, Primary Digital Infrastructure",
+    "target": "OpenAI Stargate Abilene campus",
+    "value": 11600
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$30bn",
+     "2026-02-12",
+     "Equity investment",
+     "Anthropic raised $30B Series G at a $380B post-money valuation.",
+     "Investor roster primarily financial in release; MGX is AI-infrastructure-linked."
+    ],
+    "source": "GIC/Coatue-led syndicate incl. DE Shaw, Dragoneer, Founders Fund, ICONIQ, MGX",
+    "target": "Anthropic",
+    "value": 30000
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$2bn",
+     "2023-10-27",
+     "Equity investment",
+     "Google reportedly agreed to invest up to $2B in Anthropic, with $500M upfront and $1.5B over time, in addition to an earlier investment.",
+     "Use as reported commitment; exact closing schedule not fully disclosed."
+    ],
+    "source": "Google",
+    "target": "Anthropic",
+    "value": 2000
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$13bn",
+     "2025-09-02",
+     "Equity investment",
+     "Anthropic raised $13B Series F at a $183B post-money valuation.",
+     "Investor roster includes many financial investors; workbook tracks it because Anthropic is central to AI interconnection analysis."
+    ],
+    "source": "ICONIQ-led syndicate incl. strategic/financial investors",
+    "target": "Anthropic",
+    "value": 13000
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$3.5bn",
+     "2025-03-03",
+     "Equity investment",
+     "Anthropic raised $3.5B Series E at a $61.5B post-money valuation, with strategic investors including Cisco Investments and Salesforce Ventures.",
+     "Strategic AI-linked investors are present, but round is not solely hyperscaler/semi capital."
+    ],
+    "source": "Lightspeed-led syndicate incl. Cisco Investments, Salesforce Ventures",
+    "target": "Anthropic",
+    "value": 3500
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "Unknown",
+     "2026-06-22",
+     "Strategic agreement / supply agreement / equity investment",
+     "Micron and Anthropic announced a strategic agreement spanning AI memory/storage architecture, supply and demand, Claude adoption at Micron, and Micron strategic investment in Anthropic Series H.",
+     "Investment amount, valuation, supply-agreement value and ownership not disclosed; source URL patched to canonical Micron IR page."
+    ],
+    "source": "Micron",
+    "target": "Anthropic",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$10bn",
+     "2023-01-23",
+     "Equity investment",
+     "Microsoft announced a multiyear, multibillion-dollar extension of its OpenAI partnership; reporting put the amount at about $10B with profit/economic rights.",
+     "Outside strict three-year window but retained as an anchor because it underpins current Microsoft/OpenAI economics."
+    ],
+    "source": "Microsoft",
+    "target": "OpenAI",
+    "value": 10000
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$5bn",
+     "2025-11-18",
+     "Equity investment",
+     "Microsoft committed to invest up to $5B in Anthropic as part of a three-way Microsoft/NVIDIA/Anthropic partnership.",
+     "Marked conditional because it is an up-to amount."
+    ],
+    "source": "Microsoft",
+    "target": "Anthropic",
+    "value": 5000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$0.675bn",
+     "2024-02-29",
+     "Equity investment",
+     "Figure AI raised $675M at a $2.6B valuation from investors including Microsoft, OpenAI Startup Fund, NVIDIA and Intel Capital; it also announced OpenAI and Azure collaboration.",
+     "OpenAI Startup Fund is a related but distinct investment vehicle."
+    ],
+    "source": "Microsoft, OpenAI Startup Fund, NVIDIA, Intel Capital and others",
+    "target": "Figure AI",
+    "value": 675
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$1bn",
+     "2025-07-31",
+     "Data center JV / compute offtake",
+     "OpenAI, Nscale and Aker announced Stargate Norway, OpenAI's first AI data-center initiative in Europe under OpenAI for Countries.",
+     "Prior-period catch-up; value refers to initial phase funding, not total 230MW/520MW project cost."
+    ],
+    "source": "Nscale and Aker; OpenAI initial offtaker",
+    "target": "Stargate Norway JV",
+    "value": 1000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$100bn",
+     "2025-09-22",
+     "Equity investment",
+     "NVIDIA and OpenAI announced an LOI for at least 10GW of NVIDIA systems, with NVIDIA intending to invest up to $100B progressively as capacity is deployed.",
+     "Tracked because it shaped market narratives; later official 2026 rows capture replacement/closed investment amounts."
+    ],
+    "source": "NVIDIA",
+    "target": "OpenAI",
+    "value": 100000
+   },
+   {
+    "facet": "Anthropic",
+    "metadata": [
+     "$10bn",
+     "2025-11-18",
+     "Equity investment",
+     "NVIDIA committed to invest up to $10B in Anthropic as part of a partnership also involving Microsoft Azure compute.",
+     "Marked conditional because it is an up-to amount."
+    ],
+    "source": "NVIDIA",
+    "target": "Anthropic",
+    "value": 10000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$100bn",
+     "2026-02-27",
+     "Cloud/compute purchase commitment",
+     "OpenAI and Amazon announced an expanded infrastructure partnership adding $100B over eight years to an existing $38B agreement, including OpenAI consumption of 2GW of Trainium capacity.",
+     "Commercial cloud commitment; may overlap with Amazon investment economics."
+    ],
+    "source": "OpenAI",
+    "target": "Amazon Web Services",
+    "value": 100000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2025-10-13",
+     "Chip supply / custom accelerator partnership",
+     "OpenAI and Broadcom announced a collaboration to deploy 10GW of custom AI accelerators, with racks planned from H2 2026 through 2029.",
+     "Commercial pricing, warrants and equity components were not disclosed; do not treat this as a warrant/equity row without further evidence."
+    ],
+    "source": "OpenAI",
+    "target": "Broadcom",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$10bn",
+     "2026-01-14",
+     "Cloud/compute purchase commitment",
+     "OpenAI and Cerebras announced a multi-year agreement for 750MW of ultra-low-latency AI compute, with press reporting the deal at more than $10B.",
+     "Value is reported, not official; entered as conservative $10B floor for database filtering."
+    ],
+    "source": "OpenAI",
+    "target": "Cerebras",
+    "value": 10000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$11.9bn",
+     "2025-03-10",
+     "Cloud/compute purchase commitment",
+     "CoreWeave announced an agreement with OpenAI to deliver AI infrastructure worth up to $11.9B.",
+     "Commercial commitment, not equity funding."
+    ],
+    "source": "OpenAI",
+    "target": "CoreWeave",
+    "value": 11900
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$0.35bn",
+     "2025-03-10",
+     "Equity investment",
+     "OpenAI became an investor in CoreWeave through $350M of CoreWeave stock alongside the AI infrastructure agreement.",
+     "Linkage between customer and supplier is explicitly captured via related deal ID."
+    ],
+    "source": "OpenAI",
+    "target": "CoreWeave",
+    "value": 350
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$20bn",
+     "2026-07-22",
+     "Power contract / data-center investment",
+     "OpenAI is designing and developing Project Camellia in Effingham County, Georgia, and contracting with Georgia Power for 3.2GW delivered in phases between 2028 and 2032.",
+     "Value is secondary/reported; do not sum with closed equity/debt."
+    ],
+    "source": "OpenAI",
+    "target": "Georgia Power / Project Camellia",
+    "value": 20000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$250bn",
+     "2025-10-28",
+     "Cloud/compute purchase commitment",
+     "Microsoft said OpenAI contracted for an incremental $250B of Azure services, while Microsoft no longer retained a right of first refusal as compute provider.",
+     "Commercial commitment, not equity funding."
+    ],
+    "source": "OpenAI",
+    "target": "Microsoft Azure",
+    "value": 250000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$4.6bn",
+     "2025-12-05",
+     "MOU / future offtake and data center capacity",
+     "OpenAI and NEXTDC announced an MOU for a next-generation hyperscale AI campus and large-scale GPU supercluster at NEXTDC S7 in Eastern Creek, Sydney.",
+     "Official NEXTDC release does not fully disclose dollar value; project value from government/media reporting."
+    ],
+    "source": "OpenAI",
+    "target": "NEXTDC",
+    "value": 4600
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$300bn",
+     "2025-07-22",
+     "Cloud/compute purchase commitment",
+     "OpenAI and Oracle announced an agreement to develop up to 4.5GW of additional Stargate data center capacity; OpenAI later stated that the Oracle partnership exceeds $300B over the next five years.",
+     "Classified as reported/conditional because it is a forward five-year capacity/compute commitment and overlaps with the broader Stargate infrastructure plan rather than a closed equity or debt financing."
+    ],
+    "source": "OpenAI",
+    "target": "Oracle",
+    "value": 300000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2025-01-21",
+     "Data center JV / lease / financing",
+     "The Stargate Project announced a plan to invest $500B over four years in US AI infrastructure, with $100B to begin immediately.",
+     ""
+    ],
+    "source": "OpenAI",
+    "target": "Stargate Project investor group",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2025-01-21",
+     "Data center JV / lease / financing",
+     "The Stargate Project announced a plan to invest $500B over four years in US AI infrastructure, with $100B to begin immediately.",
+     ""
+    ],
+    "source": "SoftBank",
+    "target": "Stargate Project investor group",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2025-01-21",
+     "Data center JV / lease / financing",
+     "The Stargate Project announced a plan to invest $500B over four years in US AI infrastructure, with $100B to begin immediately.",
+     ""
+    ],
+    "source": "Oracle",
+    "target": "Stargate Project investor group",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2025-01-21",
+     "Data center JV / lease / financing",
+     "The Stargate Project announced a plan to invest $500B over four years in US AI infrastructure, with $100B to begin immediately.",
+     ""
+    ],
+    "source": "MGX",
+    "target": "Stargate Project investor group",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$6bn",
+     "2026-08-31",
+     "Equity investment / warrants / reciprocal services",
+     "WSJ reported SB Energy offered OpenAI warrants valued around $5.5B to secure the lease, OpenAI invested $500M in SB Energy, and SB Energy committed to buy OpenAI services through 2028.",
+     "Reported-only and partly based on sources familiar; keep as conditional/watchlist-style row until filing detail confirms."
+    ],
+    "source": "OpenAI / SB Energy",
+    "target": "SB Energy / OpenAI",
+    "value": 6000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2026-08-17",
+     "Data center lease / future sales agreement",
+     "NVIDIA SEC filing says SB Energy will build, own and operate the PORTS-Pike data center under a 20-year lease to OpenAI. NVIDIA secured initial 4.25 IT-GW land/power/shell capacity with an option for the remaining 3.75 IT-GW; OpenAI is the customer for 8 IT-GW.",
+     "Lease value not disclosed. The 4.25 IT-GW figure is the initial secured/guaranteed tranche, not the full OpenAI customer campus scope of 8 IT-GW."
+    ],
+    "source": "OpenAI affiliate",
+    "target": "SB Energy / PORTS-Pike Technology Campus",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$4bn",
+     "2026-05-11",
+     "Joint venture / strategic funding",
+     "OpenAI launched the OpenAI Deployment Company with a partner group led by TPG and co-led by Advent, Bain Capital and Brookfield, alongside other investors and consultancies.",
+     "Added as V3 catch-up because it creates a model/app deployment layer linked to OpenAI and major financial sponsors."
+    ],
+    "source": "OpenAI and 19 founding investment / consulting partners",
+    "target": "OpenAI Deployment Company",
+    "value": 4000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2026-07-08",
+     "M&A / acquihire / license",
+     "The OpenAI Deployment Company agreed to acquire Northslope, an applied AI company focused on enterprise AI deployment.",
+     "No consideration disclosed."
+    ],
+    "source": "OpenAI Deployment Company",
+    "target": "Northslope",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2026-05-11",
+     "M&A / acquihire / license",
+     "OpenAI agreed to acquire Tomoro, an applied AI consulting and engineering firm, to seed the OpenAI Deployment Company with roughly 150 FDEs and deployment specialists.",
+     "No consideration disclosed."
+    ],
+    "source": "OpenAI Deployment Company",
+    "target": "Tomoro",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$500bn",
+     "2025-01-21",
+     "Data center JV / lease / financing",
+     "The Stargate Project announced a plan to invest $500B over four years in US AI infrastructure, with $100B to begin immediately.",
+     "Classified as conditional because it is a multi-year investment plan rather than a single closed financing."
+    ],
+    "source": "Stargate Project investor group",
+    "target": "Stargate Project",
+    "value": 500000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2025-10-01",
+     "Strategic commercial partnership / future supply and data center LOI",
+     "Samsung affiliates agreed to support OpenAI Stargate through memory supply, AI data center design/development/operation, OpenAI services resale in Korea and floating data center exploration.",
+     "No contract value, pricing, term or binding purchase volumes disclosed."
+    ],
+    "source": "Samsung Electronics; Samsung SDS; Samsung C&T; Samsung Heavy Industries",
+    "target": "OpenAI / Stargate",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2025-10-01",
+     "Future supply agreement / LOI",
+     "SK hynix signed an LOI with OpenAI to supply HBM for Stargate and said it would establish capacity to meet OpenAI demand.",
+     "No binding value, price, term or exact HBM volumes disclosed."
+    ],
+    "source": "SK hynix",
+    "target": "OpenAI / Stargate",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "Unknown",
+     "2025-10-01",
+     "Data center MOU / development partnership",
+     "SK Telecom signed an MOU with OpenAI to explore building an AI data center in Korea, branded Stargate Korea.",
+     "No investment value or binding capacity disclosed."
+    ],
+    "source": "SK Telecom",
+    "target": "OpenAI",
+    "value": 1
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$40bn",
+     "2025-03-31",
+     "Equity investment",
+     "OpenAI announced a $40B financing round at a $300B post-money valuation, with SoftBank as lead investor.",
+     "Later 2026 investment announcements may supersede or expand this capital base."
+    ],
+    "source": "SoftBank-led syndicate",
+    "target": "OpenAI",
+    "value": 40000
+   },
+   {
+    "facet": "OpenAI",
+    "metadata": [
+     "$6.6bn",
+     "2024-10-02",
+     "Equity investment",
+     "OpenAI raised $6.6B at a reported $157B valuation, with strategic participation from Microsoft, NVIDIA and SoftBank.",
+     "Component rows below should not be summed with this round total."
+    ],
+    "source": "Syndicate incl. Microsoft, NVIDIA, SoftBank, Thrive",
+    "target": "OpenAI",
+    "value": 6600
+   }
+  ]
+ }
+}

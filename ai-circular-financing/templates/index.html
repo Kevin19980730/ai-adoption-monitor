@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Circular Financing</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%232a78d6' stroke-width='4'/%3E%3Cpath d='M16 5a11 11 0 0 1 11 11' fill='none' stroke='%23eb6834' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+<script>
+  try { var t = localStorage.getItem('acf-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  window.ACF_BASE = "{{ request.script_root }}";
+  {% if embed %}// framed by the AI Adoption Monitor: its header and theme rule
+  window.ACF_EMBED = true;
+  document.documentElement.classList.add('embed');
+  try { var pt = parent.document.documentElement.getAttribute('data-theme'); if (pt) document.documentElement.setAttribute('data-theme', pt); } catch (e) {}
+  {% endif %}
+</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="title-row">
+      <div>
+        <h1>AI circular financing</h1>
+        <p class="sub">Who funds whom &mdash; and who buys from whom &mdash; in the AI build-out, January 2023 to today</p>
+      </div>
+      <div class="top-actions">
+        <span id="asof"></span>
+        <button class="btn small" id="themeBtn" type="button" title="Switch light / dark">Theme</button>
+      </div>
+    </div>
+    <nav class="jump" aria-label="Sections">
+      <a href="#web">The web</a>
+      <a href="#cake">Five-layer cake</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#table">Deal table</a>
+      <a href="#exposure">Who is exposed</a>
+      <a href="#hva">Headline vs actual</a>
+      <a href="#revshare">% of revenue</a>
+      <a href="#bis">BIS evidence</a>
+      <a href="#sona">FT / Sona map</a>
+      <a href="#telecom">Telecom analogue</a>
+      <a href="#method">Method &amp; sources</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <section class="kpis" id="kpis" aria-label="Headline numbers"></section>
+
+  <section class="filters" id="filters" aria-label="Filters">
+    <label>Period
+      <select id="fPeriod">
+        <option value="all">All, Jan 2023 &ndash; today</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026 to date</option>
+        <option value="bbg">To 7 Oct 2025 (Bloomberg graphic)</option>
+        <option value="postbbg">Since 8 Oct 2025</option>
+        <option value="90d">Last 90 days</option>
+        <option value="custom">Custom&hellip;</option>
+      </select>
+    </label>
+    <label id="customDates" hidden>
+      <input type="date" id="fFrom" aria-label="From"> &ndash; <input type="date" id="fTo" aria-label="To">
+    </label>
+    <label>Company <select id="fCompany"><option value="">All companies</option></select></label>
+    <span class="sep" aria-hidden="true"></span>
+    <label class="chk"><input type="checkbox" id="fG1" checked> <span class="key-rect bg-g1"></span> Equity &amp; credit</label>
+    <label class="chk"><input type="checkbox" id="fG2" checked> <span class="key-rect bg-g2"></span> Purchases</label>
+    <label class="chk"><input type="checkbox" id="fG3" checked> <span class="key-rect bg-g3"></span> Backstops &amp; warrants</label>
+    <span class="sep" aria-hidden="true"></span>
+    <label>Circularity
+      <select id="fCat">
+        <option value="">All types</option>
+        <option value="investor_is_counterparty">Investor is also supplier / customer</option>
+        <option value="supplier_finances_customer">Supplier finances customer</option>
+        <option value="customer_finances_supplier">Customer finances supplier</option>
+        <option value="reciprocal_commercial">Reciprocal commercial</option>
+      </select>
+    </label>
+    <label class="chk" title="Hide deals later superseded, cancelled or stalled"><input type="checkbox" id="fLive"> Live deals only</label>
+    <label class="chk" title="Only company-confirmed deals (drops 'people familiar' press reports)"><input type="checkbox" id="fFirm"> Confirmed only</label>
+    <button class="btn small reset" id="fReset" type="button">Reset</button>
+  </section>
+
+
+  <section class="card" id="web">
+    <header>
+      <div>
+        <h2>The web of circular deals</h2>
+        <p class="desc">Each arrow is one flow of money or goods. Labs sit in the centre, chipmakers, hyperscalers and SoftBank in the middle ring, neoclouds and data-centre builders outside. Hover a company to isolate its deals; click it to filter the whole page.</p>
+      </div>
+      <div class="ctl"><button class="btn small" type="button" data-tablev="web">Table view</button></div>
+    </header>
+    <div class="legend" id="webLegend"></div>
+    <div class="chart" id="webChart"></div>
+    <div class="tablev" id="webTable" hidden></div>
+    <div class="foot" id="webFoot"></div>
+  </section>
+
+  <section class="card" id="cake">
+    <header>
+      <div>
+        <h2>The five-layer cake: money goes up, purchases come back down</h2>
+        <p class="desc">Jensen Huang&rsquo;s five layers of AI: energy, chips, infrastructure, models, applications. Capital providers such as SoftBank and private credit sit above the cake. Investments, loans and backstops (right) mostly climb the cake; purchase commitments (left) mostly come back down. Where both arrows join the same two layers, the money goes round in a loop.</p>
+      </div>
+      <div class="ctl"><button class="btn small" type="button" data-tablev="cake">Table view</button></div>
+    </header>
+    <div class="legend" id="cakeLegend"></div>
+    <div class="chart" id="cakeChart"></div>
+    <div class="tablev" id="cakeTable" hidden></div>
+    <div class="foot" id="cakeFoot"></div>
+  </section>
+
+  <section class="card" id="timeline">
+    <header>
+      <div>
+        <h2>Announced circular flows by quarter</h2>
+        <p class="desc" id="tlDesc"></p>
+      </div>
+      <div class="ctl">
+        <span class="seg" role="group" aria-label="Measure"><button type="button" data-tl-m="usd" aria-pressed="true">$ value</button><button type="button" data-tl-m="n" aria-pressed="false">Number of flows</button></span>
+        <span class="seg" role="group" aria-label="Accumulation"><button type="button" data-tl-c="q" aria-pressed="true">Per quarter</button><button type="button" data-tl-c="cum" aria-pressed="false">Cumulative</button></span>
+        <button class="btn small" type="button" data-tablev="timeline">Table view</button>
+      </div>
+    </header>
+    <div class="legend" id="tlLegend"></div>
+    <div class="chart" id="tlChart"></div>
+    <div class="tablev" id="tlTable" hidden></div>
+  </section>
+
+  <section class="card" id="table">
+    <header>
+      <div>
+        <h2>Deal table</h2>
+        <p class="desc">Every tracked deal with its flows. Values are headline amounts as announced (the maximum where a deal says &ldquo;up to&rdquo;); n/d = not disclosed.</p>
+      </div>
+      <div class="ctl">
+        <a class="btn small" href="{{ request.script_root }}/export.xlsx">Download Excel</a>
+        <a class="btn small" href="{{ request.script_root }}/export.csv">Download CSV</a>
+        <button class="btn small primary" type="button" id="addDealBtn">Add deal</button>
+      </div>
+    </header>
+    <div class="tbl-tools">
+      <span class="count" id="tblCount"></span>
+      <input type="search" id="tblSearch" placeholder="Search deals, companies, notes" aria-label="Search the deal table">
+    </div>
+    <div class="tbl-wrap"><table class="data" id="dealTable"></table></div>
+  </section>
+
+  <section class="card" id="candidatesCard" hidden>
+    <header>
+      <div>
+        <h2>New deal candidates from the news scan</h2>
+        <p class="desc">Headlines the daily scan flagged as possible circular deals. Add the real ones to the table; dismiss the rest.</p>
+      </div>
+    </header>
+    <div id="candidates"></div>
+  </section>
+
+  <div class="grid2">
+    <section class="card" id="exposure">
+      <header>
+        <div>
+          <h2>Who commits, who receives</h2>
+          <p class="desc">Disclosed flows out of (left) and into (right) each company, by type of flow.</p>
+        </div>
+        <div class="ctl"><button class="btn small" type="button" data-tablev="exposure">Table view</button></div>
+      </header>
+      <div class="legend" id="exLegend"></div>
+      <div class="chart" id="exChart"></div>
+      <div class="tablev" id="exTable" hidden></div>
+    </section>
+
+    <section class="card" id="hva">
+      <header>
+        <div>
+          <h2>Headline vs what actually happened</h2>
+          <p class="desc">The BIS warns that headline figures can differ substantially from disbursed amounts. The largest deals, announced value against the amount invested, drawn or deployed so far.</p>
+        </div>
+        <div class="ctl"><button class="btn small" type="button" data-tablev="hva">Table view</button></div>
+      </header>
+      <div class="legend" id="hvaLegend"></div>
+      <div class="chart" id="hvaChart"></div>
+      <div class="tablev" id="hvaTable" hidden></div>
+    </section>
+  </div>
+
+  <section class="card" id="revshare">
+    <header>
+      <div>
+        <h2>Deal size as a % of annual revenue</h2>
+        <p class="desc" id="rsDesc">Each flow&rsquo;s headline value against the annual revenue of the company paying it or receiving it. Above 100%, one deal is bigger than a full year of that company&rsquo;s sales.</p>
+      </div>
+      <div class="ctl">
+        <span class="seg" role="group" aria-label="Whose revenue"><button type="button" data-rs="from" aria-pressed="true">Payer&rsquo;s revenue</button><button type="button" data-rs="to" aria-pressed="false">Recipient&rsquo;s revenue</button></span>
+        <button class="btn small" type="button" data-tablev="revshare">Table view</button>
+      </div>
+    </header>
+    <div class="legend" id="rsLegend"></div>
+    <div class="chart" id="rsChart"></div>
+    <div class="tablev" id="rsTable" hidden></div>
+    <div class="foot" id="rsFoot"></div>
+  </section>
+
+  <section class="card" id="bis">
+    <header>
+      <div>
+        <h2>The BIS evidence: half of AI money comes from other AI firms</h2>
+        <p class="desc">BIS Bulletin 137, <em>Circular relationships among AI firms</em> (Frost, Kansal, Rishabh, Shreeti and Zhang, 1 October 2026): 1,246 AI firms across compute, infrastructure, data tools, models and applications, investment deals 2021&ndash;25 (PitchBook, FactSet). Covered by FT Alphaville, &ldquo;Is circular financing in AI a problem?&rdquo;.</p>
+      </div>
+      <div class="ctl"><button class="btn small" type="button" data-tablev="bis">Table view</button></div>
+    </header>
+    <div class="chart" id="bisSplit"></div>
+    <div class="stat-row" id="bisStats"></div>
+    <h3 style="font-size:14px;margin:14px 0 2px">Circular investments by AI supply-chain layer (deal count, investor layer &rarr; target layer)</h3>
+    <div class="chart" id="bisHeat"></div>
+    <div class="tablev" id="bisTable" hidden></div>
+  </section>
+
+  <section class="card" id="sona">
+    <header>
+      <div>
+        <h2>FT Alphaville / Sona Asset Management map</h2>
+        <p class="desc" id="sonaDesc"></p>
+      </div>
+    </header>
+    <div class="tbl-wrap" style="max-height:520px;overflow:auto"><table class="data" id="sonaTable"></table></div>
+    <details class="more">
+      <summary>Sona&rsquo;s itemised OpenAI and Anthropic transactions (as published in the FT Sankey charts)</summary>
+      <div class="tbl-wrap" style="margin-top:8px;max-height:560px;overflow:auto"><table class="data" id="sonaDeals"></table></div>
+    </details>
+  </section>
+
+  <section class="card" id="telecom">
+    <header>
+      <div>
+        <h2>The telecom analogue: Nortel, 1996&ndash;2015</h2>
+        <p class="desc">Late-1990s equipment vendors such as Nortel and Lucent lent to network operators so the operators could buy their gear. When operator revenue fell short, the vendors lost the sales and the loans together. Nortel&rsquo;s market value, $bn (series from FT Alphaville).</p>
+      </div>
+      <div class="ctl"><button class="btn small" type="button" data-tablev="telecom">Table view</button></div>
+    </header>
+    <div class="chart" id="ntChart"></div>
+    <div class="tablev" id="ntTable" hidden></div>
+  </section>
+
+  <section class="card method" id="method">
+    <h2>Method &amp; sources</h2>
+    <div id="methodBody"></div>
+  </section>
+</main>
+
+<div id="tip" class="tip" role="tooltip" hidden></div>
+
+<dialog id="dealDialog" aria-labelledby="dlgTitle">
+  <form id="dealForm" method="dialog">
+    <h2 id="dlgTitle" style="margin:0 0 10px;font-size:17px">Add a deal</h2>
+    <div class="form-grid">
+      <label class="full">Deal title<input name="deal" required placeholder="e.g. Nvidia invests $2bn in CoreWeave"></label>
+      <label>Announced<input name="date" type="date" required></label>
+      <label>Headline $bn<input name="headline_usd_bn" inputmode="decimal" placeholder="blank if undisclosed"></label>
+      <label class="full">Headline note<input name="headline_note" placeholder="e.g. up to; over 5 years; reported by Reuters"></label>
+      <label>Circularity type
+        <select name="bis_category" required>
+          <option value="">Choose&hellip;</option>
+          <option value="investor_is_counterparty">Investor is also supplier / customer</option>
+          <option value="supplier_finances_customer">Supplier finances customer</option>
+          <option value="customer_finances_supplier">Customer finances supplier</option>
+          <option value="reciprocal_commercial">Reciprocal commercial</option>
+        </select>
+      </label>
+      <label>Status
+        <select name="status">
+          <option value="announced">announced</option>
+          <option value="closed">closed</option>
+          <option value="conditional">conditional (LOI / MOU / up to)</option>
+          <option value="reported">reported (press only)</option>
+        </select>
+      </label>
+      <label>Confidence
+        <select name="confidence"><option>high</option><option selected>medium</option><option>low</option></select>
+      </label>
+      <label class="full">Sources (one URL per line)<textarea name="sources" rows="2"></textarea></label>
+    </div>
+    <div style="margin-top:12px;color:var(--ink-2);font-size:12.5px">Flows (money one way, chips / compute / services the other)</div>
+    <div id="legRows"></div>
+    <button class="btn small" type="button" id="addLegBtn" style="margin-top:6px">+ Add flow</button>
+    <div class="form-errors" id="formErrors"></div>
+    <div class="dialog-actions">
+      <button class="btn" type="button" id="dlgCancel">Cancel</button>
+      <button class="btn primary" type="submit" id="dlgSave">Save deal</button>
+    </div>
+  </form>
+  <datalist id="entityList"></datalist>
+</dialog>
+
+{% if hosted %}<script>window.ACF_HOSTED = true;</script>
+{% endif %}<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

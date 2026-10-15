@@ -1,0 +1,46 @@
+{
+ "visualisation_id": 30414731,
+ "url": "https://flo.uri.sh/visualisation/30414731/embed",
+ "fetched": "2026-10-09T16:51:27",
+ "columns": {
+  "data": {
+   "label": "Role",
+   "metadata": [],
+   "value": [
+    "Who's been investing in AI firms?"
+   ]
+  }
+ },
+ "data": {
+  "data": [
+   {
+    "label": "AI-to-AI deal: circular",
+    "metadata": [],
+    "value": [
+     25.6
+    ]
+   },
+   {
+    "label": "AI-to-AI deal: other",
+    "metadata": [],
+    "value": [
+     29.6
+    ]
+   },
+   {
+    "label": "Everyone else",
+    "metadata": [],
+    "value": [
+     44.8
+    ]
+   },
+   {
+    "label": "No commercial relationship",
+    "metadata": [],
+    "value": [
+     null
+    ]
+   }
+  ]
+ }
+}
