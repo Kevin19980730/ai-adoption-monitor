@@ -1079,6 +1079,42 @@ function drawCxQ() {
   if (e7) tile(`Eight names, TTM to ${e7.ttm_ending}`, `${e7.total_pct.toFixed(2)}% of GDP`, null, `$${Math.round(e7.total_bn)}bn: the five + CoreWeave $${e7.coreweave_bn.toFixed(1)}bn + Nebius $${e7.nebius_bn.toFixed(1)}bn + SpaceX AI $${e7.spacex_ai_bn.toFixed(1)}bn`);
   table($("#cx-of"), [{label: "Fiscal quarter ends", key: "fiscal_quarter_end"}, {label: "Oracle capex ($bn)", n: 1, get: r => "$" + r.capex_bn.toFixed(2)}], [...CXQ.oracle_fiscal].reverse());
 }
+/* RPO (contracted backlog) vs trailing-four-quarter capex; "ALL" sums the four only in quarters where all four report */
+const RPO_TK = [["MSFT", "Microsoft"], ["GOOGL", "Alphabet"], ["AMZN", "Amazon"], ["ORCL", "Oracle"]];
+function drawRpo() {
+  const co = $("#rpo-co").value, mode = $("#rpo-mode").value, R = CXQ.rpo;
+  const qx = q => +q.slice(0, 4) + (+q.slice(-1) - 1) / 4 + 0.125, qt = x => { const y = Math.floor(x); return `Q${Math.floor((x - y) * 4) + 1} ${y}`; };
+  const qs = [...new Set(R.map(r => r.cal_quarter))].sort();
+  const rows = qs.map(q => {
+    const g = Object.fromEntries(R.filter(r => r.cal_quarter === q).map(r => [r.ticker, r]));
+    const pick = co === "ALL" ? RPO_TK.map(t => g[t[0]]) : [g[co]];
+    if (pick.some(r => !r)) return null;
+    const cap = pick.every(r => r.capex_ttm_bn != null) ? pick.reduce((a, r) => a + r.capex_ttm_bn, 0) : null;
+    return {q, rpo: pick.reduce((a, r) => a + r.rpo_bn, 0), cap, end: pick.map(r => r.period_end).sort().at(-1)};
+  }).filter(Boolean);
+  const nm = co === "ALL" ? "four combined" : RPO_TK.find(t => t[0] === co)[1];
+  const bnF = v => "$" + (v >= 100 ? Math.round(v).toLocaleString("en-US") : v.toFixed(1)) + "bn";
+  const S = mode === "bn"
+    ? [{name: `RPO, ${nm} (quarter end)`, short: "RPO", color: "var(--s1)", points: rows.map(r => ({x: qx(r.q), y: r.rpo, note: `as of ${r.end}`}))},
+       {name: `Capex, trailing four quarters, ${nm}`, short: "TTM capex", color: "var(--s2)", points: rows.map(r => ({x: qx(r.q), y: r.cap}))}]
+    : [{name: `RPO ÷ TTM capex, ${nm}`, short: "RPO ÷ capex", color: "var(--s1)", points: rows.map(r => ({x: qx(r.q), y: r.cap ? r.rpo / r.cap : null}))}];
+  legend("lg-cx-rpo", S.map(s => ({name: s.name, color: s.color})));
+  const yrs = [...new Set(rows.map(r => +r.q.slice(0, 4)))];
+  view("c-cx-rpo", hst => lineChart(hst, S, {height: 320, xType: "num", yMin: 0, yFmt: mode === "bn" ? bnF : (v => v.toFixed(1) + "×"), mode: "cross", xFmt: qt,
+      xTicks: yrs.map(y => ({x: y + 0.125, label: "Q1 " + y}))}),
+    hst => table(hst, [{label: "Quarter", key: "q"}, {label: "Period end", key: "end"}, {label: "RPO ($bn)", n: 1, get: r => "$" + r.rpo.toFixed(1)},
+      {label: "TTM capex ($bn)", n: 1, get: r => r.cap == null ? "–" : "$" + r.cap.toFixed(1)}, {label: "RPO ÷ capex", n: 1, get: r => r.cap ? (r.rpo / r.cap).toFixed(2) + "×" : "–"}], [...rows].reverse()));
+  // tiles: latest RPO per company with y/y growth, and coverage
+  const host = $("#rpo-tiles"); host.replaceChildren();
+  RPO_TK.forEach(([k, label]) => {
+    const g = R.filter(r => r.ticker === k).sort((a, b) => a.cal_quarter.localeCompare(b.cal_quarter)), l = g.at(-1); if (!l) return;
+    const ya = g.find(r => r.cal_quarter === qadd(l.cal_quarter, -4)), wc = [...g].reverse().find(r => r.capex_ttm_bn);
+    const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, `${label} RPO`); h("div", {class: "v"}, a, bnF(l.rpo_bn));
+    if (ya) { const gr = l.rpo_bn / ya.rpo_bn - 1, dd = h("div", {class: "d"}, a); h("span", {class: gr >= 0 ? "up" : "down"}, dd, (gr >= 0 ? "▲ " : "▼ ") + (Math.abs(gr) * 100).toFixed(0) + "%"); dd.appendChild(document.createTextNode(" vs a year earlier")); }
+    h("div", {class: "s"}, a, `as of ${l.period_end}` + (wc ? ` · ${(wc.rpo_bn / wc.capex_ttm_bn).toFixed(1)}× TTM capex (${wc.cal_quarter})` : ""));
+  });
+}
+function qadd(q, k) { const n = +q.slice(-1) - 1 + k, y = +q.slice(0, 4) + Math.floor(n / 4); return `${y}Q${((n % 4) + 4) % 4 + 1}`; }
 /* Capex cycles (Macro) and Hyperscaler capex (Infrastructure) are drawn from one API call */
 let CAPEX_ONCE = null;
 async function capexTab() {
@@ -1185,6 +1221,7 @@ async function loadCapex() {
         d.extended.map(r => { const m = by.hyper.points.find(p => Math.abs(cxPosOfQ(r.ttm_ending) - p[0]) < 0.01); return {s: "Hyperscalers", q: r.ttm_ending, v: m ? m[1] : null, f: r.pct}; }).reverse()));
   }
   if ((d.quarterly || []).length) { CXQ = d; drawCxQ(); $("#cxq-mode").addEventListener("change", drawCxQ); }
+  if ((d.rpo || []).length) { drawRpo(); ["#rpo-co", "#rpo-mode"].forEach(s => $(s).addEventListener("change", drawRpo)); }
   if ((d.extended || []).length) {
     const drawOwn = () => {
       const pctMode = $("#cx-own-mode").value === "pct", qx = q => +q.slice(0, 4) + (+q.slice(-1) - 1) / 4 + 0.125;
