@@ -1080,19 +1080,20 @@ function drawCxQ() {
   table($("#cx-of"), [{label: "Fiscal quarter ends", key: "fiscal_quarter_end"}, {label: "Oracle capex ($bn)", n: 1, get: r => "$" + r.capex_bn.toFixed(2)}], [...CXQ.oracle_fiscal].reverse());
 }
 /* RPO (contracted backlog) vs trailing-four-quarter capex; "ALL" sums the four only in quarters where all four report */
-const RPO_TK = [["MSFT", "Microsoft"], ["GOOGL", "Alphabet"], ["AMZN", "Amazon"], ["ORCL", "Oracle"]];
+const RPO_TK = [["MSFT", "Microsoft"], ["GOOGL", "Alphabet"], ["AMZN", "Amazon"], ["ORCL", "Oracle"], ["CRWV", "CoreWeave"], ["NBIS", "Nebius"], ["SPCX", "SpaceX (company-wide)"]];
+const RPO_SETS = {ALL: ["MSFT", "GOOGL", "AMZN", "ORCL"], ALL6: ["MSFT", "GOOGL", "AMZN", "ORCL", "CRWV", "NBIS"]};
 function drawRpo() {
   const co = $("#rpo-co").value, mode = $("#rpo-mode").value, R = CXQ.rpo;
   const qx = q => +q.slice(0, 4) + (+q.slice(-1) - 1) / 4 + 0.125, qt = x => { const y = Math.floor(x); return `Q${Math.floor((x - y) * 4) + 1} ${y}`; };
   const qs = [...new Set(R.map(r => r.cal_quarter))].sort();
   const rows = qs.map(q => {
     const g = Object.fromEntries(R.filter(r => r.cal_quarter === q).map(r => [r.ticker, r]));
-    const pick = co === "ALL" ? RPO_TK.map(t => g[t[0]]) : [g[co]];
+    const pick = (RPO_SETS[co] || [co]).map(k => g[k]);
     if (pick.some(r => !r)) return null;
     const cap = pick.every(r => r.capex_ttm_bn != null) ? pick.reduce((a, r) => a + r.capex_ttm_bn, 0) : null;
     return {q, rpo: pick.reduce((a, r) => a + r.rpo_bn, 0), cap, end: pick.map(r => r.period_end).sort().at(-1)};
   }).filter(Boolean);
-  const nm = co === "ALL" ? "four combined" : RPO_TK.find(t => t[0] === co)[1];
+  const nm = co === "ALL" ? "four hyperscalers" : co === "ALL6" ? "four + CoreWeave + Nebius" : RPO_TK.find(t => t[0] === co)[1];
   const bnF = v => "$" + (v >= 100 ? Math.round(v).toLocaleString("en-US") : v.toFixed(1)) + "bn";
   const S = mode === "bn"
     ? [{name: `RPO, ${nm} (quarter end)`, short: "RPO", color: "var(--s1)", points: rows.map(r => ({x: qx(r.q), y: r.rpo, note: `as of ${r.end}`}))},
