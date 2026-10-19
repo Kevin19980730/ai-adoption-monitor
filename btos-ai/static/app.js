@@ -110,17 +110,26 @@ function lineChart(host, series, opt) {
   host.replaceChildren();
   const W = Math.max(300, host.clientWidth || 900), H = opt.height || 320;
   const narrow = W < 480;
-  const M = {l: 50, r: opt.endLabels === false ? 16 : (narrow ? 16 : W < 700 ? 140 : 178), t: 14, b: 30};
+  const M = {l: 50, r: opt.right ? 56 : opt.endLabels === false ? 16 : (narrow ? 16 : W < 700 ? 140 : 178), t: 14, b: 30};
   const svg = el("svg", {viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": opt.aria || "line chart"}, host);
   const pts = series.flatMap(s => s.points.filter(p => p.y != null));
   if (!pts.length) { el("text", {x: W / 2, y: H / 2, "text-anchor": "middle"}, svg, "No data for this selection"); return; }
   let x0 = opt.x0 ?? Math.min(...pts.map(p => p.x)), x1 = opt.x1 ?? Math.max(...pts.map(p => p.x));
   if (x0 === x1) { x0 -= 1; x1 += 1; }
-  const ys = pts.flatMap(p => [p.y, opt.band ? p.lo : null, opt.band ? p.hi : null]).filter(v => v != null);
+  const L = opt.right ? series.filter(s => s.axis !== 2).flatMap(s => s.points.filter(p => p.y != null)) : pts;
+  const ys = L.flatMap(p => [p.y, opt.band ? p.lo : null, opt.band ? p.hi : null]).filter(v => v != null);
   let y0 = opt.yMin ?? (opt.log ? Math.min(...ys) / 1.4 : 0), y1 = opt.yMax ?? Math.max(...ys) * 1.08;
   const log = !!opt.log;
   const X = v => M.l + (v - x0) / (x1 - x0) * (W - M.l - M.r);
   const Y = v => { const a = log ? Math.log10(Math.max(v, y0)) : v, lo = log ? Math.log10(y0) : y0, hi = log ? Math.log10(y1) : y1; return H - M.b - (a - lo) / (hi - lo) * (H - M.t - M.b); };
+  // optional right axis for series with axis: 2 (different unit, own scale)
+  let Y2 = null, r0 = 0, r1 = 1;
+  if (opt.right) {
+    const rv = series.filter(s => s.axis === 2).flatMap(s => s.points.filter(p => p.y != null).map(p => p.y));
+    r0 = opt.right.yMin ?? 0; r1 = opt.right.yMax ?? Math.max(...rv) * 1.08;
+    Y2 = v => H - M.b - (v - r0) / (r1 - r0) * (H - M.t - M.b);
+  }
+  const YS = s => s.axis === 2 && Y2 ? Y2 : Y, FS = s => s.axis === 2 && opt.right ? opt.right.yFmt : opt.yFmt;
   // marks (bands / vertical lines) first
   (opt.marks || []).forEach(m => {
     if (m.x0 != null) {
@@ -139,6 +148,10 @@ function lineChart(host, series, opt) {
     el("line", {x1: M.l, x2: W - M.r, y1: Y(v), y2: Y(v), stroke: "var(--grid)"}, svg);
     el("text", {x: M.l - 8, y: Y(v) + 4, "text-anchor": "end"}, svg, opt.yFmt(v, true));
   });
+  if (Y2) {
+    niceTicks(r0, r1, H < 260 ? 4 : 5).forEach(v => el("text", {x: W - M.r + 8, y: Y2(v) + 4, "text-anchor": "start", fill: opt.right.color}, svg, opt.right.yFmt(v, true)));
+    if (opt.leftColor) svg.querySelectorAll("text[text-anchor=end]").forEach(t => t.setAttribute("fill", opt.leftColor));
+  }
   el("line", {x1: M.l, x2: W - M.r, y1: H - M.b, y2: H - M.b, stroke: "var(--axis)"}, svg);
   // x ticks
   if (opt.xType === "num") {
@@ -157,6 +170,7 @@ function lineChart(host, series, opt) {
   }
   // bands, lines, markers
   series.forEach(s => {
+    const Y = YS(s);
     if (opt.band) {
       let seg = [];
       const flush = () => { if (seg.length > 1) { const up = seg.map(p => `${X(p.x).toFixed(1)},${Y(p.hi).toFixed(1)}`), dn = seg.slice().reverse().map(p => `${X(p.x).toFixed(1)},${Y(p.lo).toFixed(1)}`); el("polygon", {points: up.concat(dn).join(" "), fill: s.color, "fill-opacity": 0.13}, svg); } seg = []; };
@@ -170,12 +184,12 @@ function lineChart(host, series, opt) {
   });
   // end labels with simple collision relaxation
   if (!narrow && opt.endLabels !== false) {
-    const labs = series.filter(s => s.endLabel !== false).map(s => { const last = [...s.points].reverse().find(p => p.y != null); return last ? {s, y: Y(last.y), x: X(last.x), px: last.x, v: last.y} : null; }).filter(Boolean).sort((a, b) => a.y - b.y);
+    const labs = series.filter(s => s.endLabel !== false).map(s => { const last = [...s.points].reverse().find(p => p.y != null); return last ? {s, y: YS(s)(last.y), x: X(last.x), px: last.x, v: last.y} : null; }).filter(Boolean).sort((a, b) => a.y - b.y);
     for (let i = 1; i < labs.length; i++) if (labs[i].y - labs[i - 1].y < 15) labs[i].y = labs[i - 1].y + 15;
     labs.forEach(l => {
       el("line", {x1: W - M.r + 8, x2: W - M.r + 20, y1: l.y, y2: l.y, stroke: l.s.color, "stroke-width": 2, "stroke-dasharray": l.s.dash ? "3 2" : null}, svg);
       const t = el("text", {x: W - M.r + 25, y: l.y + 4, class: "lab"}, svg);
-      el("tspan", {class: "lab-strong"}, t, opt.yFmt(l.v) + " ");
+      el("tspan", {class: "lab-strong"}, t, FS(l.s)(l.v) + " ");
       // a series that stopped well before the others says when its last value is from
       const stale = opt.xType !== "num" && x1 - l.px > 90 * 864e5 ? ` (${MON[new Date(l.px).getUTCMonth()]} '${String(new Date(l.px).getUTCFullYear()).slice(2)})` : "";
       const nm = (l.s.short || l.s.name) + stale, room = Math.floor((M.r - 25 - 36) / 5.8);
@@ -186,7 +200,7 @@ function lineChart(host, series, opt) {
   const hl = el("g", {visibility: "hidden"}, svg);
   const vline = el("line", {y1: M.t, y2: H - M.b, stroke: "var(--axis)"}, hl);
   const dots = [];
-  const all = series.flatMap(s => s.points.filter(p => p.y != null).map(p => ({s, p, px: X(p.x), py: Y(p.y)})));
+  const all = series.flatMap(s => s.points.filter(p => p.y != null).map(p => ({s, p, px: X(p.x), py: YS(s)(p.y)})));
   const xs = [...new Set(all.map(a => a.p.x))].sort((a, b) => a - b);
   const hit = el("rect", {x: M.l, y: 0, width: W - M.l - M.r + 4, height: H, fill: "transparent"}, svg);
   function move(ev) {
@@ -201,12 +215,12 @@ function lineChart(host, series, opt) {
       rows = [best]; } else {
       let bx = xs[0]; xs.forEach(x => { if (Math.abs(X(x) - sx) < Math.abs(X(bx) - sx)) bx = x; });
       ax = X(bx); title = opt.xFmt ? opt.xFmt(bx) : (opt.title ? opt.title(bx) : fmtDate(bx));
-      rows = all.filter(a => a.p.x === bx).sort((a, b) => b.p.y - a.p.y);
+      rows = all.filter(a => a.p.x === bx).sort((a, b) => a.py - b.py);
     }
     vline.setAttribute("x1", ax); vline.setAttribute("x2", ax); hl.setAttribute("visibility", "visible");
     rows.forEach(a => dots.push(el("circle", {cx: a.px, cy: a.py, r: 5, fill: a.s.color, stroke: "var(--surface)", "stroke-width": 2}, hl)));
     const nodes = [tipTitle(title)];
-    rows.forEach(a => { nodes.push(tipRow(a.s.color, opt.yFmt(a.p.y), a.s.name + (a.p.lo != null && opt.band ? `  (95%: ${opt.yFmt(a.p.lo)}–${opt.yFmt(a.p.hi)})` : ""), a.s.dash)); if (a.p.note) nodes.push(h("div", {class: "extra"}, null, a.p.note)); });
+    rows.forEach(a => { nodes.push(tipRow(a.s.color, FS(a.s)(a.p.y), a.s.name + (a.p.lo != null && opt.band ? `  (95%: ${opt.yFmt(a.p.lo)}–${opt.yFmt(a.p.hi)})` : ""), a.s.dash)); if (a.p.note) nodes.push(h("div", {class: "extra"}, null, a.p.note)); });
     tipShow(nodes, ev.clientX, ev.clientY);
   }
   hit.addEventListener("pointermove", move);
@@ -368,7 +382,7 @@ async function loadOverview() {
     h("div", {class: "s"}, a, t.date + " · " + t.source);
     const sp = spark(t.spark, "var(--s1)"); if (sp) a.appendChild(sp);
   });
-  try { ovTokenB200(await api("/api/silicon")); } catch (e) { $("#c-ov-tok").textContent = "GPU price data unavailable."; }
+  try { ovTokenB200(await api("/api/silicon")); } catch (e) { $("#c-ov-token").textContent = "GPU price data unavailable."; }
 }
 
 /* ================================================================ firms */
@@ -836,17 +850,19 @@ let SD = null;
 const usd = v => v == null ? "–" : "$" + v.toFixed(2);
 const GPU_ORDER = [["SDH100RT", "var(--s1)"], ["SDB200RT", "var(--s2)"], ["SDA100RT", "var(--s3)"], ["H200", "var(--s4)"], ["B300", "var(--s5)"], ["MI300X", "var(--s6)"]];
 const chgPct = (a, b) => a == null || b == null || !b ? null : a / b - 1;
-/* Overview: actual LLM token cost and B200 rental, side by side on the same dates, each on its own $ axis */
+/* Overview: actual LLM token cost (left axis) and B200 rental (right axis) on one chart */
 function ovTokenB200(sd) {
   const tk = sd.series.SDLLMTK, b2 = sd.series.SDB200RT;
   if (!tk || !b2) return;
-  const t0 = tk.points[0][0], x0 = T(t0), x1 = Math.max(T(tk.points.at(-1)[0]), T(b2.points.at(-1)[0]));
-  [[tk, "c-ov-tok", "Token cost", "var(--s1)", "Token index ($/M)"], [b2, "c-ov-b200", "B200 rental", "var(--s2)", "B200 ($/GPU-hr)"]].forEach(([s, id, nm, col, col2]) => {
-    const P = s.points.filter(p => p[0] >= t0);
-    const S = [{name: s.label, short: nm, color: col, points: P.map(p => ({x: T(p[0]), y: p[1]}))}];
-    view(id, hst => lineChart(hst, S, {height: 260, x0, x1, yMin: 0, yFmt: v => "$" + v.toFixed(2), mode: "cross", title: x => fmtDate(x), endLabels: false}),
-      hst => table(hst, [{label: "Date", key: 0}, {label: col2, n: 1, get: r => usd(r[1])}], [...P].reverse()));
-  });
+  const t0 = tk.points[0][0], bp = b2.points.filter(p => p[0] >= t0);
+  const S = [{name: "LLM Token Expenditure Index ($ per M tokens, left)", short: "Token cost", color: "var(--s1)", points: tk.points.map(p => ({x: T(p[0]), y: p[1]}))},
+    {name: "B200 rental, neo-cloud ($ per GPU-hour, right)", short: "B200 rental", color: "var(--s2)", axis: 2, points: bp.map(p => ({x: T(p[0]), y: p[1]}))}];
+  legend("lg-ov-token", S.map(s => ({name: s.name, color: s.color})));
+  view("c-ov-token", hst => lineChart(hst, S, {height: 300, yMin: 0, yFmt: v => "$" + v.toFixed(2), leftColor: "var(--s1)",
+      right: {yMin: 0, yFmt: v => "$" + v.toFixed(2), color: "var(--s2)"}, endLabels: false, mode: "cross", title: x => fmtDate(x)}),
+    hst => { const bm = Object.fromEntries(bp.map(p => [p[0], p[1]])); const dates = [...new Set(tk.points.concat(bp).map(p => p[0]))].sort().reverse();
+      const tm = Object.fromEntries(tk.points.map(p => [p[0], p[1]]));
+      table(hst, [{label: "Date", get: r => r}, {label: "Token index ($/M)", n: 1, get: r => usd(tm[r])}, {label: "B200 ($/GPU-hr)", n: 1, get: r => usd(bm[r])}], dates); });
 }
 /* LLM token cost vs B200 rental, both rebased to 100 at the token index start (GPU tab + Overview) */
 function tokenVsB200(sd, id) {
