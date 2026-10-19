@@ -234,12 +234,19 @@
       <div class="chart" id="c-a-codex"></div>
     </div>
     <div class="card">
-      <div class="card-head"><div><h2>Coding agents on npm, installs per day</h2><p class="muted">Monthly average. Codex is corrected for double-counting from 11 Feb 2026. Claude Code&rsquo;s npm install was deprecated on 21 Jan 2026, so npm understates it more each month.</p></div>
+      <div class="card-head"><div><h2>Coding agents on npm, installs per day</h2><p class="muted">Monthly average. Codex is corrected for double-counting from 11 Feb 2026. Claude Code&rsquo;s npm install was deprecated on 21 Jan 2026, so npm understates it more each month. Meta&rsquo;s Muse Code CLI installs with a curl script from dev.meta.ai and has no public count, so its official npm SDK (<code>@muse-code/sdk</code>, first published 31 Aug 2026) stands in for it.</p></div>
         <button class="btn small tbl-toggle" data-for="c-a-npm">Table</button></div>
       <div class="filters inner"><label>Scale <select id="npm-scale"><option value="log">Log</option><option value="lin">Linear</option></select></label></div>
       <div class="legend" id="lg-a-npm"></div>
       <div class="chart" id="c-a-npm"></div>
     </div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2>Coding agents on npm, daily downloads</h2><p class="muted">Daily since 1 Jul 2026, refreshed every morning. Codex and Claude Code have the same corrections as the monthly chart. Muse Code is its SDK, a smaller and different install base from a CLI. npm reports some Muse days as zero (API gaps); those are filled with a straight line between the days either side and marked in the table.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-a-npmd">Table</button></div>
+    <div class="filters inner"><label>Scale <select id="npmd-scale"><option value="log">Log</option><option value="lin">Linear</option></select></label></div>
+    <div class="legend" id="lg-a-npmd"></div>
+    <div class="chart" id="c-a-npmd"></div>
   </div>
   <div class="card">
     <div class="card-head"><div><h2>Enterprise seats, Oct 2026 estimate</h2><p class="muted">Bar = estimate. Whisker = range. Tick = last officially disclosed figure. Bundled entitlements are listed separately below.</p></div>

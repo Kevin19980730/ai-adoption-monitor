@@ -346,6 +346,7 @@ def assistants():
         "consumer": records(ut_csv("consumer_assistants.csv").fillna("")),
         "codex": records(ut_csv("codex_users.csv").fillna("")),
         "npm": records(ut_csv("cli_npm_monthly.csv")),
+        "npm_daily": records(ut_csv("cli_npm_daily.csv")),
         "npm_notes": records(ut_csv("cli_npm_notes.csv").fillna("")),
         "seats": records(ut_csv("enterprise_seats_oct2026.csv")),
         "candidates": [] if HOSTED else [c for c in load_candidates() if c.get("status") == "new"],

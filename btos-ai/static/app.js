@@ -569,10 +569,16 @@ function drawAssist() {
   view("c-a-codex", hst => lineChart(hst, S2, {height: 280, yFmt: v => usersM(v), mode: "near"}),
     hst => table(hst, [{label: "Date", key: "date"}, {label: "Users", key: "users_m", n: 1, fmt: usersM}, {label: "Scope", key: "scope"}, {label: "As stated", key: "metric_as_stated"}, {label: "Who", key: "who"}], [...cx].reverse()));
   const nlog = $("#npm-scale").value === "log", notes = Object.fromEntries(AS.npm_notes.map(n => [n.month, n.note]));
-  const S3 = [["codex_installs_per_day_corrected", "Codex CLI", ENTITY_COLOR.OpenAI], ["claude_code_downloads_per_day", "Claude Code", ENTITY_COLOR.Anthropic]].map(([k, n, col]) => ({name: n, color: col, points: AS.npm.map(r => ({x: T(r.month), y: r[k], note: notes[r.month] || null}))}));
+  const NPM = [["Codex CLI", ENTITY_COLOR.OpenAI], ["Claude Code", ENTITY_COLOR.Anthropic], ["Muse Code SDK", ENTITY_COLOR.Meta]];
+  const S3 = ["codex_installs_per_day_corrected", "claude_code_downloads_per_day", "muse_code_sdk_downloads_per_day"].map((k, i) => ({name: NPM[i][0], color: NPM[i][1], points: AS.npm.filter(r => r[k] != null).map(r => ({x: T(r.month), y: r[k], note: notes[r.month] || null}))}));
   legend("lg-a-npm", S3.map(s => ({name: s.name, color: s.color})));
-  view("c-a-npm", hst => lineChart(hst, S3, {height: 280, yFmt: perDay, log: nlog, yMin: nlog ? 1000 : 0, title: x => fmtMonth(x)}),
-    hst => table(hst, [{label: "Month", key: "month"}, {label: "Codex / day", key: "codex_installs_per_day_corrected", n: 1, fmt: perDay}, {label: "Claude Code / day", key: "claude_code_downloads_per_day", n: 1, fmt: perDay}, {label: "Note", get: r => notes[r.month] || ""}], AS.npm));
+  view("c-a-npm", hst => lineChart(hst, S3, {height: 280, yFmt: perDay, log: nlog, yMin: nlog ? 100 : 0, title: x => fmtMonth(x)}),
+    hst => table(hst, [{label: "Month", key: "month"}, {label: "Codex / day", key: "codex_installs_per_day_corrected", n: 1, fmt: perDay}, {label: "Claude Code / day", key: "claude_code_downloads_per_day", n: 1, fmt: perDay}, {label: "Muse Code SDK / day", key: "muse_code_sdk_downloads_per_day", n: 1, fmt: perDay}, {label: "Note", get: r => notes[r.month] || ""}], AS.npm));
+  const dlog = $("#npmd-scale").value === "log";
+  const S4 = ["codex_installs_corrected", "claude_code_downloads", "muse_code_sdk_downloads"].map((k, i) => ({name: NPM[i][0], color: NPM[i][1], points: AS.npm_daily.filter(r => r[k] != null).map(r => ({x: T(r.day), y: r[k], hollow: k === "muse_code_sdk_downloads" && !r.muse_code_sdk_raw}))}));
+  legend("lg-a-npmd", S4.map(s => ({name: s.name, color: s.color})));
+  view("c-a-npmd", hst => lineChart(hst, S4, {height: 300, yFmt: perDay, log: dlog, yMin: dlog ? 50 : 0, title: x => fmtDate(x)}),
+    hst => table(hst, [{label: "Day", key: "day"}, {label: "Codex", key: "codex_installs_corrected", n: 1, fmt: perDay}, {label: "Claude Code", key: "claude_code_downloads", n: 1, fmt: perDay}, {label: "Muse Code SDK", key: "muse_code_sdk_downloads", n: 1, fmt: perDay}, {label: "Muse raw", key: "muse_code_sdk_raw", n: 1, fmt: v => v == null ? "–" : v === 0 ? "0 (gap, interpolated)" : perDay(v)}], [...AS.npm_daily].reverse()));
   const seats = AS.seats.filter(r => r.low_m != null && r.high_m != null && r.estimate_m < 100);
   const colorOf = n => /Microsoft|GitHub/.test(n) ? "var(--neutral-bar)" : /OpenAI/.test(n) ? ENTITY_COLOR.OpenAI : /Google|Gemini/.test(n) ? ENTITY_COLOR.Google : /Anthropic/.test(n) ? ENTITY_COLOR.Anthropic : "var(--neutral-bar)";
   const rows = seats.map(r => ({label: r.company_product, value: r.estimate_m, lo: r.low_m, hi: r.high_m, tick: r.last_disclosed_m, color: colorOf(r.company_product), note: r.basis + (r.last_disclosed_date ? ` (last disclosed ${r.last_disclosed_date})` : "")})).sort((a, b) => b.value - a.value);
@@ -627,7 +633,7 @@ function badge() {
 async function loadAssistants() {
   AS = await api("/api/assistants");
   renderReview();
-  $("#a-scale").addEventListener("change", drawAssist); $("#npm-scale").addEventListener("change", drawAssist);
+  $("#a-scale").addEventListener("change", drawAssist); $("#npm-scale").addEventListener("change", drawAssist); $("#npmd-scale").addEventListener("change", drawAssist);
   drawAssist();
 }
 
