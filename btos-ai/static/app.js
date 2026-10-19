@@ -368,6 +368,7 @@ async function loadOverview() {
     h("div", {class: "s"}, a, t.date + " · " + t.source);
     const sp = spark(t.spark, "var(--s1)"); if (sp) a.appendChild(sp);
   });
+  try { tokenVsB200(await api("/api/silicon"), "ov-token"); } catch (e) { $("#c-ov-token").textContent = "GPU price data unavailable."; }
 }
 
 /* ================================================================ firms */
@@ -835,6 +836,19 @@ let SD = null;
 const usd = v => v == null ? "–" : "$" + v.toFixed(2);
 const GPU_ORDER = [["SDH100RT", "var(--s1)"], ["SDB200RT", "var(--s2)"], ["SDA100RT", "var(--s3)"], ["H200", "var(--s4)"], ["B300", "var(--s5)"], ["MI300X", "var(--s6)"]];
 const chgPct = (a, b) => a == null || b == null || !b ? null : a / b - 1;
+/* LLM token cost vs B200 rental, both rebased to 100 at the token index start (GPU tab + Overview) */
+function tokenVsB200(sd, id) {
+  const tk = sd.series.SDLLMTK, b2 = sd.series.SDB200RT;
+  if (tk && b2) {
+    const t0 = tk.points[0][0], base = s => (s.points.find(p => p[0] >= t0) || s.points[0])[1];
+    const tb = base(tk), bb = base(b2);
+    const S2 = [{name: "LLM Token Expenditure Index", short: "Token cost", color: "var(--s1)", points: tk.points.map(p => ({x: T(p[0]), y: p[1] / tb * 100, note: `$${p[1].toFixed(2)} per M tokens`}))},
+      {name: "B200 rental (neo-cloud)", short: "B200 rental", color: "var(--s2)", points: b2.points.filter(p => p[0] >= t0).map(p => ({x: T(p[0]), y: p[1] / bb * 100, note: `$${p[1].toFixed(2)} per GPU-hour`}))}];
+    legend("lg-" + id, S2.map(s => ({name: s.name, color: s.color})));
+    view("c-" + id, hst => lineChart(hst, S2, {height: 280, yFmt: v => v.toFixed(0), mode: "cross", title: x => fmtDate(x)}),
+      hst => { const bm = Object.fromEntries(b2.points.map(p => [p[0], p[1]])); table(hst, [{label: "Date", key: 0}, {label: "Token index ($/M)", n: 1, get: r => usd(r[1])}, {label: "Token, rebased", n: 1, get: r => (r[1] / tb * 100).toFixed(1)}, {label: "B200 ($/hr)", n: 1, get: r => usd(bm[r[0]])}, {label: "B200, rebased", n: 1, get: r => bm[r[0]] ? (bm[r[0]] / bb * 100).toFixed(1) : "–"}], [...tk.points].reverse()); });
+  }
+}
 function drawGpu() {
   const L = Object.fromEntries(SD.latest.map(r => [r.index, r]));
   const host = $("#gpu-tiles"); host.replaceChildren();
@@ -859,17 +873,7 @@ function drawGpu() {
       const look = Object.fromEntries(S.map(s => [s.name, Object.fromEntries(s.points.map(p => [p.x, p.y]))]));
       table(hst, [{label: "Date", get: r => new Date(r).toISOString().slice(0, 10)}].concat(S.map(s => ({label: s.name, n: 1, get: r => usd(look[s.name][r])}))), dates); });
 
-  // token index vs B200, both rebased to 100 at the token index start
-  const tk = SD.series.SDLLMTK, b2 = SD.series.SDB200RT;
-  if (tk && b2) {
-    const t0 = tk.points[0][0], base = s => (s.points.find(p => p[0] >= t0) || s.points[0])[1];
-    const tb = base(tk), bb = base(b2);
-    const S2 = [{name: "LLM Token Expenditure Index", short: "Token cost", color: "var(--s1)", points: tk.points.map(p => ({x: T(p[0]), y: p[1] / tb * 100, note: `$${p[1].toFixed(2)} per M tokens`}))},
-      {name: "B200 rental (neo-cloud)", short: "B200 rental", color: "var(--s2)", points: b2.points.filter(p => p[0] >= t0).map(p => ({x: T(p[0]), y: p[1] / bb * 100, note: `$${p[1].toFixed(2)} per GPU-hour`}))}];
-    legend("lg-gpu-token", S2.map(s => ({name: s.name, color: s.color})));
-    view("c-gpu-token", hst => lineChart(hst, S2, {height: 280, yFmt: v => v.toFixed(0), mode: "cross", title: x => fmtDate(x)}),
-      hst => { const bm = Object.fromEntries(b2.points.map(p => [p[0], p[1]])); table(hst, [{label: "Date", key: 0}, {label: "Token index ($/M)", n: 1, get: r => usd(r[1])}, {label: "Token, rebased", n: 1, get: r => (r[1] / tb * 100).toFixed(1)}, {label: "B200 ($/hr)", n: 1, get: r => usd(bm[r[0]])}, {label: "B200, rebased", n: 1, get: r => bm[r[0]] ? (bm[r[0]] / bb * 100).toFixed(1) : "–"}], [...tk.points].reverse()); });
-  }
+  tokenVsB200(SD, "gpu-token");
 
   const hyp = [];
   [["H100-HYP", "SDH100RT"], ["A100-HYP", "SDA100RT"], ["B200-HYP", "SDB200RT"]].forEach(([hk, nk]) => {
