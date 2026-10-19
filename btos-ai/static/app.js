@@ -1115,6 +1115,48 @@ function drawRpo() {
     h("div", {class: "s"}, a, `as of ${l.period_end}` + (wc ? ` · ${(wc.rpo_bn / wc.capex_ttm_bn).toFixed(1)}× TTM capex (${wc.cal_quarter})` : ""));
   });
 }
+/* Construction in progress (assets not yet in service) vs trailing-four-quarter capex; "GM" sums Alphabet + Meta */
+const CIP_TK = [["GOOGL", "Alphabet"], ["META", "Meta"], ["AMZN", "Amazon"], ["ORCL", "Oracle"], ["CRWV", "CoreWeave"], ["NBIS", "Nebius"], ["SPCX", "SpaceX (company-wide)"]];
+const CIP_SETS = {GM: ["GOOGL", "META"]};
+function drawCip() {
+  const co = $("#cip-co").value, mode = $("#cip-mode").value, R = CXQ.cip;
+  const qx = q => +q.slice(0, 4) + (+q.slice(-1) - 1) / 4 + 0.125, qt = x => { const y = Math.floor(x); return `Q${Math.floor((x - y) * 4) + 1} ${y}`; };
+  const rows = [...new Set(R.map(r => r.cal_quarter))].sort().map(q => {
+    const g = Object.fromEntries(R.filter(r => r.cal_quarter === q).map(r => [r.ticker, r]));
+    const pick = (CIP_SETS[co] || [co]).map(k => g[k]);
+    if (pick.some(r => !r)) return null;
+    const sum = k => pick.every(r => r[k] != null) ? pick.reduce((a, r) => a + r[k], 0) : null;
+    return {q, cip: sum("cip_bn"), cap: sum("capex_ttm_bn"), gross: sum("gross_ppe_bn"), end: pick.map(r => r.period_end).sort().at(-1)};
+  }).filter(Boolean);
+  const nm = co === "GM" ? "Alphabet + Meta" : CIP_TK.find(t => t[0] === co)[1];
+  const bnF = v => "$" + (v >= 100 ? Math.round(v).toLocaleString("en-US") : v.toFixed(1)) + "bn";
+  const S = mode === "bn"
+    ? [{name: `Construction in progress, ${nm} (period end)`, short: "CIP", color: "var(--s1)", points: rows.map(r => ({x: qx(r.q), y: r.cip, note: `as of ${r.end}`}))},
+       {name: `Capex, trailing four quarters, ${nm}`, short: "TTM capex", color: "var(--s2)", points: rows.map(r => ({x: qx(r.q), y: r.cap}))}]
+    : mode === "x"
+      ? [{name: `CIP ÷ TTM capex, ${nm}`, short: "CIP ÷ capex", color: "var(--s1)", points: rows.map(r => ({x: qx(r.q), y: r.cap ? r.cip / r.cap : null}))}]
+      : [{name: `CIP as % of gross PP&E, ${nm}`, short: "CIP % gross", color: "var(--s1)", points: rows.map(r => ({x: qx(r.q), y: r.gross ? r.cip / r.gross * 100 : null}))}];
+  legend("lg-cx-cip", S.map(s => ({name: s.name, color: s.color})));
+  const yrs = [...new Set(rows.map(r => +r.q.slice(0, 4)))];
+  view("c-cx-cip", hst => lineChart(hst, S, {height: 320, xType: "num", yMin: 0, mode: "cross", xFmt: qt,
+      yFmt: mode === "bn" ? bnF : mode === "x" ? (v => v.toFixed(1) + "×") : (v => v.toFixed(0) + "%"),
+      xTicks: yrs.map(y => ({x: y + 0.125, label: "Q1 " + y}))}),
+    hst => table(hst, [{label: "Quarter", key: "q"}, {label: "Period end", key: "end"}, {label: "CIP ($bn)", n: 1, get: r => "$" + r.cip.toFixed(1)},
+      {label: "TTM capex ($bn)", n: 1, get: r => r.cap == null ? "–" : "$" + r.cap.toFixed(1)}, {label: "CIP ÷ capex", n: 1, get: r => r.cap ? (r.cip / r.cap).toFixed(2) + "×" : "–"},
+      {label: "% of gross PP&E", n: 1, get: r => r.gross ? (r.cip / r.gross * 100).toFixed(1) + "%" : "–"}], [...rows].reverse()));
+  const host = $("#cip-tiles"); host.replaceChildren();
+  let tot = 0, n = 0;
+  CIP_TK.forEach(([k, label]) => {
+    const g = R.filter(r => r.ticker === k).sort((a, b) => a.period_end.localeCompare(b.period_end)), l = g.at(-1); if (!l) return;
+    tot += l.cip_bn; n++;
+    const ya = g.find(r => r.cal_quarter === qadd(l.cal_quarter, -4)), wc = [...g].reverse().find(r => r.capex_ttm_bn);
+    const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, `${label} CIP`); h("div", {class: "v"}, a, bnF(l.cip_bn));
+    if (ya) { const gr = l.cip_bn / ya.cip_bn - 1, dd = h("div", {class: "d"}, a); h("span", {class: gr >= 0 ? "up" : "down"}, dd, (gr >= 0 ? "▲ " : "▼ ") + (Math.abs(gr) * 100).toFixed(0) + "%"); dd.appendChild(document.createTextNode(" vs a year earlier")); }
+    h("div", {class: "s"}, a, `as of ${l.period_end}` + (l.gross_ppe_bn ? ` · ${(l.cip_bn / l.gross_ppe_bn * 100).toFixed(0)}% of gross PP&E` : "") + (wc ? ` · ${(wc.cip_bn / wc.capex_ttm_bn).toFixed(2)}× TTM capex (${wc.cal_quarter})` : ""));
+  });
+  const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, `Total, latest of each (${n} names)`); h("div", {class: "v"}, a, bnF(tot));
+  h("div", {class: "s"}, a, "mixed balance dates (Amazon Dec, Oracle Aug); excludes Microsoft (no CIP disclosed)");
+}
 function qadd(q, k) { const n = +q.slice(-1) - 1 + k, y = +q.slice(0, 4) + Math.floor(n / 4); return `${y}Q${((n % 4) + 4) % 4 + 1}`; }
 /* Capex cycles (Macro) and Hyperscaler capex (Infrastructure) are drawn from one API call */
 let CAPEX_ONCE = null;
@@ -1223,6 +1265,7 @@ async function loadCapex() {
   }
   if ((d.quarterly || []).length) { CXQ = d; drawCxQ(); $("#cxq-mode").addEventListener("change", drawCxQ); }
   if ((d.rpo || []).length) { drawRpo(); ["#rpo-co", "#rpo-mode"].forEach(s => $(s).addEventListener("change", drawRpo)); }
+  if ((d.cip || []).length) { drawCip(); ["#cip-co", "#cip-mode"].forEach(s => $(s).addEventListener("change", drawCip)); }
   if ((d.extended || []).length) {
     const drawOwn = () => {
       const pctMode = $("#cx-own-mode").value === "pct", qx = q => +q.slice(0, 4) + (+q.slice(-1) - 1) / 4 + 0.125;

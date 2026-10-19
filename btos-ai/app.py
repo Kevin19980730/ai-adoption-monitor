@@ -555,10 +555,13 @@ def capex_cycles():
     e7d = cached("bce7", [e7], lambda: pd.read_csv(e7) if e7.exists() else pd.DataFrame())
     rp = BCD / "firsthand" / "hyperscalers_rpo_quarterly.csv"
     rpd = cached("bcrpo", [rp], lambda: pd.read_csv(rp) if rp.exists() else pd.DataFrame())
+    cp = BCD / "firsthand" / "hyperscalers_cip_quarterly.csv"
+    cpd = cached("bccip", [cp], lambda: pd.read_csv(cp) if cp.exists() else pd.DataFrame())
     return jsonify({"series": out, "xlsx": books[-1].name if books else None, "check": check,
                     "quarterly": records(qid) if not qid.empty else [], "oracle_fiscal": records(ofd) if not ofd.empty else [],
                     "neo_periods": records(npd) if not npd.empty else [], "expanded7": records(e7d) if not e7d.empty else [],
                     "detail": records(fhd) if not fhd.empty else [], "rpo": records(rpd) if not rpd.empty else [],
+                    "cip": records(cpd) if not cpd.empty else [],
                     "extended": records(exd) if not exd.empty else []})
 
 
