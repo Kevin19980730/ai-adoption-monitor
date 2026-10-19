@@ -344,7 +344,7 @@ function loadPopulation() {
 async function loadOverview() {
   const d = await api("/api/overview");
   const host = $("#tiles"); host.replaceChildren();
-  const link = {btos7: "#firms", btos24: "#firms", ChatGPT: "#assistants", "Gemini app": "#assistants", codex: "#assistants", openrouter: "#tokens", ramp: "#ramp", silicon: "#gpu", capex: "#capex", hy_BAMLH0A1HYBB: "#credit", hy_BAMLH0A3HYC: "#credit", hy_DFII10: "#credit", hy_THREEFYTP10: "#credit", arr_Anthropic: "#arr", arr_OpenAI: "#arr", pop_ms: "#population", pop_best: "#population"};
+  const link = {btos7: "#firms", btos24: "#firms", ChatGPT: "#assistants", "Gemini app": "#assistants", codex: "#assistants", openrouter: "#tokens", ramp: "#ramp", capex: "#capex", hy_BAMLH0A1HYBB: "#credit", hy_BAMLH0A3HYC: "#credit", hy_DFII10: "#credit", hy_THREEFYTP10: "#credit", arr_Anthropic: "#arr", arr_OpenAI: "#arr", pop_ms: "#population", pop_best: "#population"};
   d.tiles.forEach(t => {
     const a = h("a", {class: "tile", href: link[t.id] || "#workers"}, host);
     h("div", {class: "t"}, a, t.title);
@@ -368,7 +368,7 @@ async function loadOverview() {
     h("div", {class: "s"}, a, t.date + " · " + t.source);
     const sp = spark(t.spark, "var(--s1)"); if (sp) a.appendChild(sp);
   });
-  try { tokenVsB200(await api("/api/silicon"), "ov-token"); } catch (e) { $("#c-ov-token").textContent = "GPU price data unavailable."; }
+  try { ovTokenB200(await api("/api/silicon")); } catch (e) { $("#c-ov-tok").textContent = "GPU price data unavailable."; }
 }
 
 /* ================================================================ firms */
@@ -836,6 +836,18 @@ let SD = null;
 const usd = v => v == null ? "–" : "$" + v.toFixed(2);
 const GPU_ORDER = [["SDH100RT", "var(--s1)"], ["SDB200RT", "var(--s2)"], ["SDA100RT", "var(--s3)"], ["H200", "var(--s4)"], ["B300", "var(--s5)"], ["MI300X", "var(--s6)"]];
 const chgPct = (a, b) => a == null || b == null || !b ? null : a / b - 1;
+/* Overview: actual LLM token cost and B200 rental, side by side on the same dates, each on its own $ axis */
+function ovTokenB200(sd) {
+  const tk = sd.series.SDLLMTK, b2 = sd.series.SDB200RT;
+  if (!tk || !b2) return;
+  const t0 = tk.points[0][0], x0 = T(t0), x1 = Math.max(T(tk.points.at(-1)[0]), T(b2.points.at(-1)[0]));
+  [[tk, "c-ov-tok", "Token cost", "var(--s1)", "Token index ($/M)"], [b2, "c-ov-b200", "B200 rental", "var(--s2)", "B200 ($/GPU-hr)"]].forEach(([s, id, nm, col, col2]) => {
+    const P = s.points.filter(p => p[0] >= t0);
+    const S = [{name: s.label, short: nm, color: col, points: P.map(p => ({x: T(p[0]), y: p[1]}))}];
+    view(id, hst => lineChart(hst, S, {height: 260, x0, x1, yMin: 0, yFmt: v => "$" + v.toFixed(2), mode: "cross", title: x => fmtDate(x), endLabels: false}),
+      hst => table(hst, [{label: "Date", key: 0}, {label: col2, n: 1, get: r => usd(r[1])}], [...P].reverse()));
+  });
+}
 /* LLM token cost vs B200 rental, both rebased to 100 at the token index start (GPU tab + Overview) */
 function tokenVsB200(sd, id) {
   const tk = sd.series.SDLLMTK, b2 = sd.series.SDB200RT;

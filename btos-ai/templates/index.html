@@ -54,10 +54,11 @@
 <section id="tab-overview" class="tab" hidden>
   <div class="tiles" id="tiles"></div>
   <div class="card">
-    <div class="card-head"><div><h2>LLM token cost vs B200 rental, indexed</h2><p class="muted">Silicon Data. Both = 100 on 1 Dec 2025, when the LLM Token Expenditure Index (SDLLMTK, USD per million tokens) starts; B200 = SDB200RT neo-cloud USD per GPU-hour. More on the <a href="#gpu">GPU prices</a> tab.</p></div>
-      <button class="btn small tbl-toggle" data-for="c-ov-token">Table</button></div>
-    <div class="legend" id="lg-ov-token"></div>
-    <div class="chart" id="c-ov-token"></div>
+    <div class="card-head"><div><h2>LLM token cost vs B200 rental</h2><p class="muted">Silicon Data daily indices since 1 Dec 2025, when the LLM Token Expenditure Index (SDLLMTK) starts. Actual prices, each on its own dollar axis: USD per million tokens, and USD per B200 GPU-hour (SDB200RT, neo-cloud). More on the <a href="#gpu">GPU prices</a> tab.</p></div></div>
+    <div class="grid2">
+      <div><div class="card-head"><h3>LLM token cost, USD per million tokens</h3><button class="btn small tbl-toggle" data-for="c-ov-tok">Table</button></div><div class="chart" id="c-ov-tok"></div></div>
+      <div><div class="card-head"><h3>B200 rental, USD per GPU-hour</h3><button class="btn small tbl-toggle" data-for="c-ov-b200">Table</button></div><div class="chart" id="c-ov-b200"></div></div>
+    </div>
   </div>
   <div class="note-grid">
     <div class="note">

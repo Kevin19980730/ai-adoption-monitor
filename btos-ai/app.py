@@ -855,16 +855,6 @@ def overview():
                 tiles.append({"id": "arr_" + co, "title": f"{co} run-rate ARR", "value": pts[-1][1], "prev": yago,
                               "delta_label": "vs a year earlier", "unit": "usd", "date": nice_date(g.date.iloc[-1]),
                               "source": "Research workbook + approved news", "spark": [p[1] for p in pts]})
-    sdd = sd_csv("silicon_index_daily.csv")
-    if not sdd.empty:
-        h = sdd[sdd["index"] == "SDH100RT"].sort_values("date")
-        if len(h) > 8:
-            hs = h.set_index(pd.to_datetime(h.date)).value.astype(float)
-            wk = hs[hs.index <= hs.index[-1] - pd.Timedelta(days=7)]
-            tiles.append({"id": "silicon", "title": "H100 rental price (neo-cloud)", "value": float(hs.iloc[-1]),
-                          "prev": float(wk.iloc[-1]) if len(wk) else None, "delta_label": "vs a week earlier", "unit": "usd_hr",
-                          "date": f"{nice_date(h.date.iloc[-1])} · SDH100RT", "source": "Silicon Data",
-                          "spark": [float(v) for v in hs.tail(90)]})
     rv = rp_csv("ramp_token_weekly.csv")
     if not rv.empty:
         t = rv[rv.metric == "token_volume"].groupby("week").value.sum().sort_index()
