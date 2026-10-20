@@ -356,9 +356,11 @@ function loadPopulation() {
 
 /* ================================================================ overview */
 async function loadOverview() {
+  loadChanges(); loadFreshness();
+  $("#chg-days").addEventListener("change", loadChanges);
   const d = await api("/api/overview");
   const host = $("#tiles"); host.replaceChildren();
-  const link = {btos7: "#firms", btos24: "#firms", ChatGPT: "#assistants", "Gemini app": "#assistants", codex: "#assistants", openrouter: "#tokens", ramp: "#ramp", capex: "#capex", hy_BAMLH0A1HYBB: "#credit", hy_BAMLH0A3HYC: "#credit", hy_DFII10: "#credit", hy_THREEFYTP10: "#credit", arr_Anthropic: "#arr", arr_OpenAI: "#arr", pop_ms: "#population", pop_best: "#population"};
+  const link = {btos7: "#firms", btos24: "#firms", ChatGPT: "#assistants", "Gemini app": "#assistants", codex: "#assistants", openrouter: "#tokens", ramp: "#ramp", capex: "#capex", hy_BAMLH0A1HYBB: "#credit", hy_BAMLH0A3HYC: "#credit", hy_DFII10: "#credit", hy_THREEFYTP10: "#credit", arr_Anthropic: "#arr", arr_OpenAI: "#arr", pop_ms: "#population", pop_best: "#population", rampadopt: "#rampadopt"};
   d.tiles.forEach(t => {
     const a = h("a", {class: "tile", href: link[t.id] || "#workers"}, host);
     h("div", {class: "t"}, a, t.title);
@@ -383,6 +385,53 @@ async function loadOverview() {
     const sp = spark(t.spark, "var(--s1)"); if (sp) a.appendChild(sp);
   });
   try { ovTokenB200(await api("/api/silicon")); } catch (e) { $("#c-ov-token").textContent = "GPU price data unavailable."; }
+}
+
+/* ---------------------------------------------------------------- what changed + data freshness */
+const fmtVal = (f, v) => v == null ? "–" : f === "share" ? pct(v) : f === "pct100" ? v.toFixed(2) + "%" : f === "tokens" ? tok(v)
+  : f === "usd" ? bn(v) : f === "usd_small" ? "$" + v.toFixed(2) : f === "per_m" ? perM(v) + " / M" : f === "usd_hr" ? usd(v) + "/hr"
+  : f === "users_m" ? usersM(v) : f === "count" ? perDay(v) : f === "x" ? v.toFixed(2) + "×" : String(v);
+const fmtChg = (k, c) => c == null ? "" : k === "rel" ? (c >= 0 ? "+" : "−") + Math.abs(c * 100).toFixed(Math.abs(c) < 0.1 ? 1 : 0) + "%"
+  : k === "bp" ? (c >= 0 ? "+" : "−") + Math.abs(Math.round(c)) + "bp" : k === "x" ? (c >= 0 ? "+" : "−") + Math.abs(c).toFixed(2) + "×" : pp(c);
+const dShort = s => { const d = new Date(T(s)); return d.getUTCDate() + " " + MON[d.getUTCMonth()]; };
+async function loadChanges() {
+  const days = +$("#chg-days").value, ul = $("#chg-list");
+  let d; try { d = await api("/api/changes?days=" + days); } catch (e) { ul.textContent = "Could not load: " + e.message; return; }
+  ul.replaceChildren(); ul.classList.remove("all");
+  $("#chg-sub").firstChild.textContent = `${d.items.length} of ${d.n_series} tracked series got new data since ${fmtDate(T(d.since))}, most unusual first. “Unusual” compares the change with the same series’ own changes over the same span in the last three years (σ = standard deviations).`;
+  if (!d.items.length) { h("li", null, ul, "Nothing new in this window."); return; }
+  let minor = 0;
+  d.items.forEach(it => {
+    const big = (it.z == null || Math.abs(it.z) >= 1 || it.extreme) && ul.children.length < 6, li = h("li", {class: big ? "" : "minor"}, ul);
+    if (!big) minor++;
+    const nm = h("div", null, li); h("a", {href: "#" + it.tab}, nm, it.name);
+    if (it.extreme) h("span", {class: "flag hot"}, nm, it.extreme);
+    if (it.z != null && Math.abs(it.z) >= 2) h("span", {class: "flag hot"}, nm, `${Math.abs(it.z).toFixed(1)}σ move`);
+    const v = h("div", {class: "val"}, li, fmtVal(it.fmt, it.value) + " ");
+    if (it.change != null) {
+      const good = it.up_good == null ? null : (it.change > 0) === it.up_good;
+      h("span", {class: it.change === 0 || good == null ? "" : good ? "up" : "down"}, v, fmtChg(it.delta, it.change));
+    }
+    h("div", {class: "meta"}, li, `${it.source} · ${fmtDate(T(it.date))}` + (it.base_date ? ` vs ${fmtDate(T(it.base_date))} (${fmtVal(it.fmt, it.base)})` : "")
+      + (it.z != null ? ` · ${it.z >= 0 ? "+" : "−"}${Math.abs(it.z).toFixed(1)}σ` : "") + ` · arrived ${dShort(it.seen.slice(0, 10))}`);
+  });
+  if (minor) {
+    const b = h("button", {class: "btn small ghost chg-more", type: "button"}, h("li", {style: "display:block;border:0"}, ul), `Show ${minor} smaller change${minor > 1 ? "s" : ""}`);
+    b.addEventListener("click", () => { ul.classList.toggle("all"); b.textContent = ul.classList.contains("all") ? "Show fewer" : `Show ${minor} smaller change${minor > 1 ? "s" : ""}`; });
+  }
+}
+async function loadFreshness() {
+  const ul = $("#fresh-list");
+  let d; try { d = await api("/api/freshness"); } catch (e) { ul.textContent = "Could not load: " + e.message; return; }
+  ul.replaceChildren();
+  const order = {stale: 0, missing: 0, due: 1, ok: 2};
+  [...d.rows].sort((a, b) => order[a.status] - order[b.status]).forEach(r => {
+    const li = h("li", {class: "st-" + r.status, title: `${r.cadence}; counted as stale after ${r.max_age} days`}, ul);
+    h("span", {class: "dot", "aria-hidden": "true"}, li);
+    const nm = h("div", null, li); h("a", {href: "#" + r.tab}, nm, r.source); nm.appendChild(document.createTextNode(` · ${r.cadence}`));
+    h("div", {class: "when"}, li, r.latest ? `${r.status === "ok" ? "" : r.status + " · "}to ${fmtDate(T(r.latest))} · ${r.age}d` : "no data");
+  });
+  $("#fresh-pending").textContent = d.pending ? `${d.pending} news item${d.pending > 1 ? "s" : ""} waiting for review on the AI assistants and Lab ARR tabs.` : "";
 }
 
 /* ================================================================ firms */
@@ -1012,6 +1061,89 @@ async function loadRamp() {
   drawRamp();
 }
 
+/* ================================================================ Ramp AI Index: businesses paying for AI */
+let RA = null;
+const RA_VENDOR = {OpenAI: "var(--s1)", Anthropic: "var(--s4)", xAI: "var(--s3)", DeepSeek: "var(--s5)", "Mistral AI": "var(--s6)"};
+const RA_PAL = ["var(--s1)", "var(--s2)", "var(--s3)", "var(--s4)", "var(--s5)", "var(--s6)", "var(--ink-2)"];
+const raPts = rows => rows.map(r => ({x: T(r[0]), y: r[1] / 100}));
+const raYago = (rows, i) => { const m = rows[i][0], y = (+m.slice(0, 4) - 1) + m.slice(4); return rows.find(r => r[0] === y); };
+function raLines(id, series, opt) {
+  legend("lg-" + id, series.map(s => ({name: s.name, color: s.color, dash: s.dash})));
+  const xs = [...new Set(series.flatMap(s => s.points.map(p => p.x)))].sort((a, b) => b - a);
+  const L = series.map(s => Object.fromEntries(s.points.map(p => [p.x, p.y])));
+  view(id, hst => lineChart(hst, series, Object.assign({height: 320, yFmt: v => pct(v, 0), yMin: 0, mode: "cross", title: x => fmtMonth(x)}, opt || {})),
+    hst => table(hst, [{label: "Month", get: x => fmtMonth(x)}].concat(series.map((s, i) => ({label: s.name, n: 1, get: x => (opt && opt.tblFmt || pct)(L[i][x])}))), xs));
+}
+function drawRampAdopt() {
+  const G = RA.groups, ov = G.overall.All, n = ov.length;
+  const host = $("#ra-tiles"); host.replaceChildren();
+  const tile = (title, rows, sub, cmp) => {
+    const i = rows.length - 1, a = h("a", {class: "tile", href: "#rampadopt"}, host);
+    h("div", {class: "t"}, a, title); h("div", {class: "v"}, a, pct(rows[i][1] / 100));
+    const base = cmp === "month" ? rows[i - 1] : raYago(rows, i);
+    if (base) { const dl = rows[i][1] - base[1], dd = h("div", {class: "d"}, a); h("span", {class: dl >= 0 ? "up" : "down"}, dd, (dl >= 0 ? "▲ " : "▼ ") + pp(dl)); dd.appendChild(document.createTextNode(cmp === "month" ? " vs prior month" : " vs a year earlier")); }
+    h("div", {class: "s"}, a, fmtMonth(T(rows[i][0])) + " · " + sub); const sp = spark(rows.map(r => r[1]), "var(--s1)"); if (sp) a.appendChild(sp);
+  };
+  tile("Businesses paying for AI", ov, "Ramp AI Index");
+  if (G.vendor.OpenAI) tile("Businesses paying OpenAI", G.vendor.OpenAI, "share of all businesses");
+  if (G.vendor.Anthropic) tile("Businesses paying Anthropic", G.vendor.Anthropic, "share of all businesses");
+  const ce = (G.census || {}).All || [];
+  if (ce.length > 1) tile("All US businesses (Ramp estimate)", ce.filter(r => r[4] === ce[ce.length - 1][4]), "Census BTOS based, new wording", "month");
+  const pe = ((RA.spend.all || {}).All || []);
+  if (pe.length > 12) {
+    const i = pe.length - 1, base = pe.find(r => r.month === (+pe[i].month.slice(0, 4) - 1) + pe[i].month.slice(4)), a = h("a", {class: "tile", href: "#rampadopt"}, host);
+    h("div", {class: "t"}, a, "Median AI spend per employee"); h("div", {class: "v"}, a, "$" + pe[i].median_pepm.toFixed(2) + " / mo");
+    if (base) { const g = pe[i].median_pepm / base.median_pepm - 1, dd = h("div", {class: "d"}, a); h("span", {class: g >= 0 ? "up" : "down"}, dd, (g >= 0 ? "▲ " : "▼ ") + (Math.abs(g) * 100).toFixed(0) + "%"); dd.appendChild(document.createTextNode(" vs a year earlier")); }
+    h("div", {class: "s"}, a, fmtMonth(T(pe[i].month)) + " · firms paying for AI, per full-time employee"); const sp = spark(pe.map(r => r.median_pepm), "var(--s1)"); if (sp) a.appendChild(sp);
+  }
+
+  // Ramp vs Census-based estimate (two wordings kept apart)
+  const main = [{name: "Ramp AI Index (Ramp customers)", short: "Ramp customers", color: "var(--s1)", points: raPts(ov)}];
+  [["pre_nov_2025_wording_change", "All US businesses, old BTOS wording", true], ["post_nov_2025_wording_change", "All US businesses, new BTOS wording", false]].forEach(([v, nm, dash]) => {
+    const r = ce.filter(x => x[4] === v); if (r.length) main.push({name: nm, short: dash ? "US, old wording" : "US, new wording", color: "var(--s2)", dash, points: raPts(r)});
+  });
+  raLines("c-ra-main", main, {height: 340});
+  raLines("c-ra-vendor", Object.keys(G.vendor).sort((a, b) => G.vendor[b].at(-1)[1] - G.vendor[a].at(-1)[1]).map(k => ({name: k, color: RA_VENDOR[k] || "var(--ink-2)", points: raPts(G.vendor[k])})));
+  const sk = $("#ra-split").value, grp = G[sk] || {};
+  $("#ra-split-title").textContent = sk === "size" ? "By business size" : "By industry";
+  raLines("c-ra-split", Object.keys(grp).sort((a, b) => grp[b].at(-1)[1] - grp[a].at(-1)[1]).map((k, i) => ({name: k, color: RA_PAL[i % RA_PAL.length], points: raPts(grp[k])})));
+
+  // spend per employee: distribution over time
+  const PE = [["Median firm", "median_pepm", "var(--s1)"], ["p99-winsorised mean", "p99w_mean_pepm", "var(--s2)"], ["90th percentile firm", "p90_pepm", "var(--s3)"], ["Median of the top 10%", "top10_median_pepm", "var(--s4)"]]
+    .map(([nm, k, col]) => ({name: nm, color: col, markers: false, points: pe.map(r => ({x: T(r.month), y: r[k]}))}));
+  const dollars = v => v == null ? "–" : "$" + (v >= 100 ? Math.round(v).toLocaleString() : v.toFixed(v >= 10 ? 1 : 2));
+  raLines("c-ra-pepm", PE, {yFmt: dollars, log: true, yMin: null, tblFmt: dollars});
+
+  // spend per employee by group, latest month vs a year earlier
+  const ck = $("#ra-cut").value, cut = (RA.spend[ck] || {});
+  const lastM = Object.values(cut).flat().reduce((m, r) => r.month > m ? r.month : m, "");
+  const yM = lastM ? (+lastM.slice(0, 4) - 1) + lastM.slice(4) : "";
+  const crow = Object.entries(cut).map(([k, rows]) => { const c = rows.find(r => r.month === lastM), y = rows.find(r => r.month === yM);
+    return c && c.median_pepm != null ? {key: k, label: k, value: c.median_pepm, tick: y ? y.median_pepm : null, color: "var(--s1)", note: `p99-winsorised mean ${dollars(c.p99w_mean_pepm)}` + (y ? ` · a year earlier ${dollars(y.median_pepm)}` : "")} : null; })
+    .filter(Boolean).sort((a, b) => b.value - a.value);
+  $("#ra-cut-title").textContent = `Median AI spend per employee per month, ${lastM ? fmtMonth(T(lastM)) : ""}`;
+  view("c-ra-cut", hst => hbar(hst, crow, {fmt: dollars, tickLabel: "A year earlier", valueLabel: "median per employee"}),
+    hst => table(hst, [{label: "Group", key: "label"}, {label: "Median", n: 1, get: r => dollars(r.value)}, {label: "A year earlier", n: 1, get: r => dollars(r.tick)}], crow));
+
+  // states, latest month, enough firms to be meaningful
+  const st = G.state || {}, MINF = 150;
+  const sl = Object.values(st).flat().reduce((m, r) => r[0] > m ? r[0] : m, ""), sy = sl ? (+sl.slice(0, 4) - 1) + sl.slice(4) : "";
+  const srow = Object.entries(st).map(([k, rows]) => { const c = rows.find(r => r[0] === sl), y = rows.find(r => r[0] === sy);
+    return c && c[2] >= MINF ? {key: k, label: k, value: c[1] / 100, tick: y ? y[1] / 100 : null, color: "var(--s1)", n: c[2], ai: c[3], note: `${c[3]} of ${c[2]} businesses in Ramp's sample`} : null; })
+    .filter(Boolean).sort((a, b) => b.value - a.value);
+  $("#ra-state-title").textContent = `Share of businesses paying for AI, by state, ${sl ? fmtMonth(T(sl)) : ""}`;
+  $("#ra-state-sub").textContent = `States with at least ${MINF} businesses in Ramp's sample that month (${srow.length} of ${Object.keys(st).length}). Tick = the same state a year earlier. Small states swing a lot from month to month.`;
+  view("c-ra-state", hst => hbar(hst, srow, {fmt: v => pct(v, 0), tickLabel: "A year earlier", valueLabel: "paying for AI", max: 1}),
+    hst => table(hst, [{label: "State", key: "label"}, {label: "Paying for AI", n: 1, get: r => pct(r.value)}, {label: "A year earlier", n: 1, get: r => pct(r.tick)},
+      {label: "Businesses", n: 1, get: r => r.n.toLocaleString()}, {label: "Paying", n: 1, get: r => r.ai.toLocaleString()}], srow));
+}
+async function loadRampAdopt() {
+  RA = await api("/api/ramp-adoption");
+  if (!RA.groups.overall) { $("#ra-tiles").textContent = "No Ramp adoption data yet - run ramp-ai-index/ramp_update.py."; return; }
+  ["#ra-split", "#ra-cut"].forEach(id => $(id).addEventListener("change", drawRampAdopt));
+  drawRampAdopt();
+}
+
 /* ================================================================ BofA Exhibit 2: capex cycles */
 const CX_COL = {rail: "#1f3a7a", og70s: "#c41230", telecom: "#e66100", shale: "#269e00", hyperLA: "#33b5f0", hyper: "#00808f"};
 const CX_SHORT = {rail: "Railroads", og70s: "O&G 70s-80s", telecom: "Telecoms", shale: "Shale", hyperLA: "Hyperscalers (LA)", hyper: "Hyperscalers"};
@@ -1386,7 +1518,7 @@ function loadData() {
   refreshStatus();
 }
 
-const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, arr: loadArr, circular: loadCircular, population: loadPopulation, data: loadData};
+const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, rampadopt: loadRampAdopt, arr: loadArr, circular: loadCircular, population: loadPopulation, data: loadData};
 async function boot(again) {
   META = await api("/api/meta");
   document.body.classList.toggle("hosted", !!META.hosted);

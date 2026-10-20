@@ -207,3 +207,29 @@ td:first-child { white-space: nowrap; }
 .rv .fields label { display: flex; flex-direction: column; gap: 3px; font-size: 12px; color: var(--ink-2); }
 .rv .fields input.w-date { width: 140px; } .rv .fields input.w-num { width: 90px; } .rv .fields input.w-text { width: 320px; max-width: 100%; }
 .badge { display: inline-block; min-width: 18px; padding: 0 5px; margin-left: 4px; border-radius: 999px; background: var(--s1); color: #fff; font-size: 11px; line-height: 18px; text-align: center; }
+
+/* overview: what changed + data freshness */
+.ov-top { margin-bottom: 16px; }
+.ov-top .card-head label { white-space: nowrap; }
+.chg, .fresh { list-style: none; margin: 8px 0 0; padding: 0; }
+.chg li { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 8px 0; border-top: 1px solid var(--grid); }
+.chg li:first-child { border-top: 0; }
+.chg a { color: var(--ink); text-decoration: none; font-weight: 600; }
+.chg a:hover { text-decoration: underline; }
+.chg .val { font-variant-numeric: tabular-nums; text-align: right; font-weight: 600; }
+.chg .meta { grid-column: 1 / -1; color: var(--muted); font-size: 12.5px; }
+.chg .up { color: var(--good); } .chg .down { color: var(--critical); }
+.chg .flag { display: inline-block; margin-left: 6px; padding: 0 6px; border-radius: 999px; background: var(--surface-2); color: var(--ink-2); font-size: 11px; font-weight: 600; line-height: 18px; }
+.chg .flag.hot { background: var(--warn-bg); color: var(--warn-ink); }
+.chg li.minor { display: none; }
+.chg.all li.minor { display: grid; }
+.chg-more { margin-top: 6px; }
+.fresh li { display: grid; grid-template-columns: 12px 1fr auto; gap: 8px; align-items: baseline; padding: 5px 0; border-top: 1px solid var(--grid); font-size: 13.5px; }
+.fresh li:first-child { border-top: 0; }
+.fresh .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--good); align-self: center; }
+.fresh .st-due .dot { background: var(--s4); }
+.fresh .st-stale .dot, .fresh .st-missing .dot { background: var(--critical); }
+.fresh a { color: var(--ink); text-decoration: none; }
+.fresh a:hover { text-decoration: underline; }
+.fresh .when { color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; }
+.fresh .st-stale .when, .fresh .st-missing .when { color: var(--critical); font-weight: 600; }

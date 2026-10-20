@@ -40,6 +40,7 @@
         <a href="#population" role="tab" data-tab="population">World population &amp; AI users</a>
         <a href="#assistants" role="tab" data-tab="assistants">AI assistants</a>
         <a href="#firms" role="tab" data-tab="firms">Firms (BTOS)</a>
+        <a href="#rampadopt" role="tab" data-tab="rampadopt">Firms paying for AI (Ramp)</a>
         <a href="#workers" role="tab" data-tab="workers">Workers (RPS)</a>
         <a href="#compare" role="tab" data-tab="compare">Firms vs workers</a>
         <a href="#fed" role="tab" data-tab="fed">Fed note</a></div>
@@ -52,6 +53,18 @@
 
 <!-- ===================================================== OVERVIEW -->
 <section id="tab-overview" class="tab" hidden>
+  <div class="grid2 ov-top">
+    <div class="card">
+      <div class="card-head"><div><h2>What changed</h2><p class="muted" id="chg-sub">New data that arrived recently, most unusual first. &ldquo;Unusual&rdquo; compares the change with the same series&rsquo; own changes over the same span in the last three years (&sigma; = standard deviations).</p></div>
+        <label class="small">Window <select id="chg-days"><option value="7" selected>7 days</option><option value="14">14 days</option><option value="30">30 days</option></select></label></div>
+      <ul class="chg" id="chg-list"></ul>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Data freshness</h2><p class="muted">Date of the latest observation per source. <b>Due</b> = a new release is expected about now; <b>stale</b> = older than the source normally gets, so the update job may have failed.</p></div></div>
+      <ul class="fresh" id="fresh-list"></ul>
+      <p class="small muted" id="fresh-pending"></p>
+    </div>
+  </div>
   <div class="tiles" id="tiles"></div>
   <div class="card">
     <div class="card-head"><div><h2>LLM token cost vs B200 rental</h2><p class="muted">Silicon Data daily indices since 1 Dec 2025, when the LLM Token Expenditure Index (SDLLMTK) starts. Actual prices on two axes: left = USD per million tokens, right = USD per B200 GPU-hour (SDB200RT, neo-cloud). The two axes have different scales, so compare the shapes of the lines, not where they cross. More on the <a href="#gpu">GPU prices</a> tab.</p></div>
@@ -352,6 +365,53 @@
   </div>
 </section>
 
+<!-- ===================================================== RAMP AI INDEX: ADOPTION -->
+<section id="tab-rampadopt" class="tab" hidden>
+  <div class="tiles" id="ra-tiles"></div>
+  <div class="note"><h3>What this measures</h3>
+    <p>The Ramp AI Index is the share of US businesses on Ramp&rsquo;s corporate cards and bill pay that paid for an AI model, platform or tool in the month. It counts paid subscriptions and API bills. Free tools and AI that is bundled into other software are not counted. Ramp&rsquo;s customers lean towards tech-forward, venture-backed firms, so the level runs well above the Census BTOS share. Both are shown on the first chart; read the gap as a measure of how far ahead Ramp&rsquo;s customers are. These figures come from the same Ramp page as the <a href="#ramp">Business tokens</a> tab.</p></div>
+  <div class="card">
+    <div class="card-head"><div><h2>Share of US businesses paying for AI</h2><p class="muted">Monthly. Ramp AI Index vs Ramp&rsquo;s own estimate for all US businesses, which is built from Census BTOS. BTOS reworded its AI question in Nov 2025, so the estimate is shown as two separate lines (dashed = old wording).</p></div>
+      <button class="btn small tbl-toggle" data-for="c-ra-main">Table</button></div>
+    <div class="legend" id="lg-ra-main"></div>
+    <div class="chart" id="c-ra-main"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>By AI vendor</h2><p class="muted">Share of all businesses in the sample that paid this vendor in the month. A firm can pay more than one vendor, so the lines can add up to more than the overall share.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-ra-vendor">Table</button></div>
+      <div class="legend" id="lg-ra-vendor"></div>
+      <div class="chart" id="c-ra-vendor"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2 id="ra-split-title">By industry</h2><p class="muted">Share of businesses in each group paying for AI.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-ra-split">Table</button></div>
+      <div class="filters inner"><label>Split by <select id="ra-split"><option value="industry">Industry</option><option value="size">Business size</option></select></label></div>
+      <div class="legend" id="lg-ra-split"></div>
+      <div class="chart" id="c-ra-split"></div>
+    </div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>AI spend per employee per month</h2><p class="muted">USD per full-time employee among businesses paying for AI. Median = the typical firm. The p99-winsorised mean is the weighted average after capping the top 1%, so it moves with the heaviest spenders. Log scale.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-ra-pepm">Table</button></div>
+      <div class="legend" id="lg-ra-pepm"></div>
+      <div class="chart" id="c-ra-pepm"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2 id="ra-cut-title">Median AI spend per employee, latest month</h2><p class="muted">Bar = latest month. Tick = the same group a year earlier.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-ra-cut">Table</button></div>
+      <div class="filters inner"><label>Group <select id="ra-cut"><option value="naics_sector">Industry</option><option value="fte_segment">Business size</option><option value="company_financing_status">Financing</option><option value="business_office_state">State</option></select></label></div>
+      <div class="chart" id="c-ra-cut"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2 id="ra-state-title">Share of businesses paying for AI, by state</h2><p class="muted" id="ra-state-sub"></p></div>
+      <button class="btn small tbl-toggle" data-for="c-ra-state">Table</button></div>
+    <div class="chart" id="c-ra-state"></div>
+  </div>
+</section>
+
 <!-- ===================================================== LAB ARR -->
 <section id="tab-arr" class="tab" hidden>
   <div class="card review" id="arr-review" hidden>
@@ -605,6 +665,7 @@
         <li><a href="https://fred.stlouisfed.org/series/DFII10" target="_blank" rel="noopener noreferrer">10-year real yield (DFII10)</a>, <a href="https://fred.stlouisfed.org/series/THREEFYTP10" target="_blank" rel="noopener noreferrer">10-year term premium (THREEFYTP10, Kim&ndash;Wright)</a> and <a href="https://fred.stlouisfed.org/series/DGS10" target="_blank" rel="noopener noreferrer">10-year Treasury (DGS10)</a> via FRED (<code>credit-spreads/macro_daily.csv</code>)</li>
         <li><a href="https://fred.stlouisfed.org/series/BAMLH0A1HYBB" target="_blank" rel="noopener noreferrer">ICE BofA BB</a> and <a href="https://fred.stlouisfed.org/series/BAMLH0A3HYC" target="_blank" rel="noopener noreferrer">CCC &amp; lower</a> US High Yield OAS via FRED (<code>credit-spreads/*.csv</code>; pre-2023 history from Wayback copies in <code>credit-spreads/source/</code>)</li>
         <li><a href="https://ramp.com/data/ai-index?metric=token-volume&amp;detail=maker&amp;mode=volume" target="_blank" rel="noopener noreferrer">Ramp AI Index, tokenomics</a> (weekly token volume / spend by model, daily price by token type; <code>ramp-ai-index/*.csv</code>)</li>
+        <li><a href="https://ramp.com/data/ai-index" target="_blank" rel="noopener noreferrer">Ramp AI Index, adoption</a> (monthly share of businesses paying for AI by vendor / industry / size / state, Ramp&rsquo;s Census-based US estimate, AI spend per employee; <code>ramp-ai-index/ramp_adoption_monthly.csv</code>, <code>ramp_spend_per_employee.csv</code>)</li>
         <li>OpenAI &amp; Anthropic ARR: Research workbook <i>Anthropic &amp; OpenAI ARR trend</i>, sheets Anthropic / OpenAI / Total and <i>ARR Trend Analysis</i> (<code>ai-lab-arr/source/</code>) + approved news headlines (<code>ai-lab-arr/arr_additions.csv</code>)</li>
       </ul>
     </div>

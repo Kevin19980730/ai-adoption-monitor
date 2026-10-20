@@ -1,0 +1,843 @@
+month,dimension,key,median_pepm,p90_pepm,p99_pepm,top10_median_pepm,top1_median_pepm,p99w_mean_pepm
+2023-10,all,All,2.61,30.88,372.52,67.73,933.17,4.08
+2023-10,business_office_state,All other states,1.82,,,,,1.29
+2023-10,business_office_state,CA,3.48,,,,,10.34
+2023-10,business_office_state,DE,4.24,,,,,5
+2023-10,business_office_state,FL,2.22,,,,,1.87
+2023-10,business_office_state,NY,3.6,,,,,8.06
+2023-10,business_office_state,TX,2.4,,,,,2.16
+2023-10,company_financing_status,Other,2.38,,,,,2.16
+2023-10,company_financing_status,PE-backed,0.84,,,,,1.57
+2023-10,company_financing_status,VC-backed,3.5,,,,,12.11
+2023-10,fte_segment,Large,0.55,,,,,4.41
+2023-10,fte_segment,Medium,1.7,,,,,11.65
+2023-10,fte_segment,Small,5,,,,,24.14
+2023-10,naics_sector,Finance and insurance,3.27,,,,,3.88
+2023-10,naics_sector,"Professional, scientific, and technical services",2.77,,,,,10.36
+2023-10,naics_sector,Technology and media,4.47,,,,,8.31
+2023-11,all,All,2.73,35.14,475.98,78.3,883.55,4.93
+2023-11,business_office_state,All other states,1.9,,,,,1.46
+2023-11,business_office_state,CA,3.73,,,,,15.07
+2023-11,business_office_state,DE,4.25,,,,,4.94
+2023-11,business_office_state,FL,2.18,,,,,2.13
+2023-11,business_office_state,NY,3.53,,,,,7.77
+2023-11,business_office_state,TX,2.13,,,,,3.61
+2023-11,company_financing_status,Other,2.5,,,,,3
+2023-11,company_financing_status,PE-backed,0.78,,,,,1.57
+2023-11,company_financing_status,VC-backed,3.83,,,,,12.82
+2023-11,fte_segment,Large,0.55,,,,,6.22
+2023-11,fte_segment,Medium,1.94,,,,,13.26
+2023-11,fte_segment,Small,5.35,,,,,25.38
+2023-11,naics_sector,Finance and insurance,3.35,,,,,5.25
+2023-11,naics_sector,Manufacturing,1.33,,,,,0.57
+2023-11,naics_sector,"Professional, scientific, and technical services",3.11,,,,,10.2
+2023-11,naics_sector,Technology and media,4.8,,,,,11.5
+2023-12,all,All,2.67,32.34,496.83,74.23,1105.91,4.82
+2023-12,business_office_state,All other states,1.81,,,,,1.43
+2023-12,business_office_state,CA,3.57,,,,,13.59
+2023-12,business_office_state,DE,4,,,,,4.52
+2023-12,business_office_state,FL,2,,,,,2.66
+2023-12,business_office_state,NY,4.22,,,,,7.78
+2023-12,business_office_state,TX,2.35,,,,,2.59
+2023-12,company_financing_status,Other,2.4,,,,,2.9
+2023-12,company_financing_status,PE-backed,0.8,,,,,1.53
+2023-12,company_financing_status,VC-backed,4,,,,,12.81
+2023-12,fte_segment,Large,0.55,,,,,5.39
+2023-12,fte_segment,Medium,1.8,,,,,11.54
+2023-12,fte_segment,Small,5.19,,,,,27.76
+2023-12,naics_sector,Finance and insurance,3.33,,,,,5.23
+2023-12,naics_sector,Health care,1.23,,,,,0.92
+2023-12,naics_sector,Manufacturing,1.33,,,,,0.69
+2023-12,naics_sector,"Professional, scientific, and technical services",3.06,,,,,9.33
+2023-12,naics_sector,Technology and media,4.94,,,,,10.87
+2024-01,all,All,2.86,38.57,562.44,85.93,1000,4.81
+2024-01,business_office_state,All other states,1.86,,,,,1.93
+2024-01,business_office_state,CA,3.93,,,,,12.25
+2024-01,business_office_state,DE,5.72,,,,,4.85
+2024-01,business_office_state,FL,2.69,,,,,1.71
+2024-01,business_office_state,NY,4.14,,,,,6.49
+2024-01,business_office_state,TX,2.27,,,,,2.37
+2024-01,company_financing_status,Other,2.5,,,,,2.69
+2024-01,company_financing_status,PE-backed,0.88,,,,,2.63
+2024-01,company_financing_status,VC-backed,4.25,,,,,14.09
+2024-01,fte_segment,Large,0.6,,,,,5.82
+2024-01,fte_segment,Medium,2.17,,,,,13.54
+2024-01,fte_segment,Small,5.45,,,,,29.43
+2024-01,naics_sector,Finance and insurance,3.56,,,,,3.88
+2024-01,naics_sector,Health care,1.16,,,,,1.14
+2024-01,naics_sector,Manufacturing,1.43,,,,,0.77
+2024-01,naics_sector,"Professional, scientific, and technical services",3.35,,,,,6.64
+2024-01,naics_sector,Technology and media,5.19,,,,,15.05
+2024-02,all,All,3.04,38.76,498.09,83.06,982.25,4.89
+2024-02,business_office_state,All other states,1.82,,,,,1.93
+2024-02,business_office_state,CA,4,,,,,13.28
+2024-02,business_office_state,DE,5.49,,,,,5.28
+2024-02,business_office_state,FL,2.86,,,,,2.18
+2024-02,business_office_state,MA,2.86,,,,,4.6
+2024-02,business_office_state,NY,4.36,,,,,6.17
+2024-02,business_office_state,TX,2.5,,,,,2.06
+2024-02,company_financing_status,Other,2.65,,,,,2.84
+2024-02,company_financing_status,PE-backed,1,,,,,2.59
+2024-02,company_financing_status,VC-backed,4.59,,,,,13.91
+2024-02,fte_segment,Large,0.68,,,,,5.86
+2024-02,fte_segment,Medium,2.31,,,,,13.58
+2024-02,fte_segment,Small,5.92,,,,,28.99
+2024-02,naics_sector,Finance and insurance,3.7,,,,,4.31
+2024-02,naics_sector,Health care,1.15,,,,,0.76
+2024-02,naics_sector,Manufacturing,1.43,,,,,0.85
+2024-02,naics_sector,"Professional, scientific, and technical services",3.81,,,,,7.18
+2024-02,naics_sector,Technology and media,5.71,,,,,13.83
+2024-03,all,All,3.14,44.94,579.73,107.49,1225.47,5.53
+2024-03,business_office_state,All other states,1.98,,,,,1.95
+2024-03,business_office_state,CA,4.31,,,,,16.41
+2024-03,business_office_state,DE,6.18,,,,,6.56
+2024-03,business_office_state,FL,2.8,,,,,2.81
+2024-03,business_office_state,MA,2.61,,,,,3.28
+2024-03,business_office_state,NY,5.21,,,,,6.46
+2024-03,business_office_state,TX,2.66,,,,,3.39
+2024-03,company_financing_status,Other,2.56,,,,,3.41
+2024-03,company_financing_status,PE-backed,1.01,,,,,2.3
+2024-03,company_financing_status,VC-backed,5.63,,,,,15.2
+2024-03,fte_segment,Large,0.75,,,,,6.73
+2024-03,fte_segment,Medium,2.26,,,,,13.98
+2024-03,fte_segment,Small,6.66,,,,,36.06
+2024-03,naics_sector,Finance and insurance,3.65,,,,,3.39
+2024-03,naics_sector,Health care,1.25,,,,,1.11
+2024-03,naics_sector,Manufacturing,1.43,,,,,0.97
+2024-03,naics_sector,"Professional, scientific, and technical services",3.89,,,,,9.78
+2024-03,naics_sector,Technology and media,6.67,,,,,14.85
+2024-04,all,All,3.11,42.8,643.09,93.28,1572.79,6.22
+2024-04,business_office_state,All other states,1.82,,,,,2.07
+2024-04,business_office_state,CA,4.59,,,,,20.11
+2024-04,business_office_state,DE,6,,,,,5.01
+2024-04,business_office_state,FL,2.67,,,,,3.15
+2024-04,business_office_state,MA,2.52,,,,,3.1
+2024-04,business_office_state,NY,5.25,,,,,9.56
+2024-04,business_office_state,TX,2.57,,,,,4.88
+2024-04,business_office_state,WA,3.63,,,,,4.07
+2024-04,company_financing_status,Other,2.5,,,,,3.21
+2024-04,company_financing_status,PE-backed,1.03,,,,,2.69
+2024-04,company_financing_status,VC-backed,5.8,,,,,20.88
+2024-04,fte_segment,Large,0.81,,,,,7.72
+2024-04,fte_segment,Medium,2.31,,,,,14.11
+2024-04,fte_segment,Small,6.53,,,,,36.7
+2024-04,naics_sector,Finance and insurance,4,,,,,4.35
+2024-04,naics_sector,Health care,1.3,,,,,0.79
+2024-04,naics_sector,Manufacturing,1.41,,,,,1.01
+2024-04,naics_sector,"Professional, scientific, and technical services",4,,,,,11.93
+2024-04,naics_sector,Technology and media,6.67,,,,,21.22
+2024-05,all,All,3.13,46.01,622.33,104.58,1406.16,6.32
+2024-05,business_office_state,All other states,1.88,,,,,2.44
+2024-05,business_office_state,CA,4.5,,,,,21.54
+2024-05,business_office_state,CO,2.03,,,,,6.43
+2024-05,business_office_state,DE,5,,,,,4.35
+2024-05,business_office_state,FL,2.5,,,,,2.7
+2024-05,business_office_state,IL,1.96,,,,,4.49
+2024-05,business_office_state,MA,2.86,,,,,5.24
+2024-05,business_office_state,NY,5.43,,,,,8.82
+2024-05,business_office_state,TX,2.73,,,,,3.91
+2024-05,business_office_state,WA,3.68,,,,,5.2
+2024-05,company_financing_status,Other,2.5,,,,,3.43
+2024-05,company_financing_status,PE-backed,1,,,,,2.43
+2024-05,company_financing_status,VC-backed,6.02,,,,,22.41
+2024-05,fte_segment,Large,0.74,,,,,8.18
+2024-05,fte_segment,Medium,2.44,,,,,17.21
+2024-05,fte_segment,Small,6.5,,,,,34.8
+2024-05,naics_sector,Finance and insurance,4,,,,,5.28
+2024-05,naics_sector,Health care,1.21,,,,,1.19
+2024-05,naics_sector,Manufacturing,1.64,,,,,1.28
+2024-05,naics_sector,"Professional, scientific, and technical services",3.92,,,,,12.21
+2024-05,naics_sector,Technology and media,6.69,,,,,19.02
+2024-06,all,All,3,44.46,657.76,99.45,1400.7,5.83
+2024-06,business_office_state,All other states,1.87,,,,,1.83
+2024-06,business_office_state,CA,4.54,,,,,21.85
+2024-06,business_office_state,CO,1.71,,,,,6.88
+2024-06,business_office_state,DE,5.06,,,,,4.87
+2024-06,business_office_state,FL,2.22,,,,,2.96
+2024-06,business_office_state,IL,1.75,,,,,3.74
+2024-06,business_office_state,MA,2.86,,,,,4.41
+2024-06,business_office_state,NY,5,,,,,6.39
+2024-06,business_office_state,TX,2.48,,,,,3.56
+2024-06,business_office_state,WA,3.61,,,,,4.09
+2024-06,company_financing_status,Other,2.5,,,,,2.91
+2024-06,company_financing_status,PE-backed,0.92,,,,,1.63
+2024-06,company_financing_status,VC-backed,5.89,,,,,24.85
+2024-06,fte_segment,Large,0.75,,,,,7.99
+2024-06,fte_segment,Medium,2.22,,,,,14.32
+2024-06,fte_segment,Small,6.33,,,,,35.48
+2024-06,naics_sector,Finance and insurance,3.64,,,,,3.23
+2024-06,naics_sector,Health care,1.16,,,,,1.04
+2024-06,naics_sector,Manufacturing,1.42,,,,,1.23
+2024-06,naics_sector,"Professional, scientific, and technical services",3.95,,,,,12.77
+2024-06,naics_sector,Technology and media,6.67,,,,,21.57
+2024-07,all,All,3.06,44.81,784.59,104.29,1767.04,7.03
+2024-07,business_office_state,All other states,1.86,,,,,2.67
+2024-07,business_office_state,CA,4.69,,,,,23.85
+2024-07,business_office_state,CO,2,,,,,6.42
+2024-07,business_office_state,DE,5.71,,,,,4.38
+2024-07,business_office_state,FL,2.5,,,,,2.61
+2024-07,business_office_state,IL,1.99,,,,,4.16
+2024-07,business_office_state,MA,2.22,,,,,4.6
+2024-07,business_office_state,NY,4.62,,,,,11.56
+2024-07,business_office_state,TX,2.66,,,,,4.57
+2024-07,business_office_state,WA,3.62,,,,,5.14
+2024-07,company_financing_status,Other,2.51,,,,,3.58
+2024-07,company_financing_status,PE-backed,0.97,,,,,2.66
+2024-07,company_financing_status,VC-backed,6,,,,,25.85
+2024-07,fte_segment,Large,0.76,,,,,9.79
+2024-07,fte_segment,Medium,2.31,,,,,15.26
+2024-07,fte_segment,Small,6.13,,,,,38.04
+2024-07,naics_sector,Finance and insurance,3.63,,,,,4.38
+2024-07,naics_sector,Health care,1.32,,,,,1.71
+2024-07,naics_sector,Manufacturing,1.34,,,,,0.93
+2024-07,naics_sector,"Professional, scientific, and technical services",4,,,,,12.87
+2024-07,naics_sector,Technology and media,6.87,,,,,23.14
+2024-08,all,All,3.04,45.07,782.87,103.13,1692.13,7.31
+2024-08,business_office_state,All other states,1.82,,,,,2.39
+2024-08,business_office_state,CA,4.55,,,,,23.59
+2024-08,business_office_state,CO,1.88,,,,,5.83
+2024-08,business_office_state,DE,6.32,,,,,6.93
+2024-08,business_office_state,FL,2.5,,,,,2.38
+2024-08,business_office_state,IL,1.94,,,,,2.78
+2024-08,business_office_state,MA,2.5,,,,,3.6
+2024-08,business_office_state,NY,5.15,,,,,13.38
+2024-08,business_office_state,TX,2.66,,,,,3.76
+2024-08,business_office_state,WA,3.25,,,,,3.99
+2024-08,company_financing_status,Other,2.5,,,,,3.52
+2024-08,company_financing_status,PE-backed,0.88,,,,,2.34
+2024-08,company_financing_status,VC-backed,6.37,,,,,32.04
+2024-08,fte_segment,Large,0.78,,,,,10.43
+2024-08,fte_segment,Medium,2.28,,,,,17.68
+2024-08,fte_segment,Small,6.43,,,,,36.31
+2024-08,naics_sector,Finance and insurance,3.65,,,,,5.18
+2024-08,naics_sector,Health care,1.17,,,,,1.63
+2024-08,naics_sector,Manufacturing,1.43,,,,,1.04
+2024-08,naics_sector,"Professional, scientific, and technical services",4.09,,,,,13.11
+2024-08,naics_sector,Technology and media,7.09,,,,,29.01
+2024-09,all,All,3.04,44.57,714.45,103.33,1605.19,6.12
+2024-09,business_office_state,All other states,1.82,,,,,1.74
+2024-09,business_office_state,CA,4.87,,,,,22.46
+2024-09,business_office_state,CO,2,,,,,5.91
+2024-09,business_office_state,DE,5.01,,,,,4.77
+2024-09,business_office_state,FL,2.5,,,,,2.72
+2024-09,business_office_state,IL,1.98,,,,,2.92
+2024-09,business_office_state,MA,3.18,,,,,3.69
+2024-09,business_office_state,NY,5.2,,,,,10.41
+2024-09,business_office_state,TX,2.5,,,,,3.11
+2024-09,business_office_state,VA,2.54,,,,,3.01
+2024-09,business_office_state,WA,3.25,,,,,6.38
+2024-09,company_financing_status,Other,2.5,,,,,3
+2024-09,company_financing_status,PE-backed,0.96,,,,,1.62
+2024-09,company_financing_status,VC-backed,6.39,,,,,30.85
+2024-09,fte_segment,Large,0.71,,,,,7.72
+2024-09,fte_segment,Medium,2.33,,,,,15.69
+2024-09,fte_segment,Small,6.24,,,,,36.11
+2024-09,naics_sector,Finance and insurance,4,,,,,3.68
+2024-09,naics_sector,Health care,1.2,,,,,1.12
+2024-09,naics_sector,Manufacturing,1.46,,,,,1.08
+2024-09,naics_sector,"Professional, scientific, and technical services",4.25,,,,,15.44
+2024-09,naics_sector,Technology and media,7.09,,,,,24.92
+2024-10,all,All,3.17,46.13,707.5,108.34,1471.82,7.03
+2024-10,business_office_state,All other states,1.9,,,,,1.85
+2024-10,business_office_state,CA,5.01,,,,,21.17
+2024-10,business_office_state,CO,2.2,,,,,9.76
+2024-10,business_office_state,DE,5,,,,,5.87
+2024-10,business_office_state,FL,2.5,,,,,2.71
+2024-10,business_office_state,IL,1.75,,,,,3.23
+2024-10,business_office_state,MA,3.04,,,,,5.58
+2024-10,business_office_state,NY,5.57,,,,,13.32
+2024-10,business_office_state,TX,2.5,,,,,2.9
+2024-10,business_office_state,VA,2.72,,,,,4.72
+2024-10,business_office_state,WA,3.61,,,,,15.71
+2024-10,company_financing_status,Other,2.5,,,,,3.51
+2024-10,company_financing_status,PE-backed,1.09,,,,,2.11
+2024-10,company_financing_status,VC-backed,6.67,,,,,30.69
+2024-10,fte_segment,Large,0.79,,,,,10.03
+2024-10,fte_segment,Medium,2.39,,,,,16.79
+2024-10,fte_segment,Small,6.36,,,,,37.7
+2024-10,naics_sector,Finance and insurance,4.36,,,,,5.09
+2024-10,naics_sector,Health care,1.26,,,,,1.85
+2024-10,naics_sector,Manufacturing,1.76,,,,,1.29
+2024-10,naics_sector,"Professional, scientific, and technical services",4.56,,,,,15.33
+2024-10,naics_sector,Technology and media,7.77,,,,,26.39
+2024-11,all,All,3.32,46.16,799.06,105.66,1673.21,7.45
+2024-11,business_office_state,All other states,2,,,,,1.82
+2024-11,business_office_state,CA,5.15,,,,,24.48
+2024-11,business_office_state,CO,2.86,,,,,8.28
+2024-11,business_office_state,DE,5.36,,,,,4.51
+2024-11,business_office_state,FL,2.45,,,,,3.19
+2024-11,business_office_state,IL,2,,,,,5.16
+2024-11,business_office_state,MA,3.16,,,,,5.88
+2024-11,business_office_state,NY,5.57,,,,,12.21
+2024-11,business_office_state,TX,2.66,,,,,3.07
+2024-11,business_office_state,VA,2.54,,,,,6.01
+2024-11,business_office_state,WA,3.33,,,,,12.57
+2024-11,company_financing_status,Other,2.56,,,,,3.74
+2024-11,company_financing_status,PE-backed,1.08,,,,,2.05
+2024-11,company_financing_status,VC-backed,7.05,,,,,29.06
+2024-11,fte_segment,Large,0.74,,,,,11.07
+2024-11,fte_segment,Medium,2.52,,,,,17.11
+2024-11,fte_segment,Small,6.53,,,,,38.55
+2024-11,naics_sector,Finance and insurance,4.36,,,,,5.14
+2024-11,naics_sector,Health care,1.25,,,,,1.36
+2024-11,naics_sector,Manufacturing,1.68,,,,,0.99
+2024-11,naics_sector,"Professional, scientific, and technical services",4.55,,,,,15.81
+2024-11,naics_sector,Retail,2.07,,,,,2.38
+2024-11,naics_sector,Technology and media,8.29,,,,,27.32
+2024-12,all,All,3.26,52.23,817.4,117.98,1871.76,7.47
+2024-12,business_office_state,All other states,1.98,,,,,2.04
+2024-12,business_office_state,CA,5.33,,,,,26.56
+2024-12,business_office_state,CO,2.85,,,,,7.78
+2024-12,business_office_state,DE,6.38,,,,,6.81
+2024-12,business_office_state,FL,2.28,,,,,2.7
+2024-12,business_office_state,IL,2.15,,,,,2.87
+2024-12,business_office_state,MA,3.06,,,,,8.6
+2024-12,business_office_state,NY,5.61,,,,,11.25
+2024-12,business_office_state,TX,2.62,,,,,2.52
+2024-12,business_office_state,VA,2.5,,,,,3.66
+2024-12,business_office_state,WA,3.89,,,,,15.04
+2024-12,company_financing_status,Other,2.5,,,,,3.97
+2024-12,company_financing_status,PE-backed,1.04,,,,,1.89
+2024-12,company_financing_status,VC-backed,7.86,,,,,34.19
+2024-12,fte_segment,Large,0.78,,,,,11.2
+2024-12,fte_segment,Medium,2.41,,,,,19.97
+2024-12,fte_segment,Small,6.67,,,,,38.93
+2024-12,naics_sector,Finance and insurance,4.36,,,,,4.97
+2024-12,naics_sector,Health care,1.16,,,,,2.01
+2024-12,naics_sector,Manufacturing,1.69,,,,,1.52
+2024-12,naics_sector,"Professional, scientific, and technical services",4.67,,,,,14.46
+2024-12,naics_sector,Retail,1.82,,,,,2.73
+2024-12,naics_sector,Technology and media,8.65,,,,,39.65
+2025-01,all,All,3.52,60,731.49,142.86,2069.15,7.85
+2025-01,business_office_state,All other states,2,,,,,2.67
+2025-01,business_office_state,CA,5.86,,,,,26.19
+2025-01,business_office_state,CO,2.5,,,,,7.68
+2025-01,business_office_state,DE,8.81,,,,,10.77
+2025-01,business_office_state,FL,2.67,,,,,2.84
+2025-01,business_office_state,IL,1.97,,,,,6.38
+2025-01,business_office_state,MA,3.51,,,,,8.58
+2025-01,business_office_state,NY,6.66,,,,,10.46
+2025-01,business_office_state,TX,2.68,,,,,4.33
+2025-01,business_office_state,VA,3.09,,,,,3.8
+2025-01,business_office_state,WA,4.67,,,,,9.5
+2025-01,company_financing_status,Other,2.67,,,,,4.21
+2025-01,company_financing_status,PE-backed,1.28,,,,,2.38
+2025-01,company_financing_status,VC-backed,8.92,,,,,33.94
+2025-01,fte_segment,Large,0.82,,,,,12.27
+2025-01,fte_segment,Medium,2.57,,,,,20.29
+2025-01,fte_segment,Small,7.82,,,,,42.23
+2025-01,naics_sector,Finance and insurance,5.26,,,,,4.97
+2025-01,naics_sector,Health care,1.32,,,,,2.28
+2025-01,naics_sector,Manufacturing,1.86,,,,,1.4
+2025-01,naics_sector,"Professional, scientific, and technical services",5.33,,,,,17.15
+2025-01,naics_sector,Retail,2.05,,,,,2.32
+2025-01,naics_sector,Technology and media,10.64,,,,,35.19
+2025-02,all,All,3.87,64.15,850.8,133.29,2322.67,8.2
+2025-02,business_office_state,All other states,2.13,,,,,2.47
+2025-02,business_office_state,CA,7.13,,,,,28.97
+2025-02,business_office_state,CO,2.78,,,,,7.56
+2025-02,business_office_state,DE,9.19,,,,,7.78
+2025-02,business_office_state,FL,2.75,,,,,3.09
+2025-02,business_office_state,IL,2.62,,,,,4.43
+2025-02,business_office_state,MA,4,,,,,6.92
+2025-02,business_office_state,NY,8.06,,,,,11.41
+2025-02,business_office_state,TX,2.93,,,,,4.89
+2025-02,business_office_state,VA,3.04,,,,,4.48
+2025-02,business_office_state,WA,4.45,,,,,21.59
+2025-02,company_financing_status,Other,2.86,,,,,4.18
+2025-02,company_financing_status,PE-backed,1.24,,,,,1.98
+2025-02,company_financing_status,VC-backed,9.65,,,,,39.68
+2025-02,fte_segment,Large,0.87,,,,,11.6
+2025-02,fte_segment,Medium,2.9,,,,,20.83
+2025-02,fte_segment,Small,9.03,,,,,45.42
+2025-02,naics_sector,Construction,1.13,,,,,1.16
+2025-02,naics_sector,Finance and insurance,6.28,,,,,5.87
+2025-02,naics_sector,Health care,1.34,,,,,1.84
+2025-02,naics_sector,Manufacturing,2.23,,,,,1.47
+2025-02,naics_sector,"Professional, scientific, and technical services",6.08,,,,,19.44
+2025-02,naics_sector,Retail,1.98,,,,,1.84
+2025-02,naics_sector,Technology and media,11.36,,,,,43.33
+2025-03,all,All,4,66.1,858.76,143.98,2437.46,9.31
+2025-03,business_office_state,All other states,2.28,,,,,2.76
+2025-03,business_office_state,CA,7.59,,,,,37.5
+2025-03,business_office_state,CO,2.85,,,,,6.89
+2025-03,business_office_state,DE,9.75,,,,,9.87
+2025-03,business_office_state,FL,3,,,,,4.39
+2025-03,business_office_state,IL,2.44,,,,,4.47
+2025-03,business_office_state,MA,4.27,,,,,7.28
+2025-03,business_office_state,NY,8.75,,,,,14.09
+2025-03,business_office_state,TX,2.92,,,,,4.14
+2025-03,business_office_state,VA,2.86,,,,,7.47
+2025-03,business_office_state,WA,4.51,,,,,13.88
+2025-03,company_financing_status,Other,2.94,,,,,4.68
+2025-03,company_financing_status,PE-backed,1.34,,,,,2.68
+2025-03,company_financing_status,VC-backed,10.9,,,,,46.87
+2025-03,fte_segment,Large,1,,,,,15.22
+2025-03,fte_segment,Medium,3.04,,,,,22.45
+2025-03,fte_segment,Small,9.33,,,,,40.88
+2025-03,naics_sector,Construction,1.21,,,,,1.62
+2025-03,naics_sector,Finance and insurance,7.29,,,,,6.9
+2025-03,naics_sector,Health care,1.45,,,,,2.89
+2025-03,naics_sector,Manufacturing,2.35,,,,,1.67
+2025-03,naics_sector,"Professional, scientific, and technical services",6.69,,,,,24.86
+2025-03,naics_sector,Retail,2.18,,,,,2.21
+2025-03,naics_sector,Technology and media,12.18,,,,,51.81
+2025-04,all,All,4,66.05,961.32,149.52,2565.99,9.29
+2025-04,business_office_state,All other states,2.22,,,,,2.66
+2025-04,business_office_state,CA,7.92,,,,,39.59
+2025-04,business_office_state,CO,2.67,,,,,9.63
+2025-04,business_office_state,DE,10.87,,,,,13.04
+2025-04,business_office_state,FL,2.86,,,,,3.15
+2025-04,business_office_state,IL,3.11,,,,,4.43
+2025-04,business_office_state,MA,4.11,,,,,14.1
+2025-04,business_office_state,NY,8.91,,,,,16.24
+2025-04,business_office_state,TX,3.02,,,,,3.7
+2025-04,business_office_state,VA,2.86,,,,,2.42
+2025-04,business_office_state,WA,4.49,,,,,18.07
+2025-04,company_financing_status,Other,2.86,,,,,4.47
+2025-04,company_financing_status,PE-backed,1.55,,,,,2.5
+2025-04,company_financing_status,VC-backed,11.78,,,,,48.56
+2025-04,fte_segment,Large,0.91,,,,,15.66
+2025-04,fte_segment,Medium,3.04,,,,,24.33
+2025-04,fte_segment,Small,8.8,,,,,45.15
+2025-04,naics_sector,Construction,1.25,,,,,1.97
+2025-04,naics_sector,Finance and insurance,7.4,,,,,5.78
+2025-04,naics_sector,Health care,1.43,,,,,1.52
+2025-04,naics_sector,Manufacturing,2.35,,,,,1.84
+2025-04,naics_sector,"Professional, scientific, and technical services",7.41,,,,,28.67
+2025-04,naics_sector,Retail,2,,,,,1.37
+2025-04,naics_sector,Technology and media,12.44,,,,,52.09
+2025-05,all,All,4.15,73.09,1059.17,160.51,2447.36,11.14
+2025-05,business_office_state,All other states,2.36,,,,,3.34
+2025-05,business_office_state,CA,8.64,,,,,44.14
+2025-05,business_office_state,CO,2.9,,,,,8.22
+2025-05,business_office_state,DE,11.2,,,,,16.68
+2025-05,business_office_state,FL,3.23,,,,,2.69
+2025-05,business_office_state,IL,2.63,,,,,4.98
+2025-05,business_office_state,MA,4.23,,,,,10.17
+2025-05,business_office_state,NY,9.53,,,,,21.91
+2025-05,business_office_state,TX,3.55,,,,,5.22
+2025-05,business_office_state,VA,3.22,,,,,5.89
+2025-05,business_office_state,WA,5.16,,,,,27.46
+2025-05,company_financing_status,Other,3,,,,,5.08
+2025-05,company_financing_status,PE-backed,1.66,,,,,2.99
+2025-05,company_financing_status,VC-backed,13.37,,,,,57.35
+2025-05,fte_segment,Large,1.08,,,,,17.63
+2025-05,fte_segment,Medium,3.18,,,,,25.53
+2025-05,fte_segment,Small,9.91,,,,,48
+2025-05,naics_sector,Construction,1.33,,,,,1.77
+2025-05,naics_sector,Finance and insurance,8.75,,,,,6.72
+2025-05,naics_sector,Health care,1.55,,,,,2.14
+2025-05,naics_sector,Manufacturing,2.37,,,,,2.39
+2025-05,naics_sector,"Professional, scientific, and technical services",7.8,,,,,31.47
+2025-05,naics_sector,Retail,2.67,,,,,1.77
+2025-05,naics_sector,Technology and media,14.82,,,,,71.13
+2025-06,all,All,4.29,77,945.62,165.61,2194.45,9.9
+2025-06,business_office_state,All other states,2.41,,,,,3.59
+2025-06,business_office_state,CA,8.89,,,,,29.33
+2025-06,business_office_state,CO,2.86,,,,,8.41
+2025-06,business_office_state,DE,13.52,,,,,25.8
+2025-06,business_office_state,FL,3.32,,,,,3.56
+2025-06,business_office_state,IL,2.49,,,,,8.04
+2025-06,business_office_state,MA,4.31,,,,,4.55
+2025-06,business_office_state,NY,9.99,,,,,17.81
+2025-06,business_office_state,TX,3.35,,,,,5.63
+2025-06,business_office_state,VA,3.33,,,,,5.37
+2025-06,business_office_state,WA,5.73,,,,,23.64
+2025-06,company_financing_status,Other,3.04,,,,,5.1
+2025-06,company_financing_status,PE-backed,1.87,,,,,3.51
+2025-06,company_financing_status,VC-backed,15.54,,,,,49.1
+2025-06,fte_segment,Large,1.2,,,,,17
+2025-06,fte_segment,Medium,3.25,,,,,28.26
+2025-06,fte_segment,Small,9.89,,,,,47.2
+2025-06,naics_sector,Construction,1.25,,,,,1.91
+2025-06,naics_sector,Finance and insurance,9.92,,,,,7.51
+2025-06,naics_sector,Health care,1.64,,,,,2.22
+2025-06,naics_sector,Manufacturing,2.59,,,,,3.12
+2025-06,naics_sector,"Professional, scientific, and technical services",8.56,,,,,21.35
+2025-06,naics_sector,Retail,2.86,,,,,2.45
+2025-06,naics_sector,Technology and media,17,,,,,48.84
+2025-07,all,All,4.6,85.05,1016.73,192.41,2467.38,11.51
+2025-07,business_office_state,All other states,2.46,,,,,3.69
+2025-07,business_office_state,CA,10,,,,,43.98
+2025-07,business_office_state,CO,3.17,,,,,9.25
+2025-07,business_office_state,DE,17.69,,,,,20.94
+2025-07,business_office_state,FL,3.33,,,,,2.91
+2025-07,business_office_state,IL,2.67,,,,,6.74
+2025-07,business_office_state,MA,4.37,,,,,7.34
+2025-07,business_office_state,NY,10.76,,,,,24.91
+2025-07,business_office_state,TX,3.86,,,,,6.84
+2025-07,business_office_state,VA,3.33,,,,,7.57
+2025-07,business_office_state,WA,6.21,,,,,20.04
+2025-07,company_financing_status,Other,3.2,,,,,5.72
+2025-07,company_financing_status,PE-backed,1.95,,,,,3.1
+2025-07,company_financing_status,VC-backed,18,,,,,61.09
+2025-07,fte_segment,Large,1.19,,,,,19.58
+2025-07,fte_segment,Medium,3.85,,,,,33.85
+2025-07,fte_segment,Small,10,,,,,49.3
+2025-07,naics_sector,Construction,1.33,,,,,1.96
+2025-07,naics_sector,Finance and insurance,11.13,,,,,9.93
+2025-07,naics_sector,Health care,1.54,,,,,3.31
+2025-07,naics_sector,Manufacturing,2.69,,,,,2.54
+2025-07,naics_sector,"Professional, scientific, and technical services",9.63,,,,,23.34
+2025-07,naics_sector,Retail,2.84,,,,,2.13
+2025-07,naics_sector,Technology and media,19.63,,,,,64.59
+2025-08,all,All,5,93.76,1090.08,200,2642.2,8
+2025-08,business_office_state,All other states,2.6,,,,,1.68
+2025-08,business_office_state,CA,11.33,,,,,51.36
+2025-08,business_office_state,CO,3.7,,,,,11.18
+2025-08,business_office_state,DE,24.12,,,,,23.77
+2025-08,business_office_state,FL,4,,,,,4.18
+2025-08,business_office_state,IL,2.5,,,,,6.65
+2025-08,business_office_state,MA,4.67,,,,,5.37
+2025-08,business_office_state,NY,12.42,,,,,24.07
+2025-08,business_office_state,TX,3.75,,,,,4.01
+2025-08,business_office_state,VA,3.17,,,,,4.69
+2025-08,business_office_state,WA,7.41,,,,,24.54
+2025-08,company_financing_status,Other,3.33,,,,,3.37
+2025-08,company_financing_status,PE-backed,2.05,,,,,3.68
+2025-08,company_financing_status,VC-backed,21.67,,,,,70.65
+2025-08,fte_segment,Large,1.34,,,,,20.22
+2025-08,fte_segment,Medium,4.21,,,,,35.3
+2025-08,fte_segment,Small,10.22,,,,,53.67
+2025-08,naics_sector,Construction,1.39,,,,,0.72
+2025-08,naics_sector,Finance and insurance,12,,,,,9.24
+2025-08,naics_sector,Health care,1.65,,,,,2.81
+2025-08,naics_sector,Manufacturing,2.86,,,,,2.73
+2025-08,naics_sector,"Professional, scientific, and technical services",10.34,,,,,30.26
+2025-08,naics_sector,Retail,3.03,,,,,2.24
+2025-08,naics_sector,Technology and media,23.1,,,,,64.59
+2025-09,all,All,5,99.14,1250.28,209.91,2515.49,13.25
+2025-09,business_office_state,All other states,2.72,,,,,3.97
+2025-09,business_office_state,CA,10.91,,,,,59.3
+2025-09,business_office_state,CO,3.93,,,,,9.33
+2025-09,business_office_state,DE,25.01,,,,,26.84
+2025-09,business_office_state,FL,3.87,,,,,4
+2025-09,business_office_state,IL,2.88,,,,,5.9
+2025-09,business_office_state,MA,5.8,,,,,6.21
+2025-09,business_office_state,NY,12.89,,,,,24
+2025-09,business_office_state,TX,4,,,,,7.73
+2025-09,business_office_state,VA,2.62,,,,,5.15
+2025-09,business_office_state,WA,6.67,,,,,28.73
+2025-09,company_financing_status,Other,3.44,,,,,5.95
+2025-09,company_financing_status,PE-backed,1.97,,,,,4.52
+2025-09,company_financing_status,VC-backed,21.68,,,,,85.17
+2025-09,fte_segment,Large,1.45,,,,,22.15
+2025-09,fte_segment,Medium,4.12,,,,,37.32
+2025-09,fte_segment,Small,10.57,,,,,57.71
+2025-09,naics_sector,Construction,1.42,,,,,1.36
+2025-09,naics_sector,Finance and insurance,13.14,,,,,10.73
+2025-09,naics_sector,Health care,1.67,,,,,2.57
+2025-09,naics_sector,Manufacturing,2.93,,,,,2.96
+2025-09,naics_sector,"Professional, scientific, and technical services",11.06,,,,,33.82
+2025-09,naics_sector,Retail,3.33,,,,,3.52
+2025-09,naics_sector,Technology and media,23.82,,,,,71.86
+2025-10,all,All,5.45,110.17,1321.19,238.42,3334.32,12.65
+2025-10,business_office_state,All other states,2.86,,,,,3.05
+2025-10,business_office_state,CA,12.91,,,,,69.67
+2025-10,business_office_state,CO,4,,,,,15.7
+2025-10,business_office_state,DE,23.67,,,,,24
+2025-10,business_office_state,FL,4.28,,,,,6.45
+2025-10,business_office_state,IL,3.27,,,,,5.56
+2025-10,business_office_state,MA,5.98,,,,,6.25
+2025-10,business_office_state,NY,13.93,,,,,29.53
+2025-10,business_office_state,TX,4.13,,,,,5.66
+2025-10,business_office_state,VA,3.18,,,,,6.3
+2025-10,business_office_state,WA,7.98,,,,,42.11
+2025-10,company_financing_status,Other,3.64,,,,,5.26
+2025-10,company_financing_status,PE-backed,2.08,,,,,4.9
+2025-10,company_financing_status,VC-backed,24.95,,,,,96.48
+2025-10,fte_segment,Large,1.49,,,,,26.31
+2025-10,fte_segment,Medium,4.56,,,,,41.3
+2025-10,fte_segment,Small,11.1,,,,,64.36
+2025-10,naics_sector,Construction,1.43,,,,,0.68
+2025-10,naics_sector,Finance and insurance,14.46,,,,,10.52
+2025-10,naics_sector,Health care,1.72,,,,,2.32
+2025-10,naics_sector,Manufacturing,3.08,,,,,3.15
+2025-10,naics_sector,"Professional, scientific, and technical services",12.21,,,,,37.08
+2025-10,naics_sector,Retail,3.13,,,,,2.67
+2025-10,naics_sector,Technology and media,26.65,,,,,112.71
+2025-11,all,All,5.37,107.9,1225.1,229.65,3063.05,11.98
+2025-11,business_office_state,All other states,2.86,,,,,3.34
+2025-11,business_office_state,CA,12.39,,,,,60.9
+2025-11,business_office_state,CO,4.12,,,,,13.47
+2025-11,business_office_state,DE,21.32,,,,,23.6
+2025-11,business_office_state,FL,4.04,,,,,5.16
+2025-11,business_office_state,IL,3.23,,,,,4.78
+2025-11,business_office_state,MA,6,,,,,5.59
+2025-11,business_office_state,NY,13.15,,,,,23.39
+2025-11,business_office_state,TX,4.17,,,,,5.77
+2025-11,business_office_state,VA,3,,,,,4.47
+2025-11,business_office_state,WA,8.43,,,,,38.55
+2025-11,company_financing_status,Other,3.64,,,,,5.4
+2025-11,company_financing_status,PE-backed,2.03,,,,,4.17
+2025-11,company_financing_status,VC-backed,23.89,,,,,80.61
+2025-11,fte_segment,Large,1.37,,,,,22.24
+2025-11,fte_segment,Medium,4.3,,,,,38.14
+2025-11,fte_segment,Small,11.09,,,,,61.4
+2025-11,naics_sector,Construction,1.54,,,,,0.71
+2025-11,naics_sector,Finance and insurance,13.65,,,,,10.48
+2025-11,naics_sector,Health care,1.67,,,,,1.97
+2025-11,naics_sector,Manufacturing,3.33,,,,,3.2
+2025-11,naics_sector,"Professional, scientific, and technical services",12,,,,,32.76
+2025-11,naics_sector,Retail,3.21,,,,,3.18
+2025-11,naics_sector,Technology and media,25.4,,,,,76.87
+2025-12,all,All,5.56,119.49,1691.5,260.34,4288.43,15.76
+2025-12,business_office_state,All other states,2.89,,,,,3.99
+2025-12,business_office_state,CA,13.41,,,,,89.53
+2025-12,business_office_state,CO,4.14,,,,,13.91
+2025-12,business_office_state,DE,21.23,,,,,26.61
+2025-12,business_office_state,FL,4.25,,,,,5.38
+2025-12,business_office_state,IL,3.15,,,,,6.64
+2025-12,business_office_state,MA,6.25,,,,,9.06
+2025-12,business_office_state,NY,14.29,,,,,33.56
+2025-12,business_office_state,TX,4.31,,,,,7.41
+2025-12,business_office_state,VA,3.33,,,,,4.95
+2025-12,business_office_state,WA,8.62,,,,,39.25
+2025-12,company_financing_status,Other,3.75,,,,,6.33
+2025-12,company_financing_status,PE-backed,2.16,,,,,4.7
+2025-12,company_financing_status,VC-backed,28.1,,,,,123.49
+2025-12,fte_segment,Large,1.46,,,,,35.37
+2025-12,fte_segment,Medium,4.47,,,,,49.97
+2025-12,fte_segment,Small,12,,,,,67.12
+2025-12,naics_sector,Construction,1.62,,,,,0.83
+2025-12,naics_sector,Finance and insurance,14.16,,,,,12.83
+2025-12,naics_sector,Health care,1.79,,,,,2.76
+2025-12,naics_sector,Manufacturing,3.33,,,,,3.97
+2025-12,naics_sector,"Professional, scientific, and technical services",13.45,,,,,45.3
+2025-12,naics_sector,Retail,3.51,,,,,4.12
+2025-12,naics_sector,Technology and media,28.57,,,,,115.8
+2026-01,all,All,6.32,145.34,1513.46,296.72,3390.4,14.79
+2026-01,business_office_state,All other states,3.33,,,,,4.51
+2026-01,business_office_state,CA,15.9,,,,,57.45
+2026-01,business_office_state,CO,4.44,,,,,14.59
+2026-01,business_office_state,DE,28.09,,,,,32.45
+2026-01,business_office_state,FL,5.24,,,,,3.99
+2026-01,business_office_state,IL,3.6,,,,,7.88
+2026-01,business_office_state,MA,8.08,,,,,8.79
+2026-01,business_office_state,NY,16.66,,,,,35.11
+2026-01,business_office_state,TX,5.22,,,,,8.73
+2026-01,business_office_state,VA,3.49,,,,,5.28
+2026-01,business_office_state,WA,9.42,,,,,32.34
+2026-01,company_financing_status,Other,4.17,,,,,6.29
+2026-01,company_financing_status,PE-backed,2.5,,,,,5.24
+2026-01,company_financing_status,VC-backed,33.72,,,,,113.67
+2026-01,fte_segment,Large,1.59,,,,,34.23
+2026-01,fte_segment,Medium,5.17,,,,,50.13
+2026-01,fte_segment,Small,13.33,,,,,74.71
+2026-01,naics_sector,Accommodation and food services,1.05,,,,,0.36
+2026-01,naics_sector,Construction,1.75,,,,,1.17
+2026-01,naics_sector,Finance and insurance,17.77,,,,,14.71
+2026-01,naics_sector,Health care,1.9,,,,,3.07
+2026-01,naics_sector,Manufacturing,3.62,,,,,5.24
+2026-01,naics_sector,"Professional, scientific, and technical services",15.74,,,,,36.47
+2026-01,naics_sector,Retail,4.08,,,,,3.95
+2026-01,naics_sector,Technology and media,35.86,,,,,85.82
+2026-02,all,All,7.5,168.73,1782.8,351.76,3348.02,17.28
+2026-02,business_office_state,All other states,3.93,,,,,5.28
+2026-02,business_office_state,CA,19,,,,,61.31
+2026-02,business_office_state,CO,5.33,,,,,16.08
+2026-02,business_office_state,DE,35.35,,,,,36.47
+2026-02,business_office_state,FL,6.26,,,,,5.01
+2026-02,business_office_state,IL,4.2,,,,,6.02
+2026-02,business_office_state,MA,9.89,,,,,10.54
+2026-02,business_office_state,NY,20.76,,,,,32.6
+2026-02,business_office_state,TX,5.65,,,,,16.15
+2026-02,business_office_state,VA,4,,,,,4.41
+2026-02,business_office_state,WA,11.86,,,,,47.57
+2026-02,company_financing_status,Other,5,,,,,7.66
+2026-02,company_financing_status,PE-backed,3.05,,,,,5.65
+2026-02,company_financing_status,VC-backed,41.37,,,,,122.17
+2026-02,fte_segment,Large,1.89,,,,,37.7
+2026-02,fte_segment,Medium,6.06,,,,,61.44
+2026-02,fte_segment,Small,16.01,,,,,85.87
+2026-02,naics_sector,Accommodation and food services,1.16,,,,,0.62
+2026-02,naics_sector,Construction,2,,,,,2.4
+2026-02,naics_sector,Finance and insurance,22.03,,,,,19.23
+2026-02,naics_sector,Health care,2.27,,,,,3.75
+2026-02,naics_sector,Manufacturing,4.69,,,,,5.13
+2026-02,naics_sector,"Professional, scientific, and technical services",18.75,,,,,38.1
+2026-02,naics_sector,Retail,4.62,,,,,4.5
+2026-02,naics_sector,Technology and media,44.63,,,,,92.95
+2026-03,all,All,9.68,205.82,2222.51,424.9,4812.03,19.86
+2026-03,business_office_state,All other states,5,,,,,7.02
+2026-03,business_office_state,CA,23.65,,,,,84.61
+2026-03,business_office_state,CO,6.67,,,,,19.51
+2026-03,business_office_state,DE,40,,,,,46.41
+2026-03,business_office_state,FL,8.11,,,,,6.17
+2026-03,business_office_state,IL,5.87,,,,,8.27
+2026-03,business_office_state,MA,12.94,,,,,13.3
+2026-03,business_office_state,NY,27.53,,,,,42.91
+2026-03,business_office_state,TX,7.37,,,,,8.15
+2026-03,business_office_state,VA,5.53,,,,,6.53
+2026-03,business_office_state,WA,13.9,,,,,12.92
+2026-03,company_financing_status,Other,6.41,,,,,7.92
+2026-03,company_financing_status,PE-backed,4.82,,,,,8.66
+2026-03,company_financing_status,VC-backed,54.91,,,,,208.11
+2026-03,fte_segment,Large,2.52,,,,,49.79
+2026-03,fte_segment,Medium,7.5,,,,,72.49
+2026-03,fte_segment,Small,20,,,,,109.54
+2026-03,naics_sector,Accommodation and food services,1.37,,,,,0.93
+2026-03,naics_sector,Construction,2.84,,,,,2.12
+2026-03,naics_sector,Finance and insurance,30.75,,,,,17.34
+2026-03,naics_sector,Health care,2.35,,,,,4.89
+2026-03,naics_sector,Manufacturing,6.43,,,,,7.06
+2026-03,naics_sector,"Professional, scientific, and technical services",23.89,,,,,50.29
+2026-03,naics_sector,Retail,6.68,,,,,7.55
+2026-03,naics_sector,Technology and media,55.54,,,,,110.93
+2026-04,all,All,10.97,229.11,2452.81,472.21,4715.01,21.31
+2026-04,business_office_state,All other states,5.46,,,,,6.42
+2026-04,business_office_state,CA,25.01,,,,,85.77
+2026-04,business_office_state,CO,7.45,,,,,29.31
+2026-04,business_office_state,DE,57.15,,,,,60.84
+2026-04,business_office_state,FL,10,,,,,8.82
+2026-04,business_office_state,IL,6.95,,,,,9.9
+2026-04,business_office_state,MA,17.41,,,,,12.58
+2026-04,business_office_state,NY,31.36,,,,,48.1
+2026-04,business_office_state,TX,8.21,,,,,7.33
+2026-04,business_office_state,VA,6.02,,,,,8.06
+2026-04,business_office_state,WA,14.17,,,,,52.05
+2026-04,company_financing_status,Other,7.17,,,,,8.23
+2026-04,company_financing_status,PE-backed,5.92,,,,,8.93
+2026-04,company_financing_status,VC-backed,66.15,,,,,229.33
+2026-04,fte_segment,Large,2.93,,,,,57.94
+2026-04,fte_segment,Medium,8.28,,,,,89
+2026-04,fte_segment,Small,21.86,,,,,116.03
+2026-04,naics_sector,Accommodation and food services,1.82,,,,,0.94
+2026-04,naics_sector,Construction,3.16,,,,,2.6
+2026-04,naics_sector,Finance and insurance,35.33,,,,,21.29
+2026-04,naics_sector,Health care,2.56,,,,,4.74
+2026-04,naics_sector,Manufacturing,7.43,,,,,8.85
+2026-04,naics_sector,"Professional, scientific, and technical services",27.4,,,,,56.43
+2026-04,naics_sector,Retail,7.74,,,,,4.9
+2026-04,naics_sector,Technology and media,64.37,,,,,112.17
+2026-05,all,All,12.05,248.23,2716.19,520.9,5133.59,24.61
+2026-05,business_office_state,All other states,6.08,,,,,7.75
+2026-05,business_office_state,CA,28.57,,,,,93.51
+2026-05,business_office_state,CO,10,,,,,34.18
+2026-05,business_office_state,DE,57.07,,,,,73.27
+2026-05,business_office_state,FL,10.82,,,,,7.5
+2026-05,business_office_state,IL,7.42,,,,,11.87
+2026-05,business_office_state,MA,16.28,,,,,16.35
+2026-05,business_office_state,NY,32.91,,,,,60.68
+2026-05,business_office_state,TX,9.29,,,,,9.99
+2026-05,business_office_state,VA,6.77,,,,,10.34
+2026-05,business_office_state,WA,15.22,,,,,53.87
+2026-05,company_financing_status,Other,7.95,,,,,9.78
+2026-05,company_financing_status,PE-backed,7.02,,,,,9.76
+2026-05,company_financing_status,VC-backed,74.75,,,,,262.61
+2026-05,fte_segment,Large,3.21,,,,,67.26
+2026-05,fte_segment,Medium,9.18,,,,,93.28
+2026-05,fte_segment,Small,23,,,,,129.29
+2026-05,naics_sector,Accommodation and food services,2,,,,,1.03
+2026-05,naics_sector,Construction,4,,,,,2.91
+2026-05,naics_sector,Finance and insurance,39.97,,,,,20.96
+2026-05,naics_sector,Health care,2.86,,,,,7.22
+2026-05,naics_sector,Manufacturing,8.58,,,,,10.81
+2026-05,naics_sector,"Professional, scientific, and technical services",30.97,,,,,69.16
+2026-05,naics_sector,Retail,9.42,,,,,3.31
+2026-05,naics_sector,Technology and media,74.44,,,,,123.48
+2026-06,all,All,12.84,269.73,3097.66,579.07,6563.82,25.7
+2026-06,business_office_state,All other states,6.67,,,,,7.89
+2026-06,business_office_state,CA,30.84,,,,,118.79
+2026-06,business_office_state,CO,8.95,,,,,26.71
+2026-06,business_office_state,DE,64.38,,,,,77.25
+2026-06,business_office_state,FL,12.38,,,,,6.71
+2026-06,business_office_state,IL,7.89,,,,,13.69
+2026-06,business_office_state,MA,16.07,,,,,14.19
+2026-06,business_office_state,NY,34.61,,,,,66.27
+2026-06,business_office_state,TX,10.2,,,,,10.5
+2026-06,business_office_state,VA,8,,,,,10.36
+2026-06,business_office_state,WA,13.8,,,,,21.46
+2026-06,company_financing_status,Other,8.58,,,,,9.64
+2026-06,company_financing_status,PE-backed,7.42,,,,,11.39
+2026-06,company_financing_status,VC-backed,82.86,,,,,311.6
+2026-06,fte_segment,Large,3.49,,,,,78.05
+2026-06,fte_segment,Medium,9.74,,,,,107.95
+2026-06,fte_segment,Small,23.96,,,,,139.36
+2026-06,naics_sector,Accommodation and food services,2.03,,,,,1.22
+2026-06,naics_sector,Construction,4.29,,,,,5.66
+2026-06,naics_sector,Finance and insurance,43.75,,,,,17.73
+2026-06,naics_sector,Health care,2.89,,,,,6.64
+2026-06,naics_sector,Manufacturing,9.54,,,,,10.71
+2026-06,naics_sector,"Professional, scientific, and technical services",33.33,,,,,68.06
+2026-06,naics_sector,Retail,8.33,,,,,3.68
+2026-06,naics_sector,Technology and media,79.44,,,,,165.4
+2026-07,all,All,14.19,317.39,4269.87,721.14,9873.12,32.81
+2026-07,business_office_state,All other states,7.22,,,,,9.27
+2026-07,business_office_state,CA,33.91,,,,,171.91
+2026-07,business_office_state,CO,10,,,,,42.75
+2026-07,business_office_state,DE,66.67,,,,,106.85
+2026-07,business_office_state,FL,13.44,,,,,9.24
+2026-07,business_office_state,IL,9.03,,,,,15.11
+2026-07,business_office_state,MA,17.51,,,,,17.63
+2026-07,business_office_state,NY,38.43,,,,,69.05
+2026-07,business_office_state,TX,11.82,,,,,11.86
+2026-07,business_office_state,VA,9.39,,,,,15.61
+2026-07,business_office_state,WA,15.23,,,,,80.61
+2026-07,company_financing_status,Other,9.42,,,,,12.26
+2026-07,company_financing_status,PE-backed,8.65,,,,,12.26
+2026-07,company_financing_status,VC-backed,91.99,,,,,433.94
+2026-07,fte_segment,Large,3.88,,,,,101.98
+2026-07,fte_segment,Medium,10.77,,,,,139.94
+2026-07,fte_segment,Small,26.33,,,,,174.56
+2026-07,naics_sector,Accommodation and food services,2.27,,,,,1.29
+2026-07,naics_sector,Construction,4.75,,,,,6.14
+2026-07,naics_sector,Finance and insurance,49,,,,,26.14
+2026-07,naics_sector,Health care,3.15,,,,,5.86
+2026-07,naics_sector,Manufacturing,10.23,,,,,10.44
+2026-07,naics_sector,"Professional, scientific, and technical services",37.82,,,,,115.4
+2026-07,naics_sector,Retail,10.26,,,,,4.12
+2026-07,naics_sector,Technology and media,92.51,,,,,246.69
+2026-08,all,All,14.74,330.94,4171.82,740.47,8568.17,30.08
+2026-08,business_office_state,All other states,7.71,,,,,9.09
+2026-08,business_office_state,CA,35.57,,,,,146.25
+2026-08,business_office_state,CO,10.54,,,,,39.18
+2026-08,business_office_state,DE,70.11,,,,,120.01
+2026-08,business_office_state,FL,14.73,,,,,8.71
+2026-08,business_office_state,IL,8.09,,,,,20.15
+2026-08,business_office_state,MA,19.15,,,,,15.51
+2026-08,business_office_state,NY,39.89,,,,,52.85
+2026-08,business_office_state,TX,12.12,,,,,11.43
+2026-08,business_office_state,VA,8.53,,,,,15.34
+2026-08,business_office_state,WA,16.67,,,,,90.73
+2026-08,company_financing_status,Other,10,,,,,11.45
+2026-08,company_financing_status,PE-backed,9.34,,,,,13.82
+2026-08,company_financing_status,VC-backed,95.84,,,,,361.69
+2026-08,fte_segment,Large,4.23,,,,,87.51
+2026-08,fte_segment,Medium,11.16,,,,,146.88
+2026-08,fte_segment,Small,27.11,,,,,177.23
+2026-08,naics_sector,Accommodation and food services,2.5,,,,,1.68
+2026-08,naics_sector,Construction,5.22,,,,,7.29
+2026-08,naics_sector,Finance and insurance,50,,,,,23.58
+2026-08,naics_sector,Health care,3.16,,,,,7.44
+2026-08,naics_sector,Manufacturing,11.14,,,,,13.73
+2026-08,naics_sector,"Professional, scientific, and technical services",40,,,,,107.17
+2026-08,naics_sector,Retail,11.55,,,,,4.34
+2026-08,naics_sector,Technology and media,94.93,,,,,160.48
+2026-09,all,All,15.7,357.45,4650.48,813.43,9567.53,30.41
+2026-09,business_office_state,All other states,8.22,,,,,10.88
+2026-09,business_office_state,CA,36.78,,,,,108.77
+2026-09,business_office_state,CO,12.04,,,,,30.75
+2026-09,business_office_state,DE,78.56,,,,,124.62
+2026-09,business_office_state,FL,16.27,,,,,10.95
+2026-09,business_office_state,IL,8.75,,,,,15.99
+2026-09,business_office_state,MA,19.83,,,,,19.02
+2026-09,business_office_state,NY,42.71,,,,,51.53
+2026-09,business_office_state,TX,13.25,,,,,13.96
+2026-09,business_office_state,VA,9.73,,,,,15.67
+2026-09,business_office_state,WA,16.61,,,,,90.69
+2026-09,company_financing_status,Other,10.65,,,,,11.12
+2026-09,company_financing_status,PE-backed,10.39,,,,,14.42
+2026-09,company_financing_status,VC-backed,108.17,,,,,419.43
+2026-09,fte_segment,Large,4.56,,,,,111.47
+2026-09,fte_segment,Medium,11.91,,,,,164.67
+2026-09,fte_segment,Small,29,,,,,190.32
+2026-09,naics_sector,Accommodation and food services,2.73,,,,,1.29
+2026-09,naics_sector,Construction,5.8,,,,,7.14
+2026-09,naics_sector,Finance and insurance,50.98,,,,,33.06
+2026-09,naics_sector,Health care,3.45,,,,,7.15
+2026-09,naics_sector,Manufacturing,12.5,,,,,16.9
+2026-09,naics_sector,"Professional, scientific, and technical services",44.14,,,,,126.19
+2026-09,naics_sector,Retail,11.09,,,,,1.55
+2026-09,naics_sector,Technology and media,110.32,,,,,175.98

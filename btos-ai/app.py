@@ -6,7 +6,8 @@ One page over four sources, all read from files so it runs with no Claude:
   btos-ai/static/sbu_2025-11_ai_technology.csv   Atlanta Fed SBU, one-off (Fed note)
   codex-user-trend/*.csv                   AI assistant user disclosures, Codex vs Claude Code npm,
                                            enterprise seat estimates (edited by hand)
-  ramp-ai-index/*.csv                      Ramp AI Index business token volume / spend / prices
+  ramp-ai-index/*.csv                      Ramp AI Index business token volume / spend / prices, and the
+                                           monthly share of businesses paying for AI + AI spend per employee
   bofa-capex-cycles/exhibit2_*.csv        BofA Exhibit 2 capex cycles, read from the PDF's vector chart
   credit-spreads/macro_daily.csv          ICE BofA BB / CCC HY OAS (FRED + Wayback history), US 10y real yield,
                                            term premium and nominal yield (FRED)
@@ -39,6 +40,7 @@ from flask import Flask, abort, jsonify, render_template, request, send_file
 from werkzeug.middleware.dispatcher import DispatcherMiddleware
 
 import btos_ai as B
+import monitor_changes as MC
 
 HERE = Path(__file__).resolve().parent
 DATA = HERE / "data"
@@ -627,6 +629,23 @@ def ramp():
                     "price_cols": ["blended", "output", "uncached_input", "cached_input", "cached_share_of_input"]})
 
 
+@app.route("/api/ramp-adoption")
+def ramp_adoption():
+    """Ramp AI Index proper: share of Ramp's businesses paying for AI tools, monthly, plus AI spend per employee."""
+    a = rp_csv("ramp_adoption_monthly.csv")
+    if a.empty:
+        return jsonify({"groups": {}})
+    groups = {}
+    for (grp, key), g in a.sort_values("month").groupby(["group", "key"]):
+        groups.setdefault(grp, {})[key] = [[r.month, r.adoption_pct, clean(r.n_firms), clean(r.ai_firms), r.note if isinstance(r.note, str) else ""]
+                                           for r in g.itertuples()]
+    pe = rp_csv("ramp_spend_per_employee.csv")
+    spend = {}
+    for (dim, key), g in (pe.sort_values("month").groupby(["dimension", "key"]) if not pe.empty else []):
+        spend.setdefault(dim, {})[key] = records(g.drop(columns=["dimension", "key"]))
+    return jsonify({"groups": groups, "spend": spend, "last": a.month.max()})
+
+
 # ---------------------------------------------------------------- OpenAI & Anthropic ARR
 ARD = HERE.parent / "ai-lab-arr"
 ARR_CANDS = ARD / "arr_candidates.json"
@@ -860,6 +879,14 @@ def overview():
                 tiles.append({"id": "arr_" + co, "title": f"{co} run-rate ARR", "value": pts[-1][1], "prev": yago,
                               "delta_label": "vs a year earlier", "unit": "usd", "date": nice_date(g.date.iloc[-1]),
                               "source": "Research workbook + approved news", "spark": [p[1] for p in pts]})
+    ra = rp_csv("ramp_adoption_monthly.csv")
+    if not ra.empty:
+        s = ra[ra.group == "overall"].sort_values("month")
+        if len(s) > 12:
+            tiles.append({"id": "rampadopt", "title": "US businesses paying for AI tools (Ramp)", "value": float(s.adoption_pct.iloc[-1]) / 100,
+                          "prev": float(s.adoption_pct.iloc[-13]) / 100, "delta_label": "vs a year earlier",
+                          "date": f"{pd.Timestamp(s.month.iloc[-1]):%b %Y}", "source": "Ramp AI Index, card and bill-pay data",
+                          "spark": [float(v) / 100 for v in s.adoption_pct]})
     rv = rp_csv("ramp_token_weekly.csv")
     if not rv.empty:
         t = rv[rv.metric == "token_volume"].groupby("week").value.sum().sort_index()
@@ -900,6 +927,21 @@ def overview():
                           "date": f"Week of {nice_date(f.week.iloc[-1])}", "source": "openrouter.ai/rankings, all models",
                           "spark": [float(v) for v in f.total_tokens.tail(26)]})
     return jsonify({"tiles": tiles})
+
+
+@app.route("/api/changes")
+def changes():
+    """What arrived in the last N days, ranked by how unusual it is (monitor_changes.py)."""
+    days = min(max(int(request.args.get("days", 7)), 1), 90)
+    return jsonify(MC.changes(days, write=not HOSTED))
+
+
+@app.route("/api/freshness")
+def freshness():
+    return jsonify({"rows": MC.freshness(), "pending": 0 if HOSTED else
+                    sum(1 for c in load_candidates() if c.get("status") == "new")
+                    + sum(1 for c in (json.loads(ARR_CANDS.read_text(encoding="utf-8-sig")) if ARR_CANDS.exists() else [])
+                          if c.get("status") == "new")})
 
 
 # ---------------------------------------------------------------- data / update
