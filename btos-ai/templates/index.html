@@ -165,9 +165,11 @@
         <option>Share of workers using genAI at work</option>
         <option>Share of work hours using genAI</option>
         <option>Time saved by genAI (% of work hours)</option></select></label>
-      <label>Survey <select id="wr-wave"></select></label>
+      <label>Chart <select id="wr-view"><option value="rank">Ranking (one survey)</option><option value="ts">Time series</option></select></label>
+      <label id="wr-wave-lb">Survey <select id="wr-wave"></select></label>
+      <label id="wr-show-lb" hidden>Show <select id="wr-show"><option value="top">Top 6 now</option><option value="bottom">Bottom 6 now</option><option value="movers">Biggest change, 1 year</option><option value="all">All groups</option></select></label>
     </div>
-    <p class="muted small">Whisker: 95% interval. Tick: the same survey a year earlier.</p>
+    <p class="muted small" id="wr-note">Whisker: 95% interval. Tick: the same survey a year earlier.</p>
     <div class="chart" id="c-w-rank"></div>
   </div>
   <div class="card">

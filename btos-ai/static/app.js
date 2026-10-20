@@ -538,7 +538,37 @@ function drawWorkers() {
     hst => table(hst, [{label: "Survey", key: "w"}].concat(S2.map(s => ({label: s.name, n: 1, key: s.name, fmt: v => pct(v)}))), S2[0].points.map((p, i) => Object.assign({w: fmtMonth(p.x)}, ...S2.map(s => ({[s.name]: s.points[i]?.y}))))));
   drawWorkerRank(); drawPC();
 }
+const WR_NAT = {"Share of workers using genAI at work": ["Employed - For Work", "Share Using GenAI"]};
+function drawWorkerTS() {
+  const dim = $("#wr-dim").value, meas = $("#wr-meas").value, show = $("#wr-show").value;
+  const rows = WK.rows.filter(r => r.dimension === dim && r.measure === meas);
+  const by = {}; rows.forEach(r => (by[r.category] = by[r.category] || []).push(r));
+  Object.values(by).forEach(a => a.sort((x, y) => wave(x) - wave(y)));
+  const lastOf = a => a[a.length - 1], yrChg = a => { const l = lastOf(a), y = a.find(r => Math.abs(wave(r) - (wave(l) - 365 * 864e5)) < 20 * 864e5); return y ? l.mean - y.mean : null; };
+  let keys = Object.keys(by).sort((a, b) => lastOf(by[b]).mean - lastOf(by[a]).mean);
+  if (show === "top") keys = keys.slice(0, 6);
+  else if (show === "bottom") keys = keys.slice(-6);
+  else if (show === "movers") keys = keys.filter(k => yrChg(by[k]) != null).sort((a, b) => Math.abs(yrChg(by[b])) - Math.abs(yrChg(by[a]))).slice(0, 6);
+  const nm = k => { const r = by[k][0]; return (r.naics ? r.naics + " " : "") + k.replace(/ Occupations?$/i, ""); };
+  const pal = ["var(--s1)", "var(--s2)", "var(--s3)", "var(--s4)", "var(--s5)", "var(--s6)"];
+  const S = keys.map((k, i) => ({name: nm(k), short: nm(k), color: show === "all" ? "var(--neutral-bar)" : pal[i % pal.length], markers: show !== "all",
+    points: by[k].map(r => ({x: wave(r), y: r.mean, lo: Math.max(0, r.mean - 1.96 * r.se), hi: r.mean + 1.96 * r.se}))}));
+  const nk = WR_NAT[meas] || [null, meas];
+  const nat = WK.rows.filter(r => r.dimension === "National" && r.measure === nk[1] && (!nk[0] || r.category === nk[0])).sort((a, b) => wave(a) - wave(b));
+  if (nat.length) S.push({name: "All workers (national)", short: "All workers", color: "var(--ink)", dash: true, points: nat.map(r => ({x: wave(r), y: r.mean}))});
+  $("#wr-title").textContent = `${meas} — by ${dim.toLowerCase()}, over time`;
+  $("#wr-sub").textContent = `${S.length - (nat.length ? 1 : 0)} of ${Object.keys(by).length} groups · quarterly surveys ${fmtMonth(wave(nat[0] || rows[0]))} – ${fmtMonth(Math.max(...rows.map(wave)))}`;
+  $("#wr-note").textContent = show === "all" ? "Grey = every group; dashed = all workers. Hover to see each group." : "Dashed = all workers. Hover for each survey's values; shaded band = 95% interval when 3 or fewer lines are shown.";
+  const fmt = v => pct(v, meas.startsWith("Share of workers") ? 0 : 1);
+  view("c-w-rank", hst => lineChart(hst, S, {height: 380, yFmt: fmt, yMin: 0, band: S.length <= 3, mode: show === "all" ? "near" : "cross", title: x => fmtMonth(x) + " survey"}),
+    hst => { const ws = [...new Set(S.flatMap(x => x.points.map(p => p.x)))].sort((a, b) => b - a), L = S.map(x => Object.fromEntries(x.points.map(p => [p.x, p.y])));
+      table(hst, [{label: "Survey", get: x => fmtMonth(x)}].concat(S.map((x, i) => ({label: x.name, n: 1, get: w => pct(L[i][w])}))), ws); });
+}
 function drawWorkerRank() {
+  const ts = $("#wr-view").value === "ts";
+  $("#wr-wave-lb").hidden = ts; $("#wr-show-lb").hidden = !ts;
+  if (ts) return drawWorkerTS();
+  $("#wr-note").textContent = "Whisker: 95% interval. Tick: the same survey a year earlier.";
   const dim = $("#wr-dim").value, meas = $("#wr-meas").value, w = $("#wr-wave").value;
   const rows = WK.rows.filter(r => r.dimension === dim && r.measure === meas);
   const cur = rows.filter(r => r.wave === w);
@@ -564,7 +594,7 @@ async function loadWorkers() {
   const waves = [...new Set(WK.rows.filter(r => r.dimension === "Industry").map(r => r.wave))].sort().reverse();
   const ws = $("#wr-wave"); waves.forEach(w => h("option", {value: w}, ws, fmtMonth(T(w))));
   $("#w-freq").addEventListener("change", drawWorkers);
-  ["#wr-dim", "#wr-meas", "#wr-wave"].forEach(s => $(s).addEventListener("change", drawWorkerRank));
+  ["#wr-dim", "#wr-meas", "#wr-wave", "#wr-view", "#wr-show"].forEach(s => $(s).addEventListener("change", drawWorkerRank));
   $("#pc-who").addEventListener("change", drawPC);
   drawWorkers();
 }
