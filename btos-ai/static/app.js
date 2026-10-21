@@ -1344,14 +1344,24 @@ function drawCxQ() {
       return {x: qx(q), y: v != null && y0 ? v / y0 - 1 : null, note: q};
     });
     S.push({name: nm, color: col, dash: true, points: pts});
+    /* next-quarter capex guide (quarterly view only): dotted from the last actual to the guided midpoint, shaded low-high */
+    (CXQ.neo_guidance || []).filter(g => g.company === comp && mode === "q").forEach(g => {
+      const q0 = [...Q.map(r => r.cal_quarter), ...extraQ].filter(q => q < g.quarter && neoQ(comp, q) != null).pop();
+      if (!q0) return;
+      const v0 = neoQ(comp, q0), lo = g.ai_low, hi = g.ai_high;
+      S.push({name: `${nm}, ${g.quarter.slice(-2)}'${g.quarter.slice(2, 4)} guide (implied)`, short: `SpaceX AI ${g.quarter.slice(-2)} guide`, color: col, dash: true, guide: true,
+        points: [{x: qx(q0), y: v0, lo: v0, hi: v0, note: q0},
+                 {x: qx(g.quarter), y: (lo + hi) / 2, lo, hi, hollow: true,
+                  note: `${g.quarter} guide: company capex $${g.company_low}-${g.company_high}bn; AI implied $${lo.toFixed(1)}-${hi.toFixed(1)}bn (Space + Connectivity held at ${g.non_ai_base_quarter} $${g.non_ai_bn.toFixed(1)}bn)`}]});
+    });
   });
   if (mode === "ttm") S.unshift({name: "Total, eight (with CoreWeave, Nebius and SpaceX AI)", short: "Total, eight", color: "var(--ink-2)", dash: true,
     points: Q.map(r => ({x: qx(r.cal_quarter), y: E7[r.cal_quarter] ? E7[r.cal_quarter].total_bn : null, note: `TTM to ${r.cal_quarter}`}))});
   if (mode === "share") S.forEach(s => { if (!s.dash) s.points.forEach((p, i) => { const q = Q[i].cal_quarter; p.y = E7[q] ? ttm(Q.map(r => r[CXQ_TK.find(t => t[1] === s.name)[0]]), i) / E7[q].total_bn : null; }); });  /* share of all eight, only where the eight-name TTM exists */
   if (mode === "q" || mode === "ttm") S.unshift({name: "Total, five companies", short: "Total", color: "var(--ink)", points: Q.map((r, i) => ({x: qx(r.cal_quarter), y: mode === "q" ? tot[i] : ttm(tot, i), note: r.cal_quarter}))});
-  legend("lg-cx-q", S.map(s => ({name: s.name, color: s.color})));
+  legend("lg-cx-q", S.filter(s => !s.guide).map(s => ({name: s.name, color: s.color})));
   const qt = x => { const y = Math.floor(x), q = Math.floor((x - y) * 4) + 1; return `Q${q} ${y}`; };
-  view("c-cx-q", hst => lineChart(hst, S, {height: 340, xType: "num", yMin: mode === "yoy" ? null : 0, yFmt: fmt, mode: "cross", xFmt: qt,
+  view("c-cx-q", hst => lineChart(hst, S, {height: 340, xType: "num", band: mode === "q", yMin: mode === "yoy" ? null : 0, yFmt: fmt, mode: "cross", xFmt: qt,
       xTicks: [2020, 2021, 2022, 2023, 2024, 2025, 2026].map(y => ({x: y + 0.125, label: "Q1 " + y}))}),
     hst => table(hst, [{label: "Quarter", key: "cal_quarter"}].concat(CXQ_TK.map(([k, nm]) => ({label: nm, n: 1, get: r => "$" + r[k].toFixed(2)})),
       CXQ_NEO.map(([comp, nm]) => ({label: nm, n: 1, get: r => { const v = neoQ(comp, r.cal_quarter); if (v != null) return "$" + v.toFixed(2);

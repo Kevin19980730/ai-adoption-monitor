@@ -554,6 +554,8 @@ def capex_cycles():
     ofd = cached("bcof", [of], lambda: pd.read_csv(of) if of.exists() else pd.DataFrame())
     npp, e7 = BCD / "firsthand" / "neocloud_periods.csv", BCD / "firsthand" / "hyperscalers_expanded_ttm.csv"
     npd = cached("bcnp", [npp], lambda: pd.read_csv(npp) if npp.exists() else pd.DataFrame())
+    ngp = BCD / "firsthand" / "neocloud_guidance.csv"
+    ngd = cached("bcng", [ngp], lambda: pd.read_csv(ngp) if ngp.exists() else pd.DataFrame())
     e7d = cached("bce7", [e7], lambda: pd.read_csv(e7) if e7.exists() else pd.DataFrame())
     rp = BCD / "firsthand" / "hyperscalers_rpo_quarterly.csv"
     rpd = cached("bcrpo", [rp], lambda: pd.read_csv(rp) if rp.exists() else pd.DataFrame())
@@ -563,7 +565,7 @@ def capex_cycles():
                     "quarterly": records(qid) if not qid.empty else [], "oracle_fiscal": records(ofd) if not ofd.empty else [],
                     "neo_periods": records(npd) if not npd.empty else [], "expanded7": records(e7d) if not e7d.empty else [],
                     "detail": records(fhd) if not fhd.empty else [], "rpo": records(rpd) if not rpd.empty else [],
-                    "cip": records(cpd) if not cpd.empty else [],
+                    "cip": records(cpd) if not cpd.empty else [], "neo_guidance": records(ngd) if not ngd.empty else [],
                     "extended": records(exd) if not exd.empty else []})
 
 
