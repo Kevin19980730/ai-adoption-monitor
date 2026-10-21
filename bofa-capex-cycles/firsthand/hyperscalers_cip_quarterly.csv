@@ -76,5 +76,3 @@ cal_quarter,ticker,period_end,cip_bn,gross_ppe_bn,capex_q_bn,capex_ttm_bn,cip_so
 2025Q4,NBIS,2025-12-31,2.417,6.19,2.056,4.066,"6-K interim statements (000110465926094844), 'Assets not yet in use'"
 2026Q1,NBIS,2026-03-31,2.428,7.977,2.473,5.995,"6-K interim statements (000110465926064092), 'Assets not yet in use'"
 2026Q2,NBIS,2026-06-30,7.836,14.149,5.657,11.142,"6-K interim statements (000110465926094844), 'Assets not yet in use'"
-2025Q4,SPCX,2025-12-31,4.604,55.303,,20.737,XBRL 10-Q for 2026-06-30 (0001628280-26-052535)
-2026Q2,SPCX,2026-06-30,12.554,83.071,,42.248,XBRL 10-Q for 2026-06-30 (0001628280-26-052535)
