@@ -35,7 +35,8 @@
       <div class="tab-group" role="group" aria-label="Model layer"><span class="tg-label">Model</span>
         <a href="#arr" role="tab" data-tab="arr">Lab ARR (OpenAI &amp; Anthropic)</a>
         <a href="#tokens" role="tab" data-tab="tokens">Tokens (OpenRouter)</a>
-        <a href="#ramp" role="tab" data-tab="ramp">Business tokens (Ramp)</a></div>
+        <a href="#ramp" role="tab" data-tab="ramp">Business tokens (Ramp)</a>
+        <a href="#tokenecon" role="tab" data-tab="tokenecon">Token economics</a></div>
       <div class="tab-group" role="group" aria-label="End user layer"><span class="tg-label">End user</span>
         <a href="#population" role="tab" data-tab="population">World population &amp; AI users</a>
         <a href="#assistants" role="tab" data-tab="assistants">AI assistants</a>
@@ -367,6 +368,68 @@
   </div>
 </section>
 
+<!-- ===================================================== TOKEN ECONOMICS -->
+<section id="tab-tokenecon" class="tab" hidden>
+  <div class="tiles" id="te-tiles"></div>
+  <div class="note"><h3>Four tests of the &ldquo;token-economics equilibrium&rdquo;</h3>
+    <p>The thesis (fin, <a href="https://x.com/fi56622380/status/2112705527545499955" target="_blank" rel="noopener">AI Semiconductor Endgame IV</a>, Oct 2026): token prices keep falling, serving costs fall just as fast, so gross margins hold and labs keep buying GPUs. It holds only while <b>usage grows faster than prices fall</b>. Open source takes a large share of tokens but a small share of spend, because cheap tokens and premium tokens are separate markets. Each panel below tests one link. The thesis is in trouble if the elasticity stays below 1 for quarters, open-weights <i>spend</i> share closes on its <i>token</i> share, or margins fall on the same chip.</p></div>
+
+  <div class="card">
+    <div class="card-head"><div><h2>1 · Is usage outrunning price cuts?</h2>
+      <p class="muted" id="te-el-sub">Elasticity = % change in tokens &divide; % fall in price over the window. Above 1, spend grows as prices fall (Jevons); at 1 spend is flat; below 1 price cuts shrink revenue. Shown only when the price fell at least 5% over the window.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-te-el">Table</button></div>
+    <div class="filters inner">
+      <label>Source <select id="te-src"><option value="ramp">Ramp (businesses, billed)</option><option value="or">OpenRouter (list price, cache-adj.)</option></select></label>
+      <label>Window <select id="te-win"><option value="4">4 weeks</option><option value="13" selected>13 weeks</option></select></label>
+    </div>
+    <div class="grid2">
+      <div><div class="legend" id="lg-te-idx"></div><div class="chart" id="c-te-idx"></div></div>
+      <div><div class="legend" id="lg-te-el"></div><div class="chart" id="c-te-el"></div></div>
+    </div>
+    <p class="muted small" id="te-el-note"></p>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div><h2>2 · Open weights: share of tokens vs share of spend</h2>
+      <p class="muted">OpenRouter, every model, trailing 7 days. Open weights = the model has a Hugging Face release. Spend = tokens &times; that week&rsquo;s list price; &ldquo;cache-adjusted&rdquo; bills 80% of input at the model&rsquo;s cached-input price where it has one (OpenRouter does not publish cached-token counts). Free variants count as tokens with zero spend. History before 21 Oct 2026 comes from Wayback Machine captures of the same endpoints.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-te-open">Table</button></div>
+    <div class="legend" id="lg-te-open"></div>
+    <div class="chart" id="c-te-open"></div>
+    <p class="muted small">OpenRouter skews to cheap open models (developers routing for price), so its levels are far above fin&rsquo;s market-wide estimate of ~20% of tokens and 5&ndash;10% of revenue. The signal is the <b>gap</b>: if spend share starts closing on token share, open models are winning premium work, not just volume.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div><h2>3 · Open-model inference margin per GPU</h2>
+      <p class="muted" id="te-m-sub">InferenceX (SemiAnalysis) measured throughput, as of each month-end, for 8,192-in / 1,024-out requests. Best config per chip that holds the service tier at P90. Revenue at the median provider list price on OpenRouter; cost = InferenceX owned TCO per GPU-hour. Gross margin = 1 &minus; TCO &divide; (revenue &times; utilisation).</p></div>
+      <button class="btn small tbl-toggle" data-for="c-te-m">Table</button></div>
+    <div class="filters inner">
+      <label>Model <select id="te-m-model"></select></label>
+      <label>Service tier <select id="te-m-tier"><option value="20">&ge;20 tok/s per user</option><option value="50" selected>&ge;50 tok/s per user</option><option value="100">&ge;100 tok/s per user</option></select></label>
+      <label>Utilisation <select id="te-m-util"><option value="0.4">40%</option><option value="0.6" selected>60%</option><option value="0.8">80%</option><option value="1">100%</option></select></label>
+    </div>
+    <div class="legend" id="lg-te-m"></div>
+    <div class="chart" id="c-te-m"></div>
+    <h3 style="margin:18px 0 6px" id="te-m-tbl-title">Latest, by chip</h3>
+    <div id="te-m-latest"></div>
+    <p class="muted small" id="te-m-note"></p>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>4a · Work per request</h2><p class="muted">OpenRouter. Tokens per request (weekly totals &divide; requests) and input tokens per output token (trailing 7 days, all models). Long agent loops resend context every turn, so both rise as tasks get longer.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-te-tpr">Table</button></div>
+      <div class="legend" id="lg-te-tpr"></div>
+      <div class="chart" id="c-te-tpr"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>4b · Who uses the tokens: top public apps</h2><p class="muted" id="te-app-sub">Share of the top public apps&rsquo; weekly tokens, by app type. Agents = CLI, personal and cloud agents; coding tools = IDE extensions and app builders. Private apps are ranked but not named, so this is the public part only.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-te-app">Table</button></div>
+      <div class="legend" id="lg-te-app"></div>
+      <div class="chart" id="c-te-app"></div>
+    </div>
+  </div>
+</section>
+
 <!-- ===================================================== RAMP AI INDEX: ADOPTION -->
 <section id="tab-rampadopt" class="tab" hidden>
   <div class="tiles" id="ra-tiles"></div>
@@ -544,7 +607,7 @@
 <section id="tab-hcapex" class="tab" hidden>
   <div class="card">
     <div class="card-head"><div><h2>First-hand hyperscaler capex as % of US GDP</h2>
-      <p class="muted">Built only from filings, no BofA input: trailing-four-quarter capex over trailing-four-quarter BEA GDP, by calendar quarter. Solid = the five hyperscalers (Microsoft, Alphabet, Amazon, Meta, Oracle calendarised). Dots = the five + CoreWeave + SpaceX&rsquo;s AI segment, shown where the reported periods cover the window (SpaceX did not report Q3 or Q4 2025 alone). Dashed lines = the peaks of earlier cycles from the BofA exhibit.</p></div>
+      <p class="muted">Built only from filings, no BofA input: trailing-four-quarter capex over trailing-four-quarter BEA GDP, by calendar quarter. Solid = the five hyperscalers (Microsoft, Alphabet, Amazon, Meta, Oracle calendarised). Dots = the five + CoreWeave + SpaceX&rsquo;s AI segment, shown where the reported periods cover the window (SpaceX&rsquo;s TTM starts at Q4 2025, its first window of reported periods). Dashed lines = the peaks of earlier cycles from the BofA exhibit.</p></div>
       <button class="btn small tbl-toggle" data-for="c-cx-own">Table</button></div>
     <div class="filters inner"><label>Show <select id="cx-own-mode"><option value="pct">% of US GDP</option><option value="bn">$bn, trailing four quarters</option></select></label></div>
     <div class="legend" id="lg-cx-own"></div>
@@ -553,7 +616,7 @@
   <div class="tiles" id="cx-q-tiles"></div>
   <div class="card">
     <div class="card-head"><div><h2>Hyperscaler capex by company, each calendar quarter &mdash; plus CoreWeave, Nebius and SpaceX AI</h2>
-      <p class="muted">Purchases of property &amp; equipment from each company&rsquo;s 10-Q / 10-K (SEC XBRL), $bn per calendar quarter. Quarters come from year-to-date cash flows (Q4 = full year minus nine months). Oracle&rsquo;s fiscal quarters end Feb / May / Aug / Nov, so it is calendarised: each calendar quarter = &#8532; &times; the Oracle quarter ending in its second month + &#8531; &times; the next one. <b>CoreWeave</b>: purchases of property &amp; equipment from its filings (quarterly from 2024). <b>Nebius</b>: a foreign private issuer, so full years come from its 20-F and quarters from its 6-K interim statements / earnings releases (purchases of property, equipment and intangible assets; 9M 2024 is one period). <b>SpaceX AI</b>: capital expenditures of SpaceX&rsquo;s AI segment (xAI) from its IPO prospectus and 10-Q segment note; SpaceX never reported Q3 or Q4 2025 alone, so H2 2025 is one period and those quarters are left blank rather than split. BofA&rsquo;s comparison above keeps its own five names. Refreshed by the weekly job as new filings land.</p></div>
+      <p class="muted">Purchases of property &amp; equipment from each company&rsquo;s 10-Q / 10-K (SEC XBRL), $bn per calendar quarter. Quarters come from year-to-date cash flows (Q4 = full year minus nine months). Oracle&rsquo;s fiscal quarters end Feb / May / Aug / Nov, so it is calendarised: each calendar quarter = &#8532; &times; the Oracle quarter ending in its second month + &#8531; &times; the next one. <b>CoreWeave</b>: purchases of property &amp; equipment from its filings (quarterly from 2024). <b>Nebius</b>: a foreign private issuer, so full years come from its 20-F and quarters from its 6-K interim statements / earnings releases (purchases of property, equipment and intangible assets; 9M 2024 is one period). <b>SpaceX AI</b>: capital expenditures of SpaceX&rsquo;s AI segment (xAI; renamed &ldquo;Super Intelligence&rdquo; in Oct 2026) from its IPO prospectus, 10-Q segment note and earnings releases (8-K, until the 10-Q lands). The Q3 2026 release gave Q3 2025 alone, so Q4 2025 = full year minus nine months. BofA&rsquo;s comparison above keeps its own five names. Refreshed by the weekly job as new filings land.</p></div>
       <button class="btn small tbl-toggle" data-for="c-cx-q">Table</button></div>
     <div class="filters inner"><label>Show <select id="cxq-mode"><option value="q">Quarterly capex ($bn)</option><option value="ttm">Trailing four quarters ($bn)</option><option value="share">Share of the five</option><option value="yoy">Growth vs a year earlier</option></select></label></div>
     <div class="legend" id="lg-cx-q"></div>

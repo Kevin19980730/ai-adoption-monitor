@@ -1091,6 +1091,131 @@ async function loadRamp() {
   drawRamp();
 }
 
+/* ================================================================ token economics (fin, "AI Semiconductor Endgame IV") */
+let TE = null;
+const TE_CHIP = {B300: "var(--s1)", B200: "var(--s2)", "GB300 NVL72": "var(--s3)", "GB200 NVL72": "var(--s6)", H200: "var(--s4)", H100: "var(--ink-2)",
+  MI355X: "var(--s5)", MI325X: "var(--axis)", MI300X: "var(--axis)", "Vera Rubin NVL72": "var(--ink)", TPU7x: "var(--ink-2)"};
+const signPct = (v, d = 0) => v == null ? "–" : (v >= 0 ? "+" : "−") + Math.abs(v * 100).toFixed(d) + "%";
+/* points [{d, vol, spend}] -> rolling log changes over `weeks` (base = latest point at least weeks*7-3 days earlier) */
+function teRoll(pts, weeks) {
+  return pts.map((p, i) => {
+    const lim = T(p.d) - (weeks * 7 - 3) * 864e5, floor = T(p.d) - (weeks * 7 + 10) * 864e5;
+    let b = null; for (let j = i - 1; j >= 0; j--) { const t = T(pts[j].d); if (t <= lim) { if (t >= floor) b = pts[j]; break; } }
+    if (!b) return {d: p.d};
+    const dv = Math.log(p.vol / b.vol), ds = Math.log(p.spend / b.spend), dp = ds - dv;
+    return {d: p.d, base: b.d, dv, ds, dp, el: -dp >= Math.log(1 / 0.95) ? dv / -dp : null};
+  });
+}
+function teSrc(src) {
+  if (src === "ramp") return (TE.ramp || []).map(r => ({d: r[0], vol: r[1], spend: r[2]}));
+  return (TE.openrouter || []).filter(r => r.spend_cached_usd && r.priced_token_share).map(r => ({d: r.as_of, vol: r.total_tokens * r.priced_token_share, spend: r.spend_cached_usd}));
+}
+function drawTeTiles() {
+  const host = $("#te-tiles"); host.replaceChildren();
+  const tile = (title, val, sub, extra) => { const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, title); h("div", {class: "v"}, a, val); if (extra) a.appendChild(extra); h("div", {class: "s"}, a, sub); return a; };
+  const rr = teRoll(teSrc("ramp"), 13).filter(r => r.dv != null), r = rr[rr.length - 1];
+  if (r) {
+    const d = h("div", {class: "d"}); h("span", {class: r.ds >= 0 ? "up" : "down"}, d, "spend " + signPct(Math.expm1(r.ds)));
+    d.appendChild(document.createTextNode(` · tokens ${signPct(Math.expm1(r.dv))} · price ${signPct(Math.expm1(r.dp))}`));
+    tile("Usage vs price, 13 weeks (Ramp)", r.el == null ? "–" : r.el.toFixed(2) + "×", `Elasticity, weeks of ${dShort(r.base)} → ${dShort(r.d)}. Above 1 = spend grows as prices fall.`, d);
+  }
+  const o = (TE.openrouter || []).slice(-1)[0];
+  if (o) {
+    const d = h("div", {class: "d"}); d.appendChild(document.createTextNode(`${pct(+o.open_spend_share_cached, 0)} of spend (cache-adj.) · ${pct(+o.open_spend_share_list, 0)} at list`));
+    tile("Open weights on OpenRouter", pct(o.open_token_share, 0) + " of tokens", `7 days to ${fmtDate(T(o.as_of))}`, d);
+  }
+  const m = (TE.margin || []).filter(x => x.model === "DeepSeek-V4-Pro" && x.hardware === "b300" && x.tier_tps === 50);
+  const ml = m[m.length - 1];
+  if (ml) {
+    const d = h("div", {class: "d"}); d.appendChild(document.createTextNode(`${usd(ml.rev_per_gpu_hr)}/GPU-hr revenue vs ${usd(ml.tco_per_gpu_hr)} TCO · break-even at ${pct(ml.breakeven_util, 0)} utilisation`));
+    tile("DeepSeek V4 Pro gross margin, B300", pct(ml.gm_at_60, 0), `At 60% utilisation, ≥50 tok/s per user · $${ml.rev_per_gw_yr_bn_at_60}B revenue per GW-year`, d);
+  }
+  if (o && o.prompt_per_completion) {
+    const tp = (TE.tpr || []).slice(-1)[0], d = h("div", {class: "d"});
+    d.appendChild(document.createTextNode(tp ? `${Math.round(tp[1]).toLocaleString()} tokens per request (week of ${dShort(tp[0])})` : ""));
+    tile("Input tokens per output token", (+o.prompt_per_completion).toFixed(0) + " : 1", `OpenRouter, all models, 7 days to ${fmtDate(T(o.as_of))}`, d);
+  }
+}
+function drawTeElastic() {
+  const src = $("#te-src").value, win = +$("#te-win").value, P = teSrc(src), R = teRoll(P, win);
+  if (!P.length) { $("#c-te-idx").textContent = "No data yet."; return; }
+  const b = P[0], idx = P.map(p => ({d: p.d, v: p.vol / b.vol * 100, s: p.spend / b.spend * 100, p: (p.spend / p.vol) / (b.spend / b.vol) * 100}));
+  const S1 = [["Tokens", "v", "var(--s1)"], ["Spend", "s", "var(--s4)"], ["Price per token", "p", "var(--s2)"]].map(([nm, k, c]) => ({name: nm, color: c, markers: false, points: idx.map(r => ({x: T(r.d), y: r[k]}))}));
+  legend("lg-te-idx", S1.map(s => ({name: s.name, color: s.color})));
+  const t0 = fmtDate(T(b.d));
+  view("c-te-idx", hst => lineChart(hst, S1, {height: 300, log: true, yFmt: v => v >= 100 ? Math.round(v) : v.toFixed(v < 10 ? 1 : 0), mode: "cross", endLabels: false, title: x => (src === "ramp" ? "Week of " : "7 days to ") + fmtDate(x) + ` (index, ${t0} = 100)`}),
+    hst => table(hst, [{label: src === "ramp" ? "Week" : "7 days to", key: "d"}, {label: "Tokens", n: 1, get: r => tokN(r.vol)}, {label: "Spend", n: 1, get: r => usdN(r.spend)}, {label: "$ / M tokens", n: 1, get: r => perM(r.spend / r.vol * 1e6)}], [...P].reverse()));
+  const E = R.filter(r => r.dv != null), ys = E.map(r => r.el).filter(v => v != null);
+  const S2 = [{name: "Elasticity", color: "var(--s1)", points: E.map(r => ({x: T(r.d), y: r.el, note: `tokens ${signPct(Math.expm1(r.dv))}, price ${signPct(Math.expm1(r.dp))}, spend ${signPct(Math.expm1(r.ds))} since ${r.base}`}))},
+    {name: "1 = spend flat", color: "var(--axis)", dash: true, markers: false, points: E.map(r => ({x: T(r.d), y: 1}))}];
+  legend("lg-te-el", S2.map(s => ({name: s.name, color: s.color, dash: s.dash})));
+  view("c-te-el", hst => lineChart(hst, S2, {height: 300, yFmt: v => v.toFixed(1) + "×", yMin: Math.min(0, ...ys), mode: "cross", endLabels: false, title: x => `${win} weeks to ${fmtDate(x)}`}),
+    hst => table(hst, [{label: "To", key: "d"}, {label: "From", key: "base"}, {label: "Tokens", n: 1, get: r => signPct(Math.expm1(r.dv), 1)}, {label: "Price", n: 1, get: r => signPct(Math.expm1(r.dp), 1)},
+      {label: "Spend", n: 1, get: r => signPct(Math.expm1(r.ds), 1)}, {label: "Elasticity", n: 1, get: r => r.el == null ? "–" : r.el.toFixed(2)}], [...E].reverse()));
+  $("#te-el-note").textContent = src === "ramp"
+    ? "Ramp: only models with both billed spend and tokens in a week, so tokens and spend cover the same sample. Ramp's customer base grows every month, which inflates tokens and spend alike. The price change and elasticity are cleaner reads than the levels."
+    : "OpenRouter: priced tokens only (free variants excluded), list prices with 80% of input billed at the cached rate. Weekly snapshots start in June 2026 (Wayback captures), so the 13-week window has few points yet.";
+}
+function drawTeOpen() {
+  const O = TE.openrouter || [];
+  const S = [["Share of tokens", r => r.open_token_share, "var(--s1)"], ["Share of spend, cache-adjusted", r => +r.open_spend_share_cached || null, "var(--s4)"],
+    ["Share of spend, all input at list price", r => +r.open_spend_share_list || null, "var(--s4)", true]]
+    .map(([nm, f, c, dash]) => ({name: nm, color: c, dash, points: O.map(r => ({x: T(r.as_of), y: f(r), note: `${tok(r.total_tokens)} tokens · ${pct(r.priced_token_share, 0)} priced · ${pct(r.free_tokens / r.total_tokens, 0)} free`}))}));
+  legend("lg-te-open", S.map(s => ({name: s.name, color: s.color, dash: s.dash})));
+  view("c-te-open", hst => lineChart(hst, S, {height: 320, yFmt: v => pct(v, 0), yMin: 0, yMax: 1, mode: "cross", title: x => "7 days to " + fmtDate(x)}),
+    hst => table(hst, [{label: "7 days to", key: "as_of"}, {label: "Tokens", n: 1, get: r => tok(r.total_tokens)}, {label: "Open share of tokens", n: 1, get: r => pct(r.open_token_share)},
+      {label: "Open share of spend (cache-adj.)", n: 1, get: r => pct(+r.open_spend_share_cached)}, {label: "Open share of spend (list)", n: 1, get: r => pct(+r.open_spend_share_list)},
+      {label: "Spend (cache-adj.)", n: 1, get: r => usdN(r.spend_cached_usd)}, {label: "Priced tokens", n: 1, get: r => pct(r.priced_token_share, 0)}], [...O].reverse()));
+}
+function drawTeMargin() {
+  const model = $("#te-m-model").value, tier = +$("#te-m-tier").value, U = +$("#te-m-util").value;
+  const rows = (TE.margin || []).filter(r => r.model === model && r.tier_tps === tier);
+  const gm = r => 1 - r.breakeven_util / U, FLOOR = -1;
+  const chips = [...new Set(rows.map(r => r.chip))];
+  const S = chips.map(c => ({name: c, color: TE_CHIP[c] || "var(--ink-2)", points: rows.filter(r => r.chip === c).map(r => ({x: T(r.as_of), y: Math.max(FLOOR, gm(r)),
+    note: `${usd(r.rev_per_gpu_hr)}/GPU-hr vs ${usd(r.tco_per_gpu_hr)} TCO · ${r.framework}${r.disagg ? " disagg" : ""}, conc ${r.conc}, P90 ${r.p90_intvty} tok/s · run ${r.run_date}` + (gm(r) < FLOOR ? " · below −100%, drawn at the floor" : "")}))}));
+  legend("lg-te-m", S.map(s => ({name: s.name, color: s.color})));
+  const label = (rows[0] || {}).label || model;
+  view("c-te-m", hst => lineChart(hst, S, {height: 340, yFmt: v => pct(v, 0), yMin: Math.max(FLOOR, Math.min(0, ...S.flatMap(s => s.points.map(p => p.y)))), yMax: 1, mode: "cross", title: x => `${label} · as of ${fmtDate(x)}`}),
+    hst => table(hst, [{label: "As of", key: "as_of"}, {label: "Chip", key: "chip"}, {label: "Revenue / GPU-hr", n: 1, get: r => usd(r.rev_per_gpu_hr)}, {label: "Break-even util.", n: 1, get: r => pct(r.breakeven_util, 0)},
+      {label: `GM at ${pct(U, 0)}`, n: 1, get: r => pct(gm(r), 0)}, {label: "Run", key: "run_date"}], [...rows].reverse()));
+  const last = rows.length ? rows.map(r => r.as_of).sort().pop() : null, L = rows.filter(r => r.as_of === last).sort((a, b) => gm(b) - gm(a));
+  $("#te-m-tbl-title").textContent = last ? `Latest (as of ${fmtDate(T(last))}), by chip, at ${pct(U, 0)} utilisation` : "No runs at this tier";
+  table($("#te-m-latest"), [{label: "Chip", key: "chip"}, {label: "Best config", get: r => `${r.framework}${r.disagg ? " (disagg)" : ""}, ${r.precision}, conc ${r.conc}`},
+    {label: "P90 tok/s per user", n: 1, key: "p90_intvty"}, {label: "Tok/s per GPU (in / out)", n: 1, get: r => `${Math.round(r.input_tps).toLocaleString()} / ${Math.round(r.output_tps).toLocaleString()}`},
+    {label: "Revenue / GPU-hr", n: 1, get: r => usd(r.rev_per_gpu_hr)}, {label: "TCO / GPU-hr", n: 1, get: r => usd(r.tco_per_gpu_hr)}, {label: "Rental / GPU-hr", n: 1, get: r => usd(r.rent_per_gpu_hr)},
+    {label: "Break-even util.", n: 1, get: r => pct(r.breakeven_util, 0)}, {label: "Gross margin", n: 1, get: r => pct(gm(r), 0)},
+    {label: "Revenue per GW-yr", n: 1, get: r => "$" + (r.rev_per_gw_yr_bn_at_60 * U / 0.6).toFixed(0) + "B"}, {label: "Run date", key: "run_date"}], L);
+  const p = L[0];
+  $("#te-m-note").textContent = p ? `Prices: median of ${label}'s OpenRouter providers, ${perM(p.price_in_per_m)} in / ${perM(p.price_out_per_m)} out per M tokens` +
+    (rows.some(r => r.price_held) ? `; months before ${(TE.margin_prices || []).filter(x => x.model === model).map(x => x.date).sort()[0]} use that first observed price, so the early history shows cost changes only.` : ".") +
+    " Fin's reference: open models earn ~60–70% at list price on B300, about $50B of revenue per GW-year. A line that steps up on the same chip is software making the same hardware cheaper." : "";
+}
+function drawTeAgentic() {
+  const tp = TE.tpr || [], O = (TE.openrouter || []).filter(r => r.prompt_per_completion);
+  const S = [{name: "Tokens per request", color: "var(--s1)", markers: false, points: tp.map(r => ({x: T(r[0]) + 6 * 864e5, y: r[1]}))},
+    {name: "Input per output token (right)", short: "Input ÷ output", color: "var(--s4)", axis: 2, points: O.map(r => ({x: T(r.as_of), y: +r.prompt_per_completion}))}];
+  legend("lg-te-tpr", S.map(s => ({name: s.name, color: s.color})));
+  view("c-te-tpr", hst => lineChart(hst, S, {height: 300, yFmt: v => v >= 1000 ? (v / 1000).toFixed(v >= 1e4 ? 0 : 1) + "K" : Math.round(v), right: {yFmt: v => Math.round(v) + "×", color: "var(--s4)"}, leftColor: "var(--s1)", mode: "near", endLabels: false}),
+    hst => table(hst, [{label: "Week / 7 days to", key: 0}, {label: "Tokens per request", n: 1, get: r => r[1] == null ? "–" : Math.round(r[1]).toLocaleString()}, {label: "Input ÷ output", n: 1, get: r => r[2] == null ? "–" : r[2].toFixed(1)}],
+      [...tp.map(r => [r[0], r[1], null]), ...O.map(r => [r.as_of, null, +r.prompt_per_completion])].sort((a, b) => a[0] < b[0] ? 1 : -1)));
+  const A = TE.apps || [], B = [["Agents", "var(--s1)"], ["Coding tools", "var(--s2)"], ["Chat & other", "var(--ink-2)"]];
+  const tot = r => B.reduce((s, [k]) => s + (r[k] || 0), 0);
+  const S2 = B.map(([k, c]) => ({name: k, color: c, points: A.map(r => ({x: T(r.snapshot), y: tot(r) ? (r[k] || 0) / tot(r) : null, note: `${r.n} apps listed · ${tok(tot(r))} tokens`}))}));
+  legend("lg-te-app", S2.map(s => ({name: s.name, color: s.color})));
+  view("c-te-app", hst => lineChart(hst, S2, {height: 300, yFmt: v => pct(v, 0), yMin: 0, yMax: 1, mode: "cross", endLabels: false, title: x => "Week to " + fmtDate(x)}),
+    hst => table(hst, [{label: "Rank", key: "rank"}, {label: "App", key: "app"}, {label: "Type", key: "bucket"}, {label: "Tokens (week)", n: 1, get: r => tok(+r.tokens)}, {label: "Categories", key: "categories"}], TE.apps_last || []));
+}
+function drawTokenEcon() { drawTeTiles(); drawTeElastic(); drawTeOpen(); drawTeMargin(); drawTeAgentic(); }
+async function loadTokenEcon() {
+  TE = await api("/api/tokenecon");
+  const sel = $("#te-m-model"), seen = new Set();
+  (TE.margin || []).forEach(r => { if (!seen.has(r.model)) { seen.add(r.model); h("option", {value: r.model}, sel, r.label); } });
+  ["#te-src", "#te-win"].forEach(id => $(id).addEventListener("change", drawTeElastic));
+  ["#te-m-model", "#te-m-tier", "#te-m-util"].forEach(id => $(id).addEventListener("change", drawTeMargin));
+  drawTokenEcon();
+}
+
 /* ================================================================ Ramp AI Index: businesses paying for AI */
 let RA = null;
 const RA_VENDOR = {OpenAI: "var(--s1)", Anthropic: "var(--s4)", xAI: "var(--s3)", DeepSeek: "var(--s5)", "Mistral AI": "var(--s6)"};
@@ -1204,14 +1329,18 @@ function drawCxQ() {
   const fmt = mode === "share" || mode === "yoy" ? (v => pct(v, 0)) : (v => "$" + v.toFixed(v >= 100 ? 0 : 1) + "bn");
   const S = CXQ_TK.map(([k, nm, col]) => ({name: nm, color: col, points: Q.map((r, i) => ({x: qx(r.cal_quarter), y: val(k, i), note: r.cal_quarter}))}));
   const E7 = Object.fromEntries((CXQ.expanded7 || []).map(r => [r.ttm_ending, r]));
+  /* quarters a neocloud / SpaceX has reported before the five have (earnings releases land first) */
+  const lastQ = n ? Q[n - 1].cal_quarter : "";
+  const extraQ = mode === "q" || mode === "yoy" ? [...new Set((CXQ.neo_periods || []).filter(p => p.first_quarter === p.last_quarter && p.first_quarter > lastQ).map(p => p.first_quarter))].sort() : [];
+  const yearAgo = q => `${+q.slice(0, 4) - 1}${q.slice(4)}`;
   CXQ_NEO.forEach(([comp, nm, col]) => {
     const key = NEO_KEY[comp];
-    const pts = Q.map((r, i) => {
-      const q = r.cal_quarter, v = neoQ(comp, q);
+    const pts = Q.map(r => r.cal_quarter).concat(extraQ).map(q => {
+      const v = neoQ(comp, q);
       if (mode === "q") return {x: qx(q), y: v, note: q};
       if (mode === "ttm") return {x: qx(q), y: E7[q] ? E7[q][key] : null, note: `TTM to ${q}`};
       if (mode === "share") return {x: qx(q), y: E7[q] ? E7[q][key] / E7[q].total_bn : null, note: `TTM to ${q}, share of the eight`};
-      const y0 = Q[i - 4] ? neoQ(comp, Q[i - 4].cal_quarter) : null;
+      const y0 = neoQ(comp, yearAgo(q));
       return {x: qx(q), y: v != null && y0 ? v / y0 - 1 : null, note: q};
     });
     S.push({name: nm, color: col, dash: true, points: pts});
@@ -1384,7 +1513,7 @@ async function loadCapex() {
       {label: "Last", n: 1, get: r => fx(r.last)}, {label: "Peak ÷ start", n: 1, get: r => (r.peak / r.v0).toFixed(1) + "×"},
       {label: "Peak to last", n: 1, get: r => r.last < r.peak ? "−" + Math.round((1 - r.last / r.peak) * 100) + "%" : "still rising"}], rws);
     $("#cx-src-note").textContent = fhMode
-      ? "First-hand rebuild: NBER tables, BEA Fixed Assets and GDP, SEC filings and SpaceX's prospectus - no BofA input. Annual series are calendar-year steps; hyperscalers are the four quarters to each real quarter end. BofA's lease-adjusted line can't be rebuilt; the dashed line adds CoreWeave, Nebius and SpaceX AI instead."
+      ? "First-hand rebuild: NBER tables, BEA Fixed Assets and GDP, SEC filings and SpaceX's prospectus / earnings releases - no BofA input. Annual series are calendar-year steps; hyperscalers are the four quarters to each real quarter end. BofA's lease-adjusted line can't be rebuilt; the dashed line adds CoreWeave, Nebius and SpaceX AI instead."
       : shift ? "BofA's exhibit values (PDF vector), re-dated: each post-1970 point moved to the true end of the period it measures (+3 quarters), so BofA's last hyperscaler point sits at Q1 2026. Railroads are unchanged. Switch Dating to see the placement in the original PDF."
       : "BofA's exhibit exactly as drawn in the PDF: each post-1970 point sits three quarters before the end of its four-quarter window (half a year before the start of its final quarter).";
     return rws;
@@ -1548,7 +1677,7 @@ function loadData() {
   refreshStatus();
 }
 
-const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, rampadopt: loadRampAdopt, arr: loadArr, circular: loadCircular, population: loadPopulation, data: loadData};
+const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, tokenecon: loadTokenEcon, rampadopt: loadRampAdopt, arr: loadArr, circular: loadCircular, population: loadPopulation, data: loadData};
 async function boot(again) {
   META = await api("/api/meta");
   document.body.classList.toggle("hosted", !!META.hosted);

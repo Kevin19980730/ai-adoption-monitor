@@ -646,6 +646,57 @@ def ramp_adoption():
     return jsonify({"groups": groups, "spend": spend, "last": a.month.max()})
 
 
+# ---------------------------------------------------------------- token economics (fin, "AI Semiconductor Endgame IV")
+IMD = HERE.parent / "inference-margin"
+# OpenRouter app categories -> bucket (an app with any agent category counts as an agent)
+APP_AGENT = {"cli-agent", "personal-agent", "cloud-agent"}
+APP_CODING = {"ide-extension", "programming-app", "native-app-builder"}
+
+
+def im_csv(name):
+    p = IMD / name
+    return cached("im:" + name, [p], lambda: pd.read_csv(p) if p.exists() else pd.DataFrame())
+
+
+@app.route("/api/tokenecon")
+def tokenecon():
+    """Four tests of the 'token-economics equilibrium': usage vs price (Ramp + OpenRouter), open-weights share of
+    tokens vs spend, open-model inference margin per GPU, and agentic intensity."""
+    out = {}
+    # 1. usage vs price - Ramp: only models with both billed spend and tokens that week (same sample for both)
+    v = rp_csv("ramp_token_weekly.csv")
+    if not v.empty:
+        pv = v.pivot_table(index=["week", "model"], columns="metric", values="value", aggfunc="sum").dropna()
+        pv = pv[(pv.token_spend > 0) & (pv.token_volume > 0)].groupby(level="week").sum()
+        out["ramp"] = [[w, float(r.token_volume), float(r.token_spend)] for w, r in pv.iterrows()]
+    osh = or_csv("openrouter_open_share.csv")
+    if not osh.empty:
+        out["openrouter"] = records(osh.fillna(""))
+    # 3. inference margin per GPU
+    im = im_csv("inference_margin_monthly.csv")
+    if not im.empty:
+        out["margin"] = records(im.fillna(""))
+        ip = im_csv("inference_prices.csv")
+        out["margin_prices"] = records(ip.fillna("")) if not ip.empty else []
+    # 4. agentic intensity: tokens per request (weekly totals) + top public apps by category
+    tot, req = or_csv("openrouter_weekly_totals.csv"), or_csv("openrouter_weekly_requests.csv")
+    if not tot.empty and not req.empty:
+        j = tot[tot.partial == 0].merge(req[req.partial == 0], on="week")
+        out["tpr"] = [[r.week, float(r.total_tokens) / float(r.total_requests)] for r in j.itertuples() if r.total_requests]
+    apps = or_csv("openrouter_top_apps.csv")
+    if not apps.empty:
+        a = apps[apps.period == "week"].copy()
+        cats = a.categories.fillna("").astype(str).str.split("|")
+        a["bucket"] = ["Agents" if set(c) & APP_AGENT else "Coding tools" if set(c) & APP_CODING else "Chat & other" for c in cats]
+        a["tokens"] = pd.to_numeric(a.tokens, errors="coerce").fillna(0)
+        g = a.groupby(["snapshot", "bucket"]).tokens.sum().unstack(fill_value=0)
+        out["apps"] = [{"snapshot": s, **{k: float(x) for k, x in r.items()}, "n": int((a.snapshot == s).sum())} for s, r in g.iterrows()]
+        last = a.snapshot.max()
+        out["apps_last"] = records(a[a.snapshot == last].sort_values("rank")[["rank", "app", "tokens", "requests", "categories", "bucket"]].fillna(""))
+        out["apps_snapshot"] = last
+    return jsonify(out)
+
+
 # ---------------------------------------------------------------- OpenAI & Anthropic ARR
 ARD = HERE.parent / "ai-lab-arr"
 ARR_CANDS = ARD / "arr_candidates.json"

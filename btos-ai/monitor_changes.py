@@ -38,6 +38,8 @@ SOURCES = {
     "AI assistant disclosures": ("assistants", 120, 0, "irregular (disclosures)"),
     "Hyperscaler capex (SEC)": ("hcapex", 140, 35, "quarterly"),
     "Circular financing deals": ("circular", 21, 0, "irregular (news)"),
+    "OpenRouter model mix": ("tokenecon", 16, 1, "weekly"),
+    "InferenceX margins": ("tokenecon", 75, 0, "monthly (as benchmark runs land)"),
 }
 IRREGULAR = {"Lab ARR", "AI assistant disclosures", "Circular financing deals"}
 
@@ -92,6 +94,19 @@ def series():
         add("ramp_px", "Blended price paid per M tokens (Ramp)", "Ramp tokens", _pts(px.index, px.values), "per_m", "rel", up_good=False)
         sh = (an / v).reindex(v.index).fillna(0)
         add("ramp_anth", "Anthropic share of business tokens (Ramp)", "Ramp tokens", _pts(sh.index, sh.values), "share", "pp")
+    osh = _csv("openrouter_data/openrouter_open_share.csv")
+    if not osh.empty:
+        add("or_open_tok", "Open-weights share of OpenRouter tokens", "OpenRouter model mix", _pts(osh.as_of, osh.open_token_share), "share", "pp")
+        add("or_open_spend", "Open-weights share of OpenRouter spend (cache-adj.)", "OpenRouter model mix",
+            _pts(osh.as_of, pd.to_numeric(osh.open_spend_share_cached, errors="coerce")), "share", "pp")
+        add("or_px", "OpenRouter blended price per M tokens (cache-adj.)", "OpenRouter model mix",
+            _pts(osh.as_of, pd.to_numeric(osh.price_cached_per_m, errors="coerce")), "per_m", "rel", up_good=False)
+        add("or_io", "OpenRouter input tokens per output token", "OpenRouter model mix",
+            _pts(osh.as_of, pd.to_numeric(osh.prompt_per_completion, errors="coerce")), "x", "x")
+    im = _csv("inference-margin/inference_margin_monthly.csv")
+    if not im.empty:
+        g = im[(im.model == "DeepSeek-V4-Pro") & (im.hardware == "b300") & (im.tier_tps == 50)]
+        add("im_dsv4_b300", "DeepSeek V4 Pro gross margin on B300 (60% util.)", "InferenceX margins", _pts(g.as_of, g.gm_at_60), "share", "pp")
     a = _csv("ramp-ai-index/ramp_adoption_monthly.csv")
     if not a.empty:
         me = pd.to_datetime(a.month) + pd.offsets.MonthEnd(0)
