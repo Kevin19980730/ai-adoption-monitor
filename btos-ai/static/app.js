@@ -1371,7 +1371,7 @@ function drawCxQ() {
   table($("#cx-of"), [{label: "Fiscal quarter ends", key: "fiscal_quarter_end"}, {label: "Oracle capex ($bn)", n: 1, get: r => "$" + r.capex_bn.toFixed(2)}], [...CXQ.oracle_fiscal].reverse());
 }
 /* RPO (contracted backlog) vs trailing-four-quarter capex; "ALL" sums the four only in quarters where all four report */
-const RPO_TK = [["MSFT", "Microsoft"], ["GOOGL", "Alphabet"], ["AMZN", "Amazon"], ["ORCL", "Oracle"], ["CRWV", "CoreWeave"], ["NBIS", "Nebius"], ["SPCX", "SpaceX (company-wide)"]];
+const RPO_TK = [["MSFT", "Microsoft"], ["GOOGL", "Alphabet"], ["AMZN", "Amazon"], ["ORCL", "Oracle"], ["CRWV", "CoreWeave"], ["NBIS", "Nebius"]];
 const RPO_SETS = {ALL: ["MSFT", "GOOGL", "AMZN", "ORCL"], ALL6: ["MSFT", "GOOGL", "AMZN", "ORCL", "CRWV", "NBIS"]};
 function drawRpo() {
   const co = $("#rpo-co").value, mode = $("#rpo-mode").value, R = CXQ.rpo;
@@ -1407,7 +1407,7 @@ function drawRpo() {
   });
 }
 /* Construction in progress (assets not yet in service) vs trailing-four-quarter capex; "GM" sums Alphabet + Meta */
-const CIP_TK = [["GOOGL", "Alphabet"], ["META", "Meta"], ["AMZN", "Amazon"], ["ORCL", "Oracle"], ["CRWV", "CoreWeave"], ["NBIS", "Nebius"], ["SPCX", "SpaceX (company-wide)"]];
+const CIP_TK = [["GOOGL", "Alphabet"], ["META", "Meta"], ["AMZN", "Amazon"], ["ORCL", "Oracle"], ["CRWV", "CoreWeave"], ["NBIS", "Nebius"]];
 const CIP_SETS = {GM: ["GOOGL", "META"]};
 function drawCip() {
   const co = $("#cip-co").value, mode = $("#cip-mode").value, R = CXQ.cip;
