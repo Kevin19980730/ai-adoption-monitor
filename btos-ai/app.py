@@ -412,14 +412,25 @@ def openrouter():
 
 # ---------------------------------------------------------------- Silicon Data GPU rental indices
 SDD = HERE.parent / "silicon-data"
-SD_META = {  # index -> label, unit, segment (mirrors silicon_update.INDEX)
+SD_META = {  # index -> label, unit, segment (mirrors silicon_update.INDEX; silicon_indices.json, written each run, wins)
     "SDH100RT": ("H100", "USD / GPU-hour", "Neo-cloud"), "SDB200RT": ("B200", "USD / GPU-hour", "Neo-cloud"),
     "SDA100RT": ("A100", "USD / GPU-hour", "Neo-cloud"), "H200": ("H200", "USD / GPU-hour", "Neo-cloud"),
     "B300": ("B300", "USD / GPU-hour", "Neo-cloud"), "MI300X": ("MI300X", "USD / GPU-hour", "Neo-cloud"),
     "SDLLMTK": ("LLM Token Expenditure Index", "USD / M tokens", "Index"),
+    "LLM-OPEN": ("Open LLM Token Expenditure Index", "USD / M tokens", "Index"),
+    "LLM-PROP": ("Proprietary LLM Token Expenditure Index", "USD / M tokens", "Index"),
+    "GDDR6": ("GDDR6 RAM Index", "USD / GB", "Memory"),
     "H100-HYP": ("H100", "USD / GPU-hour", "Hyperscaler"), "A100-HYP": ("A100", "USD / GPU-hour", "Hyperscaler"),
     "B200-HYP": ("B200", "USD / GPU-hour", "Hyperscaler"),
 }
+
+
+def sd_meta():
+    p = SDD / "silicon_indices.json"
+    if not p.exists():
+        return SD_META
+    j = cached("sd:meta", [p], lambda: json.loads(p.read_text(encoding="utf-8")))
+    return {**SD_META, **{k: (v["label"], v["unit"], v["segment"]) for k, v in j.items()}}
 # the workbook's "Implied Revenue / GW / Year": 6.5 kW per 8-GPU server -> 1e6/(6.5/8) GPUs per GW, 8,760 h
 GPUS_PER_GW = 1_000_000 / (6.5 / 8)
 
@@ -435,9 +446,9 @@ def silicon():
     if d.empty:
         return jsonify({"series": {}, "latest": []})
     d = d.sort_values("date")
-    series, latest = {}, []
+    series, latest, meta = {}, [], sd_meta()
     for idx, g in d.groupby("index"):
-        lab, unit, seg = SD_META.get(idx, (idx, "", ""))
+        lab, unit, seg = meta.get(idx, (idx, "", ""))
         series[idx] = {"label": lab, "unit": unit, "segment": seg,
                        "points": [[r.date, float(r.value), "site" if str(r.source).startswith("silicondata") else "workbook"]
                                   for r in g.itertuples()]}

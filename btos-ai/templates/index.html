@@ -542,7 +542,7 @@
   <div class="tiles" id="gpu-tiles"></div>
   <div class="card">
     <div class="card-head"><div><h2>GPU rental price indices, neo-cloud</h2>
-      <p class="muted">Silicon Data daily indices, USD per GPU-hour, standardised for term, cluster size and interconnect. Bloomberg tickers SDH100RT / SDB200RT / SDA100RT. History from the Research workbook <i>GPU rental price_2026-02-24.xlsx</i>; new days from silicondata.com. H200, B300 and MI300X start when tracking began here.</p></div>
+      <p class="muted">Silicon Data daily indices, USD per GPU-hour, standardised for term, cluster size and interconnect. Bloomberg tickers SDH100RT / SDB200RT / SDA100RT. History from the Research workbook <i>GPU rental price_2026-02-24.xlsx</i>. New days come from silicondata.com, which shows the last 30 daily points, so missed days are back-filled. H200, B300 and MI300X start in Sep 2026.</p></div>
       <button class="btn small tbl-toggle" data-for="c-gpu-price">Table</button></div>
     <div class="filters inner"><label>Range <select id="gpu-range"><option value="90">3 months</option><option value="182">6 months</option><option value="365" selected>1 year</option><option value="0">All</option></select></label></div>
     <div class="legend" id="lg-gpu-price"></div>
@@ -556,8 +556,24 @@
       <div class="chart" id="c-gpu-token"></div>
     </div>
     <div class="card">
-      <div class="card-head"><div><h2>Hyperscaler vs neo-cloud</h2><p class="muted">Hyperscaler readings are hand-entered in the workbook (the site only shows them in its login-gated chart). Premium = hyperscaler ÷ neo-cloud on the same day.</p></div></div>
-      <div id="gpu-hyp" class="tblwrap"></div>
+      <div class="card-head"><div><h2>Hyperscaler premium over neo-cloud</h2><p class="muted">Hyperscaler price ÷ neo-cloud price on the same day. The H100 and A100 hyperscaler readings come daily from silicondata.com since Sep 2026; earlier points and all B200 points were hand-entered in the workbook.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-gpu-hyp">Table</button></div>
+      <div class="legend" id="lg-gpu-hyp"></div>
+      <div class="chart" id="c-gpu-hyp"></div>
+    </div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>LLM token expenditure: open vs proprietary</h2><p class="muted">Usage-weighted price paid per million tokens. Blended = SDLLMTK (Bloomberg). The Open (200+ open-weight models) and Proprietary (120+ closed models) series are tracked here from Sep 2026.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-gpu-llm">Table</button></div>
+      <div class="legend" id="lg-gpu-llm"></div>
+      <div class="chart" id="c-gpu-llm"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>GDDR6 memory price</h2><p class="muted">Silicon Data RAM Index, USD per GB, daily, tracked from Sep 2026.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-gpu-ram">Table</button></div>
+      <div class="legend" id="lg-gpu-ram"></div>
+      <div class="chart" id="c-gpu-ram"></div>
     </div>
   </div>
   <div class="card">
@@ -725,7 +741,7 @@
         <li><a href="https://www.atlantafed.org/research-and-data/surveys/business-uncertainty" target="_blank" rel="noopener noreferrer">Atlanta Fed Survey of Business Uncertainty</a></li>
         <li>AI assistant user counts: <code>codex-user-trend/*.csv</code>, edited by hand. Each row cites its source.</li>
         <li><a href="https://openrouter.ai/rankings#top-models" target="_blank" rel="noopener noreferrer">OpenRouter rankings, Top Models</a> (weekly tokens; <code>openrouter_data/*.csv</code>)</li>
-        <li><a href="https://www.silicondata.com/products/silicon-index" target="_blank" rel="noopener noreferrer">Silicon Data indices</a> (GPU rental + LLM token; <code>silicon-data/*.csv</code>, history from the Research workbook)</li>
+        <li><a href="https://www.silicondata.com/products/silicon-index" target="_blank" rel="noopener noreferrer">Silicon Data indices</a> (GPU rental neo-cloud + hyperscaler, LLM token blended / open / proprietary, GDDR6 RAM; <code>silicon-data/*.csv</code>, history from the Research workbook)</li>
         <li>BofA Global Research Exhibit 2 (capex cycles), from BofA Institute <i>Can the AI buildout keep building?</i> (27 Aug 2026), read from the PDF&rsquo;s vector paths (<code>bofa-capex-cycles/extract_pdf.py</code>)</li>
         <li><a href="https://fred.stlouisfed.org/series/DFII10" target="_blank" rel="noopener noreferrer">10-year real yield (DFII10)</a>, <a href="https://fred.stlouisfed.org/series/THREEFYTP10" target="_blank" rel="noopener noreferrer">10-year term premium (THREEFYTP10, Kim&ndash;Wright)</a> and <a href="https://fred.stlouisfed.org/series/DGS10" target="_blank" rel="noopener noreferrer">10-year Treasury (DGS10)</a> via FRED (<code>credit-spreads/macro_daily.csv</code>)</li>
         <li><a href="https://fred.stlouisfed.org/series/BAMLH0A1HYBB" target="_blank" rel="noopener noreferrer">ICE BofA BB</a> and <a href="https://fred.stlouisfed.org/series/BAMLH0A3HYC" target="_blank" rel="noopener noreferrer">CCC &amp; lower</a> US High Yield OAS via FRED (<code>credit-spreads/*.csv</code>; pre-2023 history from Wayback copies in <code>credit-spreads/source/</code>)</li>

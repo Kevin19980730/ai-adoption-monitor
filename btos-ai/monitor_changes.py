@@ -122,10 +122,15 @@ def series():
             _pts(pd.to_datetime(g.month) + pd.offsets.MonthEnd(0), g.median_pepm), "usd_small", "rel")
     sd = _csv("silicon-data/silicon_index_daily.csv")
     if not sd.empty:
-        for idx, nm in (("SDH100RT", "H100 rental, neo-cloud ($/GPU-hr)"), ("SDB200RT", "B200 rental, neo-cloud ($/GPU-hr)"),
-                        ("SDA100RT", "A100 rental, neo-cloud ($/GPU-hr)"), ("SDLLMTK", "LLM token expenditure index ($/M tokens)")):
+        for idx, nm, unit in (("SDH100RT", "H100 rental, neo-cloud ($/GPU-hr)", "usd_hr"), ("SDB200RT", "B200 rental, neo-cloud ($/GPU-hr)", "usd_hr"),
+                              ("SDA100RT", "A100 rental, neo-cloud ($/GPU-hr)", "usd_hr"), ("H200", "H200 rental, neo-cloud ($/GPU-hr)", "usd_hr"),
+                              ("B300", "B300 rental, neo-cloud ($/GPU-hr)", "usd_hr"), ("MI300X", "MI300X rental, neo-cloud ($/GPU-hr)", "usd_hr"),
+                              ("H100-HYP", "H100 rental, hyperscaler ($/GPU-hr)", "usd_hr"), ("A100-HYP", "A100 rental, hyperscaler ($/GPU-hr)", "usd_hr"),
+                              ("SDLLMTK", "LLM token expenditure index ($/M tokens)", "per_m"), ("LLM-OPEN", "Open LLM token expenditure ($/M tokens)", "per_m"),
+                              ("LLM-PROP", "Proprietary LLM token expenditure ($/M tokens)", "per_m"), ("GDDR6", "GDDR6 RAM index ($/GB)", "usd_small")):
             g = sd[sd["index"] == idx]
-            add("sd_" + idx, nm, "Silicon Data GPU prices", _pts(g.date, g.value), "usd_hr" if idx != "SDLLMTK" else "per_m", "rel")
+            if not g.empty:
+                add("sd_" + idx, nm, "Silicon Data GPU prices", _pts(g.date, g.value), unit, "rel")
     hy = _csv("credit-spreads/macro_daily.csv")
     if not hy.empty:
         w = hy.pivot_table(index="date", columns="series", values="value", aggfunc="last")

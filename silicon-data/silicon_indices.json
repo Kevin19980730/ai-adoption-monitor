@@ -1,0 +1,67 @@
+{
+ "SDA100RT": {
+  "label": "A100",
+  "unit": "USD / GPU-hour",
+  "segment": "Neo-cloud"
+ },
+ "SDH100RT": {
+  "label": "H100",
+  "unit": "USD / GPU-hour",
+  "segment": "Neo-cloud"
+ },
+ "H200": {
+  "label": "H200",
+  "unit": "USD / GPU-hour",
+  "segment": "Neo-cloud"
+ },
+ "SDB200RT": {
+  "label": "B200",
+  "unit": "USD / GPU-hour",
+  "segment": "Neo-cloud"
+ },
+ "B300": {
+  "label": "B300",
+  "unit": "USD / GPU-hour",
+  "segment": "Neo-cloud"
+ },
+ "MI300X": {
+  "label": "MI300X",
+  "unit": "USD / GPU-hour",
+  "segment": "Neo-cloud"
+ },
+ "SDLLMTK": {
+  "label": "LLM Token Expenditure Index",
+  "unit": "USD / M tokens",
+  "segment": "Index"
+ },
+ "LLM-OPEN": {
+  "label": "Open LLM Token Expenditure Index",
+  "unit": "USD / M tokens",
+  "segment": "Index"
+ },
+ "LLM-PROP": {
+  "label": "Proprietary LLM Token Expenditure Index",
+  "unit": "USD / M tokens",
+  "segment": "Index"
+ },
+ "GDDR6": {
+  "label": "GDDR6 RAM Index",
+  "unit": "USD / GB",
+  "segment": "Memory"
+ },
+ "A100-HYP": {
+  "label": "A100",
+  "unit": "USD / GPU-hour",
+  "segment": "Hyperscaler"
+ },
+ "H100-HYP": {
+  "label": "H100",
+  "unit": "USD / GPU-hour",
+  "segment": "Hyperscaler"
+ },
+ "B200-HYP": {
+  "label": "B200",
+  "unit": "USD / GPU-hour",
+  "segment": "Hyperscaler"
+ }
+}

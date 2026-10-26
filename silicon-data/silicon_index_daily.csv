@@ -13,17 +13,105 @@ date,index,value,source
 2026-07-20,A100-HYP,3.71,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-07-21,A100-HYP,3.71,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-07-22,A100-HYP,3.71,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
+2026-09-23,A100-HYP,3.75,silicondata.com index hub
+2026-09-24,A100-HYP,3.75,silicondata.com index hub
+2026-09-25,A100-HYP,3.75,silicondata.com index hub
+2026-09-26,A100-HYP,3.75,silicondata.com index hub
+2026-09-27,A100-HYP,3.75,silicondata.com index hub
+2026-09-28,A100-HYP,3.75,silicondata.com index hub
+2026-09-29,A100-HYP,3.75,silicondata.com index hub
+2026-09-30,A100-HYP,3.76,silicondata.com index hub
+2026-10-01,A100-HYP,3.76,silicondata.com index hub
+2026-10-02,A100-HYP,3.76,silicondata.com index hub
+2026-10-03,A100-HYP,3.76,silicondata.com index hub
+2026-10-04,A100-HYP,3.76,silicondata.com index hub
+2026-10-05,A100-HYP,3.76,silicondata.com index hub
+2026-10-06,A100-HYP,3.76,silicondata.com index hub
+2026-10-07,A100-HYP,3.76,silicondata.com index hub
+2026-10-08,A100-HYP,3.76,silicondata.com index hub
+2026-10-09,A100-HYP,3.76,silicondata.com index hub
+2026-10-10,A100-HYP,3.76,silicondata.com index hub
+2026-10-11,A100-HYP,3.76,silicondata.com index hub
+2026-10-12,A100-HYP,3.76,silicondata.com index hub
+2026-10-13,A100-HYP,3.76,silicondata.com index hub
+2026-10-14,A100-HYP,3.76,silicondata.com index hub
+2026-10-15,A100-HYP,3.76,silicondata.com index hub
+2026-10-16,A100-HYP,3.76,silicondata.com index hub
+2026-10-17,A100-HYP,3.77,silicondata.com index hub
+2026-10-18,A100-HYP,3.77,silicondata.com index hub
+2026-10-19,A100-HYP,3.76,silicondata.com index hub
+2026-10-20,A100-HYP,3.76,silicondata.com index hub
+2026-10-21,A100-HYP,3.91,silicondata.com index hub
+2026-10-22,A100-HYP,3.92,silicondata.com index hub
+2026-10-23,A100-HYP,3.92,silicondata.com index hub
+2026-10-24,A100-HYP,3.92,silicondata.com index hub
+2026-10-25,A100-HYP,3.92,silicondata.com index hub
+2026-09-23,B300,6.95,silicondata.com index hub
+2026-09-24,B300,6.8,silicondata.com index hub
+2026-09-25,B300,6.8,silicondata.com index hub
+2026-09-26,B300,6.8,silicondata.com index hub
+2026-09-27,B300,6.8,silicondata.com index hub
+2026-09-28,B300,6.78,silicondata.com index hub
+2026-09-29,B300,6.92,silicondata.com index hub
+2026-09-30,B300,6.78,silicondata.com index hub
+2026-10-01,B300,6.78,silicondata.com index hub
+2026-10-02,B300,6.7,silicondata.com index hub
+2026-10-03,B300,6.84,silicondata.com index hub
+2026-10-04,B300,6.84,silicondata.com index hub
+2026-10-05,B300,6.82,silicondata.com index hub
+2026-10-06,B300,6.82,silicondata.com index hub
+2026-10-07,B300,6.68,silicondata.com index hub
+2026-10-08,B300,6.69,silicondata.com index hub
 2026-10-09,B300,6.71,silicondata.com public index page
+2026-10-10,B300,6.71,silicondata.com index hub
 2026-10-11,B300,6.67,silicondata.com public index page
 2026-10-12,B300,6.65,silicondata.com public index page
 2026-10-13,B300,6.65,silicondata.com public index page
 2026-10-14,B300,6.65,silicondata.com public index page
 2026-10-15,B300,6.77,silicondata.com public index page
+2026-10-16,B300,6.96,silicondata.com index hub
+2026-10-17,B300,7.01,silicondata.com index hub
 2026-10-18,B300,7.01,silicondata.com public index page
 2026-10-19,B300,7.02,silicondata.com public index page
 2026-10-20,B300,7.02,silicondata.com public index page
 2026-10-21,B300,7.02,silicondata.com public index page
 2026-10-22,B300,7.35,silicondata.com public index page
+2026-10-23,B300,7.53,silicondata.com index hub
+2026-10-24,B300,7.53,silicondata.com index hub
+2026-10-25,B300,7.53,silicondata.com index hub
+2026-09-23,GDDR6,19.09,silicondata.com index hub
+2026-09-24,GDDR6,19.09,silicondata.com index hub
+2026-09-25,GDDR6,19.09,silicondata.com index hub
+2026-09-26,GDDR6,19.09,silicondata.com index hub
+2026-09-27,GDDR6,19.09,silicondata.com index hub
+2026-09-28,GDDR6,19.09,silicondata.com index hub
+2026-09-29,GDDR6,19.31,silicondata.com index hub
+2026-09-30,GDDR6,19.31,silicondata.com index hub
+2026-10-01,GDDR6,19.31,silicondata.com index hub
+2026-10-02,GDDR6,19.31,silicondata.com index hub
+2026-10-03,GDDR6,19.31,silicondata.com index hub
+2026-10-04,GDDR6,19.31,silicondata.com index hub
+2026-10-05,GDDR6,19.31,silicondata.com index hub
+2026-10-06,GDDR6,19.36,silicondata.com index hub
+2026-10-07,GDDR6,19.36,silicondata.com index hub
+2026-10-08,GDDR6,19.36,silicondata.com index hub
+2026-10-09,GDDR6,19.36,silicondata.com index hub
+2026-10-10,GDDR6,19.36,silicondata.com index hub
+2026-10-11,GDDR6,19.36,silicondata.com index hub
+2026-10-12,GDDR6,19.36,silicondata.com index hub
+2026-10-13,GDDR6,19.47,silicondata.com index hub
+2026-10-14,GDDR6,19.47,silicondata.com index hub
+2026-10-15,GDDR6,19.47,silicondata.com index hub
+2026-10-16,GDDR6,19.47,silicondata.com index hub
+2026-10-17,GDDR6,19.47,silicondata.com index hub
+2026-10-18,GDDR6,19.47,silicondata.com index hub
+2026-10-19,GDDR6,19.47,silicondata.com index hub
+2026-10-20,GDDR6,19.48,silicondata.com index hub
+2026-10-21,GDDR6,19.51,silicondata.com index hub
+2026-10-22,GDDR6,19.51,silicondata.com index hub
+2026-10-23,GDDR6,19.51,silicondata.com index hub
+2026-10-24,GDDR6,19.51,silicondata.com index hub
+2026-10-25,GDDR6,19.51,silicondata.com index hub
 2026-02-24,H100-HYP,7.45,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-05-28,H100-HYP,7.52,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-05-29,H100-HYP,7.52,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
@@ -44,33 +132,177 @@ date,index,value,source
 2026-08-17,H100-HYP,7.27,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-08-18,H100-HYP,7.28,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-08-19,H100-HYP,7.28,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
+2026-09-23,H100-HYP,7.18,silicondata.com index hub
+2026-09-24,H100-HYP,7.18,silicondata.com index hub
+2026-09-25,H100-HYP,7.18,silicondata.com index hub
+2026-09-26,H100-HYP,7.18,silicondata.com index hub
+2026-09-27,H100-HYP,7.18,silicondata.com index hub
+2026-09-28,H100-HYP,7.19,silicondata.com index hub
+2026-09-29,H100-HYP,7.2,silicondata.com index hub
+2026-09-30,H100-HYP,7.2,silicondata.com index hub
+2026-10-01,H100-HYP,7.2,silicondata.com index hub
+2026-10-02,H100-HYP,7.2,silicondata.com index hub
+2026-10-03,H100-HYP,7.2,silicondata.com index hub
+2026-10-04,H100-HYP,7.2,silicondata.com index hub
+2026-10-05,H100-HYP,7.16,silicondata.com index hub
+2026-10-06,H100-HYP,7.15,silicondata.com index hub
+2026-10-07,H100-HYP,7.15,silicondata.com index hub
+2026-10-08,H100-HYP,7.15,silicondata.com index hub
+2026-10-09,H100-HYP,7.15,silicondata.com index hub
+2026-10-10,H100-HYP,7.15,silicondata.com index hub
+2026-10-11,H100-HYP,7.15,silicondata.com index hub
+2026-10-12,H100-HYP,7.16,silicondata.com index hub
+2026-10-13,H100-HYP,7.15,silicondata.com index hub
+2026-10-14,H100-HYP,7.15,silicondata.com index hub
+2026-10-15,H100-HYP,7.15,silicondata.com index hub
+2026-10-16,H100-HYP,7.15,silicondata.com index hub
+2026-10-17,H100-HYP,7.15,silicondata.com index hub
+2026-10-18,H100-HYP,7.15,silicondata.com index hub
+2026-10-19,H100-HYP,7.14,silicondata.com index hub
+2026-10-20,H100-HYP,7.14,silicondata.com index hub
+2026-10-21,H100-HYP,7.17,silicondata.com index hub
+2026-10-22,H100-HYP,7.17,silicondata.com index hub
+2026-10-23,H100-HYP,7.17,silicondata.com index hub
+2026-10-24,H100-HYP,7.17,silicondata.com index hub
+2026-10-25,H100-HYP,7.17,silicondata.com index hub
+2026-09-23,H200,3.31,silicondata.com index hub
+2026-09-24,H200,3.3,silicondata.com index hub
+2026-09-25,H200,3.31,silicondata.com index hub
+2026-09-26,H200,3.34,silicondata.com index hub
+2026-09-27,H200,3.33,silicondata.com index hub
+2026-09-28,H200,3.34,silicondata.com index hub
+2026-09-29,H200,3.29,silicondata.com index hub
+2026-09-30,H200,3.37,silicondata.com index hub
+2026-10-01,H200,3.42,silicondata.com index hub
+2026-10-02,H200,3.4,silicondata.com index hub
+2026-10-03,H200,3.35,silicondata.com index hub
+2026-10-04,H200,3.33,silicondata.com index hub
+2026-10-05,H200,3.3,silicondata.com index hub
+2026-10-06,H200,3.29,silicondata.com index hub
+2026-10-07,H200,3.32,silicondata.com index hub
+2026-10-08,H200,3.34,silicondata.com index hub
 2026-10-09,H200,3.39,silicondata.com public index page
+2026-10-10,H200,3.43,silicondata.com index hub
 2026-10-11,H200,3.44,silicondata.com public index page
 2026-10-12,H200,3.35,silicondata.com public index page
 2026-10-13,H200,3.38,silicondata.com public index page
 2026-10-14,H200,3.39,silicondata.com public index page
 2026-10-15,H200,3.37,silicondata.com public index page
+2026-10-16,H200,3.45,silicondata.com index hub
+2026-10-17,H200,3.51,silicondata.com index hub
 2026-10-18,H200,3.51,silicondata.com public index page
+2026-10-19,H200,3.45,silicondata.com index hub
 2026-10-20,H200,3.53,silicondata.com public index page
 2026-10-21,H200,3.47,silicondata.com public index page
 2026-10-22,H200,3.51,silicondata.com public index page
+2026-10-23,H200,3.49,silicondata.com index hub
+2026-10-24,H200,3.48,silicondata.com index hub
+2026-10-25,H200,3.47,silicondata.com index hub
+2026-09-22,LLM-OPEN,0.4672,silicondata.com index hub
+2026-09-23,LLM-OPEN,0.4663,silicondata.com index hub
+2026-09-24,LLM-OPEN,0.4693,silicondata.com index hub
+2026-09-25,LLM-OPEN,0.4743,silicondata.com index hub
+2026-09-26,LLM-OPEN,0.4713,silicondata.com index hub
+2026-09-27,LLM-OPEN,0.4721,silicondata.com index hub
+2026-09-28,LLM-OPEN,0.4712,silicondata.com index hub
+2026-09-29,LLM-OPEN,0.4752,silicondata.com index hub
+2026-09-30,LLM-OPEN,0.4774,silicondata.com index hub
+2026-10-01,LLM-OPEN,0.4751,silicondata.com index hub
+2026-10-02,LLM-OPEN,0.4739,silicondata.com index hub
+2026-10-03,LLM-OPEN,0.4726,silicondata.com index hub
+2026-10-04,LLM-OPEN,0.4721,silicondata.com index hub
+2026-10-05,LLM-OPEN,0.4709,silicondata.com index hub
+2026-10-06,LLM-OPEN,0.4698,silicondata.com index hub
+2026-10-07,LLM-OPEN,0.4737,silicondata.com index hub
+2026-10-08,LLM-OPEN,0.4716,silicondata.com index hub
+2026-10-09,LLM-OPEN,0.4683,silicondata.com index hub
+2026-10-10,LLM-OPEN,0.4658,silicondata.com index hub
+2026-10-11,LLM-OPEN,0.4653,silicondata.com index hub
+2026-10-12,LLM-OPEN,0.4629,silicondata.com index hub
+2026-10-13,LLM-OPEN,0.463,silicondata.com index hub
+2026-10-14,LLM-OPEN,0.4656,silicondata.com index hub
+2026-10-15,LLM-OPEN,0.4886,silicondata.com index hub
+2026-10-16,LLM-OPEN,0.4925,silicondata.com index hub
+2026-10-17,LLM-OPEN,0.4955,silicondata.com index hub
+2026-10-18,LLM-OPEN,0.496,silicondata.com index hub
+2026-10-19,LLM-OPEN,0.4952,silicondata.com index hub
+2026-10-20,LLM-OPEN,0.4961,silicondata.com index hub
+2026-10-21,LLM-OPEN,0.4982,silicondata.com index hub
+2026-10-22,LLM-OPEN,0.4985,silicondata.com index hub
+2026-10-23,LLM-OPEN,0.5008,silicondata.com index hub
+2026-10-24,LLM-OPEN,0.5034,silicondata.com index hub
+2026-09-22,LLM-PROP,1.9522,silicondata.com index hub
+2026-09-23,LLM-PROP,1.9761,silicondata.com index hub
+2026-09-24,LLM-PROP,2.0024,silicondata.com index hub
+2026-09-25,LLM-PROP,2.0766,silicondata.com index hub
+2026-09-26,LLM-PROP,2.1179,silicondata.com index hub
+2026-09-27,LLM-PROP,2.2669,silicondata.com index hub
+2026-09-28,LLM-PROP,2.4178,silicondata.com index hub
+2026-09-29,LLM-PROP,2.4904,silicondata.com index hub
+2026-09-30,LLM-PROP,2.4938,silicondata.com index hub
+2026-10-01,LLM-PROP,2.2394,silicondata.com index hub
+2026-10-02,LLM-PROP,2.1578,silicondata.com index hub
+2026-10-03,LLM-PROP,2.2018,silicondata.com index hub
+2026-10-04,LLM-PROP,2.2035,silicondata.com index hub
+2026-10-05,LLM-PROP,2.2075,silicondata.com index hub
+2026-10-06,LLM-PROP,2.2044,silicondata.com index hub
+2026-10-07,LLM-PROP,2.2315,silicondata.com index hub
+2026-10-08,LLM-PROP,2.2474,silicondata.com index hub
+2026-10-09,LLM-PROP,2.2486,silicondata.com index hub
+2026-10-10,LLM-PROP,2.2711,silicondata.com index hub
+2026-10-11,LLM-PROP,2.3076,silicondata.com index hub
+2026-10-12,LLM-PROP,2.3509,silicondata.com index hub
+2026-10-13,LLM-PROP,2.39,silicondata.com index hub
+2026-10-14,LLM-PROP,2.3718,silicondata.com index hub
+2026-10-15,LLM-PROP,2.3806,silicondata.com index hub
+2026-10-16,LLM-PROP,2.3539,silicondata.com index hub
+2026-10-17,LLM-PROP,2.2573,silicondata.com index hub
+2026-10-18,LLM-PROP,2.2522,silicondata.com index hub
+2026-10-19,LLM-PROP,2.2611,silicondata.com index hub
+2026-10-20,LLM-PROP,2.2933,silicondata.com index hub
+2026-10-21,LLM-PROP,2.2375,silicondata.com index hub
+2026-10-22,LLM-PROP,2.235,silicondata.com index hub
+2026-10-23,LLM-PROP,2.279,silicondata.com index hub
+2026-10-24,LLM-PROP,2.3769,silicondata.com index hub
 2026-05-28,MI300X,2.48,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-05-29,MI300X,2.48,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-05-30,MI300X,2.47,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-05-31,MI300X,2.47,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-06-01,MI300X,2.47,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-06-02,MI300X,2.46,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
+2026-09-23,MI300X,2.62,silicondata.com index hub
+2026-09-24,MI300X,2.62,silicondata.com index hub
+2026-09-25,MI300X,2.62,silicondata.com index hub
+2026-09-26,MI300X,2.62,silicondata.com index hub
+2026-09-27,MI300X,2.62,silicondata.com index hub
+2026-09-28,MI300X,2.63,silicondata.com index hub
+2026-09-29,MI300X,2.63,silicondata.com index hub
+2026-09-30,MI300X,2.63,silicondata.com index hub
+2026-10-01,MI300X,2.63,silicondata.com index hub
+2026-10-02,MI300X,2.63,silicondata.com index hub
+2026-10-03,MI300X,2.63,silicondata.com index hub
+2026-10-04,MI300X,2.63,silicondata.com index hub
+2026-10-05,MI300X,2.64,silicondata.com index hub
+2026-10-06,MI300X,2.64,silicondata.com index hub
+2026-10-07,MI300X,2.64,silicondata.com index hub
+2026-10-08,MI300X,2.64,silicondata.com index hub
 2026-10-09,MI300X,2.64,silicondata.com public index page
+2026-10-10,MI300X,2.64,silicondata.com index hub
 2026-10-11,MI300X,2.64,silicondata.com public index page
 2026-10-12,MI300X,2.64,silicondata.com public index page
 2026-10-13,MI300X,2.64,silicondata.com public index page
 2026-10-14,MI300X,2.64,silicondata.com public index page
 2026-10-15,MI300X,2.64,silicondata.com public index page
+2026-10-16,MI300X,2.64,silicondata.com index hub
+2026-10-17,MI300X,2.64,silicondata.com index hub
 2026-10-18,MI300X,2.64,silicondata.com public index page
 2026-10-19,MI300X,2.64,silicondata.com public index page
 2026-10-20,MI300X,2.64,silicondata.com public index page
 2026-10-21,MI300X,2.75,silicondata.com public index page
 2026-10-22,MI300X,2.75,silicondata.com public index page
+2026-10-23,MI300X,2.75,silicondata.com index hub
+2026-10-24,MI300X,2.75,silicondata.com index hub
+2026-10-25,MI300X,2.75,silicondata.com index hub
 2024-09-01,SDA100RT,1.66,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2024-09-02,SDA100RT,1.65,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2024-09-03,SDA100RT,1.65,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
@@ -833,16 +1065,22 @@ date,index,value,source
 2026-10-07,SDA100RT,1.52,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-10-08,SDA100RT,1.53,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-10-09,SDA100RT,1.53,silicondata.com public index page
+2026-10-10,SDA100RT,1.53,silicondata.com index hub
 2026-10-11,SDA100RT,1.53,silicondata.com public index page
 2026-10-12,SDA100RT,1.51,silicondata.com public index page
 2026-10-13,SDA100RT,1.52,silicondata.com public index page
 2026-10-14,SDA100RT,1.52,silicondata.com public index page
 2026-10-15,SDA100RT,1.52,silicondata.com public index page
+2026-10-16,SDA100RT,1.52,silicondata.com index hub
+2026-10-17,SDA100RT,1.53,silicondata.com index hub
 2026-10-18,SDA100RT,1.53,silicondata.com public index page
 2026-10-19,SDA100RT,1.52,silicondata.com public index page
 2026-10-20,SDA100RT,1.52,silicondata.com public index page
 2026-10-21,SDA100RT,1.55,silicondata.com public index page
 2026-10-22,SDA100RT,1.55,silicondata.com public index page
+2026-10-23,SDA100RT,1.55,silicondata.com index hub
+2026-10-24,SDA100RT,1.56,silicondata.com index hub
+2026-10-25,SDA100RT,1.56,silicondata.com index hub
 2025-07-31,SDB200RT,5.3,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2025-08-01,SDB200RT,5.31,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2025-08-02,SDB200RT,5.31,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
@@ -1272,16 +1510,22 @@ date,index,value,source
 2026-10-07,SDB200RT,5.88,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-10-08,SDB200RT,5.88,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-10-09,SDB200RT,5.93,silicondata.com public index page
+2026-10-10,SDB200RT,5.93,silicondata.com index hub
 2026-10-11,SDB200RT,5.93,silicondata.com public index page
 2026-10-12,SDB200RT,5.94,silicondata.com public index page
 2026-10-13,SDB200RT,5.95,silicondata.com public index page
 2026-10-14,SDB200RT,5.95,silicondata.com public index page
 2026-10-15,SDB200RT,6.01,silicondata.com public index page
+2026-10-16,SDB200RT,6.01,silicondata.com index hub
+2026-10-17,SDB200RT,6.12,silicondata.com index hub
 2026-10-18,SDB200RT,6.26,silicondata.com public index page
 2026-10-19,SDB200RT,6.14,silicondata.com public index page
 2026-10-20,SDB200RT,6.14,silicondata.com public index page
 2026-10-21,SDB200RT,6.14,silicondata.com public index page
 2026-10-22,SDB200RT,6.29,silicondata.com public index page
+2026-10-23,SDB200RT,6.45,silicondata.com index hub
+2026-10-24,SDB200RT,6.45,silicondata.com index hub
+2026-10-25,SDB200RT,6.6,silicondata.com index hub
 2024-09-01,SDH100RT,3.4,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2024-09-02,SDH100RT,3.33,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2024-09-03,SDH100RT,3.32,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
@@ -2043,16 +2287,22 @@ date,index,value,source
 2026-10-07,SDH100RT,2.81,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-10-08,SDH100RT,2.8,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-10-09,SDH100RT,2.85,silicondata.com public index page
+2026-10-10,SDH100RT,2.82,silicondata.com index hub
 2026-10-11,SDH100RT,2.83,silicondata.com public index page
 2026-10-12,SDH100RT,2.85,silicondata.com public index page
 2026-10-13,SDH100RT,2.85,silicondata.com public index page
 2026-10-14,SDH100RT,2.85,silicondata.com public index page
 2026-10-15,SDH100RT,2.81,silicondata.com public index page
+2026-10-16,SDH100RT,2.83,silicondata.com index hub
+2026-10-17,SDH100RT,2.82,silicondata.com index hub
 2026-10-18,SDH100RT,2.83,silicondata.com public index page
 2026-10-19,SDH100RT,2.84,silicondata.com public index page
 2026-10-20,SDH100RT,2.85,silicondata.com public index page
 2026-10-21,SDH100RT,2.86,silicondata.com public index page
 2026-10-22,SDH100RT,2.88,silicondata.com public index page
+2026-10-23,SDH100RT,2.9,silicondata.com index hub
+2026-10-24,SDH100RT,2.88,silicondata.com index hub
+2026-10-25,SDH100RT,2.89,silicondata.com index hub
 2025-12-01,SDLLMTK,1.0867,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2025-12-02,SDLLMTK,1.0795,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2025-12-03,SDLLMTK,1.0153,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
@@ -2353,12 +2603,20 @@ date,index,value,source
 2026-10-05,SDLLMTK,0.98,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-10-06,SDLLMTK,0.99,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-10-07,SDLLMTK,0.99,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
+2026-10-08,SDLLMTK,0.9831,silicondata.com index hub
+2026-10-09,SDLLMTK,0.9792,silicondata.com index hub
 2026-10-10,SDLLMTK,0.97,silicondata.com public index page
 2026-10-11,SDLLMTK,0.97,silicondata.com public index page
 2026-10-12,SDLLMTK,0.97,silicondata.com public index page
 2026-10-13,SDLLMTK,0.97,silicondata.com public index page
 2026-10-14,SDLLMTK,0.97,silicondata.com public index page
+2026-10-15,SDLLMTK,0.9752,silicondata.com index hub
+2026-10-16,SDLLMTK,0.9588,silicondata.com index hub
 2026-10-17,SDLLMTK,0.94,silicondata.com public index page
 2026-10-18,SDLLMTK,0.94,silicondata.com public index page
+2026-10-19,SDLLMTK,0.9523,silicondata.com index hub
 2026-10-20,SDLLMTK,0.96,silicondata.com public index page
 2026-10-21,SDLLMTK,0.94,silicondata.com public index page
+2026-10-22,SDLLMTK,0.948,silicondata.com index hub
+2026-10-23,SDLLMTK,0.9348,silicondata.com index hub
+2026-10-24,SDLLMTK,0.9364,silicondata.com index hub

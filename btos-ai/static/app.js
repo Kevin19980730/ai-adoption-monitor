@@ -961,14 +961,14 @@ function drawGpu() {
   const host = $("#gpu-tiles"); host.replaceChildren();
   const tile = (r, extra) => {
     const a = h("div", {class: "tile"}, host);
-    h("div", {class: "t"}, a, r.segment === "Index" ? r.label : `${r.label} rental, ${r.segment.toLowerCase()}`);
+    h("div", {class: "t"}, a, r.unit.startsWith("USD / GPU") ? `${r.label} rental, ${r.segment.toLowerCase()}` : r.label);
     h("div", {class: "v"}, a, r.unit.startsWith("USD / GPU") ? usd(r.value) + "/hr" : usd(r.value));
     const g = chgPct(r.value, r.d7);
     if (g != null) { const dd = h("div", {class: "d"}, a); h("span", {class: g >= 0 ? "up" : "down"}, dd, (g >= 0 ? "▲ " : "▼ ") + (Math.abs(g) * 100).toFixed(1) + "%"); dd.appendChild(document.createTextNode(" vs a week earlier" + (r.ytd_base ? ` · ${((r.value / r.ytd_base - 1) * 100).toFixed(0)}% YTD` : ""))); }
     h("div", {class: "s"}, a, `${fmtDate(T(r.date))} · ${r.unit}` + (extra || ""));
     const sp = spark(SD.series[r.index].points.slice(-90).map(p => p[1]), "var(--s1)"); if (sp) a.appendChild(sp);
   };
-  ["SDH100RT", "SDB200RT", "SDA100RT", "SDLLMTK"].forEach(k => L[k] && tile(L[k], L[k].rev_per_gw_bn ? ` · ≈ $${L[k].rev_per_gw_bn.toFixed(1)}B / GW / yr` : ""));
+  ["SDH100RT", "H100-HYP", "SDB200RT", "SDA100RT", "SDLLMTK", "LLM-OPEN", "LLM-PROP", "GDDR6"].forEach(k => L[k] && tile(L[k], L[k].rev_per_gw_bn ? ` · ≈ $${L[k].rev_per_gw_bn.toFixed(1)}B / GW / yr` : ""));
 
   const days = +$("#gpu-range").value, end = Math.max(...SD.latest.map(r => T(r.date))), start = days ? end - days * 864e5 : null;
   const S = GPU_ORDER.filter(([k]) => SD.series[k]).map(([k, col]) => ({name: SD.series[k].label, color: col,
@@ -982,23 +982,41 @@ function drawGpu() {
 
   tokenVsB200(SD, "gpu-token");
 
-  const hyp = [];
-  [["H100-HYP", "SDH100RT"], ["A100-HYP", "SDA100RT"], ["B200-HYP", "SDB200RT"]].forEach(([hk, nk]) => {
+  // any other series (token family, RAM, ...) as a simple dated line chart with a table toggle
+  const simple = (id, keys, fmt, unitNote, yMin = 0) => {
+    const S = keys.filter(([k]) => SD.series[k]).map(([k, col, name]) => ({name: name || SD.series[k].label, color: col,
+      points: SD.series[k].points.map(p => ({x: T(p[0]), y: p[1], note: unitNote}))}));
+    if (!S.length) return;
+    legend("lg-" + id, S.map(s => ({name: s.name, color: s.color})));
+    view("c-" + id, hst => lineChart(hst, S, {height: 280, yFmt: fmt, yMin, mode: "cross", title: x => fmtDate(x)}),
+      hst => { const dates = [...new Set(S.flatMap(s => s.points.map(p => p.x)))].sort((a, b) => b - a);
+        const look = Object.fromEntries(S.map(s => [s.name, Object.fromEntries(s.points.map(p => [p.x, p.y]))]));
+        table(hst, [{label: "Date", get: r => new Date(r).toISOString().slice(0, 10)}].concat(S.map(s => ({label: s.name, n: 1, get: r => look[s.name][r] == null ? "–" : fmt(look[s.name][r])}))), dates); });
+  };
+  simple("gpu-llm", [["LLM-PROP", "var(--s2)", "Proprietary"], ["SDLLMTK", "var(--s1)", "Blended (SDLLMTK)"], ["LLM-OPEN", "var(--s3)", "Open"]], v => "$" + v.toFixed(2), "USD per M tokens");
+  if (SD.series.GDDR6) simple("gpu-ram", [["GDDR6", "var(--s4)"]], v => "$" + v.toFixed(2), "USD per GB", Math.floor(Math.min(...SD.series.GDDR6.points.map(p => p[1])) * 0.9));
+
+  const hyp = [], HS = [];
+  [["H100-HYP", "SDH100RT", "var(--s1)"], ["A100-HYP", "SDA100RT", "var(--s3)"], ["B200-HYP", "SDB200RT", "var(--s2)"]].forEach(([hk, nk, col]) => {
     if (!SD.series[hk]) return;
     const neo = Object.fromEntries((SD.series[nk]?.points || []).map(p => [p[0], p[1]]));
     SD.series[hk].points.forEach(p => hyp.push({gpu: SD.series[hk].label, date: p[0], hyp: p[1], neo: neo[p[0]] ?? null}));
+    const pts = SD.series[hk].points.filter(p => neo[p[0]]).map(p => ({x: T(p[0]), y: p[1] / neo[p[0]], note: `$${p[1].toFixed(2)} vs $${neo[p[0]].toFixed(2)} neo-cloud`}));
+    if (pts.length > 1) HS.push({name: SD.series[hk].label, color: col, points: pts});
   });
   hyp.sort((a, b) => b.date.localeCompare(a.date) || a.gpu.localeCompare(b.gpu));
-  table($("#gpu-hyp"), [{label: "Date", key: "date"}, {label: "GPU", key: "gpu"}, {label: "Hyperscaler", key: "hyp", n: 1, fmt: usd}, {label: "Neo-cloud", key: "neo", n: 1, fmt: usd}, {label: "Premium", n: 1, get: r => r.neo ? (r.hyp / r.neo).toFixed(2) + "×" : "–"}], hyp);
+  legend("lg-gpu-hyp", HS.map(s => ({name: s.name, color: s.color})));
+  view("c-gpu-hyp", hst => lineChart(hst, HS, {height: 280, yFmt: v => v.toFixed(1) + "×", yMin: 1, mode: "cross", title: x => fmtDate(x)}),
+    hst => table(hst, [{label: "Date", key: "date"}, {label: "GPU", key: "gpu"}, {label: "Hyperscaler", key: "hyp", n: 1, fmt: usd}, {label: "Neo-cloud", key: "neo", n: 1, fmt: usd}, {label: "Premium", n: 1, get: r => r.neo ? (r.hyp / r.neo).toFixed(2) + "×" : "–"}], hyp));
 
-  const order = ["SDH100RT", "SDB200RT", "SDA100RT", "H200", "B300", "MI300X", "SDLLMTK", "H100-HYP", "A100-HYP", "B200-HYP"];
-  const rows = order.map(k => L[k]).filter(Boolean);
+  const order = ["SDH100RT", "SDB200RT", "SDA100RT", "H200", "B300", "MI300X", "H100-HYP", "A100-HYP", "B200-HYP", "SDLLMTK", "LLM-OPEN", "LLM-PROP", "GDDR6"];
+  const rows = order.concat(SD.latest.map(r => r.index).filter(k => !order.includes(k))).map(k => L[k]).filter(Boolean);
   const pc = v => v == null ? "–" : (v >= 0 ? "+" : "−") + Math.abs(v * 100).toFixed(1) + "%";
-  table($("#gpu-latest"), [{label: "Index", get: r => r.label + (r.segment === "Index" ? "" : ` (${r.segment})`)}, {label: "Ticker", get: r => /^SD/.test(r.index) ? r.index : "–"}, {label: "Latest", n: 1, get: r => usd(r.value)}, {label: "Unit", key: "unit"}, {label: "As of", key: "date"},
+  table($("#gpu-latest"), [{label: "Index", get: r => r.label + (r.unit.startsWith("USD / GPU") ? ` (${r.segment})` : "")}, {label: "Ticker", get: r => /^SD/.test(r.index) ? r.index : "–"}, {label: "Latest", n: 1, get: r => usd(r.value)}, {label: "Unit", key: "unit"}, {label: "As of", key: "date"},
     {label: "7 days", n: 1, get: r => pc(chgPct(r.value, r.d7))}, {label: "30 days", n: 1, get: r => pc(chgPct(r.value, r.d30))}, {label: "1 year", n: 1, get: r => pc(chgPct(r.value, r.d365))}, {label: "YTD", n: 1, get: r => pc(chgPct(r.value, r.ytd_base))},
     {label: "Implied revenue / GW / yr", n: 1, get: r => r.rev_per_gw_bn ? "$" + r.rev_per_gw_bn.toFixed(1) + "B" : "–"}, {label: "Since", key: "first"}], rows);
   const ck = $("#gpu-checks"); ck.replaceChildren();
-  if (SD.checks.length) { h("h3", null, ck, "Data checks flagged (Silicon Data's 7-day change disagrees with our stored value)"); const box = h("div", {class: "tblwrap"}, ck);
+  if (SD.checks.length) { h("h3", null, ck, "Data checks flagged (a site value or its stated change disagrees with our stored history)"); const box = h("div", {class: "tblwrap"}, ck);
     table(box, [{label: "Checked", key: "checked"}, {label: "Index", key: "index"}, {label: "Date", key: "date"}, {label: "Issue", key: "issue"}], SD.checks); }
 }
 async function loadGpu() {
