@@ -46,6 +46,7 @@ date,index,value,source
 2026-10-23,A100-HYP,3.92,silicondata.com index hub
 2026-10-24,A100-HYP,3.92,silicondata.com index hub
 2026-10-25,A100-HYP,3.92,silicondata.com index hub
+2026-10-26,A100-HYP,3.92,silicondata.com index hub
 2026-09-23,B300,6.95,silicondata.com index hub
 2026-09-24,B300,6.8,silicondata.com index hub
 2026-09-25,B300,6.8,silicondata.com index hub
@@ -79,6 +80,7 @@ date,index,value,source
 2026-10-23,B300,7.53,silicondata.com index hub
 2026-10-24,B300,7.53,silicondata.com index hub
 2026-10-25,B300,7.53,silicondata.com index hub
+2026-10-26,B300,7.52,silicondata.com index hub
 2026-09-23,GDDR6,19.09,silicondata.com index hub
 2026-09-24,GDDR6,19.09,silicondata.com index hub
 2026-09-25,GDDR6,19.09,silicondata.com index hub
@@ -112,6 +114,7 @@ date,index,value,source
 2026-10-23,GDDR6,19.51,silicondata.com index hub
 2026-10-24,GDDR6,19.51,silicondata.com index hub
 2026-10-25,GDDR6,19.51,silicondata.com index hub
+2026-10-26,GDDR6,19.51,silicondata.com index hub
 2026-02-24,H100-HYP,7.45,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-05-28,H100-HYP,7.52,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-05-29,H100-HYP,7.52,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
@@ -165,6 +168,7 @@ date,index,value,source
 2026-10-23,H100-HYP,7.17,silicondata.com index hub
 2026-10-24,H100-HYP,7.17,silicondata.com index hub
 2026-10-25,H100-HYP,7.17,silicondata.com index hub
+2026-10-26,H100-HYP,7.14,silicondata.com index hub
 2026-09-23,H200,3.31,silicondata.com index hub
 2026-09-24,H200,3.3,silicondata.com index hub
 2026-09-25,H200,3.31,silicondata.com index hub
@@ -198,6 +202,7 @@ date,index,value,source
 2026-10-23,H200,3.49,silicondata.com index hub
 2026-10-24,H200,3.48,silicondata.com index hub
 2026-10-25,H200,3.47,silicondata.com index hub
+2026-10-26,H200,3.41,silicondata.com index hub
 2026-09-22,LLM-OPEN,0.4672,silicondata.com index hub
 2026-09-23,LLM-OPEN,0.4663,silicondata.com index hub
 2026-09-24,LLM-OPEN,0.4693,silicondata.com index hub
@@ -231,6 +236,7 @@ date,index,value,source
 2026-10-22,LLM-OPEN,0.4985,silicondata.com index hub
 2026-10-23,LLM-OPEN,0.5008,silicondata.com index hub
 2026-10-24,LLM-OPEN,0.5034,silicondata.com index hub
+2026-10-25,LLM-OPEN,0.5038,silicondata.com index hub
 2026-09-22,LLM-PROP,1.9522,silicondata.com index hub
 2026-09-23,LLM-PROP,1.9761,silicondata.com index hub
 2026-09-24,LLM-PROP,2.0024,silicondata.com index hub
@@ -264,6 +270,7 @@ date,index,value,source
 2026-10-22,LLM-PROP,2.235,silicondata.com index hub
 2026-10-23,LLM-PROP,2.279,silicondata.com index hub
 2026-10-24,LLM-PROP,2.3769,silicondata.com index hub
+2026-10-25,LLM-PROP,2.3643,silicondata.com index hub
 2026-05-28,MI300X,2.48,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-05-29,MI300X,2.48,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2026-05-30,MI300X,2.47,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
@@ -303,6 +310,7 @@ date,index,value,source
 2026-10-23,MI300X,2.75,silicondata.com index hub
 2026-10-24,MI300X,2.75,silicondata.com index hub
 2026-10-25,MI300X,2.75,silicondata.com index hub
+2026-10-26,MI300X,2.76,silicondata.com index hub
 2024-09-01,SDA100RT,1.66,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2024-09-02,SDA100RT,1.65,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2024-09-03,SDA100RT,1.65,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
@@ -1081,6 +1089,7 @@ date,index,value,source
 2026-10-23,SDA100RT,1.55,silicondata.com index hub
 2026-10-24,SDA100RT,1.56,silicondata.com index hub
 2026-10-25,SDA100RT,1.56,silicondata.com index hub
+2026-10-26,SDA100RT,1.56,silicondata.com index hub
 2025-07-31,SDB200RT,5.3,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2025-08-01,SDB200RT,5.31,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2025-08-02,SDB200RT,5.31,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
@@ -1526,6 +1535,7 @@ date,index,value,source
 2026-10-23,SDB200RT,6.45,silicondata.com index hub
 2026-10-24,SDB200RT,6.45,silicondata.com index hub
 2026-10-25,SDB200RT,6.6,silicondata.com index hub
+2026-10-26,SDB200RT,6.63,silicondata.com index hub
 2024-09-01,SDH100RT,3.4,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2024-09-02,SDH100RT,3.33,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2024-09-03,SDH100RT,3.32,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
@@ -2303,6 +2313,7 @@ date,index,value,source
 2026-10-23,SDH100RT,2.9,silicondata.com index hub
 2026-10-24,SDH100RT,2.88,silicondata.com index hub
 2026-10-25,SDH100RT,2.89,silicondata.com index hub
+2026-10-26,SDH100RT,2.89,silicondata.com index hub
 2025-12-01,SDLLMTK,1.0867,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2025-12-02,SDLLMTK,1.0795,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
 2025-12-03,SDLLMTK,1.0153,workbook: 20261009_GPU rental price (SharePoint copy).xlsx
@@ -2620,3 +2631,4 @@ date,index,value,source
 2026-10-22,SDLLMTK,0.948,silicondata.com index hub
 2026-10-23,SDLLMTK,0.9348,silicondata.com index hub
 2026-10-24,SDLLMTK,0.9364,silicondata.com index hub
+2026-10-25,SDLLMTK,0.9526,silicondata.com index hub
