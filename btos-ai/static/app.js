@@ -104,7 +104,7 @@ document.addEventListener("click", e => {
 let rz; addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => Object.keys(VIEWS).forEach(id => { if (VIEWS[id].mode === "chart" && document.getElementById(id).offsetParent) render(id); }), 150); });
 
 /* ---------------------------------------------------------------- line chart
-   series: [{name, color, dash, points:[{x, y, lo, hi, hollow, note}], endLabel}]
+   series: [{name, color, dash, points:[{x, y, lo, hi, hollow, note, corner}], endLabel}]  (corner: step-line vertex, no marker or hover)
    opt: {height, xType:'time'|'num', yFmt, xFmt, log, yMin, yMax, mode:'cross'|'near', marks:[{x0,x1,label}|{x,label}], band:true} */
 function lineChart(host, series, opt) {
   host.replaceChildren();
@@ -142,7 +142,7 @@ function lineChart(host, series, opt) {
   });
   // y grid
   let ticks;
-  if (log) { ticks = []; for (let e = Math.floor(Math.log10(y0)); e <= Math.ceil(Math.log10(y1)); e++) [1, 2, 5].forEach(m => { const v = m * 10 ** e; if (v >= y0 && v <= y1) ticks.push(v); }); if (ticks.length > 8) ticks = ticks.filter(v => /^1/.test(String(v))); }
+  if (log) { ticks = []; for (let e = Math.floor(Math.log10(y0)); e <= Math.ceil(Math.log10(y1)); e++) [1, 2, 5].forEach(m => { const v = m * 10 ** e; if (v >= y0 && v <= y1) ticks.push(v); }); if (ticks.length > 8) ticks = ticks.filter(v => Math.abs(v / 10 ** Math.floor(Math.log10(v) + 1e-9) - 1) < 1e-6); }
   else ticks = niceTicks(y0, y1, H < 260 ? 4 : 5);
   ticks.forEach(v => {
     el("line", {x1: M.l, x2: W - M.r, y1: Y(v), y2: Y(v), stroke: "var(--grid)"}, svg);
@@ -179,7 +179,7 @@ function lineChart(host, series, opt) {
     let d = "", pen = false;
     s.points.forEach(p => { if (p.y == null) { pen = false; return; } d += (pen ? "L" : "M") + X(p.x).toFixed(1) + "," + Y(p.y).toFixed(1); pen = true; });
     el("path", {d, fill: "none", stroke: s.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round", "stroke-dasharray": s.dash ? "5 4" : null}, svg);
-    if (s.markers !== false) s.points.forEach(p => { if (p.y == null) return;
+    if (s.markers !== false) s.points.forEach(p => { if (p.y == null || p.corner) return;
       el("circle", {cx: X(p.x), cy: Y(p.y), r: s.points.length > 40 ? 0 : s.points.length > 15 ? 2.5 : 3.5, fill: p.hollow ? "var(--surface)" : s.color, stroke: p.hollow ? s.color : "var(--surface)", "stroke-width": p.hollow ? 2 : 1.5}, svg); });
   });
   // end labels with simple collision relaxation
@@ -200,7 +200,7 @@ function lineChart(host, series, opt) {
   const hl = el("g", {visibility: "hidden"}, svg);
   const vline = el("line", {y1: M.t, y2: H - M.b, stroke: "var(--axis)"}, hl);
   const dots = [];
-  const all = series.flatMap(s => s.points.filter(p => p.y != null).map(p => ({s, p, px: X(p.x), py: YS(s)(p.y)})));
+  const all = series.flatMap(s => s.points.filter(p => p.y != null && !p.corner).map(p => ({s, p, px: X(p.x), py: YS(s)(p.y)})));
   const xs = [...new Set(all.map(a => a.p.x))].sort((a, b) => a - b);
   const hit = el("rect", {x: M.l, y: 0, width: W - M.l - M.r + 4, height: H, fill: "transparent"}, svg);
   function move(ev) {
@@ -1234,6 +1234,102 @@ async function loadTokenEcon() {
   drawTokenEcon();
 }
 
+/* ================================================================ Price of thought (Epoch AI replication + update) */
+let POTD = null;
+const potUsd = v => v == null ? "–" : v >= 100 ? "$" + Math.round(v).toLocaleString() : v >= 1 ? "$" + v.toFixed(2) : "$" + (+v.toPrecision(2)).toString();
+const perQ = v => v == null ? "–" : v.toFixed(1) + "%";
+const perYr = q => q == null ? "–" : (1 / (1 - q / 100) ** 4).toFixed(0) + "×";
+const potName = b => (POTD.labels || {})[b] || b;
+function drawPotTiles() {
+  const host = $("#pot-tiles"); host.replaceChildren();
+  const A = POTD.averages, S = POTD.post_sota_avg;
+  const tile = (t, v, d, sub) => { const a = h("a", {class: "tile", href: "#pot"}, host); h("div", {class: "t"}, a, t); h("div", {class: "v"}, a, v);
+    if (d) h("div", {class: "d"}, a, d); h("div", {class: "s"}, a, sub); };
+  tile("Cost of a fixed score, fall per quarter", perQ(A.upd.model_free), `≈${perYr(A.upd.model_free)} cheaper per year · Epoch: ${perQ(A.rep.model_free)} (${perYr(A.rep.model_free)})`,
+    `model-free, 5 main benchmarks, models to ${fmtDate(T(POTD.update_through))}`);
+  tile("Fall per quarter when a score is first reached", perQ(S.upd[0]), `two years later ${perQ(S.upd[8])} · Epoch: ${perQ(S.rep[0])} → ${perQ(S.rep[8])}`, "Box-Tidwell fit, 5 main benchmarks");
+  const lo = Math.min(A.half.model_free, A.double.model_free), hi = Math.max(A.half.model_free, A.double.model_free);
+  tile("If the estimated costs are 2× off", `${perQ(lo)}–${perQ(hi)}`, "per quarter, with every new model's cost halved or doubled", "the update's result does not hinge on the cost estimate");
+  const nr = (POTD.records || []).filter(r => r.source === "estimated");
+  const last = nr.slice().sort((a, b) => a.date < b.date ? 1 : -1)[0];
+  tile("New records since Epoch's data ends", String(nr.length), last ? `latest: ${last.model} (${last.effort}), ${potName(last.benchmark)} ${Math.round(last.level * 100)}% at ${potUsd(last.cost)}` : "",
+    `at 25% / 75% scores, ${fmtDate(T(POTD.epoch_cutoff))} – ${fmtDate(T(POTD.update_through))}`);
+}
+function drawPotRec() {
+  const b = $("#pot-bench").value, rec = (POTD.records || []).filter(r => r.benchmark === b);
+  const end = T(b === "chess" ? POTD.epoch_cutoff : POTD.update_through), cut = T(POTD.epoch_cutoff);
+  const mk = (lvl, color) => {
+    const rows = rec.filter(r => r.level === lvl).sort((a, b) => a.date < b.date ? -1 : 1), pts = [];
+    rows.forEach((r, i) => { const x = T(r.date);
+      if (i) pts.push({x, y: rows[i - 1].cost, corner: true});
+      pts.push({x, y: r.cost, hollow: r.source === "estimated", note: `${r.model} (${r.effort})${r.source === "estimated" ? " · estimated cost" : ""}`}); });
+    if (rows.length && end > T(rows.at(-1).date)) pts.push({x: end, y: rows.at(-1).cost, corner: true});
+    return {name: `${Math.round(lvl * 100)}% score`, color, points: pts, rows};
+  };
+  const ser = [mk(0.25, "var(--s1)"), mk(0.75, "var(--s2)")].filter(s => s.points.length);
+  legend("lg-c-pot-rec", ser.map(s => ({name: s.name, color: s.color})));
+  const trows = ser.flatMap(s => s.rows.map(r => Object.assign({lvl: s.name}, r))).sort((a, b) => a.date < b.date ? 1 : -1);
+  view("c-pot-rec", hst => lineChart(hst, ser, {height: 360, log: true, yFmt: potUsd, mode: "near", marks: [{x: cut, label: "Epoch data ends"}], aria: "record cost per question"}),
+    hst => table(hst, [{label: "Date", key: "date"}, {label: "Score", key: "lvl"}, {label: "Model", get: r => `${r.model} (${r.effort})`}, {label: "Cost per question", n: 1, get: r => potUsd(r.cost)}, {label: "Cost", get: r => r.source === "estimated" ? "estimated" : "Epoch"}], trows));
+}
+function drawPotT1() {
+  const R = POTD.replication, U = POTD.updated, P = POTD.published, S = POTD.sensitivity, A = POTD.averages;
+  const prim = new Set(POTD.primary);
+  const rng = (a, b) => `${perQ(Math.min(a, b))}–${perQ(Math.max(a, b))}`;
+  const sens = b => POTD.update_benches.includes(b) ? rng(S.half[b].model_free, S.double[b].model_free) : "–";
+  const row = b => ({b, name: potName(b), start: R[b].start,
+    pmf: P.model_free[b], rmf: R[b].model_free, umf: U[b].model_free, sens: sens(b), plin: P.linear[b], rlin: R[b].linear, ulin: U[b].linear, pbt: P.bt[b], rbt: R[b].bt, ubt: U[b].bt});
+  const keys = Object.keys(R);
+  const rows = keys.filter(b => prim.has(b)).map(row);
+  rows.push({name: "Average, 5 main benchmarks", bold: true, start: "", pmf: 47.0, rmf: A.rep.model_free, umf: A.upd.model_free, sens: rng(A.half.model_free, A.double.model_free),
+    plin: 41.0, rlin: A.rep.linear, ulin: A.upd.linear, pbt: 47.0, rbt: A.rep.bt, ubt: A.upd.bt});
+  keys.filter(b => !prim.has(b)).forEach(b => rows.push(Object.assign(row(b), {name: potName(b) + " (secondary)", sens: "–", umf: null, ulin: null, ubt: null})));
+  const f = (k, label) => ({label, n: 1, get: r => perQ(r[k])});
+  const cols = [{label: "Benchmark", get: r => r.bold ? h("b", null, null, r.name) : r.name}, {label: "Data from", key: "start"},
+    f("pmf", "Model-free: Epoch"), f("rmf", "replicated"), f("umf", "updated"), {label: "costs ½–2×", n: 1, key: "sens"},
+    f("plin", "Linear: Epoch"), f("rlin", "replicated"), f("ulin", "updated"),
+    f("pbt", "Box-Tidwell: Epoch"), f("rbt", "replicated"), f("ubt", "updated")];
+  table($("#pot-t1"), cols, rows);
+  $("#pot-t1-note").textContent = `Epoch's figures are from the report's Table 1. Secondary benchmarks replicate too (their Epoch values are in the same table) but are not updated and not in the average. Chess stays at Epoch's data. Updated data runs to ${POTD.update_through}. Built ${POTD.built.replace("T", " ")} from ${POTD.hub_file} and ${POTD.price_file}.`;
+}
+function drawPotSota() {
+  const S = POTD.post_sota_avg, mk = (arr, name, color) => ({name, color, points: arr.map((v, q) => ({x: q, y: v == null ? null : v / 100}))});
+  const ser = [mk(S.rep, "Epoch data (replicated)", "var(--s1)"), mk(S.upd, "Updated to " + fmtMonth(T(POTD.update_through)), "var(--s2)")];
+  legend("lg-c-pot-sota", ser.map(s => ({name: s.name, color: s.color})));
+  view("c-pot-sota", hst => lineChart(hst, ser, {height: 300, xType: "num", xFmt: v => v === 0 ? "When first reached" : `${v} quarter${v > 1 ? "s" : ""} later`,
+      xTicks: [0, 2, 4, 6, 8].map(x => ({x, label: x === 0 ? "first reached" : `+${x}q`})), yFmt: v => pct(v, 0), yMin: 0, endLabels: false}),
+    hst => table(hst, [{label: "Quarters after first reached", get: q => q}, {label: "Epoch (replicated)", n: 1, get: q => perQ(S.rep[q])}, {label: "Updated", n: 1, get: q => perQ(S.upd[q])}], [0, 1, 2, 3, 4, 5, 6, 7, 8]));
+}
+function drawPotRoll() {
+  const qx = q => Date.UTC(+q.slice(0, 4), (+q.slice(-1) - 1) * 3, 15);
+  const mk = (rows, name, color, dash) => ({name, color, dash, points: rows.filter(r => r.n >= 4).map(r => ({x: qx(r.quarter), y: r.avg / 100, note: `${r.n} benchmarks`}))});
+  const ser = [mk(POTD.rolling_rep, "Epoch data (replicated)", "var(--s1)", true), mk(POTD.rolling_upd, "Updated", "var(--s2)", false)];
+  legend("lg-c-pot-roll", ser.map(s => ({name: s.name, color: s.color, dash: s.dash})));
+  const R = Object.fromEntries(POTD.rolling_rep.map(r => [r.quarter, r])), U = POTD.rolling_upd.filter(r => r.n >= 4);
+  view("c-pot-roll", hst => lineChart(hst, ser, {height: 300, yFmt: v => pct(v, 0), yMin: 0, endLabels: false,
+      title: x => { const d = new Date(x); return `${d.getUTCFullYear()} Q${Math.floor(d.getUTCMonth() / 3) + 1} → next quarter`; }}),
+    hst => table(hst, [{label: "Start quarter", key: "quarter"}, {label: "Epoch data", n: 1, get: r => perQ((R[r.quarter] || {}).avg)}, {label: "Updated", n: 1, get: r => perQ(r.avg)}, {label: "Benchmarks", n: 1, key: "n"}], U.slice().reverse()));
+}
+function drawPotNew() {
+  const fb = $("#pot-new-bench").value, recs = new Set((POTD.records || []).filter(r => r.source === "estimated").map(r => `${r.benchmark}|${r.model}|${r.effort}`));
+  const rows = (POTD.points || []).filter(r => !fb || r.benchmark === fb).sort((a, b) => a.releasedate < b.releasedate ? 1 : a.releasedate > b.releasedate ? -1 : a.benchmark < b.benchmark ? -1 : 1);
+  table($("#c-pot-new"), [{label: "Released", key: "releasedate"}, {label: "Model", get: r => `${r.model} (${r.effort})`}, {label: "Benchmark", get: r => potName(r.benchmark)},
+    {label: "Score", n: 1, get: r => pct(r.acc_raw, 1)}, {label: "Est. cost / question", n: 1, get: r => potUsd(r.cost_est)}, {label: "Method", key: "method"},
+    {label: "Predecessor", get: r => r.predecessor || "–"}, {label: "List price in / out ($/M)", n: 1, get: r => `${(+r.p_in).toFixed(2)} / ${(+r.p_out).toFixed(2)}`},
+    {label: "Record", get: r => recs.has(`${r.benchmark}|${r.model}|${r.effort}`) ? "yes" : ""}], rows);
+}
+async function loadPot() {
+  POTD = await api("/api/pot");
+  if (!POTD.averages) { $("#pot-tiles").textContent = "No data yet: run epoch-price-of-thought/pot_update.py"; return; }
+  $("#pot-cut").textContent = fmtDate(T(POTD.epoch_cutoff));
+  const sel = $("#pot-bench"), nsel = $("#pot-new-bench");
+  POTD.primary.forEach(b => h("option", {value: b}, sel, potName(b)));
+  sel.value = "gpqa";
+  POTD.update_benches.forEach(b => h("option", {value: b}, nsel, potName(b)));
+  sel.addEventListener("change", drawPotRec); nsel.addEventListener("change", drawPotNew);
+  drawPotTiles(); drawPotRec(); drawPotT1(); drawPotSota(); drawPotRoll(); drawPotNew();
+}
+
 /* ================================================================ Ramp AI Index: businesses paying for AI */
 let RA = null;
 const RA_VENDOR = {OpenAI: "var(--s1)", Anthropic: "var(--s4)", xAI: "var(--s3)", DeepSeek: "var(--s5)", "Mistral AI": "var(--s6)"};
@@ -1705,7 +1801,7 @@ function loadData() {
   refreshStatus();
 }
 
-const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, tokenecon: loadTokenEcon, rampadopt: loadRampAdopt, arr: loadArr, circular: loadCircular, population: loadPopulation, data: loadData};
+const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, tokenecon: loadTokenEcon, pot: loadPot, rampadopt: loadRampAdopt, arr: loadArr, circular: loadCircular, population: loadPopulation, data: loadData};
 async function boot(again) {
   META = await api("/api/meta");
   document.body.classList.toggle("hosted", !!META.hosted);

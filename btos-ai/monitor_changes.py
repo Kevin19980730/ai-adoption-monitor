@@ -40,6 +40,7 @@ SOURCES = {
     "Circular financing deals": ("circular", 21, 0, "irregular (news)"),
     "OpenRouter model mix": ("tokenecon", 16, 1, "weekly"),
     "InferenceX margins": ("tokenecon", 75, 0, "monthly (as benchmark runs land)"),
+    "Epoch price of thought": ("pot", 200, 90, "quarterly (one quarter ahead needed)"),
 }
 IRREGULAR = {"Lab ARR", "AI assistant disclosures", "Circular financing deals"}
 
@@ -107,6 +108,11 @@ def series():
     if not im.empty:
         g = im[(im.model == "DeepSeek-V4-Pro") & (im.hardware == "b300") & (im.tier_tps == 50)]
         add("im_dsv4_b300", "DeepSeek V4 Pro gross margin on B300 (60% util.)", "InferenceX margins", _pts(g.as_of, g.gm_at_60), "share", "pp")
+    pr = _csv("epoch-price-of-thought/data/rolling_decline.csv")
+    if not pr.empty:
+        pr = pr[pr.n >= 4]
+        qd = pd.PeriodIndex(pr.quarter, freq="Q").start_time
+        add("pot_decline", "Fall per quarter in the cost of a fixed AI score (Epoch method)", "Epoch price of thought", _pts(qd, pr.avg), "pct100", "pp100")
     a = _csv("ramp-ai-index/ramp_adoption_monthly.csv")
     if not a.empty:
         me = pd.to_datetime(a.month) + pd.offsets.MonthEnd(0)

@@ -710,6 +710,19 @@ def tokenecon():
     return jsonify(out)
 
 
+# ---------------------------------------------------------------- price of thought (Epoch AI replication + update)
+POT = HERE.parent / "epoch-price-of-thought" / "data" / "results.json"
+
+
+@app.route("/api/pot")
+def pot():
+    """Epoch AI 'The plunging price of thought' replicated from its own data, then extended with Epoch
+    Benchmarking Hub scores of later models at estimated cost (../epoch-price-of-thought/pot_update.py)."""
+    if not POT.exists():
+        return jsonify({})
+    return jsonify(cached("pot", [POT], lambda: json.loads(POT.read_text(encoding="utf-8"))))
+
+
 # ---------------------------------------------------------------- OpenAI & Anthropic ARR
 ARD = HERE.parent / "ai-lab-arr"
 ARR_CANDS = ARD / "arr_candidates.json"

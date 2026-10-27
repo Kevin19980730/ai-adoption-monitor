@@ -36,7 +36,8 @@
         <a href="#arr" role="tab" data-tab="arr">Lab ARR (OpenAI &amp; Anthropic)</a>
         <a href="#tokens" role="tab" data-tab="tokens">Tokens (OpenRouter)</a>
         <a href="#ramp" role="tab" data-tab="ramp">Business tokens (Ramp)</a>
-        <a href="#tokenecon" role="tab" data-tab="tokenecon">Token economics</a></div>
+        <a href="#tokenecon" role="tab" data-tab="tokenecon">Token economics</a>
+        <a href="#pot" role="tab" data-tab="pot">Price of thought (Epoch)</a></div>
       <div class="tab-group" role="group" aria-label="End user layer"><span class="tg-label">End user</span>
         <a href="#population" role="tab" data-tab="population">World population &amp; AI users</a>
         <a href="#assistants" role="tab" data-tab="assistants">AI assistants</a>
@@ -427,6 +428,55 @@
       <div class="legend" id="lg-te-app"></div>
       <div class="chart" id="c-te-app"></div>
     </div>
+  </div>
+</section>
+
+<!-- ===================================================== PRICE OF THOUGHT (Epoch AI replication + update) -->
+<section id="tab-pot" class="tab" hidden>
+  <div class="tiles" id="pot-tiles"></div>
+  <div class="note"><h3>What this measures</h3>
+    <p>Epoch AI&rsquo;s <a href="https://epoch.ai/publications/the-plunging-price-of-thought" target="_blank" rel="noopener">The plunging price of thought</a> (Emberson &amp; Roodman, 22 Sep 2026) asks how fast the <b>cheapest way to reach a given benchmark score</b> gets cheaper. For each model it replays the benchmark log at every token budget (the CAISI method): stop the model once it has spent the budget and score the questions it had already answered. That gives a cost-vs-accuracy curve per model, not a single point. The record at each date is the cheapest run, from any model released by then, that reaches the target accuracy. Scores are rescaled from the guessing floor, so on GPQA 75% means three-quarters of the way from chance (25%) to perfect.</p>
+    <p><b>Replication.</b> Epoch&rsquo;s R code and data (<a href="https://github.com/droodman/inference-cost" target="_blank" rel="noopener">github.com/droodman/inference-cost</a>) were ported to Python. It reproduces every number in the report&rsquo;s Tables 1 and 2 to 0.1pp. Epoch&rsquo;s data stops at models released by <span id="pot-cut"></span>.</p>
+    <p><b>Update.</b> Later models come from the Epoch Benchmarking Hub, which publishes full-run scores but not token counts. Their cost per question is therefore <b>estimated</b>: tokens are taken from the model&rsquo;s predecessor in the same family (on the same benchmark and effort level) and from the median of similar recent models. Those tokens are then priced at the model&rsquo;s OpenRouter list price. Back-tested on Epoch&rsquo;s own 2026 runs, the estimate is typically within a factor of about 2 (&sigma; 0.65 log points), with no bias. Each new model adds one point (its full run), not a whole budget curve. Chess is not updated, because Epoch re-ran Chess Puzzles for every model on 13 Oct 2026 and the new scores do not match the old curve data.</p></div>
+
+  <div class="card">
+    <div class="card-head"><div><h2>Cheapest cost per question to reach a score</h2>
+      <p class="muted" id="pot-rec-sub">Each step is a new record: a model released that day reaches the score more cheaply than any earlier model. Log scale. Hollow markers are estimated costs for models released after Epoch&rsquo;s data ends. This is the report&rsquo;s second figure, extended.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-pot-rec">Table</button></div>
+    <div class="filters inner"><label>Benchmark <select id="pot-bench"></select></label></div>
+    <div class="legend" id="lg-c-pot-rec"></div>
+    <div class="chart" id="c-pot-rec"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div><h2>Average fall per quarter in the cost of a fixed score</h2>
+      <p class="muted">The report&rsquo;s Table 1. <b>Model-free</b>: at a grid of (date, accuracy) points up to the state of the art, compare the record cost with the record one quarter later, then take the geometric mean. <b>Linear</b> and <b>Box-Tidwell</b>: a regression fitted to the record surface (log cost on logit accuracy and date; Box-Tidwell lets both bend). The average row is Epoch&rsquo;s: the mean of the log rates across the five main benchmarks.</p></div></div>
+    <div id="pot-t1"></div>
+    <p class="muted small" id="pot-t1-note"></p>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Costs fall fastest just after a score is first reached</h2>
+        <p class="muted">The report&rsquo;s Table 2. Box-Tidwell fit: the fall per quarter at the date a score becomes state of the art, then 1&ndash;8 quarters later. Each date&rsquo;s figure is averaged over scores, then over the five main benchmarks.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-pot-sota">Table</button></div>
+      <div class="legend" id="lg-c-pot-sota"></div>
+      <div class="chart" id="c-pot-sota"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Is the pace holding?</h2>
+        <p class="muted">The model-free measure, split by the quarter it starts in: how far the record cost of each score fell over the following quarter. Average across the benchmarks with data. A quarter in which no cheaper model arrives counts as no fall, so single quarters are noisy. The latest quarter is partial: it only has start dates a full quarter before the newest model.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-pot-roll">Table</button></div>
+      <div class="legend" id="lg-c-pot-roll"></div>
+      <div class="chart" id="c-pot-roll"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div><h2>Models added since Epoch&rsquo;s data ends</h2>
+      <p class="muted">Epoch Benchmarking Hub full-run scores, with the estimated cost per question. <b>Blend</b> = geometric mean of the predecessor-based and peer-based estimates; <b>peer</b> = similar models only (no predecessor in Epoch&rsquo;s data). <b>Record</b> = it set a new low cost at 25% or 75% on that benchmark.</p></div></div>
+    <div class="filters inner"><label>Benchmark <select id="pot-new-bench"><option value="">All</option></select></label></div>
+    <div id="c-pot-new"></div>
   </div>
 </section>
 
