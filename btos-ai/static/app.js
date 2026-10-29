@@ -1442,10 +1442,17 @@ function drawCxQ() {
   };
   const fmt = mode === "share" || mode === "yoy" ? (v => pct(v, 0)) : (v => "$" + v.toFixed(v >= 100 ? 0 : 1) + "bn");
   const S = CXQ_TK.map(([k, nm, col]) => ({name: nm, color: col, points: Q.map((r, i) => ({x: qx(r.cal_quarter), y: val(k, i), note: r.cal_quarter}))}));
+  /* quarters only some of the five have reported (Oracle's calendarised quarter trails ~3 months): per-company points, q / y/y only */
+  if (mode === "q" || mode === "yoy") (CXQ.partial || []).forEach(p => {
+    const s = S[CXQ_TK.findIndex(t => t[0] === p.ticker)], y0r = Q.find(r => r.cal_quarter === `${+p.cal_quarter.slice(0, 4) - 1}${p.cal_quarter.slice(4)}`);
+    const y = mode === "q" ? p.capex_bn : (y0r && y0r[p.ticker] > 0 ? p.capex_bn / y0r[p.ticker] - 1 : null);
+    s.points.push({x: qx(p.cal_quarter), y, note: `${p.cal_quarter} (not all five reported yet)`});
+  });
   const E7 = Object.fromEntries((CXQ.expanded7 || []).map(r => [r.ttm_ending, r]));
   /* quarters a neocloud / SpaceX has reported before the five have (earnings releases land first) */
   const lastQ = n ? Q[n - 1].cal_quarter : "";
-  const extraQ = mode === "q" || mode === "yoy" ? [...new Set((CXQ.neo_periods || []).filter(p => p.first_quarter === p.last_quarter && p.first_quarter > lastQ).map(p => p.first_quarter))].sort() : [];
+  const extraQ = mode === "q" || mode === "yoy" ? [...new Set((CXQ.neo_periods || []).filter(p => p.first_quarter === p.last_quarter && p.first_quarter > lastQ).map(p => p.first_quarter)
+    .concat((CXQ.partial || []).map(p => p.cal_quarter)))].sort() : [];
   const yearAgo = q => `${+q.slice(0, 4) - 1}${q.slice(4)}`;
   CXQ_NEO.forEach(([comp, nm, col]) => {
     const key = NEO_KEY[comp];
