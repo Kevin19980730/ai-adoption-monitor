@@ -1,7 +1,7 @@
 week,total_requests,partial,source
 2025-10-13,441127270,0,OpenRouter top-models chart (requests)
 2025-10-20,503914249,0,OpenRouter top-models chart (requests)
-2025-10-27,990158735,0,OpenRouter top-models chart (requests)
+2025-10-27,529591090,0,OpenRouter top-models chart (requests)
 2025-11-03,982786950,0,OpenRouter top-models chart (requests)
 2025-11-10,967390210,0,OpenRouter top-models chart (requests)
 2025-11-17,1113873619,0,OpenRouter top-models chart (requests)
@@ -52,4 +52,5 @@ week,total_requests,partial,source
 2026-09-28,7797373104,0,OpenRouter top-models chart (requests)
 2026-10-05,8068641150,0,OpenRouter top-models chart (requests)
 2026-10-12,8597623648,0,OpenRouter top-models chart (requests)
-2026-10-19,5270959131,1,OpenRouter top-models chart (requests)
+2026-10-19,9384820617,0,OpenRouter top-models chart (requests)
+2026-10-26,5403451794,1,OpenRouter top-models chart (requests)

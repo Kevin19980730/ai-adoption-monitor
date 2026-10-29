@@ -43,6 +43,6 @@ gpqa,0.75,2026-07-09,0.000412,gpt-5.6-luna,low,epoch
 mystery,0.25,2026-07-09,0.194566,gpt-5.6-sol,none,epoch
 mystery,0.25,2026-08-13,0.07779719310000001,deepseek-v4-pro-0813,max,estimated
 mystery,0.25,2026-08-14,0.046216203399999996,glm-5.3,max,estimated
-mystery,0.25,2026-09-09,0.021042622860000002,deepseek-v4.1-flash,max,estimated
+mystery,0.25,2026-09-09,0.0197556498,deepseek-v4.1-flash,max,estimated
 mystery,0.75,2026-09-03,2.2176783,gpt-6-astra,max,estimated
 mystery,0.75,2026-09-29,0.36122708000000003,gpt-6.1-sol,max,estimated

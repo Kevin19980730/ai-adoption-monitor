@@ -9,3 +9,8 @@ date,model,slug,n_providers,median_in_per_m,median_out_per_m,min_in_per_m,min_ou
 2026-10-23,Kimi-K3,moonshotai/kimi-k3,29,2.24,14.519,0.238,5.5
 2026-10-23,GLM-5.2,z-ai/glm-5.2,35,0.966,4.4,0.0341,0.594
 2026-10-23,MiniMax-M3,minimax/minimax-m3,14,0.3,1.2,0.224,0.88
+2026-10-30,DeepSeek-V4-Pro,deepseek/deepseek-v4-pro,15,1.3,2.832,0.82128,1.5
+2026-10-30,DeepSeek-V4.1-Flash,deepseek/deepseek-v4.1-flash,41,0.2,0.84,0.0324,0.1296
+2026-10-30,Kimi-K3,moonshotai/kimi-k3,30,1.975,14.125,0.161,8.25
+2026-10-30,GLM-5.2,z-ai/glm-5.2,34,1.043,4.4,0.006,1.44
+2026-10-30,MiniMax-M3,minimax/minimax-m3,13,0.3,1.2,0.224,0.88
