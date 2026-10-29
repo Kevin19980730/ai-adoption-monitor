@@ -1493,10 +1493,20 @@ function drawCxQ() {
   const host = $("#cx-q-tiles"); host.replaceChildren();
   const last = Q[n - 1], yago = Q[n - 5];
   const tile = (t, v, dlt, s) => { const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, t); h("div", {class: "v"}, a, v); if (dlt != null) { const dd = h("div", {class: "d"}, a); h("span", {class: dlt >= 0 ? "up" : "down"}, dd, (dlt >= 0 ? "▲ " : "▼ ") + (Math.abs(dlt) * 100).toFixed(0) + "%"); dd.appendChild(document.createTextNode(" vs a year earlier")); } h("div", {class: "s"}, a, s); };
-  tile(`Five hyperscalers, ${last.cal_quarter}`, "$" + tot[n - 1].toFixed(0) + "bn", yago ? tot[n - 1] / tot[n - 5] - 1 : null, "capex in the quarter · SEC filings");
-  CXQ_TK.forEach(([k, nm]) => tile(nm, "$" + last[k].toFixed(1) + "bn", yago && yago[k] > 0 ? last[k] / yago[k] - 1 : null, `${last.cal_quarter} capex`));
-  CXQ_NEO.forEach(([comp, nm]) => { const v = neoQ(comp, last.cal_quarter), v0 = yago ? neoQ(comp, yago.cal_quarter) : null;
-    if (v != null) tile(nm, "$" + v.toFixed(1) + "bn", v0 ? v / v0 - 1 : null, `${last.cal_quarter} capex`); });
+  tile(`Five hyperscalers, ${last.cal_quarter}`, "$" + tot[n - 1].toFixed(0) + "bn", yago ? tot[n - 1] / tot[n - 5] - 1 : null, "latest quarter all five have reported · SEC filings");
+  /* company tiles show each company's own latest quarter, which can be past the last quarter all five have reported */
+  const qOf = q => Q.find(r => r.cal_quarter === q), yearBack = q => `${+q.slice(0, 4) - 1}${q.slice(4)}`;
+  CXQ_TK.forEach(([k, nm]) => {
+    const p = (CXQ.partial || []).filter(r => r.ticker === k).sort((a, b) => a.cal_quarter < b.cal_quarter ? -1 : 1).pop();
+    const q = p ? p.cal_quarter : last.cal_quarter, v = p ? p.capex_bn : last[k], r0 = qOf(yearBack(q));
+    tile(nm, "$" + v.toFixed(1) + "bn", r0 && r0[k] > 0 ? v / r0[k] - 1 : null, `${q} capex`);
+  });
+  CXQ_NEO.forEach(([comp, nm]) => {
+    const q = (CXQ.neo_periods || []).filter(p => p.company === comp && p.first_quarter === p.last_quarter).map(p => p.first_quarter).sort().pop();
+    if (!q) return;
+    const v = neoQ(comp, q), v0 = neoQ(comp, yearBack(q));
+    tile(nm, "$" + v.toFixed(1) + "bn", v0 ? v / v0 - 1 : null, `${q} capex`);
+  });
   const e7 = (CXQ.expanded7 || []).slice(-1)[0];
   if (e7) tile(`Eight names, TTM to ${e7.ttm_ending}`, `${e7.total_pct.toFixed(2)}% of GDP`, null, `$${Math.round(e7.total_bn)}bn: the five + CoreWeave $${e7.coreweave_bn.toFixed(1)}bn + Nebius $${e7.nebius_bn.toFixed(1)}bn + SpaceX AI $${e7.spacex_ai_bn.toFixed(1)}bn`);
   table($("#cx-of"), [{label: "Fiscal quarter ends", key: "fiscal_quarter_end"}, {label: "Oracle capex ($bn)", n: 1, get: r => "$" + r.capex_bn.toFixed(2)}], [...CXQ.oracle_fiscal].reverse());
