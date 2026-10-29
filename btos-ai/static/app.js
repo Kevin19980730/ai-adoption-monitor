@@ -1527,13 +1527,26 @@ function drawRpo() {
   }).filter(Boolean);
   const nm = co === "ALL" ? "four hyperscalers" : co === "ALL6" ? "four + CoreWeave + Nebius" : RPO_TK.find(t => t[0] === co)[1];
   const bnF = v => "$" + (v >= 100 ? Math.round(v).toLocaleString("en-US") : v.toFixed(1)) + "bn";
-  const S = mode === "bn"
+  /* RPO on its own: one line per company, each to its own latest quarter (no need to wait for the others), plus the combined total */
+  const cols = ["var(--s1)", "var(--s2)", "var(--s3)", "var(--s4)", "var(--s5)", "var(--s6)"];
+  const byCo = (RPO_SETS[co] || [co]).map((k, i) => {
+    const g = R.filter(r => r.ticker === k).sort((a, b) => a.cal_quarter.localeCompare(b.cal_quarter)), at = q => g.find(r => r.cal_quarter === q);
+    return {name: RPO_TK.find(t => t[0] === k)[1], color: cols[i % cols.length], points: g.map(r => {
+      const y0 = at(qadd(r.cal_quarter, -4));
+      return {x: qx(r.cal_quarter), y: mode === "yoy" ? (y0 && y0.rpo_bn > 0 ? r.rpo_bn / y0.rpo_bn - 1 : null) : r.rpo_bn, note: `as of ${r.period_end}`};
+    })};
+  });
+  if (RPO_SETS[co]) byCo.unshift({name: `Total, ${nm}`, short: "Total", color: "var(--ink)", points: rows.map((r, i) => {
+    const y0 = rows.find(x => x.q === qadd(r.q, -4));
+    return {x: qx(r.q), y: mode === "yoy" ? (y0 ? r.rpo / y0.rpo - 1 : null) : r.rpo, note: `quarters where all report`};
+  })});
+  const S = mode === "co" || mode === "yoy" ? byCo : mode === "bn"
     ? [{name: `RPO, ${nm} (quarter end)`, short: "RPO", color: "var(--s1)", points: rows.map(r => ({x: qx(r.q), y: r.rpo, note: `as of ${r.end}`}))},
        {name: `Capex, trailing four quarters, ${nm}`, short: "TTM capex", color: "var(--s2)", points: rows.map(r => ({x: qx(r.q), y: r.cap}))}]
     : [{name: `RPO ÷ TTM capex, ${nm}`, short: "RPO ÷ capex", color: "var(--s1)", points: rows.map(r => ({x: qx(r.q), y: r.cap ? r.rpo / r.cap : null}))}];
   legend("lg-cx-rpo", S.map(s => ({name: s.name, color: s.color})));
   const yrs = [...new Set(rows.map(r => +r.q.slice(0, 4)))];
-  view("c-cx-rpo", hst => lineChart(hst, S, {height: 320, xType: "num", yMin: 0, yFmt: mode === "bn" ? bnF : (v => v.toFixed(1) + "×"), mode: "cross", xFmt: qt,
+  view("c-cx-rpo", hst => lineChart(hst, S, {height: 320, xType: "num", yMin: mode === "yoy" ? null : 0, yFmt: mode === "yoy" ? (v => pct(v, 0)) : mode === "x" ? (v => v.toFixed(1) + "×") : bnF, mode: "cross", xFmt: qt,
       xTicks: yrs.map(y => ({x: y + 0.125, label: "Q1 " + y}))}),
     hst => table(hst, [{label: "Quarter", key: "q"}, {label: "Period end", key: "end"}, {label: "RPO ($bn)", n: 1, get: r => "$" + r.rpo.toFixed(1)},
       {label: "TTM capex ($bn)", n: 1, get: r => r.cap == null ? "–" : "$" + r.cap.toFixed(1)}, {label: "RPO ÷ capex", n: 1, get: r => r.cap ? (r.rpo / r.cap).toFixed(2) + "×" : "–"}], [...rows].reverse()));
