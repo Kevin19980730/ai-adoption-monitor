@@ -1319,3 +1319,63 @@ snapshot,period,rank,app,slug,tokens,requests,categories
 2026-10-30,month,24,ZCode,,1830605646941,8355825,programming-app
 2026-10-30,month,25,Lemonade,lemonade,1775351021268,30878648,programming-app
 2026-10-30,month,26,Portkey AI,portkey-ai,1609006999699,260463631,programming-app
+2026-11-02,day,3,Hermes Agent,hermes-agent,1668374444030,15514995,personal-agent|cli-agent
+2026-11-02,day,4,Claude Code,claude-code,981553037941,10923880,cli-agent
+2026-11-02,day,5,Kilo Code,kilo-code,651084370764,5999502,cli-agent|ide-extension
+2026-11-02,day,6,OpenClaw,openclaw,573095013038,3968387,personal-agent|cli-agent
+2026-11-02,day,7,pi,pi,469539730220,5198246,cli-agent
+2026-11-02,day,8,Codex,codex,408177771977,5948000,cli-agent
+2026-11-02,day,10,DeepSeek Harness,,301836190988,1831809,
+2026-11-02,day,11,omp,,255092991771,1553618,cli-agent
+2026-11-02,day,13,Freebuff,,167020150971,1426896,
+2026-11-02,day,14,Strix,,163055659281,1446429,cli-agent
+2026-11-02,day,15,MeGPT mind,,122420963352,2829374,
+2026-11-02,day,16,Cline,cline,111227023436,1362971,ide-extension|cli-agent
+2026-11-02,day,17,Portkey AI,portkey-ai,103733843688,22172279,programming-app
+2026-11-02,day,18,Proto Agent,,92613740924,838488,personal-agent|general-chat|cli-agent|programming-app|native-app-builder
+2026-11-02,day,19,OpenHands,openhands,87728208935,967380,cli-agent
+2026-11-02,day,20,"Hello Minds, powered by Ethoswarm",,80835613998,979480,roleplay|personal-agent|creative-writing
+2026-11-02,day,21,ISEKAI ZERO,isekai-zero,78370891854,1083258,game
+2026-11-02,day,24,LangChain,langchain,73930896215,1215586,
+2026-11-02,day,25,CodeGPT,,56743739403,302468,ide-extension|cli-agent|cloud-agent
+2026-11-02,day,26,Aura,,51114950412,397540,ide-extension|programming-app
+2026-11-02,week,4,Hermes Agent,hermes-agent,13278828839606,124351039,personal-agent|cli-agent
+2026-11-02,week,3,Claude Code,claude-code,10432666779513,105002416,cli-agent
+2026-11-02,week,5,Codex,codex,5492233552572,79893957,cli-agent
+2026-11-02,week,6,Kilo Code,kilo-code,4997893330743,47266509,cli-agent|ide-extension
+2026-11-02,week,7,pi,pi,4642622302036,40706949,cli-agent
+2026-11-02,week,8,OpenClaw,openclaw,4118011951317,29762373,personal-agent|cli-agent
+2026-11-02,week,10,omp,,2022187593323,13057025,cli-agent
+2026-11-02,week,11,DeepSeek Harness,,1933749618846,12990205,
+2026-11-02,week,12,Strix,,1666296035867,14674900,cli-agent
+2026-11-02,week,14,Portkey AI,portkey-ai,1313927951093,113892641,programming-app
+2026-11-02,week,15,Freebuff,,1215697569384,10229563,
+2026-11-02,week,16,Cline,cline,973315475009,16505276,ide-extension|cli-agent
+2026-11-02,week,18,OpenHands,openhands,640547842534,6991687,cli-agent
+2026-11-02,week,19,ISEKAI ZERO,isekai-zero,592763899360,8650163,game
+2026-11-02,week,20,LangChain,langchain,538155977091,12427303,
+2026-11-02,week,21,Proto Agent,,509921661590,4962070,personal-agent|general-chat|cli-agent|programming-app|native-app-builder
+2026-11-02,week,22,MeGPT mind,,509324480977,12499280,
+2026-11-02,week,23,Aura,,437195148810,3811417,ide-extension|programming-app
+2026-11-02,week,24,CodeGPT,,437186987129,2496814,ide-extension|cli-agent|cloud-agent
+2026-11-02,week,25,HighLevel,,435497340682,7337200,
+2026-11-02,month,4,Hermes Agent,hermes-agent,52860231556725,485959942,personal-agent|cli-agent
+2026-11-02,month,3,Claude Code,claude-code,44888162729850,398565080,cli-agent
+2026-11-02,month,5,Kilo Code,kilo-code,24149234852268,240895743,cli-agent|ide-extension
+2026-11-02,month,6,pi,pi,16522089199932,148462109,cli-agent
+2026-11-02,month,8,Codex,codex,13381784956561,190836518,cli-agent
+2026-11-02,month,9,Cline,cline,12032826845939,121268598,ide-extension|cli-agent
+2026-11-02,month,10,Freebuff,,10554843825547,79416637,
+2026-11-02,month,11,OpenClaw,openclaw,10345770167022,93980066,personal-agent|cli-agent
+2026-11-02,month,12,omp,,9619742639234,65211764,cli-agent
+2026-11-02,month,13,DeepSeek Harness,,8066199177749,48859232,
+2026-11-02,month,14,Strix,,4618726469115,36430702,cli-agent
+2026-11-02,month,16,OpenHands,openhands,3080935140225,33378133,cli-agent
+2026-11-02,month,18,Proto Agent,,2880973398979,14271754,personal-agent|general-chat|cli-agent|programming-app|native-app-builder
+2026-11-02,month,19,ISEKAI ZERO,isekai-zero,2330708965245,38512767,game
+2026-11-02,month,21,Portkey AI,portkey-ai,2310087049340,326226926,programming-app
+2026-11-02,month,22,"Hello Minds, powered by Ethoswarm",,2185775799223,25645671,roleplay|personal-agent|creative-writing
+2026-11-02,month,23,HighLevel,,1747269171209,31095612,
+2026-11-02,month,24,Lemonade,lemonade,1721751511073,29838937,programming-app
+2026-11-02,month,25,ZCode,,1508315890596,6732482,programming-app
+2026-11-02,month,26,LangChain,langchain,1482790573675,53654327,
