@@ -194,6 +194,34 @@ def population_workbook():
     return send_file(books[-1], as_attachment=True, download_name=books[-1].name, max_age=0)
 
 
+# ---------------------------------------------------------------- AI capex coverage (separate page)
+# ai-capex-coverage/build.py writes coverage.json (the tracker table: values + per-cell sources) and the
+# dated workbook; /coverage/ is its own page, also framed by the "AI capex coverage" tab.
+COV = HERE.parent / "ai-capex-coverage"
+
+
+@app.route("/coverage/")
+def coverage_page():
+    ver = int(max(f.stat().st_mtime for f in (HERE / "static").glob("app.*")))
+    return render_template("coverage.html", ver=ver, embed=request.args.get("embed") == "1", hosted=HOSTED)
+
+
+@app.route("/api/coverage")
+def api_coverage():
+    p = COV / "coverage.json"
+    if not p.exists():
+        abort(404)
+    return send_file(p, mimetype="application/json", max_age=0)
+
+
+@app.route("/coverage/workbook")
+def coverage_workbook():
+    books = sorted((COV / "exports").glob("*_AI capex coverage tracker*.xlsx"), key=lambda b: b.stat().st_mtime)
+    if not books:
+        abort(404)
+    return send_file(books[-1], as_attachment=True, download_name=books[-1].name, max_age=0)
+
+
 def pop_summary():
     p = GP / "pop_summary.json"
     return cached("pop_summary", [p], lambda: json.load(open(p))) if p.exists() else None

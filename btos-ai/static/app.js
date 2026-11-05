@@ -322,6 +322,8 @@ $("#themeBtn").addEventListener("click", () => {
   try { localStorage.setItem("aam-theme", next); } catch (e) {}
   const f = document.getElementById("circ-frame");  // same-origin frame: pass the theme on
   try { if (f && f.contentWindow.ACF_setTheme) f.contentWindow.ACF_setTheme(next); } catch (e) {}
+  const cf = document.getElementById("cov-frame");
+  try { if (cf && cf.contentWindow.COV_setTheme) cf.contentWindow.COV_setTheme(next); } catch (e) {}
   const pf = document.getElementById("pop-frame");
   try { if (pf && pf.contentWindow.POP_setTheme) pf.contentWindow.POP_setTheme(next); } catch (e) {}
 });
@@ -347,6 +349,18 @@ function loadPopulation() {
   const f = h("iframe", {id: "pop-frame", src: "/population/?embed=1", title: "World population and AI users",
                           style: "width:100%;border:0;display:block;border-radius:12px;background:var(--surface)"});
   $("#pop-host").appendChild(f);
+  const fit = () => {
+    if (!f.offsetParent) return;
+    f.style.height = Math.max(480, innerHeight - document.querySelector("header.top").getBoundingClientRect().bottom - 48) + "px";
+  };
+  fit(); addEventListener("resize", fit);
+}
+
+/* ================================================================ AI capex coverage (framed /coverage/ page) */
+function loadCoverage() {
+  const f = h("iframe", {id: "cov-frame", src: "/coverage/?embed=1", title: "AI capex coverage",
+                          style: "width:100%;border:0;display:block;border-radius:12px;background:var(--page)"});
+  $("#cov-host").appendChild(f);
   const fit = () => {
     if (!f.offsetParent) return;
     f.style.height = Math.max(480, innerHeight - document.querySelector("header.top").getBoundingClientRect().bottom - 48) + "px";
@@ -1831,7 +1845,7 @@ function loadData() {
   refreshStatus();
 }
 
-const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, tokenecon: loadTokenEcon, pot: loadPot, rampadopt: loadRampAdopt, arr: loadArr, circular: loadCircular, population: loadPopulation, data: loadData};
+const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, tokenecon: loadTokenEcon, pot: loadPot, rampadopt: loadRampAdopt, arr: loadArr, circular: loadCircular, population: loadPopulation, coverage: loadCoverage, data: loadData};
 async function boot(again) {
   META = await api("/api/meta");
   document.body.classList.toggle("hosted", !!META.hosted);

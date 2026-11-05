@@ -1,0 +1,4126 @@
+{
+"built": "2026-11-05T18:29:04",
+"quarters": [
+"2023Q1",
+"2023Q2",
+"2023Q3",
+"2023Q4",
+"2024Q1",
+"2024Q2",
+"2024Q3",
+"2024Q4",
+"2025Q1",
+"2025Q2",
+"2025Q3",
+"2025Q4",
+"2026Q1",
+"2026Q2",
+"2026Q3"
+],
+"rows": [
+{
+"section": "A. HYPERSCALER - capex (cash purchases of PP&E), $bn per quarter"
+},
+{
+"key": "capex_MSFT",
+"label": "Microsoft",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 6.607,
+"2023Q2": 8.943,
+"2023Q3": 9.917,
+"2023Q4": 9.735,
+"2024Q1": 10.952,
+"2024Q2": 13.873,
+"2024Q3": 14.923,
+"2024Q4": 15.804,
+"2025Q1": 16.745,
+"2025Q2": 17.079,
+"2025Q3": 19.394,
+"2025Q4": 29.876,
+"2026Q1": 30.876,
+"2026Q2": 35.802,
+"2026Q3": 39.367
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Microsoft 10-Q (period to 2023-03-31), SEC XBRL, 2024-04-25, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024048288/0000950170-24-048288-index.htm"
+},
+"2023Q2": {
+"text": "(source: Microsoft 10-K (period to 2023-06-30), SEC XBRL, 2025-07-30, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm"
+},
+"2023Q3": {
+"text": "(source: Microsoft 10-Q (period to 2023-09-30), SEC XBRL, 2024-10-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024118967/0000950170-24-118967-index.htm"
+},
+"2023Q4": {
+"text": "(source: Microsoft 10-Q (period to 2023-12-31), SEC XBRL, 2025-01-29, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025010491/0000950170-25-010491-index.htm"
+},
+"2024Q1": {
+"text": "(source: Microsoft 10-Q (period to 2024-03-31), SEC XBRL, 2025-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/0000950170-25-061046-index.htm"
+},
+"2024Q2": {
+"text": "(source: Microsoft 10-K (period to 2024-06-30), SEC XBRL, 2026-07-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2024Q3": {
+"text": "(source: Microsoft 10-Q (period to 2024-09-30), SEC XBRL, 2025-10-29, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256321/0001193125-25-256321-index.htm"
+},
+"2024Q4": {
+"text": "(source: Microsoft 10-Q (period to 2024-12-31), SEC XBRL, 2026-01-28, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/0001193125-26-027207-index.htm"
+},
+"2025Q1": {
+"text": "(source: Microsoft 10-Q (period to 2025-03-31), SEC XBRL, 2026-04-29, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/0001193125-26-191507-index.htm"
+},
+"2025Q2": {
+"text": "(source: Microsoft 10-K (period to 2025-06-30), SEC XBRL, 2026-07-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2025Q3": {
+"text": "(source: Microsoft 10-Q (period to 2025-09-30), SEC XBRL, 2026-10-28, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/0001193125-26-436133-index.htm"
+},
+"2025Q4": {
+"text": "(source: Microsoft 10-Q (period to 2025-12-31), SEC XBRL, 2026-01-28, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/0001193125-26-027207-index.htm"
+},
+"2026Q1": {
+"text": "(source: Microsoft 10-Q (period to 2026-03-31), SEC XBRL, 2026-04-29, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/0001193125-26-191507-index.htm"
+},
+"2026Q2": {
+"text": "(source: Microsoft 10-K (period to 2026-06-30), SEC XBRL, 2026-07-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2026Q3": {
+"text": "(source: Microsoft 10-Q (period to 2026-09-30), SEC XBRL, 2026-10-28, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/0001193125-26-436133-index.htm"
+}
+}
+},
+{
+"key": "capex_GOOGL",
+"label": "Alphabet",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 6.289,
+"2023Q2": 6.888,
+"2023Q3": 8.055,
+"2023Q4": 11.019,
+"2024Q1": 12.012,
+"2024Q2": 13.186,
+"2024Q3": 13.061,
+"2024Q4": 14.276,
+"2025Q1": 17.197,
+"2025Q2": 22.446,
+"2025Q3": 23.953,
+"2025Q4": 27.851,
+"2026Q1": 35.674,
+"2026Q2": 44.924,
+"2026Q3": 51.355
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Alphabet 10-Q (period to 2023-03-31), SEC XBRL, 2024-04-26, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000053/0001652044-24-000053-index.htm"
+},
+"2023Q2": {
+"text": "(source: Alphabet 10-Q (period to 2023-06-30), SEC XBRL, 2024-07-24, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000079/0001652044-24-000079-index.htm"
+},
+"2023Q3": {
+"text": "(source: Alphabet 10-Q (period to 2023-09-30), SEC XBRL, 2024-10-30, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000118/0001652044-24-000118-index.htm"
+},
+"2023Q4": {
+"text": "(source: Alphabet 10-K (period to 2023-12-31), SEC XBRL, 2026-02-05, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2024Q1": {
+"text": "(source: Alphabet 10-Q (period to 2024-03-31), SEC XBRL, 2025-04-25, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000043/0001652044-25-000043-index.htm"
+},
+"2024Q2": {
+"text": "(source: Alphabet 10-Q (period to 2024-06-30), SEC XBRL, 2025-07-24, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000062/0001652044-25-000062-index.htm"
+},
+"2024Q3": {
+"text": "(source: Alphabet 10-Q (period to 2024-09-30), SEC XBRL, 2025-10-30, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/0001652044-25-000091-index.htm"
+},
+"2024Q4": {
+"text": "(source: Alphabet 10-K (period to 2024-12-31), SEC XBRL, 2026-02-05, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2025Q1": {
+"text": "(source: Alphabet 10-Q (period to 2025-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/0001652044-26-000048-index.htm"
+},
+"2025Q2": {
+"text": "(source: Alphabet 10-Q (period to 2025-06-30), SEC XBRL, 2026-07-23, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.htm"
+},
+"2025Q3": {
+"text": "(source: Alphabet 10-Q (period to 2025-09-30), SEC XBRL, 2026-10-29, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/0001652044-26-000084-index.htm"
+},
+"2025Q4": {
+"text": "(source: Alphabet 10-K (period to 2025-12-31), SEC XBRL, 2026-02-05, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2026Q1": {
+"text": "(source: Alphabet 10-Q (period to 2026-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/0001652044-26-000048-index.htm"
+},
+"2026Q2": {
+"text": "(source: Alphabet 10-Q (period to 2026-06-30), SEC XBRL, 2026-07-23, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.htm"
+},
+"2026Q3": {
+"text": "(source: Alphabet 10-Q (period to 2026-09-30), SEC XBRL, 2026-10-29, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/0001652044-26-000084-index.htm"
+}
+}
+},
+{
+"key": "capex_AMZN",
+"label": "Amazon",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 14.207,
+"2023Q2": 11.455,
+"2023Q3": 12.479,
+"2023Q4": 14.588,
+"2024Q1": 14.925,
+"2024Q2": 17.62,
+"2024Q3": 22.62,
+"2024Q4": 27.834,
+"2025Q1": 25.019,
+"2025Q2": 32.183,
+"2025Q3": 35.095,
+"2025Q4": 39.522,
+"2026Q1": 44.203,
+"2026Q2": 54.208,
+"2026Q3": 77.259
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Amazon 10-Q (period to 2023-03-31), SEC XBRL, 2024-05-01, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000083/0001018724-24-000083-index.htm"
+},
+"2023Q2": {
+"text": "(source: Amazon 10-Q (period to 2023-06-30), SEC XBRL, 2024-08-02, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000130/0001018724-24-000130-index.htm"
+},
+"2023Q3": {
+"text": "(source: Amazon 10-Q (period to 2023-09-30), SEC XBRL, 2024-11-01, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000161/0001018724-24-000161-index.htm"
+},
+"2023Q4": {
+"text": "(source: Amazon 10-K (period to 2023-12-31), SEC XBRL, 2026-02-06, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2024Q1": {
+"text": "(source: Amazon 10-Q (period to 2024-03-31), SEC XBRL, 2025-05-02, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000036/0001018724-25-000036-index.htm"
+},
+"2024Q2": {
+"text": "(source: Amazon 10-Q (period to 2024-06-30), SEC XBRL, 2025-08-01, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000086/0001018724-25-000086-index.htm"
+},
+"2024Q3": {
+"text": "(source: Amazon 10-Q (period to 2024-09-30), SEC XBRL, 2025-10-31, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000123/0001018724-25-000123-index.htm"
+},
+"2024Q4": {
+"text": "(source: Amazon 10-K (period to 2024-12-31), SEC XBRL, 2026-02-06, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2025Q1": {
+"text": "(source: Amazon 10-Q (period to 2025-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/0001018724-26-000014-index.htm"
+},
+"2025Q2": {
+"text": "(source: Amazon 10-Q (period to 2025-06-30), SEC XBRL, 2026-07-31, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.htm"
+},
+"2025Q3": {
+"text": "(source: Amazon 10-Q (period to 2025-09-30), SEC XBRL, 2026-10-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/0001018724-26-000040-index.htm"
+},
+"2025Q4": {
+"text": "(source: Amazon 10-K (period to 2025-12-31), SEC XBRL, 2026-02-06, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2026Q1": {
+"text": "(source: Amazon 10-Q (period to 2026-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/0001018724-26-000014-index.htm"
+},
+"2026Q2": {
+"text": "(source: Amazon 10-Q (period to 2026-06-30), SEC XBRL, 2026-07-31, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.htm"
+},
+"2026Q3": {
+"text": "(source: Amazon 10-Q (period to 2026-09-30), SEC XBRL, 2026-10-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/0001018724-26-000040-index.htm"
+}
+}
+},
+{
+"key": "capex_META",
+"label": "Meta",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 6.823,
+"2023Q2": 6.134,
+"2023Q3": 6.496,
+"2023Q4": 7.592,
+"2024Q1": 6.4,
+"2024Q2": 8.173,
+"2024Q3": 8.258,
+"2024Q4": 14.425,
+"2025Q1": 12.941,
+"2025Q2": 16.538,
+"2025Q3": 18.829,
+"2025Q4": 21.383,
+"2026Q1": 18.997,
+"2026Q2": 30.116,
+"2026Q3": 33.942
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Meta 10-Q (period to 2023-03-31), SEC XBRL, 2024-04-25, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000049/0001326801-24-000049-index.htm"
+},
+"2023Q2": {
+"text": "(source: Meta 10-Q (period to 2023-06-30), SEC XBRL, 2024-08-01, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000069/0001326801-24-000069-index.htm"
+},
+"2023Q3": {
+"text": "(source: Meta 10-Q (period to 2023-09-30), SEC XBRL, 2024-10-31, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000081/0001326801-24-000081-index.htm"
+},
+"2023Q4": {
+"text": "(source: Meta 10-K (period to 2023-12-31), SEC XBRL, 2026-01-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2024Q1": {
+"text": "(source: Meta 10-Q (period to 2024-03-31), SEC XBRL, 2025-05-01, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000054/0001326801-25-000054-index.htm"
+},
+"2024Q2": {
+"text": "(source: Meta 10-Q (period to 2024-06-30), SEC XBRL, 2025-07-31, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036791/0001628280-25-036791-index.htm"
+},
+"2024Q3": {
+"text": "(source: Meta 10-Q (period to 2024-09-30), SEC XBRL, 2025-10-30, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/0001628280-25-047240-index.htm"
+},
+"2024Q4": {
+"text": "(source: Meta 10-K (period to 2024-12-31), SEC XBRL, 2026-01-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2025Q1": {
+"text": "(source: Meta 10-Q (period to 2025-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/0001628280-26-028526-index.htm"
+},
+"2025Q2": {
+"text": "(source: Meta 10-Q (period to 2025-06-30), SEC XBRL, 2026-07-30, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/0001628280-26-050705-index.htm"
+},
+"2025Q3": {
+"text": "(source: Meta 10-Q (period to 2025-09-30), SEC XBRL, 2026-10-22, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/0001628280-26-066773-index.htm"
+},
+"2025Q4": {
+"text": "(source: Meta 10-K (period to 2025-12-31), SEC XBRL, 2026-01-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2026Q1": {
+"text": "(source: Meta 10-Q (period to 2026-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/0001628280-26-028526-index.htm"
+},
+"2026Q2": {
+"text": "(source: Meta 10-Q (period to 2026-06-30), SEC XBRL, 2026-07-30, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/0001628280-26-050705-index.htm"
+},
+"2026Q3": {
+"text": "(source: Meta 10-Q (period to 2026-09-30), SEC XBRL, 2026-10-22, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/0001628280-26-066773-index.htm"
+}
+}
+},
+{
+"key": "capex_ORCL",
+"label": "Oracle",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 2.628,
+"2023Q2": 1.913,
+"2023Q3": 1.314,
+"2023Q4": 1.08,
+"2024Q1": 1.674,
+"2024Q2": 2.798,
+"2024Q3": 2.303,
+"2024Q4": 3.97,
+"2025Q1": 5.862,
+"2025Q2": 9.08,
+"2025Q3": 8.502,
+"2025Q4": 12.033,
+"2026Q1": 18.635,
+"2026Q2": 16.493,
+"2026Q3": 28.499
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Oracle 10-Q (period to 2023-02-28), SEC XBRL, 2024-03-12, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024029904/0000950170-24-029904-index.htm"
+},
+"2023Q2": {
+"text": "(source: Oracle 10-K (period to 2023-05-31), SEC XBRL, 2025-06-18, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/0000950170-25-087926-index.htm"
+},
+"2023Q3": {
+"text": "(source: Oracle 10-Q (period to 2023-08-31), SEC XBRL, 2024-09-10, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024104905/0000950170-24-104905-index.htm"
+},
+"2023Q4": {
+"text": "(source: Oracle 10-Q (period to 2023-11-30), SEC XBRL, 2024-12-10, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024134973/0000950170-24-134973-index.htm"
+},
+"2024Q1": {
+"text": "(source: Oracle 10-Q (period to 2024-02-29), SEC XBRL, 2025-03-11, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025037143/0000950170-25-037143-index.htm"
+},
+"2024Q2": {
+"text": "(source: Oracle 10-K (period to 2024-05-31), SEC XBRL, 2026-06-22, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2024Q3": {
+"text": "(source: Oracle 10-Q (period to 2024-08-31), SEC XBRL, 2025-09-10, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525200095/0001193125-25-200095-index.htm"
+},
+"2024Q4": {
+"text": "(source: Oracle 10-Q (period to 2024-11-30), SEC XBRL, 2025-12-11, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525315925/0001193125-25-315925-index.htm"
+},
+"2025Q1": {
+"text": "(source: Oracle 10-Q (period to 2025-02-28), SEC XBRL, 2026-03-11, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/0001193125-26-101045-index.htm"
+},
+"2025Q2": {
+"text": "(source: Oracle 10-K (period to 2025-05-31), SEC XBRL, 2026-06-22, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2025Q3": {
+"text": "(source: Oracle 10-Q (period to 2025-08-31), SEC XBRL, 2026-09-11, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/0001193125-26-389274-index.htm"
+},
+"2025Q4": {
+"text": "(source: Oracle 10-Q (period to 2025-11-30), SEC XBRL, 2025-12-11, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525315925/0001193125-25-315925-index.htm"
+},
+"2026Q1": {
+"text": "(source: Oracle 10-Q (period to 2026-02-28), SEC XBRL, 2026-03-11, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/0001193125-26-101045-index.htm"
+},
+"2026Q2": {
+"text": "(source: Oracle 10-K (period to 2026-05-31), SEC XBRL, 2026-06-22, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2026Q3": {
+"text": "(source: Oracle 10-Q (period to 2026-08-31), SEC XBRL, 2026-09-11, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/0001193125-26-389274-index.htm"
+}
+}
+},
+{
+"key": "capex_exmeta",
+"label": "Capex ex Meta (MSFT+GOOGL+AMZN+ORCL)",
+"fmt": "bn",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": 29.731,
+"2023Q2": 29.199,
+"2023Q3": 31.765,
+"2023Q4": 36.422,
+"2024Q1": 39.562999999999995,
+"2024Q2": 47.477000000000004,
+"2024Q3": 52.907,
+"2024Q4": 61.884,
+"2025Q1": 64.823,
+"2025Q2": 80.788,
+"2025Q3": 86.94399999999999,
+"2025Q4": 109.282,
+"2026Q1": 129.388,
+"2026Q2": 151.427,
+"2026Q3": 196.48
+},
+"sources": {}
+},
+{
+"key": "capex_all",
+"label": "Capex, all five",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": 36.554,
+"2023Q2": 35.333,
+"2023Q3": 38.261,
+"2023Q4": 44.013999999999996,
+"2024Q1": 45.962999999999994,
+"2024Q2": 55.650000000000006,
+"2024Q3": 61.16499999999999,
+"2024Q4": 76.309,
+"2025Q1": 77.764,
+"2025Q2": 97.326,
+"2025Q3": 105.773,
+"2025Q4": 130.665,
+"2026Q1": 148.385,
+"2026Q2": 181.543,
+"2026Q3": 230.422
+},
+"sources": {}
+},
+{
+"section": "Finance-lease additions (ROU assets obtained for finance-lease liabilities), $bn per quarter"
+},
+{
+"key": "fin_lease_MSFT",
+"label": "Microsoft",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 1.044,
+"2023Q2": 0.875,
+"2023Q3": 1.704,
+"2023Q4": 1.796,
+"2024Q1": 3.421,
+"2024Q2": 4.712,
+"2024Q3": 4.332,
+"2024Q4": 6.435,
+"2025Q1": 3.241,
+"2025Q2": 6.503,
+"2025Q3": 9.147,
+"2025Q4": 6.33,
+"2026Q1": 4.009,
+"2026Q2": 5.122,
+"2026Q3": 5.192
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Microsoft 10-Q (period to 2023-03-31), SEC XBRL, 2024-04-25, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024048288/0000950170-24-048288-index.htm"
+},
+"2023Q2": {
+"text": "(source: Microsoft 10-K (period to 2023-06-30), SEC XBRL, 2025-07-30, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm"
+},
+"2023Q3": {
+"text": "(source: Microsoft 10-Q (period to 2023-09-30), SEC XBRL, 2024-10-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024118967/0000950170-24-118967-index.htm"
+},
+"2023Q4": {
+"text": "(source: Microsoft 10-Q (period to 2023-12-31), SEC XBRL, 2025-01-29, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025010491/0000950170-25-010491-index.htm"
+},
+"2024Q1": {
+"text": "(source: Microsoft 10-Q (period to 2024-03-31), SEC XBRL, 2025-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/0000950170-25-061046-index.htm"
+},
+"2024Q2": {
+"text": "(source: Microsoft 10-K (period to 2024-06-30), SEC XBRL, 2026-07-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2024Q3": {
+"text": "(source: Microsoft 10-Q (period to 2024-09-30), SEC XBRL, 2025-10-29, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256321/0001193125-25-256321-index.htm"
+},
+"2024Q4": {
+"text": "(source: Microsoft 10-Q (period to 2024-12-31), SEC XBRL, 2026-01-28, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/0001193125-26-027207-index.htm"
+},
+"2025Q1": {
+"text": "(source: Microsoft 10-Q (period to 2025-03-31), SEC XBRL, 2026-04-29, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/0001193125-26-191507-index.htm"
+},
+"2025Q2": {
+"text": "(source: Microsoft 10-K (period to 2025-06-30), SEC XBRL, 2026-07-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2025Q3": {
+"text": "(source: Microsoft 10-Q (period to 2025-09-30), SEC XBRL, 2026-10-28, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/0001193125-26-436133-index.htm"
+},
+"2025Q4": {
+"text": "(source: Microsoft 10-Q (period to 2025-12-31), SEC XBRL, 2026-01-28, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/0001193125-26-027207-index.htm"
+},
+"2026Q1": {
+"text": "(source: Microsoft 10-Q (period to 2026-03-31), SEC XBRL, 2026-04-29, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/0001193125-26-191507-index.htm"
+},
+"2026Q2": {
+"text": "(source: Microsoft 10-K (period to 2026-06-30), SEC XBRL, 2026-07-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2026Q3": {
+"text": "(source: Microsoft 10-Q (period to 2026-09-30), SEC XBRL, 2026-10-28, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/0001193125-26-436133-index.htm"
+}
+}
+},
+{
+"key": "fin_lease_GOOGL",
+"label": "Alphabet",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": 0.019,
+"2024Q2": 0.146,
+"2024Q3": 0.078,
+"2024Q4": 0.07,
+"2025Q1": 0.523,
+"2025Q2": 0.083,
+"2025Q3": 0.383,
+"2025Q4": 0.617,
+"2026Q1": 0.211,
+"2026Q2": 0.691,
+"2026Q3": 2.085
+},
+"sources": {
+"2024Q1": {
+"text": "(source: Alphabet 10-Q (period to 2024-03-31), SEC XBRL, 2025-04-25, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000043/0001652044-25-000043-index.htm"
+},
+"2024Q2": {
+"text": "(source: Alphabet 10-Q (period to 2024-06-30), SEC XBRL, 2025-07-24, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000062/0001652044-25-000062-index.htm"
+},
+"2024Q3": {
+"text": "(source: Alphabet 10-Q (period to 2024-09-30), SEC XBRL, 2025-10-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/0001652044-25-000091-index.htm"
+},
+"2024Q4": {
+"text": "(source: Alphabet 10-K (period to 2024-12-31), SEC XBRL, 2026-02-05, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2025Q1": {
+"text": "(source: Alphabet 10-Q (period to 2025-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/0001652044-26-000048-index.htm"
+},
+"2025Q2": {
+"text": "(source: Alphabet 10-Q (period to 2025-06-30), SEC XBRL, 2026-07-23, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.htm"
+},
+"2025Q3": {
+"text": "(source: Alphabet 10-Q (period to 2025-09-30), SEC XBRL, 2026-10-29, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/0001652044-26-000084-index.htm"
+},
+"2025Q4": {
+"text": "(source: Alphabet 10-K (period to 2025-12-31), SEC XBRL, 2026-02-05, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2026Q1": {
+"text": "(source: Alphabet 10-Q (period to 2026-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/0001652044-26-000048-index.htm"
+},
+"2026Q2": {
+"text": "(source: Alphabet 10-Q (period to 2026-06-30), SEC XBRL, 2026-07-23, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.htm"
+},
+"2026Q3": {
+"text": "(source: Alphabet 10-Q (period to 2026-09-30), SEC XBRL, 2026-10-29, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/0001652044-26-000084-index.htm"
+}
+}
+},
+{
+"key": "fin_lease_AMZN",
+"label": "Amazon",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 0.008,
+"2023Q2": 0.24,
+"2023Q3": 0.183,
+"2023Q4": 0.211,
+"2024Q1": 0.042,
+"2024Q2": 0.181,
+"2024Q3": 0.186,
+"2024Q4": 0.445,
+"2025Q1": 0.054,
+"2025Q2": 0.937,
+"2025Q3": 0.977,
+"2025Q4": 0.943,
+"2026Q1": 1.565,
+"2026Q2": 0.563,
+"2026Q3": 1.472
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Amazon 10-Q (period to 2023-03-31), SEC XBRL, 2024-05-01, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000083/0001018724-24-000083-index.htm"
+},
+"2023Q2": {
+"text": "(source: Amazon 10-Q (period to 2023-06-30), SEC XBRL, 2024-08-02, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000130/0001018724-24-000130-index.htm"
+},
+"2023Q3": {
+"text": "(source: Amazon 10-Q (period to 2023-09-30), SEC XBRL, 2024-11-01, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000161/0001018724-24-000161-index.htm"
+},
+"2023Q4": {
+"text": "(source: Amazon 10-K (period to 2023-12-31), SEC XBRL, 2026-02-06, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2024Q1": {
+"text": "(source: Amazon 10-Q (period to 2024-03-31), SEC XBRL, 2025-05-02, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000036/0001018724-25-000036-index.htm"
+},
+"2024Q2": {
+"text": "(source: Amazon 10-Q (period to 2024-06-30), SEC XBRL, 2025-08-01, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000086/0001018724-25-000086-index.htm"
+},
+"2024Q3": {
+"text": "(source: Amazon 10-Q (period to 2024-09-30), SEC XBRL, 2025-10-31, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000123/0001018724-25-000123-index.htm"
+},
+"2024Q4": {
+"text": "(source: Amazon 10-K (period to 2024-12-31), SEC XBRL, 2026-02-06, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2025Q1": {
+"text": "(source: Amazon 10-Q (period to 2025-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/0001018724-26-000014-index.htm"
+},
+"2025Q2": {
+"text": "(source: Amazon 10-Q (period to 2025-06-30), SEC XBRL, 2026-07-31, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.htm"
+},
+"2025Q3": {
+"text": "(source: Amazon 10-Q (period to 2025-09-30), SEC XBRL, 2026-10-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/0001018724-26-000040-index.htm"
+},
+"2025Q4": {
+"text": "(source: Amazon 10-K (period to 2025-12-31), SEC XBRL, 2026-02-06, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2026Q1": {
+"text": "(source: Amazon 10-Q (period to 2026-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/0001018724-26-000014-index.htm"
+},
+"2026Q2": {
+"text": "(source: Amazon 10-Q (period to 2026-06-30), SEC XBRL, 2026-07-31, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.htm"
+},
+"2026Q3": {
+"text": "(source: Amazon 10-Q (period to 2026-09-30), SEC XBRL, 2026-10-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/0001018724-26-000040-index.htm"
+}
+}
+},
+{
+"key": "fin_lease_exmeta",
+"label": "Finance leases ex Meta (GOOGL from 2024, ORCL fiscal Q1 only)",
+"fmt": "bn",
+"kind": "sumopt",
+"bold": false,
+"values": {
+"2023Q1": 1.052,
+"2023Q2": 1.115,
+"2023Q3": 1.887,
+"2023Q4": 2.007,
+"2024Q1": 3.4819999999999998,
+"2024Q2": 5.039,
+"2024Q3": 4.596,
+"2024Q4": 6.95,
+"2025Q1": 3.818,
+"2025Q2": 7.523000000000001,
+"2025Q3": 10.507000000000001,
+"2025Q4": 7.89,
+"2026Q1": 5.785,
+"2026Q2": 6.3759999999999994,
+"2026Q3": 8.749
+},
+"sources": {}
+},
+{
+"key": "fin_lease_ORCL",
+"label": "Oracle (fiscal Q1 only)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": 1.122,
+"2025Q4": null,
+"2026Q1": null,
+"2026Q2": null,
+"2026Q3": 1.539
+},
+"sources": {
+"2025Q3": {
+"text": "(source: Oracle 10-Q (period to 2025-08-31), SEC XBRL, 2026-09-11, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/0001193125-26-389274-index.htm"
+},
+"2026Q3": {
+"text": "(source: Oracle 10-Q (period to 2026-08-31), SEC XBRL, 2026-09-11, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/0001193125-26-389274-index.htm"
+}
+}
+},
+{
+"key": "capexl_exmeta",
+"label": "Capex incl. finance leases, ex Meta",
+"fmt": "bn",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": 30.783,
+"2023Q2": 30.314,
+"2023Q3": 33.652,
+"2023Q4": 38.428999999999995,
+"2024Q1": 43.044999999999995,
+"2024Q2": 52.516000000000005,
+"2024Q3": 57.503,
+"2024Q4": 68.834,
+"2025Q1": 68.64099999999999,
+"2025Q2": 88.31099999999999,
+"2025Q3": 97.451,
+"2025Q4": 117.172,
+"2026Q1": 135.173,
+"2026Q2": 157.803,
+"2026Q3": 205.22899999999998
+},
+"sources": {}
+},
+{
+"key": "capexl_exmeta_ttm",
+"label": "Capex incl. leases ex Meta, trailing 4 quarters",
+"fmt": "bn",
+"kind": "ttm",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": 133.178,
+"2024Q1": 145.44,
+"2024Q2": 167.642,
+"2024Q3": 191.493,
+"2024Q4": 221.898,
+"2025Q1": 247.49400000000003,
+"2025Q2": 283.289,
+"2025Q3": 323.23699999999997,
+"2025Q4": 371.57499999999993,
+"2026Q1": 438.10699999999997,
+"2026Q2": 507.59900000000005,
+"2026Q3": 615.377
+},
+"sources": {}
+},
+{
+"section": "D&A - depreciation of PP&E, $bn per quarter; server share estimated from 10-K PP&E notes"
+},
+{
+"key": "dep_MSFT",
+"label": "Microsoft depreciation",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": 4.7,
+"2024Q4": 5.2,
+"2025Q1": 5.8,
+"2025Q2": 6.3,
+"2025Q3": 7.1,
+"2025Q4": 7.9,
+"2026Q1": 9.0,
+"2026Q2": 10.3,
+"2026Q3": 11.1
+},
+"sources": {
+"2024Q3": {
+"text": "(source: Microsoft 10-Q (period to 2024-09-30), SEC XBRL, 2025-10-29, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256321/0001193125-25-256321-index.htm"
+},
+"2024Q4": {
+"text": "(source: Microsoft 10-Q (period to 2024-12-31), SEC XBRL, 2026-01-28, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/0001193125-26-027207-index.htm"
+},
+"2025Q1": {
+"text": "(source: Microsoft 10-Q (period to 2025-03-31), SEC XBRL, 2026-04-29, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/0001193125-26-191507-index.htm"
+},
+"2025Q2": {
+"text": "(source: Microsoft 10-K (period to 2025-06-30), SEC XBRL, 2026-07-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2025Q3": {
+"text": "(source: Microsoft 10-Q (period to 2025-09-30), SEC XBRL, 2026-10-28, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/0001193125-26-436133-index.htm"
+},
+"2025Q4": {
+"text": "(source: Microsoft 10-Q (period to 2025-12-31), SEC XBRL, 2026-01-28, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/0001193125-26-027207-index.htm"
+},
+"2026Q1": {
+"text": "(source: Microsoft 10-Q (period to 2026-03-31), SEC XBRL, 2026-04-29, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/0001193125-26-191507-index.htm"
+},
+"2026Q2": {
+"text": "(source: Microsoft 10-K (period to 2026-06-30), SEC XBRL, 2026-07-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2026Q3": {
+"text": "(source: Microsoft 10-Q (period to 2026-09-30), SEC XBRL, 2026-10-28, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/0001193125-26-436133-index.htm"
+}
+}
+},
+{
+"key": "dep_GOOGL",
+"label": "Alphabet depreciation",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 2.635,
+"2023Q2": 2.824,
+"2023Q3": 3.171,
+"2023Q4": 3.316,
+"2024Q1": 3.413,
+"2024Q2": 3.708,
+"2024Q3": 3.985,
+"2024Q4": 4.205,
+"2025Q1": 4.487,
+"2025Q2": 4.998,
+"2025Q3": 5.611,
+"2025Q4": 6.04,
+"2026Q1": 6.482,
+"2026Q2": 7.104,
+"2026Q3": 8.369
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Alphabet 10-Q (period to 2023-03-31), SEC XBRL, 2024-04-26, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000053/0001652044-24-000053-index.htm"
+},
+"2023Q2": {
+"text": "(source: Alphabet 10-Q (period to 2023-06-30), SEC XBRL, 2024-07-24, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000079/0001652044-24-000079-index.htm"
+},
+"2023Q3": {
+"text": "(source: Alphabet 10-Q (period to 2023-09-30), SEC XBRL, 2024-10-30, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000118/0001652044-24-000118-index.htm"
+},
+"2023Q4": {
+"text": "(source: Alphabet 10-K (period to 2023-12-31), SEC XBRL, 2026-02-05, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2024Q1": {
+"text": "(source: Alphabet 10-Q (period to 2024-03-31), SEC XBRL, 2025-04-25, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000043/0001652044-25-000043-index.htm"
+},
+"2024Q2": {
+"text": "(source: Alphabet 10-Q (period to 2024-06-30), SEC XBRL, 2025-07-24, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000062/0001652044-25-000062-index.htm"
+},
+"2024Q3": {
+"text": "(source: Alphabet 10-Q (period to 2024-09-30), SEC XBRL, 2025-10-30, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/0001652044-25-000091-index.htm"
+},
+"2024Q4": {
+"text": "(source: Alphabet 10-K (period to 2024-12-31), SEC XBRL, 2026-02-05, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2025Q1": {
+"text": "(source: Alphabet 10-Q (period to 2025-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/0001652044-26-000048-index.htm"
+},
+"2025Q2": {
+"text": "(source: Alphabet 10-Q (period to 2025-06-30), SEC XBRL, 2026-07-23, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.htm"
+},
+"2025Q3": {
+"text": "(source: Alphabet 10-Q (period to 2025-09-30), SEC XBRL, 2026-10-29, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/0001652044-26-000084-index.htm"
+},
+"2025Q4": {
+"text": "(source: Alphabet 10-K (period to 2025-12-31), SEC XBRL, 2026-02-05, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2026Q1": {
+"text": "(source: Alphabet 10-Q (period to 2026-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/0001652044-26-000048-index.htm"
+},
+"2026Q2": {
+"text": "(source: Alphabet 10-Q (period to 2026-06-30), SEC XBRL, 2026-07-23, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.htm"
+},
+"2026Q3": {
+"text": "(source: Alphabet 10-Q (period to 2026-09-30), SEC XBRL, 2026-10-29, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/0001652044-26-000084-index.htm"
+}
+}
+},
+{
+"key": "dep_AMZN",
+"label": "Amazon depreciation",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": 7.266,
+"2024Q2": 7.644,
+"2024Q3": 8.316,
+"2024Q4": 8.841,
+"2025Q1": 9.056,
+"2025Q2": 9.766,
+"2025Q3": 10.925,
+"2025Q4": 12.113,
+"2026Q1": 12.834,
+"2026Q2": 13.869,
+"2026Q3": 15.142
+},
+"sources": {
+"2024Q1": {
+"text": "(source: Amazon 10-Q (period to 2024-03-31), SEC XBRL, 2025-05-02, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000036/0001018724-25-000036-index.htm"
+},
+"2024Q2": {
+"text": "(source: Amazon 10-Q (period to 2024-06-30), SEC XBRL, 2025-08-01, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000086/0001018724-25-000086-index.htm"
+},
+"2024Q3": {
+"text": "(source: Amazon 10-Q (period to 2024-09-30), SEC XBRL, 2025-10-31, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000123/0001018724-25-000123-index.htm"
+},
+"2024Q4": {
+"text": "(source: Amazon 10-K (period to 2024-12-31), SEC XBRL, 2026-02-06, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2025Q1": {
+"text": "(source: Amazon 10-Q (period to 2025-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/0001018724-26-000014-index.htm"
+},
+"2025Q2": {
+"text": "(source: Amazon 10-Q (period to 2025-06-30), SEC XBRL, 2026-07-31, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.htm"
+},
+"2025Q3": {
+"text": "(source: Amazon 10-Q (period to 2025-09-30), SEC XBRL, 2026-10-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/0001018724-26-000040-index.htm"
+},
+"2025Q4": {
+"text": "(source: Amazon 10-K (period to 2025-12-31), SEC XBRL, 2026-02-06, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2026Q1": {
+"text": "(source: Amazon 10-Q (period to 2026-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/0001018724-26-000014-index.htm"
+},
+"2026Q2": {
+"text": "(source: Amazon 10-Q (period to 2026-06-30), SEC XBRL, 2026-07-31, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.htm"
+},
+"2026Q3": {
+"text": "(source: Amazon 10-Q (period to 2026-09-30), SEC XBRL, 2026-10-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/0001018724-26-000040-index.htm"
+}
+}
+},
+{
+"key": "dep_META",
+"label": "Meta depreciation",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 2.48,
+"2023Q2": 2.58,
+"2023Q3": 2.83,
+"2023Q4": 3.14,
+"2024Q1": 3.33,
+"2024Q2": 3.58,
+"2024Q3": 3.96,
+"2024Q4": 4.41,
+"2025Q1": 3.84,
+"2025Q2": 4.28,
+"2025Q3": 4.76,
+"2025Q4": 5.12,
+"2026Q1": 5.68,
+"2026Q2": 6.0,
+"2026Q3": 6.81
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Meta 10-Q (period to 2023-03-31), SEC XBRL, 2024-04-25, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000049/0001326801-24-000049-index.htm"
+},
+"2023Q2": {
+"text": "(source: Meta 10-Q (period to 2023-06-30), SEC XBRL, 2024-08-01, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000069/0001326801-24-000069-index.htm"
+},
+"2023Q3": {
+"text": "(source: Meta 10-Q (period to 2023-09-30), SEC XBRL, 2024-10-31, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000081/0001326801-24-000081-index.htm"
+},
+"2023Q4": {
+"text": "(source: Meta 10-K (period to 2023-12-31), SEC XBRL, 2026-01-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2024Q1": {
+"text": "(source: Meta 10-Q (period to 2024-03-31), SEC XBRL, 2025-05-01, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000054/0001326801-25-000054-index.htm"
+},
+"2024Q2": {
+"text": "(source: Meta 10-Q (period to 2024-06-30), SEC XBRL, 2025-07-31, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036791/0001628280-25-036791-index.htm"
+},
+"2024Q3": {
+"text": "(source: Meta 10-Q (period to 2024-09-30), SEC XBRL, 2025-10-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/0001628280-25-047240-index.htm"
+},
+"2024Q4": {
+"text": "(source: Meta 10-K (period to 2024-12-31), SEC XBRL, 2026-01-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2025Q1": {
+"text": "(source: Meta 10-Q (period to 2025-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/0001628280-26-028526-index.htm"
+},
+"2025Q2": {
+"text": "(source: Meta 10-Q (period to 2025-06-30), SEC XBRL, 2026-07-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/0001628280-26-050705-index.htm"
+},
+"2025Q3": {
+"text": "(source: Meta 10-Q (period to 2025-09-30), SEC XBRL, 2026-10-22, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/0001628280-26-066773-index.htm"
+},
+"2025Q4": {
+"text": "(source: Meta 10-K (period to 2025-12-31), SEC XBRL, 2026-01-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2026Q1": {
+"text": "(source: Meta 10-Q (period to 2026-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/0001628280-26-028526-index.htm"
+},
+"2026Q2": {
+"text": "(source: Meta 10-Q (period to 2026-06-30), SEC XBRL, 2026-07-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/0001628280-26-050705-index.htm"
+},
+"2026Q3": {
+"text": "(source: Meta 10-Q (period to 2026-09-30), SEC XBRL, 2026-10-22, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/0001628280-26-066773-index.htm"
+}
+}
+},
+{
+"key": "dep_ORCL",
+"label": "Oracle depreciation",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 0.672,
+"2023Q2": 0.716,
+"2023Q3": 0.712,
+"2023Q4": 0.798,
+"2024Q1": 0.808,
+"2024Q2": 0.811,
+"2024Q3": 0.804,
+"2024Q4": 0.908,
+"2025Q1": 1.003,
+"2025Q2": 1.152,
+"2025Q3": 1.351,
+"2025Q4": 1.704,
+"2026Q1": 2.153,
+"2026Q2": 2.415,
+"2026Q3": 3.156
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Oracle 10-Q (period to 2023-02-28), SEC XBRL, 2024-03-12, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024029904/0000950170-24-029904-index.htm"
+},
+"2023Q2": {
+"text": "(source: Oracle 10-K (period to 2023-05-31), SEC XBRL, 2025-06-18, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/0000950170-25-087926-index.htm"
+},
+"2023Q3": {
+"text": "(source: Oracle 10-Q (period to 2023-08-31), SEC XBRL, 2024-09-10, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024104905/0000950170-24-104905-index.htm"
+},
+"2023Q4": {
+"text": "(source: Oracle 10-Q (period to 2023-11-30), SEC XBRL, 2024-12-10, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024134973/0000950170-24-134973-index.htm"
+},
+"2024Q1": {
+"text": "(source: Oracle 10-Q (period to 2024-02-29), SEC XBRL, 2025-03-11, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025037143/0000950170-25-037143-index.htm"
+},
+"2024Q2": {
+"text": "(source: Oracle 10-K (period to 2024-05-31), SEC XBRL, 2026-06-22, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2024Q3": {
+"text": "(source: Oracle 10-Q (period to 2024-08-31), SEC XBRL, 2025-09-10, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525200095/0001193125-25-200095-index.htm"
+},
+"2024Q4": {
+"text": "(source: Oracle 10-Q (period to 2024-11-30), SEC XBRL, 2025-12-11, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525315925/0001193125-25-315925-index.htm"
+},
+"2025Q1": {
+"text": "(source: Oracle 10-Q (period to 2025-02-28), SEC XBRL, 2026-03-11, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/0001193125-26-101045-index.htm"
+},
+"2025Q2": {
+"text": "(source: Oracle 10-K (period to 2025-05-31), SEC XBRL, 2026-06-22, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2025Q3": {
+"text": "(source: Oracle 10-Q (period to 2025-08-31), SEC XBRL, 2026-09-11, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/0001193125-26-389274-index.htm"
+},
+"2025Q4": {
+"text": "(source: Oracle 10-Q (period to 2025-11-30), SEC XBRL, 2025-12-11, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525315925/0001193125-25-315925-index.htm"
+},
+"2026Q1": {
+"text": "(source: Oracle 10-Q (period to 2026-02-28), SEC XBRL, 2026-03-11, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/0001193125-26-101045-index.htm"
+},
+"2026Q2": {
+"text": "(source: Oracle 10-K (period to 2026-05-31), SEC XBRL, 2026-06-22, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2026Q3": {
+"text": "(source: Oracle 10-Q (period to 2026-08-31), SEC XBRL, 2026-09-11, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/0001193125-26-389274-index.htm"
+}
+}
+},
+{
+"key": "dep_all",
+"label": "Depreciation, all five",
+"fmt": "bn",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": 21.765,
+"2024Q4": 23.564000000000004,
+"2025Q1": 24.185999999999996,
+"2025Q2": 26.496000000000002,
+"2025Q3": 29.747,
+"2025Q4": 32.877,
+"2026Q1": 36.148999999999994,
+"2026Q2": 39.687999999999995,
+"2026Q3": 44.577000000000005
+},
+"sources": {}
+},
+{
+"key": "srvshare_MSFT",
+"label": "Microsoft server & network share of depreciation (latest FY)",
+"fmt": "pct",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 0.991,
+"2023Q2": 0.9172,
+"2023Q3": 0.9172,
+"2023Q4": 0.9172,
+"2024Q1": 0.9172,
+"2024Q2": 0.826,
+"2024Q3": 0.826,
+"2024Q4": 0.826,
+"2025Q1": 0.826,
+"2025Q2": 0.7664,
+"2025Q3": 0.7664,
+"2025Q4": 0.7664,
+"2026Q1": 0.7664,
+"2026Q2": 0.7564,
+"2026Q3": 0.7564
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Microsoft 10-K FY to 2022-06-30, PP&E note; servers dep. avg servers gross 51,250/60,631 $M / (4y life x 1.12), 2024-12-03, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024132722/0000950170-24-132722-index.htm"
+},
+"2023Q2": {
+"text": "(source: Microsoft 10-K FY to 2023-06-30, PP&E note; servers dep. avg servers gross 60,631/74,961 $M / (6y life x 1.12), 2025-07-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm"
+},
+"2023Q3": {
+"text": "(source: Microsoft 10-K FY to 2023-06-30, PP&E note; servers dep. avg servers gross 60,631/74,961 $M / (6y life x 1.12), 2025-07-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm"
+},
+"2023Q4": {
+"text": "(source: Microsoft 10-K FY to 2023-06-30, PP&E note; servers dep. avg servers gross 60,631/74,961 $M / (6y life x 1.12), 2025-07-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm"
+},
+"2024Q1": {
+"text": "(source: Microsoft 10-K FY to 2023-06-30, PP&E note; servers dep. avg servers gross 60,631/74,961 $M / (6y life x 1.12), 2025-07-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm"
+},
+"2024Q2": {
+"text": "(source: Microsoft 10-K FY to 2024-06-30, PP&E note; servers dep. avg servers gross 74,961/93,780 $M / (6y life x 1.12), 2026-07-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2024Q3": {
+"text": "(source: Microsoft 10-K FY to 2024-06-30, PP&E note; servers dep. avg servers gross 74,961/93,780 $M / (6y life x 1.12), 2026-07-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2024Q4": {
+"text": "(source: Microsoft 10-K FY to 2024-06-30, PP&E note; servers dep. avg servers gross 74,961/93,780 $M / (6y life x 1.12), 2026-07-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2025Q1": {
+"text": "(source: Microsoft 10-K FY to 2024-06-30, PP&E note; servers dep. avg servers gross 74,961/93,780 $M / (6y life x 1.12), 2026-07-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2025Q2": {
+"text": "(source: Microsoft 10-K FY to 2025-06-30, PP&E note; servers dep. avg servers gross 93,780/132,836 $M / (6y life x 1.12), 2026-07-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2025Q3": {
+"text": "(source: Microsoft 10-K FY to 2025-06-30, PP&E note; servers dep. avg servers gross 93,780/132,836 $M / (6y life x 1.12), 2026-07-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2025Q4": {
+"text": "(source: Microsoft 10-K FY to 2025-06-30, PP&E note; servers dep. avg servers gross 93,780/132,836 $M / (6y life x 1.12), 2026-07-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2026Q1": {
+"text": "(source: Microsoft 10-K FY to 2025-06-30, PP&E note; servers dep. avg servers gross 93,780/132,836 $M / (6y life x 1.12), 2026-07-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2026Q2": {
+"text": "(source: Microsoft 10-K FY to 2026-06-30, PP&E note; servers dep. avg servers gross 132,836/215,874 $M / (6y life x 1.12), 2026-07-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2026Q3": {
+"text": "(source: Microsoft 10-K FY to 2026-06-30, PP&E note; servers dep. avg servers gross 132,836/215,874 $M / (6y life x 1.12), 2026-07-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+}
+}
+},
+{
+"key": "srvshare_GOOGL",
+"label": "Alphabet server & network share of depreciation (latest FY)",
+"fmt": "pct",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 1.0,
+"2023Q2": 1.0,
+"2023Q3": 1.0,
+"2023Q4": 0.9147,
+"2024Q1": 0.9147,
+"2024Q2": 0.9147,
+"2024Q3": 0.9147,
+"2024Q4": 0.8053,
+"2025Q1": 0.8053,
+"2025Q2": 0.8053,
+"2025Q3": 0.8053,
+"2025Q4": 0.7298,
+"2026Q1": 0.7298,
+"2026Q2": 0.7298,
+"2026Q3": 0.7298
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Alphabet 10-K FY to 2022-12-31, PP&E note; servers dep. avg servers gross 55,606/66,267 $M / (4y life x 1.12), 2025-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/0001652044-25-000014-index.htm"
+},
+"2023Q2": {
+"text": "(source: Alphabet 10-K FY to 2022-12-31, PP&E note; servers dep. avg servers gross 55,606/66,267 $M / (4y life x 1.12), 2025-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/0001652044-25-000014-index.htm"
+},
+"2023Q3": {
+"text": "(source: Alphabet 10-K FY to 2022-12-31, PP&E note; servers dep. avg servers gross 55,606/66,267 $M / (4y life x 1.12), 2025-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/0001652044-25-000014-index.htm"
+},
+"2023Q4": {
+"text": "(source: Alphabet 10-K FY to 2023-12-31, PP&E note; servers dep. avg servers gross 66,267/80,594 $M / (6y life x 1.12), 2026-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2024Q1": {
+"text": "(source: Alphabet 10-K FY to 2023-12-31, PP&E note; servers dep. avg servers gross 66,267/80,594 $M / (6y life x 1.12), 2026-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2024Q2": {
+"text": "(source: Alphabet 10-K FY to 2023-12-31, PP&E note; servers dep. avg servers gross 66,267/80,594 $M / (6y life x 1.12), 2026-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2024Q3": {
+"text": "(source: Alphabet 10-K FY to 2023-12-31, PP&E note; servers dep. avg servers gross 66,267/80,594 $M / (6y life x 1.12), 2026-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2024Q4": {
+"text": "(source: Alphabet 10-K FY to 2024-12-31, PP&E note; servers dep. avg servers gross 80,594/85,111 $M / (6y life x 1.12), 2026-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2025Q1": {
+"text": "(source: Alphabet 10-K FY to 2024-12-31, PP&E note; servers dep. avg servers gross 80,594/85,111 $M / (6y life x 1.12), 2026-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2025Q2": {
+"text": "(source: Alphabet 10-K FY to 2024-12-31, PP&E note; servers dep. avg servers gross 80,594/85,111 $M / (6y life x 1.12), 2026-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2025Q3": {
+"text": "(source: Alphabet 10-K FY to 2024-12-31, PP&E note; servers dep. avg servers gross 80,594/85,111 $M / (6y life x 1.12), 2026-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2025Q4": {
+"text": "(source: Alphabet 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 85,111/122,207 $M / (6y life x 1.12), 2026-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2026Q1": {
+"text": "(source: Alphabet 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 85,111/122,207 $M / (6y life x 1.12), 2026-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2026Q2": {
+"text": "(source: Alphabet 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 85,111/122,207 $M / (6y life x 1.12), 2026-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2026Q3": {
+"text": "(source: Alphabet 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 85,111/122,207 $M / (6y life x 1.12), 2026-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+}
+}
+},
+{
+"key": "srvshare_AMZN",
+"label": "Amazon server & network share of depreciation (latest FY)",
+"fmt": "pct",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 0.5539,
+"2023Q2": 0.5539,
+"2023Q3": 0.5539,
+"2023Q4": 0.5539,
+"2024Q1": 0.5539,
+"2024Q2": 0.5539,
+"2024Q3": 0.5539,
+"2024Q4": 0.5539,
+"2025Q1": 0.5539,
+"2025Q2": 0.5539,
+"2025Q3": 0.5539,
+"2025Q4": 0.5539,
+"2026Q1": 0.5539,
+"2026Q2": 0.5539,
+"2026Q3": 0.5539
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2023Q2": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2023Q3": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2023Q4": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2024Q1": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2024Q2": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2024Q3": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2024Q4": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2025Q1": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2025Q2": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2025Q3": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2025Q4": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2026Q1": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2026Q2": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2026Q3": {
+"text": "(source: Amazon 10-K FY to 2025-12-31, PP&E note; servers dep. avg servers gross 113,156/172,492 $M / (5.5y life x 1.12), 2026-02-06, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+}
+}
+},
+{
+"key": "srvshare_META",
+"label": "Meta server & network share of depreciation (latest FY)",
+"fmt": "pct",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 0.6224,
+"2023Q2": 0.6224,
+"2023Q3": 0.6224,
+"2023Q4": 0.6642,
+"2024Q1": 0.6642,
+"2024Q2": 0.6642,
+"2024Q3": 0.6642,
+"2024Q4": 0.7417,
+"2025Q1": 0.7417,
+"2025Q2": 0.7417,
+"2025Q3": 0.7417,
+"2025Q4": 0.7422,
+"2026Q1": 0.7422,
+"2026Q2": 0.7422,
+"2026Q3": 0.7422
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Meta 10-K FY to 2022-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2025-01-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/0001326801-25-000017-index.htm"
+},
+"2023Q2": {
+"text": "(source: Meta 10-K FY to 2022-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2025-01-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/0001326801-25-000017-index.htm"
+},
+"2023Q3": {
+"text": "(source: Meta 10-K FY to 2022-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2025-01-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/0001326801-25-000017-index.htm"
+},
+"2023Q4": {
+"text": "(source: Meta 10-K FY to 2023-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2026-01-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2024Q1": {
+"text": "(source: Meta 10-K FY to 2023-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2026-01-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2024Q2": {
+"text": "(source: Meta 10-K FY to 2023-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2026-01-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2024Q3": {
+"text": "(source: Meta 10-K FY to 2023-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2026-01-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2024Q4": {
+"text": "(source: Meta 10-K FY to 2024-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2026-01-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2025Q1": {
+"text": "(source: Meta 10-K FY to 2024-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2026-01-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2025Q2": {
+"text": "(source: Meta 10-K FY to 2024-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2026-01-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2025Q3": {
+"text": "(source: Meta 10-K FY to 2024-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2026-01-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2025Q4": {
+"text": "(source: Meta 10-K FY to 2025-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2026-01-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2026Q1": {
+"text": "(source: Meta 10-K FY to 2025-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2026-01-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2026Q2": {
+"text": "(source: Meta 10-K FY to 2025-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2026-01-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2026Q3": {
+"text": "(source: Meta 10-K FY to 2025-12-31, PP&E note; servers dep. disclosed servers & network depreciation (10-K PP&E note), 2026-01-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+}
+}
+},
+{
+"key": "srvshare_ORCL",
+"label": "Oracle server & network share of depreciation (latest FY)",
+"fmt": "pct",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 1.0,
+"2023Q2": 1.0,
+"2023Q3": 1.0,
+"2023Q4": 1.0,
+"2024Q1": 1.0,
+"2024Q2": 1.0,
+"2024Q3": 1.0,
+"2024Q4": 1.0,
+"2025Q1": 1.0,
+"2025Q2": 0.9877,
+"2025Q3": 0.9877,
+"2025Q4": 0.9877,
+"2026Q1": 0.9877,
+"2026Q2": 0.8782,
+"2026Q3": 0.8782
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Oracle 10-K FY to 2022-05-31, PP&E note; servers dep. avg servers gross 9,508/12,844 $M / (5y life x 1.12), 2024-06-20, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024075605/0000950170-24-075605-index.htm"
+},
+"2023Q2": {
+"text": "(source: Oracle 10-K FY to 2023-05-31, PP&E note; servers dep. avg servers gross 12,844/17,258 $M / (5y life x 1.12), 2025-06-18, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/0000950170-25-087926-index.htm"
+},
+"2023Q3": {
+"text": "(source: Oracle 10-K FY to 2023-05-31, PP&E note; servers dep. avg servers gross 12,844/17,258 $M / (5y life x 1.12), 2025-06-18, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/0000950170-25-087926-index.htm"
+},
+"2023Q4": {
+"text": "(source: Oracle 10-K FY to 2023-05-31, PP&E note; servers dep. avg servers gross 12,844/17,258 $M / (5y life x 1.12), 2025-06-18, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/0000950170-25-087926-index.htm"
+},
+"2024Q1": {
+"text": "(source: Oracle 10-K FY to 2023-05-31, PP&E note; servers dep. avg servers gross 12,844/17,258 $M / (5y life x 1.12), 2025-06-18, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/0000950170-25-087926-index.htm"
+},
+"2024Q2": {
+"text": "(source: Oracle 10-K FY to 2024-05-31, PP&E note; servers dep. avg servers gross 17,258/20,989 $M / (5y life x 1.12), 2026-06-22, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2024Q3": {
+"text": "(source: Oracle 10-K FY to 2024-05-31, PP&E note; servers dep. avg servers gross 17,258/20,989 $M / (5y life x 1.12), 2026-06-22, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2024Q4": {
+"text": "(source: Oracle 10-K FY to 2024-05-31, PP&E note; servers dep. avg servers gross 17,258/20,989 $M / (5y life x 1.12), 2026-06-22, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2025Q1": {
+"text": "(source: Oracle 10-K FY to 2024-05-31, PP&E note; servers dep. avg servers gross 17,258/20,989 $M / (5y life x 1.12), 2026-06-22, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2025Q2": {
+"text": "(source: Oracle 10-K FY to 2025-05-31, PP&E note; servers dep. avg servers gross 20,989/30,345 $M / (6y life x 1.12), 2026-06-22, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2025Q3": {
+"text": "(source: Oracle 10-K FY to 2025-05-31, PP&E note; servers dep. avg servers gross 20,989/30,345 $M / (6y life x 1.12), 2026-06-22, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2025Q4": {
+"text": "(source: Oracle 10-K FY to 2025-05-31, PP&E note; servers dep. avg servers gross 20,989/30,345 $M / (6y life x 1.12), 2026-06-22, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2026Q1": {
+"text": "(source: Oracle 10-K FY to 2025-05-31, PP&E note; servers dep. avg servers gross 20,989/30,345 $M / (6y life x 1.12), 2026-06-22, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2026Q2": {
+"text": "(source: Oracle 10-K FY to 2026-05-31, PP&E note; servers dep. avg servers gross 30,345/59,634 $M / (6y life x 1.12), 2026-06-22, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2026Q3": {
+"text": "(source: Oracle 10-K FY to 2026-05-31, PP&E note; servers dep. avg servers gross 30,345/59,634 $M / (6y life x 1.12), 2026-06-22, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+}
+}
+},
+{
+"key": "srvdep_MSFT",
+"label": "Microsoft server D&A (est.)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": 3.8822,
+"2024Q4": 4.2952,
+"2025Q1": 4.7908,
+"2025Q2": 4.82832,
+"2025Q3": 5.441439999999999,
+"2025Q4": 6.05456,
+"2026Q1": 6.8976,
+"2026Q2": 7.79092,
+"2026Q3": 8.39604
+},
+"sources": {}
+},
+{
+"key": "srvdep_GOOGL",
+"label": "Alphabet server D&A (est.)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": 2.635,
+"2023Q2": 2.824,
+"2023Q3": 3.171,
+"2023Q4": 3.0331452,
+"2024Q1": 3.1218711,
+"2024Q2": 3.3917076,
+"2024Q3": 3.6450794999999996,
+"2024Q4": 3.3862865,
+"2025Q1": 3.6133811000000002,
+"2025Q2": 4.0248894,
+"2025Q3": 4.5185383,
+"2025Q4": 4.407992,
+"2026Q1": 4.7305636,
+"2026Q2": 5.1844992,
+"2026Q3": 6.1076961999999995
+},
+"sources": {}
+},
+{
+"key": "srvdep_AMZN",
+"label": "Amazon server D&A (est.)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": 4.0246374,
+"2024Q2": 4.2340116,
+"2024Q3": 4.6062324,
+"2024Q4": 4.897029899999999,
+"2025Q1": 5.016118399999999,
+"2025Q2": 5.409387399999999,
+"2025Q3": 6.0513575,
+"2025Q4": 6.709390699999999,
+"2026Q1": 7.108752599999999,
+"2026Q2": 7.682039099999999,
+"2026Q3": 8.387153799999998
+},
+"sources": {}
+},
+{
+"key": "srvdep_META",
+"label": "Meta server D&A (est.)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": 1.5435519999999998,
+"2023Q2": 1.6057919999999999,
+"2023Q3": 1.7613919999999998,
+"2023Q4": 2.085588,
+"2024Q1": 2.211786,
+"2024Q2": 2.3778360000000003,
+"2024Q3": 2.630232,
+"2024Q4": 3.270897,
+"2025Q1": 2.848128,
+"2025Q2": 3.1744760000000003,
+"2025Q3": 3.530492,
+"2025Q4": 3.800064,
+"2026Q1": 4.215695999999999,
+"2026Q2": 4.4532,
+"2026Q3": 5.0543819999999995
+},
+"sources": {}
+},
+{
+"key": "srvdep_ORCL",
+"label": "Oracle server D&A (est.)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": 0.672,
+"2023Q2": 0.716,
+"2023Q3": 0.712,
+"2023Q4": 0.798,
+"2024Q1": 0.808,
+"2024Q2": 0.811,
+"2024Q3": 0.804,
+"2024Q4": 0.908,
+"2025Q1": 1.003,
+"2025Q2": 1.1378304,
+"2025Q3": 1.3343827,
+"2025Q4": 1.6830408,
+"2026Q1": 2.1265181,
+"2026Q2": 2.120853,
+"2026Q3": 2.7715992000000003
+},
+"sources": {}
+},
+{
+"key": "srvdep_all",
+"label": "Server D&A, all five (est.)",
+"fmt": "bn",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": 15.567743899999998,
+"2024Q4": 16.757413399999997,
+"2025Q1": 17.271427499999998,
+"2025Q2": 18.5749032,
+"2025Q3": 20.876210499999996,
+"2025Q4": 22.6550475,
+"2026Q1": 25.079130299999996,
+"2026Q2": 27.2315113,
+"2026Q3": 30.7168712
+},
+"sources": {}
+},
+{
+"key": "dep_to_capex",
+"label": "Depreciation / capex, all five",
+"fmt": "pct",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": 0.35584075860377673,
+"2024Q4": 0.30879712746858173,
+"2025Q1": 0.3110179517514531,
+"2025Q2": 0.272239689291659,
+"2025Q3": 0.2812343414671041,
+"2025Q4": 0.2516129032258065,
+"2026Q1": 0.24361626849075038,
+"2026Q2": 0.21861487361121054,
+"2026Q3": 0.19345808993932873
+},
+"sources": {}
+},
+{
+"section": "Construction in progress (assets not yet in service), $bn at quarter end"
+},
+{
+"key": "cip_GOOGL",
+"label": "Alphabet",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 30.573,
+"2023Q2": 32.019,
+"2023Q3": 32.305,
+"2023Q4": 35.136,
+"2024Q1": 37.679,
+"2024Q2": 40.742,
+"2024Q3": 46.009,
+"2024Q4": 50.597,
+"2025Q1": 55.641,
+"2025Q2": 61.7,
+"2025Q3": 69.856,
+"2025Q4": 78.592,
+"2026Q1": 108.597,
+"2026Q2": 122.814,
+"2026Q3": 145.27
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Alphabet XBRL 10-Q for 2023-03-31, 2023-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000045/0001652044-23-000045-index.htm"
+},
+"2023Q2": {
+"text": "(source: Alphabet XBRL 10-Q for 2023-06-30, 2023-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000070/0001652044-23-000070-index.htm"
+},
+"2023Q3": {
+"text": "(source: Alphabet XBRL 10-Q for 2023-09-30, 2023-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000094/0001652044-23-000094-index.htm"
+},
+"2023Q4": {
+"text": "(source: Alphabet XBRL 10-K for 2024-12-31, 2023-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/0001652044-25-000014-index.htm"
+},
+"2024Q1": {
+"text": "(source: Alphabet XBRL 10-Q for 2024-03-31, 2024-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000053/0001652044-24-000053-index.htm"
+},
+"2024Q2": {
+"text": "(source: Alphabet XBRL 10-Q for 2024-06-30, 2024-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000079/0001652044-24-000079-index.htm"
+},
+"2024Q3": {
+"text": "(source: Alphabet XBRL 10-Q for 2024-09-30, 2024-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000118/0001652044-24-000118-index.htm"
+},
+"2024Q4": {
+"text": "(source: Alphabet XBRL 10-K for 2025-12-31, 2024-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2025Q1": {
+"text": "(source: Alphabet XBRL 10-Q for 2025-03-31, 2025-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000043/0001652044-25-000043-index.htm"
+},
+"2025Q2": {
+"text": "(source: Alphabet XBRL 10-Q for 2025-06-30, 2025-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000062/0001652044-25-000062-index.htm"
+},
+"2025Q3": {
+"text": "(source: Alphabet XBRL 10-Q for 2025-09-30, 2025-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/0001652044-25-000091-index.htm"
+},
+"2025Q4": {
+"text": "(source: Alphabet XBRL 10-Q for 2026-09-30, 2025-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/0001652044-26-000084-index.htm"
+},
+"2026Q1": {
+"text": "(source: Alphabet XBRL 10-Q for 2026-03-31, 2026-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/0001652044-26-000048-index.htm"
+},
+"2026Q2": {
+"text": "(source: Alphabet XBRL 10-Q for 2026-06-30, 2026-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.htm"
+},
+"2026Q3": {
+"text": "(source: Alphabet XBRL 10-Q for 2026-09-30, 2026-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/0001652044-26-000084-index.htm"
+}
+}
+},
+{
+"key": "cip_AMZN",
+"label": "Amazon (10-K only)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": 28.84,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": 46.636,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": 71.745,
+"2026Q1": null,
+"2026Q2": null,
+"2026Q3": null
+},
+"sources": {
+"2023Q4": {
+"text": "(source: Amazon XBRL 10-K for 2024-12-31, 2023-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000004/0001018724-25-000004-index.htm"
+},
+"2024Q4": {
+"text": "(source: Amazon XBRL 10-K for 2025-12-31, 2024-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2025Q4": {
+"text": "(source: Amazon XBRL 10-K for 2025-12-31, 2025-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+}
+}
+},
+{
+"key": "cip_META",
+"label": "Meta",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 25.039,
+"2023Q2": 24.843,
+"2023Q3": 22.945,
+"2023Q4": 24.269,
+"2024Q1": 22.975,
+"2024Q2": 21.666,
+"2024Q3": 23.301,
+"2024Q4": 26.802,
+"2025Q1": 32.385,
+"2025Q2": 35.942,
+"2025Q3": 44.015,
+"2025Q4": 50.521,
+"2026Q1": 61.017,
+"2026Q2": 80.345,
+"2026Q3": 89.499
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Meta XBRL 10-Q for 2023-03-31, 2023-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000067/0001326801-23-000067-index.htm"
+},
+"2023Q2": {
+"text": "(source: Meta XBRL 10-Q for 2023-06-30, 2023-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000093/0001326801-23-000093-index.htm"
+},
+"2023Q3": {
+"text": "(source: Meta XBRL 10-Q for 2023-09-30, 2023-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000103/0001326801-23-000103-index.htm"
+},
+"2023Q4": {
+"text": "(source: Meta XBRL 10-K for 2024-12-31, 2023-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/0001326801-25-000017-index.htm"
+},
+"2024Q1": {
+"text": "(source: Meta XBRL 10-Q for 2024-03-31, 2024-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000049/0001326801-24-000049-index.htm"
+},
+"2024Q2": {
+"text": "(source: Meta XBRL 10-Q for 2024-06-30, 2024-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000069/0001326801-24-000069-index.htm"
+},
+"2024Q3": {
+"text": "(source: Meta XBRL 10-Q for 2024-09-30, 2024-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000081/0001326801-24-000081-index.htm"
+},
+"2024Q4": {
+"text": "(source: Meta XBRL 10-K for 2025-12-31, 2024-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2025Q1": {
+"text": "(source: Meta XBRL 10-Q for 2025-03-31, 2025-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000054/0001326801-25-000054-index.htm"
+},
+"2025Q2": {
+"text": "(source: Meta XBRL 10-Q for 2025-06-30, 2025-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036791/0001628280-25-036791-index.htm"
+},
+"2025Q3": {
+"text": "(source: Meta XBRL 10-Q for 2025-09-30, 2025-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/0001628280-25-047240-index.htm"
+},
+"2025Q4": {
+"text": "(source: Meta XBRL 10-Q for 2026-09-30, 2025-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/0001628280-26-066773-index.htm"
+},
+"2026Q1": {
+"text": "(source: Meta XBRL 10-Q for 2026-03-31, 2026-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/0001628280-26-028526-index.htm"
+},
+"2026Q2": {
+"text": "(source: Meta XBRL 10-Q for 2026-06-30, 2026-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/0001628280-26-050705-index.htm"
+},
+"2026Q3": {
+"text": "(source: Meta XBRL 10-Q for 2026-09-30, 2026-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/0001628280-26-066773-index.htm"
+}
+}
+},
+{
+"key": "cip_ORCL",
+"label": "Oracle",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": 3.846,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": 5.634,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": 16.51,
+"2025Q3": null,
+"2025Q4": null,
+"2026Q1": null,
+"2026Q2": 39.973,
+"2026Q3": 48.546
+},
+"sources": {
+"2023Q2": {
+"text": "(source: Oracle XBRL 10-K for 2024-05-31, 2023-05-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024075605/0000950170-24-075605-index.htm"
+},
+"2024Q2": {
+"text": "(source: Oracle XBRL 10-K for 2025-05-31, 2024-05-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/0000950170-25-087926-index.htm"
+},
+"2025Q2": {
+"text": "(source: Oracle XBRL 10-K for 2026-05-31, 2025-05-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2026Q2": {
+"text": "(source: Oracle XBRL 10-Q for 2026-08-31, 2026-05-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/0001193125-26-389274-index.htm"
+},
+"2026Q3": {
+"text": "(source: Oracle XBRL 10-Q for 2026-08-31, 2026-08-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/0001193125-26-389274-index.htm"
+}
+}
+},
+{
+"key": "cip_sum",
+"label": "CIP, reporting companies (MSFT discloses none)",
+"fmt": "bn",
+"kind": "sumopt",
+"bold": false,
+"values": {
+"2023Q1": 55.612,
+"2023Q2": 60.708,
+"2023Q3": 55.25,
+"2023Q4": 88.245,
+"2024Q1": 60.654,
+"2024Q2": 68.042,
+"2024Q3": 69.31,
+"2024Q4": 124.035,
+"2025Q1": 88.026,
+"2025Q2": 114.152,
+"2025Q3": 113.871,
+"2025Q4": 200.858,
+"2026Q1": 169.614,
+"2026Q2": 243.132,
+"2026Q3": 283.315
+},
+"sources": {}
+},
+{
+"section": "Remaining performance obligations (contracted backlog), $bn at quarter end - Meta reports none"
+},
+{
+"key": "rpo_MSFT",
+"label": "Microsoft RPO",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 201.0,
+"2023Q2": 229.0,
+"2023Q3": 216.0,
+"2023Q4": 229.0,
+"2024Q1": 242.0,
+"2024Q2": 275.0,
+"2024Q3": 266.0,
+"2024Q4": 304.0,
+"2025Q1": 321.0,
+"2025Q2": 375.0,
+"2025Q3": 398.0,
+"2025Q4": 631.0,
+"2026Q1": 633.0,
+"2026Q2": 684.0,
+"2026Q3": 683.0
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Microsoft 10-Q - remaining performance obligations (period 2023-03-31), 2023-04-25, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023014423/0000950170-23-014423-index.htm"
+},
+"2023Q2": {
+"text": "(source: Microsoft 10-K - remaining performance obligations (period 2023-06-30), 2023-07-27, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023035122/0000950170-23-035122-index.htm"
+},
+"2023Q3": {
+"text": "(source: Microsoft 10-Q - remaining performance obligations (period 2023-09-30), 2023-10-24, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023054855/0000950170-23-054855-index.htm"
+},
+"2023Q4": {
+"text": "(source: Microsoft 10-Q - remaining performance obligations (period 2023-12-31), 2024-01-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024008814/0000950170-24-008814-index.htm"
+},
+"2024Q1": {
+"text": "(source: Microsoft 10-Q - remaining performance obligations (period 2024-03-31), 2024-04-25, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024048288/0000950170-24-048288-index.htm"
+},
+"2024Q2": {
+"text": "(source: Microsoft 8-K - remaining performance obligations (period 2024-06-30), 2024-12-03, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/0000950170-24-087843-index.htm"
+},
+"2024Q3": {
+"text": "(source: Microsoft 10-Q - remaining performance obligations (period 2024-09-30), 2024-10-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024118967/0000950170-24-118967-index.htm"
+},
+"2024Q4": {
+"text": "(source: Microsoft 10-Q - remaining performance obligations (period 2024-12-31), 2025-01-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025010491/0000950170-25-010491-index.htm"
+},
+"2025Q1": {
+"text": "(source: Microsoft 10-Q - remaining performance obligations (period 2025-03-31), 2025-04-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/0000950170-25-061046-index.htm"
+},
+"2025Q2": {
+"text": "(source: Microsoft 10-K - remaining performance obligations (period 2025-06-30), 2025-07-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm"
+},
+"2025Q3": {
+"text": "(source: Microsoft 10-Q - remaining performance obligations (period 2025-09-30), 2025-10-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256321/0001193125-25-256321-index.htm"
+},
+"2025Q4": {
+"text": "(source: Microsoft 10-Q - remaining performance obligations (period 2025-12-31), 2026-01-28, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/0001193125-26-027207-index.htm"
+},
+"2026Q1": {
+"text": "(source: Microsoft 10-Q - remaining performance obligations (period 2026-03-31), 2026-04-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/0001193125-26-191507-index.htm"
+},
+"2026Q2": {
+"text": "(source: Microsoft 10-K - remaining performance obligations (period 2026-06-30), 2026-07-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+},
+"2026Q3": {
+"text": "(source: Microsoft 10-Q - remaining performance obligations (period 2026-09-30), 2026-10-28, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/0001193125-26-436133-index.htm"
+}
+}
+},
+{
+"key": "rpo_GOOGL",
+"label": "Alphabet RPO",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 61.7,
+"2023Q2": 60.6,
+"2023Q3": 64.9,
+"2023Q4": 74.1,
+"2024Q1": 72.5,
+"2024Q2": 78.8,
+"2024Q3": 86.8,
+"2024Q4": 93.2,
+"2025Q1": 92.4,
+"2025Q2": 108.2,
+"2025Q3": 157.7,
+"2025Q4": 242.8,
+"2026Q1": 467.6,
+"2026Q2": 519.5,
+"2026Q3": 567.7
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Alphabet 10-Q - remaining performance obligations (period 2023-03-31), 2023-04-26, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000045/0001652044-23-000045-index.htm"
+},
+"2023Q2": {
+"text": "(source: Alphabet 10-Q - remaining performance obligations (period 2023-06-30), 2023-07-26, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000070/0001652044-23-000070-index.htm"
+},
+"2023Q3": {
+"text": "(source: Alphabet 10-Q - remaining performance obligations (period 2023-09-30), 2023-10-25, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000094/0001652044-23-000094-index.htm"
+},
+"2023Q4": {
+"text": "(source: Alphabet 10-K - remaining performance obligations (period 2023-12-31), 2024-01-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000022/0001652044-24-000022-index.htm"
+},
+"2024Q1": {
+"text": "(source: Alphabet 10-Q - remaining performance obligations (period 2024-03-31), 2024-04-26, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000053/0001652044-24-000053-index.htm"
+},
+"2024Q2": {
+"text": "(source: Alphabet 10-Q - remaining performance obligations (period 2024-06-30), 2024-07-24, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000079/0001652044-24-000079-index.htm"
+},
+"2024Q3": {
+"text": "(source: Alphabet 10-Q - remaining performance obligations (period 2024-09-30), 2024-10-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000118/0001652044-24-000118-index.htm"
+},
+"2024Q4": {
+"text": "(source: Alphabet 10-K - remaining performance obligations (period 2024-12-31), 2025-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/0001652044-25-000014-index.htm"
+},
+"2025Q1": {
+"text": "(source: Alphabet 10-Q - remaining performance obligations (period 2025-03-31), 2025-04-25, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000043/0001652044-25-000043-index.htm"
+},
+"2025Q2": {
+"text": "(source: Alphabet 10-Q - remaining performance obligations (period 2025-06-30), 2025-07-24, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000062/0001652044-25-000062-index.htm"
+},
+"2025Q3": {
+"text": "(source: Alphabet 10-Q - remaining performance obligations (period 2025-09-30), 2025-10-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/0001652044-25-000091-index.htm"
+},
+"2025Q4": {
+"text": "(source: Alphabet 10-K - remaining performance obligations (period 2025-12-31), 2026-02-05, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm"
+},
+"2026Q1": {
+"text": "(source: Alphabet 10-Q - remaining performance obligations (period 2026-03-31), 2026-04-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/0001652044-26-000048-index.htm"
+},
+"2026Q2": {
+"text": "(source: Alphabet 10-Q - remaining performance obligations (period 2026-06-30), 2026-07-23, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.htm"
+},
+"2026Q3": {
+"text": "(source: Alphabet 10-Q - remaining performance obligations (period 2026-09-30), 2026-10-29, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/0001652044-26-000084-index.htm"
+}
+}
+},
+{
+"key": "rpo_AMZN",
+"label": "Amazon RPO",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 122.0,
+"2023Q2": 132.1,
+"2023Q3": 133.0,
+"2023Q4": 155.7,
+"2024Q1": 157.7,
+"2024Q2": 156.6,
+"2024Q3": 164.0,
+"2024Q4": 177.0,
+"2025Q1": 189.0,
+"2025Q2": 195.0,
+"2025Q3": 200.0,
+"2025Q4": 244.0,
+"2026Q1": 364.0,
+"2026Q2": 496.0,
+"2026Q3": 578.0
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Amazon 10-Q text, accession 0001018724-23-000008 - remaining performance obligations (period 2023-03-31), 2023-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000008/0001018724-23-000008-index.htm"
+},
+"2023Q2": {
+"text": "(source: Amazon 10-Q text, accession 0001018724-23-000012 - remaining performance obligations (period 2023-06-30), 2023-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000012/0001018724-23-000012-index.htm"
+},
+"2023Q3": {
+"text": "(source: Amazon 10-Q text, accession 0001018724-23-000018 - remaining performance obligations (period 2023-09-30), 2023-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000018/0001018724-23-000018-index.htm"
+},
+"2023Q4": {
+"text": "(source: Amazon 10-K text, accession 0001018724-24-000008 - remaining performance obligations (period 2023-12-31), 2023-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/0001018724-24-000008-index.htm"
+},
+"2024Q1": {
+"text": "(source: Amazon 10-Q text, accession 0001018724-24-000083 - remaining performance obligations (period 2024-03-31), 2024-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000083/0001018724-24-000083-index.htm"
+},
+"2024Q2": {
+"text": "(source: Amazon 10-Q text, accession 0001018724-24-000130 - remaining performance obligations (period 2024-06-30), 2024-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000130/0001018724-24-000130-index.htm"
+},
+"2024Q3": {
+"text": "(source: Amazon 10-Q text, accession 0001018724-24-000161 - remaining performance obligations (period 2024-09-30), 2024-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000161/0001018724-24-000161-index.htm"
+},
+"2024Q4": {
+"text": "(source: Amazon 10-K text, accession 0001018724-25-000004 - remaining performance obligations (period 2024-12-31), 2024-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000004/0001018724-25-000004-index.htm"
+},
+"2025Q1": {
+"text": "(source: Amazon 10-Q text, accession 0001018724-25-000036 - remaining performance obligations (period 2025-03-31), 2025-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000036/0001018724-25-000036-index.htm"
+},
+"2025Q2": {
+"text": "(source: Amazon 10-Q text, accession 0001018724-25-000086 - remaining performance obligations (period 2025-06-30), 2025-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000086/0001018724-25-000086-index.htm"
+},
+"2025Q3": {
+"text": "(source: Amazon 10-Q text, accession 0001018724-25-000123 - remaining performance obligations (period 2025-09-30), 2025-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000123/0001018724-25-000123-index.htm"
+},
+"2025Q4": {
+"text": "(source: Amazon 10-K text, accession 0001018724-26-000004 - remaining performance obligations (period 2025-12-31), 2025-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm"
+},
+"2026Q1": {
+"text": "(source: Amazon 10-Q text, accession 0001018724-26-000014 - remaining performance obligations (period 2026-03-31), 2026-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/0001018724-26-000014-index.htm"
+},
+"2026Q2": {
+"text": "(source: Amazon 10-Q text, accession 0001018724-26-000026 - remaining performance obligations (period 2026-06-30), 2026-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.htm"
+},
+"2026Q3": {
+"text": "(source: Amazon 10-Q text, accession 0001018724-26-000040 - remaining performance obligations (period 2026-09-30), 2026-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/0001018724-26-000040-index.htm"
+}
+}
+},
+{
+"key": "rpo_ORCL",
+"label": "Oracle RPO",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 62.3,
+"2023Q2": 67.9,
+"2023Q3": 64.9,
+"2023Q4": 65.5,
+"2024Q1": 80.2,
+"2024Q2": 97.9,
+"2024Q3": 99.1,
+"2024Q4": 97.3,
+"2025Q1": 130.2,
+"2025Q2": 137.8,
+"2025Q3": 455.3,
+"2025Q4": 523.3,
+"2026Q1": 552.6,
+"2026Q2": 638.0,
+"2026Q3": 664.0
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Oracle 10-Q - remaining performance obligations (period 2023-02-28), 2023-03-10, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459023003413/0001564590-23-003413-index.htm"
+},
+"2023Q2": {
+"text": "(source: Oracle 10-K - remaining performance obligations (period 2023-05-31), 2023-06-20, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017023028914/0000950170-23-028914-index.htm"
+},
+"2023Q3": {
+"text": "(source: Oracle 10-Q - remaining performance obligations (period 2023-08-31), 2023-09-12, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017023047713/0000950170-23-047713-index.htm"
+},
+"2023Q4": {
+"text": "(source: Oracle 10-Q - remaining performance obligations (period 2023-11-30), 2023-12-12, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017023069682/0000950170-23-069682-index.htm"
+},
+"2024Q1": {
+"text": "(source: Oracle 10-Q - remaining performance obligations (period 2024-02-29), 2024-03-12, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024029904/0000950170-24-029904-index.htm"
+},
+"2024Q2": {
+"text": "(source: Oracle 10-K - remaining performance obligations (period 2024-05-31), 2024-06-20, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024075605/0000950170-24-075605-index.htm"
+},
+"2024Q3": {
+"text": "(source: Oracle 10-Q - remaining performance obligations (period 2024-08-31), 2024-09-10, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024104905/0000950170-24-104905-index.htm"
+},
+"2024Q4": {
+"text": "(source: Oracle 10-Q - remaining performance obligations (period 2024-11-30), 2024-12-10, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024134973/0000950170-24-134973-index.htm"
+},
+"2025Q1": {
+"text": "(source: Oracle 10-Q - remaining performance obligations (period 2025-02-28), 2025-03-11, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025037143/0000950170-25-037143-index.htm"
+},
+"2025Q2": {
+"text": "(source: Oracle 10-K - remaining performance obligations (period 2025-05-31), 2025-06-18, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/0000950170-25-087926-index.htm"
+},
+"2025Q3": {
+"text": "(source: Oracle 10-Q - remaining performance obligations (period 2025-08-31), 2025-09-10, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525200095/0001193125-25-200095-index.htm"
+},
+"2025Q4": {
+"text": "(source: Oracle 10-Q - remaining performance obligations (period 2025-11-30), 2025-12-11, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525315925/0001193125-25-315925-index.htm"
+},
+"2026Q1": {
+"text": "(source: Oracle 10-Q - remaining performance obligations (period 2026-02-28), 2026-03-11, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/0001193125-26-101045-index.htm"
+},
+"2026Q2": {
+"text": "(source: Oracle 10-K - remaining performance obligations (period 2026-05-31), 2026-06-22, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+},
+"2026Q3": {
+"text": "(source: Oracle 10-Q - remaining performance obligations (period 2026-08-31), 2026-09-11, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/0001193125-26-389274-index.htm"
+}
+}
+},
+{
+"key": "rpo_all",
+"label": "RPO, four reporters",
+"fmt": "bn",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": 447.0,
+"2023Q2": 489.6,
+"2023Q3": 478.79999999999995,
+"2023Q4": 524.3,
+"2024Q1": 552.4,
+"2024Q2": 608.3,
+"2024Q3": 615.9,
+"2024Q4": 671.5,
+"2025Q1": 732.5999999999999,
+"2025Q2": 816.0,
+"2025Q3": 1211.0,
+"2025Q4": 1641.1,
+"2026Q1": 2017.1999999999998,
+"2026Q2": 2337.5,
+"2026Q3": 2492.7
+},
+"sources": {}
+},
+{
+"key": "labrpo_MSFT",
+"label": "Microsoft lab RPO (OpenAI + Anthropic, est.)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": 29.0,
+"2025Q1": 29.731398582887724,
+"2025Q2": 30.48124350670821,
+"2025Q3": 31.25,
+"2025Q4": 311.25,
+"2026Q1": 311.25,
+"2026Q2": 311.25,
+"2026Q3": 326.15
+},
+"sources": {
+"2024Q4": {
+"text": "(source: Derived from FY26 Q2 call (45% OpenAI; ex-OpenAI balance grew 28%), 2026-01-28, link) - EST. OpenAI ~$29B back-solved: Dec-25 ex-OpenAI $350B up 28% y/y on $298B total; Anthropic 0",
+"url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+},
+"2025Q3": {
+"text": "(source: Microsoft FY26 Q1 earnings call (Amy Hood), 2025-10-29, link) - EST. OpenAI pre-deal = Dec-25 $281B less the $250B Oct-25 commitment (excluded from Sep-25 RPO); Anthropic 0",
+"url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1"
+},
+"2025Q4": {
+"text": "(source: Microsoft FY26 Q2 earnings call (Amy Hood), 2026-01-28, link) - 45% of $625B commercial RPO from OpenAI = $281.25B, + Anthropic $30B Azure commitment (Nov-25) in bookings",
+"url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2"
+},
+"2026Q1": {
+"text": "(source: Microsoft FY26 Q3 earnings call (Amy Hood), 2026-04-29, link) - EST. held at Dec-25: Hood gives only 'grew 26% excluding OpenAI'",
+"url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+},
+"2026Q2": {
+"text": "(source: Microsoft FY26 Q4 earnings call (Amy Hood), 2026-07-29, link) - EST. held: 'All sequential commercial RPO growth was driven by commitments from customers outside of frontier model companies'",
+"url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+},
+"2026Q3": {
+"text": "(source: Anthropic PBC Form S-1/A No.1, 2026-11-02, link, P.175) - EST. OpenAI held at $281.25B + Anthropic minimum Azure commitment >=$44.9B (S-1/A); no OpenAI split given in FY27 Q1",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+}
+}
+},
+{
+"key": "labrpo_GOOGL",
+"label": "Alphabet lab RPO (OpenAI + Anthropic, est.)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 0.0,
+"2023Q2": 0.0,
+"2023Q3": 0.0,
+"2023Q4": 0.0,
+"2024Q1": 0.0,
+"2024Q2": 0.0,
+"2024Q3": 0.0,
+"2024Q4": 0.0,
+"2025Q1": 0.0,
+"2025Q2": 0.0,
+"2025Q3": 0.0,
+"2025Q4": 24.6,
+"2026Q1": 114.5,
+"2026Q2": 114.5,
+"2026Q3": 121.3
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (Note 13), 2026-11-02, link, P.F-60) - EST. 0: no fixed Anthropic CSP commitment before the Oct-25 TPU deal",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+},
+"2023Q2": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (Note 13), 2026-11-02, link, P.F-60) - EST. 0: no fixed Anthropic CSP commitment before the Oct-25 TPU deal",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+},
+"2023Q3": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (Note 13), 2026-11-02, link, P.F-60) - EST. 0: no fixed Anthropic CSP commitment before the Oct-25 TPU deal",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+},
+"2023Q4": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (Note 13), 2026-11-02, link, P.F-60) - EST. 0: no fixed Anthropic CSP commitment before the Oct-25 TPU deal",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+},
+"2024Q1": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (Note 13), 2026-11-02, link, P.F-60) - EST. 0: no fixed Anthropic CSP commitment before the Oct-25 TPU deal",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+},
+"2024Q2": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (Note 13), 2026-11-02, link, P.F-60) - EST. 0: no fixed Anthropic CSP commitment before the Oct-25 TPU deal",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+},
+"2024Q3": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (Note 13), 2026-11-02, link, P.F-60) - EST. 0: no fixed Anthropic CSP commitment before the Oct-25 TPU deal",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+},
+"2024Q4": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (Note 13), 2026-11-02, link, P.F-60) - EST. 0: no fixed Anthropic CSP commitment before the Oct-25 TPU deal",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+},
+"2025Q1": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (Note 13), 2026-11-02, link, P.F-60) - EST. 0: no fixed Anthropic CSP commitment before the Oct-25 TPU deal",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+},
+"2025Q2": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (Note 13), 2026-11-02, link, P.F-60) - EST. 0: no fixed Anthropic CSP commitment before the Oct-25 TPU deal",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+},
+"2025Q3": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (Note 13), 2026-11-02, link, P.F-60) - EST. 0: no fixed Anthropic CSP commitment before the Oct-25 TPU deal",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+},
+"2025Q4": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (Note 13), 2026-11-02, link, P.F-60) - EST. upper bound: Anthropic total non-cancelable commitments $54.6B at 12/31/25 less $30B Azure",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+},
+"2026Q1": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (MD&A Contractual Obligations), 2026-11-02, link, P.175) - EST. Anthropic Google CSP minimum as signed Mar-2026 ($114.5B in the original S-1, P.171; $121.3B after amendments)",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+},
+"2026Q2": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (MD&A Contractual Obligations), 2026-11-02, link, P.175) - EST. Anthropic Google CSP minimum $114.5B (original S-1); press-reported ~$200B plan not confirmed",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+},
+"2026Q3": {
+"text": "(source: Anthropic PBC Form S-1/A No.1 (MD&A Contractual Obligations), 2026-11-02, link, P.175) - Anthropic Google CSP minimum >=$121.3B (S-1/A P.175); excludes $125-150B of further TPU compute with no fixed $",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+}
+}
+},
+{
+"key": "labrpo_AMZN",
+"label": "Amazon lab RPO (OpenAI + Anthropic, est.)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 0.0,
+"2023Q2": 0.0,
+"2023Q3": 0.0,
+"2023Q4": 0.0,
+"2024Q1": 0.0,
+"2024Q2": 0.0,
+"2024Q3": 0.0,
+"2024Q4": 0.0,
+"2025Q1": 0.0,
+"2025Q2": 0.0,
+"2025Q3": 0.0,
+"2025Q4": 38.0,
+"2026Q1": 138.0,
+"2026Q2": 248.0,
+"2026Q3": 248.0
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Amazon Q3-25 earnings call (Jassy) - transcript summary, 2025-10-30, link, P.9) - EST. 0: Q3-25 backlog excluded the Oct-25 lab deals; Anthropic's total fixed commitments were only $54.6B at 12/31/25 (S-1/A F-60), $30B of it Azure",
+"url": "https://vectorshift.ai/research/companies/amazon-com/earnings/2025-q3"
+},
+"2023Q2": {
+"text": "(source: Amazon Q3-25 earnings call (Jassy) - transcript summary, 2025-10-30, link, P.9) - EST. 0: Q3-25 backlog excluded the Oct-25 lab deals; Anthropic's total fixed commitments were only $54.6B at 12/31/25 (S-1/A F-60), $30B of it Azure",
+"url": "https://vectorshift.ai/research/companies/amazon-com/earnings/2025-q3"
+},
+"2023Q3": {
+"text": "(source: Amazon Q3-25 earnings call (Jassy) - transcript summary, 2025-10-30, link, P.9) - EST. 0: Q3-25 backlog excluded the Oct-25 lab deals; Anthropic's total fixed commitments were only $54.6B at 12/31/25 (S-1/A F-60), $30B of it Azure",
+"url": "https://vectorshift.ai/research/companies/amazon-com/earnings/2025-q3"
+},
+"2023Q4": {
+"text": "(source: Amazon Q3-25 earnings call (Jassy) - transcript summary, 2025-10-30, link, P.9) - EST. 0: Q3-25 backlog excluded the Oct-25 lab deals; Anthropic's total fixed commitments were only $54.6B at 12/31/25 (S-1/A F-60), $30B of it Azure",
+"url": "https://vectorshift.ai/research/companies/amazon-com/earnings/2025-q3"
+},
+"2024Q1": {
+"text": "(source: Amazon Q3-25 earnings call (Jassy) - transcript summary, 2025-10-30, link, P.9) - EST. 0: Q3-25 backlog excluded the Oct-25 lab deals; Anthropic's total fixed commitments were only $54.6B at 12/31/25 (S-1/A F-60), $30B of it Azure",
+"url": "https://vectorshift.ai/research/companies/amazon-com/earnings/2025-q3"
+},
+"2024Q2": {
+"text": "(source: Amazon Q3-25 earnings call (Jassy) - transcript summary, 2025-10-30, link, P.9) - EST. 0: Q3-25 backlog excluded the Oct-25 lab deals; Anthropic's total fixed commitments were only $54.6B at 12/31/25 (S-1/A F-60), $30B of it Azure",
+"url": "https://vectorshift.ai/research/companies/amazon-com/earnings/2025-q3"
+},
+"2024Q3": {
+"text": "(source: Amazon Q3-25 earnings call (Jassy) - transcript summary, 2025-10-30, link, P.9) - EST. 0: Q3-25 backlog excluded the Oct-25 lab deals; Anthropic's total fixed commitments were only $54.6B at 12/31/25 (S-1/A F-60), $30B of it Azure",
+"url": "https://vectorshift.ai/research/companies/amazon-com/earnings/2025-q3"
+},
+"2024Q4": {
+"text": "(source: Amazon Q3-25 earnings call (Jassy) - transcript summary, 2025-10-30, link, P.9) - EST. 0: Q3-25 backlog excluded the Oct-25 lab deals; Anthropic's total fixed commitments were only $54.6B at 12/31/25 (S-1/A F-60), $30B of it Azure",
+"url": "https://vectorshift.ai/research/companies/amazon-com/earnings/2025-q3"
+},
+"2025Q1": {
+"text": "(source: Amazon Q3-25 earnings call (Jassy) - transcript summary, 2025-10-30, link, P.9) - EST. 0: Q3-25 backlog excluded the Oct-25 lab deals; Anthropic's total fixed commitments were only $54.6B at 12/31/25 (S-1/A F-60), $30B of it Azure",
+"url": "https://vectorshift.ai/research/companies/amazon-com/earnings/2025-q3"
+},
+"2025Q2": {
+"text": "(source: Amazon Q3-25 earnings call (Jassy) - transcript summary, 2025-10-30, link, P.9) - EST. 0: Q3-25 backlog excluded the Oct-25 lab deals; Anthropic's total fixed commitments were only $54.6B at 12/31/25 (S-1/A F-60), $30B of it Azure",
+"url": "https://vectorshift.ai/research/companies/amazon-com/earnings/2025-q3"
+},
+"2025Q3": {
+"text": "(source: Amazon Q3-25 earnings call (Jassy) - transcript summary, 2025-10-30, link, P.9) - EST. 0: Q3-25 backlog excluded the Oct-25 lab deals; Anthropic's total fixed commitments were only $54.6B at 12/31/25 (S-1/A F-60), $30B of it Azure",
+"url": "https://vectorshift.ai/research/companies/amazon-com/earnings/2025-q3"
+},
+"2025Q4": {
+"text": "(source: Amazon 2025 Form 10-K, 2026-02-06, link, P.51) - EST. OpenAI $38B 7-yr AWS contract (Nov-25), unconsumed",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+},
+"2026Q1": {
+"text": "(source: Amazon Form 10-Q Q1-26 (Note 1 - performance obligations), 2026-04-30, link, P.9) - OpenAI $38B + $100.0B expansion disclosed in the 10-Q performance-obligations note; Anthropic deal excluded (Jassy)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/amzn-20260331.htm"
+},
+"2026Q2": {
+"text": "(source: Amazon Form 10-Q Q2-26 (Note 1 - performance obligations), 2026-07-31, link, P.10) - OpenAI $138B + Anthropic commitment of more than $100B in the 10-Q note (S-1/A minimum $110.0B used)",
+"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+},
+"2026Q3": {
+"text": "(source: Anthropic PBC Form S-1/A No.1, 2026-11-02, link, P.176) - EST. held: OpenAI $138B + Anthropic minimum $110.0B (S-1/A P.176), consumption not deducted",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+}
+}
+},
+{
+"key": "labrpo_ORCL",
+"label": "Oracle lab RPO (OpenAI + Anthropic, est.)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 0.0,
+"2023Q2": 0.0,
+"2023Q3": 0.0,
+"2023Q4": 0.0,
+"2024Q1": 0.0,
+"2024Q2": 0.0,
+"2024Q3": 0.0,
+"2024Q4": 0.0,
+"2025Q1": 0.0,
+"2025Q2": 0.0,
+"2025Q3": 300.0,
+"2025Q4": 300.0,
+"2026Q1": 300.0,
+"2026Q2": 300.0,
+"2026Q3": 300.0
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Oracle Form 8-K (Item 7.01), 2025-06-30, link) - EST. 0: the large contract (>$30B/yr from FY28, later reported as OpenAI) was signed after the May-25 quarter",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525152035/d136779d8k.htm"
+},
+"2023Q2": {
+"text": "(source: Oracle Form 8-K (Item 7.01), 2025-06-30, link) - EST. 0: the large contract (>$30B/yr from FY28, later reported as OpenAI) was signed after the May-25 quarter",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525152035/d136779d8k.htm"
+},
+"2023Q3": {
+"text": "(source: Oracle Form 8-K (Item 7.01), 2025-06-30, link) - EST. 0: the large contract (>$30B/yr from FY28, later reported as OpenAI) was signed after the May-25 quarter",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525152035/d136779d8k.htm"
+},
+"2023Q4": {
+"text": "(source: Oracle Form 8-K (Item 7.01), 2025-06-30, link) - EST. 0: the large contract (>$30B/yr from FY28, later reported as OpenAI) was signed after the May-25 quarter",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525152035/d136779d8k.htm"
+},
+"2024Q1": {
+"text": "(source: Oracle Form 8-K (Item 7.01), 2025-06-30, link) - EST. 0: the large contract (>$30B/yr from FY28, later reported as OpenAI) was signed after the May-25 quarter",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525152035/d136779d8k.htm"
+},
+"2024Q2": {
+"text": "(source: Oracle Form 8-K (Item 7.01), 2025-06-30, link) - EST. 0: the large contract (>$30B/yr from FY28, later reported as OpenAI) was signed after the May-25 quarter",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525152035/d136779d8k.htm"
+},
+"2024Q3": {
+"text": "(source: Oracle Form 8-K (Item 7.01), 2025-06-30, link) - EST. 0: the large contract (>$30B/yr from FY28, later reported as OpenAI) was signed after the May-25 quarter",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525152035/d136779d8k.htm"
+},
+"2024Q4": {
+"text": "(source: Oracle Form 8-K (Item 7.01), 2025-06-30, link) - EST. 0: the large contract (>$30B/yr from FY28, later reported as OpenAI) was signed after the May-25 quarter",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525152035/d136779d8k.htm"
+},
+"2025Q1": {
+"text": "(source: Oracle Form 8-K (Item 7.01), 2025-06-30, link) - EST. 0: the large contract (>$30B/yr from FY28, later reported as OpenAI) was signed after the May-25 quarter",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525152035/d136779d8k.htm"
+},
+"2025Q2": {
+"text": "(source: Oracle Form 8-K (Item 7.01), 2025-06-30, link) - EST. 0: the large contract (>$30B/yr from FY28, later reported as OpenAI) was signed after the May-25 quarter",
+"url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525152035/d136779d8k.htm"
+},
+"2025Q3": {
+"text": "(source: WSJ report of OpenAI-Oracle ~$300B/~5yr compute deal starting 2027 (via DCD/press), 2025-09-10, link) - EST. OpenAI ~$300B/5-yr Stargate deal (WSJ, Jul/Sep-25), held; Oracle has never confirmed the amount",
+"url": "https://www.datacenterdynamics.com/en/news/openai-signs-300bn-cloud-deal-with-oracle-report/"
+},
+"2025Q4": {
+"text": "(source: WSJ report of OpenAI-Oracle ~$300B/~5yr compute deal starting 2027 (via DCD/press), 2025-09-10, link) - EST. OpenAI ~$300B/5-yr Stargate deal (WSJ, Jul/Sep-25), held; Oracle has never confirmed the amount",
+"url": "https://www.datacenterdynamics.com/en/news/openai-signs-300bn-cloud-deal-with-oracle-report/"
+},
+"2026Q1": {
+"text": "(source: WSJ report of OpenAI-Oracle ~$300B/~5yr compute deal starting 2027 (via DCD/press), 2025-09-10, link) - EST. OpenAI ~$300B/5-yr Stargate deal (WSJ, Jul/Sep-25), held; Oracle has never confirmed the amount",
+"url": "https://www.datacenterdynamics.com/en/news/openai-signs-300bn-cloud-deal-with-oracle-report/"
+},
+"2026Q2": {
+"text": "(source: WSJ report of OpenAI-Oracle ~$300B/~5yr compute deal starting 2027 (via DCD/press), 2025-09-10, link) - EST. OpenAI ~$300B/5-yr Stargate deal (WSJ, Jul/Sep-25), held; Oracle has never confirmed the amount",
+"url": "https://www.datacenterdynamics.com/en/news/openai-signs-300bn-cloud-deal-with-oracle-report/"
+},
+"2026Q3": {
+"text": "(source: WSJ report of OpenAI-Oracle ~$300B/~5yr compute deal starting 2027 (via DCD/press), 2025-09-10, link) - EST. OpenAI ~$300B/5-yr Stargate deal (WSJ, Jul/Sep-25), held; Oracle has never confirmed the amount",
+"url": "https://www.datacenterdynamics.com/en/news/openai-signs-300bn-cloud-deal-with-oracle-report/"
+}
+}
+},
+{
+"key": "labrpo_all",
+"label": "Lab RPO, four reporters",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": 29.0,
+"2025Q1": 29.731398582887724,
+"2025Q2": 30.48124350670821,
+"2025Q3": 331.25,
+"2025Q4": 673.85,
+"2026Q1": 863.75,
+"2026Q2": 973.75,
+"2026Q3": 995.45
+},
+"sources": {}
+},
+{
+"key": "netrpo_MSFT",
+"label": "Microsoft net RPO (non-lab)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": 275.0,
+"2025Q1": 291.2686014171123,
+"2025Q2": 344.5187564932918,
+"2025Q3": 366.75,
+"2025Q4": 319.75,
+"2026Q1": 321.75,
+"2026Q2": 372.75,
+"2026Q3": 356.85
+},
+"sources": {}
+},
+{
+"key": "netrpo_GOOGL",
+"label": "Alphabet net RPO (non-lab)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": 61.7,
+"2023Q2": 60.6,
+"2023Q3": 64.9,
+"2023Q4": 74.1,
+"2024Q1": 72.5,
+"2024Q2": 78.8,
+"2024Q3": 86.8,
+"2024Q4": 93.2,
+"2025Q1": 92.4,
+"2025Q2": 108.2,
+"2025Q3": 157.7,
+"2025Q4": 218.20000000000002,
+"2026Q1": 353.1,
+"2026Q2": 405.0,
+"2026Q3": 446.40000000000003
+},
+"sources": {}
+},
+{
+"key": "netrpo_AMZN",
+"label": "Amazon net RPO (non-lab)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": 122.0,
+"2023Q2": 132.1,
+"2023Q3": 133.0,
+"2023Q4": 155.7,
+"2024Q1": 157.7,
+"2024Q2": 156.6,
+"2024Q3": 164.0,
+"2024Q4": 177.0,
+"2025Q1": 189.0,
+"2025Q2": 195.0,
+"2025Q3": 200.0,
+"2025Q4": 206.0,
+"2026Q1": 226.0,
+"2026Q2": 248.0,
+"2026Q3": 330.0
+},
+"sources": {}
+},
+{
+"key": "netrpo_ORCL",
+"label": "Oracle net RPO (non-lab)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": 62.3,
+"2023Q2": 67.9,
+"2023Q3": 64.9,
+"2023Q4": 65.5,
+"2024Q1": 80.2,
+"2024Q2": 97.9,
+"2024Q3": 99.1,
+"2024Q4": 97.3,
+"2025Q1": 130.2,
+"2025Q2": 137.8,
+"2025Q3": 155.3,
+"2025Q4": 223.29999999999995,
+"2026Q1": 252.60000000000002,
+"2026Q2": 338.0,
+"2026Q3": 364.0
+},
+"sources": {}
+},
+{
+"key": "netrpo_all",
+"label": "Net RPO (non-lab), four reporters",
+"fmt": "bn",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": 642.5,
+"2025Q1": 702.8686014171121,
+"2025Q2": 785.5187564932918,
+"2025Q3": 879.75,
+"2025Q4": 967.2499999999999,
+"2026Q1": 1153.4499999999998,
+"2026Q2": 1363.75,
+"2026Q3": 1497.2499999999998
+},
+"sources": {}
+},
+{
+"key": "lab_share",
+"label": "Lab share of RPO",
+"fmt": "pct",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": 0.04318689501116903,
+"2025Q1": 0.040583399649041396,
+"2025Q2": 0.037354465081750256,
+"2025Q3": 0.2735342691990091,
+"2025Q4": 0.4106087380415575,
+"2026Q1": 0.4281925441205632,
+"2026Q2": 0.41657754010695186,
+"2026Q3": 0.3993460905845068
+},
+"sources": {}
+},
+{
+"section": "B. END-USER SPENDING on AI models, $bn per quarter (revenue; price x tokens where only tokens are known)"
+},
+{
+"key": "anth_rev",
+"label": "Anthropic revenue - official (S-1 / S-1/A, recognised)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": 0.376,
+"2025Q2": 0.787,
+"2025Q3": 1.382,
+"2025Q4": 2.04,
+"2026Q1": 4.731,
+"2026Q2": 11.555,
+"2026Q3": 16.956
+},
+"sources": {
+"2025Q1": {
+"text": "(source: Anthropic PBC Form S-1, quarterly results of operations, 2026-10-26, link, P.158)",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+},
+"2025Q2": {
+"text": "(source: Anthropic PBC Form S-1, quarterly results of operations, 2026-10-26, link, P.158)",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+},
+"2025Q3": {
+"text": "(source: Anthropic PBC Form S-1, quarterly results of operations, 2026-10-26, link, P.158)",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+},
+"2025Q4": {
+"text": "(source: Anthropic PBC Form S-1, quarterly results of operations, 2026-10-26, link, P.158)",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+},
+"2026Q1": {
+"text": "(source: Anthropic PBC Form S-1, quarterly results of operations, 2026-10-26, link, P.158)",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+},
+"2026Q2": {
+"text": "(source: Anthropic PBC Form S-1, quarterly results of operations, 2026-10-26, link, P.158)",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+},
+"2026Q3": {
+"text": "(source: Anthropic PBC Form S-1/A No.1, quarterly results of operations, 2026-11-02, link, P.161)",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+}
+}
+},
+{
+"key": "arr_anthropic",
+"label": "Anthropic ARR at quarter end (3rd party / company statements)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": 0.159,
+"2024Q2": 0.292,
+"2024Q3": 0.54,
+"2024Q4": 1.0,
+"2025Q1": 2.0,
+"2025Q2": 3.964,
+"2025Q3": 6.435,
+"2025Q4": 9.0,
+"2026Q1": 27.677,
+"2026Q2": 57.191,
+"2026Q3": 74.0
+},
+"sources": {
+"2024Q1": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point 2024 87M, Company disclosure), 2025-09-26, link)",
+"url": "https://www.anthropic.com/news/anthropic-expands-global-leadership-in-enterprise-ai-naming-chris-ciauri-as-managing-director-of"
+},
+"2024Q2": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point 2024 87M, Company disclosure), 2025-09-26, link)",
+"url": "https://www.anthropic.com/news/anthropic-expands-global-leadership-in-enterprise-ai-naming-chris-ciauri-as-managing-director-of"
+},
+"2024Q3": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point 2024 87M, Company disclosure), 2025-09-26, link)",
+"url": "https://www.anthropic.com/news/anthropic-expands-global-leadership-in-enterprise-ai-naming-chris-ciauri-as-managing-director-of"
+},
+"2024Q4": {
+"text": "(source: ARR tracker quarter-end value (last point December 2024 1B, Media report), 2025-01-22, link)",
+"url": "https://www.cnbc.com/2025/01/22/google-agrees-to-new-1-billion-investment-in-anthropic.html"
+},
+"2025Q1": {
+"text": "(source: ARR tracker quarter-end value (last point March 2025 2B, Company disclosure), 2025-05-16, link)",
+"url": "https://www.cnbc.com/2025/05/16/anthropic-ai-credit-facility.html"
+},
+"2025Q2": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point May 2025 3B, Media report), 2025-05-30, link)",
+"url": "https://www.cnbc.com/2025/05/30/anthropic-hits-3-billion-in-annualized-revenue-on-business-demand-for-ai.html"
+},
+"2025Q3": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point July 2025 5B, Company disclosure), 2025-07-29, link)",
+"url": "https://www.bloomberg.com/news/articles/2025-07-29/anthropic-nears-deal-to-raise-funding-at-170-billion-valuation"
+},
+"2025Q4": {
+"text": "(source: ARR tracker quarter-end value (last point end-2025 9B, Media report), 2026-01-21, link)",
+"url": "https://www.bloomberg.com/news/articles/2026-01-21/anthropic-s-revenue-run-rate-tops-9-billion-as-vcs-pile-in"
+},
+"2026Q1": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point March 2026 19B, Company disclosure,Media report), 2026-03-03, link)",
+"url": "https://x.com/apoorv03/status/2029018856342290550?s=20"
+},
+"2026Q2": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point May 2026 47B, Company disclosure), 2026-05-28, link)",
+"url": "https://www.anthropic.com/news/series-h"
+},
+"2026Q3": {
+"text": "(source: ARR tracker quarter-end value (last point Sep 2026 74B, ) - point from the Research workbook 'Anthropic & OpenAI ARR trend' (ai-lab-arr/source), no external link, 2026-09-30)",
+"url": null
+}
+}
+},
+{
+"key": "anth_rev3",
+"label": "Anthropic revenue - 3rd-party est. (avg ARR in quarter / 4)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": 0.056374999999999995,
+"2024Q3": 0.10400000000000001,
+"2024Q4": 0.1925,
+"2025Q1": 0.375,
+"2025Q2": 0.7455,
+"2025Q3": 1.299875,
+"2025Q4": 1.9293749999999998,
+"2026Q1": 4.584625,
+"2026Q2": 10.6085,
+"2026Q3": 16.398875
+},
+"sources": {}
+},
+{
+"key": "anth_use",
+"label": "Anthropic revenue used (official, else est.)",
+"fmt": "bn",
+"kind": "coalesce",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": 0.056374999999999995,
+"2024Q3": 0.10400000000000001,
+"2024Q4": 0.1925,
+"2025Q1": 0.376,
+"2025Q2": 0.787,
+"2025Q3": 1.382,
+"2025Q4": 2.04,
+"2026Q1": 4.731,
+"2026Q2": 11.555,
+"2026Q3": 16.956
+},
+"sources": {}
+},
+{
+"key": "oai_rev",
+"label": "OpenAI revenue - reported (recognised, press/company)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": null,
+"2026Q1": 5.7,
+"2026Q2": 6.7,
+"2026Q3": null
+},
+"sources": {
+"2026Q1": {
+"text": "(source: Reuters (citing The Information): OpenAI burned $3.7 billion in first quarter of 2026, 2026-06-16, link) - OpenAI burned through $3.7 billion in the first quarter of 2026 ... $5.7 billion in revenue",
+"url": "https://www.thestar.com.my/tech/tech-news/2026/06/17/openai-burned-37-billion-in-first-quarter-of-2026-the-information-reports"
+},
+"2026Q2": {
+"text": "(source: Crypto Briefing (citing Wall Street Journal): OpenAI revenue climbs to $6.7B in Q2, 2026-08-18, link) - generated $6.7 billion in revenue during the second quarter of 2026, up from $5.7 billion in the first quarter",
+"url": "https://cryptobriefing.com/openai-revenue-6-7-billion-q2-2026/"
+}
+}
+},
+{
+"key": "arr_openai",
+"label": "OpenAI ARR at quarter end (3rd party / company statements)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": 2.685,
+"2024Q2": 3.455,
+"2024Q3": 4.214,
+"2024Q4": 5.5,
+"2025Q1": 7.699,
+"2025Q2": 10.78,
+"2025Q3": 15.314,
+"2025Q4": 21.4,
+"2026Q1": 26.053,
+"2026Q2": 29.407,
+"2026Q3": 50.0
+},
+"sources": {
+"2024Q1": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point Dec 2023 2B, Media report), 2024-02-09, link)",
+"url": "https://www.ft.com/content/81ac0e78-5b9b-43c2-b135-d11c47480119"
+},
+"2024Q2": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point June 2024 3.4B, Media report), 2024-06-12, link)",
+"url": "https://www.theinformation.com/articles/openais-annualized-revenue-doubles-to-3-4-billion-since-late-2023?rc=9mzoog"
+},
+"2024Q3": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point Sep 2024 4B, Media report), 2024-09-12, link)",
+"url": "https://www.wsj.com/tech/ai/united-arab-emirates-fund-in-talks-to-invest-in-openai-fd4e4977?"
+},
+"2024Q4": {
+"text": "(source: ARR tracker quarter-end value (last point Dec 2024 5.5B, Media report), 2025-06-09, link)",
+"url": "https://www.cnbc.com/2025/06/09/openai-hits-10-billion-in-annualized-revenue-fueled-by-chatgpt-growth.html"
+},
+"2025Q1": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point Dec 2024 5.5B, Media report), 2025-06-09, link)",
+"url": "https://www.cnbc.com/2025/06/09/openai-hits-10-billion-in-annualized-revenue-fueled-by-chatgpt-growth.html"
+},
+"2025Q2": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point June 2025 10B, Company disclosure), 2025-06-09, link)",
+"url": "https://www.cnbc.com/2025/06/09/openai-hits-10-billion-in-annualized-revenue-fueled-by-chatgpt-growth.html"
+},
+"2025Q3": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point August 2025 13B, Media report), 2025-08-01, link)",
+"url": "https://www.nytimes.com/2025/08/01/business/dealbook/openai-ai-mega-funding-deal.html"
+},
+"2025Q4": {
+"text": "(source: ARR tracker quarter-end value (last point 21B end-2025, Media report), 2026-03-04, link)",
+"url": "https://www.theinformation.com/articles/openai-tops-25-billion-annualized-revenue-anthropic-narrows-gap?rc=9mzoog"
+},
+"2026Q1": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point March 2026 25B, Media report), 2026-03-05, link)",
+"url": "https://www.theinformation.com/articles/openai-tops-25-billion-annualized-revenue-anthropic-narrows-gap?rc=9mzoog"
+},
+"2026Q2": {
+"text": "(source: ARR tracker quarter-end value (interpolated; last point March 2026 25B, Media report), 2026-03-05, link)",
+"url": "https://www.theinformation.com/articles/openai-tops-25-billion-annualized-revenue-anthropic-narrows-gap?rc=9mzoog"
+},
+"2026Q3": {
+"text": "(source: ARR tracker quarter-end value (last point OpenAI September 50B, Media report), 2026-09-08, link)",
+"url": "https://www.ft.com/content/b66a9858-f8fb-46cb-b506-44bfe26fca2a?syn-25a6b1a6=1"
+}
+}
+},
+{
+"key": "oai_rev3",
+"label": "OpenAI revenue - 3rd-party est. (avg ARR in quarter / 4)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": 0.7675000000000001,
+"2024Q3": 0.9586250000000001,
+"2024Q4": 1.21425,
+"2025Q1": 1.649875,
+"2025Q2": 2.309875,
+"2025Q3": 3.26175,
+"2025Q4": 4.58925,
+"2026Q1": 5.931625,
+"2026Q2": 6.9325,
+"2026Q3": 9.925875
+},
+"sources": {}
+},
+{
+"key": "oai_use",
+"label": "OpenAI revenue used (reported, else est.)",
+"fmt": "bn",
+"kind": "coalesce",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": 0.7675000000000001,
+"2024Q3": 0.9586250000000001,
+"2024Q4": 1.21425,
+"2025Q1": 1.649875,
+"2025Q2": 2.309875,
+"2025Q3": 3.26175,
+"2025Q4": 4.58925,
+"2026Q1": 5.7,
+"2026Q2": 6.7,
+"2026Q3": 9.925875
+},
+"sources": {}
+},
+{
+"key": "gem_tpm",
+"label": "Gemini direct-API tokens per minute (bn), Alphabet calls",
+"fmt": "num",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": 7.0,
+"2025Q4": 10.0,
+"2026Q1": 16.0,
+"2026Q2": 22.0,
+"2026Q3": 32.0
+},
+"sources": {
+"2025Q3": {
+"text": "(source: Alphabet Q3 2025 earnings call transcript, 2025-10-29, link, P.2) - Our first party models, like Gemini, now process seven billion tokens per minute, via direct API use by our customers.",
+"url": "https://s206.q4cdn.com/479360582/files/doc_events/2025/Oct/29/2025_Q3_Earnings_Transcript.pdf"
+},
+"2025Q4": {
+"text": "(source: Alphabet Q4 2025 earnings call transcript, 2026-02-04, link, P.3) - Our first-party models, like Gemini, now process over 10 billion tokens per minute via direct API use by our customers, up from 7 billion last quarter.",
+"url": "https://s206.q4cdn.com/479360582/files/doc_events/2026/Feb/04/2025_Q4_Earnings_Transcript.pdf"
+},
+"2026Q1": {
+"text": "(source: Alphabet Q1 2026 earnings call transcript, 2026-04-29, link, P.2) - Our first party models now process more than 16 billion tokens per minute via direct API use by our customers, up from 10 billion last quarter.",
+"url": "https://s206.q4cdn.com/479360582/files/doc_events/2026/Apr/29/2026_Q1_Earnings_Transcript.pdf"
+},
+"2026Q2": {
+"text": "(source: Alphabet Q2 2026 earnings call transcript, 2026-07-22, link, P.2) - Our model APIs are now processing approximately 22 billion tokens per minute.",
+"url": "https://s206.q4cdn.com/479360582/files/doc_events/2026/Jul/22/2026_Q2_Earnings_Transcript.pdf"
+},
+"2026Q3": {
+"text": "(source: Alphabet Q3 2026 earnings call transcript, 2026-10-28, link, P.2) - Our first-party model APIs are now processing nearly 32 billion tokens per minute, 40% more than last quarter",
+"url": "https://s206.q4cdn.com/479360582/files/doc_events/2026/Oct/28/2026_Q3_Earnings_Transcript.pdf"
+}
+}
+},
+{
+"key": "gem_price",
+"label": "Gemini API blended price, $ per M tokens (assumption)",
+"fmt": "usd",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": 0.4,
+"2025Q4": 0.4,
+"2026Q1": 0.4,
+"2026Q2": 0.4,
+"2026Q3": 0.4
+},
+"sources": {
+"2025Q3": {
+"text": "(source: Gemini Developer API pricing (assumption $0.40 blended), 2026-11-05, link) - assumption: Flash-tier-heavy input mix with caching; Flash $0.30-0.50 in / $2.50-3 out, Flash-Lite $0.10 in, Pro $2 in",
+"url": "https://ai.google.dev/gemini-api/docs/pricing"
+},
+"2025Q4": {
+"text": "(source: Gemini Developer API pricing (assumption $0.40 blended), 2026-11-05, link) - assumption: Flash-tier-heavy input mix with caching; Flash $0.30-0.50 in / $2.50-3 out, Flash-Lite $0.10 in, Pro $2 in",
+"url": "https://ai.google.dev/gemini-api/docs/pricing"
+},
+"2026Q1": {
+"text": "(source: Gemini Developer API pricing (assumption $0.40 blended), 2026-11-05, link) - assumption: Flash-tier-heavy input mix with caching; Flash $0.30-0.50 in / $2.50-3 out, Flash-Lite $0.10 in, Pro $2 in",
+"url": "https://ai.google.dev/gemini-api/docs/pricing"
+},
+"2026Q2": {
+"text": "(source: Gemini Developer API pricing (assumption $0.40 blended), 2026-11-05, link) - assumption: Flash-tier-heavy input mix with caching; Flash $0.30-0.50 in / $2.50-3 out, Flash-Lite $0.10 in, Pro $2 in",
+"url": "https://ai.google.dev/gemini-api/docs/pricing"
+},
+"2026Q3": {
+"text": "(source: Gemini Developer API pricing (assumption $0.40 blended), 2026-11-05, link) - assumption: Flash-tier-heavy input mix with caching; Flash $0.30-0.50 in / $2.50-3 out, Flash-Lite $0.10 in, Pro $2 in",
+"url": "https://ai.google.dev/gemini-api/docs/pricing"
+}
+}
+},
+{
+"key": "gem_rev",
+"label": "Gemini 1P model API spend (est. = avg tokens/min of quarter x minutes x price)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": 0.44676,
+"2026Q1": 0.68328,
+"2026Q2": 0.99864,
+"2026Q3": 1.41912
+},
+"sources": {}
+},
+{
+"key": "or_open_wk",
+"label": "OpenRouter open-weights spend, avg $M per week",
+"fmt": "m",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": null,
+"2026Q1": null,
+"2026Q2": null,
+"2026Q3": 6.65
+},
+"sources": {
+"2026Q3": {
+"text": "(source: OpenRouter rankings (models, trailing 7d) via Wayback/live snapshots, open-weights spend at median provider price, 80% cache - mean of 13 weekly snapshots 2026-07-04..2026-09-26, 2026-09-26, link)",
+"url": "https://openrouter.ai/rankings"
+}
+}
+},
+{
+"key": "or_open_q",
+"label": "OpenRouter open-weights spend (x13 weeks)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": null,
+"2026Q1": null,
+"2026Q2": null,
+"2026Q3": 0.08645
+},
+"sources": {}
+},
+{
+"key": "fw_arr",
+"label": "Fireworks AI ARR (open-model inference; log-interpolated between disclosures)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": 0.28,
+"2026Q1": 0.4279949922260319,
+"2026Q2": 0.654213262037718,
+"2026Q3": 1.0
+},
+"sources": {
+"2025Q4": {
+"text": "(source: Fireworks blog: Fireworks Raises $250M Series C, 2025-10-28, link) - annualized revenue has surpassed $280 million",
+"url": "https://fireworks.ai/blog/series-c"
+},
+"2026Q3": {
+"text": "(source: Fireworks press release: Fireworks Raises a $1.5 Billion Series D, 2026-07-16, link) - Fireworks surpasses $1 billion in annualized revenue run rate, up 5x year-over-year.",
+"url": "https://fireworks.ai/news/fireworks-raises-1-5-billion-series-d"
+}
+}
+},
+{
+"key": "fw_rev",
+"label": "Fireworks AI revenue (ARR / 4)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": 0.07,
+"2026Q1": 0.10699874805650797,
+"2026Q2": 0.1635533155094295,
+"2026Q3": 0.25
+},
+"sources": {}
+},
+{
+"key": "tg_arr",
+"label": "Together AI ARR (open-model inference)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": null,
+"2026Q1": 1.0,
+"2026Q2": 1.0,
+"2026Q3": 1.0
+},
+"sources": {
+"2026Q1": {
+"text": "(source: Ben's Bites summary of The Information report (raise talks at $7.5B pre-money), 2026-03, link) - its annualized revenue has hit ~$1B, up 3x from mid-2025",
+"url": "https://news.bensbites.co/posts/59937-sources-together-ai-is-in-talks-to-raise-1b-at-a-75b-pre-money-valuation-up-from-33b-in-2025-its-annualized-revenue-has-hit-1b-up-3x-from-mid-2025"
+}
+}
+},
+{
+"key": "tg_rev",
+"label": "Together AI revenue (ARR / 4)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": null,
+"2026Q1": 0.25,
+"2026Q2": 0.25,
+"2026Q3": 0.25
+},
+"sources": {}
+},
+{
+"key": "di_arr",
+"label": "DeepInfra ARR (open-model inference)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": null,
+"2026Q1": null,
+"2026Q2": null,
+"2026Q3": 0.105
+},
+"sources": {
+"2026Q3": {
+"text": "(source: Pulse 2.0: DeepInfra Surpasses $100 Million ARR And 22 Trillion Tokens Per Week, 2026-09-29, link) - annualized revenue run rate of more than $105 million",
+"url": "https://pulse2.com/deepinfra-surpasses-100-million-arr-and-22-trillion-tokens-per-week/"
+}
+}
+},
+{
+"key": "di_rev",
+"label": "DeepInfra revenue (ARR / 4)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": null,
+"2026Q1": null,
+"2026Q2": null,
+"2026Q3": 0.02625
+},
+"sources": {}
+},
+{
+"key": "oc_arr",
+"label": "OpenCode ARR (Zen / Go model gateway, gross)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": null,
+"2026Q1": null,
+"2026Q2": null,
+"2026Q3": 0.04
+},
+"sources": {
+"2026Q3": {
+"text": "(source: Y Combinator X post (Lightcone episode) via Digg, 2026-07-24, link) - 4.6 million weekly active users, 13 million monthly actives, and roughly $40M in annualized revenue.",
+"url": "https://digg.com/ai/kjw6l90s"
+}
+}
+},
+{
+"key": "oc_rev",
+"label": "OpenCode revenue (ARR / 4)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": null,
+"2026Q1": null,
+"2026Q2": null,
+"2026Q3": 0.01
+},
+"sources": {}
+},
+{
+"key": "open_rev",
+"label": "Open-source model spending (platforms with data)",
+"fmt": "bn",
+"kind": "sumopt",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": 0.07,
+"2026Q1": 0.356998748056508,
+"2026Q2": 0.41355331550942953,
+"2026Q3": 0.6227
+},
+"sources": {}
+},
+{
+"key": "spend",
+"label": "END-USER SPENDING (labs + Gemini API + open models)",
+"fmt": "bn",
+"kind": "sumopt",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": 0.823875,
+"2024Q3": 1.0626250000000002,
+"2024Q4": 1.4067500000000002,
+"2025Q1": 2.025875,
+"2025Q2": 3.096875,
+"2025Q3": 4.64375,
+"2025Q4": 7.14601,
+"2026Q1": 11.471278748056509,
+"2026Q2": 19.667193315509426,
+"2026Q3": 28.923695000000002
+},
+"sources": {}
+},
+{
+"key": "spend_ann",
+"label": "End-user spending, annualised (x4)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": 3.2955,
+"2024Q3": 4.250500000000001,
+"2024Q4": 5.627000000000001,
+"2025Q1": 8.1035,
+"2025Q2": 12.3875,
+"2025Q3": 18.575,
+"2025Q4": 28.58404,
+"2026Q1": 45.885114992226036,
+"2026Q2": 78.6687732620377,
+"2026Q3": 115.69478000000001
+},
+"sources": {}
+},
+{
+"key": "cbrs_rev",
+"label": "Memo: Cerebras cloud & other services revenue (incl. OpenAI wholesale from Q1'26; not in total)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": 0.0298,
+"2025Q2": 0.033,
+"2025Q3": null,
+"2025Q4": null,
+"2026Q1": 0.0828,
+"2026Q2": 0.126,
+"2026Q3": null
+},
+"sources": {
+"2025Q1": {
+"text": "(source: Cerebras Systems Form 10-Q Q2 2026, 2026-08-12, link) - Cloud and other services 125,991 33,027 208,804 62,865",
+"url": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026056357/cbrs-20260630.htm"
+},
+"2025Q2": {
+"text": "(source: Cerebras Systems Form 10-Q Q2 2026, 2026-08-12, link) - Cloud and other services 125,991 33,027 208,804 62,865",
+"url": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026056357/cbrs-20260630.htm"
+},
+"2026Q1": {
+"text": "(source: Cerebras Systems Form 10-Q Q2 2026, 2026-08-12, link) - Cloud and other services 125,991 33,027 208,804 62,865",
+"url": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026056357/cbrs-20260630.htm"
+},
+"2026Q2": {
+"text": "(source: Cerebras Systems Form 10-Q Q2 2026, 2026-08-12, link) - Cloud and other services 125,991 33,027 208,804 62,865",
+"url": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026056357/cbrs-20260630.htm"
+}
+}
+},
+{
+"key": "ramp_spend",
+"label": "Memo: Ramp AI Index token spend, sample of Ramp customers ($M, not in total)",
+"fmt": "m",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": 9.57,
+"2025Q2": 18.15,
+"2025Q3": 33.15,
+"2025Q4": 64.68,
+"2026Q1": 123.94,
+"2026Q2": 225.72,
+"2026Q3": 381.07
+},
+"sources": {
+"2025Q1": {
+"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 12 weeks, 2025-03-28, link)",
+"url": "https://ramp.com/data/ai-index"
+},
+"2025Q2": {
+"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2025-06-27, link)",
+"url": "https://ramp.com/data/ai-index"
+},
+"2025Q3": {
+"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2025-09-26, link)",
+"url": "https://ramp.com/data/ai-index"
+},
+"2025Q4": {
+"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2025-12-26, link)",
+"url": "https://ramp.com/data/ai-index"
+},
+"2026Q1": {
+"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2026-03-27, link)",
+"url": "https://ramp.com/data/ai-index"
+},
+"2026Q2": {
+"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2026-06-26, link)",
+"url": "https://ramp.com/data/ai-index"
+},
+"2026Q3": {
+"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2026-09-25, link)",
+"url": "https://ramp.com/data/ai-index"
+}
+}
+},
+{
+"section": "C. COVERAGE RATIOS (arrows on the whiteboard: all should rise)"
+},
+{
+"key": "r_rpo_capex",
+"label": "Net RPO / capex incl. leases ex Meta (TTM)",
+"fmt": "x",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": 2.8954744972915485,
+"2025Q1": 2.8399419841172393,
+"2025Q2": 2.7728530105062035,
+"2025Q3": 2.72168718308857,
+"2025Q4": 2.60310838996165,
+"2026Q1": 2.6328043149276317,
+"2026Q2": 2.6866680194405426,
+"2026Q3": 2.433061359134319
+},
+"sources": {}
+},
+{
+"key": "r_spend_capex",
+"label": "End-user spending / capex incl. leases ex Meta (quarter)",
+"fmt": "pct",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": 0.015688076014928783,
+"2024Q3": 0.01847947063631463,
+"2024Q4": 0.020436848069268095,
+"2025Q1": 0.029514065937267818,
+"2025Q2": 0.035067828469839545,
+"2025Q3": 0.047652153389908775,
+"2025Q4": 0.06098735192708156,
+"2026Q1": 0.08486368393138059,
+"2026Q2": 0.12463130178456319,
+"2026Q3": 0.14093376179779663
+},
+"sources": {}
+},
+{
+"key": "r_rpo_spend",
+"label": "Net RPO / annualised end-user spending",
+"fmt": "x",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": 114.18162431135595,
+"2025Q1": 86.73642270834974,
+"2025Q2": 63.41221041318199,
+"2025Q3": 47.36204576043069,
+"2025Q4": 33.83881354770004,
+"2026Q1": 25.1377816138288,
+"2026Q2": 17.335340865904787,
+"2026Q3": 12.941379031966694
+},
+"sources": {}
+},
+{
+"key": "r_rpo_gross_capex",
+"label": "Memo: gross RPO / capex incl. leases ex Meta (TTM)",
+"fmt": "x",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": 3.9368364144228023,
+"2024Q1": 3.798129812981298,
+"2024Q2": 3.6285656339103562,
+"2024Q3": 3.2163055568610863,
+"2024Q4": 3.026165174990311,
+"2025Q1": 2.9600717593153765,
+"2025Q2": 2.880450705816322,
+"2025Q3": 3.746477043160282,
+"2025Q4": 4.416604992262666,
+"2026Q1": 4.6043546439568415,
+"2026Q2": 4.605013012239977,
+"2026Q3": 4.0506876272593875
+},
+"sources": {}
+},
+{
+"section": "Growth y/y: test Net RPO growth > end-user spending growth > capex growth"
+},
+{
+"key": "g_rpo",
+"label": "Net RPO, y/y",
+"fmt": "pct",
+"kind": "yoy",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": 0.5054474708171204,
+"2026Q1": 0.64106064444255,
+"2026Q2": 0.7361138594424463,
+"2026Q3": 0.7019039499857911
+},
+"sources": {}
+},
+{
+"key": "g_spend",
+"label": "End-user spending, y/y",
+"fmt": "pct",
+"kind": "yoy",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": 2.7589136701562733,
+"2025Q3": 3.3700741089283603,
+"2025Q4": 4.079800959658788,
+"2026Q1": 4.662382302983406,
+"2026Q2": 5.350657780991944,
+"2026Q3": 5.228521130551818
+},
+"sources": {}
+},
+{
+"key": "g_capex",
+"label": "Capex incl. leases ex Meta, y/y",
+"fmt": "pct",
+"kind": "yoy",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": 0.39833674430692234,
+"2024Q2": 0.7324008708847398,
+"2024Q3": 0.7087543088077974,
+"2024Q4": 0.7911993546540377,
+"2025Q1": 0.5946335230572657,
+"2025Q2": 0.6816017975474138,
+"2025Q3": 0.6947115802653774,
+"2025Q4": 0.7022401720080191,
+"2026Q1": 0.9692749231508868,
+"2026Q2": 0.7869008390800694,
+"2026Q3": 1.1059712060420108
+},
+"sources": {}
+},
+{
+"key": "g_order",
+"label": "Net RPO g > spending g > capex g ?",
+"fmt": "bool",
+"kind": "check",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": false,
+"2026Q1": false,
+"2026Q2": false,
+"2026Q3": false
+},
+"sources": {}
+}
+],
+"workbook": "20261105_AI capex coverage tracker.xlsx"
+}

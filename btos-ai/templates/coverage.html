@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Capex Coverage</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}?v={{ ver }}">
+<script>
+  try { var t = localStorage.getItem('aam-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  window.COV_setTheme = function (t) { document.documentElement.setAttribute('data-theme', t); };
+</script>
+<style>
+  body.embed header.top { display: none; }
+  body.embed main { padding-top: 4px; }
+  .tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 16px; }
+  @media (max-width: 900px) { .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .tile { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 12px 14px; min-width: 0; }
+  .tile .k { font-size: 12px; color: var(--ink-2); }
+  .tile .v { font-size: 26px; font-weight: 600; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+  .tile .d { font-size: 12px; color: var(--muted); }
+  .tile .d b.up { color: var(--good); } .tile .d b.dn { color: var(--critical); }
+  .tbl-wrap { overflow-x: auto; }
+  table.cov { border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; width: 100%; }
+  table.cov th, table.cov td { padding: 3px 6px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--grid); }
+  table.cov th:first-child, table.cov td:first-child { text-align: left; position: sticky; left: 0; background: var(--surface); }
+  table.cov tr.sec td { font-weight: 600; padding-top: 12px; color: var(--ink); border-bottom: 1px solid var(--axis); }
+  table.cov tr.b td { font-weight: 600; }
+  table.cov td.in a { color: var(--s1); text-decoration: none; }
+  table.cov td.in a:hover { text-decoration: underline; }
+  table.cov td.lab { color: var(--ink-2); }
+  .ok { color: var(--good); font-weight: 600; } .no { color: var(--critical); font-weight: 600; }
+  .note { font-size: 12.5px; color: var(--ink-2); }
+</style>
+</head>
+<body class="{{ 'embed' if embed else '' }} {{ 'hosted' if hosted else '' }}">
+<header class="top"><div class="wrap"><div class="title-row">
+  <div><h1>AI Capex Coverage</h1>
+  <p class="sub">Is hyperscaler capex covered by contracted demand (net RPO) and by what end users pay for AI models? Part of the <a href="/">AI Adoption Monitor</a>.</p></div>
+  <div class="top-actions"><span id="asof" class="muted"></span><button class="btn small" id="themeBtn" type="button">Theme</button></div>
+</div></div></header>
+<main class="wrap">
+  <div class="tiles" id="tiles"></div>
+
+  <div class="grid2">
+    <div class="card"><div class="card-head"><div><h2>Net RPO / capex</h2>
+      <p class="muted small">Non-lab backlog ÷ trailing-4Q capex incl. finance leases, ex Meta. Gross RPO shown dashed.</p></div></div>
+      <div class="legend" id="lg-r1"></div><div class="chart" id="c-r1"></div></div>
+    <div class="card"><div class="card-head"><div><h2>End-user spending / capex</h2>
+      <p class="muted small">Quarterly AI model spending ÷ same-quarter capex incl. leases, ex Meta.</p></div></div>
+      <div class="chart" id="c-r2"></div></div>
+  </div>
+  <div class="grid2">
+    <div class="card"><div class="card-head"><div><h2>Net RPO / end-user spending</h2>
+      <p class="muted small">Years of current AI spending already contracted as non-lab backlog.</p></div></div>
+      <div class="chart" id="c-r3"></div></div>
+    <div class="card"><div class="card-head"><div><h2>Growth y/y: net RPO &gt; spending &gt; capex?</h2>
+      <p class="muted small">The whiteboard test. ✓ / ✗ under each quarter where all three exist.</p></div></div>
+      <div class="legend" id="lg-g"></div><div class="chart" id="c-g"></div></div>
+  </div>
+  <div class="grid2">
+    <div class="card"><div class="card-head"><div><h2>RPO: lab vs non-lab vs capex</h2>
+      <p class="muted small">MSFT + GOOGL + AMZN + ORCL backlog at quarter end ($bn), with trailing-4Q capex incl. leases.</p></div></div>
+      <div class="legend" id="lg-rpo"></div><div class="chart" id="c-rpo"></div></div>
+    <div class="card"><div class="card-head"><div><h2>End-user spending by source vs capex</h2>
+      <p class="muted small">Quarterly $bn. Lab revenue official where filed; Gemini = API tokens × price; open models = OpenRouter + inference platforms.</p></div></div>
+      <div class="legend" id="lg-sp"></div><div class="chart" id="c-sp"></div></div>
+  </div>
+  <div class="grid2">
+    <div class="card"><div class="card-head"><div><h2>Depreciation and server D&amp;A</h2>
+      <p class="muted small">All five, $bn per quarter. Server share from 10-K PP&amp;E notes (Meta disclosed, others estimated).</p></div></div>
+      <div class="legend" id="lg-da"></div><div class="chart" id="c-da"></div></div>
+    <div class="card"><div class="card-head"><div><h2>Capex by company</h2>
+      <p class="muted small">Cash purchases of PP&amp;E, $bn per quarter (Oracle: fiscal quarter in the calendar quarter it ends).</p></div></div>
+      <div class="legend" id="lg-cx"></div><div class="chart" id="c-cx"></div></div>
+  </div>
+
+  <div class="card"><div class="card-head"><div><h2>The tracker table</h2>
+    <p class="muted small">Same table as the Excel workbook. Underlined numbers are sourced inputs; hover for the citation, click to open the source. Others are calculated.</p></div>
+    <a class="btn small" href="workbook" id="wb">Download workbook</a></div>
+    <div class="tbl-wrap"><table class="cov" id="tbl"></table></div></div>
+
+  <div class="card note" id="notes">
+    <h2>Method</h2>
+    <p><b>Hyperscaler</b> (SEC filings, refreshed when a new 10-Q / 10-K lands): capex = purchases of PP&amp;E; finance leases = ROU assets obtained for finance-lease liabilities; D&amp;A = depreciation of PP&amp;E; CIP = assets not yet in service (Microsoft discloses none); RPO = remaining performance obligations (Meta reports none, so ratios use the four RPO reporters, "ex Meta").</p>
+    <p><b>Lab RPO</b> = the part of backlog owed by OpenAI and Anthropic: company disclosures where given (e.g. Microsoft's share of commercial RPO from OpenAI), else signed contract values and Anthropic's S-1/A commitment table. <b>Net RPO</b> = RPO − lab RPO.</p>
+    <p><b>End-user spending</b> = Anthropic revenue (S-1/A recognised, else ARR-based) + OpenAI revenue (reported, else ARR-based) + Gemini first-party API (tokens/min × blended price) + open-source model spending (OpenRouter open-weights spend, inference-platform ARR). Vercel AI Gateway publishes shares only; Ramp is a customer sample (memo line).</p>
+  </div>
+</main>
+<div class="tip" id="tip" hidden></div>
+<script>
+const $ = s => document.querySelector(s);
+const NS = "http://www.w3.org/2000/svg";
+const BASE = location.pathname.replace(/\/coverage\/?$/, "");
+let D = null;
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+function el(tag, attrs, parent) { const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; }
+const row = k => D.rows.find(r => r.key === k);
+const ser = k => D.quarters.map(q => { const v = row(k).values[q]; return v === null || v === undefined ? null : v; });
+const fmt = {bn: v => v.toLocaleString(undefined, {maximumFractionDigits: v < 10 ? 2 : 1}), pct: v => (v * 100).toFixed(1) + "%", x: v => v.toFixed(2) + "x",
+             num: v => v.toFixed(1), usd: v => "$" + v.toFixed(2), m: v => v.toLocaleString(undefined, {maximumFractionDigits: 1}), bool: v => v ? "✓" : "✗"};
+const tip = $("#tip");
+function showTip(e, html) { tip.innerHTML = html; tip.hidden = false; const w = tip.offsetWidth; tip.style.left = Math.min(e.clientX + 14, innerWidth - w - 8) + "px"; tip.style.top = (e.clientY + 14) + "px"; }
+function hideTip() { tip.hidden = true; }
+function legend(id, items) { $(id).innerHTML = items.map(([n, c, dash]) => `<span><i class="${dash ? "dash" : ""}" style="border-color:${c}"></i>${n}</span>`).join(""); }
+function legendBox(id, items) { $(id).innerHTML = items.map(([n, c]) => `<span><i class="dot" style="background:${c};border-radius:3px"></i>${n}</span>`).join(""); }
+
+// one-axis chart: stacked bars (optional) + lines; hover shows every series for the quarter
+function chart(host, {bars = [], lines = [], yFmt, height = 260, zero = true, marks = null}) {
+  host.innerHTML = "";
+  const W = Math.max(320, host.clientWidth || 560), H = height, m = {l: 52, r: 64, t: 10, b: marks ? 40 : 26};
+  const Q = D.quarters;
+  const all = [];
+  Q.forEach((q, i) => { let s = 0; bars.forEach(b => { if (b.v[i] != null) s += b.v[i]; }); if (bars.length) all.push(s); lines.forEach(l => { if (l.v[i] != null) all.push(l.v[i]); }); });
+  let lo = zero ? Math.min(0, ...all) : Math.min(...all), hi = Math.max(...all);
+  if (!isFinite(hi)) { host.innerHTML = '<p class="muted small">No data yet.</p>'; return; }
+  const raw = (hi - lo) / 5 || 1, mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const step = [1, 2, 2.5, 5, 10].map(f => f * mag).find(s => s >= raw);
+  lo = Math.floor(lo / step) * step; hi = Math.ceil(hi / step) * step; if (hi === lo) hi = lo + step;
+  const svg = el("svg", {viewBox: `0 0 ${W} ${H}`, role: "img"}, host);
+  const x = i => m.l + (i + 0.5) * (W - m.l - m.r) / Q.length, bw = Math.max(4, (W - m.l - m.r) / Q.length * 0.62);
+  const y = v => m.t + (hi - v) / (hi - lo) * (H - m.t - m.b);
+  for (let v = lo; v <= hi + step / 2; v += step) { el("line", {x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), stroke: css("--grid")}, svg);
+    el("text", {x: m.l - 6, y: y(v) + 4, "text-anchor": "end"}, svg).textContent = yFmt(v); }
+  if (lo < 0) el("line", {x1: m.l, x2: W - m.r, y1: y(0), y2: y(0), stroke: css("--axis")}, svg);
+  Q.forEach((q, i) => { if (i % 2 === (Q.length - 1) % 2) el("text", {x: x(i), y: H - m.b + 15, "text-anchor": "middle"}, svg).textContent = q.replace("20", "'").replace("Q", " Q"); });
+  Q.forEach((q, i) => { let base = 0; bars.forEach(b => { const v = b.v[i]; if (v == null || v <= 0) return;
+    const y0 = y(base), y1 = y(base + v); el("rect", {x: x(i) - bw / 2, y: y1, width: bw, height: Math.max(0.5, y0 - y1 - 2), rx: 2, fill: b.c}, svg); base += v; }); });
+  lines.forEach(l => { let d = "", pen = false; l.v.forEach((v, i) => { if (v == null) { pen = false; return; } d += (pen ? "L" : "M") + x(i) + "," + y(v); pen = true; });
+    el("path", {d, fill: "none", stroke: l.c, "stroke-width": 2, "stroke-dasharray": l.dash ? "5 4" : "none", "stroke-linejoin": "round"}, svg);
+    l.v.forEach((v, i) => { if (v != null && (i === 0 || l.v[i - 1] == null) && (i === l.v.length - 1 || l.v[i + 1] == null)) el("circle", {cx: x(i), cy: y(v), r: 3.5, fill: l.c}, svg); });
+    const li = l.v.map((v, i) => v == null ? -1 : i).filter(i => i >= 0).pop();
+    if (li != null && li >= 0 && l.name) { const t = el("text", {x: x(li) + 6, y: y(l.v[li]) + 4, class: "lab"}, svg); t.textContent = yFmt(l.v[li]); } });
+  if (marks) Q.forEach((q, i) => { if (marks[i] == null) return; const t = el("text", {x: x(i), y: H - 4, "text-anchor": "middle", class: marks[i] ? "lab-strong" : "lab"}, svg);
+    t.textContent = marks[i] ? "✓" : "✗"; t.style.fill = marks[i] ? css("--good") : css("--critical"); });
+  const cross = el("line", {y1: m.t, y2: H - m.b, stroke: css("--axis"), visibility: "hidden"}, svg);
+  const hit = el("rect", {x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b, fill: "transparent"}, svg);
+  hit.addEventListener("mousemove", e => { const r = svg.getBoundingClientRect(), px = (e.clientX - r.left) * W / r.width;
+    const i = Math.max(0, Math.min(Q.length - 1, Math.floor((px - m.l) / ((W - m.l - m.r) / Q.length))));
+    cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i)); cross.setAttribute("visibility", "visible");
+    const rows = [...lines, ...bars.slice().reverse()].filter(s => s.v[i] != null).map(s => `<div class="row"><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${s.c}"></i>${s.name}<b style="margin-left:auto">${yFmt(s.v[i])}</b></div>`);
+    showTip(e, `<div class="tt">${Q[i]}</div>${rows.join("") || "no data"}`); });
+  hit.addEventListener("mouseleave", () => { cross.setAttribute("visibility", "hidden"); hideTip(); });
+}
+
+function draw() {
+  const C = ["--s1", "--s2", "--s3", "--s4", "--s5"].map(css), N = css("--neutral-bar");
+  const last = k => { const s = ser(k); for (let i = s.length - 1; i >= 0; i--) if (s[i] != null) return [i, s[i]]; return [-1, null]; };
+  const tile = (k, label, f, sub) => { const [i, v] = last(k); const s = ser(k); const p = i >= 4 ? s[i - 4] : null;
+    const ch = v != null && p != null ? `<b class="${v >= p ? "up" : "dn"}">${v >= p ? "▲" : "▼"} ${f(p)}</b> a year earlier` : "";
+    return `<div class="tile"><div class="k">${label}</div><div class="v">${v == null ? "–" : f(v)}</div><div class="d">${i >= 0 ? D.quarters[i] : ""} · ${ch || sub}</div></div>`; };
+  const [gi, gv] = last("g_order");
+  $("#tiles").innerHTML = tile("r_rpo_capex", "Net RPO / capex (TTM)", fmt.x, "") + tile("r_spend_capex", "End-user spending / capex", fmt.pct, "")
+    + tile("r_rpo_spend", "Net RPO / annual spending", fmt.x, "")
+    + `<div class="tile"><div class="k">RPO g &gt; spending g &gt; capex g</div><div class="v ${gv ? "ok" : "no"}">${gv == null ? "–" : gv ? "✓ Yes" : "✗ No"}</div><div class="d">${gi >= 0 ? D.quarters[gi] : ""} · y/y: RPO ${last("g_rpo")[1] != null ? fmt.pct(last("g_rpo")[1]) : "–"}, spend ${last("g_spend")[1] != null ? fmt.pct(last("g_spend")[1]) : "–"}, capex ${last("g_capex")[1] != null ? fmt.pct(last("g_capex")[1]) : "–"}</div></div>`;
+  legend("#lg-r1", [["Net RPO / capex", C[0]], ["Gross RPO / capex", C[1], true]]);
+  chart($("#c-r1"), {lines: [{name: "Net RPO / capex", v: ser("r_rpo_capex"), c: C[0]}, {name: "Gross RPO / capex", v: ser("r_rpo_gross_capex"), c: C[1], dash: true}], yFmt: fmt.x});
+  chart($("#c-r2"), {lines: [{name: "Spending / capex", v: ser("r_spend_capex"), c: C[0]}], yFmt: v => (v * 100).toFixed(0) + "%"});
+  chart($("#c-r3"), {lines: [{name: "Net RPO / spending", v: ser("r_rpo_spend"), c: C[0]}], yFmt: fmt.x});
+  legend("#lg-g", [["Net RPO", C[0]], ["End-user spending", C[1]], ["Capex incl. leases ex Meta", C[2]]]);
+  chart($("#c-g"), {lines: [{name: "Net RPO", v: ser("g_rpo"), c: C[0]}, {name: "End-user spending", v: ser("g_spend"), c: C[1]}, {name: "Capex", v: ser("g_capex"), c: C[2]}],
+    yFmt: v => (v * 100).toFixed(0) + "%", marks: ser("g_order")});
+  legendBox("#lg-rpo", [["Net (non-lab) RPO", C[0]], ["Lab RPO (OpenAI + Anthropic)", C[1]]]); $("#lg-rpo").innerHTML += `<span><i style="border-color:${C[2]}"></i>Capex TTM</span><span><i class="dash" style="border-color:${N}"></i>Total RPO (where lab split missing)</span>`;
+  chart($("#c-rpo"), {bars: [{name: "Net RPO", v: ser("netrpo_all"), c: C[0]}, {name: "Lab RPO", v: ser("labrpo_all"), c: C[1]}],
+    lines: [{name: "Capex TTM", v: ser("capexl_exmeta_ttm"), c: C[2]}, {name: "Total RPO", v: ser("rpo_all").map((v, i) => ser("labrpo_all")[i] == null ? v : null), c: N, dash: true}], yFmt: v => "$" + Math.round(v)});
+  legendBox("#lg-sp", [["Anthropic", C[3]], ["OpenAI", C[0]], ["Gemini API (est.)", C[1]], ["Open models", C[2]]]); $("#lg-sp").innerHTML += `<span><i style="border-color:${N}"></i>Capex ex Meta (quarter)</span>`;
+  chart($("#c-sp"), {bars: [{name: "Anthropic", v: ser("anth_use"), c: C[3]}, {name: "OpenAI", v: ser("oai_use"), c: C[0]}, {name: "Gemini API", v: ser("gem_rev"), c: C[1]}, {name: "Open models", v: ser("open_rev"), c: C[2]}],
+    lines: [{name: "Capex incl. leases ex Meta", v: ser("capexl_exmeta"), c: N}], yFmt: v => "$" + v.toFixed(0)});
+  legend("#lg-da", [["Depreciation, all five", C[0]], ["Server D&A (est.)", C[1]], ["Capex, all five", N, true]]);
+  chart($("#c-da"), {lines: [{name: "Depreciation", v: ser("dep_all"), c: C[0]}, {name: "Server D&A", v: ser("srvdep_all"), c: C[1]}, {name: "Capex", v: ser("capex_all"), c: N, dash: true}], yFmt: v => "$" + v.toFixed(0)});
+  const T = ["MSFT", "GOOGL", "AMZN", "META", "ORCL"], TN = {MSFT: "Microsoft", GOOGL: "Alphabet", AMZN: "Amazon", META: "Meta", ORCL: "Oracle"};
+  legendBox("#lg-cx", T.map((t, i) => [TN[t], C[i]]));
+  chart($("#c-cx"), {bars: T.map((t, i) => ({name: TN[t], v: ser("capex_" + t), c: C[i]})), yFmt: v => "$" + v.toFixed(0)});
+}
+
+function table() {
+  const Q = D.quarters;
+  let h = `<thead><tr><th>Metric</th>${Q.map(q => `<th>${q}</th>`).join("")}</tr></thead><tbody>`;
+  D.rows.forEach(r => {
+    if (r.section) { h += `<tr class="sec"><td colspan="${Q.length + 1}">${r.section}</td></tr>`; return; }
+    h += `<tr class="${r.bold ? "b" : ""}"><td class="lab">${r.label}</td>` + Q.map(q => { const v = r.values[q];
+      if (v === null || v === undefined) return "<td></td>";
+      const s = r.sources[q], t = fmt[r.fmt](v);
+      if (!s) return `<td>${r.fmt === "bool" ? `<span class="${v ? "ok" : "no"}">${t}</span>` : t}</td>`;
+      const tt = s.text.replace(/"/g, "&quot;");
+      return `<td class="in" data-tip="${tt}">${s.url ? `<a href="${s.url}" target="_blank" rel="noopener" style="text-decoration:underline dotted">${t}</a>` : `<span style="text-decoration:underline dotted">${t}</span>`}</td>`; }).join("") + "</tr>";
+  });
+  $("#tbl").innerHTML = h + "</tbody>";
+  $("#tbl").addEventListener("mousemove", e => { const td = e.target.closest("td.in"); if (td) showTip(e, td.dataset.tip); else hideTip(); });
+  $("#tbl").addEventListener("mouseleave", hideTip);
+}
+
+fetch(BASE + "/api/coverage").then(r => r.json()).then(j => {
+  D = j; $("#asof").textContent = "Built " + j.built.replace("T", " ").slice(0, 16);
+  draw(); table();
+  let t; addEventListener("resize", () => { clearTimeout(t); t = setTimeout(draw, 150); });
+});
+$("#themeBtn").addEventListener("click", () => {
+  const cur = document.documentElement.getAttribute("data-theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  const next = cur === "dark" ? "light" : "dark"; document.documentElement.setAttribute("data-theme", next);
+  try { localStorage.setItem("aam-theme", next); } catch (e) {} if (D) draw();
+});
+new MutationObserver(() => D && draw()).observe(document.documentElement, {attributes: true, attributeFilter: ["data-theme"]});
+</script>
+</body>
+</html>
