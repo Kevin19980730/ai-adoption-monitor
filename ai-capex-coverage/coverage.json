@@ -1,5 +1,5 @@
 {
-"built": "2026-11-05T18:29:04",
+"built": "2026-11-05T18:59:08",
 "quarters": [
 "2023Q1",
 "2023Q2",
@@ -852,6 +852,341 @@
 "2026Q1": 438.10699999999997,
 "2026Q2": 507.59900000000005,
 "2026Q3": 615.377
+},
+"sources": {}
+},
+{
+"section": "Neoclouds and SpaceX AI - capex (cash purchases of PP&E), $bn per quarter"
+},
+{
+"key": "capex_CRWV",
+"label": "CoreWeave",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": 1.7419,
+"2024Q2": 2.2472,
+"2024Q3": 1.2152,
+"2024Q4": 3.4977,
+"2025Q1": 1.407,
+"2025Q2": 2.453,
+"2025Q3": 2.3892,
+"2025Q4": 4.0598,
+"2026Q1": 7.695,
+"2026Q2": 6.422,
+"2026Q3": null
+},
+"sources": {
+"2024Q1": {
+"text": "(source: CoreWeave 10-Q (period to 2024-03-31), SEC XBRL, 2025-05-15, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000014/0001769628-25-000014-index.htm"
+},
+"2024Q2": {
+"text": "(source: CoreWeave 10-Q (period to 2024-06-30), SEC XBRL, 2025-08-13, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/0001769628-25-000041-index.htm"
+},
+"2024Q3": {
+"text": "(source: CoreWeave 10-Q (period to 2024-09-30), SEC XBRL, 2025-11-13, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/0001769628-25-000062-index.htm"
+},
+"2024Q4": {
+"text": "(source: CoreWeave 10-K (period to 2024-12-31), SEC XBRL, 2026-03-02, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/0001769628-26-000104-index.htm"
+},
+"2025Q1": {
+"text": "(source: CoreWeave 10-Q (period to 2025-03-31), SEC XBRL, 2026-05-08, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/0001769628-26-000222-index.htm"
+},
+"2025Q2": {
+"text": "(source: CoreWeave 10-Q (period to 2025-06-30), SEC XBRL, 2026-08-12, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm"
+},
+"2025Q3": {
+"text": "(source: CoreWeave 10-Q (period to 2025-09-30), SEC XBRL, 2025-11-13, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/0001769628-25-000062-index.htm"
+},
+"2025Q4": {
+"text": "(source: CoreWeave 10-K (period to 2025-12-31), SEC XBRL, 2026-03-02, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/0001769628-26-000104-index.htm"
+},
+"2026Q1": {
+"text": "(source: CoreWeave 10-Q (period to 2026-03-31), SEC XBRL, 2026-05-08, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/0001769628-26-000222-index.htm"
+},
+"2026Q2": {
+"text": "(source: CoreWeave 10-Q (period to 2026-06-30), SEC XBRL, 2026-08-12, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm"
+}
+}
+},
+{
+"key": "capex_NBIS",
+"label": "Nebius (6-K tables; 2024Q1-Q3 only as a 9-month total)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": 0.4175,
+"2025Q1": 0.5439,
+"2025Q2": 0.5106,
+"2025Q3": 0.9555,
+"2025Q4": 2.056,
+"2026Q1": 2.4729,
+"2026Q2": 5.6574,
+"2026Q3": null
+},
+"sources": {
+"2024Q4": {
+"text": "(source: Nebius 20-F, 2024Q4, link) - 20-F XBRL PaymentsToAcquirePropertyPlantAndEquipment",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=20-F&dateb=&owner=include&count=40"
+},
+"2025Q1": {
+"text": "(source: Nebius 6-K, 2025Q1, link) - 6-K exhibit: purchases of property and equipment and intangible assets",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
+},
+"2025Q2": {
+"text": "(source: Nebius 6-K, 2025Q2, link) - 6-K exhibit: purchases of property and equipment and intangible assets",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
+},
+"2025Q3": {
+"text": "(source: Nebius 6-K, 2025Q3, link) - 6-K exhibit: purchases of property and equipment and intangible assets",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
+},
+"2025Q4": {
+"text": "(source: Nebius 20-F, 2025Q4, link) - 20-F XBRL PaymentsToAcquirePropertyPlantAndEquipment",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=20-F&dateb=&owner=include&count=40"
+},
+"2026Q1": {
+"text": "(source: Nebius 6-K, 2026Q1, link) - 6-K exhibit: purchases of property and equipment and intangible assets",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
+},
+"2026Q2": {
+"text": "(source: Nebius 6-K, 2026Q2, link) - 6-K exhibit: purchases of property and equipment and intangible assets",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
+}
+}
+},
+{
+"key": "capex_IREN",
+"label": "IREN (excl. custom-tagged GPU prepayments)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": 0.1058,
+"2024Q4": 0.1391,
+"2025Q1": 0.1445,
+"2025Q2": 0.1841,
+"2025Q3": 0.1803,
+"2025Q4": 0.5397,
+"2026Q1": 0.9492,
+"2026Q2": 1.3288,
+"2026Q3": null
+},
+"sources": {
+"2024Q3": {
+"text": "(source: IREN 10-Q (period to 2024-09-30), SEC XBRL, 2025-11-06, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000081/0001878848-25-000081-index.htm"
+},
+"2024Q4": {
+"text": "(source: IREN 10-Q (period to 2024-12-31), SEC XBRL, 2026-02-05, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/0001878848-26-000015-index.htm"
+},
+"2025Q1": {
+"text": "(source: IREN 10-Q (period to 2025-03-31), SEC XBRL, 2026-05-08, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/0001878848-26-000026-index.htm"
+},
+"2025Q2": {
+"text": "(source: IREN 10-K (period to 2025-06-30), SEC XBRL, 2026-08-27, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/0001878848-26-000052-index.htm"
+},
+"2025Q3": {
+"text": "(source: IREN 10-Q (period to 2025-09-30), SEC XBRL, 2025-11-06, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000081/0001878848-25-000081-index.htm"
+},
+"2025Q4": {
+"text": "(source: IREN 10-Q (period to 2025-12-31), SEC XBRL, 2026-02-05, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/0001878848-26-000015-index.htm"
+},
+"2026Q1": {
+"text": "(source: IREN 10-Q (period to 2026-03-31), SEC XBRL, 2026-05-08, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/0001878848-26-000026-index.htm"
+},
+"2026Q2": {
+"text": "(source: IREN 10-K (period to 2026-06-30), SEC XBRL, 2026-08-27, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/0001878848-26-000052-index.htm"
+}
+}
+},
+{
+"key": "capex_SPCX",
+"label": "SpaceX AI (SI segment) (segment capex; never company-wide)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": 2.567,
+"2025Q2": 0.749,
+"2025Q3": 4.76,
+"2025Q4": 4.65,
+"2026Q1": 7.723,
+"2026Q2": 15.828,
+"2026Q3": 16.444
+},
+"sources": {
+"2025Q1": {
+"text": "(source: SpaceX AI (SI segment) 10-Q, 2025Q1, link) - SpaceX 424B4 (12 Jun 2026), segment capital expenditures table",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001181412&type=10-Q&dateb=&owner=include&count=40"
+},
+"2025Q2": {
+"text": "(source: SpaceX AI (SI segment) 10-Q, 2025Q2, link) - SEC XBRL SegmentExpenditureAdditionToLongLivedAssets, AI segment (10-Q/10-K)",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001181412&type=10-Q&dateb=&owner=include&count=40"
+},
+"2025Q3": {
+"text": "(source: SpaceX AI (SI segment) 10-Q, 2025Q3, link) - SEC XBRL SegmentExpenditureAdditionToLongLivedAssets, AI segment (10-Q/10-K)",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001181412&type=10-Q&dateb=&owner=include&count=40"
+},
+"2025Q4": {
+"text": "(source: SpaceX AI (SI segment) 10-Q, 2025Q4, link) - SpaceX 424B4 (12 Jun 2026), segment capital expenditures table",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001181412&type=10-Q&dateb=&owner=include&count=40"
+},
+"2026Q1": {
+"text": "(source: SpaceX AI (SI segment) 10-Q, 2026Q1, link) - SpaceX 424B4 (12 Jun 2026), segment capital expenditures table",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001181412&type=10-Q&dateb=&owner=include&count=40"
+},
+"2026Q2": {
+"text": "(source: SpaceX AI (SI segment) 10-Q, 2026Q2, link) - SEC XBRL SegmentExpenditureAdditionToLongLivedAssets, AI segment (10-Q/10-K)",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001181412&type=10-Q&dateb=&owner=include&count=40"
+},
+"2026Q3": {
+"text": "(source: SpaceX AI (SI segment) 10-Q, 2026Q3, link) - SEC XBRL SegmentExpenditureAdditionToLongLivedAssets, AI segment (10-Q/10-K)",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001181412&type=10-Q&dateb=&owner=include&count=40"
+}
+}
+},
+{
+"key": "capex_neo",
+"label": "Capex, neoclouds (CRWV+NBIS+IREN)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": 4.0543,
+"2025Q1": 2.0954,
+"2025Q2": 3.1477,
+"2025Q3": 3.5250000000000004,
+"2025Q4": 6.6555,
+"2026Q1": 11.117099999999999,
+"2026Q2": 13.408199999999999,
+"2026Q3": null
+},
+"sources": {}
+},
+{
+"key": "capex_rpo_rep",
+"label": "Capex, all RPO reporters (Big 4 incl. leases + neoclouds)",
+"fmt": "bn",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": 72.8883,
+"2025Q1": 70.73639999999999,
+"2025Q2": 91.4587,
+"2025Q3": 100.976,
+"2025Q4": 123.8275,
+"2026Q1": 146.2901,
+"2026Q2": 171.2112,
+"2026Q3": null
+},
+"sources": {}
+},
+{
+"key": "capex_rpo_rep_ttm",
+"label": "Capex, all RPO reporters, trailing 4 quarters",
+"fmt": "bn",
+"kind": "ttm",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": 336.0594,
+"2025Q4": 386.9986,
+"2026Q1": 462.55229999999995,
+"2026Q2": 542.3048,
+"2026Q3": null
+},
+"sources": {}
+},
+{
+"key": "capex_ai_all",
+"label": "Capex, AI clouds ex Meta (Big 4 incl. leases + neoclouds + SpaceX AI)",
+"fmt": "bn",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": 73.30339999999998,
+"2025Q2": 92.20769999999999,
+"2025Q3": 105.736,
+"2025Q4": 128.4775,
+"2026Q1": 154.0131,
+"2026Q2": 187.0392,
+"2026Q3": null
 },
 "sources": {}
 },
@@ -1879,6 +2214,284 @@
 "sources": {}
 },
 {
+"key": "dep_CRWV",
+"label": "CoreWeave depreciation",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": 0.079,
+"2024Q2": 0.164,
+"2024Q3": 0.253,
+"2024Q4": 0.365,
+"2025Q1": 0.443,
+"2025Q2": 0.553,
+"2025Q3": 0.621,
+"2025Q4": 0.8,
+"2026Q1": 1.1,
+"2026Q2": 1.4,
+"2026Q3": null
+},
+"sources": {
+"2024Q1": {
+"text": "(source: CoreWeave 10-Q (period to 2024-03-31), SEC XBRL, 2025-05-15, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000014/0001769628-25-000014-index.htm"
+},
+"2024Q2": {
+"text": "(source: CoreWeave 10-Q (period to 2024-06-30), SEC XBRL, 2025-08-13, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/0001769628-25-000041-index.htm"
+},
+"2024Q3": {
+"text": "(source: CoreWeave 10-Q (period to 2024-09-30), SEC XBRL, 2025-11-13, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/0001769628-25-000062-index.htm"
+},
+"2024Q4": {
+"text": "(source: CoreWeave 10-K (period to 2024-12-31), SEC XBRL, 2026-03-02, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/0001769628-26-000104-index.htm"
+},
+"2025Q1": {
+"text": "(source: CoreWeave 10-Q (period to 2025-03-31), SEC XBRL, 2026-05-08, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/0001769628-26-000222-index.htm"
+},
+"2025Q2": {
+"text": "(source: CoreWeave 10-Q (period to 2025-06-30), SEC XBRL, 2026-08-12, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm"
+},
+"2025Q3": {
+"text": "(source: CoreWeave 10-Q (period to 2025-09-30), SEC XBRL, 2025-11-13, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/0001769628-25-000062-index.htm"
+},
+"2025Q4": {
+"text": "(source: CoreWeave 10-K (period to 2025-12-31), SEC XBRL, 2026-03-02, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/0001769628-26-000104-index.htm"
+},
+"2026Q1": {
+"text": "(source: CoreWeave 10-Q (period to 2026-03-31), SEC XBRL, 2026-05-08, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/0001769628-26-000222-index.htm"
+},
+"2026Q2": {
+"text": "(source: CoreWeave 10-Q (period to 2026-06-30), SEC XBRL, 2026-08-12, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm"
+}
+}
+},
+{
+"key": "dep_NBIS",
+"label": "Nebius depreciation & amortization",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": 0.0114,
+"2024Q3": 0.0235,
+"2024Q4": null,
+"2025Q1": 0.0491,
+"2025Q2": 0.0752,
+"2025Q3": 0.099,
+"2025Q4": null,
+"2026Q1": 0.212,
+"2026Q2": 0.2597,
+"2026Q3": null
+},
+"sources": {
+"2024Q2": {
+"text": "(source: Nebius 6-K (period to 2024-06-30), SEC XBRL, 2024Q2, link) - 3 months as filed (6-K tables)",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
+},
+"2024Q3": {
+"text": "(source: Nebius 6-K (period to 2024-09-30), SEC XBRL, 2024Q3, link) - 3 months as filed (6-K tables)",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
+},
+"2025Q1": {
+"text": "(source: Nebius 6-K (period to 2025-03-31), SEC XBRL, 2025Q1, link) - 3 months as filed (6-K tables)",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
+},
+"2025Q2": {
+"text": "(source: Nebius 6-K (period to 2025-06-30), SEC XBRL, 2025Q2, link) - 3 months as filed (6-K tables)",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
+},
+"2025Q3": {
+"text": "(source: Nebius 6-K (period to 2025-09-30), SEC XBRL, 2025Q3, link) - 3 months as filed (6-K tables)",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
+},
+"2026Q1": {
+"text": "(source: Nebius 6-K (period to 2026-03-31), SEC XBRL, 2026Q1, link) - 3 months as filed (6-K tables)",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
+},
+"2026Q2": {
+"text": "(source: Nebius 6-K (period to 2026-06-30), SEC XBRL, 2026Q2, link) - 3 months as filed (6-K tables)",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
+}
+}
+},
+{
+"key": "dep_IREN",
+"label": "IREN depreciation & amortization",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": 0.0339,
+"2024Q4": 0.0361,
+"2025Q1": 0.0473,
+"2025Q2": 0.0638,
+"2025Q3": 0.0852,
+"2025Q4": 0.0992,
+"2026Q1": 0.1212,
+"2026Q2": 0.1121,
+"2026Q3": null
+},
+"sources": {
+"2024Q3": {
+"text": "(source: IREN 10-Q (period to 2024-09-30), SEC XBRL, 2025-11-06, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000081/0001878848-25-000081-index.htm"
+},
+"2024Q4": {
+"text": "(source: IREN 10-Q (period to 2024-12-31), SEC XBRL, 2026-02-05, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/0001878848-26-000015-index.htm"
+},
+"2025Q1": {
+"text": "(source: IREN 10-Q (period to 2025-03-31), SEC XBRL, 2026-05-08, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/0001878848-26-000026-index.htm"
+},
+"2025Q2": {
+"text": "(source: IREN 10-K (period to 2025-06-30), SEC XBRL, 2026-08-27, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/0001878848-26-000052-index.htm"
+},
+"2025Q3": {
+"text": "(source: IREN 10-Q (period to 2025-09-30), SEC XBRL, 2025-11-06, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000081/0001878848-25-000081-index.htm"
+},
+"2025Q4": {
+"text": "(source: IREN 10-Q (period to 2025-12-31), SEC XBRL, 2026-02-05, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/0001878848-26-000015-index.htm"
+},
+"2026Q1": {
+"text": "(source: IREN 10-Q (period to 2026-03-31), SEC XBRL, 2026-05-08, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/0001878848-26-000026-index.htm"
+},
+"2026Q2": {
+"text": "(source: IREN 10-K (period to 2026-06-30), SEC XBRL, 2026-08-27, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/0001878848-26-000052-index.htm"
+}
+}
+},
+{
+"key": "dep_SPCX",
+"label": "SpaceX AI (SI segment) depreciation & amortization",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": 0.773,
+"2025Q2": 0.811,
+"2025Q3": 0.922,
+"2025Q4": null,
+"2026Q1": 1.493,
+"2026Q2": 1.885,
+"2026Q3": 2.473
+},
+"sources": {
+"2025Q1": {
+"text": "(source: SpaceX AI (SI segment) 10-Q (later YTD less its 3-month quarter) (period to 2025-03-31), SEC XBRL, 2026-08-04, link) - 3 months as filed (AI/SI segment XBRL)",
+"url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/0001628280-26-052535-index.htm"
+},
+"2025Q2": {
+"text": "(source: SpaceX AI (SI segment) 10-Q (period to 2025-06-30), SEC XBRL, 2026-08-04, link) - 3 months as filed (AI/SI segment XBRL)",
+"url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/0001628280-26-052535-index.htm"
+},
+"2025Q3": {
+"text": "(source: SpaceX AI (SI segment) 10-Q (period to 2025-09-30), SEC XBRL, 2026-10-22, link) - 3 months as filed (AI/SI segment XBRL)",
+"url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/0001628280-26-066880-index.htm"
+},
+"2026Q1": {
+"text": "(source: SpaceX AI (SI segment) 10-Q (later YTD less its 3-month quarter) (period to 2026-03-31), SEC XBRL, 2026-08-04, link) - 3 months as filed (AI/SI segment XBRL)",
+"url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/0001628280-26-052535-index.htm"
+},
+"2026Q2": {
+"text": "(source: SpaceX AI (SI segment) 10-Q (period to 2026-06-30), SEC XBRL, 2026-08-04, link) - 3 months as filed (AI/SI segment XBRL)",
+"url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/0001628280-26-052535-index.htm"
+},
+"2026Q3": {
+"text": "(source: SpaceX AI (SI segment) 10-Q (period to 2026-09-30), SEC XBRL, 2026-10-22, link) - 3 months as filed (AI/SI segment XBRL)",
+"url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/0001628280-26-066880-index.htm"
+}
+}
+},
+{
+"key": "dep_neo_all",
+"label": "Depreciation, neoclouds + SpaceX AI (mostly GPU servers)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": 1.3124,
+"2025Q2": 1.5030000000000001,
+"2025Q3": 1.7271999999999998,
+"2025Q4": null,
+"2026Q1": 2.9262,
+"2026Q2": 3.6568,
+"2026Q3": null
+},
+"sources": {}
+},
+{
+"key": "dep_nine",
+"label": "Depreciation, all nine",
+"fmt": "bn",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": 25.498399999999997,
+"2025Q2": 27.999000000000002,
+"2025Q3": 31.4742,
+"2025Q4": null,
+"2026Q1": 39.075199999999995,
+"2026Q2": 43.34479999999999,
+"2026Q3": null
+},
+"sources": {}
+},
+{
 "section": "Construction in progress (assets not yet in service), $bn at quarter end"
 },
 {
@@ -2138,8 +2751,108 @@
 }
 },
 {
+"key": "cip_CRWV",
+"label": "CoreWeave",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": 3.201,
+"2025Q1": 4.074,
+"2025Q2": 4.111,
+"2025Q3": 6.91,
+"2025Q4": 9.376,
+"2026Q1": 9.581,
+"2026Q2": 11.918,
+"2026Q3": null
+},
+"sources": {
+"2024Q4": {
+"text": "(source: CoreWeave XBRL 10-K for 2025-12-31, 2024-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/0001769628-26-000104-index.htm"
+},
+"2025Q1": {
+"text": "(source: CoreWeave XBRL 10-Q for 2025-03-31, 2025-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000014/0001769628-25-000014-index.htm"
+},
+"2025Q2": {
+"text": "(source: CoreWeave XBRL 10-Q for 2025-06-30, 2025-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/0001769628-25-000041-index.htm"
+},
+"2025Q3": {
+"text": "(source: CoreWeave XBRL 10-Q for 2025-09-30, 2025-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/0001769628-25-000062-index.htm"
+},
+"2025Q4": {
+"text": "(source: CoreWeave XBRL 10-Q for 2026-06-30, 2025-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm"
+},
+"2026Q1": {
+"text": "(source: CoreWeave XBRL 10-Q for 2026-03-31, 2026-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/0001769628-26-000222-index.htm"
+},
+"2026Q2": {
+"text": "(source: CoreWeave XBRL 10-Q for 2026-06-30, 2026-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm"
+}
+}
+},
+{
+"key": "cip_NBIS",
+"label": "Nebius",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": 0.164,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": 1.886,
+"2025Q4": 2.417,
+"2026Q1": 2.428,
+"2026Q2": 7.836,
+"2026Q3": null
+},
+"sources": {
+"2024Q4": {
+"text": "(source: Nebius 6-K interim statements, 2024-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110831/0001104659-25-110831-index.htm"
+},
+"2025Q3": {
+"text": "(source: Nebius 6-K interim statements, 2025-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110831/0001104659-25-110831-index.htm"
+},
+"2025Q4": {
+"text": "(source: Nebius 6-K interim statements, 2025-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/0001104659-26-094844-index.htm"
+},
+"2026Q1": {
+"text": "(source: Nebius 6-K interim statements, 2026-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926064092/0001104659-26-064092-index.htm"
+},
+"2026Q2": {
+"text": "(source: Nebius 6-K interim statements, 2026-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/0001104659-26-094844-index.htm"
+}
+}
+},
+{
 "key": "cip_sum",
-"label": "CIP, reporting companies (MSFT discloses none)",
+"label": "CIP, reporting companies (MSFT, IREN, SpaceX AI: none)",
 "fmt": "bn",
 "kind": "sumopt",
 "bold": false,
@@ -2151,13 +2864,13 @@
 "2024Q1": 60.654,
 "2024Q2": 68.042,
 "2024Q3": 69.31,
-"2024Q4": 124.035,
-"2025Q1": 88.026,
-"2025Q2": 114.152,
-"2025Q3": 113.871,
-"2025Q4": 200.858,
-"2026Q1": 169.614,
-"2026Q2": 243.132,
+"2024Q4": 127.39999999999999,
+"2025Q1": 92.1,
+"2025Q2": 118.263,
+"2025Q3": 122.66699999999999,
+"2025Q4": 212.651,
+"2026Q1": 181.623,
+"2026Q2": 262.886,
 "2026Q3": 283.315
 },
 "sources": {}
@@ -3014,6 +3727,399 @@
 "2026Q1": 0.4281925441205632,
 "2026Q2": 0.41657754010695186,
 "2026Q3": 0.3993460905845068
+},
+"sources": {}
+},
+{
+"key": "rpo_CRWV",
+"label": "CoreWeave RPO",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": 14.7,
+"2025Q2": 30.1,
+"2025Q3": 50.0,
+"2025Q4": 60.7,
+"2026Q1": 98.8,
+"2026Q2": 103.7,
+"2026Q3": null
+},
+"sources": {
+"2025Q1": {
+"text": "(source: CoreWeave 10-Q - remaining performance obligations (period 2025-03-31), 2025-05-15, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000014/0001769628-25-000014-index.htm"
+},
+"2025Q2": {
+"text": "(source: CoreWeave 10-Q - remaining performance obligations (period 2025-06-30), 2025-08-13, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/0001769628-25-000041-index.htm"
+},
+"2025Q3": {
+"text": "(source: CoreWeave 10-Q - remaining performance obligations (period 2025-09-30), 2025-11-13, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/0001769628-25-000062-index.htm"
+},
+"2025Q4": {
+"text": "(source: CoreWeave 10-K - remaining performance obligations (period 2025-12-31), 2026-03-02, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/0001769628-26-000104-index.htm"
+},
+"2026Q1": {
+"text": "(source: CoreWeave 10-Q - remaining performance obligations (period 2026-03-31), 2026-05-08, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/0001769628-26-000222-index.htm"
+},
+"2026Q2": {
+"text": "(source: CoreWeave 10-Q - remaining performance obligations (period 2026-06-30), 2026-08-12, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm"
+}
+}
+},
+{
+"key": "rpo_NBIS",
+"label": "Nebius RPO",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": 21.33,
+"2026Q1": 33.59,
+"2026Q2": 37.49,
+"2026Q3": null
+},
+"sources": {
+"2025Q4": {
+"text": "(source: Nebius 20-F - remaining performance obligations (period 2025-12-31), 2026-04-30, link)",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1513845&type=20-F&dateb=&owner=include&count=40"
+},
+"2026Q1": {
+"text": "(source: Nebius 6-K interim statements (000110465926064092) - remaining performance obligations (period 2026-03-31), 2026-03-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926064092/0001104659-26-064092-index.htm"
+},
+"2026Q2": {
+"text": "(source: Nebius 6-K interim statements (000110465926094844) - remaining performance obligations (period 2026-06-30), 2026-06-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/0001104659-26-094844-index.htm"
+}
+}
+},
+{
+"key": "rpo_IREN",
+"label": "IREN RPO",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": 0.195,
+"2025Q4": 0.2894,
+"2026Q1": 0.7103,
+"2026Q2": 5.1,
+"2026Q3": null
+},
+"sources": {
+"2025Q3": {
+"text": "(source: IREN 10-Q (period to 2025-09-30), SEC XBRL, 2025-11-06, link) - as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000081/0001878848-25-000081-index.htm"
+},
+"2025Q4": {
+"text": "(source: IREN 10-Q (period to 2025-12-31), SEC XBRL, 2026-02-05, link) - as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/0001878848-26-000015-index.htm"
+},
+"2026Q1": {
+"text": "(source: IREN 10-Q (period to 2026-03-31), SEC XBRL, 2026-05-08, link) - as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/0001878848-26-000026-index.htm"
+},
+"2026Q2": {
+"text": "(source: IREN 10-K (period to 2026-06-30), SEC XBRL, 2026-08-27, link) - as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/0001878848-26-000052-index.htm"
+}
+}
+},
+{
+"key": "labrpo_CRWV",
+"label": "CoreWeave lab RPO (OpenAI + Anthropic, est.)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": 0.0,
+"2024Q2": 0.0,
+"2024Q3": 0.0,
+"2024Q4": 0.0,
+"2025Q1": 11.9,
+"2025Q2": 15.9,
+"2025Q3": 19.5,
+"2025Q4": 19.5,
+"2026Q1": 19.5,
+"2026Q2": 19.5,
+"2026Q3": 19.5
+},
+"sources": {
+"2024Q1": {
+"text": "(source: CoreWeave 2025 Form 10-K, 2026-03-02, link, P.6) - EST. 0: OpenAI's first CoreWeave contract was signed Mar-2025; 2024 backlog was mainly Microsoft",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm"
+},
+"2024Q2": {
+"text": "(source: CoreWeave 2025 Form 10-K, 2026-03-02, link, P.6) - EST. 0: OpenAI's first CoreWeave contract was signed Mar-2025; 2024 backlog was mainly Microsoft",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm"
+},
+"2024Q3": {
+"text": "(source: CoreWeave 2025 Form 10-K, 2026-03-02, link, P.6) - EST. 0: OpenAI's first CoreWeave contract was signed Mar-2025; 2024 backlog was mainly Microsoft",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm"
+},
+"2024Q4": {
+"text": "(source: CoreWeave 2025 Form 10-K, 2026-03-02, link, P.6) - EST. 0: OpenAI's first CoreWeave contract was signed Mar-2025; 2024 backlog was mainly Microsoft",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm"
+},
+"2025Q1": {
+"text": "(source: CoreWeave/OpenAI announcement (5-yr contract up to $11.9B), 2025-03-10, link) - EST. OpenAI 5-yr contract up to $11.9B (Mar-25), unconsumed",
+"url": "https://convergedigest.com/coreweave-inks-new-openai-contract-worth-up-to-6-5b-pushing-2025-total-to-22-4b/"
+},
+"2025Q2": {
+"text": "(source: CoreWeave/OpenAI expansion (May-2025), 2025-05-27, link) - EST. OpenAI $11.9B + $4.0B expansion (May-25)",
+"url": "https://convergedigest.com/coreweave-inks-new-openai-contract-worth-up-to-6-5b-pushing-2025-total-to-22-4b/"
+},
+"2025Q3": {
+"text": "(source: CoreWeave Q3-25 earnings call corrected transcript (CFO Agrawal), 2025-11-10, link, P.7) - EST. capped: 'no single customer represents more than approximately 35%' of $55.6B backlog; OpenAI signed $22.4B in total",
+"url": "https://s205.q4cdn.com/133937190/files/doc_events/2025/Nov/10/CORRECTED-TRANSCRIPT-CoreWeave-Inc-CRWV-US-Q3-2025-Earnings-Call-10-November-2025-5-00-PM-ET.pdf"
+},
+"2026Q2": {
+"text": "(source: CoreWeave announces multi-year agreement with Anthropic, 2026-04-10, link) - EST. held; Anthropic multi-year deal (Apr-26) has no disclosed $ value, so lab RPO is understated",
+"url": "https://coreweave.com/news/coreweave-announces-multi-year-agreement-with-anthropic"
+}
+}
+},
+{
+"key": "labrpo_NBIS",
+"label": "Nebius lab RPO (OpenAI + Anthropic, est.)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": 0.0,
+"2026Q1": 0.0,
+"2026Q2": 0.0,
+"2026Q3": null
+},
+"sources": {
+"2025Q4": {
+"text": "(source: Nebius Group 2025 Form 20-F, 2026-04-30, link) - EST. 0: disclosed backlog contracts are Microsoft and Meta (not labs)",
+"url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+},
+"2026Q1": {
+"text": "(source: Nebius Group 2025 Form 20-F, 2026-04-30, link) - EST. 0: disclosed backlog contracts are Microsoft and Meta (not labs)",
+"url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+},
+"2026Q2": {
+"text": "(source: Nebius Group 2025 Form 20-F, 2026-04-30, link) - EST. 0: disclosed backlog contracts are Microsoft and Meta (not labs)",
+"url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+}
+}
+},
+{
+"key": "labrpo_IREN",
+"label": "IREN lab RPO (OpenAI + Anthropic, est.)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": 0.0,
+"2025Q4": 0.0,
+"2026Q1": 0.0,
+"2026Q2": 0.0,
+"2026Q3": null
+},
+"sources": {
+"2025Q3": {
+"text": "(source: IREN Ltd Form 10-K FY2026, 2026-08-27, link) - EST. 0: named customers Microsoft ($9.7B, in RPO only as tranches deliver), NVIDIA, Prometheus, Perplexity, Together AI; the Aug-26 'leading frontier AI lab' contract (unnamed) falls after Jun-26",
+"url": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
+},
+"2025Q4": {
+"text": "(source: IREN Ltd Form 10-K FY2026, 2026-08-27, link) - EST. 0: named customers Microsoft ($9.7B, in RPO only as tranches deliver), NVIDIA, Prometheus, Perplexity, Together AI; the Aug-26 'leading frontier AI lab' contract (unnamed) falls after Jun-26",
+"url": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
+},
+"2026Q1": {
+"text": "(source: IREN Ltd Form 10-K FY2026, 2026-08-27, link) - EST. 0: named customers Microsoft ($9.7B, in RPO only as tranches deliver), NVIDIA, Prometheus, Perplexity, Together AI; the Aug-26 'leading frontier AI lab' contract (unnamed) falls after Jun-26",
+"url": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
+},
+"2026Q2": {
+"text": "(source: IREN Ltd Form 10-K FY2026, 2026-08-27, link) - EST. 0: named customers Microsoft ($9.7B, in RPO only as tranches deliver), NVIDIA, Prometheus, Perplexity, Together AI; the Aug-26 'leading frontier AI lab' contract (unnamed) falls after Jun-26",
+"url": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
+}
+}
+},
+{
+"key": "netrpo_CRWV",
+"label": "CoreWeave net RPO (non-lab)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": 2.799999999999999,
+"2025Q2": 14.200000000000001,
+"2025Q3": 30.5,
+"2025Q4": 41.2,
+"2026Q1": 79.3,
+"2026Q2": 84.2,
+"2026Q3": null
+},
+"sources": {}
+},
+{
+"key": "netrpo_NBIS",
+"label": "Nebius net RPO (non-lab)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": 21.33,
+"2026Q1": 33.59,
+"2026Q2": 37.49,
+"2026Q3": null
+},
+"sources": {}
+},
+{
+"key": "netrpo_IREN",
+"label": "IREN net RPO (non-lab)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": 0.195,
+"2025Q4": 0.2894,
+"2026Q1": 0.7103,
+"2026Q2": 5.1,
+"2026Q3": null
+},
+"sources": {}
+},
+{
+"key": "rpo_ext",
+"label": "RPO, Big 4 + neoclouds",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": 1723.4193999999998,
+"2026Q1": 2150.3003000000003,
+"2026Q2": 2483.7899999999995,
+"2026Q3": null
+},
+"sources": {}
+},
+{
+"key": "netrpo_ext",
+"label": "Net RPO (non-lab), Big 4 + neoclouds",
+"fmt": "bn",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": 1030.0693999999999,
+"2026Q1": 1267.0502999999997,
+"2026Q2": 1490.54,
+"2026Q3": null
 },
 "sources": {}
 },
@@ -4019,6 +5125,84 @@
 "sources": {}
 },
 {
+"section": "C2. COVERAGE RATIOS incl. neoclouds (CRWV, NBIS, IREN) and SpaceX AI capex"
+},
+{
+"key": "x_rpo_capex",
+"label": "Net RPO (Big 4 + neoclouds) / their capex (TTM)",
+"fmt": "x",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": 2.6616876650199766,
+"2026Q1": 2.739258457908435,
+"2026Q2": 2.7485281339940197,
+"2026Q3": null
+},
+"sources": {}
+},
+{
+"key": "x_spend_capex",
+"label": "End-user spending / capex of AI clouds ex Meta incl. SpaceX AI (quarter)",
+"fmt": "pct",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": 0.027636849041108608,
+"2025Q2": 0.033585861050649785,
+"2025Q3": 0.04391834379965196,
+"2025Q4": 0.05562071179778561,
+"2026Q1": 0.07448248719139157,
+"2026Q2": 0.10515011460436864,
+"2026Q3": null
+},
+"sources": {}
+},
+{
+"key": "x_rpo_spend",
+"label": "Net RPO (Big 4 + neoclouds) / annualised end-user spending",
+"fmt": "x",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": 36.03652247897777,
+"2026Q1": 27.61353655133405,
+"2026Q2": 18.94703499487862,
+"2026Q3": null
+},
+"sources": {}
+},
+{
 "section": "Growth y/y: test Net RPO growth > end-user spending growth > capex growth"
 },
 {
@@ -4093,6 +5277,81 @@
 "2026Q1": 0.9692749231508868,
 "2026Q2": 0.7869008390800694,
 "2026Q3": 1.1059712060420108
+},
+"sources": {}
+},
+{
+"key": "gx_rpo",
+"label": "Net RPO incl. neoclouds, y/y",
+"fmt": "pct",
+"kind": "yoy",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": null,
+"2026Q1": null,
+"2026Q2": null,
+"2026Q3": null
+},
+"sources": {}
+},
+{
+"key": "gx_capex",
+"label": "Capex of AI clouds ex Meta incl. SpaceX AI, y/y",
+"fmt": "pct",
+"kind": "yoy",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": null,
+"2026Q1": 1.1010362411566184,
+"2026Q2": 1.0284553242299723,
+"2026Q3": null
+},
+"sources": {}
+},
+{
+"key": "gx_order",
+"label": "Incl. neoclouds: Net RPO g > spending g > capex g ?",
+"fmt": "bool",
+"kind": "check",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": null,
+"2024Q2": null,
+"2024Q3": null,
+"2024Q4": null,
+"2025Q1": null,
+"2025Q2": null,
+"2025Q3": null,
+"2025Q4": null,
+"2026Q1": null,
+"2026Q2": null,
+"2026Q3": null
 },
 "sources": {}
 },

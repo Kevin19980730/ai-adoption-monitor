@@ -47,12 +47,12 @@
       <div class="legend" id="lg-r1"></div><div class="chart" id="c-r1"></div></div>
     <div class="card"><div class="card-head"><div><h2>End-user spending / capex</h2>
       <p class="muted small">Quarterly AI model spending ÷ same-quarter capex incl. leases, ex Meta.</p></div></div>
-      <div class="chart" id="c-r2"></div></div>
+      <div class="legend" id="lg-r2"></div><div class="chart" id="c-r2"></div></div>
   </div>
   <div class="grid2">
     <div class="card"><div class="card-head"><div><h2>Net RPO / end-user spending</h2>
       <p class="muted small">Years of current AI spending already contracted as non-lab backlog.</p></div></div>
-      <div class="chart" id="c-r3"></div></div>
+      <div class="legend" id="lg-r3"></div><div class="chart" id="c-r3"></div></div>
     <div class="card"><div class="card-head"><div><h2>Growth y/y: net RPO &gt; spending &gt; capex?</h2>
       <p class="muted small">The whiteboard test. ✓ / ✗ under each quarter where all three exist.</p></div></div>
       <div class="legend" id="lg-g"></div><div class="chart" id="c-g"></div></div>
@@ -70,7 +70,7 @@
       <p class="muted small">All five, $bn per quarter. Server share from 10-K PP&amp;E notes (Meta disclosed, others estimated).</p></div></div>
       <div class="legend" id="lg-da"></div><div class="chart" id="c-da"></div></div>
     <div class="card"><div class="card-head"><div><h2>Capex by company</h2>
-      <p class="muted small">Cash purchases of PP&amp;E, $bn per quarter (Oracle: fiscal quarter in the calendar quarter it ends).</p></div></div>
+      <p class="muted small">Cash purchases of PP&amp;E, $bn per quarter (Oracle: fiscal quarter in the calendar quarter it ends). Neoclouds = CoreWeave + Nebius + IREN; SpaceX AI = its AI / Super Intelligence segment only.</p></div></div>
       <div class="legend" id="lg-cx"></div><div class="chart" id="c-cx"></div></div>
   </div>
 
@@ -83,6 +83,7 @@
     <h2>Method</h2>
     <p><b>Hyperscaler</b> (SEC filings, refreshed when a new 10-Q / 10-K lands): capex = purchases of PP&amp;E; finance leases = ROU assets obtained for finance-lease liabilities; D&amp;A = depreciation of PP&amp;E; CIP = assets not yet in service (Microsoft discloses none); RPO = remaining performance obligations (Meta reports none, so ratios use the four RPO reporters, "ex Meta").</p>
     <p><b>Lab RPO</b> = the part of backlog owed by OpenAI and Anthropic: company disclosures where given (e.g. Microsoft's share of commercial RPO from OpenAI), else signed contract values and Anthropic's S-1/A commitment table. <b>Net RPO</b> = RPO − lab RPO.</p>
+    <p><b>Neoclouds &amp; SpaceX AI</b>: CoreWeave and IREN from 10-Q/10-K XBRL, Nebius from its 6-K tables, SpaceX only its AI / Super Intelligence segment (capex and D&amp;A; no AI-only backlog, so no RPO). Their lab RPO: CoreWeave's OpenAI contracts (capped at its 35% largest-customer limit), Nebius and IREN zero on named customers. The "incl. neoclouds" lines only appear for quarters all of them have reported.</p>
     <p><b>End-user spending</b> = Anthropic revenue (S-1/A recognised, else ARR-based) + OpenAI revenue (reported, else ARR-based) + Gemini first-party API (tokens/min × blended price) + open-source model spending (OpenRouter open-weights spend, inference-platform ARR). Vercel AI Gateway publishes shares only; Ramp is a customer sample (memo line).</p>
   </div>
 </main>
@@ -145,17 +146,21 @@ function chart(host, {bars = [], lines = [], yFmt, height = 260, zero = true, ma
 function draw() {
   const C = ["--s1", "--s2", "--s3", "--s4", "--s5"].map(css), N = css("--neutral-bar");
   const last = k => { const s = ser(k); for (let i = s.length - 1; i >= 0; i--) if (s[i] != null) return [i, s[i]]; return [-1, null]; };
-  const tile = (k, label, f, sub) => { const [i, v] = last(k); const s = ser(k); const p = i >= 4 ? s[i - 4] : null;
+  const tile = (k, label, f, xk) => { const [i, v] = last(k); const s = ser(k); const p = i >= 4 ? s[i - 4] : null;
     const ch = v != null && p != null ? `<b class="${v >= p ? "up" : "dn"}">${v >= p ? "▲" : "▼"} ${f(p)}</b> a year earlier` : "";
-    return `<div class="tile"><div class="k">${label}</div><div class="v">${v == null ? "–" : f(v)}</div><div class="d">${i >= 0 ? D.quarters[i] : ""} · ${ch || sub}</div></div>`; };
+    const [xi, xv] = xk ? last(xk) : [-1, null];
+    const xs = xv != null ? `<br>Incl. neoclouds &amp; SpaceX AI: <b>${f(xv)}</b> (${D.quarters[xi]})` : "";
+    return `<div class="tile"><div class="k">${label}</div><div class="v">${v == null ? "–" : f(v)}</div><div class="d">${i >= 0 ? D.quarters[i] : ""} · ${ch}${xs}</div></div>`; };
   const [gi, gv] = last("g_order");
-  $("#tiles").innerHTML = tile("r_rpo_capex", "Net RPO / capex (TTM)", fmt.x, "") + tile("r_spend_capex", "End-user spending / capex", fmt.pct, "")
-    + tile("r_rpo_spend", "Net RPO / annual spending", fmt.x, "")
+  $("#tiles").innerHTML = tile("r_rpo_capex", "Net RPO / capex (TTM), Big 4", fmt.x, "x_rpo_capex") + tile("r_spend_capex", "End-user spending / capex, Big 4", fmt.pct, "x_spend_capex")
+    + tile("r_rpo_spend", "Net RPO / annual spending, Big 4", fmt.x, "x_rpo_spend")
     + `<div class="tile"><div class="k">RPO g &gt; spending g &gt; capex g</div><div class="v ${gv ? "ok" : "no"}">${gv == null ? "–" : gv ? "✓ Yes" : "✗ No"}</div><div class="d">${gi >= 0 ? D.quarters[gi] : ""} · y/y: RPO ${last("g_rpo")[1] != null ? fmt.pct(last("g_rpo")[1]) : "–"}, spend ${last("g_spend")[1] != null ? fmt.pct(last("g_spend")[1]) : "–"}, capex ${last("g_capex")[1] != null ? fmt.pct(last("g_capex")[1]) : "–"}</div></div>`;
-  legend("#lg-r1", [["Net RPO / capex", C[0]], ["Gross RPO / capex", C[1], true]]);
-  chart($("#c-r1"), {lines: [{name: "Net RPO / capex", v: ser("r_rpo_capex"), c: C[0]}, {name: "Gross RPO / capex", v: ser("r_rpo_gross_capex"), c: C[1], dash: true}], yFmt: fmt.x});
-  chart($("#c-r2"), {lines: [{name: "Spending / capex", v: ser("r_spend_capex"), c: C[0]}], yFmt: v => (v * 100).toFixed(0) + "%"});
-  chart($("#c-r3"), {lines: [{name: "Net RPO / spending", v: ser("r_rpo_spend"), c: C[0]}], yFmt: fmt.x});
+  legend("#lg-r1", [["Net RPO / capex, Big 4", C[0]], ["Incl. neoclouds", C[2]], ["Gross RPO / capex, Big 4", C[1], true]]);
+  chart($("#c-r1"), {lines: [{name: "Net RPO / capex, Big 4", v: ser("r_rpo_capex"), c: C[0]}, {name: "Incl. neoclouds", v: ser("x_rpo_capex"), c: C[2]}, {name: "Gross RPO / capex", v: ser("r_rpo_gross_capex"), c: C[1], dash: true}], yFmt: fmt.x});
+  legend("#lg-r2", [["Big 4 capex", C[0]], ["Incl. neoclouds + SpaceX AI capex", C[2]]]);
+  chart($("#c-r2"), {lines: [{name: "Spending / Big 4 capex", v: ser("r_spend_capex"), c: C[0]}, {name: "Incl. neoclouds + SpaceX AI", v: ser("x_spend_capex"), c: C[2]}], yFmt: v => (v * 100).toFixed(0) + "%"});
+  legend("#lg-r3", [["Big 4", C[0]], ["Incl. neoclouds", C[2]]]);
+  chart($("#c-r3"), {lines: [{name: "Net RPO / spending, Big 4", v: ser("r_rpo_spend"), c: C[0]}, {name: "Incl. neoclouds", v: ser("x_rpo_spend"), c: C[2]}], yFmt: fmt.x});
   legend("#lg-g", [["Net RPO", C[0]], ["End-user spending", C[1]], ["Capex incl. leases ex Meta", C[2]]]);
   chart($("#c-g"), {lines: [{name: "Net RPO", v: ser("g_rpo"), c: C[0]}, {name: "End-user spending", v: ser("g_spend"), c: C[1]}, {name: "Capex", v: ser("g_capex"), c: C[2]}],
     yFmt: v => (v * 100).toFixed(0) + "%", marks: ser("g_order")});
@@ -165,11 +170,12 @@ function draw() {
   legendBox("#lg-sp", [["Anthropic", C[3]], ["OpenAI", C[0]], ["Gemini API (est.)", C[1]], ["Open models", C[2]]]); $("#lg-sp").innerHTML += `<span><i style="border-color:${N}"></i>Capex ex Meta (quarter)</span>`;
   chart($("#c-sp"), {bars: [{name: "Anthropic", v: ser("anth_use"), c: C[3]}, {name: "OpenAI", v: ser("oai_use"), c: C[0]}, {name: "Gemini API", v: ser("gem_rev"), c: C[1]}, {name: "Open models", v: ser("open_rev"), c: C[2]}],
     lines: [{name: "Capex incl. leases ex Meta", v: ser("capexl_exmeta"), c: N}], yFmt: v => "$" + v.toFixed(0)});
-  legend("#lg-da", [["Depreciation, all five", C[0]], ["Server D&A (est.)", C[1]], ["Capex, all five", N, true]]);
-  chart($("#c-da"), {lines: [{name: "Depreciation", v: ser("dep_all"), c: C[0]}, {name: "Server D&A", v: ser("srvdep_all"), c: C[1]}, {name: "Capex", v: ser("capex_all"), c: N, dash: true}], yFmt: v => "$" + v.toFixed(0)});
+  legend("#lg-da", [["Depreciation, all five", C[0]], ["Server D&A, five (est.)", C[1]], ["Depreciation, neoclouds + SpaceX AI", C[2]], ["Capex, all five", N, true]]);
+  chart($("#c-da"), {lines: [{name: "Depreciation, five", v: ser("dep_all"), c: C[0]}, {name: "Server D&A, five", v: ser("srvdep_all"), c: C[1]}, {name: "Neoclouds + SpaceX AI", v: ser("dep_neo_all"), c: C[2]}, {name: "Capex, five", v: ser("capex_all"), c: N, dash: true}], yFmt: v => "$" + v.toFixed(0)});
   const T = ["MSFT", "GOOGL", "AMZN", "META", "ORCL"], TN = {MSFT: "Microsoft", GOOGL: "Alphabet", AMZN: "Amazon", META: "Meta", ORCL: "Oracle"};
-  legendBox("#lg-cx", T.map((t, i) => [TN[t], C[i]]));
-  chart($("#c-cx"), {bars: T.map((t, i) => ({name: TN[t], v: ser("capex_" + t), c: C[i]})), yFmt: v => "$" + v.toFixed(0)});
+  const C6 = css("--s6");
+  legendBox("#lg-cx", [...T.map((t, i) => [TN[t], C[i]]), ["Neoclouds (CRWV+NBIS+IREN)", C6], ["SpaceX AI", N]]);
+  chart($("#c-cx"), {bars: [...T.map((t, i) => ({name: TN[t], v: ser("capex_" + t), c: C[i]})), {name: "Neoclouds", v: ser("capex_neo"), c: C6}, {name: "SpaceX AI", v: ser("capex_SPCX"), c: N}], yFmt: v => "$" + v.toFixed(0)});
 }
 
 function table() {
