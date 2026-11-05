@@ -1,5 +1,5 @@
 {
-"built": "2026-11-05T18:59:08",
+"built": "2026-11-06T07:03:55",
 "quarters": [
 "2023Q1",
 "2023Q2",
@@ -502,7 +502,7 @@
 "sources": {}
 },
 {
-"section": "Finance-lease additions (ROU assets obtained for finance-lease liabilities), $bn per quarter"
+"section": "Finance-lease additions (ROU assets obtained for finance-lease liabilities; Meta = principal payments on finance leases), $bn per quarter"
 },
 {
 "key": "fin_lease_MSFT",
@@ -747,6 +747,92 @@
 }
 },
 {
+"key": "fin_lease_pp_META",
+"label": "Meta (principal payments on finance leases - Meta tags ROU additions only annually since 2024)",
+"fmt": "bn",
+"kind": "input",
+"bold": false,
+"values": {
+"2023Q1": 0.264,
+"2023Q2": 0.22,
+"2023Q3": 0.267,
+"2023Q4": 0.307,
+"2024Q1": 0.315,
+"2024Q2": 0.299,
+"2024Q3": 0.944,
+"2024Q4": 0.411,
+"2025Q1": 0.751,
+"2025Q2": 0.474,
+"2025Q3": 0.545,
+"2025Q4": 0.754,
+"2026Q1": 0.843,
+"2026Q2": 0.962,
+"2026Q3": 0.964
+},
+"sources": {
+"2023Q1": {
+"text": "(source: Meta 10-Q (period to 2023-03-31), SEC XBRL, 2024-04-25, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000049/0001326801-24-000049-index.htm"
+},
+"2023Q2": {
+"text": "(source: Meta 10-Q (period to 2023-06-30), SEC XBRL, 2024-08-01, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000069/0001326801-24-000069-index.htm"
+},
+"2023Q3": {
+"text": "(source: Meta 10-Q (period to 2023-09-30), SEC XBRL, 2024-10-31, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000081/0001326801-24-000081-index.htm"
+},
+"2023Q4": {
+"text": "(source: Meta 10-K (period to 2023-12-31), SEC XBRL, 2026-01-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2024Q1": {
+"text": "(source: Meta 10-Q (period to 2024-03-31), SEC XBRL, 2025-05-01, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000054/0001326801-25-000054-index.htm"
+},
+"2024Q2": {
+"text": "(source: Meta 10-Q (period to 2024-06-30), SEC XBRL, 2025-07-31, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036791/0001628280-25-036791-index.htm"
+},
+"2024Q3": {
+"text": "(source: Meta 10-Q (period to 2024-09-30), SEC XBRL, 2025-10-30, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/0001628280-25-047240-index.htm"
+},
+"2024Q4": {
+"text": "(source: Meta 10-K (period to 2024-12-31), SEC XBRL, 2026-01-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2025Q1": {
+"text": "(source: Meta 10-Q (period to 2025-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/0001628280-26-028526-index.htm"
+},
+"2025Q2": {
+"text": "(source: Meta 10-Q (period to 2025-06-30), SEC XBRL, 2026-07-30, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/0001628280-26-050705-index.htm"
+},
+"2025Q3": {
+"text": "(source: Meta 10-Q (period to 2025-09-30), SEC XBRL, 2026-10-22, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/0001628280-26-066773-index.htm"
+},
+"2025Q4": {
+"text": "(source: Meta 10-K (period to 2025-12-31), SEC XBRL, 2026-01-29, link) - 12-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm"
+},
+"2026Q1": {
+"text": "(source: Meta 10-Q (period to 2026-03-31), SEC XBRL, 2026-04-30, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/0001628280-26-028526-index.htm"
+},
+"2026Q2": {
+"text": "(source: Meta 10-Q (period to 2026-06-30), SEC XBRL, 2026-07-30, link) - 6-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/0001628280-26-050705-index.htm"
+},
+"2026Q3": {
+"text": "(source: Meta 10-Q (period to 2026-09-30), SEC XBRL, 2026-10-22, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/0001628280-26-066773-index.htm"
+}
+}
+},
+{
 "key": "fin_lease_exmeta",
 "label": "Finance leases ex Meta (GOOGL from 2024, ORCL fiscal Q1 only)",
 "fmt": "bn",
@@ -806,6 +892,31 @@
 }
 },
 {
+"key": "fin_lease_all",
+"label": "Finance leases, all five (Big 4 ROU additions + Meta principal payments)",
+"fmt": "bn",
+"kind": "calc",
+"bold": false,
+"values": {
+"2023Q1": 1.316,
+"2023Q2": 1.335,
+"2023Q3": 2.154,
+"2023Q4": 2.314,
+"2024Q1": 3.7969999999999997,
+"2024Q2": 5.338,
+"2024Q3": 5.54,
+"2024Q4": 7.361,
+"2025Q1": 4.569,
+"2025Q2": 7.997000000000001,
+"2025Q3": 11.052000000000001,
+"2025Q4": 8.644,
+"2026Q1": 6.628,
+"2026Q2": 7.337999999999999,
+"2026Q3": 9.713000000000001
+},
+"sources": {}
+},
+{
 "key": "capexl_exmeta",
 "label": "Capex incl. finance leases, ex Meta",
 "fmt": "bn",
@@ -852,6 +963,109 @@
 "2026Q1": 438.10699999999997,
 "2026Q2": 507.59900000000005,
 "2026Q3": 615.377
+},
+"sources": {}
+},
+{
+"section": "Meta - capex incl. finance leases (Meta's reported basis: purchases of PP&E + principal payments on finance leases), $bn per quarter"
+},
+{
+"key": "capexl_META",
+"label": "Meta capex incl. finance leases",
+"fmt": "bn",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": 7.087000000000001,
+"2023Q2": 6.354,
+"2023Q3": 6.763000000000001,
+"2023Q4": 7.899,
+"2024Q1": 6.715000000000001,
+"2024Q2": 8.472,
+"2024Q3": 9.201999999999998,
+"2024Q4": 14.836,
+"2025Q1": 13.692,
+"2025Q2": 17.012,
+"2025Q3": 19.374000000000002,
+"2025Q4": 22.137,
+"2026Q1": 19.84,
+"2026Q2": 31.078,
+"2026Q3": 34.906
+},
+"sources": {}
+},
+{
+"key": "capexl_META_ttm",
+"label": "Meta capex incl. finance leases, trailing 4 quarters",
+"fmt": "bn",
+"kind": "ttm",
+"bold": true,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": 28.103,
+"2024Q1": 27.731,
+"2024Q2": 29.849000000000004,
+"2024Q3": 32.288,
+"2024Q4": 39.225,
+"2025Q1": 46.202,
+"2025Q2": 54.742,
+"2025Q3": 64.914,
+"2025Q4": 72.215,
+"2026Q1": 78.363,
+"2026Q2": 92.429,
+"2026Q3": 107.961
+},
+"sources": {}
+},
+{
+"key": "g_capexl_META",
+"label": "Meta capex incl. finance leases, y/y",
+"fmt": "pct",
+"kind": "yoy",
+"bold": false,
+"values": {
+"2023Q1": null,
+"2023Q2": null,
+"2023Q3": null,
+"2023Q4": null,
+"2024Q1": -0.052490475518555124,
+"2024Q2": 0.33333333333333326,
+"2024Q3": 0.36063876977672593,
+"2024Q4": 0.8782124319534119,
+"2025Q1": 1.0390171258376766,
+"2025Q2": 1.0080264400377716,
+"2025Q3": 1.1054118669854387,
+"2025Q4": 0.4921137772984632,
+"2026Q1": 0.4490213263219398,
+"2026Q2": 0.8268281213261226,
+"2026Q3": 0.8016929906059664
+},
+"sources": {}
+},
+{
+"key": "capexl_all",
+"label": "Capex incl. finance leases, all five (Big 4 ROU additions + Meta principal payments)",
+"fmt": "bn",
+"kind": "calc",
+"bold": true,
+"values": {
+"2023Q1": 37.870000000000005,
+"2023Q2": 36.668,
+"2023Q3": 40.415,
+"2023Q4": 46.327999999999996,
+"2024Q1": 49.76,
+"2024Q2": 60.98800000000001,
+"2024Q3": 66.705,
+"2024Q4": 83.67,
+"2025Q1": 82.333,
+"2025Q2": 105.323,
+"2025Q3": 116.82499999999999,
+"2025Q4": 139.309,
+"2026Q1": 155.013,
+"2026Q2": 188.881,
+"2026Q3": 240.135
 },
 "sources": {}
 },
@@ -995,11 +1209,11 @@
 "2024Q4": 0.1391,
 "2025Q1": 0.1445,
 "2025Q2": 0.1841,
-"2025Q3": 0.1803,
-"2025Q4": 0.5397,
+"2025Q3": 0.18,
+"2025Q4": 0.54,
 "2026Q1": 0.9492,
 "2026Q2": 1.3288,
-"2026Q3": null
+"2026Q3": 2.131
 },
 "sources": {
 "2024Q3": {
@@ -1019,8 +1233,8 @@
 "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/0001878848-26-000052-index.htm"
 },
 "2025Q3": {
-"text": "(source: IREN 10-Q (period to 2025-09-30), SEC XBRL, 2025-11-06, link) - 3 months as filed",
-"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000081/0001878848-25-000081-index.htm"
+"text": "(source: IREN 10-Q (period to 2025-09-30), SEC XBRL, 2026-11-05, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/0001878848-26-000066-index.htm"
 },
 "2025Q4": {
 "text": "(source: IREN 10-Q (period to 2025-12-31), SEC XBRL, 2026-02-05, link) - 6-month YTD less prior YTD",
@@ -1033,6 +1247,10 @@
 "2026Q2": {
 "text": "(source: IREN 10-K (period to 2026-06-30), SEC XBRL, 2026-08-27, link) - 12-month YTD less prior YTD",
 "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/0001878848-26-000052-index.htm"
+},
+"2026Q3": {
+"text": "(source: IREN 10-Q (period to 2026-09-30), SEC XBRL, 2026-11-05, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/0001878848-26-000066-index.htm"
 }
 }
 },
@@ -1107,8 +1325,8 @@
 "2024Q4": 4.0543,
 "2025Q1": 2.0954,
 "2025Q2": 3.1477,
-"2025Q3": 3.5250000000000004,
-"2025Q4": 6.6555,
+"2025Q3": 3.5247000000000006,
+"2025Q4": 6.6558,
 "2026Q1": 11.117099999999999,
 "2026Q2": 13.408199999999999,
 "2026Q3": null
@@ -1132,8 +1350,8 @@
 "2024Q4": 72.8883,
 "2025Q1": 70.73639999999999,
 "2025Q2": 91.4587,
-"2025Q3": 100.976,
-"2025Q4": 123.8275,
+"2025Q3": 100.97569999999999,
+"2025Q4": 123.8278,
 "2026Q1": 146.2901,
 "2026Q2": 171.2112,
 "2026Q3": null
@@ -1157,7 +1375,7 @@
 "2024Q4": null,
 "2025Q1": null,
 "2025Q2": null,
-"2025Q3": 336.0594,
+"2025Q3": 336.0591,
 "2025Q4": 386.9986,
 "2026Q1": 462.55229999999995,
 "2026Q2": 542.3048,
@@ -1182,8 +1400,8 @@
 "2024Q4": null,
 "2025Q1": 73.30339999999998,
 "2025Q2": 92.20769999999999,
-"2025Q3": 105.736,
-"2025Q4": 128.4775,
+"2025Q3": 105.7357,
+"2025Q4": 128.4778,
 "2026Q1": 154.0131,
 "2026Q2": 187.0392,
 "2026Q3": null
@@ -2350,11 +2568,11 @@
 "2024Q4": 0.0361,
 "2025Q1": 0.0473,
 "2025Q2": 0.0638,
-"2025Q3": 0.0852,
+"2025Q3": 0.085,
 "2025Q4": 0.0992,
 "2026Q1": 0.1212,
 "2026Q2": 0.1121,
-"2026Q3": null
+"2026Q3": 0.148
 },
 "sources": {
 "2024Q3": {
@@ -2374,8 +2592,8 @@
 "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/0001878848-26-000052-index.htm"
 },
 "2025Q3": {
-"text": "(source: IREN 10-Q (period to 2025-09-30), SEC XBRL, 2025-11-06, link) - 3 months as filed",
-"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000081/0001878848-25-000081-index.htm"
+"text": "(source: IREN 10-Q (period to 2025-09-30), SEC XBRL, 2026-11-05, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/0001878848-26-000066-index.htm"
 },
 "2025Q4": {
 "text": "(source: IREN 10-Q (period to 2025-12-31), SEC XBRL, 2026-02-05, link) - 3 months as filed",
@@ -2388,6 +2606,10 @@
 "2026Q2": {
 "text": "(source: IREN 10-K (period to 2026-06-30), SEC XBRL, 2026-08-27, link) - 12-month YTD less prior YTD",
 "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/0001878848-26-000052-index.htm"
+},
+"2026Q3": {
+"text": "(source: IREN 10-Q (period to 2026-09-30), SEC XBRL, 2026-11-05, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/0001878848-26-000066-index.htm"
 }
 }
 },
@@ -2458,7 +2680,7 @@
 "2024Q4": null,
 "2025Q1": 1.3124,
 "2025Q2": 1.5030000000000001,
-"2025Q3": 1.7271999999999998,
+"2025Q3": 1.7269999999999999,
 "2025Q4": null,
 "2026Q1": 2.9262,
 "2026Q2": 3.6568,
@@ -2483,7 +2705,7 @@
 "2024Q4": null,
 "2025Q1": 25.498399999999997,
 "2025Q2": 27.999000000000002,
-"2025Q3": 31.4742,
+"2025Q3": 31.474,
 "2025Q4": null,
 "2026Q1": 39.075199999999995,
 "2026Q2": 43.34479999999999,
@@ -3839,7 +4061,7 @@
 "2025Q4": 0.2894,
 "2026Q1": 0.7103,
 "2026Q2": 5.1,
-"2026Q3": null
+"2026Q3": 6.347
 },
 "sources": {
 "2025Q3": {
@@ -3857,6 +4079,10 @@
 "2026Q2": {
 "text": "(source: IREN 10-K (period to 2026-06-30), SEC XBRL, 2026-08-27, link) - as filed",
 "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/0001878848-26-000052-index.htm"
+},
+"2026Q3": {
+"text": "(source: IREN 10-Q (period to 2026-09-30), SEC XBRL, 2026-11-05, link) - as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/0001878848-26-000066-index.htm"
 }
 }
 },
@@ -5169,8 +5395,8 @@
 "2024Q4": null,
 "2025Q1": 0.027636849041108608,
 "2025Q2": 0.033585861050649785,
-"2025Q3": 0.04391834379965196,
-"2025Q4": 0.05562071179778561,
+"2025Q3": 0.043918468407548254,
+"2025Q4": 0.05562058192154598,
 "2026Q1": 0.07448248719139157,
 "2026Q2": 0.10515011460436864,
 "2026Q3": null
@@ -5381,5 +5607,5 @@
 "sources": {}
 }
 ],
-"workbook": "20261105_AI capex coverage tracker.xlsx"
+"workbook": "20261106_AI capex coverage tracker.xlsx"
 }

@@ -174,8 +174,8 @@ function draw() {
   chart($("#c-da"), {lines: [{name: "Depreciation, five", v: ser("dep_all"), c: C[0]}, {name: "Server D&A, five", v: ser("srvdep_all"), c: C[1]}, {name: "Neoclouds + SpaceX AI", v: ser("dep_neo_all"), c: C[2]}, {name: "Capex, five", v: ser("capex_all"), c: N, dash: true}], yFmt: v => "$" + v.toFixed(0)});
   const T = ["MSFT", "GOOGL", "AMZN", "META", "ORCL"], TN = {MSFT: "Microsoft", GOOGL: "Alphabet", AMZN: "Amazon", META: "Meta", ORCL: "Oracle"};
   const C6 = css("--s6");
-  legendBox("#lg-cx", [...T.map((t, i) => [TN[t], C[i]]), ["Neoclouds (CRWV+NBIS+IREN)", C6], ["SpaceX AI", N]]);
-  chart($("#c-cx"), {bars: [...T.map((t, i) => ({name: TN[t], v: ser("capex_" + t), c: C[i]})), {name: "Neoclouds", v: ser("capex_neo"), c: C6}, {name: "SpaceX AI", v: ser("capex_SPCX"), c: N}], yFmt: v => "$" + v.toFixed(0)});
+  legendBox("#lg-cx", [...T.map((t, i) => [TN[t] + (t === "META" ? " (incl. finance-lease principal)" : ""), C[i]]), ["Neoclouds (CRWV+NBIS+IREN)", C6], ["SpaceX AI", N]]);
+  chart($("#c-cx"), {bars: [...T.map((t, i) => ({name: TN[t] + (t === "META" ? " incl. fin. leases" : ""), v: ser((t === "META" ? "capexl_" : "capex_") + t), c: C[i]})), {name: "Neoclouds", v: ser("capex_neo"), c: C6}, {name: "SpaceX AI", v: ser("capex_SPCX"), c: N}], yFmt: v => "$" + v.toFixed(0)});
 }
 
 function table() {
