@@ -1,5 +1,5 @@
 {
-"built": "2026-11-12T08:12:06",
+"built": "2026-11-12T21:20:05",
 "quarters": [
 "2023Q1",
 "2023Q2",
@@ -1089,11 +1089,11 @@
 "2024Q4": 3.4977,
 "2025Q1": 1.407,
 "2025Q2": 2.453,
-"2025Q3": 2.3892,
-"2025Q4": 4.0598,
+"2025Q3": 2.389,
+"2025Q4": 4.06,
 "2026Q1": 7.695,
 "2026Q2": 6.422,
-"2026Q3": null
+"2026Q3": 9.441
 },
 "sources": {
 "2024Q1": {
@@ -1121,8 +1121,8 @@
 "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm"
 },
 "2025Q3": {
-"text": "(source: CoreWeave 10-Q (period to 2025-09-30), SEC XBRL, 2025-11-13, link) - 9-month YTD less prior YTD",
-"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/0001769628-25-000062-index.htm"
+"text": "(source: CoreWeave 10-Q (period to 2025-09-30), SEC XBRL, 2026-11-12, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/0001769628-26-000465-index.htm"
 },
 "2025Q4": {
 "text": "(source: CoreWeave 10-K (period to 2025-12-31), SEC XBRL, 2026-03-02, link) - 12-month YTD less prior YTD",
@@ -1135,6 +1135,10 @@
 "2026Q2": {
 "text": "(source: CoreWeave 10-Q (period to 2026-06-30), SEC XBRL, 2026-08-12, link) - 6-month YTD less prior YTD",
 "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm"
+},
+"2026Q3": {
+"text": "(source: CoreWeave 10-Q (period to 2026-09-30), SEC XBRL, 2026-11-12, link) - 9-month YTD less prior YTD",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/0001769628-26-000465-index.htm"
 }
 }
 },
@@ -1159,7 +1163,7 @@
 "2025Q4": 2.056,
 "2026Q1": 2.4729,
 "2026Q2": 5.6574,
-"2026Q3": null
+"2026Q3": 7.3004
 },
 "sources": {
 "2024Q4": {
@@ -1189,6 +1193,10 @@
 "2026Q2": {
 "text": "(source: Nebius 6-K, 2026Q2, link) - 6-K exhibit: purchases of property and equipment and intangible assets",
 "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
+},
+"2026Q3": {
+"text": "(source: Nebius press release (period to 2026-09-30), SEC XBRL, 2026Q3, link) - Nebius Q3 2026 press release 2026-11-12, cash flow: purchases of property and equipment and intangible assets (7,300.4) $m (9M 15,430.7 less Q1 2,472.9 and Q2 5,657.4)",
+"url": "https://assets.nebius.com/assets/508584f1-b73d-484f-b64f-f96a5bc3b515/Nebius%20Q3%202026%20Financial%20Results%20Press%20Release.pdf"
 }
 }
 },
@@ -1325,11 +1333,11 @@
 "2024Q4": 4.0543,
 "2025Q1": 2.0954,
 "2025Q2": 3.1477,
-"2025Q3": 3.5247000000000006,
-"2025Q4": 6.6558,
+"2025Q3": 3.5245,
+"2025Q4": 6.656,
 "2026Q1": 11.117099999999999,
 "2026Q2": 13.408199999999999,
-"2026Q3": null
+"2026Q3": 18.8724
 },
 "sources": {}
 },
@@ -1350,11 +1358,11 @@
 "2024Q4": 72.8883,
 "2025Q1": 70.73639999999999,
 "2025Q2": 91.4587,
-"2025Q3": 100.97569999999999,
-"2025Q4": 123.8278,
+"2025Q3": 100.9755,
+"2025Q4": 123.828,
 "2026Q1": 146.2901,
 "2026Q2": 171.2112,
-"2026Q3": null
+"2026Q3": 224.10139999999998
 },
 "sources": {}
 },
@@ -1375,11 +1383,11 @@
 "2024Q4": null,
 "2025Q1": null,
 "2025Q2": null,
-"2025Q3": 336.0591,
+"2025Q3": 336.0589,
 "2025Q4": 386.9986,
-"2026Q1": 462.55229999999995,
+"2026Q1": 462.55230000000006,
 "2026Q2": 542.3048,
-"2026Q3": null
+"2026Q3": 665.4306999999999
 },
 "sources": {}
 },
@@ -1400,11 +1408,11 @@
 "2024Q4": null,
 "2025Q1": 73.30339999999998,
 "2025Q2": 92.20769999999999,
-"2025Q3": 105.7357,
-"2025Q4": 128.4778,
+"2025Q3": 105.7355,
+"2025Q4": 128.478,
 "2026Q1": 154.0131,
 "2026Q2": 187.0392,
-"2026Q3": null
+"2026Q3": 240.54539999999997
 },
 "sources": {}
 },
@@ -2452,7 +2460,7 @@
 "2025Q4": 0.8,
 "2026Q1": 1.1,
 "2026Q2": 1.4,
-"2026Q3": null
+"2026Q3": 1.9
 },
 "sources": {
 "2024Q1": {
@@ -2480,8 +2488,8 @@
 "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm"
 },
 "2025Q3": {
-"text": "(source: CoreWeave 10-Q (period to 2025-09-30), SEC XBRL, 2025-11-13, link) - 3 months as filed",
-"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/0001769628-25-000062-index.htm"
+"text": "(source: CoreWeave 10-Q (period to 2025-09-30), SEC XBRL, 2026-11-12, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/0001769628-26-000465-index.htm"
 },
 "2025Q4": {
 "text": "(source: CoreWeave 10-K (period to 2025-12-31), SEC XBRL, 2026-03-02, link) - 12-month YTD less prior YTD",
@@ -2494,6 +2502,10 @@
 "2026Q2": {
 "text": "(source: CoreWeave 10-Q (period to 2026-06-30), SEC XBRL, 2026-08-12, link) - 3 months as filed",
 "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm"
+},
+"2026Q3": {
+"text": "(source: CoreWeave 10-Q (period to 2026-09-30), SEC XBRL, 2026-11-12, link) - 3 months as filed",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/0001769628-26-000465-index.htm"
 }
 }
 },
@@ -2518,7 +2530,7 @@
 "2025Q4": null,
 "2026Q1": 0.212,
 "2026Q2": 0.2597,
-"2026Q3": null
+"2026Q3": 0.3547
 },
 "sources": {
 "2024Q2": {
@@ -2548,6 +2560,10 @@
 "2026Q2": {
 "text": "(source: Nebius 6-K (period to 2026-06-30), SEC XBRL, 2026Q2, link) - 3 months as filed (6-K tables)",
 "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
+},
+"2026Q3": {
+"text": "(source: Nebius press release (period to 2026-09-30), SEC XBRL, 2026Q3, link) - Nebius Q3 2026 press release 2026-11-12, operating costs: depreciation and amortization 354.7 $m",
+"url": "https://assets.nebius.com/assets/508584f1-b73d-484f-b64f-f96a5bc3b515/Nebius%20Q3%202026%20Financial%20Results%20Press%20Release.pdf"
 }
 }
 },
@@ -2684,7 +2700,7 @@
 "2025Q4": null,
 "2026Q1": 2.9262,
 "2026Q2": 3.6568,
-"2026Q3": null
+"2026Q3": 4.8757
 },
 "sources": {}
 },
@@ -2709,7 +2725,7 @@
 "2025Q4": null,
 "2026Q1": 39.075199999999995,
 "2026Q2": 43.34479999999999,
-"2026Q3": null
+"2026Q3": 49.45270000000001
 },
 "sources": {}
 },
@@ -5372,7 +5388,7 @@
 "2025Q2": null,
 "2025Q3": null,
 "2025Q4": 2.6616876650199766,
-"2026Q1": 2.739258457908435,
+"2026Q1": 2.7392584579084343,
 "2026Q2": 2.7485281339940197,
 "2026Q3": null
 },
@@ -5395,11 +5411,11 @@
 "2024Q4": null,
 "2025Q1": 0.027636849041108608,
 "2025Q2": 0.033585861050649785,
-"2025Q3": 0.043918468407548254,
-"2025Q4": 0.05562058192154598,
+"2025Q3": 0.04391855147987194,
+"2025Q4": 0.05562049533772319,
 "2026Q1": 0.07448248719139157,
 "2026Q2": 0.10515011460436864,
-"2026Q3": null
+"2026Q3": 0.12024214555755382
 },
 "sources": {}
 },
@@ -5552,7 +5568,7 @@
 "2025Q4": null,
 "2026Q1": 1.1010362411566184,
 "2026Q2": 1.0284553242299723,
-"2026Q3": null
+"2026Q3": 1.274972927730043
 },
 "sources": {}
 },
