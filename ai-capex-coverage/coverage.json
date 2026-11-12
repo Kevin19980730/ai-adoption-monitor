@@ -1,5 +1,5 @@
 {
-"built": "2026-11-12T21:20:05",
+"built": "2026-11-13T07:11:31",
 "quarters": [
 "2023Q1",
 "2023Q2",
@@ -1195,8 +1195,8 @@
 "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
 },
 "2026Q3": {
-"text": "(source: Nebius press release (period to 2026-09-30), SEC XBRL, 2026Q3, link) - Nebius Q3 2026 press release 2026-11-12, cash flow: purchases of property and equipment and intangible assets (7,300.4) $m (9M 15,430.7 less Q1 2,472.9 and Q2 5,657.4)",
-"url": "https://assets.nebius.com/assets/508584f1-b73d-484f-b64f-f96a5bc3b515/Nebius%20Q3%202026%20Financial%20Results%20Press%20Release.pdf"
+"text": "(source: Nebius 6-K, 2026Q3, link) - 6-K exhibit: purchases of property and equipment and intangible assets",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
 }
 }
 },
@@ -2562,8 +2562,8 @@
 "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
 },
 "2026Q3": {
-"text": "(source: Nebius press release (period to 2026-09-30), SEC XBRL, 2026Q3, link) - Nebius Q3 2026 press release 2026-11-12, operating costs: depreciation and amortization 354.7 $m",
-"url": "https://assets.nebius.com/assets/508584f1-b73d-484f-b64f-f96a5bc3b515/Nebius%20Q3%202026%20Financial%20Results%20Press%20Release.pdf"
+"text": "(source: Nebius 6-K (period to 2026-09-30), SEC XBRL, 2026Q3, link) - 3 months as filed (6-K tables)",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K&dateb=&owner=include&count=40"
 }
 }
 },
@@ -3009,7 +3009,7 @@
 "2025Q4": 9.376,
 "2026Q1": 9.581,
 "2026Q2": 11.918,
-"2026Q3": null
+"2026Q3": 9.339
 },
 "sources": {
 "2024Q4": {
@@ -3029,8 +3029,8 @@
 "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/0001769628-25-000062-index.htm"
 },
 "2025Q4": {
-"text": "(source: CoreWeave XBRL 10-Q for 2026-06-30, 2025-12-31, link)",
-"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm"
+"text": "(source: CoreWeave XBRL 10-Q for 2026-09-30, 2025-12-31, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/0001769628-26-000465-index.htm"
 },
 "2026Q1": {
 "text": "(source: CoreWeave XBRL 10-Q for 2026-03-31, 2026-03-31, link)",
@@ -3039,6 +3039,10 @@
 "2026Q2": {
 "text": "(source: CoreWeave XBRL 10-Q for 2026-06-30, 2026-06-30, link)",
 "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm"
+},
+"2026Q3": {
+"text": "(source: CoreWeave XBRL 10-Q for 2026-09-30, 2026-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/0001769628-26-000465-index.htm"
 }
 }
 },
@@ -3063,7 +3067,7 @@
 "2025Q4": 2.417,
 "2026Q1": 2.428,
 "2026Q2": 7.836,
-"2026Q3": null
+"2026Q3": 12.5
 },
 "sources": {
 "2024Q4": {
@@ -3076,7 +3080,7 @@
 },
 "2025Q4": {
 "text": "(source: Nebius 6-K interim statements, 2025-12-31, link)",
-"url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/0001104659-26-094844-index.htm"
+"url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126238/0001104659-26-126238-index.htm"
 },
 "2026Q1": {
 "text": "(source: Nebius 6-K interim statements, 2026-03-31, link)",
@@ -3085,6 +3089,10 @@
 "2026Q2": {
 "text": "(source: Nebius 6-K interim statements, 2026-06-30, link)",
 "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/0001104659-26-094844-index.htm"
+},
+"2026Q3": {
+"text": "(source: Nebius 6-K interim statements, 2026-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126238/0001104659-26-126238-index.htm"
 }
 }
 },
@@ -3109,7 +3117,7 @@
 "2025Q4": 212.651,
 "2026Q1": 181.623,
 "2026Q2": 262.886,
-"2026Q3": 283.315
+"2026Q3": 305.154
 },
 "sources": {}
 },
@@ -3989,7 +3997,7 @@
 "2025Q4": 60.7,
 "2026Q1": 98.8,
 "2026Q2": 103.7,
-"2026Q3": null
+"2026Q3": 132.3
 },
 "sources": {
 "2025Q1": {
@@ -4015,6 +4023,10 @@
 "2026Q2": {
 "text": "(source: CoreWeave 10-Q - remaining performance obligations (period 2026-06-30), 2026-08-12, link)",
 "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm"
+},
+"2026Q3": {
+"text": "(source: CoreWeave 10-Q - remaining performance obligations (period 2026-09-30), 2026-11-12, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/0001769628-26-000465-index.htm"
 }
 }
 },
@@ -4039,7 +4051,7 @@
 "2025Q4": 21.33,
 "2026Q1": 33.59,
 "2026Q2": 37.49,
-"2026Q3": null
+"2026Q3": 0.04
 },
 "sources": {
 "2025Q4": {
@@ -4053,6 +4065,10 @@
 "2026Q2": {
 "text": "(source: Nebius 6-K interim statements (000110465926094844) - remaining performance obligations (period 2026-06-30), 2026-06-30, link)",
 "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/0001104659-26-094844-index.htm"
+},
+"2026Q3": {
+"text": "(source: Nebius 6-K interim statements (000110465926126238) - remaining performance obligations (period 2026-09-30), 2026-09-30, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126238/0001104659-26-126238-index.htm"
 }
 }
 },
@@ -4261,7 +4277,7 @@
 "2025Q4": 41.2,
 "2026Q1": 79.3,
 "2026Q2": 84.2,
-"2026Q3": null
+"2026Q3": 112.80000000000001
 },
 "sources": {}
 },
@@ -4336,7 +4352,7 @@
 "2025Q4": 1723.4193999999998,
 "2026Q1": 2150.3003000000003,
 "2026Q2": 2483.7899999999995,
-"2026Q3": null
+"2026Q3": 2631.387
 },
 "sources": {}
 },
@@ -4834,7 +4850,7 @@
 "2025Q4": null,
 "2026Q1": null,
 "2026Q2": null,
-"2026Q3": 6.65
+"2026Q3": 6.66
 },
 "sources": {
 "2026Q3": {
@@ -4864,7 +4880,7 @@
 "2025Q4": null,
 "2026Q1": null,
 "2026Q2": null,
-"2026Q3": 0.08645
+"2026Q3": 0.08658
 },
 "sources": {}
 },
@@ -5113,7 +5129,7 @@
 "2025Q4": 0.07,
 "2026Q1": 0.356998748056508,
 "2026Q2": 0.41355331550942953,
-"2026Q3": 0.6227
+"2026Q3": 0.62283
 },
 "sources": {}
 },
@@ -5138,7 +5154,7 @@
 "2025Q4": 7.14601,
 "2026Q1": 11.471278748056509,
 "2026Q2": 19.667193315509426,
-"2026Q3": 28.923695000000002
+"2026Q3": 28.923825
 },
 "sources": {}
 },
@@ -5163,7 +5179,7 @@
 "2025Q4": 28.58404,
 "2026Q1": 45.885114992226036,
 "2026Q2": 78.6687732620377,
-"2026Q3": 115.69478000000001
+"2026Q3": 115.6953
 },
 "sources": {}
 },
@@ -5224,41 +5240,41 @@
 "2024Q2": null,
 "2024Q3": null,
 "2024Q4": null,
-"2025Q1": 9.57,
-"2025Q2": 18.15,
-"2025Q3": 33.15,
-"2025Q4": 64.68,
-"2026Q1": 123.94,
-"2026Q2": 225.72,
-"2026Q3": 381.07
+"2025Q1": 0.0,
+"2025Q2": 0.0,
+"2025Q3": 0.0,
+"2025Q4": 0.0,
+"2026Q1": 0.0,
+"2026Q2": 0.0,
+"2026Q3": 0.0
 },
 "sources": {
 "2025Q1": {
-"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 12 weeks, 2025-03-28, link)",
+"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 12 weeks, 2025-03-30, link)",
 "url": "https://ramp.com/data/ai-index"
 },
 "2025Q2": {
-"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2025-06-27, link)",
+"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2025-06-29, link)",
 "url": "https://ramp.com/data/ai-index"
 },
 "2025Q3": {
-"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2025-09-26, link)",
+"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2025-09-28, link)",
 "url": "https://ramp.com/data/ai-index"
 },
 "2025Q4": {
-"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2025-12-26, link)",
+"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2025-12-28, link)",
 "url": "https://ramp.com/data/ai-index"
 },
 "2026Q1": {
-"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2026-03-27, link)",
+"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2026-03-29, link)",
 "url": "https://ramp.com/data/ai-index"
 },
 "2026Q2": {
-"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2026-06-26, link)",
+"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2026-06-28, link)",
 "url": "https://ramp.com/data/ai-index"
 },
 "2026Q3": {
-"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2026-09-25, link)",
+"text": "(source: Ramp AI Index chart data (tokenVolumes, token_spend), 13 weeks, 2026-09-27, link)",
 "url": "https://ramp.com/data/ai-index"
 }
 }
@@ -5312,7 +5328,7 @@
 "2025Q4": 0.06098735192708156,
 "2026Q1": 0.08486368393138059,
 "2026Q2": 0.12463130178456319,
-"2026Q3": 0.14093376179779663
+"2026Q3": 0.14093439523654067
 },
 "sources": {}
 },
@@ -5337,7 +5353,7 @@
 "2025Q4": 33.83881354770004,
 "2026Q1": 25.1377816138288,
 "2026Q2": 17.335340865904787,
-"2026Q3": 12.941379031966694
+"2026Q3": 12.941320866102597
 },
 "sources": {}
 },
@@ -5415,7 +5431,7 @@
 "2025Q4": 0.05562049533772319,
 "2026Q1": 0.07448248719139157,
 "2026Q2": 0.10515011460436864,
-"2026Q3": 0.12024214555755382
+"2026Q3": 0.12024268599607393
 },
 "sources": {}
 },
@@ -5493,7 +5509,7 @@
 "2025Q4": 4.079800959658788,
 "2026Q1": 4.662382302983406,
 "2026Q2": 5.350657780991944,
-"2026Q3": 5.228521130551818
+"2026Q3": 5.228549125168238
 },
 "sources": {}
 },
@@ -5623,5 +5639,5 @@
 "sources": {}
 }
 ],
-"workbook": "20261112_AI capex coverage tracker.xlsx"
+"workbook": "20261113_AI capex coverage tracker.xlsx"
 }
