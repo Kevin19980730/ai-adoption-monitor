@@ -658,16 +658,25 @@ def ramp():
     p = rp_csv("ramp_token_prices_daily.csv")
     prices = {}
     if not p.empty:
-        pv = p.pivot_table(index=["date", "maker"], columns="token_type", values=["cost_usd_7d", "tokens_7d"], aggfunc="sum")
+        # Since 2026-11 Ramp publishes $/M directly (price_per_m) but no token counts, so the cached-input
+        # price and cached share come only from the frozen counts (to 2026-10-23); later days show them blank.
+        p = p[p.maker != "blend"]
+        if "price_per_m" not in p:
+            p = p.assign(price_per_m=float("nan"))
+        pv = p.pivot_table(index=["date", "maker"], columns="token_type", values=["cost_usd_7d", "tokens_7d", "price_per_m"],
+                           aggfunc="first", dropna=False)
+        per_m = lambda cc, tt: float(cc / tt * 1e6) if pd.notna(tt) and tt > 0 and pd.notna(cc) else None
         for (d, mk), r in pv.iterrows():
-            c, t = r["cost_usd_7d"], r["tokens_7d"]
-            cached_t = t["all_tokens"] - t["output"] - t["uncached_input"]
-            cached_c = c["all_tokens"] - c["output"] - c["uncached_input"]
+            c, t, pm = r.get("cost_usd_7d"), r.get("tokens_7d"), r["price_per_m"]
+            pick = lambda k: float(pm[k]) if pd.notna(pm[k]) else (per_m(c[k], t[k]) if c is not None else None)
+            cached_t = cached_c = None
+            if c is not None and all(pd.notna(t[k]) and pd.notna(c[k]) for k in ("all_tokens", "output", "uncached_input")):
+                cached_t = t["all_tokens"] - t["output"] - t["uncached_input"]
+                cached_c = c["all_tokens"] - c["output"] - c["uncached_input"]
             row = prices.setdefault(RAMP_MAKERS.get(mk, mk), [])
-            per_m = lambda cc, tt: float(cc / tt * 1e6) if tt and tt > 0 else None
-            row.append([d, per_m(c["all_tokens"], t["all_tokens"]), per_m(c["output"], t["output"]),
-                        per_m(c["uncached_input"], t["uncached_input"]), per_m(cached_c, cached_t),
-                        float(cached_t / (t["all_tokens"] - t["output"])) if t["all_tokens"] > t["output"] else None])
+            row.append([d, pick("all_tokens"), pick("output"), pick("uncached_input"),
+                        per_m(cached_c, cached_t) if cached_t is not None else None,
+                        float(cached_t / (t["all_tokens"] - t["output"])) if cached_t is not None and t["all_tokens"] > t["output"] else None])
     return jsonify({"weeks": weeks, "makers": makers, "by": by, "top": top[:25], "last": last, "prior": prior,
                     "n_models": len(top), "prices": prices,
                     "price_cols": ["blended", "output", "uncached_input", "cached_input", "cached_share_of_input"]})

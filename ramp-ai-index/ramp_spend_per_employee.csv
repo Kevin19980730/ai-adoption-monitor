@@ -1,843 +1,1641 @@
 month,dimension,key,median_pepm,p90_pepm,p99_pepm,top10_median_pepm,top1_median_pepm,p99w_mean_pepm
-2023-10,all,All,2.61,30.88,372.52,67.73,933.17,4.08
-2023-10,business_office_state,All other states,1.82,,,,,1.29
-2023-10,business_office_state,CA,3.48,,,,,10.34
-2023-10,business_office_state,DE,4.24,,,,,5
-2023-10,business_office_state,FL,2.22,,,,,1.87
-2023-10,business_office_state,NY,3.6,,,,,8.06
-2023-10,business_office_state,TX,2.4,,,,,2.16
-2023-10,company_financing_status,Other,2.38,,,,,2.16
-2023-10,company_financing_status,PE-backed,0.84,,,,,1.57
-2023-10,company_financing_status,VC-backed,3.5,,,,,12.11
-2023-10,fte_segment,Large,0.55,,,,,4.41
-2023-10,fte_segment,Medium,1.7,,,,,11.65
-2023-10,fte_segment,Small,5,,,,,24.14
-2023-10,naics_sector,Finance and insurance,3.27,,,,,3.88
-2023-10,naics_sector,"Professional, scientific, and technical services",2.77,,,,,10.36
-2023-10,naics_sector,Technology and media,4.47,,,,,8.31
-2023-11,all,All,2.73,35.14,475.98,78.3,883.55,4.93
-2023-11,business_office_state,All other states,1.9,,,,,1.46
-2023-11,business_office_state,CA,3.73,,,,,15.07
-2023-11,business_office_state,DE,4.25,,,,,4.94
-2023-11,business_office_state,FL,2.18,,,,,2.13
-2023-11,business_office_state,NY,3.53,,,,,7.77
-2023-11,business_office_state,TX,2.13,,,,,3.61
-2023-11,company_financing_status,Other,2.5,,,,,3
-2023-11,company_financing_status,PE-backed,0.78,,,,,1.57
-2023-11,company_financing_status,VC-backed,3.83,,,,,12.82
-2023-11,fte_segment,Large,0.55,,,,,6.22
-2023-11,fte_segment,Medium,1.94,,,,,13.26
-2023-11,fte_segment,Small,5.35,,,,,25.38
-2023-11,naics_sector,Finance and insurance,3.35,,,,,5.25
-2023-11,naics_sector,Manufacturing,1.33,,,,,0.57
-2023-11,naics_sector,"Professional, scientific, and technical services",3.11,,,,,10.2
-2023-11,naics_sector,Technology and media,4.8,,,,,11.5
-2023-12,all,All,2.67,32.34,496.83,74.23,1105.91,4.82
-2023-12,business_office_state,All other states,1.81,,,,,1.43
-2023-12,business_office_state,CA,3.57,,,,,13.59
-2023-12,business_office_state,DE,4,,,,,4.52
-2023-12,business_office_state,FL,2,,,,,2.66
-2023-12,business_office_state,NY,4.22,,,,,7.78
-2023-12,business_office_state,TX,2.35,,,,,2.59
-2023-12,company_financing_status,Other,2.4,,,,,2.9
-2023-12,company_financing_status,PE-backed,0.8,,,,,1.53
-2023-12,company_financing_status,VC-backed,4,,,,,12.81
-2023-12,fte_segment,Large,0.55,,,,,5.39
-2023-12,fte_segment,Medium,1.8,,,,,11.54
-2023-12,fte_segment,Small,5.19,,,,,27.76
-2023-12,naics_sector,Finance and insurance,3.33,,,,,5.23
-2023-12,naics_sector,Health care,1.23,,,,,0.92
-2023-12,naics_sector,Manufacturing,1.33,,,,,0.69
-2023-12,naics_sector,"Professional, scientific, and technical services",3.06,,,,,9.33
-2023-12,naics_sector,Technology and media,4.94,,,,,10.87
-2024-01,all,All,2.86,38.57,562.44,85.93,1000,4.81
-2024-01,business_office_state,All other states,1.86,,,,,1.93
-2024-01,business_office_state,CA,3.93,,,,,12.25
-2024-01,business_office_state,DE,5.72,,,,,4.85
-2024-01,business_office_state,FL,2.69,,,,,1.71
-2024-01,business_office_state,NY,4.14,,,,,6.49
-2024-01,business_office_state,TX,2.27,,,,,2.37
-2024-01,company_financing_status,Other,2.5,,,,,2.69
-2024-01,company_financing_status,PE-backed,0.88,,,,,2.63
-2024-01,company_financing_status,VC-backed,4.25,,,,,14.09
-2024-01,fte_segment,Large,0.6,,,,,5.82
-2024-01,fte_segment,Medium,2.17,,,,,13.54
-2024-01,fte_segment,Small,5.45,,,,,29.43
-2024-01,naics_sector,Finance and insurance,3.56,,,,,3.88
-2024-01,naics_sector,Health care,1.16,,,,,1.14
-2024-01,naics_sector,Manufacturing,1.43,,,,,0.77
-2024-01,naics_sector,"Professional, scientific, and technical services",3.35,,,,,6.64
-2024-01,naics_sector,Technology and media,5.19,,,,,15.05
-2024-02,all,All,3.04,38.76,498.09,83.06,982.25,4.89
-2024-02,business_office_state,All other states,1.82,,,,,1.93
-2024-02,business_office_state,CA,4,,,,,13.28
-2024-02,business_office_state,DE,5.49,,,,,5.28
-2024-02,business_office_state,FL,2.86,,,,,2.18
-2024-02,business_office_state,MA,2.86,,,,,4.6
-2024-02,business_office_state,NY,4.36,,,,,6.17
-2024-02,business_office_state,TX,2.5,,,,,2.06
-2024-02,company_financing_status,Other,2.65,,,,,2.84
-2024-02,company_financing_status,PE-backed,1,,,,,2.59
-2024-02,company_financing_status,VC-backed,4.59,,,,,13.91
-2024-02,fte_segment,Large,0.68,,,,,5.86
-2024-02,fte_segment,Medium,2.31,,,,,13.58
-2024-02,fte_segment,Small,5.92,,,,,28.99
-2024-02,naics_sector,Finance and insurance,3.7,,,,,4.31
-2024-02,naics_sector,Health care,1.15,,,,,0.76
-2024-02,naics_sector,Manufacturing,1.43,,,,,0.85
-2024-02,naics_sector,"Professional, scientific, and technical services",3.81,,,,,7.18
-2024-02,naics_sector,Technology and media,5.71,,,,,13.83
-2024-03,all,All,3.14,44.94,579.73,107.49,1225.47,5.53
-2024-03,business_office_state,All other states,1.98,,,,,1.95
-2024-03,business_office_state,CA,4.31,,,,,16.41
-2024-03,business_office_state,DE,6.18,,,,,6.56
-2024-03,business_office_state,FL,2.8,,,,,2.81
-2024-03,business_office_state,MA,2.61,,,,,3.28
-2024-03,business_office_state,NY,5.21,,,,,6.46
-2024-03,business_office_state,TX,2.66,,,,,3.39
-2024-03,company_financing_status,Other,2.56,,,,,3.41
-2024-03,company_financing_status,PE-backed,1.01,,,,,2.3
-2024-03,company_financing_status,VC-backed,5.63,,,,,15.2
-2024-03,fte_segment,Large,0.75,,,,,6.73
-2024-03,fte_segment,Medium,2.26,,,,,13.98
-2024-03,fte_segment,Small,6.66,,,,,36.06
-2024-03,naics_sector,Finance and insurance,3.65,,,,,3.39
-2024-03,naics_sector,Health care,1.25,,,,,1.11
-2024-03,naics_sector,Manufacturing,1.43,,,,,0.97
-2024-03,naics_sector,"Professional, scientific, and technical services",3.89,,,,,9.78
-2024-03,naics_sector,Technology and media,6.67,,,,,14.85
-2024-04,all,All,3.11,42.8,643.09,93.28,1572.79,6.22
-2024-04,business_office_state,All other states,1.82,,,,,2.07
-2024-04,business_office_state,CA,4.59,,,,,20.11
-2024-04,business_office_state,DE,6,,,,,5.01
-2024-04,business_office_state,FL,2.67,,,,,3.15
-2024-04,business_office_state,MA,2.52,,,,,3.1
-2024-04,business_office_state,NY,5.25,,,,,9.56
-2024-04,business_office_state,TX,2.57,,,,,4.88
-2024-04,business_office_state,WA,3.63,,,,,4.07
-2024-04,company_financing_status,Other,2.5,,,,,3.21
-2024-04,company_financing_status,PE-backed,1.03,,,,,2.69
-2024-04,company_financing_status,VC-backed,5.8,,,,,20.88
-2024-04,fte_segment,Large,0.81,,,,,7.72
-2024-04,fte_segment,Medium,2.31,,,,,14.11
-2024-04,fte_segment,Small,6.53,,,,,36.7
-2024-04,naics_sector,Finance and insurance,4,,,,,4.35
-2024-04,naics_sector,Health care,1.3,,,,,0.79
-2024-04,naics_sector,Manufacturing,1.41,,,,,1.01
-2024-04,naics_sector,"Professional, scientific, and technical services",4,,,,,11.93
-2024-04,naics_sector,Technology and media,6.67,,,,,21.22
-2024-05,all,All,3.13,46.01,622.33,104.58,1406.16,6.32
-2024-05,business_office_state,All other states,1.88,,,,,2.44
-2024-05,business_office_state,CA,4.5,,,,,21.54
-2024-05,business_office_state,CO,2.03,,,,,6.43
-2024-05,business_office_state,DE,5,,,,,4.35
-2024-05,business_office_state,FL,2.5,,,,,2.7
-2024-05,business_office_state,IL,1.96,,,,,4.49
-2024-05,business_office_state,MA,2.86,,,,,5.24
-2024-05,business_office_state,NY,5.43,,,,,8.82
-2024-05,business_office_state,TX,2.73,,,,,3.91
-2024-05,business_office_state,WA,3.68,,,,,5.2
-2024-05,company_financing_status,Other,2.5,,,,,3.43
-2024-05,company_financing_status,PE-backed,1,,,,,2.43
-2024-05,company_financing_status,VC-backed,6.02,,,,,22.41
-2024-05,fte_segment,Large,0.74,,,,,8.18
-2024-05,fte_segment,Medium,2.44,,,,,17.21
-2024-05,fte_segment,Small,6.5,,,,,34.8
-2024-05,naics_sector,Finance and insurance,4,,,,,5.28
-2024-05,naics_sector,Health care,1.21,,,,,1.19
-2024-05,naics_sector,Manufacturing,1.64,,,,,1.28
-2024-05,naics_sector,"Professional, scientific, and technical services",3.92,,,,,12.21
-2024-05,naics_sector,Technology and media,6.69,,,,,19.02
-2024-06,all,All,3,44.46,657.76,99.45,1400.7,5.83
-2024-06,business_office_state,All other states,1.87,,,,,1.83
-2024-06,business_office_state,CA,4.54,,,,,21.85
-2024-06,business_office_state,CO,1.71,,,,,6.88
-2024-06,business_office_state,DE,5.06,,,,,4.87
-2024-06,business_office_state,FL,2.22,,,,,2.96
-2024-06,business_office_state,IL,1.75,,,,,3.74
-2024-06,business_office_state,MA,2.86,,,,,4.41
-2024-06,business_office_state,NY,5,,,,,6.39
-2024-06,business_office_state,TX,2.48,,,,,3.56
-2024-06,business_office_state,WA,3.61,,,,,4.09
-2024-06,company_financing_status,Other,2.5,,,,,2.91
-2024-06,company_financing_status,PE-backed,0.92,,,,,1.63
-2024-06,company_financing_status,VC-backed,5.89,,,,,24.85
-2024-06,fte_segment,Large,0.75,,,,,7.99
-2024-06,fte_segment,Medium,2.22,,,,,14.32
-2024-06,fte_segment,Small,6.33,,,,,35.48
-2024-06,naics_sector,Finance and insurance,3.64,,,,,3.23
-2024-06,naics_sector,Health care,1.16,,,,,1.04
-2024-06,naics_sector,Manufacturing,1.42,,,,,1.23
-2024-06,naics_sector,"Professional, scientific, and technical services",3.95,,,,,12.77
-2024-06,naics_sector,Technology and media,6.67,,,,,21.57
-2024-07,all,All,3.06,44.81,784.59,104.29,1767.04,7.03
-2024-07,business_office_state,All other states,1.86,,,,,2.67
-2024-07,business_office_state,CA,4.69,,,,,23.85
-2024-07,business_office_state,CO,2,,,,,6.42
-2024-07,business_office_state,DE,5.71,,,,,4.38
-2024-07,business_office_state,FL,2.5,,,,,2.61
-2024-07,business_office_state,IL,1.99,,,,,4.16
-2024-07,business_office_state,MA,2.22,,,,,4.6
-2024-07,business_office_state,NY,4.62,,,,,11.56
-2024-07,business_office_state,TX,2.66,,,,,4.57
-2024-07,business_office_state,WA,3.62,,,,,5.14
-2024-07,company_financing_status,Other,2.51,,,,,3.58
-2024-07,company_financing_status,PE-backed,0.97,,,,,2.66
-2024-07,company_financing_status,VC-backed,6,,,,,25.85
-2024-07,fte_segment,Large,0.76,,,,,9.79
-2024-07,fte_segment,Medium,2.31,,,,,15.26
-2024-07,fte_segment,Small,6.13,,,,,38.04
-2024-07,naics_sector,Finance and insurance,3.63,,,,,4.38
-2024-07,naics_sector,Health care,1.32,,,,,1.71
-2024-07,naics_sector,Manufacturing,1.34,,,,,0.93
-2024-07,naics_sector,"Professional, scientific, and technical services",4,,,,,12.87
-2024-07,naics_sector,Technology and media,6.87,,,,,23.14
-2024-08,all,All,3.04,45.07,782.87,103.13,1692.13,7.31
-2024-08,business_office_state,All other states,1.82,,,,,2.39
-2024-08,business_office_state,CA,4.55,,,,,23.59
-2024-08,business_office_state,CO,1.88,,,,,5.83
-2024-08,business_office_state,DE,6.32,,,,,6.93
-2024-08,business_office_state,FL,2.5,,,,,2.38
-2024-08,business_office_state,IL,1.94,,,,,2.78
-2024-08,business_office_state,MA,2.5,,,,,3.6
-2024-08,business_office_state,NY,5.15,,,,,13.38
-2024-08,business_office_state,TX,2.66,,,,,3.76
-2024-08,business_office_state,WA,3.25,,,,,3.99
-2024-08,company_financing_status,Other,2.5,,,,,3.52
-2024-08,company_financing_status,PE-backed,0.88,,,,,2.34
-2024-08,company_financing_status,VC-backed,6.37,,,,,32.04
-2024-08,fte_segment,Large,0.78,,,,,10.43
-2024-08,fte_segment,Medium,2.28,,,,,17.68
-2024-08,fte_segment,Small,6.43,,,,,36.31
-2024-08,naics_sector,Finance and insurance,3.65,,,,,5.18
-2024-08,naics_sector,Health care,1.17,,,,,1.63
-2024-08,naics_sector,Manufacturing,1.43,,,,,1.04
-2024-08,naics_sector,"Professional, scientific, and technical services",4.09,,,,,13.11
-2024-08,naics_sector,Technology and media,7.09,,,,,29.01
-2024-09,all,All,3.04,44.57,714.45,103.33,1605.19,6.12
-2024-09,business_office_state,All other states,1.82,,,,,1.74
-2024-09,business_office_state,CA,4.87,,,,,22.46
-2024-09,business_office_state,CO,2,,,,,5.91
-2024-09,business_office_state,DE,5.01,,,,,4.77
-2024-09,business_office_state,FL,2.5,,,,,2.72
-2024-09,business_office_state,IL,1.98,,,,,2.92
-2024-09,business_office_state,MA,3.18,,,,,3.69
-2024-09,business_office_state,NY,5.2,,,,,10.41
-2024-09,business_office_state,TX,2.5,,,,,3.11
-2024-09,business_office_state,VA,2.54,,,,,3.01
-2024-09,business_office_state,WA,3.25,,,,,6.38
-2024-09,company_financing_status,Other,2.5,,,,,3
-2024-09,company_financing_status,PE-backed,0.96,,,,,1.62
-2024-09,company_financing_status,VC-backed,6.39,,,,,30.85
-2024-09,fte_segment,Large,0.71,,,,,7.72
-2024-09,fte_segment,Medium,2.33,,,,,15.69
-2024-09,fte_segment,Small,6.24,,,,,36.11
-2024-09,naics_sector,Finance and insurance,4,,,,,3.68
-2024-09,naics_sector,Health care,1.2,,,,,1.12
-2024-09,naics_sector,Manufacturing,1.46,,,,,1.08
-2024-09,naics_sector,"Professional, scientific, and technical services",4.25,,,,,15.44
-2024-09,naics_sector,Technology and media,7.09,,,,,24.92
-2024-10,all,All,3.17,46.13,707.5,108.34,1471.82,7.03
-2024-10,business_office_state,All other states,1.9,,,,,1.85
-2024-10,business_office_state,CA,5.01,,,,,21.17
-2024-10,business_office_state,CO,2.2,,,,,9.76
-2024-10,business_office_state,DE,5,,,,,5.87
-2024-10,business_office_state,FL,2.5,,,,,2.71
-2024-10,business_office_state,IL,1.75,,,,,3.23
-2024-10,business_office_state,MA,3.04,,,,,5.58
-2024-10,business_office_state,NY,5.57,,,,,13.32
-2024-10,business_office_state,TX,2.5,,,,,2.9
-2024-10,business_office_state,VA,2.72,,,,,4.72
-2024-10,business_office_state,WA,3.61,,,,,15.71
-2024-10,company_financing_status,Other,2.5,,,,,3.51
-2024-10,company_financing_status,PE-backed,1.09,,,,,2.11
-2024-10,company_financing_status,VC-backed,6.67,,,,,30.69
-2024-10,fte_segment,Large,0.79,,,,,10.03
-2024-10,fte_segment,Medium,2.39,,,,,16.79
-2024-10,fte_segment,Small,6.36,,,,,37.7
-2024-10,naics_sector,Finance and insurance,4.36,,,,,5.09
-2024-10,naics_sector,Health care,1.26,,,,,1.85
-2024-10,naics_sector,Manufacturing,1.76,,,,,1.29
-2024-10,naics_sector,"Professional, scientific, and technical services",4.56,,,,,15.33
-2024-10,naics_sector,Technology and media,7.77,,,,,26.39
-2024-11,all,All,3.32,46.16,799.06,105.66,1673.21,7.45
-2024-11,business_office_state,All other states,2,,,,,1.82
-2024-11,business_office_state,CA,5.15,,,,,24.48
-2024-11,business_office_state,CO,2.86,,,,,8.28
-2024-11,business_office_state,DE,5.36,,,,,4.51
-2024-11,business_office_state,FL,2.45,,,,,3.19
-2024-11,business_office_state,IL,2,,,,,5.16
-2024-11,business_office_state,MA,3.16,,,,,5.88
-2024-11,business_office_state,NY,5.57,,,,,12.21
-2024-11,business_office_state,TX,2.66,,,,,3.07
-2024-11,business_office_state,VA,2.54,,,,,6.01
-2024-11,business_office_state,WA,3.33,,,,,12.57
-2024-11,company_financing_status,Other,2.56,,,,,3.74
-2024-11,company_financing_status,PE-backed,1.08,,,,,2.05
-2024-11,company_financing_status,VC-backed,7.05,,,,,29.06
-2024-11,fte_segment,Large,0.74,,,,,11.07
-2024-11,fte_segment,Medium,2.52,,,,,17.11
-2024-11,fte_segment,Small,6.53,,,,,38.55
-2024-11,naics_sector,Finance and insurance,4.36,,,,,5.14
-2024-11,naics_sector,Health care,1.25,,,,,1.36
-2024-11,naics_sector,Manufacturing,1.68,,,,,0.99
-2024-11,naics_sector,"Professional, scientific, and technical services",4.55,,,,,15.81
-2024-11,naics_sector,Retail,2.07,,,,,2.38
-2024-11,naics_sector,Technology and media,8.29,,,,,27.32
-2024-12,all,All,3.26,52.23,817.4,117.98,1871.76,7.47
-2024-12,business_office_state,All other states,1.98,,,,,2.04
-2024-12,business_office_state,CA,5.33,,,,,26.56
-2024-12,business_office_state,CO,2.85,,,,,7.78
-2024-12,business_office_state,DE,6.38,,,,,6.81
-2024-12,business_office_state,FL,2.28,,,,,2.7
-2024-12,business_office_state,IL,2.15,,,,,2.87
-2024-12,business_office_state,MA,3.06,,,,,8.6
-2024-12,business_office_state,NY,5.61,,,,,11.25
-2024-12,business_office_state,TX,2.62,,,,,2.52
-2024-12,business_office_state,VA,2.5,,,,,3.66
-2024-12,business_office_state,WA,3.89,,,,,15.04
-2024-12,company_financing_status,Other,2.5,,,,,3.97
-2024-12,company_financing_status,PE-backed,1.04,,,,,1.89
-2024-12,company_financing_status,VC-backed,7.86,,,,,34.19
-2024-12,fte_segment,Large,0.78,,,,,11.2
-2024-12,fte_segment,Medium,2.41,,,,,19.97
-2024-12,fte_segment,Small,6.67,,,,,38.93
-2024-12,naics_sector,Finance and insurance,4.36,,,,,4.97
-2024-12,naics_sector,Health care,1.16,,,,,2.01
-2024-12,naics_sector,Manufacturing,1.69,,,,,1.52
-2024-12,naics_sector,"Professional, scientific, and technical services",4.67,,,,,14.46
-2024-12,naics_sector,Retail,1.82,,,,,2.73
-2024-12,naics_sector,Technology and media,8.65,,,,,39.65
-2025-01,all,All,3.52,60,731.49,142.86,2069.15,7.85
-2025-01,business_office_state,All other states,2,,,,,2.67
-2025-01,business_office_state,CA,5.86,,,,,26.19
-2025-01,business_office_state,CO,2.5,,,,,7.68
-2025-01,business_office_state,DE,8.81,,,,,10.77
-2025-01,business_office_state,FL,2.67,,,,,2.84
-2025-01,business_office_state,IL,1.97,,,,,6.38
-2025-01,business_office_state,MA,3.51,,,,,8.58
-2025-01,business_office_state,NY,6.66,,,,,10.46
-2025-01,business_office_state,TX,2.68,,,,,4.33
-2025-01,business_office_state,VA,3.09,,,,,3.8
-2025-01,business_office_state,WA,4.67,,,,,9.5
-2025-01,company_financing_status,Other,2.67,,,,,4.21
-2025-01,company_financing_status,PE-backed,1.28,,,,,2.38
-2025-01,company_financing_status,VC-backed,8.92,,,,,33.94
-2025-01,fte_segment,Large,0.82,,,,,12.27
-2025-01,fte_segment,Medium,2.57,,,,,20.29
-2025-01,fte_segment,Small,7.82,,,,,42.23
-2025-01,naics_sector,Finance and insurance,5.26,,,,,4.97
-2025-01,naics_sector,Health care,1.32,,,,,2.28
-2025-01,naics_sector,Manufacturing,1.86,,,,,1.4
-2025-01,naics_sector,"Professional, scientific, and technical services",5.33,,,,,17.15
-2025-01,naics_sector,Retail,2.05,,,,,2.32
-2025-01,naics_sector,Technology and media,10.64,,,,,35.19
-2025-02,all,All,3.87,64.15,850.8,133.29,2322.67,8.2
-2025-02,business_office_state,All other states,2.13,,,,,2.47
-2025-02,business_office_state,CA,7.13,,,,,28.97
-2025-02,business_office_state,CO,2.78,,,,,7.56
-2025-02,business_office_state,DE,9.19,,,,,7.78
-2025-02,business_office_state,FL,2.75,,,,,3.09
-2025-02,business_office_state,IL,2.62,,,,,4.43
-2025-02,business_office_state,MA,4,,,,,6.92
-2025-02,business_office_state,NY,8.06,,,,,11.41
-2025-02,business_office_state,TX,2.93,,,,,4.89
-2025-02,business_office_state,VA,3.04,,,,,4.48
-2025-02,business_office_state,WA,4.45,,,,,21.59
-2025-02,company_financing_status,Other,2.86,,,,,4.18
-2025-02,company_financing_status,PE-backed,1.24,,,,,1.98
-2025-02,company_financing_status,VC-backed,9.65,,,,,39.68
-2025-02,fte_segment,Large,0.87,,,,,11.6
-2025-02,fte_segment,Medium,2.9,,,,,20.83
-2025-02,fte_segment,Small,9.03,,,,,45.42
-2025-02,naics_sector,Construction,1.13,,,,,1.16
-2025-02,naics_sector,Finance and insurance,6.28,,,,,5.87
-2025-02,naics_sector,Health care,1.34,,,,,1.84
-2025-02,naics_sector,Manufacturing,2.23,,,,,1.47
-2025-02,naics_sector,"Professional, scientific, and technical services",6.08,,,,,19.44
-2025-02,naics_sector,Retail,1.98,,,,,1.84
-2025-02,naics_sector,Technology and media,11.36,,,,,43.33
-2025-03,all,All,4,66.1,858.76,143.98,2437.46,9.31
-2025-03,business_office_state,All other states,2.28,,,,,2.76
-2025-03,business_office_state,CA,7.59,,,,,37.5
-2025-03,business_office_state,CO,2.85,,,,,6.89
-2025-03,business_office_state,DE,9.75,,,,,9.87
-2025-03,business_office_state,FL,3,,,,,4.39
-2025-03,business_office_state,IL,2.44,,,,,4.47
-2025-03,business_office_state,MA,4.27,,,,,7.28
-2025-03,business_office_state,NY,8.75,,,,,14.09
-2025-03,business_office_state,TX,2.92,,,,,4.14
-2025-03,business_office_state,VA,2.86,,,,,7.47
-2025-03,business_office_state,WA,4.51,,,,,13.88
-2025-03,company_financing_status,Other,2.94,,,,,4.68
-2025-03,company_financing_status,PE-backed,1.34,,,,,2.68
-2025-03,company_financing_status,VC-backed,10.9,,,,,46.87
-2025-03,fte_segment,Large,1,,,,,15.22
-2025-03,fte_segment,Medium,3.04,,,,,22.45
-2025-03,fte_segment,Small,9.33,,,,,40.88
-2025-03,naics_sector,Construction,1.21,,,,,1.62
-2025-03,naics_sector,Finance and insurance,7.29,,,,,6.9
-2025-03,naics_sector,Health care,1.45,,,,,2.89
-2025-03,naics_sector,Manufacturing,2.35,,,,,1.67
-2025-03,naics_sector,"Professional, scientific, and technical services",6.69,,,,,24.86
-2025-03,naics_sector,Retail,2.18,,,,,2.21
-2025-03,naics_sector,Technology and media,12.18,,,,,51.81
-2025-04,all,All,4,66.05,961.32,149.52,2565.99,9.29
-2025-04,business_office_state,All other states,2.22,,,,,2.66
-2025-04,business_office_state,CA,7.92,,,,,39.59
-2025-04,business_office_state,CO,2.67,,,,,9.63
-2025-04,business_office_state,DE,10.87,,,,,13.04
-2025-04,business_office_state,FL,2.86,,,,,3.15
-2025-04,business_office_state,IL,3.11,,,,,4.43
-2025-04,business_office_state,MA,4.11,,,,,14.1
-2025-04,business_office_state,NY,8.91,,,,,16.24
-2025-04,business_office_state,TX,3.02,,,,,3.7
-2025-04,business_office_state,VA,2.86,,,,,2.42
-2025-04,business_office_state,WA,4.49,,,,,18.07
-2025-04,company_financing_status,Other,2.86,,,,,4.47
-2025-04,company_financing_status,PE-backed,1.55,,,,,2.5
-2025-04,company_financing_status,VC-backed,11.78,,,,,48.56
-2025-04,fte_segment,Large,0.91,,,,,15.66
-2025-04,fte_segment,Medium,3.04,,,,,24.33
-2025-04,fte_segment,Small,8.8,,,,,45.15
-2025-04,naics_sector,Construction,1.25,,,,,1.97
-2025-04,naics_sector,Finance and insurance,7.4,,,,,5.78
-2025-04,naics_sector,Health care,1.43,,,,,1.52
-2025-04,naics_sector,Manufacturing,2.35,,,,,1.84
-2025-04,naics_sector,"Professional, scientific, and technical services",7.41,,,,,28.67
-2025-04,naics_sector,Retail,2,,,,,1.37
-2025-04,naics_sector,Technology and media,12.44,,,,,52.09
-2025-05,all,All,4.15,73.09,1059.17,160.51,2447.36,11.14
-2025-05,business_office_state,All other states,2.36,,,,,3.34
-2025-05,business_office_state,CA,8.64,,,,,44.14
-2025-05,business_office_state,CO,2.9,,,,,8.22
-2025-05,business_office_state,DE,11.2,,,,,16.68
-2025-05,business_office_state,FL,3.23,,,,,2.69
-2025-05,business_office_state,IL,2.63,,,,,4.98
-2025-05,business_office_state,MA,4.23,,,,,10.17
-2025-05,business_office_state,NY,9.53,,,,,21.91
-2025-05,business_office_state,TX,3.55,,,,,5.22
-2025-05,business_office_state,VA,3.22,,,,,5.89
-2025-05,business_office_state,WA,5.16,,,,,27.46
-2025-05,company_financing_status,Other,3,,,,,5.08
-2025-05,company_financing_status,PE-backed,1.66,,,,,2.99
-2025-05,company_financing_status,VC-backed,13.37,,,,,57.35
-2025-05,fte_segment,Large,1.08,,,,,17.63
-2025-05,fte_segment,Medium,3.18,,,,,25.53
-2025-05,fte_segment,Small,9.91,,,,,48
-2025-05,naics_sector,Construction,1.33,,,,,1.77
-2025-05,naics_sector,Finance and insurance,8.75,,,,,6.72
-2025-05,naics_sector,Health care,1.55,,,,,2.14
-2025-05,naics_sector,Manufacturing,2.37,,,,,2.39
-2025-05,naics_sector,"Professional, scientific, and technical services",7.8,,,,,31.47
-2025-05,naics_sector,Retail,2.67,,,,,1.77
-2025-05,naics_sector,Technology and media,14.82,,,,,71.13
-2025-06,all,All,4.29,77,945.62,165.61,2194.45,9.9
-2025-06,business_office_state,All other states,2.41,,,,,3.59
-2025-06,business_office_state,CA,8.89,,,,,29.33
-2025-06,business_office_state,CO,2.86,,,,,8.41
-2025-06,business_office_state,DE,13.52,,,,,25.8
-2025-06,business_office_state,FL,3.32,,,,,3.56
-2025-06,business_office_state,IL,2.49,,,,,8.04
-2025-06,business_office_state,MA,4.31,,,,,4.55
-2025-06,business_office_state,NY,9.99,,,,,17.81
-2025-06,business_office_state,TX,3.35,,,,,5.63
-2025-06,business_office_state,VA,3.33,,,,,5.37
-2025-06,business_office_state,WA,5.73,,,,,23.64
-2025-06,company_financing_status,Other,3.04,,,,,5.1
-2025-06,company_financing_status,PE-backed,1.87,,,,,3.51
-2025-06,company_financing_status,VC-backed,15.54,,,,,49.1
-2025-06,fte_segment,Large,1.2,,,,,17
-2025-06,fte_segment,Medium,3.25,,,,,28.26
-2025-06,fte_segment,Small,9.89,,,,,47.2
-2025-06,naics_sector,Construction,1.25,,,,,1.91
-2025-06,naics_sector,Finance and insurance,9.92,,,,,7.51
-2025-06,naics_sector,Health care,1.64,,,,,2.22
-2025-06,naics_sector,Manufacturing,2.59,,,,,3.12
-2025-06,naics_sector,"Professional, scientific, and technical services",8.56,,,,,21.35
-2025-06,naics_sector,Retail,2.86,,,,,2.45
-2025-06,naics_sector,Technology and media,17,,,,,48.84
-2025-07,all,All,4.6,85.05,1016.73,192.41,2467.38,11.51
-2025-07,business_office_state,All other states,2.46,,,,,3.69
-2025-07,business_office_state,CA,10,,,,,43.98
-2025-07,business_office_state,CO,3.17,,,,,9.25
-2025-07,business_office_state,DE,17.69,,,,,20.94
-2025-07,business_office_state,FL,3.33,,,,,2.91
-2025-07,business_office_state,IL,2.67,,,,,6.74
-2025-07,business_office_state,MA,4.37,,,,,7.34
-2025-07,business_office_state,NY,10.76,,,,,24.91
-2025-07,business_office_state,TX,3.86,,,,,6.84
-2025-07,business_office_state,VA,3.33,,,,,7.57
-2025-07,business_office_state,WA,6.21,,,,,20.04
-2025-07,company_financing_status,Other,3.2,,,,,5.72
-2025-07,company_financing_status,PE-backed,1.95,,,,,3.1
-2025-07,company_financing_status,VC-backed,18,,,,,61.09
-2025-07,fte_segment,Large,1.19,,,,,19.58
-2025-07,fte_segment,Medium,3.85,,,,,33.85
-2025-07,fte_segment,Small,10,,,,,49.3
-2025-07,naics_sector,Construction,1.33,,,,,1.96
-2025-07,naics_sector,Finance and insurance,11.13,,,,,9.93
-2025-07,naics_sector,Health care,1.54,,,,,3.31
-2025-07,naics_sector,Manufacturing,2.69,,,,,2.54
-2025-07,naics_sector,"Professional, scientific, and technical services",9.63,,,,,23.34
-2025-07,naics_sector,Retail,2.84,,,,,2.13
-2025-07,naics_sector,Technology and media,19.63,,,,,64.59
-2025-08,all,All,5,93.76,1090.08,200,2642.2,8
-2025-08,business_office_state,All other states,2.6,,,,,1.68
-2025-08,business_office_state,CA,11.33,,,,,51.36
-2025-08,business_office_state,CO,3.7,,,,,11.18
-2025-08,business_office_state,DE,24.12,,,,,23.77
-2025-08,business_office_state,FL,4,,,,,4.18
-2025-08,business_office_state,IL,2.5,,,,,6.65
-2025-08,business_office_state,MA,4.67,,,,,5.37
-2025-08,business_office_state,NY,12.42,,,,,24.07
-2025-08,business_office_state,TX,3.75,,,,,4.01
-2025-08,business_office_state,VA,3.17,,,,,4.69
-2025-08,business_office_state,WA,7.41,,,,,24.54
-2025-08,company_financing_status,Other,3.33,,,,,3.37
-2025-08,company_financing_status,PE-backed,2.05,,,,,3.68
-2025-08,company_financing_status,VC-backed,21.67,,,,,70.65
-2025-08,fte_segment,Large,1.34,,,,,20.22
-2025-08,fte_segment,Medium,4.21,,,,,35.3
-2025-08,fte_segment,Small,10.22,,,,,53.67
-2025-08,naics_sector,Construction,1.39,,,,,0.72
-2025-08,naics_sector,Finance and insurance,12,,,,,9.24
-2025-08,naics_sector,Health care,1.65,,,,,2.81
-2025-08,naics_sector,Manufacturing,2.86,,,,,2.73
-2025-08,naics_sector,"Professional, scientific, and technical services",10.34,,,,,30.26
-2025-08,naics_sector,Retail,3.03,,,,,2.24
-2025-08,naics_sector,Technology and media,23.1,,,,,64.59
-2025-09,all,All,5,99.14,1250.28,209.91,2515.49,13.25
-2025-09,business_office_state,All other states,2.72,,,,,3.97
-2025-09,business_office_state,CA,10.91,,,,,59.3
-2025-09,business_office_state,CO,3.93,,,,,9.33
-2025-09,business_office_state,DE,25.01,,,,,26.84
-2025-09,business_office_state,FL,3.87,,,,,4
-2025-09,business_office_state,IL,2.88,,,,,5.9
-2025-09,business_office_state,MA,5.8,,,,,6.21
-2025-09,business_office_state,NY,12.89,,,,,24
-2025-09,business_office_state,TX,4,,,,,7.73
-2025-09,business_office_state,VA,2.62,,,,,5.15
-2025-09,business_office_state,WA,6.67,,,,,28.73
-2025-09,company_financing_status,Other,3.44,,,,,5.95
-2025-09,company_financing_status,PE-backed,1.97,,,,,4.52
-2025-09,company_financing_status,VC-backed,21.68,,,,,85.17
-2025-09,fte_segment,Large,1.45,,,,,22.15
-2025-09,fte_segment,Medium,4.12,,,,,37.32
-2025-09,fte_segment,Small,10.57,,,,,57.71
-2025-09,naics_sector,Construction,1.42,,,,,1.36
-2025-09,naics_sector,Finance and insurance,13.14,,,,,10.73
-2025-09,naics_sector,Health care,1.67,,,,,2.57
-2025-09,naics_sector,Manufacturing,2.93,,,,,2.96
-2025-09,naics_sector,"Professional, scientific, and technical services",11.06,,,,,33.82
-2025-09,naics_sector,Retail,3.33,,,,,3.52
-2025-09,naics_sector,Technology and media,23.82,,,,,71.86
-2025-10,all,All,5.45,110.17,1321.19,238.42,3334.32,12.65
-2025-10,business_office_state,All other states,2.86,,,,,3.05
-2025-10,business_office_state,CA,12.91,,,,,69.67
-2025-10,business_office_state,CO,4,,,,,15.7
-2025-10,business_office_state,DE,23.67,,,,,24
-2025-10,business_office_state,FL,4.28,,,,,6.45
-2025-10,business_office_state,IL,3.27,,,,,5.56
-2025-10,business_office_state,MA,5.98,,,,,6.25
-2025-10,business_office_state,NY,13.93,,,,,29.53
-2025-10,business_office_state,TX,4.13,,,,,5.66
-2025-10,business_office_state,VA,3.18,,,,,6.3
-2025-10,business_office_state,WA,7.98,,,,,42.11
-2025-10,company_financing_status,Other,3.64,,,,,5.26
-2025-10,company_financing_status,PE-backed,2.08,,,,,4.9
-2025-10,company_financing_status,VC-backed,24.95,,,,,96.48
-2025-10,fte_segment,Large,1.49,,,,,26.31
-2025-10,fte_segment,Medium,4.56,,,,,41.3
-2025-10,fte_segment,Small,11.1,,,,,64.36
-2025-10,naics_sector,Construction,1.43,,,,,0.68
-2025-10,naics_sector,Finance and insurance,14.46,,,,,10.52
-2025-10,naics_sector,Health care,1.72,,,,,2.32
-2025-10,naics_sector,Manufacturing,3.08,,,,,3.15
-2025-10,naics_sector,"Professional, scientific, and technical services",12.21,,,,,37.08
-2025-10,naics_sector,Retail,3.13,,,,,2.67
-2025-10,naics_sector,Technology and media,26.65,,,,,112.71
-2025-11,all,All,5.37,107.9,1225.1,229.65,3063.05,11.98
-2025-11,business_office_state,All other states,2.86,,,,,3.34
-2025-11,business_office_state,CA,12.39,,,,,60.9
-2025-11,business_office_state,CO,4.12,,,,,13.47
-2025-11,business_office_state,DE,21.32,,,,,23.6
-2025-11,business_office_state,FL,4.04,,,,,5.16
-2025-11,business_office_state,IL,3.23,,,,,4.78
-2025-11,business_office_state,MA,6,,,,,5.59
-2025-11,business_office_state,NY,13.15,,,,,23.39
-2025-11,business_office_state,TX,4.17,,,,,5.77
-2025-11,business_office_state,VA,3,,,,,4.47
-2025-11,business_office_state,WA,8.43,,,,,38.55
-2025-11,company_financing_status,Other,3.64,,,,,5.4
-2025-11,company_financing_status,PE-backed,2.03,,,,,4.17
-2025-11,company_financing_status,VC-backed,23.89,,,,,80.61
-2025-11,fte_segment,Large,1.37,,,,,22.24
-2025-11,fte_segment,Medium,4.3,,,,,38.14
-2025-11,fte_segment,Small,11.09,,,,,61.4
-2025-11,naics_sector,Construction,1.54,,,,,0.71
-2025-11,naics_sector,Finance and insurance,13.65,,,,,10.48
-2025-11,naics_sector,Health care,1.67,,,,,1.97
-2025-11,naics_sector,Manufacturing,3.33,,,,,3.2
-2025-11,naics_sector,"Professional, scientific, and technical services",12,,,,,32.76
-2025-11,naics_sector,Retail,3.21,,,,,3.18
-2025-11,naics_sector,Technology and media,25.4,,,,,76.87
-2025-12,all,All,5.56,119.49,1691.5,260.34,4288.43,15.76
-2025-12,business_office_state,All other states,2.89,,,,,3.99
-2025-12,business_office_state,CA,13.41,,,,,89.53
-2025-12,business_office_state,CO,4.14,,,,,13.91
-2025-12,business_office_state,DE,21.23,,,,,26.61
-2025-12,business_office_state,FL,4.25,,,,,5.38
-2025-12,business_office_state,IL,3.15,,,,,6.64
-2025-12,business_office_state,MA,6.25,,,,,9.06
-2025-12,business_office_state,NY,14.29,,,,,33.56
-2025-12,business_office_state,TX,4.31,,,,,7.41
-2025-12,business_office_state,VA,3.33,,,,,4.95
-2025-12,business_office_state,WA,8.62,,,,,39.25
-2025-12,company_financing_status,Other,3.75,,,,,6.33
-2025-12,company_financing_status,PE-backed,2.16,,,,,4.7
-2025-12,company_financing_status,VC-backed,28.1,,,,,123.49
-2025-12,fte_segment,Large,1.46,,,,,35.37
-2025-12,fte_segment,Medium,4.47,,,,,49.97
-2025-12,fte_segment,Small,12,,,,,67.12
-2025-12,naics_sector,Construction,1.62,,,,,0.83
-2025-12,naics_sector,Finance and insurance,14.16,,,,,12.83
-2025-12,naics_sector,Health care,1.79,,,,,2.76
-2025-12,naics_sector,Manufacturing,3.33,,,,,3.97
-2025-12,naics_sector,"Professional, scientific, and technical services",13.45,,,,,45.3
-2025-12,naics_sector,Retail,3.51,,,,,4.12
-2025-12,naics_sector,Technology and media,28.57,,,,,115.8
-2026-01,all,All,6.32,145.34,1513.46,296.72,3390.4,14.79
-2026-01,business_office_state,All other states,3.33,,,,,4.51
-2026-01,business_office_state,CA,15.9,,,,,57.45
-2026-01,business_office_state,CO,4.44,,,,,14.59
-2026-01,business_office_state,DE,28.09,,,,,32.45
-2026-01,business_office_state,FL,5.24,,,,,3.99
-2026-01,business_office_state,IL,3.6,,,,,7.88
-2026-01,business_office_state,MA,8.08,,,,,8.79
-2026-01,business_office_state,NY,16.66,,,,,35.11
-2026-01,business_office_state,TX,5.22,,,,,8.73
-2026-01,business_office_state,VA,3.49,,,,,5.28
-2026-01,business_office_state,WA,9.42,,,,,32.34
-2026-01,company_financing_status,Other,4.17,,,,,6.29
-2026-01,company_financing_status,PE-backed,2.5,,,,,5.24
-2026-01,company_financing_status,VC-backed,33.72,,,,,113.67
-2026-01,fte_segment,Large,1.59,,,,,34.23
-2026-01,fte_segment,Medium,5.17,,,,,50.13
-2026-01,fte_segment,Small,13.33,,,,,74.71
-2026-01,naics_sector,Accommodation and food services,1.05,,,,,0.36
-2026-01,naics_sector,Construction,1.75,,,,,1.17
-2026-01,naics_sector,Finance and insurance,17.77,,,,,14.71
-2026-01,naics_sector,Health care,1.9,,,,,3.07
-2026-01,naics_sector,Manufacturing,3.62,,,,,5.24
-2026-01,naics_sector,"Professional, scientific, and technical services",15.74,,,,,36.47
-2026-01,naics_sector,Retail,4.08,,,,,3.95
-2026-01,naics_sector,Technology and media,35.86,,,,,85.82
-2026-02,all,All,7.5,168.73,1782.8,351.76,3348.02,17.28
-2026-02,business_office_state,All other states,3.93,,,,,5.28
-2026-02,business_office_state,CA,19,,,,,61.31
-2026-02,business_office_state,CO,5.33,,,,,16.08
-2026-02,business_office_state,DE,35.35,,,,,36.47
-2026-02,business_office_state,FL,6.26,,,,,5.01
-2026-02,business_office_state,IL,4.2,,,,,6.02
-2026-02,business_office_state,MA,9.89,,,,,10.54
-2026-02,business_office_state,NY,20.76,,,,,32.6
-2026-02,business_office_state,TX,5.65,,,,,16.15
-2026-02,business_office_state,VA,4,,,,,4.41
-2026-02,business_office_state,WA,11.86,,,,,47.57
-2026-02,company_financing_status,Other,5,,,,,7.66
-2026-02,company_financing_status,PE-backed,3.05,,,,,5.65
-2026-02,company_financing_status,VC-backed,41.37,,,,,122.17
-2026-02,fte_segment,Large,1.89,,,,,37.7
-2026-02,fte_segment,Medium,6.06,,,,,61.44
-2026-02,fte_segment,Small,16.01,,,,,85.87
-2026-02,naics_sector,Accommodation and food services,1.16,,,,,0.62
-2026-02,naics_sector,Construction,2,,,,,2.4
-2026-02,naics_sector,Finance and insurance,22.03,,,,,19.23
-2026-02,naics_sector,Health care,2.27,,,,,3.75
-2026-02,naics_sector,Manufacturing,4.69,,,,,5.13
-2026-02,naics_sector,"Professional, scientific, and technical services",18.75,,,,,38.1
-2026-02,naics_sector,Retail,4.62,,,,,4.5
-2026-02,naics_sector,Technology and media,44.63,,,,,92.95
-2026-03,all,All,9.68,205.82,2222.51,424.9,4812.03,19.86
-2026-03,business_office_state,All other states,5,,,,,7.02
-2026-03,business_office_state,CA,23.65,,,,,84.61
-2026-03,business_office_state,CO,6.67,,,,,19.51
-2026-03,business_office_state,DE,40,,,,,46.41
-2026-03,business_office_state,FL,8.11,,,,,6.17
-2026-03,business_office_state,IL,5.87,,,,,8.27
-2026-03,business_office_state,MA,12.94,,,,,13.3
-2026-03,business_office_state,NY,27.53,,,,,42.91
-2026-03,business_office_state,TX,7.37,,,,,8.15
-2026-03,business_office_state,VA,5.53,,,,,6.53
-2026-03,business_office_state,WA,13.9,,,,,12.92
-2026-03,company_financing_status,Other,6.41,,,,,7.92
-2026-03,company_financing_status,PE-backed,4.82,,,,,8.66
-2026-03,company_financing_status,VC-backed,54.91,,,,,208.11
-2026-03,fte_segment,Large,2.52,,,,,49.79
-2026-03,fte_segment,Medium,7.5,,,,,72.49
-2026-03,fte_segment,Small,20,,,,,109.54
-2026-03,naics_sector,Accommodation and food services,1.37,,,,,0.93
-2026-03,naics_sector,Construction,2.84,,,,,2.12
-2026-03,naics_sector,Finance and insurance,30.75,,,,,17.34
-2026-03,naics_sector,Health care,2.35,,,,,4.89
-2026-03,naics_sector,Manufacturing,6.43,,,,,7.06
-2026-03,naics_sector,"Professional, scientific, and technical services",23.89,,,,,50.29
-2026-03,naics_sector,Retail,6.68,,,,,7.55
-2026-03,naics_sector,Technology and media,55.54,,,,,110.93
-2026-04,all,All,10.97,229.11,2452.81,472.21,4715.01,21.31
-2026-04,business_office_state,All other states,5.46,,,,,6.42
-2026-04,business_office_state,CA,25.01,,,,,85.77
-2026-04,business_office_state,CO,7.45,,,,,29.31
-2026-04,business_office_state,DE,57.15,,,,,60.84
-2026-04,business_office_state,FL,10,,,,,8.82
-2026-04,business_office_state,IL,6.95,,,,,9.9
-2026-04,business_office_state,MA,17.41,,,,,12.58
-2026-04,business_office_state,NY,31.36,,,,,48.1
-2026-04,business_office_state,TX,8.21,,,,,7.33
-2026-04,business_office_state,VA,6.02,,,,,8.06
-2026-04,business_office_state,WA,14.17,,,,,52.05
-2026-04,company_financing_status,Other,7.17,,,,,8.23
-2026-04,company_financing_status,PE-backed,5.92,,,,,8.93
-2026-04,company_financing_status,VC-backed,66.15,,,,,229.33
-2026-04,fte_segment,Large,2.93,,,,,57.94
-2026-04,fte_segment,Medium,8.28,,,,,89
-2026-04,fte_segment,Small,21.86,,,,,116.03
-2026-04,naics_sector,Accommodation and food services,1.82,,,,,0.94
-2026-04,naics_sector,Construction,3.16,,,,,2.6
-2026-04,naics_sector,Finance and insurance,35.33,,,,,21.29
-2026-04,naics_sector,Health care,2.56,,,,,4.74
-2026-04,naics_sector,Manufacturing,7.43,,,,,8.85
-2026-04,naics_sector,"Professional, scientific, and technical services",27.4,,,,,56.43
-2026-04,naics_sector,Retail,7.74,,,,,4.9
-2026-04,naics_sector,Technology and media,64.37,,,,,112.17
-2026-05,all,All,12.05,248.23,2716.19,520.9,5133.59,24.61
-2026-05,business_office_state,All other states,6.08,,,,,7.75
-2026-05,business_office_state,CA,28.57,,,,,93.51
-2026-05,business_office_state,CO,10,,,,,34.18
-2026-05,business_office_state,DE,57.07,,,,,73.27
-2026-05,business_office_state,FL,10.82,,,,,7.5
-2026-05,business_office_state,IL,7.42,,,,,11.87
-2026-05,business_office_state,MA,16.28,,,,,16.35
-2026-05,business_office_state,NY,32.91,,,,,60.68
-2026-05,business_office_state,TX,9.29,,,,,9.99
-2026-05,business_office_state,VA,6.77,,,,,10.34
-2026-05,business_office_state,WA,15.22,,,,,53.87
-2026-05,company_financing_status,Other,7.95,,,,,9.78
-2026-05,company_financing_status,PE-backed,7.02,,,,,9.76
-2026-05,company_financing_status,VC-backed,74.75,,,,,262.61
-2026-05,fte_segment,Large,3.21,,,,,67.26
-2026-05,fte_segment,Medium,9.18,,,,,93.28
-2026-05,fte_segment,Small,23,,,,,129.29
-2026-05,naics_sector,Accommodation and food services,2,,,,,1.03
-2026-05,naics_sector,Construction,4,,,,,2.91
-2026-05,naics_sector,Finance and insurance,39.97,,,,,20.96
-2026-05,naics_sector,Health care,2.86,,,,,7.22
-2026-05,naics_sector,Manufacturing,8.58,,,,,10.81
-2026-05,naics_sector,"Professional, scientific, and technical services",30.97,,,,,69.16
-2026-05,naics_sector,Retail,9.42,,,,,3.31
-2026-05,naics_sector,Technology and media,74.44,,,,,123.48
-2026-06,all,All,12.84,269.73,3097.66,579.07,6563.82,25.7
-2026-06,business_office_state,All other states,6.67,,,,,7.89
-2026-06,business_office_state,CA,30.84,,,,,118.79
-2026-06,business_office_state,CO,8.95,,,,,26.71
-2026-06,business_office_state,DE,64.38,,,,,77.25
-2026-06,business_office_state,FL,12.38,,,,,6.71
-2026-06,business_office_state,IL,7.89,,,,,13.69
-2026-06,business_office_state,MA,16.07,,,,,14.19
-2026-06,business_office_state,NY,34.61,,,,,66.27
-2026-06,business_office_state,TX,10.2,,,,,10.5
-2026-06,business_office_state,VA,8,,,,,10.36
-2026-06,business_office_state,WA,13.8,,,,,21.46
-2026-06,company_financing_status,Other,8.58,,,,,9.64
-2026-06,company_financing_status,PE-backed,7.42,,,,,11.39
-2026-06,company_financing_status,VC-backed,82.86,,,,,311.6
-2026-06,fte_segment,Large,3.49,,,,,78.05
-2026-06,fte_segment,Medium,9.74,,,,,107.95
-2026-06,fte_segment,Small,23.96,,,,,139.36
-2026-06,naics_sector,Accommodation and food services,2.03,,,,,1.22
-2026-06,naics_sector,Construction,4.29,,,,,5.66
-2026-06,naics_sector,Finance and insurance,43.75,,,,,17.73
-2026-06,naics_sector,Health care,2.89,,,,,6.64
-2026-06,naics_sector,Manufacturing,9.54,,,,,10.71
-2026-06,naics_sector,"Professional, scientific, and technical services",33.33,,,,,68.06
-2026-06,naics_sector,Retail,8.33,,,,,3.68
-2026-06,naics_sector,Technology and media,79.44,,,,,165.4
-2026-07,all,All,14.19,317.39,4269.87,721.14,9873.12,32.81
-2026-07,business_office_state,All other states,7.22,,,,,9.27
-2026-07,business_office_state,CA,33.91,,,,,171.91
-2026-07,business_office_state,CO,10,,,,,42.75
-2026-07,business_office_state,DE,66.67,,,,,106.85
-2026-07,business_office_state,FL,13.44,,,,,9.24
-2026-07,business_office_state,IL,9.03,,,,,15.11
-2026-07,business_office_state,MA,17.51,,,,,17.63
-2026-07,business_office_state,NY,38.43,,,,,69.05
-2026-07,business_office_state,TX,11.82,,,,,11.86
-2026-07,business_office_state,VA,9.39,,,,,15.61
-2026-07,business_office_state,WA,15.23,,,,,80.61
-2026-07,company_financing_status,Other,9.42,,,,,12.26
-2026-07,company_financing_status,PE-backed,8.65,,,,,12.26
-2026-07,company_financing_status,VC-backed,91.99,,,,,433.94
-2026-07,fte_segment,Large,3.88,,,,,101.98
-2026-07,fte_segment,Medium,10.77,,,,,139.94
-2026-07,fte_segment,Small,26.33,,,,,174.56
-2026-07,naics_sector,Accommodation and food services,2.27,,,,,1.29
-2026-07,naics_sector,Construction,4.75,,,,,6.14
-2026-07,naics_sector,Finance and insurance,49,,,,,26.14
-2026-07,naics_sector,Health care,3.15,,,,,5.86
-2026-07,naics_sector,Manufacturing,10.23,,,,,10.44
-2026-07,naics_sector,"Professional, scientific, and technical services",37.82,,,,,115.4
-2026-07,naics_sector,Retail,10.26,,,,,4.12
-2026-07,naics_sector,Technology and media,92.51,,,,,246.69
-2026-08,all,All,14.74,330.94,4171.82,740.47,8568.17,30.08
-2026-08,business_office_state,All other states,7.71,,,,,9.09
-2026-08,business_office_state,CA,35.57,,,,,146.25
-2026-08,business_office_state,CO,10.54,,,,,39.18
-2026-08,business_office_state,DE,70.11,,,,,120.01
-2026-08,business_office_state,FL,14.73,,,,,8.71
-2026-08,business_office_state,IL,8.09,,,,,20.15
-2026-08,business_office_state,MA,19.15,,,,,15.51
-2026-08,business_office_state,NY,39.89,,,,,52.85
-2026-08,business_office_state,TX,12.12,,,,,11.43
-2026-08,business_office_state,VA,8.53,,,,,15.34
-2026-08,business_office_state,WA,16.67,,,,,90.73
-2026-08,company_financing_status,Other,10,,,,,11.45
-2026-08,company_financing_status,PE-backed,9.34,,,,,13.82
-2026-08,company_financing_status,VC-backed,95.84,,,,,361.69
-2026-08,fte_segment,Large,4.23,,,,,87.51
-2026-08,fte_segment,Medium,11.16,,,,,146.88
-2026-08,fte_segment,Small,27.11,,,,,177.23
-2026-08,naics_sector,Accommodation and food services,2.5,,,,,1.68
-2026-08,naics_sector,Construction,5.22,,,,,7.29
-2026-08,naics_sector,Finance and insurance,50,,,,,23.58
-2026-08,naics_sector,Health care,3.16,,,,,7.44
-2026-08,naics_sector,Manufacturing,11.14,,,,,13.73
-2026-08,naics_sector,"Professional, scientific, and technical services",40,,,,,107.17
-2026-08,naics_sector,Retail,11.55,,,,,4.34
-2026-08,naics_sector,Technology and media,94.93,,,,,160.48
-2026-09,all,All,15.7,357.45,4650.48,813.43,9567.53,30.41
-2026-09,business_office_state,All other states,8.22,,,,,10.88
-2026-09,business_office_state,CA,36.78,,,,,108.77
-2026-09,business_office_state,CO,12.04,,,,,30.75
-2026-09,business_office_state,DE,78.56,,,,,124.62
-2026-09,business_office_state,FL,16.27,,,,,10.95
-2026-09,business_office_state,IL,8.75,,,,,15.99
-2026-09,business_office_state,MA,19.83,,,,,19.02
-2026-09,business_office_state,NY,42.71,,,,,51.53
-2026-09,business_office_state,TX,13.25,,,,,13.96
-2026-09,business_office_state,VA,9.73,,,,,15.67
-2026-09,business_office_state,WA,16.61,,,,,90.69
-2026-09,company_financing_status,Other,10.65,,,,,11.12
-2026-09,company_financing_status,PE-backed,10.39,,,,,14.42
-2026-09,company_financing_status,VC-backed,108.17,,,,,419.43
-2026-09,fte_segment,Large,4.56,,,,,111.47
-2026-09,fte_segment,Medium,11.91,,,,,164.67
-2026-09,fte_segment,Small,29,,,,,190.32
-2026-09,naics_sector,Accommodation and food services,2.73,,,,,1.29
-2026-09,naics_sector,Construction,5.8,,,,,7.14
-2026-09,naics_sector,Finance and insurance,50.98,,,,,33.06
-2026-09,naics_sector,Health care,3.45,,,,,7.15
-2026-09,naics_sector,Manufacturing,12.5,,,,,16.9
-2026-09,naics_sector,"Professional, scientific, and technical services",44.14,,,,,126.19
-2026-09,naics_sector,Retail,11.09,,,,,1.55
-2026-09,naics_sector,Technology and media,110.32,,,,,175.98
+2023-07,all,All,3.028571428571428,,,51.19075,558.529880952381,
+2023-07,business_office_state,CA,4,,,,,
+2023-07,business_office_state,DE,4.953876027397261,,,,,
+2023-07,business_office_state,FL,2.917378681924136,,,,,
+2023-07,business_office_state,NY,3.63,,,,,
+2023-07,business_office_state,TX,2.616205128205128,,,,,
+2023-07,company_financing_status,Other,2.882837301587301,,,,,
+2023-07,company_financing_status,VC-backed,3.654285714285714,,,,,
+2023-07,fte_segment,1. Micro-SMB (MIC),5.547222222222222,,,,,
+2023-07,fte_segment,2. SMB,2.25254329004329,,,,,
+2023-07,fte_segment,3. Mid-Market (MM),0.6405128205128205,,,,,
+2023-07,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.10527950310559,,,,,
+2023-07,naics_sector,Educational Services,2.727272727272727,,,,,
+2023-07,naics_sector,Finance and Insurance,3.557777777777777,,,,,
+2023-07,naics_sector,Information,5,,,,,
+2023-07,naics_sector,Manufacturing,1.666666666666667,,,,,
+2023-07,naics_sector,"Professional, Scientific, and Technical Services",3.272727272727273,,,,,
+2023-07,naics_sector,Retail Trade,1.814761904761905,,,,,
+2023-08,all,All,3,,,57.32333333333334,843.9581666666667,
+2023-08,business_office_state,CA,4.082608695652174,,,,,
+2023-08,business_office_state,DE,4.8325,,,,,
+2023-08,business_office_state,NY,3.93,,,,,
+2023-08,business_office_state,TX,2.821176470588235,,,,,
+2023-08,company_financing_status,Other,2.727272727272727,,,,,
+2023-08,company_financing_status,VC-backed,3.908333333333333,,,,,
+2023-08,fte_segment,1. Micro-SMB (MIC),5.718666666666667,,,,,
+2023-08,fte_segment,2. SMB,2.17954358974359,,,,,
+2023-08,fte_segment,3. Mid-Market (MM),0.6283708333333333,,,,,
+2023-08,naics_sector,Administrative and Support and Waste Management and Remediation Services,1.893846153846154,,,,,
+2023-08,naics_sector,Educational Services,2.727272727272727,,,,,
+2023-08,naics_sector,Finance and Insurance,3.9,,,,,
+2023-08,naics_sector,Health Care and Social Assistance,1.43736231884058,,,,,
+2023-08,naics_sector,Information,5.31125,,,,,
+2023-08,naics_sector,"Professional, Scientific, and Technical Services",3.157894736842105,,,,,
+2023-09,all,All,3.035784543325527,,,59.14037499999999,822.4803431372549,
+2023-09,business_office_state,CA,3.960714285714285,,,,,
+2023-09,business_office_state,DE,5.468527777777778,,,,,
+2023-09,business_office_state,FL,2.280714285714286,,,,,
+2023-09,business_office_state,NY,4.123043478260869,,,,,
+2023-09,business_office_state,TX,2.632589285714286,,,,,
+2023-09,business_office_state,WA,2.885531914893617,,,,,
+2023-09,company_financing_status,Other,2.777777777777778,,,,,
+2023-09,company_financing_status,PE-backed,0.8163265306122449,,,,,
+2023-09,company_financing_status,VC-backed,3.935004662004662,,,,,
+2023-09,fte_segment,1. Micro-SMB (MIC),6,,,,,
+2023-09,fte_segment,2. SMB,2.265590608950844,,,,,
+2023-09,fte_segment,3. Mid-Market (MM),0.622675,,,,,
+2023-09,naics_sector,Administrative and Support and Waste Management and Remediation Services,1.860576923076923,,,,,
+2023-09,naics_sector,Finance and Insurance,3.96,,,,,
+2023-09,naics_sector,Health Care and Social Assistance,1.700601569311247,,,,,
+2023-09,naics_sector,Information,5.364309523809523,,,,,
+2023-09,naics_sector,Manufacturing,1.333333333333333,,,,,
+2023-09,naics_sector,"Professional, Scientific, and Technical Services",3.333333333333333,,,,,
+2023-10,all,All,3.083782142857143,,,59.81263888888888,840.4741666666666,
+2023-10,business_office_state,CA,3.942160931174089,,,,,
+2023-10,business_office_state,DE,4.935342748170291,,,,,
+2023-10,business_office_state,FL,2.555760582010582,,,,,
+2023-10,business_office_state,NY,4.380434941520468,,,,,
+2023-10,business_office_state,TX,2.899095890410958,,,,,
+2023-10,company_financing_status,Other,2.803846153846154,,,,,
+2023-10,company_financing_status,PE-backed,0.99466472303207,,,,,
+2023-10,company_financing_status,VC-backed,4,,,,,
+2023-10,fte_segment,1. Micro-SMB (MIC),5.714285714285714,,,,,
+2023-10,fte_segment,2. SMB,2.281020408163265,,,,,
+2023-10,fte_segment,3. Mid-Market (MM),0.6495726495726496,,,,,
+2023-10,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.064338725985844,,,,,
+2023-10,naics_sector,Educational Services,3.2,,,,,
+2023-10,naics_sector,Finance and Insurance,4.00438262195122,,,,,
+2023-10,naics_sector,Information,5.333333333333333,,,,,
+2023-10,naics_sector,"Professional, Scientific, and Technical Services",3.295008130081301,,,,,
+2023-11,all,All,3.211192307692308,,,67.23921052631579,914.2094372727272,
+2023-11,business_office_state,CA,4.5,,,,,
+2023-11,business_office_state,DE,5.449411764705882,,,,,
+2023-11,business_office_state,FL,2.513214285714286,,,,,
+2023-11,business_office_state,NY,4.339666666666667,,,,,
+2023-11,business_office_state,TX,2.79764705882353,,,,,
+2023-11,company_financing_status,Other,2.940468509984639,,,,,
+2023-11,company_financing_status,PE-backed,0.8339885057471265,,,,,
+2023-11,company_financing_status,VC-backed,4.335456140350876,,,,,
+2023-11,fte_segment,1. Micro-SMB (MIC),6.219730392156863,,,,,
+2023-11,fte_segment,2. SMB,2.367084033613446,,,,,
+2023-11,fte_segment,3. Mid-Market (MM),0.6268840579710145,,,,,
+2023-11,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.346466380543633,,,,,
+2023-11,naics_sector,Educational Services,2.685508333333333,,,,,
+2023-11,naics_sector,Finance and Insurance,4,,,,,
+2023-11,naics_sector,Information,5.679267840593142,,,,,
+2023-11,naics_sector,Manufacturing,1.325,,,,,
+2023-11,naics_sector,"Professional, Scientific, and Technical Services",3.575812969924812,,,,,
+2023-12,all,All,3.076923076923077,,,61.30769230769231,1044.999145299145,
+2023-12,business_office_state,CA,4.237668161434978,,,,,
+2023-12,business_office_state,DE,4.784951923076923,,,,,
+2023-12,business_office_state,FL,2.044339901477833,,,,,
+2023-12,business_office_state,NJ,2.154545454545454,,,,,
+2023-12,business_office_state,NY,4.671428571428572,,,,,
+2023-12,business_office_state,TX,2.865846153846154,,,,,
+2023-12,company_financing_status,Other,2.752842809364549,,,,,
+2023-12,company_financing_status,PE-backed,0.8752,,,,,
+2023-12,company_financing_status,VC-backed,4.398666666666667,,,,,
+2023-12,fte_segment,1. Micro-SMB (MIC),6.204166666666667,,,,,
+2023-12,fte_segment,2. SMB,2.305748327759197,,,,,
+2023-12,fte_segment,3. Mid-Market (MM),0.5936118908265647,,,,,
+2023-12,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.120869565217391,,,,,
+2023-12,naics_sector,Finance and Insurance,4,,,,,
+2023-12,naics_sector,Information,6,,,,,
+2023-12,naics_sector,Manufacturing,1.334876126126126,,,,,
+2023-12,naics_sector,"Professional, Scientific, and Technical Services",3.380100111234705,,,,,
+2024-01,all,All,3.25,,,72.8,968.0798951048951,
+2024-01,business_office_state,CA,4.347065217391304,,,,,
+2024-01,business_office_state,DE,6.524325971058644,,,,,
+2024-01,business_office_state,FL,2.950982905982906,,,,,
+2024-01,business_office_state,IL,1.818181818181818,,,,,
+2024-01,business_office_state,NJ,1.818181818181818,,,,,
+2024-01,business_office_state,NY,4.663523809523809,,,,,
+2024-01,business_office_state,TX,2.67082337317397,,,,,
+2024-01,company_financing_status,Other,2.857142857142857,,,,,
+2024-01,company_financing_status,PE-backed,0.953695652173913,,,,,
+2024-01,company_financing_status,VC-backed,4.755625,,,,,
+2024-01,fte_segment,1. Micro-SMB (MIC),6.443333333333332,,,,,
+2024-01,fte_segment,2. SMB,2.55570745920746,,,,,
+2024-01,fte_segment,3. Mid-Market (MM),0.6956097560975609,,,,,
+2024-01,fte_segment,4. Enterprise (ENT),0.04333333333333333,,,,,
+2024-01,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.168365079365079,,,,,
+2024-01,naics_sector,Educational Services,2.178333333333333,,,,,
+2024-01,naics_sector,Finance and Insurance,4,,,,,
+2024-01,naics_sector,Health Care and Social Assistance,1.336014492753623,,,,,
+2024-01,naics_sector,Information,6.427714285714286,,,,,
+2024-01,naics_sector,Manufacturing,1.471022727272727,,,,,
+2024-01,naics_sector,"Professional, Scientific, and Technical Services",3.959333333333333,,,,,
+2024-02,all,All,3.333333333333333,,,73.40384615384616,943.247027027027,
+2024-02,business_office_state,CA,4.727649572649573,,,,,
+2024-02,business_office_state,DE,6.1815375,,,,,
+2024-02,business_office_state,FL,2.885357142857143,,,,,
+2024-02,business_office_state,IL,2.058823529411764,,,,,
+2024-02,business_office_state,MA,2.666666666666667,,,,,
+2024-02,business_office_state,NJ,1.997045454545455,,,,,
+2024-02,business_office_state,NY,5.445,,,,,
+2024-02,business_office_state,TX,2.928235294117647,,,,,
+2024-02,company_financing_status,Other,2.891095890410959,,,,,
+2024-02,company_financing_status,PE-backed,1.04,,,,,
+2024-02,company_financing_status,VC-backed,5.20476,,,,,
+2024-02,fte_segment,1. Micro-SMB (MIC),6.8,,,,,
+2024-02,fte_segment,2. SMB,2.647777777777778,,,,,
+2024-02,fte_segment,3. Mid-Market (MM),0.702112676056338,,,,,
+2024-02,fte_segment,4. Enterprise (ENT),0.06128133704735376,,,,,
+2024-02,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.857142857142857,,,,,
+2024-02,naics_sector,Educational Services,2.46,,,,,
+2024-02,naics_sector,Finance and Insurance,4.169583333333334,,,,,
+2024-02,naics_sector,Health Care and Social Assistance,1.25,,,,,
+2024-02,naics_sector,Information,6.667083333333333,,,,,
+2024-02,naics_sector,Manufacturing,1.428571428571429,,,,,
+2024-02,naics_sector,"Professional, Scientific, and Technical Services",4.230769230769231,,,,,
+2024-02,naics_sector,Retail Trade,2.004941176470588,,,,,
+2024-02,naics_sector,Wholesale Trade,1.618456375838926,,,,,
+2024-03,all,All,3.512957079152731,,,93.886,1208.86075,
+2024-03,business_office_state,CA,5.099222222222222,,,,,
+2024-03,business_office_state,DE,6.675810810810811,,,,,
+2024-03,business_office_state,FL,3.246210317460317,,,,,
+2024-03,business_office_state,GA,1.6,,,,,
+2024-03,business_office_state,MA,3.056666666666667,,,,,
+2024-03,business_office_state,NJ,1.988636363636364,,,,,
+2024-03,business_office_state,NY,5.933831168831169,,,,,
+2024-03,business_office_state,PA,2.269814814814815,,,,,
+2024-03,business_office_state,TX,2.837333333333333,,,,,
+2024-03,company_financing_status,Other,2.857142857142857,,,,,
+2024-03,company_financing_status,PE-backed,1.050276828434723,,,,,
+2024-03,company_financing_status,VC-backed,5.971654939487757,,,,,
+2024-03,fte_segment,1. Micro-SMB (MIC),7.37594298245614,,,,,
+2024-03,fte_segment,2. SMB,2.586618876941458,,,,,
+2024-03,fte_segment,3. Mid-Market (MM),0.8325190476190476,,,,,
+2024-03,fte_segment,4. Enterprise (ENT),0.06006992063492063,,,,,
+2024-03,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.54,,,,,
+2024-03,naics_sector,Educational Services,2.273272222222222,,,,,
+2024-03,naics_sector,Finance and Insurance,4,,,,,
+2024-03,naics_sector,Health Care and Social Assistance,1.475071942446043,,,,,
+2024-03,naics_sector,Information,7.851875,,,,,
+2024-03,naics_sector,Manufacturing,1.481795910184443,,,,,
+2024-03,naics_sector,Other Services (except Public Administration),1.388,,,,,
+2024-03,naics_sector,"Professional, Scientific, and Technical Services",4.349736842105263,,,,,
+2024-03,naics_sector,Retail Trade,2.1,,,,,
+2024-04,all,All,3.361384615384615,,,85.35875,1562.238333333333,
+2024-04,business_office_state,CA,5.166666666666667,,,,,
+2024-04,business_office_state,DE,6.641025641025641,,,,,
+2024-04,business_office_state,FL,2.857142857142857,,,,,
+2024-04,business_office_state,MA,2.539444444444444,,,,,
+2024-04,business_office_state,NJ,1.803030303030303,,,,,
+2024-04,business_office_state,NY,6.054404761904762,,,,,
+2024-04,business_office_state,PA,2.079285714285714,,,,,
+2024-04,business_office_state,TX,3,,,,,
+2024-04,business_office_state,UT,2.105555555555556,,,,,
+2024-04,business_office_state,WA,3.803571428571428,,,,,
+2024-04,company_financing_status,Other,2.837837837837838,,,,,
+2024-04,company_financing_status,PE-backed,1.04,,,,,
+2024-04,company_financing_status,VC-backed,6.307254901960782,,,,,
+2024-04,fte_segment,1. Micro-SMB (MIC),7.17827380952381,,,,,
+2024-04,fte_segment,2. SMB,2.6225,,,,,
+2024-04,fte_segment,3. Mid-Market (MM),0.8364666666666667,,,,,
+2024-04,fte_segment,4. Enterprise (ENT),0.04733800000000001,,,,,
+2024-04,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.162162162162162,,,,,
+2024-04,naics_sector,Educational Services,2.5,,,,,
+2024-04,naics_sector,Finance and Insurance,4.7405,,,,,
+2024-04,naics_sector,Health Care and Social Assistance,1.327334474885845,,,,,
+2024-04,naics_sector,Information,7.714285714285714,,,,,
+2024-04,naics_sector,Manufacturing,1.476364795918367,,,,,
+2024-04,naics_sector,"Professional, Scientific, and Technical Services",4.414,,,,,
+2024-04,naics_sector,Retail Trade,1.868236208236208,,,,,
+2024-05,all,All,3.501647727272727,,,94.21661538461538,1236.542708333333,
+2024-05,business_office_state,CA,5.039536679536678,,,,,
+2024-05,business_office_state,DE,6.130833333333332,,,,,
+2024-05,business_office_state,FL,2.666666666666667,,,,,
+2024-05,business_office_state,MA,3.038461538461538,,,,,
+2024-05,business_office_state,NJ,1.938775510204082,,,,,
+2024-05,business_office_state,NY,6.107552447552447,,,,,
+2024-05,business_office_state,PA,1.736984126984127,,,,,
+2024-05,business_office_state,TX,3.0445,,,,,
+2024-05,business_office_state,UT,2.5,,,,,
+2024-05,business_office_state,WA,4.282570850202429,,,,,
+2024-05,company_financing_status,Other,2.857142857142857,,,,,
+2024-05,company_financing_status,PE-backed,1.022597580645161,,,,,
+2024-05,company_financing_status,VC-backed,6.966634779124512,,,,,
+2024-05,fte_segment,1. Micro-SMB (MIC),7.374852941176471,,,,,
+2024-05,fte_segment,2. SMB,2.857142857142857,,,,,
+2024-05,fte_segment,3. Mid-Market (MM),0.8947368421052632,,,,,
+2024-05,fte_segment,4. Enterprise (ENT),0.05009877913429522,,,,,
+2024-05,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.338670588235294,,,,,
+2024-05,naics_sector,Educational Services,2.5,,,,,
+2024-05,naics_sector,Finance and Insurance,5,,,,,
+2024-05,naics_sector,Health Care and Social Assistance,1.298819444444445,,,,,
+2024-05,naics_sector,Information,7.76375,,,,,
+2024-05,naics_sector,Manufacturing,1.666666666666667,,,,,
+2024-05,naics_sector,"Professional, Scientific, and Technical Services",4.36,,,,,
+2024-05,naics_sector,Retail Trade,2,,,,,
+2024-05,naics_sector,Wholesale Trade,1.40625,,,,,
+2024-06,all,All,3.333333333333333,,,89.59333333333332,1280.645168067227,
+2024-06,business_office_state,CA,5,,,,,
+2024-06,business_office_state,DE,6.301159420289855,,,,,
+2024-06,business_office_state,FL,2.454545454545455,,,,,
+2024-06,business_office_state,MA,2.9756,,,,,
+2024-06,business_office_state,NJ,2.448717948717949,,,,,
+2024-06,business_office_state,NY,6.063404255319149,,,,,
+2024-06,business_office_state,PA,2.138342277877162,,,,,
+2024-06,business_office_state,TX,2.847238095238096,,,,,
+2024-06,business_office_state,WA,3.987016877637131,,,,,
+2024-06,company_financing_status,Other,2.7225,,,,,
+2024-06,company_financing_status,PE-backed,0.8778205833791964,,,,,
+2024-06,company_financing_status,VC-backed,6.516542776998597,,,,,
+2024-06,fte_segment,1. Micro-SMB (MIC),7.108097165991904,,,,,
+2024-06,fte_segment,2. SMB,2.55,,,,,
+2024-06,fte_segment,3. Mid-Market (MM),0.8611517367458866,,,,,
+2024-06,fte_segment,4. Enterprise (ENT),0.046,,,,,
+2024-06,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.135344646972554,,,,,
+2024-06,naics_sector,Educational Services,2.222222222222222,,,,,
+2024-06,naics_sector,Finance and Insurance,4.118716374269006,,,,,
+2024-06,naics_sector,Health Care and Social Assistance,1.329166666666667,,,,,
+2024-06,naics_sector,Information,8,,,,,
+2024-06,naics_sector,Manufacturing,1.6,,,,,
+2024-06,naics_sector,Other Services (except Public Administration),1.301369863013699,,,,,
+2024-06,naics_sector,"Professional, Scientific, and Technical Services",4.575322580645161,,,,,
+2024-07,all,All,3.441199494949495,,,95.51999999999998,1549.68,
+2024-07,business_office_state,CA,5.236999999999999,,,,,
+2024-07,business_office_state,CO,2.349633333333333,,,,,
+2024-07,business_office_state,DE,6.544729729729729,,,,,
+2024-07,business_office_state,FL,2.796346063177746,,,,,
+2024-07,business_office_state,GA,2.083333333333333,,,,,
+2024-07,business_office_state,IL,2.352941176470588,,,,,
+2024-07,business_office_state,MA,2.525,,,,,
+2024-07,business_office_state,NJ,2.337905954735223,,,,,
+2024-07,business_office_state,NY,5.765714285714286,,,,,
+2024-07,business_office_state,PA,1.706333333333333,,,,,
+2024-07,business_office_state,TX,2.857142857142857,,,,,
+2024-07,business_office_state,WA,4.004666666666667,,,,,
+2024-07,company_financing_status,Other,2.775779220779221,,,,,
+2024-07,company_financing_status,PE-backed,1.04842919153554,,,,,
+2024-07,company_financing_status,VC-backed,6.683333333333333,,,,,
+2024-07,fte_segment,1. Micro-SMB (MIC),6.9,,,,,
+2024-07,fte_segment,2. SMB,2.673678571428571,,,,,
+2024-07,fte_segment,3. Mid-Market (MM),0.8766176470588235,,,,,
+2024-07,fte_segment,4. Enterprise (ENT),0.053051890941073,,,,,
+2024-07,naics_sector,Administrative and Support and Waste Management and Remediation Services,2,,,,,
+2024-07,naics_sector,Educational Services,2.427142857142857,,,,,
+2024-07,naics_sector,Finance and Insurance,4.33546066252588,,,,,
+2024-07,naics_sector,Health Care and Social Assistance,1.3796,,,,,
+2024-07,naics_sector,Information,8,,,,,
+2024-07,naics_sector,Manufacturing,1.500263157894737,,,,,
+2024-07,naics_sector,Other Services (except Public Administration),1.519285714285714,,,,,
+2024-07,naics_sector,"Professional, Scientific, and Technical Services",4.514193548387096,,,,,
+2024-08,all,All,3.34523316912972,,,89.69998120300752,1401.665,
+2024-08,business_office_state,CA,5.449702633814782,,,,,
+2024-08,business_office_state,DC,1.963306451612903,,,,,
+2024-08,business_office_state,DE,6.848578947368422,,,,,
+2024-08,business_office_state,FL,2.655504201680672,,,,,
+2024-08,business_office_state,GA,2.240873015873016,,,,,
+2024-08,business_office_state,MA,2.65600164970165,,,,,
+2024-08,business_office_state,NJ,2.083333333333333,,,,,
+2024-08,business_office_state,NY,6.14888888888889,,,,,
+2024-08,business_office_state,PA,1.812878787878788,,,,,
+2024-08,business_office_state,TX,2.857142857142857,,,,,
+2024-08,business_office_state,UT,2.231503339724163,,,,,
+2024-08,business_office_state,WA,3.585428571428572,,,,,
+2024-08,company_financing_status,Other,2.727272727272727,,,,,
+2024-08,company_financing_status,PE-backed,0.9882089552238806,,,,,
+2024-08,company_financing_status,VC-backed,7.237138518562379,,,,,
+2024-08,fte_segment,1. Micro-SMB (MIC),7.237083333333334,,,,,
+2024-08,fte_segment,2. SMB,2.574324324324324,,,,,
+2024-08,fte_segment,3. Mid-Market (MM),0.8824598930481284,,,,,
+2024-08,fte_segment,4. Enterprise (ENT),0.048,,,,,
+2024-08,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.04125,,,,,
+2024-08,naics_sector,Educational Services,2.407407407407407,,,,,
+2024-08,naics_sector,Finance and Insurance,4.318249999999999,,,,,
+2024-08,naics_sector,Health Care and Social Assistance,1.233111111111111,,,,,
+2024-08,naics_sector,Information,8.479032258064517,,,,,
+2024-08,naics_sector,Manufacturing,1.637333333333333,,,,,
+2024-08,naics_sector,"Professional, Scientific, and Technical Services",4.603571428571429,,,,,
+2024-08,naics_sector,Retail Trade,1.668070175438596,,,,,
+2024-09,all,All,3.390832708177044,,,93.33399999999999,1419.905720454545,
+2024-09,business_office_state,CA,5.333333333333333,,,,,
+2024-09,business_office_state,CO,2.405526315789474,,,,,
+2024-09,business_office_state,DE,6.666666666666667,,,,,
+2024-09,business_office_state,FL,2.611111111111111,,,,,
+2024-09,business_office_state,IL,2,,,,,
+2024-09,business_office_state,MA,3.33989501312336,,,,,
+2024-09,business_office_state,NJ,2,,,,,
+2024-09,business_office_state,NY,6.138214285714286,,,,,
+2024-09,business_office_state,PA,1.812878787878788,,,,,
+2024-09,business_office_state,TX,2.844961315280464,,,,,
+2024-09,business_office_state,UT,2.09,,,,,
+2024-09,business_office_state,WA,3.49027027027027,,,,,
+2024-09,company_financing_status,Other,2.666666666666667,,,,,
+2024-09,company_financing_status,PE-backed,0.9911363636363637,,,,,
+2024-09,company_financing_status,VC-backed,7.285714285714286,,,,,
+2024-09,fte_segment,1. Micro-SMB (MIC),6.9,,,,,
+2024-09,fte_segment,2. SMB,2.633169934640523,,,,,
+2024-09,fte_segment,3. Mid-Market (MM),0.7847199999999999,,,,,
+2024-09,fte_segment,4. Enterprise (ENT),0.04141107796892342,,,,,
+2024-09,naics_sector,Administrative and Support and Waste Management and Remediation Services,1.895454545454546,,,,,
+2024-09,naics_sector,Educational Services,1.904761904761905,,,,,
+2024-09,naics_sector,Finance and Insurance,4.50576923076923,,,,,
+2024-09,naics_sector,Health Care and Social Assistance,1.300645161290323,,,,,
+2024-09,naics_sector,Information,8.237727272727271,,,,,
+2024-09,naics_sector,Manufacturing,1.575555555555556,,,,,
+2024-09,naics_sector,Other Services (except Public Administration),1.428571428571429,,,,,
+2024-09,naics_sector,"Professional, Scientific, and Technical Services",4.858723529411765,,,,,
+2024-09,naics_sector,Retail Trade,1.805130513051305,,,,,
+2024-10,all,All,3.529411764705882,,,97.39033333333334,1340.215625,
+2024-10,business_office_state,CA,5.714081632653062,,,,,
+2024-10,business_office_state,CO,2.826985815602837,,,,,
+2024-10,business_office_state,DE,6.666666666666667,,,,,
+2024-10,business_office_state,FL,2.666666666666667,,,,,
+2024-10,business_office_state,IL,1.818181818181818,,,,,
+2024-10,business_office_state,MA,3.2,,,,,
+2024-10,business_office_state,NJ,2,,,,,
+2024-10,business_office_state,NY,6.222857142857143,,,,,
+2024-10,business_office_state,PA,1.741666666666667,,,,,
+2024-10,business_office_state,TX,2.857142857142857,,,,,
+2024-10,business_office_state,UT,2.065884476534297,,,,,
+2024-10,business_office_state,VA,2.857142857142857,,,,,
+2024-10,business_office_state,WA,3.602230392156863,,,,,
+2024-10,company_financing_status,Other,2.707966903705288,,,,,
+2024-10,company_financing_status,PE-backed,1.113030303030303,,,,,
+2024-10,company_financing_status,VC-backed,7.756300000000001,,,,,
+2024-10,fte_segment,1. Micro-SMB (MIC),6.799047619047619,,,,,
+2024-10,fte_segment,2. SMB,2.75,,,,,
+2024-10,fte_segment,3. Mid-Market (MM),0.8714090909090909,,,,,
+2024-10,fte_segment,4. Enterprise (ENT),0.04683,,,,,
+2024-10,naics_sector,Administrative and Support and Waste Management and Remediation Services,1.8978,,,,,
+2024-10,naics_sector,Educational Services,2,,,,,
+2024-10,naics_sector,Finance and Insurance,4.883666666666667,,,,,
+2024-10,naics_sector,Health Care and Social Assistance,1.37,,,,,
+2024-10,naics_sector,Information,8.705912433155074,,,,,
+2024-10,naics_sector,Manufacturing,1.742489516129032,,,,,
+2024-10,naics_sector,Other Services (except Public Administration),1.523714285714286,,,,,
+2024-10,naics_sector,"Professional, Scientific, and Technical Services",5.040095238095239,,,,,
+2024-11,all,All,3.551148065238248,,,90.65866666666666,1342.715631578948,
+2024-11,business_office_state,CA,5.714285714285714,,,,,
+2024-11,business_office_state,CO,3.130711538461538,,,,,
+2024-11,business_office_state,DE,6.922238095238095,,,,,
+2024-11,business_office_state,FL,2.758620689655173,,,,,
+2024-11,business_office_state,GA,2.0625,,,,,
+2024-11,business_office_state,IL,2.222222222222222,,,,,
+2024-11,business_office_state,MA,3.333333333333333,,,,,
+2024-11,business_office_state,NJ,2.217,,,,,
+2024-11,business_office_state,NY,6.186459694989107,,,,,
+2024-11,business_office_state,OH,1.715686274509804,,,,,
+2024-11,business_office_state,PA,1.954545454545455,,,,,
+2024-11,business_office_state,TX,2.842727272727273,,,,,
+2024-11,business_office_state,UT,2.093017344497608,,,,,
+2024-11,business_office_state,VA,2.857142857142857,,,,,
+2024-11,business_office_state,WA,3.115882352941176,,,,,
+2024-11,company_financing_status,Other,2.769230769230769,,,,,
+2024-11,company_financing_status,PE-backed,1.201884735202492,,,,,
+2024-11,company_financing_status,VC-backed,7.916666666666667,,,,,
+2024-11,fte_segment,1. Micro-SMB (MIC),7.108333333333334,,,,,
+2024-11,fte_segment,2. SMB,2.794514925373134,,,,,
+2024-11,fte_segment,3. Mid-Market (MM),0.8331014492753623,,,,,
+2024-11,fte_segment,4. Enterprise (ENT),0.05439610675741194,,,,,
+2024-11,naics_sector,Administrative and Support and Waste Management and Remediation Services,1.923904166666667,,,,,
+2024-11,naics_sector,Educational Services,2.222222222222222,,,,,
+2024-11,naics_sector,Finance and Insurance,4.797885714285714,,,,,
+2024-11,naics_sector,Health Care and Social Assistance,1.37,,,,,
+2024-11,naics_sector,Information,9.388650284900285,,,,,
+2024-11,naics_sector,Manufacturing,1.818181818181818,,,,,
+2024-11,naics_sector,Other Services (except Public Administration),1.481481481481481,,,,,
+2024-11,naics_sector,"Professional, Scientific, and Technical Services",5,,,,,
+2024-11,naics_sector,Retail Trade,1.956969696969697,,,,,
+2024-12,all,All,3.523809523809524,,,107.3944444444444,1724.929727272727,
+2024-12,business_office_state,CA,5.859066666666667,,,,,
+2024-12,business_office_state,CO,2.85995,,,,,
+2024-12,business_office_state,DC,2.575,,,,,
+2024-12,business_office_state,DE,7.73915,,,,,
+2024-12,business_office_state,FL,2.666666666666667,,,,,
+2024-12,business_office_state,GA,2.000666666666667,,,,,
+2024-12,business_office_state,IL,2.222222222222222,,,,,
+2024-12,business_office_state,MA,3.333333333333333,,,,,
+2024-12,business_office_state,NJ,2.001363636363636,,,,,
+2024-12,business_office_state,NY,6.493108108108109,,,,,
+2024-12,business_office_state,PA,1.775700934579439,,,,,
+2024-12,business_office_state,TX,2.84,,,,,
+2024-12,business_office_state,UT,2.435928853754941,,,,,
+2024-12,business_office_state,WA,3.654122807017544,,,,,
+2024-12,company_financing_status,Other,2.674603174603174,,,,,
+2024-12,company_financing_status,PE-backed,1.104383284876558,,,,,
+2024-12,company_financing_status,VC-backed,8.270190476190475,,,,,
+2024-12,fte_segment,1. Micro-SMB (MIC),7.266666666666666,,,,,
+2024-12,fte_segment,2. SMB,2.669535864978903,,,,,
+2024-12,fte_segment,3. Mid-Market (MM),0.82,,,,,
+2024-12,fte_segment,4. Enterprise (ENT),0.05976095617529881,,,,,
+2024-12,naics_sector,Administrative and Support and Waste Management and Remediation Services,1.826733333333333,,,,,
+2024-12,naics_sector,Educational Services,1.996737588652482,,,,,
+2024-12,naics_sector,Finance and Insurance,5,,,,,
+2024-12,naics_sector,Health Care and Social Assistance,1.240970695970696,,,,,
+2024-12,naics_sector,Information,9.706521739130435,,,,,
+2024-12,naics_sector,Manufacturing,1.804963924963925,,,,,
+2024-12,naics_sector,Other Services (except Public Administration),1.538461538461539,,,,,
+2024-12,naics_sector,"Professional, Scientific, and Technical Services",5.219183673469388,,,,,
+2024-12,naics_sector,Retail Trade,1.784397163120567,,,,,
+2025-01,all,All,3.7625,,,130.4011764705882,1872.352727272727,
+2025-01,business_office_state,CA,6.4,,,,,
+2025-01,business_office_state,CO,2.942700216450216,,,,,
+2025-01,business_office_state,DE,9.384645214521452,,,,,
+2025-01,business_office_state,FL,2.857142857142857,,,,,
+2025-01,business_office_state,GA,2.151333333333334,,,,,
+2025-01,business_office_state,IL,2.229416666666667,,,,,
+2025-01,business_office_state,MA,3.551765873015873,,,,,
+2025-01,business_office_state,NC,2,,,,,
+2025-01,business_office_state,NJ,2,,,,,
+2025-01,business_office_state,NV,4.599420289855073,,,,,
+2025-01,business_office_state,NY,7.246419753086419,,,,,
+2025-01,business_office_state,PA,1.927272727272727,,,,,
+2025-01,business_office_state,TX,3.091764705882353,,,,,
+2025-01,business_office_state,UT,2.646853932584269,,,,,
+2025-01,business_office_state,VA,3.202471910112359,,,,,
+2025-01,business_office_state,WA,5,,,,,
+2025-01,company_financing_status,Other,2.832046666666667,,,,,
+2025-01,company_financing_status,PE-backed,1.268216197183099,,,,,
+2025-01,company_financing_status,VC-backed,9.478571428571428,,,,,
+2025-01,fte_segment,1. Micro-SMB (MIC),8.354111111111111,,,,,
+2025-01,fte_segment,2. SMB,2.864615384615385,,,,,
+2025-01,fte_segment,3. Mid-Market (MM),0.901641791044776,,,,,
+2025-01,fte_segment,4. Enterprise (ENT),0.06,,,,,
+2025-01,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.222222222222222,,,,,
+2025-01,naics_sector,Educational Services,2,,,,,
+2025-01,naics_sector,Finance and Insurance,5.833333333333333,,,,,
+2025-01,naics_sector,Health Care and Social Assistance,1.33620253164557,,,,,
+2025-01,naics_sector,Information,11.49435858585859,,,,,
+2025-01,naics_sector,Manufacturing,1.906926406926407,,,,,
+2025-01,naics_sector,Other Services (except Public Administration),1.538461538461539,,,,,
+2025-01,naics_sector,"Professional, Scientific, and Technical Services",5.833180952380952,,,,,
+2025-01,naics_sector,Real Estate and Rental and Leasing,2,,,,,
+2025-01,naics_sector,Retail Trade,2,,,,,
+2025-01,naics_sector,Wholesale Trade,1.447368421052632,,,,,
+2025-02,all,All,4,,,124.4033333333333,1970.192666666666,
+2025-02,business_office_state,CA,7.398571428571429,,,,,
+2025-02,business_office_state,CO,2.8206,,,,,
+2025-02,business_office_state,DC,3.333333333333333,,,,,
+2025-02,business_office_state,DE,9.975,,,,,
+2025-02,business_office_state,FL,2.902105263157894,,,,,
+2025-02,business_office_state,GA,2.261222222222222,,,,,
+2025-02,business_office_state,IL,2.352941176470588,,,,,
+2025-02,business_office_state,MA,4.00025641025641,,,,,
+2025-02,business_office_state,NC,2.26843910806175,,,,,
+2025-02,business_office_state,NJ,2.283846153846154,,,,,
+2025-02,business_office_state,NV,3.986410256410256,,,,,
+2025-02,business_office_state,NY,8.568482213438735,,,,,
+2025-02,business_office_state,PA,1.818181818181818,,,,,
+2025-02,business_office_state,TN,2.495588235294118,,,,,
+2025-02,business_office_state,TX,3.04,,,,,
+2025-02,business_office_state,UT,3.22315369261477,,,,,
+2025-02,business_office_state,VA,3.420809248554913,,,,,
+2025-02,business_office_state,WA,5,,,,,
+2025-02,company_financing_status,Other,2.96536231884058,,,,,
+2025-02,company_financing_status,PE-backed,1.240665266106443,,,,,
+2025-02,company_financing_status,VC-backed,10.59373333333333,,,,,
+2025-02,fte_segment,1. Micro-SMB (MIC),9.708333333333334,,,,,
+2025-02,fte_segment,2. SMB,3.135820895522388,,,,,
+2025-02,fte_segment,3. Mid-Market (MM),0.9089999999999999,,,,,
+2025-02,fte_segment,4. Enterprise (ENT),0.0526308125,,,,,
+2025-02,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.608152038009502,,,,,
+2025-02,naics_sector,Construction,1.130553864881315,,,,,
+2025-02,naics_sector,Educational Services,2.320538384845464,,,,,
+2025-02,naics_sector,Finance and Insurance,6.716060606060606,,,,,
+2025-02,naics_sector,Health Care and Social Assistance,1.410461847389558,,,,,
+2025-02,naics_sector,Information,12,,,,,
+2025-02,naics_sector,Manufacturing,2.185172161172161,,,,,
+2025-02,naics_sector,Other Services (except Public Administration),1.666666666666667,,,,,
+2025-02,naics_sector,"Professional, Scientific, and Technical Services",6.4861,,,,,
+2025-02,naics_sector,Real Estate and Rental and Leasing,2.073033333333333,,,,,
+2025-02,naics_sector,Retail Trade,1.864239130434783,,,,,
+2025-02,naics_sector,Wholesale Trade,1.59,,,,,
+2025-03,all,All,4.256,,,131.9035714285714,2191.613702489221,
+2025-03,business_office_state,CA,8,,,,,
+2025-03,business_office_state,CO,2.9368,,,,,
+2025-03,business_office_state,DE,10.02634146341464,,,,,
+2025-03,business_office_state,FL,3.135909090909091,,,,,
+2025-03,business_office_state,GA,2.516666666666667,,,,,
+2025-03,business_office_state,IL,2.444444444444445,,,,,
+2025-03,business_office_state,MA,4.407142857142857,,,,,
+2025-03,business_office_state,MN,2.129607843137255,,,,,
+2025-03,business_office_state,NC,2.210968253968254,,,,,
+2025-03,business_office_state,NJ,2.178,,,,,
+2025-03,business_office_state,NV,5,,,,,
+2025-03,business_office_state,NY,9.32421052631579,,,,,
+2025-03,business_office_state,OH,2,,,,,
+2025-03,business_office_state,PA,2.19625,,,,,
+2025-03,business_office_state,TN,2.58235294117647,,,,,
+2025-03,business_office_state,TX,3.04,,,,,
+2025-03,business_office_state,UT,3.339131455399061,,,,,
+2025-03,business_office_state,VA,3.162206896551724,,,,,
+2025-03,business_office_state,WA,4.89125,,,,,
+2025-03,company_financing_status,Other,3.049166666666667,,,,,
+2025-03,company_financing_status,PE-backed,1.38265,,,,,
+2025-03,company_financing_status,VC-backed,11.54621848739496,,,,,
+2025-03,fte_segment,1. Micro-SMB (MIC),9.949722222222222,,,,,
+2025-03,fte_segment,2. SMB,3.221666666666667,,,,,
+2025-03,fte_segment,3. Mid-Market (MM),1.0483,,,,,
+2025-03,fte_segment,4. Enterprise (ENT),0.06,,,,,
+2025-03,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.275945054945055,,,,,
+2025-03,naics_sector,Construction,1.25,,,,,
+2025-03,naics_sector,Educational Services,2.466918767507003,,,,,
+2025-03,naics_sector,Finance and Insurance,7.854285714285714,,,,,
+2025-03,naics_sector,Health Care and Social Assistance,1.452,,,,,
+2025-03,naics_sector,Information,12.94221428571428,,,,,
+2025-03,naics_sector,Management of Companies and Enterprises,2.86226012793177,,,,,
+2025-03,naics_sector,Manufacturing,2.236602564102564,,,,,
+2025-03,naics_sector,Other Services (except Public Administration),1.666666666666667,,,,,
+2025-03,naics_sector,"Professional, Scientific, and Technical Services",7.131,,,,,
+2025-03,naics_sector,Real Estate and Rental and Leasing,2,,,,,
+2025-03,naics_sector,Retail Trade,2.172,,,,,
+2025-03,naics_sector,Wholesale Trade,1.751785714285714,,,,,
+2025-04,all,All,4.015,,,138.9278181818182,2373.086987179487,
+2025-04,business_office_state,CA,8,,,,,
+2025-04,business_office_state,CO,2.838779761904762,,,,,
+2025-04,business_office_state,DC,3.571014492753623,,,,,
+2025-04,business_office_state,DE,11.17427419354839,,,,,
+2025-04,business_office_state,FL,2.889644444444444,,,,,
+2025-04,business_office_state,GA,2.468852813852814,,,,,
+2025-04,business_office_state,IL,2.883154761904762,,,,,
+2025-04,business_office_state,MA,4.285714285714286,,,,,
+2025-04,business_office_state,MO,2.253968253968254,,,,,
+2025-04,business_office_state,NC,2.222222222222222,,,,,
+2025-04,business_office_state,NJ,1.934426406926407,,,,,
+2025-04,business_office_state,NV,3.558333333333334,,,,,
+2025-04,business_office_state,NY,9.198111888111889,,,,,
+2025-04,business_office_state,OH,1.523199023199023,,,,,
+2025-04,business_office_state,PA,2.18984126984127,,,,,
+2025-04,business_office_state,TN,2.7375,,,,,
+2025-04,business_office_state,TX,3.114545454545454,,,,,
+2025-04,business_office_state,UT,3.462535519709432,,,,,
+2025-04,business_office_state,VA,2.857142857142857,,,,,
+2025-04,business_office_state,WA,4.659565217391304,,,,,
+2025-04,company_financing_status,Other,2.934348717948718,,,,,
+2025-04,company_financing_status,PE-backed,1.500978,,,,,
+2025-04,company_financing_status,VC-backed,12.24792024539877,,,,,
+2025-04,fte_segment,1. Micro-SMB (MIC),9.19304347826087,,,,,
+2025-04,fte_segment,2. SMB,3.081081081081081,,,,,
+2025-04,fte_segment,3. Mid-Market (MM),0.981042654028436,,,,,
+2025-04,fte_segment,4. Enterprise (ENT),0.05827224115176964,,,,,
+2025-04,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.171111111111111,,,,,
+2025-04,naics_sector,Construction,1.25487792574657,,,,,
+2025-04,naics_sector,Educational Services,2.267470588235294,,,,,
+2025-04,naics_sector,Finance and Insurance,7.741176470588235,,,,,
+2025-04,naics_sector,Health Care and Social Assistance,1.428571428571429,,,,,
+2025-04,naics_sector,Information,12.934,,,,,
+2025-04,naics_sector,Management of Companies and Enterprises,2.945495,,,,,
+2025-04,naics_sector,Manufacturing,2.228983050847457,,,,,
+2025-04,naics_sector,Other Services (except Public Administration),1.773333333333333,,,,,
+2025-04,naics_sector,"Professional, Scientific, and Technical Services",7.629117647058823,,,,,
+2025-04,naics_sector,Real Estate and Rental and Leasing,1.934545454545455,,,,,
+2025-04,naics_sector,Retail Trade,1.818181818181818,,,,,
+2025-04,naics_sector,Transportation and Warehousing,1.244109121909633,,,,,
+2025-04,naics_sector,Wholesale Trade,1.930637254901961,,,,,
+2025-05,all,All,4.259025369978858,,,149.8541764705882,2251.73256923077,
+2025-05,business_office_state,AZ,3.266666666666667,,,,,
+2025-05,business_office_state,CA,8.596923076923076,,,,,
+2025-05,business_office_state,CO,2.945509309967141,,,,,
+2025-05,business_office_state,DC,3.410869565217391,,,,,
+2025-05,business_office_state,DE,11.88201265322262,,,,,
+2025-05,business_office_state,FL,3.230853523466704,,,,,
+2025-05,business_office_state,GA,2.332843333333333,,,,,
+2025-05,business_office_state,IL,2.775,,,,,
+2025-05,business_office_state,MA,4.4,,,,,
+2025-05,business_office_state,NC,2.280431432973806,,,,,
+2025-05,business_office_state,NJ,2.352941176470588,,,,,
+2025-05,business_office_state,NV,4.237063492063492,,,,,
+2025-05,business_office_state,NY,9.8,,,,,
+2025-05,business_office_state,OH,1.764705882352941,,,,,
+2025-05,business_office_state,PA,2.517087719298245,,,,,
+2025-05,business_office_state,TN,2.353535353535353,,,,,
+2025-05,business_office_state,TX,3.546666666666667,,,,,
+2025-05,business_office_state,UT,3.260869565217391,,,,,
+2025-05,business_office_state,VA,3.11974358974359,,,,,
+2025-05,business_office_state,WA,5.380475517890772,,,,,
+2025-05,business_office_state,WI,1.706709956709957,,,,,
+2025-05,company_financing_status,Other,3.076923076923077,,,,,
+2025-05,company_financing_status,PE-backed,1.6,,,,,
+2025-05,company_financing_status,VC-backed,14.1056,,,,,
+2025-05,fte_segment,1. Micro-SMB (MIC),10,,,,,
+2025-05,fte_segment,2. SMB,3.277837837837838,,,,,
+2025-05,fte_segment,3. Mid-Market (MM),1.121481481481482,,,,,
+2025-05,fte_segment,4. Enterprise (ENT),0.06195423623995053,,,,,
+2025-05,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.35985520361991,,,,,
+2025-05,naics_sector,"Arts, Entertainment, and Recreation",1.248,,,,,
+2025-05,naics_sector,Construction,1.333333333333333,,,,,
+2025-05,naics_sector,Educational Services,2.464433285509326,,,,,
+2025-05,naics_sector,Finance and Insurance,9.370810185185185,,,,,
+2025-05,naics_sector,Health Care and Social Assistance,1.555714285714286,,,,,
+2025-05,naics_sector,Information,15.5128,,,,,
+2025-05,naics_sector,Management of Companies and Enterprises,3.398,,,,,
+2025-05,naics_sector,Manufacturing,2.31,,,,,
+2025-05,naics_sector,Other Services (except Public Administration),1.765686274509804,,,,,
+2025-05,naics_sector,"Professional, Scientific, and Technical Services",8.257513227513227,,,,,
+2025-05,naics_sector,Real Estate and Rental and Leasing,2.1695,,,,,
+2025-05,naics_sector,Retail Trade,2.382941176470588,,,,,
+2025-05,naics_sector,Transportation and Warehousing,1.388888888888889,,,,,
+2025-05,naics_sector,Wholesale Trade,1.675384615384615,,,,,
+2025-06,all,All,4.401147058823528,,,157.9069230769231,1923.000238095239,
+2025-06,business_office_state,AZ,2.817031428571429,,,,,
+2025-06,business_office_state,CA,9.097104545454545,,,,,
+2025-06,business_office_state,CO,2.980445859872611,,,,,
+2025-06,business_office_state,DC,3.530338541666667,,,,,
+2025-06,business_office_state,DE,14.21813725490196,,,,,
+2025-06,business_office_state,FL,3.333333333333333,,,,,
+2025-06,business_office_state,GA,2.437777777777778,,,,,
+2025-06,business_office_state,IL,2.5,,,,,
+2025-06,business_office_state,IN,2.55,,,,,
+2025-06,business_office_state,MA,4.436097560975609,,,,,
+2025-06,business_office_state,MN,2.222222222222222,,,,,
+2025-06,business_office_state,MO,2.068965517241379,,,,,
+2025-06,business_office_state,NC,2.435333333333333,,,,,
+2025-06,business_office_state,NJ,2.307692307692307,,,,,
+2025-06,business_office_state,NV,5,,,,,
+2025-06,business_office_state,NY,10.10941176470588,,,,,
+2025-06,business_office_state,OH,1.818181818181818,,,,,
+2025-06,business_office_state,PA,2.355555555555556,,,,,
+2025-06,business_office_state,TN,2.1461,,,,,
+2025-06,business_office_state,TX,3.333333333333333,,,,,
+2025-06,business_office_state,UT,3.423333333333333,,,,,
+2025-06,business_office_state,VA,3.25,,,,,
+2025-06,business_office_state,WA,6.076675324675325,,,,,
+2025-06,company_financing_status,Other,3.099019607843137,,,,,
+2025-06,company_financing_status,PE-backed,1.747093023255814,,,,,
+2025-06,company_financing_status,VC-backed,15.974,,,,,
+2025-06,fte_segment,1. Micro-SMB (MIC),10,,,,,
+2025-06,fte_segment,2. SMB,3.294371428571428,,,,,
+2025-06,fte_segment,3. Mid-Market (MM),1.26073476702509,,,,,
+2025-06,fte_segment,4. Enterprise (ENT),0.06593616903509232,,,,,
+2025-06,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.537958041958042,,,,,
+2025-06,naics_sector,"Arts, Entertainment, and Recreation",1.111111111111111,,,,,
+2025-06,naics_sector,Construction,1.25,,,,,
+2025-06,naics_sector,Educational Services,2.348089887640449,,,,,
+2025-06,naics_sector,Finance and Insurance,9.994558823529413,,,,,
+2025-06,naics_sector,Health Care and Social Assistance,1.666666666666667,,,,,
+2025-06,naics_sector,Information,17.48723849883964,,,,,
+2025-06,naics_sector,Management of Companies and Enterprises,2.666666666666667,,,,,
+2025-06,naics_sector,Manufacturing,2.466274017144546,,,,,
+2025-06,naics_sector,Other Services (except Public Administration),1.739130434782609,,,,,
+2025-06,naics_sector,"Professional, Scientific, and Technical Services",8.76923076923077,,,,,
+2025-06,naics_sector,Real Estate and Rental and Leasing,2.05761316872428,,,,,
+2025-06,naics_sector,Retail Trade,2.847238095238096,,,,,
+2025-06,naics_sector,Transportation and Warehousing,1.508316666666667,,,,,
+2025-06,naics_sector,Wholesale Trade,1.702205882352941,,,,,
+2025-07,all,All,4.705263157894737,,,181.76,2335.500769230769,
+2025-07,business_office_state,AZ,3.069572649572649,,,,,
+2025-07,business_office_state,CA,10.05841176470588,,,,,
+2025-07,business_office_state,CO,3,,,,,
+2025-07,business_office_state,CT,3.500246913580247,,,,,
+2025-07,business_office_state,DC,3.5928125,,,,,
+2025-07,business_office_state,DE,17.58609329710145,,,,,
+2025-07,business_office_state,FL,3.474137931034483,,,,,
+2025-07,business_office_state,GA,2.5,,,,,
+2025-07,business_office_state,IL,2.652083333333334,,,,,
+2025-07,business_office_state,IN,2.22375,,,,,
+2025-07,business_office_state,MA,4.582616666666667,,,,,
+2025-07,business_office_state,MI,2.222222222222222,,,,,
+2025-07,business_office_state,MN,2.222222222222222,,,,,
+2025-07,business_office_state,MO,2.353846153846153,,,,,
+2025-07,business_office_state,NC,2.5,,,,,
+2025-07,business_office_state,NJ,2.519251968503937,,,,,
+2025-07,business_office_state,NV,5,,,,,
+2025-07,business_office_state,NY,10.94933333333333,,,,,
+2025-07,business_office_state,OH,1.818181818181818,,,,,
+2025-07,business_office_state,OK,2.158385093167702,,,,,
+2025-07,business_office_state,PA,2.438866396761133,,,,,
+2025-07,business_office_state,TN,2.288915308641975,,,,,
+2025-07,business_office_state,TX,3.810909090909091,,,,,
+2025-07,business_office_state,UT,3.208019230769231,,,,,
+2025-07,business_office_state,VA,3.079230769230769,,,,,
+2025-07,business_office_state,WA,6.643636363636364,,,,,
+2025-07,business_office_state,WI,1.746753246753247,,,,,
+2025-07,company_financing_status,Other,3.262843085457667,,,,,
+2025-07,company_financing_status,PE-backed,1.948717948717949,,,,,
+2025-07,company_financing_status,VC-backed,17.93916579101869,,,,,
+2025-07,fte_segment,1. Micro-SMB (MIC),10.07058823529412,,,,,
+2025-07,fte_segment,2. SMB,3.873769592476489,,,,,
+2025-07,fte_segment,3. Mid-Market (MM),1.203892215568862,,,,,
+2025-07,fte_segment,4. Enterprise (ENT),0.07036059806508356,,,,,
+2025-07,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.4375,,,,,
+2025-07,naics_sector,Construction,1.333333333333333,,,,,
+2025-07,naics_sector,Educational Services,2.288135593220339,,,,,
+2025-07,naics_sector,Finance and Insurance,11.42857142857143,,,,,
+2025-07,naics_sector,Health Care and Social Assistance,1.575889781859931,,,,,
+2025-07,naics_sector,Information,20.07526315789474,,,,,
+2025-07,naics_sector,Management of Companies and Enterprises,3.75,,,,,
+2025-07,naics_sector,Manufacturing,2.558437185929648,,,,,
+2025-07,naics_sector,Other Services (except Public Administration),1.818181818181818,,,,,
+2025-07,naics_sector,"Professional, Scientific, and Technical Services",9.980689655172414,,,,,
+2025-07,naics_sector,Real Estate and Rental and Leasing,2,,,,,
+2025-07,naics_sector,Retail Trade,2.696969696969697,,,,,
+2025-07,naics_sector,Transportation and Warehousing,1.682804904993372,,,,,
+2025-07,naics_sector,Wholesale Trade,1.682051282051282,,,,,
+2025-08,all,All,5,,,187.6723913043478,2433.328750000001,
+2025-08,business_office_state,AL,2.125,,,,,
+2025-08,business_office_state,AZ,2.940882352941177,,,,,
+2025-08,business_office_state,CA,11,,,,,
+2025-08,business_office_state,CO,3.713955026455027,,,,,
+2025-08,business_office_state,CT,4.066414141414142,,,,,
+2025-08,business_office_state,DC,3.75,,,,,
+2025-08,business_office_state,DE,24.62035714285715,,,,,
+2025-08,business_office_state,FL,3.944795321637427,,,,,
+2025-08,business_office_state,GA,2.771545138888889,,,,,
+2025-08,business_office_state,IL,2.258701298701299,,,,,
+2025-08,business_office_state,IN,2.283611111111111,,,,,
+2025-08,business_office_state,MA,5,,,,,
+2025-08,business_office_state,MI,2,,,,,
+2025-08,business_office_state,MN,2,,,,,
+2025-08,business_office_state,MO,2.391423859263331,,,,,
+2025-08,business_office_state,NC,2.857142857142857,,,,,
+2025-08,business_office_state,NJ,2.768448275862069,,,,,
+2025-08,business_office_state,NV,4.592843137254902,,,,,
+2025-08,business_office_state,NY,12.21164090177134,,,,,
+2025-08,business_office_state,OH,2.222222222222222,,,,,
+2025-08,business_office_state,OR,2.663174603174603,,,,,
+2025-08,business_office_state,PA,2.355555555555556,,,,,
+2025-08,business_office_state,TN,2.5,,,,,
+2025-08,business_office_state,TX,3.75,,,,,
+2025-08,business_office_state,UT,3.768666666666667,,,,,
+2025-08,business_office_state,VA,3.20639834881321,,,,,
+2025-08,business_office_state,WA,7.59625,,,,,
+2025-08,business_office_state,WI,1.818181818181818,,,,,
+2025-08,company_financing_status,Other,3.333333333333333,,,,,
+2025-08,company_financing_status,PE-backed,1.944358974358974,,,,,
+2025-08,company_financing_status,VC-backed,20.41352583586626,,,,,
+2025-08,fte_segment,1. Micro-SMB (MIC),10.14291666666667,,,,,
+2025-08,fte_segment,2. SMB,4.099381443298969,,,,,
+2025-08,fte_segment,3. Mid-Market (MM),1.331945525291829,,,,,
+2025-08,fte_segment,4. Enterprise (ENT),0.07912926770452222,,,,,
+2025-08,naics_sector,Accommodation and Food Services,1.052631578947368,,,,,
+2025-08,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.523164556962025,,,,,
+2025-08,naics_sector,"Arts, Entertainment, and Recreation",1.20115763546798,,,,,
+2025-08,naics_sector,Construction,1.38882183908046,,,,,
+2025-08,naics_sector,Educational Services,2.592457627118644,,,,,
+2025-08,naics_sector,Finance and Insurance,12.00294117647059,,,,,
+2025-08,naics_sector,Health Care and Social Assistance,1.666666666666667,,,,,
+2025-08,naics_sector,Information,22.755,,,,,
+2025-08,naics_sector,Management of Companies and Enterprises,3.78,,,,,
+2025-08,naics_sector,Manufacturing,2.777777777777778,,,,,
+2025-08,naics_sector,Other Services (except Public Administration),1.818181818181818,,,,,
+2025-08,naics_sector,"Professional, Scientific, and Technical Services",10.33333333333333,,,,,
+2025-08,naics_sector,Real Estate and Rental and Leasing,2.09505,,,,,
+2025-08,naics_sector,Retail Trade,3,,,,,
+2025-08,naics_sector,Transportation and Warehousing,1.917808219178082,,,,,
+2025-08,naics_sector,Wholesale Trade,1.72,,,,,
+2025-09,all,All,5,,,196.47,2470.775294117647,
+2025-09,business_office_state,AL,1.895652173913043,,,,,
+2025-09,business_office_state,AZ,2.919285714285714,,,,,
+2025-09,business_office_state,CA,10.822,,,,,
+2025-09,business_office_state,CO,3.846153846153846,,,,,
+2025-09,business_office_state,CT,3.351,,,,,
+2025-09,business_office_state,DC,5.053461538461538,,,,,
+2025-09,business_office_state,DE,24.01244721439543,,,,,
+2025-09,business_office_state,FL,3.846153846153846,,,,,
+2025-09,business_office_state,GA,2.786091760299625,,,,,
+2025-09,business_office_state,IL,2.775,,,,,
+2025-09,business_office_state,IN,2.5,,,,,
+2025-09,business_office_state,MA,5.795454545454546,,,,,
+2025-09,business_office_state,MD,2.163068181818182,,,,,
+2025-09,business_office_state,MI,2.376470588235294,,,,,
+2025-09,business_office_state,MN,2.222222222222222,,,,,
+2025-09,business_office_state,MO,2.5,,,,,
+2025-09,business_office_state,NC,2.885185185185185,,,,,
+2025-09,business_office_state,NJ,2.894655372476213,,,,,
+2025-09,business_office_state,NV,5.294117647058823,,,,,
+2025-09,business_office_state,NY,12.40807692307692,,,,,
+2025-09,business_office_state,OH,2.058823529411764,,,,,
+2025-09,business_office_state,OK,2.549019607843137,,,,,
+2025-09,business_office_state,PA,2.5,,,,,
+2025-09,business_office_state,TN,2.5,,,,,
+2025-09,business_office_state,TX,3.916788405797101,,,,,
+2025-09,business_office_state,UT,4.131739130434783,,,,,
+2025-09,business_office_state,VA,2.651515151515151,,,,,
+2025-09,business_office_state,WA,6.736842105263158,,,,,
+2025-09,business_office_state,WI,1.578947368421053,,,,,
+2025-09,company_financing_status,Other,3.4,,,,,
+2025-09,company_financing_status,PE-backed,1.941656891495601,,,,,
+2025-09,company_financing_status,VC-backed,20.99564102564102,,,,,
+2025-09,fte_segment,1. Micro-SMB (MIC),10.41176470588235,,,,,
+2025-09,fte_segment,2. SMB,3.947368421052631,,,,,
+2025-09,fte_segment,3. Mid-Market (MM),1.407555555555555,,,,,
+2025-09,fte_segment,4. Enterprise (ENT),0.08306560294778262,,,,,
+2025-09,naics_sector,Accommodation and Food Services,1.052631578947368,,,,,
+2025-09,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.666666666666667,,,,,
+2025-09,naics_sector,"Arts, Entertainment, and Recreation",1.176470588235294,,,,,
+2025-09,naics_sector,Construction,1.42059729141704,,,,,
+2025-09,naics_sector,Educational Services,2.5,,,,,
+2025-09,naics_sector,Finance and Insurance,12.81151515151515,,,,,
+2025-09,naics_sector,Health Care and Social Assistance,1.739130434782609,,,,,
+2025-09,naics_sector,Information,23.38908163265306,,,,,
+2025-09,naics_sector,Management of Companies and Enterprises,4,,,,,
+2025-09,naics_sector,Manufacturing,2.827483579638752,,,,,
+2025-09,naics_sector,Other Services (except Public Administration),1.999767441860465,,,,,
+2025-09,naics_sector,"Professional, Scientific, and Technical Services",10.95708554638799,,,,,
+2025-09,naics_sector,Real Estate and Rental and Leasing,2.172857142857143,,,,,
+2025-09,naics_sector,Retail Trade,3.129740259740259,,,,,
+2025-09,naics_sector,Transportation and Warehousing,1.788888888888889,,,,,
+2025-09,naics_sector,Wholesale Trade,1.818181818181818,,,,,
+2025-10,all,All,5.318775,,,221.9106,3194.685876623376,
+2025-10,business_office_state,AZ,2.789784688995216,,,,,
+2025-10,business_office_state,CA,12.51384579785265,,,,,
+2025-10,business_office_state,CO,4.002631578947368,,,,,
+2025-10,business_office_state,CT,3.846153846153846,,,,,
+2025-10,business_office_state,DC,5.714285714285714,,,,,
+2025-10,business_office_state,DE,22.46375939849624,,,,,
+2025-10,business_office_state,FL,4.285714285714286,,,,,
+2025-10,business_office_state,GA,2.857142857142857,,,,,
+2025-10,business_office_state,IL,3.029595141700405,,,,,
+2025-10,business_office_state,IN,2.666666666666667,,,,,
+2025-10,business_office_state,MA,5.795454545454546,,,,,
+2025-10,business_office_state,MD,2.41669957686883,,,,,
+2025-10,business_office_state,MI,2.4,,,,,
+2025-10,business_office_state,MN,2.5,,,,,
+2025-10,business_office_state,MO,2.3988,,,,,
+2025-10,business_office_state,NC,2.722222222222222,,,,,
+2025-10,business_office_state,NJ,3.165969684385382,,,,,
+2025-10,business_office_state,NV,6.363803431372548,,,,,
+2025-10,business_office_state,NY,13.27240999409797,,,,,
+2025-10,business_office_state,OH,2.109247155652384,,,,,
+2025-10,business_office_state,OR,3.676470588235294,,,,,
+2025-10,business_office_state,PA,2.918181818181818,,,,,
+2025-10,business_office_state,TN,3.050264116575592,,,,,
+2025-10,business_office_state,TX,4,,,,,
+2025-10,business_office_state,UT,3.492857142857142,,,,,
+2025-10,business_office_state,VA,3.178947368421053,,,,,
+2025-10,business_office_state,WA,7.719175084175085,,,,,
+2025-10,business_office_state,WI,1.999444444444444,,,,,
+2025-10,company_financing_status,Other,3.611986301369863,,,,,
+2025-10,company_financing_status,PE-backed,2,,,,,
+2025-10,company_financing_status,VC-backed,23.85407407407407,,,,,
+2025-10,fte_segment,1. Micro-SMB (MIC),10.89,,,,,
+2025-10,fte_segment,2. SMB,4.300412634408602,,,,,
+2025-10,fte_segment,3. Mid-Market (MM),1.471634630492851,,,,,
+2025-10,fte_segment,4. Enterprise (ENT),0.08394698085419734,,,,,
+2025-10,naics_sector,Accommodation and Food Services,1.052631578947368,,,,,
+2025-10,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.932169565217392,,,,,
+2025-10,naics_sector,Construction,1.428571428571429,,,,,
+2025-10,naics_sector,Educational Services,2.626367521367521,,,,,
+2025-10,naics_sector,Finance and Insurance,13.8536,,,,,
+2025-10,naics_sector,Health Care and Social Assistance,1.71771978021978,,,,,
+2025-10,naics_sector,Information,25.65194444444444,,,,,
+2025-10,naics_sector,Management of Companies and Enterprises,5.448378787878788,,,,,
+2025-10,naics_sector,Manufacturing,2.940616666666666,,,,,
+2025-10,naics_sector,Other Services (except Public Administration),2,,,,,
+2025-10,naics_sector,"Professional, Scientific, and Technical Services",11.81415340909091,,,,,
+2025-10,naics_sector,Real Estate and Rental and Leasing,2.3836,,,,,
+2025-10,naics_sector,Retail Trade,2.857142857142857,,,,,
+2025-10,naics_sector,Transportation and Warehousing,2.084,,,,,
+2025-10,naics_sector,Wholesale Trade,1.870277777777778,,,,,
+2025-11,all,All,5.317083333333333,,,217.137,2774.005555555556,
+2025-11,business_office_state,AZ,2.857142857142857,,,,,
+2025-11,business_office_state,CA,12.27385572139303,,,,,
+2025-11,business_office_state,CO,4.147373737373737,,,,,
+2025-11,business_office_state,CT,3.545,,,,,
+2025-11,business_office_state,DC,4.449256854256854,,,,,
+2025-11,business_office_state,DE,20.42673400673401,,,,,
+2025-11,business_office_state,FL,4,,,,,
+2025-11,business_office_state,GA,2.796374807987712,,,,,
+2025-11,business_office_state,IL,3.034383561643835,,,,,
+2025-11,business_office_state,IN,2.681632088520055,,,,,
+2025-11,business_office_state,MA,5.876116071428571,,,,,
+2025-11,business_office_state,MD,2,,,,,
+2025-11,business_office_state,MI,2.402061855670103,,,,,
+2025-11,business_office_state,MN,2.300113636363637,,,,,
+2025-11,business_office_state,MO,2.558139534883721,,,,,
+2025-11,business_office_state,NC,3.12796697626419,,,,,
+2025-11,business_office_state,NJ,3.245614035087719,,,,,
+2025-11,business_office_state,NV,5.333333333333333,,,,,
+2025-11,business_office_state,NY,12.98687394957983,,,,,
+2025-11,business_office_state,OH,2.208620689655172,,,,,
+2025-11,business_office_state,OK,2.779757281553398,,,,,
+2025-11,business_office_state,OR,4,,,,,
+2025-11,business_office_state,PA,3.021869047619048,,,,,
+2025-11,business_office_state,TN,2.5,,,,,
+2025-11,business_office_state,TX,4,,,,,
+2025-11,business_office_state,UT,3.59,,,,,
+2025-11,business_office_state,VA,3.053613053613054,,,,,
+2025-11,business_office_state,WA,8.411999999999999,,,,,
+2025-11,business_office_state,WI,1.730769230769231,,,,,
+2025-11,company_financing_status,Other,3.636363636363636,,,,,
+2025-11,company_financing_status,PE-backed,1.927184466019418,,,,,
+2025-11,company_financing_status,VC-backed,23.2497,,,,,
+2025-11,fte_segment,1. Micro-SMB (MIC),10.94285714285714,,,,,
+2025-11,fte_segment,2. SMB,4.153846153846154,,,,,
+2025-11,fte_segment,3. Mid-Market (MM),1.347668440938802,,,,,
+2025-11,fte_segment,4. Enterprise (ENT),0.08244211252068395,,,,,
+2025-11,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.777777777777778,,,,,
+2025-11,naics_sector,"Arts, Entertainment, and Recreation",1.374213836477987,,,,,
+2025-11,naics_sector,Construction,1.538461538461539,,,,,
+2025-11,naics_sector,Educational Services,2.261160714285714,,,,,
+2025-11,naics_sector,Finance and Insurance,13.33333333333333,,,,,
+2025-11,naics_sector,Health Care and Social Assistance,1.666666666666667,,,,,
+2025-11,naics_sector,Information,25,,,,,
+2025-11,naics_sector,Management of Companies and Enterprises,4.363,,,,,
+2025-11,naics_sector,Manufacturing,3.13867,,,,,
+2025-11,naics_sector,Other Services (except Public Administration),2.142857142857143,,,,,
+2025-11,naics_sector,"Professional, Scientific, and Technical Services",12.09919104991394,,,,,
+2025-11,naics_sector,Real Estate and Rental and Leasing,2.457647058823529,,,,,
+2025-11,naics_sector,Retail Trade,3.06609375,,,,,
+2025-11,naics_sector,Transportation and Warehousing,1.966666666666667,,,,,
+2025-11,naics_sector,Wholesale Trade,2.059354838709678,,,,,
+2025-12,all,All,5.443809523809524,,,244.9624553571429,3982.237019607843,
+2025-12,business_office_state,AL,3,,,,,
+2025-12,business_office_state,AZ,3.158947368421053,,,,,
+2025-12,business_office_state,CA,12.91869800960878,,,,,
+2025-12,business_office_state,CO,4.615384615384615,,,,,
+2025-12,business_office_state,CT,3.836076923076923,,,,,
+2025-12,business_office_state,DC,5.075,,,,,
+2025-12,business_office_state,DE,20.41708333333333,,,,,
+2025-12,business_office_state,FL,4.122653316645807,,,,,
+2025-12,business_office_state,GA,3.076923076923077,,,,,
+2025-12,business_office_state,IL,2.88135593220339,,,,,
+2025-12,business_office_state,IN,2.560810810810811,,,,,
+2025-12,business_office_state,MA,6.197435897435897,,,,,
+2025-12,business_office_state,MD,2.068095238095238,,,,,
+2025-12,business_office_state,MI,2.4,,,,,
+2025-12,business_office_state,MN,2.346938775510204,,,,,
+2025-12,business_office_state,MO,2.5,,,,,
+2025-12,business_office_state,NC,3.129019607843137,,,,,
+2025-12,business_office_state,NJ,3.669724770642202,,,,,
+2025-12,business_office_state,NV,7.5,,,,,
+2025-12,business_office_state,NY,13.885,,,,,
+2025-12,business_office_state,OH,2.14708,,,,,
+2025-12,business_office_state,OK,2.882352941176471,,,,,
+2025-12,business_office_state,OR,4,,,,,
+2025-12,business_office_state,PA,3,,,,,
+2025-12,business_office_state,SC,2.575,,,,,
+2025-12,business_office_state,TN,2.857142857142857,,,,,
+2025-12,business_office_state,TX,4.256,,,,,
+2025-12,business_office_state,UT,3.598333333333333,,,,,
+2025-12,business_office_state,VA,3.402836879432624,,,,,
+2025-12,business_office_state,WA,7.933242134062928,,,,,
+2025-12,business_office_state,WI,1.774236363636364,,,,,
+2025-12,company_financing_status,Other,3.715714285714285,,,,,
+2025-12,company_financing_status,PE-backed,2.125483870967741,,,,,
+2025-12,company_financing_status,VC-backed,27.33333333333333,,,,,
+2025-12,fte_segment,1. Micro-SMB (MIC),11.51739130434783,,,,,
+2025-12,fte_segment,2. SMB,4.4,,,,,
+2025-12,fte_segment,3. Mid-Market (MM),1.413778419811321,,,,,
+2025-12,fte_segment,4. Enterprise (ENT),0.07541834905660377,,,,,
+2025-12,naics_sector,Administrative and Support and Waste Management and Remediation Services,2.937904191616767,,,,,
+2025-12,naics_sector,"Arts, Entertainment, and Recreation",1.571717929482371,,,,,
+2025-12,naics_sector,Construction,1.619047619047619,,,,,
+2025-12,naics_sector,Educational Services,2.641711229946524,,,,,
+2025-12,naics_sector,Finance and Insurance,13.7325,,,,,
+2025-12,naics_sector,Health Care and Social Assistance,1.801081081081081,,,,,
+2025-12,naics_sector,Information,28.19890625,,,,,
+2025-12,naics_sector,Management of Companies and Enterprises,4.666666666666667,,,,,
+2025-12,naics_sector,Manufacturing,3.111428571428572,,,,,
+2025-12,naics_sector,Other Services (except Public Administration),2.18,,,,,
+2025-12,naics_sector,"Professional, Scientific, and Technical Services",13.2756862745098,,,,,
+2025-12,naics_sector,Real Estate and Rental and Leasing,2.461,,,,,
+2025-12,naics_sector,Retail Trade,3.176470588235294,,,,,
+2025-12,naics_sector,Transportation and Warehousing,2.094631578947368,,,,,
+2025-12,naics_sector,Wholesale Trade,2.074305555555556,,,,,
+2026-01,all,All,6.190254901960785,,,285.6816949152542,3230.037777777778,
+2026-01,business_office_state,AL,4.092137096774193,,,,,
+2026-01,business_office_state,AZ,3.636363636363636,,,,,
+2026-01,business_office_state,CA,15.11111111111111,,,,,
+2026-01,business_office_state,CO,4.437831978319784,,,,,
+2026-01,business_office_state,CT,4.0025,,,,,
+2026-01,business_office_state,DC,4.859226114065652,,,,,
+2026-01,business_office_state,DE,26.51092307692308,,,,,
+2026-01,business_office_state,FL,5.211612318840579,,,,,
+2026-01,business_office_state,GA,3.089858597285068,,,,,
+2026-01,business_office_state,ID,3.234375,,,,,
+2026-01,business_office_state,IL,3.431372549019608,,,,,
+2026-01,business_office_state,IN,2.608695652173913,,,,,
+2026-01,business_office_state,MA,7.834126522702103,,,,,
+2026-01,business_office_state,MD,2.12,,,,,
+2026-01,business_office_state,MI,2.60755,,,,,
+2026-01,business_office_state,MN,2.631578947368421,,,,,
+2026-01,business_office_state,MO,2.857142857142857,,,,,
+2026-01,business_office_state,NC,3.333333333333333,,,,,
+2026-01,business_office_state,NJ,4.056331623134328,,,,,
+2026-01,business_office_state,NV,5.652173913043478,,,,,
+2026-01,business_office_state,NY,16.44070186335404,,,,,
+2026-01,business_office_state,OH,2.461538461538462,,,,,
+2026-01,business_office_state,OK,2.967032967032967,,,,,
+2026-01,business_office_state,OR,4.258241758241758,,,,,
+2026-01,business_office_state,PA,3.635454545454546,,,,,
+2026-01,business_office_state,SC,3.144814241486068,,,,,
+2026-01,business_office_state,TN,3.333333333333333,,,,,
+2026-01,business_office_state,TX,5.174545454545455,,,,,
+2026-01,business_office_state,UT,5.3725,,,,,
+2026-01,business_office_state,VA,3.5,,,,,
+2026-01,business_office_state,WA,8.970388888888888,,,,,
+2026-01,business_office_state,WI,2.34375,,,,,
+2026-01,company_financing_status,Other,4.101123595505618,,,,,
+2026-01,company_financing_status,PE-backed,2.41,,,,,
+2026-01,company_financing_status,VC-backed,32.16739583333333,,,,,
+2026-01,fte_segment,1. Micro-SMB (MIC),12.78571428571429,,,,,
+2026-01,fte_segment,2. SMB,5,,,,,
+2026-01,fte_segment,3. Mid-Market (MM),1.567187314759929,,,,,
+2026-01,fte_segment,4. Enterprise (ENT),0.0800531514817229,,,,,
+2026-01,naics_sector,Accommodation and Food Services,1.052631578947368,,,,,
+2026-01,naics_sector,Administrative and Support and Waste Management and Remediation Services,3.333333333333333,,,,,
+2026-01,naics_sector,"Arts, Entertainment, and Recreation",1.538461538461539,,,,,
+2026-01,naics_sector,Construction,1.739130434782609,,,,,
+2026-01,naics_sector,Educational Services,3.033728448275862,,,,,
+2026-01,naics_sector,Finance and Insurance,17.01743718592965,,,,,
+2026-01,naics_sector,Health Care and Social Assistance,1.983809523809524,,,,,
+2026-01,naics_sector,Information,34.49680952380952,,,,,
+2026-01,naics_sector,Management of Companies and Enterprises,5.034090909090909,,,,,
+2026-01,naics_sector,Manufacturing,3.4,,,,,
+2026-01,naics_sector,Other Services (except Public Administration),2.222222222222222,,,,,
+2026-01,naics_sector,"Professional, Scientific, and Technical Services",15.39418181818182,,,,,
+2026-01,naics_sector,Real Estate and Rental and Leasing,2.899014084507042,,,,,
+2026-01,naics_sector,Retail Trade,4,,,,,
+2026-01,naics_sector,Transportation and Warehousing,2.134552899329969,,,,,
+2026-01,naics_sector,Utilities,3.702834595959596,,,,,
+2026-01,naics_sector,Wholesale Trade,2.285714285714286,,,,,
+2026-02,all,All,7.353504081058261,,,339.255,3210.469638554217,
+2026-02,business_office_state,AL,4.012307692307692,,,,,
+2026-02,business_office_state,AZ,4.16,,,,,
+2026-02,business_office_state,CA,18.29467741935484,,,,,
+2026-02,business_office_state,CO,5.298245614035087,,,,,
+2026-02,business_office_state,CT,5.3175,,,,,
+2026-02,business_office_state,DC,7.1025,,,,,
+2026-02,business_office_state,DE,34.53234782608696,,,,,
+2026-02,business_office_state,FL,6.117913860333214,,,,,
+2026-02,business_office_state,GA,3.698005698005698,,,,,
+2026-02,business_office_state,ID,4.83088596491228,,,,,
+2026-02,business_office_state,IL,4.1328125,,,,,
+2026-02,business_office_state,IN,3.19909022556391,,,,,
+2026-02,business_office_state,MA,9.852596153846154,,,,,
+2026-02,business_office_state,MD,2.854705882352941,,,,,
+2026-02,business_office_state,MI,3.294117647058823,,,,,
+2026-02,business_office_state,MN,3.333333333333333,,,,,
+2026-02,business_office_state,MO,3.257575757575758,,,,,
+2026-02,business_office_state,NC,3.333333333333333,,,,,
+2026-02,business_office_state,NJ,4.497222222222222,,,,,
+2026-02,business_office_state,NV,8.333333333333334,,,,,
+2026-02,business_office_state,NY,20.23183333333333,,,,,
+2026-02,business_office_state,OH,2.615384615384615,,,,,
+2026-02,business_office_state,OK,4.458685636856369,,,,,
+2026-02,business_office_state,OR,5.515,,,,,
+2026-02,business_office_state,PA,4.386206896551724,,,,,
+2026-02,business_office_state,SC,3.333333333333333,,,,,
+2026-02,business_office_state,TN,4.1092,,,,,
+2026-02,business_office_state,TX,5.518279569892473,,,,,
+2026-02,business_office_state,UT,5.741981132075472,,,,,
+2026-02,business_office_state,VA,4.285714285714286,,,,,
+2026-02,business_office_state,WA,11.68428571428571,,,,,
+2026-02,business_office_state,WI,3.529411764705882,,,,,
+2026-02,company_financing_status,Other,4.907053191489362,,,,,
+2026-02,company_financing_status,PE-backed,2.9,,,,,
+2026-02,company_financing_status,VC-backed,39.66081081081082,,,,,
+2026-02,fte_segment,1. Micro-SMB (MIC),15.625,,,,,
+2026-02,fte_segment,2. SMB,5.85,,,,,
+2026-02,fte_segment,3. Mid-Market (MM),1.840319203643844,,,,,
+2026-02,fte_segment,4. Enterprise (ENT),0.1,,,,,
+2026-02,naics_sector,Accommodation and Food Services,1.153846153846154,,,,,
+2026-02,naics_sector,Administrative and Support and Waste Management and Remediation Services,3.888097572815534,,,,,
+2026-02,naics_sector,"Arts, Entertainment, and Recreation",1.862179487179487,,,,,
+2026-02,naics_sector,Construction,1.992320819112628,,,,,
+2026-02,naics_sector,Educational Services,3,,,,,
+2026-02,naics_sector,Finance and Insurance,21.77058344640434,,,,,
+2026-02,naics_sector,Health Care and Social Assistance,2.235396825396825,,,,,
+2026-02,naics_sector,Information,41.98400000000001,,,,,
+2026-02,naics_sector,Management of Companies and Enterprises,10.295,,,,,
+2026-02,naics_sector,Manufacturing,4.349358974358974,,,,,
+2026-02,naics_sector,Other Services (except Public Administration),2.317269736842105,,,,,
+2026-02,naics_sector,"Professional, Scientific, and Technical Services",18.51851851851852,,,,,
+2026-02,naics_sector,Real Estate and Rental and Leasing,4,,,,,
+2026-02,naics_sector,Retail Trade,4.320702341137124,,,,,
+2026-02,naics_sector,Transportation and Warehousing,2.213084795321637,,,,,
+2026-02,naics_sector,Utilities,6.087999999999999,,,,,
+2026-02,naics_sector,Wholesale Trade,2.666666666666667,,,,,
+2026-03,all,All,9.413352130325814,,,406.0425,4810.693055555555,
+2026-03,business_office_state,AL,4.5,,,,,
+2026-03,business_office_state,AZ,5.455,,,,,
+2026-03,business_office_state,CA,22.8067390742215,,,,,
+2026-03,business_office_state,CO,6.6,,,,,
+2026-03,business_office_state,CT,8.164527875439477,,,,,
+2026-03,business_office_state,DC,9.679697674418605,,,,,
+2026-03,business_office_state,DE,39.31448412698413,,,,,
+2026-03,business_office_state,FL,8.17123791621912,,,,,
+2026-03,business_office_state,GA,5.31015037593985,,,,,
+2026-03,business_office_state,IA,2.834821428571429,,,,,
+2026-03,business_office_state,ID,6.176274509803922,,,,,
+2026-03,business_office_state,IL,5.75,,,,,
+2026-03,business_office_state,IN,4,,,,,
+2026-03,business_office_state,KS,4.752186588921282,,,,,
+2026-03,business_office_state,KY,4.924055555555555,,,,,
+2026-03,business_office_state,MA,12.93990888746803,,,,,
+2026-03,business_office_state,MD,4,,,,,
+2026-03,business_office_state,MI,3.577741407528642,,,,,
+2026-03,business_office_state,MN,4.016190476190476,,,,,
+2026-03,business_office_state,MO,3.441428571428571,,,,,
+2026-03,business_office_state,NC,4.451065759637189,,,,,
+2026-03,business_office_state,NJ,5.875708661417323,,,,,
+2026-03,business_office_state,NV,9.59051401869159,,,,,
+2026-03,business_office_state,NY,26.071425,,,,,
+2026-03,business_office_state,OH,3.779761904761905,,,,,
+2026-03,business_office_state,OK,4.444444444444445,,,,,
+2026-03,business_office_state,OR,6.666666666666667,,,,,
+2026-03,business_office_state,PA,4.770185322118495,,,,,
+2026-03,business_office_state,SC,3.566666666666666,,,,,
+2026-03,business_office_state,TN,5,,,,,
+2026-03,business_office_state,TX,7.265310846560846,,,,,
+2026-03,business_office_state,UT,7.147475961538461,,,,,
+2026-03,business_office_state,VA,5.631081081081081,,,,,
+2026-03,business_office_state,WA,13.41032258064516,,,,,
+2026-03,business_office_state,WI,4.397777777777778,,,,,
+2026-03,business_office_state,WY,21.72655263157895,,,,,
+2026-03,company_financing_status,Other,6.281111111111112,,,,,
+2026-03,company_financing_status,PE-backed,4.76741935483871,,,,,
+2026-03,company_financing_status,VC-backed,52.48431845238096,,,,,
+2026-03,fte_segment,1. Micro-SMB (MIC),19.41176470588235,,,,,
+2026-03,fte_segment,2. SMB,7.241165730337078,,,,,
+2026-03,fte_segment,3. Mid-Market (MM),2.5,,,,,
+2026-03,fte_segment,4. Enterprise (ENT),0.1353342857142857,,,,,
+2026-03,naics_sector,Accommodation and Food Services,1.370820760068066,,,,,
+2026-03,naics_sector,Administrative and Support and Waste Management and Remediation Services,5.454545454545454,,,,,
+2026-03,naics_sector,"Agriculture, Forestry, Fishing and Hunting",2.620450980392157,,,,,
+2026-03,naics_sector,"Arts, Entertainment, and Recreation",2.303571428571428,,,,,
+2026-03,naics_sector,Construction,2.791300783162017,,,,,
+2026-03,naics_sector,Educational Services,3.546195652173913,,,,,
+2026-03,naics_sector,Finance and Insurance,30.05767857142857,,,,,
+2026-03,naics_sector,Health Care and Social Assistance,2.3195,,,,,
+2026-03,naics_sector,Information,53.36666666666667,,,,,
+2026-03,naics_sector,Management of Companies and Enterprises,15.50480769230769,,,,,
+2026-03,naics_sector,Manufacturing,6,,,,,
+2026-03,naics_sector,Other Services (except Public Administration),2.72,,,,,
+2026-03,naics_sector,"Professional, Scientific, and Technical Services",23.11331243469175,,,,,
+2026-03,naics_sector,Real Estate and Rental and Leasing,5,,,,,
+2026-03,naics_sector,Retail Trade,6.188034188034188,,,,,
+2026-03,naics_sector,Transportation and Warehousing,3.1415,,,,,
+2026-03,naics_sector,Utilities,8.442666666666666,,,,,
+2026-03,naics_sector,Wholesale Trade,3.333333333333333,,,,,
+2026-04,all,All,10.71428571428571,,,457.1072523809524,4614.273,
+2026-04,business_office_state,AL,4.448333333333333,,,,,
+2026-04,business_office_state,AR,5.626098265895954,,,,,
+2026-04,business_office_state,AZ,5.7325,,,,,
+2026-04,business_office_state,CA,24.624375,,,,,
+2026-04,business_office_state,CO,7.548920634920633,,,,,
+2026-04,business_office_state,CT,8.669029790660225,,,,,
+2026-04,business_office_state,DC,11.56357707509881,,,,,
+2026-04,business_office_state,DE,56.13190476190476,,,,,
+2026-04,business_office_state,FL,10.14273631840796,,,,,
+2026-04,business_office_state,GA,4.862920353982301,,,,,
+2026-04,business_office_state,IA,3.75,,,,,
+2026-04,business_office_state,ID,5.6885,,,,,
+2026-04,business_office_state,IL,6.83728947368421,,,,,
+2026-04,business_office_state,IN,4.089416666666667,,,,,
+2026-04,business_office_state,KS,4.485454545454545,,,,,
+2026-04,business_office_state,KY,4.342222222222222,,,,,
+2026-04,business_office_state,MA,16.9,,,,,
+2026-04,business_office_state,MD,4.348073746312684,,,,,
+2026-04,business_office_state,MI,3.714285714285714,,,,,
+2026-04,business_office_state,MN,4.884117647058823,,,,,
+2026-04,business_office_state,MO,4.262589618125731,,,,,
+2026-04,business_office_state,MT,9.3125,,,,,
+2026-04,business_office_state,NC,5,,,,,
+2026-04,business_office_state,NE,2.540322580645161,,,,,
+2026-04,business_office_state,NJ,6.793338417257223,,,,,
+2026-04,business_office_state,NV,11.47137254901961,,,,,
+2026-04,business_office_state,NY,30.29832432432432,,,,,
+2026-04,business_office_state,OH,4.657678571428571,,,,,
+2026-04,business_office_state,OK,4.611111111111111,,,,,
+2026-04,business_office_state,OR,7.279411764705882,,,,,
+2026-04,business_office_state,PA,5.714285714285714,,,,,
+2026-04,business_office_state,SC,3.884615384615385,,,,,
+2026-04,business_office_state,TN,5.641025641025641,,,,,
+2026-04,business_office_state,TX,8,,,,,
+2026-04,business_office_state,UT,8.8627,,,,,
+2026-04,business_office_state,VA,6.116143137254902,,,,,
+2026-04,business_office_state,WA,13.75864705882353,,,,,
+2026-04,business_office_state,WI,4.176387559808612,,,,,
+2026-04,business_office_state,WY,22.22222222222222,,,,,
+2026-04,company_financing_status,Other,7.127884615384615,,,,,
+2026-04,company_financing_status,PE-backed,5.818225282485876,,,,,
+2026-04,company_financing_status,VC-backed,64.99162790697675,,,,,
+2026-04,fte_segment,1. Micro-SMB (MIC),21.39538461538461,,,,,
+2026-04,fte_segment,2. SMB,8.121089931573803,,,,,
+2026-04,fte_segment,3. Mid-Market (MM),2.896944585987261,,,,,
+2026-04,fte_segment,4. Enterprise (ENT),0.161325,,,,,
+2026-04,naics_sector,Accommodation and Food Services,1.818181818181818,,,,,
+2026-04,naics_sector,Administrative and Support and Waste Management and Remediation Services,6.231412037037037,,,,,
+2026-04,naics_sector,"Agriculture, Forestry, Fishing and Hunting",4.03125,,,,,
+2026-04,naics_sector,"Arts, Entertainment, and Recreation",2.526595744680851,,,,,
+2026-04,naics_sector,Construction,3.149606299212599,,,,,
+2026-04,naics_sector,Educational Services,4.371927710843373,,,,,
+2026-04,naics_sector,Finance and Insurance,35.13514173998044,,,,,
+2026-04,naics_sector,Health Care and Social Assistance,2.560588235294118,,,,,
+2026-04,naics_sector,Information,63.57269230769229,,,,,
+2026-04,naics_sector,Management of Companies and Enterprises,15.8455829228243,,,,,
+2026-04,naics_sector,Manufacturing,7.011494252873563,,,,,
+2026-04,naics_sector,Other Services (except Public Administration),2.912974767596282,,,,,
+2026-04,naics_sector,"Professional, Scientific, and Technical Services",26.68625,,,,,
+2026-04,naics_sector,Real Estate and Rental and Leasing,6.624131944444445,,,,,
+2026-04,naics_sector,Retail Trade,7.142857142857143,,,,,
+2026-04,naics_sector,Transportation and Warehousing,3.831347951114306,,,,,
+2026-04,naics_sector,Utilities,10.57517412935323,,,,,
+2026-04,naics_sector,Wholesale Trade,3.402439024390244,,,,,
+2026-05,all,All,11.74405819738517,,,496.48625,5095.727672413793,
+2026-05,business_office_state,AL,4.699768339768339,,,,,
+2026-05,business_office_state,AR,4.814814814814815,,,,,
+2026-05,business_office_state,AZ,6.191409914712153,,,,,
+2026-05,business_office_state,CA,28.252,,,,,
+2026-05,business_office_state,CO,10,,,,,
+2026-05,business_office_state,CT,10.32851851851852,,,,,
+2026-05,business_office_state,DC,11.03333333333333,,,,,
+2026-05,business_office_state,DE,56.86699999999999,,,,,
+2026-05,business_office_state,FL,10.78125,,,,,
+2026-05,business_office_state,GA,5.916874999999999,,,,,
+2026-05,business_office_state,IA,4.177,,,,,
+2026-05,business_office_state,ID,9.092,,,,,
+2026-05,business_office_state,IL,7.142857142857143,,,,,
+2026-05,business_office_state,IN,4.840909090909091,,,,,
+2026-05,business_office_state,KS,4.460227272727273,,,,,
+2026-05,business_office_state,KY,5.888888888888889,,,,,
+2026-05,business_office_state,LA,3.717948717948718,,,,,
+2026-05,business_office_state,MA,16.20677419354839,,,,,
+2026-05,business_office_state,MD,5.149935064935065,,,,,
+2026-05,business_office_state,MI,4.226190476190476,,,,,
+2026-05,business_office_state,MN,5,,,,,
+2026-05,business_office_state,MO,4.166666666666667,,,,,
+2026-05,business_office_state,MT,9.128676470588236,,,,,
+2026-05,business_office_state,NC,6.125,,,,,
+2026-05,business_office_state,NE,3.127727856225931,,,,,
+2026-05,business_office_state,NJ,7.562964242424242,,,,,
+2026-05,business_office_state,NV,14.71735202492212,,,,,
+2026-05,business_office_state,NY,32.84588235294118,,,,,
+2026-05,business_office_state,OH,4.829905303030303,,,,,
+2026-05,business_office_state,OK,4.988181818181818,,,,,
+2026-05,business_office_state,OR,8.0425,,,,,
+2026-05,business_office_state,PA,5.563636363636363,,,,,
+2026-05,business_office_state,SC,3.990123456790123,,,,,
+2026-05,business_office_state,TN,6.756513554216868,,,,,
+2026-05,business_office_state,TX,9.219761904761905,,,,,
+2026-05,business_office_state,UT,9.656619718309859,,,,,
+2026-05,business_office_state,VA,6.900240384615385,,,,,
+2026-05,business_office_state,WA,14.89386363636364,,,,,
+2026-05,business_office_state,WI,5.324298245614035,,,,,
+2026-05,business_office_state,WY,22.4085,,,,,
+2026-05,company_financing_status,Other,7.8285,,,,,
+2026-05,company_financing_status,PE-backed,6.802045147898287,,,,,
+2026-05,company_financing_status,VC-backed,72.03863636363636,,,,,
+2026-05,fte_segment,1. Micro-SMB (MIC),22.533125,,,,,
+2026-05,fte_segment,2. SMB,8.901960784313728,,,,,
+2026-05,fte_segment,3. Mid-Market (MM),3.167697841726619,,,,,
+2026-05,fte_segment,4. Enterprise (ENT),0.1982416666666667,,,,,
+2026-05,naics_sector,Accommodation and Food Services,2,,,,,
+2026-05,naics_sector,Administrative and Support and Waste Management and Remediation Services,6.369435483870967,,,,,
+2026-05,naics_sector,"Agriculture, Forestry, Fishing and Hunting",4.1875,,,,,
+2026-05,naics_sector,"Arts, Entertainment, and Recreation",2.711292613636363,,,,,
+2026-05,naics_sector,Construction,3.984264705882353,,,,,
+2026-05,naics_sector,Educational Services,4.176171171171172,,,,,
+2026-05,naics_sector,Finance and Insurance,39.40280392883618,,,,,
+2026-05,naics_sector,Health Care and Social Assistance,2.857142857142857,,,,,
+2026-05,naics_sector,Information,72.67975000000001,,,,,
+2026-05,naics_sector,Management of Companies and Enterprises,17.99137931034483,,,,,
+2026-05,naics_sector,Manufacturing,8.151146179401994,,,,,
+2026-05,naics_sector,Other Services (except Public Administration),3.06125,,,,,
+2026-05,naics_sector,"Professional, Scientific, and Technical Services",30.28571428571428,,,,,
+2026-05,naics_sector,Real Estate and Rental and Leasing,6.621088435374149,,,,,
+2026-05,naics_sector,Retail Trade,8.26086956521739,,,,,
+2026-05,naics_sector,Transportation and Warehousing,4.285714285714286,,,,,
+2026-05,naics_sector,Utilities,12.90227450980392,,,,,
+2026-05,naics_sector,Wholesale Trade,4.878787878787879,,,,,
+2026-06,all,All,12.58089743589744,,,557.8664285714285,6490.135251937983,
+2026-06,business_office_state,AL,4.4,,,,,
+2026-06,business_office_state,AR,7.032857142857141,,,,,
+2026-06,business_office_state,AZ,7.700699300699301,,,,,
+2026-06,business_office_state,CA,29.92548677884615,,,,,
+2026-06,business_office_state,CO,8.808863636363638,,,,,
+2026-06,business_office_state,CT,7.64500630517024,,,,,
+2026-06,business_office_state,DC,9.78713029576339,,,,,
+2026-06,business_office_state,DE,64.378,,,,,
+2026-06,business_office_state,FL,12.5,,,,,
+2026-06,business_office_state,GA,6.274285714285714,,,,,
+2026-06,business_office_state,IA,4.339132230102442,,,,,
+2026-06,business_office_state,ID,7.25,,,,,
+2026-06,business_office_state,IL,7.745535714285714,,,,,
+2026-06,business_office_state,IN,5,,,,,
+2026-06,business_office_state,KS,5.005294117647059,,,,,
+2026-06,business_office_state,KY,6.666666666666667,,,,,
+2026-06,business_office_state,LA,4.62962962962963,,,,,
+2026-06,business_office_state,MA,15.45190769230769,,,,,
+2026-06,business_office_state,MD,5.121666666666667,,,,,
+2026-06,business_office_state,MI,5.321428571428571,,,,,
+2026-06,business_office_state,MN,5.927674418604652,,,,,
+2026-06,business_office_state,MO,5.518961038961039,,,,,
+2026-06,business_office_state,MT,12.14285714285714,,,,,
+2026-06,business_office_state,NC,6.111575963718821,,,,,
+2026-06,business_office_state,NE,3.565138888888889,,,,,
+2026-06,business_office_state,NH,4.366255522827688,,,,,
+2026-06,business_office_state,NJ,8.78048780487805,,,,,
+2026-06,business_office_state,NV,16.21506530612245,,,,,
+2026-06,business_office_state,NY,34.1396875,,,,,
+2026-06,business_office_state,OH,4.976434426229508,,,,,
+2026-06,business_office_state,OK,6.303421052631579,,,,,
+2026-06,business_office_state,OR,7.09804347826087,,,,,
+2026-06,business_office_state,PA,6.783368421052632,,,,,
+2026-06,business_office_state,SC,4.515965517241378,,,,,
+2026-06,business_office_state,TN,7.417037037037037,,,,,
+2026-06,business_office_state,TX,10,,,,,
+2026-06,business_office_state,UT,11.44711111111111,,,,,
+2026-06,business_office_state,VA,7.984848484848484,,,,,
+2026-06,business_office_state,WA,13.6032699146515,,,,,
+2026-06,business_office_state,WI,5.389883720930233,,,,,
+2026-06,business_office_state,WY,22.83333333333333,,,,,
+2026-06,company_financing_status,Other,8.524545454545455,,,,,
+2026-06,company_financing_status,PE-backed,7.493846153846153,,,,,
+2026-06,company_financing_status,VC-backed,79.7916535994298,,,,,
+2026-06,fte_segment,1. Micro-SMB (MIC),23.63176630434783,,,,,
+2026-06,fte_segment,2. SMB,9.596,,,,,
+2026-06,fte_segment,3. Mid-Market (MM),3.448819633460352,,,,,
+2026-06,fte_segment,4. Enterprise (ENT),0.1998001998001998,,,,,
+2026-06,naics_sector,Accommodation and Food Services,2.040816326530612,,,,,
+2026-06,naics_sector,Administrative and Support and Waste Management and Remediation Services,7.49,,,,,
+2026-06,naics_sector,"Agriculture, Forestry, Fishing and Hunting",5.416666666666667,,,,,
+2026-06,naics_sector,"Arts, Entertainment, and Recreation",2.744814814814815,,,,,
+2026-06,naics_sector,Construction,4.246880341880342,,,,,
+2026-06,naics_sector,Educational Services,4.561616161616162,,,,,
+2026-06,naics_sector,Finance and Insurance,43.11228260869565,,,,,
+2026-06,naics_sector,Health Care and Social Assistance,2.857142857142857,,,,,
+2026-06,naics_sector,Information,78.70771416007037,,,,,
+2026-06,naics_sector,Management of Companies and Enterprises,19.37900793650794,,,,,
+2026-06,naics_sector,Manufacturing,9.252727272727274,,,,,
+2026-06,naics_sector,Other Services (except Public Administration),3.2,,,,,
+2026-06,naics_sector,"Professional, Scientific, and Technical Services",32.6601282051282,,,,,
+2026-06,naics_sector,Real Estate and Rental and Leasing,7.142857142857143,,,,,
+2026-06,naics_sector,Retail Trade,8.166666666666666,,,,,
+2026-06,naics_sector,Transportation and Warehousing,4.676639784946237,,,,,
+2026-06,naics_sector,Utilities,17.69158,,,,,
+2026-06,naics_sector,Wholesale Trade,5,,,,,
+2026-07,all,All,13.84713307776561,,,698.0131999999999,9515.198717948719,
+2026-07,business_office_state,AL,5.853658536585366,,,,,
+2026-07,business_office_state,AR,7.224395604395604,,,,,
+2026-07,business_office_state,AZ,7.346666666666666,,,,,
+2026-07,business_office_state,CA,33.10619098036972,,,,,
+2026-07,business_office_state,CO,9.832727272727272,,,,,
+2026-07,business_office_state,CT,10.12857142857143,,,,,
+2026-07,business_office_state,DC,11.96027272727273,,,,,
+2026-07,business_office_state,DE,63.89597222222221,,,,,
+2026-07,business_office_state,FL,13.33933558558559,,,,,
+2026-07,business_office_state,GA,6.666666666666667,,,,,
+2026-07,business_office_state,HI,3.853392857142857,,,,,
+2026-07,business_office_state,IA,4.764204255319149,,,,,
+2026-07,business_office_state,ID,9.28027027027027,,,,,
+2026-07,business_office_state,IL,8.646178571428571,,,,,
+2026-07,business_office_state,IN,5.638145424836601,,,,,
+2026-07,business_office_state,KS,5.747386759581881,,,,,
+2026-07,business_office_state,KY,7.066666666666666,,,,,
+2026-07,business_office_state,LA,4.929540043290043,,,,,
+2026-07,business_office_state,MA,17.30175324675325,,,,,
+2026-07,business_office_state,MD,5.882352941176471,,,,,
+2026-07,business_office_state,MI,6.804801061007957,,,,,
+2026-07,business_office_state,MN,5.531779661016951,,,,,
+2026-07,business_office_state,MO,5.161131299892768,,,,,
+2026-07,business_office_state,MT,13.02329268292683,,,,,
+2026-07,business_office_state,NC,6.779661016949152,,,,,
+2026-07,business_office_state,NE,4.312467857142857,,,,,
+2026-07,business_office_state,NH,3.333333333333333,,,,,
+2026-07,business_office_state,NJ,9.747499999999999,,,,,
+2026-07,business_office_state,NV,17.92909090909091,,,,,
+2026-07,business_office_state,NY,37.34083834566292,,,,,
+2026-07,business_office_state,OH,5.161885638297873,,,,,
+2026-07,business_office_state,OK,5.54006968641115,,,,,
+2026-07,business_office_state,OR,9.703556027938049,,,,,
+2026-07,business_office_state,PA,7.122988505747126,,,,,
+2026-07,business_office_state,SC,5.340248756218905,,,,,
+2026-07,business_office_state,TN,8.293452380952381,,,,,
+2026-07,business_office_state,TX,11.54697368421053,,,,,
+2026-07,business_office_state,UT,13.55307070707071,,,,,
+2026-07,business_office_state,VA,9.388333333333334,,,,,
+2026-07,business_office_state,WA,14.48080308880309,,,,,
+2026-07,business_office_state,WI,6.425837320574162,,,,,
+2026-07,business_office_state,WY,20.91666666666666,,,,,
+2026-07,company_financing_status,Other,9.277777777777779,,,,,
+2026-07,company_financing_status,PE-backed,8.692357142857142,,,,,
+2026-07,company_financing_status,VC-backed,89.99945652173912,,,,,
+2026-07,fte_segment,1. Micro-SMB (MIC),25.7775,,,,,
+2026-07,fte_segment,2. SMB,10.58988888888889,,,,,
+2026-07,fte_segment,3. Mid-Market (MM),3.832886178861789,,,,,
+2026-07,fte_segment,4. Enterprise (ENT),0.2295914220345595,,,,,
+2026-07,naics_sector,Accommodation and Food Services,2.222222222222222,,,,,
+2026-07,naics_sector,Administrative and Support and Waste Management and Remediation Services,7.9875,,,,,
+2026-07,naics_sector,"Agriculture, Forestry, Fishing and Hunting",6.75370786516854,,,,,
+2026-07,naics_sector,"Arts, Entertainment, and Recreation",2.857142857142857,,,,,
+2026-07,naics_sector,Construction,4.573244444444444,,,,,
+2026-07,naics_sector,Educational Services,5.045871559633028,,,,,
+2026-07,naics_sector,Finance and Insurance,47.83857142857143,,,,,
+2026-07,naics_sector,Health Care and Social Assistance,3.181818181818182,,,,,
+2026-07,naics_sector,Information,90.03772727272727,,,,,
+2026-07,naics_sector,Management of Companies and Enterprises,20,,,,,
+2026-07,naics_sector,Manufacturing,10,,,,,
+2026-07,naics_sector,"Mining, Quarrying, and Oil and Gas Extraction",3.480380952380953,,,,,
+2026-07,naics_sector,Other Services (except Public Administration),3.333333333333333,,,,,
+2026-07,naics_sector,"Professional, Scientific, and Technical Services",36.7014274322169,,,,,
+2026-07,naics_sector,Real Estate and Rental and Leasing,7.916666666666667,,,,,
+2026-07,naics_sector,Retail Trade,9.674166666666666,,,,,
+2026-07,naics_sector,Transportation and Warehousing,5.047043010752688,,,,,
+2026-07,naics_sector,Utilities,20.36344337389067,,,,,
+2026-07,naics_sector,Wholesale Trade,5.845777777777778,,,,,
+2026-08,all,All,14.39197901049475,,,725.7666666666669,8233.670133333333,
+2026-08,business_office_state,AL,5.618604651162791,,,,,
+2026-08,business_office_state,AR,10,,,,,
+2026-08,business_office_state,AZ,9.022857142857141,,,,,
+2026-08,business_office_state,CA,34.94588753387534,,,,,
+2026-08,business_office_state,CO,10.36604609929078,,,,,
+2026-08,business_office_state,CT,11.33915887850467,,,,,
+2026-08,business_office_state,DC,11.109,,,,,
+2026-08,business_office_state,DE,74.25399999999999,,,,,
+2026-08,business_office_state,FL,14.97211489205884,,,,,
+2026-08,business_office_state,GA,7.55,,,,,
+2026-08,business_office_state,IA,4.583931133428981,,,,,
+2026-08,business_office_state,ID,9.336130221130222,,,,,
+2026-08,business_office_state,IL,7.607263681592039,,,,,
+2026-08,business_office_state,IN,6.096028037383178,,,,,
+2026-08,business_office_state,KS,6,,,,,
+2026-08,business_office_state,KY,7.408571428571428,,,,,
+2026-08,business_office_state,LA,5.674044265593562,,,,,
+2026-08,business_office_state,MA,18.95527472527473,,,,,
+2026-08,business_office_state,MD,7.24390243902439,,,,,
+2026-08,business_office_state,MI,7.287840909090908,,,,,
+2026-08,business_office_state,MN,5.577777777777778,,,,,
+2026-08,business_office_state,MO,5.454545454545454,,,,,
+2026-08,business_office_state,MT,9.884169884169884,,,,,
+2026-08,business_office_state,NC,7.4375,,,,,
+2026-08,business_office_state,NE,5,,,,,
+2026-08,business_office_state,NH,7.206896551724138,,,,,
+2026-08,business_office_state,NJ,10.27627450980392,,,,,
+2026-08,business_office_state,NV,19.03567316176471,,,,,
+2026-08,business_office_state,NY,38.46153846153846,,,,,
+2026-08,business_office_state,OH,6.666666666666667,,,,,
+2026-08,business_office_state,OK,6.447315436241611,,,,,
+2026-08,business_office_state,OR,9.934545454545455,,,,,
+2026-08,business_office_state,PA,7.541702127659574,,,,,
+2026-08,business_office_state,SC,5.555555555555555,,,,,
+2026-08,business_office_state,TN,7.5736,,,,,
+2026-08,business_office_state,TX,11.84972222222222,,,,,
+2026-08,business_office_state,UT,13.49393939393939,,,,,
+2026-08,business_office_state,VA,8.443269230769232,,,,,
+2026-08,business_office_state,WA,16.2633492063492,,,,,
+2026-08,business_office_state,WI,5.99337168141593,,,,,
+2026-08,business_office_state,WY,23.52463768115942,,,,,
+2026-08,company_financing_status,Other,10,,,,,
+2026-08,company_financing_status,PE-backed,9.185365853658535,,,,,
+2026-08,company_financing_status,VC-backed,93.40577235772359,,,,,
+2026-08,fte_segment,1. Micro-SMB (MIC),26.65,,,,,
+2026-08,fte_segment,2. SMB,10.93354838709677,,,,,
+2026-08,fte_segment,3. Mid-Market (MM),4.186474358974359,,,,,
+2026-08,fte_segment,4. Enterprise (ENT),0.2316931215772179,,,,,
+2026-08,naics_sector,Accommodation and Food Services,2.5,,,,,
+2026-08,naics_sector,Administrative and Support and Waste Management and Remediation Services,9.093112773302646,,,,,
+2026-08,naics_sector,"Agriculture, Forestry, Fishing and Hunting",6.562452574525746,,,,,
+2026-08,naics_sector,"Arts, Entertainment, and Recreation",2.82312925170068,,,,,
+2026-08,naics_sector,Construction,5.120769230769231,,,,,
+2026-08,naics_sector,Educational Services,5.162071052312155,,,,,
+2026-08,naics_sector,Finance and Insurance,48.94500000000001,,,,,
+2026-08,naics_sector,Health Care and Social Assistance,3.2,,,,,
+2026-08,naics_sector,Information,92.32911671087533,,,,,
+2026-08,naics_sector,Management of Companies and Enterprises,20.194,,,,,
+2026-08,naics_sector,Manufacturing,10.83333333333333,,,,,
+2026-08,naics_sector,"Mining, Quarrying, and Oil and Gas Extraction",4.827780303030304,,,,,
+2026-08,naics_sector,Other Services (except Public Administration),3.339166666666666,,,,,
+2026-08,naics_sector,"Professional, Scientific, and Technical Services",39.73,,,,,
+2026-08,naics_sector,Real Estate and Rental and Leasing,8.627450980392156,,,,,
+2026-08,naics_sector,Retail Trade,11.27186799134369,,,,,
+2026-08,naics_sector,Transportation and Warehousing,6.666666666666667,,,,,
+2026-08,naics_sector,Utilities,21.12745098039216,,,,,
+2026-08,naics_sector,Wholesale Trade,6.25,,,,,
+2026-09,all,All,15.38461538461539,,,793.2503623188408,9346.499791666663,
+2026-09,business_office_state,AL,5.762365384615384,,,,,
+2026-09,business_office_state,AR,6.953846153846154,,,,,
+2026-09,business_office_state,AZ,9.117647058823529,,,,,
+2026-09,business_office_state,CA,36.23896955503513,,,,,
+2026-09,business_office_state,CO,11.76470588235294,,,,,
+2026-09,business_office_state,CT,12.73137254901961,,,,,
+2026-09,business_office_state,DC,13.50952380952381,,,,,
+2026-09,business_office_state,DE,76.65487012987012,,,,,
+2026-09,business_office_state,FL,16.26594417077176,,,,,
+2026-09,business_office_state,GA,8.218494117647058,,,,,
+2026-09,business_office_state,HI,5.370799999999999,,,,,
+2026-09,business_office_state,IA,4.933365384615385,,,,,
+2026-09,business_office_state,ID,10.41333333333333,,,,,
+2026-09,business_office_state,IL,8.719382352941176,,,,,
+2026-09,business_office_state,IN,5.589371428571429,,,,,
+2026-09,business_office_state,KS,8.612142857142857,,,,,
+2026-09,business_office_state,KY,7.398357455562001,,,,,
+2026-09,business_office_state,LA,5.619642857142857,,,,,
+2026-09,business_office_state,MA,19.48100430416068,,,,,
+2026-09,business_office_state,MD,7.643339285714286,,,,,
+2026-09,business_office_state,MI,7.386614906832298,,,,,
+2026-09,business_office_state,MN,5.655172413793103,,,,,
+2026-09,business_office_state,MO,5.552777777777777,,,,,
+2026-09,business_office_state,MT,9.039951461988304,,,,,
+2026-09,business_office_state,NC,7.5,,,,,
+2026-09,business_office_state,NE,5.049887005649717,,,,,
+2026-09,business_office_state,NH,6.749053809445449,,,,,
+2026-09,business_office_state,NJ,10,,,,,
+2026-09,business_office_state,NV,23.56537028301886,,,,,
+2026-09,business_office_state,NY,42.51107487922705,,,,,
+2026-09,business_office_state,OH,7.229361313868613,,,,,
+2026-09,business_office_state,OK,6.287916666666666,,,,,
+2026-09,business_office_state,OR,11.13390243902439,,,,,
+2026-09,business_office_state,PA,8.333333333333334,,,,,
+2026-09,business_office_state,SC,5.366666666666666,,,,,
+2026-09,business_office_state,TN,9.192083333333333,,,,,
+2026-09,business_office_state,TX,12.974375,,,,,
+2026-09,business_office_state,UT,16.29075564069817,,,,,
+2026-09,business_office_state,VA,9.545,,,,,
+2026-09,business_office_state,WA,16.104,,,,,
+2026-09,business_office_state,WI,6.565335753176043,,,,,
+2026-09,business_office_state,WY,26.224,,,,,
+2026-09,company_financing_status,Other,10.52631578947368,,,,,
+2026-09,company_financing_status,PE-backed,10.5951547116737,,,,,
+2026-09,company_financing_status,VC-backed,106.0883333333333,,,,,
+2026-09,fte_segment,1. Micro-SMB (MIC),28.57142857142857,,,,,
+2026-09,fte_segment,2. SMB,11.75428571428571,,,,,
+2026-09,fte_segment,3. Mid-Market (MM),4.524200924974306,,,,,
+2026-09,fte_segment,4. Enterprise (ENT),0.2416666666666667,,,,,
+2026-09,naics_sector,Accommodation and Food Services,2.666666666666667,,,,,
+2026-09,naics_sector,Administrative and Support and Waste Management and Remediation Services,9.090909090909092,,,,,
+2026-09,naics_sector,"Agriculture, Forestry, Fishing and Hunting",6.46060606060606,,,,,
+2026-09,naics_sector,"Arts, Entertainment, and Recreation",2.909090909090909,,,,,
+2026-09,naics_sector,Construction,5.716737451737452,,,,,
+2026-09,naics_sector,Educational Services,5.230769230769231,,,,,
+2026-09,naics_sector,Finance and Insurance,51.11,,,,,
+2026-09,naics_sector,Health Care and Social Assistance,3.541666666666667,,,,,
+2026-09,naics_sector,Information,106.2517370231395,,,,,
+2026-09,naics_sector,Management of Companies and Enterprises,22.45,,,,,
+2026-09,naics_sector,Manufacturing,12.08769230769231,,,,,
+2026-09,naics_sector,"Mining, Quarrying, and Oil and Gas Extraction",4.028923527844391,,,,,
+2026-09,naics_sector,Other Services (except Public Administration),3.636363636363636,,,,,
+2026-09,naics_sector,"Professional, Scientific, and Technical Services",42.93348717948717,,,,,
+2026-09,naics_sector,Real Estate and Rental and Leasing,10.18,,,,,
+2026-09,naics_sector,Retail Trade,10.82693947144075,,,,,
+2026-09,naics_sector,Transportation and Warehousing,7.725315568022441,,,,,
+2026-09,naics_sector,Utilities,22.37063636363636,,,,,
+2026-09,naics_sector,Wholesale Trade,7.200576666666667,,,,,
+2026-10,all,All,16.316327572663,,,800.8363347249777,10199.20045,
+2026-10,business_office_state,AL,6.578947368421052,,,,,
+2026-10,business_office_state,AR,9.707912087912089,,,,,
+2026-10,business_office_state,AZ,9.166666666666666,,,,,
+2026-10,business_office_state,CA,38.80823076923078,,,,,
+2026-10,business_office_state,CO,13.21328358208955,,,,,
+2026-10,business_office_state,CT,16.71285714285714,,,,,
+2026-10,business_office_state,DC,13.58795238095238,,,,,
+2026-10,business_office_state,DE,81.51876473014609,,,,,
+2026-10,business_office_state,FL,18.1507,,,,,
+2026-10,business_office_state,GA,8.073470540758677,,,,,
+2026-10,business_office_state,HI,6.25,,,,,
+2026-10,business_office_state,IA,4.651162790697675,,,,,
+2026-10,business_office_state,ID,9,,,,,
+2026-10,business_office_state,IL,10,,,,,
+2026-10,business_office_state,IN,7.5,,,,,
+2026-10,business_office_state,KS,7.5,,,,,
+2026-10,business_office_state,KY,8.143175182481752,,,,,
+2026-10,business_office_state,LA,5.996428571428571,,,,,
+2026-10,business_office_state,MA,20.719,,,,,
+2026-10,business_office_state,MD,8.788187134502923,,,,,
+2026-10,business_office_state,ME,5.680434027777777,,,,,
+2026-10,business_office_state,MI,7.8125,,,,,
+2026-10,business_office_state,MN,5.900764029749831,,,,,
+2026-10,business_office_state,MO,6.357142857142857,,,,,
+2026-10,business_office_state,MT,11.08095238095238,,,,,
+2026-10,business_office_state,NC,8.586,,,,,
+2026-10,business_office_state,NE,6.295023474178404,,,,,
+2026-10,business_office_state,NH,8.421052631578947,,,,,
+2026-10,business_office_state,NJ,10.31511904761905,,,,,
+2026-10,business_office_state,NV,23.64090909090909,,,,,
+2026-10,business_office_state,NY,42.70772727272728,,,,,
+2026-10,business_office_state,OH,6.666666666666667,,,,,
+2026-10,business_office_state,OK,7.164,,,,,
+2026-10,business_office_state,OR,9.090909090909092,,,,,
+2026-10,business_office_state,PA,9.11,,,,,
+2026-10,business_office_state,SC,7.066,,,,,
+2026-10,business_office_state,TN,10.5126740237691,,,,,
+2026-10,business_office_state,TX,13.68940298507463,,,,,
+2026-10,business_office_state,UT,17.058125,,,,,
+2026-10,business_office_state,VA,10.42700668896321,,,,,
+2026-10,business_office_state,WA,16.46705426356589,,,,,
+2026-10,business_office_state,WI,7.157997198879552,,,,,
+2026-10,business_office_state,WY,28.33178571428572,,,,,
+2026-10,company_financing_status,Other,11.08790697674419,,,,,
+2026-10,company_financing_status,PE-backed,12.08550322061192,,,,,
+2026-10,company_financing_status,VC-backed,112,,,,,
+2026-10,fte_segment,1. Micro-SMB (MIC),29.329,,,,,
+2026-10,fte_segment,2. SMB,12.5690243902439,,,,,
+2026-10,fte_segment,3. Mid-Market (MM),5.052777429326643,,,,,
+2026-10,fte_segment,4. Enterprise (ENT),0.2734359570513084,,,,,
+2026-10,naics_sector,Accommodation and Food Services,2.880658436213992,,,,,
+2026-10,naics_sector,Administrative and Support and Waste Management and Remediation Services,10,,,,,
+2026-10,naics_sector,"Agriculture, Forestry, Fishing and Hunting",8,,,,,
+2026-10,naics_sector,"Arts, Entertainment, and Recreation",3.636363636363636,,,,,
+2026-10,naics_sector,Construction,6.65,,,,,
+2026-10,naics_sector,Educational Services,5.008421052631578,,,,,
+2026-10,naics_sector,Finance and Insurance,54.14699163581516,,,,,
+2026-10,naics_sector,Health Care and Social Assistance,3.758670033670033,,,,,
+2026-10,naics_sector,Information,110,,,,,
+2026-10,naics_sector,Management of Companies and Enterprises,25.10073333333333,,,,,
+2026-10,naics_sector,Manufacturing,13.27538461538461,,,,,
+2026-10,naics_sector,"Mining, Quarrying, and Oil and Gas Extraction",6.525679012345678,,,,,
+2026-10,naics_sector,Other Services (except Public Administration),3.636363636363636,,,,,
+2026-10,naics_sector,"Professional, Scientific, and Technical Services",47.25090909090909,,,,,
+2026-10,naics_sector,Real Estate and Rental and Leasing,11.43421052631579,,,,,
+2026-10,naics_sector,Retail Trade,13.33333333333333,,,,,
+2026-10,naics_sector,Transportation and Warehousing,7.640551948051948,,,,,
+2026-10,naics_sector,Utilities,24.885,,,,,
+2026-10,naics_sector,Wholesale Trade,8.333333333333334,,,,,
