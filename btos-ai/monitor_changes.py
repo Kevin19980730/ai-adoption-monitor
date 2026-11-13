@@ -316,6 +316,18 @@ def freshness(now=None):
         d = x["s"].index[-1].date()
         if x["source"] not in by or d > by[x["source"]]:
             by[x["source"]] = d
+    # Hyperscaler capex: Oracle's fiscal quarter lands ~6 weeks after the other four, so the
+    # complete-quarter series looks stale every Nov/Feb/May/Aug although the filings are current.
+    # A quarter counts as arrived once 4 of the 5 have filed (hyperscalers_partial_quarters.csv).
+    pq = _csv("bofa-capex-cycles/firsthand/hyperscalers_partial_quarters.csv")
+    if not pq.empty:
+        n = pq.groupby("cal_quarter").ticker.nunique()
+        ok = n[n >= 4]
+        if len(ok):
+            d = pd.Period(max(ok.index), freq="Q").end_time.date()
+            src = "Hyperscaler capex (SEC)"
+            if src not in by or d > by[src]:
+                by[src] = d
     rows = []
     for src, (tab, max_age, lag, cadence) in SOURCES.items():
         d = by.get(src)
