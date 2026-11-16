@@ -1362,7 +1362,8 @@ async function loadDatabricks() {
 const MV_COL = {Anthropic: "var(--s4)", OpenAI: "var(--s1)", Google: "var(--s2)", "Meta Llama": "var(--s3)", Other: "var(--s5)"};
 const bnB = v => v == null ? "–" : "$" + (v >= 10 ? v.toFixed(1) : v.toFixed(1)) + "B";
 async function loadMenlo() {
-  const [M, R, D] = await Promise.all([api("/api/menlo"), api("/api/ramp").catch(() => null), api("/api/databricks").catch(() => null)]);
+  const RD = Promise.all([api("/api/ramp").catch(() => null), api("/api/databricks").catch(() => null)]);  // slow on the hosted copy: fills the comparison table last
+  const M = await api("/api/menlo");
   const X = M.metrics; if (!X.llm_api_share) { $("#mv-tiles").textContent = "No Menlo data - see menlo-enterprise-ai/menlo_points.csv."; return; }
   const st = M.status || {};
   $("#mv-status").textContent = st.not_in_data && st.not_in_data.length ? `New Menlo report not yet transcribed: ${st.not_in_data.map(n => n.title).join("; ")}.` : (st.checked ? `Checked for new reports ${st.checked.slice(0, 10)}: none missing.` : "");
@@ -1377,7 +1378,9 @@ async function loadMenlo() {
   tile("Open-source share of tokens vs spend", get("tier_token_share", "Open-source", "Q3 2026") + "% / " + get("tier_spend_share", "Open-source", "Q3 2026") + "%",
     ["▲ " + pp(get("tier_token_share", "Open-source", "Q3 2026") - get("tier_token_share", "Open-source", "Q3 2025")), "tokens vs Q3 2025"], `Avg price $${get("price_per_m", "Open-source", "Sep 2026")} vs $${get("price_per_m", "Closed-source", "Sep 2026")} per M (closed)`);
 
-  // three sources side by side
+  // three sources side by side (Menlo now; Ramp and Databricks rows when they arrive)
+  $("#mv-tri").textContent = "Loading Ramp and Databricks…";
+  RD.then(([R, D]) => {
   const tri = [];
   tri.push({src: "Menlo Ventures", what: "Enterprise LLM API spend share (survey, spend-weighted)", when: "2026 survey (Sep)", a: get("llm_api_share", "Anthropic", 2026), o: get("llm_api_share", "OpenAI", 2026), g: get("llm_api_share", "Google", 2026)});
   if (R && R.weeks && R.weeks.length) {
@@ -1392,6 +1395,7 @@ async function loadMenlo() {
   }
   table($("#mv-tri"), [{label: "Source", key: "src"}, {label: "Measure", key: "what"}, {label: "As of", key: "when"}, {label: "Anthropic", n: 1, get: r => p100(r.a)}, {label: "OpenAI", n: 1, get: r => p100(r.o)},
     {label: "Google", n: 1, get: r => r.g != null ? p100(r.g) : r.gnote || "–"}, {label: "Anthropic ÷ OpenAI", n: 1, get: r => (r.a / r.o).toFixed(2) + "×"}], tri);
+  });
 
   // API share by year (stacked)
   const per = ["2023", "2024", "mid-2025", "2025", "2026"], labs = ["Anthropic", "OpenAI", "Google", "Meta Llama", "Other"];
