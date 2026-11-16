@@ -1,0 +1,751 @@
+period_start,release,task,pct,rank
+2025-08-04,release_2025_09_15,"modify existing software to correct errors, allow it to adapt to new hardware, or to improve its performance.",8.0955,1
+2025-08-04,release_2025_09_15,"modify existing software to correct errors, to adapt it to new hardware, or to upgrade interfaces and improve performance.",5.822,2
+2025-08-04,release_2025_09_15,"write new programs or modify existing programs to meet customer requirements, using current programming languages and technologies.",4.3062,3
+2025-08-04,release_2025_09_15,"design, build, or maintain web sites, using authoring or scripting languages, content creation tools, management tools, and digital media.",1.5867,4
+2025-08-04,release_2025_09_15,"review, classify, and record survey data in preparation for computer analysis.",1.3859,5
+2025-08-04,release_2025_09_15,develop or apply data mining and machine learning algorithms.,1.3666,6
+2025-08-04,release_2025_09_15,"diagnose, troubleshoot, and resolve hardware, software, or other network and system problems, and replace defective components when necessary.",1.3596,7
+2025-08-04,release_2025_09_15,"perform routine system administrative functions such as troubleshooting, back-ups, and upgrades.",1.2396,8
+2025-08-04,release_2025_09_15,"write, update, and maintain computer programs or software packages to handle specific jobs such as tracking inventory, storing or retrieving data, or controlling other equipment.",1.238,9
+2025-08-04,release_2025_09_15,correct errors by making appropriate changes and rechecking the program to ensure that the desired results are produced.,1.206,10
+2025-08-04,release_2025_09_15,"test programs or databases, correct errors, and make necessary modifications.",1.1318,11
+2025-08-04,release_2025_09_15,"perform initial debugging procedures by reviewing configuration files, logs, or code pieces to determine breakdown source.",1.1002,12
+2025-08-04,release_2025_09_15,"create, analyze, report, convert, or transfer data, using specialized applications program software.",1.0543,13
+2025-08-04,release_2025_09_15,analyze user needs and software requirements to determine feasibility of design within time and cost constraints.,1.0358,14
+2025-08-04,release_2025_09_15,"review and analyze computer printouts and performance indicators to locate code problems, and correct errors by correcting codes.",0.9511,15
+2025-08-04,release_2025_09_15,develop new software applications or customize existing applications to meet specific scientific project needs.,0.8727,16
+2025-08-04,release_2025_09_15,perform security analyses of developed or packaged software components.,0.807,17
+2025-08-04,release_2025_09_15,"perform or direct revision, repair, or expansion of existing programs to increase operating efficiency or adapt to new requirements.",0.7344,18
+2025-08-04,release_2025_09_15,"write, analyze, review, and rewrite programs, using workflow chart and diagram, and applying knowledge of computer capabilities, subject matter, and symbolic logic.",0.6918,19
+2025-08-04,release_2025_09_15,"review software documentation to ensure technical accuracy, compliance, or completeness, or to mitigate risks.",0.6362,20
+2025-08-04,release_2025_09_15,"compile and write documentation of program development and subsequent revisions, inserting comments in the coded instructions so others can understand the program.",0.6304,21
+2025-08-04,release_2025_09_15,"write, present, and publish reports that record site history, methodology, and artifact analysis results, along with recommendations for conserving and interpreting findings.",0.6236,22
+2025-08-04,release_2025_09_15,modify existing programs to enhance efficiency.,0.605,23
+2025-08-04,release_2025_09_15,"analyze organizational, occupational, and industrial data to facilitate organizational functions and provide technical information to business, industry, and government.",0.5993,24
+2025-08-04,release_2025_09_15,"prepare, rewrite and edit copy to improve readability, or supervise others who do this work.",0.571,25
+2025-08-04,release_2025_09_15,"code, evaluate, or interpret collected study data.",0.5671,26
+2025-08-04,release_2025_09_15,"store, retrieve, and manipulate data for analysis of system capabilities and requirements.",0.5548,27
+2025-08-04,release_2025_09_15,"prepare data for processing by organizing information, checking for any inaccuracies, and adjusting and weighting the raw data.",0.5466,28
+2025-08-04,release_2025_09_15,develop application-specific software.,0.4855,29
+2025-08-04,release_2025_09_15,"develop factors such as themes, plots, characterizations, psychological analyses, historical environments, action, and dialogue, to create material.",0.4851,30
+2025-08-04,release_2025_09_15,"write original or adapted material for dramas, comedies, puppet shows, narration, or other performances.",0.4818,31
+2025-08-04,release_2025_09_15,"conduct logical analyses of business, scientific, engineering, and other technical problems, formulating mathematical models of problems for solution by computers.",0.4818,32
+2025-08-04,release_2025_09_15,"revise programs or tapes to eliminate errors, and retest programs to check that problems have been solved.",0.4608,33
+2025-08-04,release_2025_09_15,"develop briefings, brochures, multimedia presentations, web pages, promotional products, technical illustrations, and computer artwork for use in products, technical manuals, literature, newsletters, and slide shows.",0.4568,34
+2025-08-04,release_2025_09_15,"compile reports, charts, or graphs that describe and interpret findings of analyses.",0.3803,35
+2025-08-04,release_2025_09_15,prepare appropriate formatting to data sets as requested.,0.3625,36
+2025-08-04,release_2025_09_15,"conduct searches to find needed information, using such sources as the internet.",0.3571,37
+2025-08-04,release_2025_09_15,"use computers for various applications, such as database management or word processing.",0.355,38
+2025-08-04,release_2025_09_15,"design, develop and modify software systems, using scientific analysis and mathematical models to predict and measure outcome and consequences of design.",0.3468,39
+2025-08-04,release_2025_09_15,contact new or existing customers to discuss how specific products or services can meet their needs.,0.3424,40
+2025-08-04,release_2025_09_15,"compile, record, and code results or data from interview or survey, using computer or specified form.",0.3354,41
+2025-08-04,release_2025_09_15,write supporting code for web applications or web sites.,0.3353,42
+2025-08-04,release_2025_09_15,"edit, standardize, or make changes to material prepared by other writers or establishment personnel.",0.3293,43
+2025-08-04,release_2025_09_15,"collect business intelligence data from available industry reports, public information, field reports, or purchased sources.",0.3133,44
+2025-08-04,release_2025_09_15,"evaluate code to ensure that it is valid, is properly structured, meets industry standards, and is compatible with browsers, devices, or operating systems.",0.3053,45
+2025-08-04,release_2025_09_15,"reformat documents, moving paragraphs or columns.",0.3029,46
+2025-08-04,release_2025_09_15,seek and provide information to help companies determine their position in the marketplace.,0.3,47
+2025-08-04,release_2025_09_15,"read, evaluate and edit manuscripts or other materials submitted for publication and confer with authors regarding changes in content, style or organization, or publication.",0.2947,48
+2025-08-04,release_2025_09_15,"develop transactional web applications, using web programming software and knowledge of programming languages, such as hypertext markup language (html) and extensible markup language (xml).",0.2936,49
+2025-08-04,release_2025_09_15,"write advertising copy for use by publication, broadcast, or internet media to promote the sale of goods and services.",0.2891,50
+2025-08-04,release_2025_09_15,evaluate sources of information to determine any limitations in terms of reliability or usability.,0.2882,51
+2025-08-04,release_2025_09_15,respond to program error messages by finding and correcting problems or terminating the program.,0.273,52
+2025-08-04,release_2025_09_15,"research, compile, analyze and organize information from maps, reports, investigations, and books for use in reports and special projects.",0.2719,53
+2025-08-04,release_2025_09_15,"document software defects, using a bug tracking system, and report defects to software developers.",0.2653,54
+2025-08-04,release_2025_09_15,"analyze and record test data to issue reports that use charts, graphs, or narratives.",0.264,55
+2025-08-04,release_2025_09_15,"analyze test data, making computations as necessary, to determine test results.",0.264,56
+2025-08-04,release_2025_09_15,"determine sources of web page or server problems, and take action to correct such problems.",0.2629,57
+2025-08-04,release_2025_09_15,enter data into computers for use in analyses or reports.,0.262,58
+2025-08-04,release_2025_09_15,"write, design, or edit web page content, or direct others producing content.",0.2595,59
+2025-08-04,release_2025_09_15,develop or maintain internal or external company web sites.,0.2454,60
+2025-08-04,release_2025_09_15,"contact prospective customers to determine customer needs, present information, or explain available services.",0.2434,61
+2025-08-04,release_2025_09_15,"monitor operations to ensure that staff members comply with administrative policies and procedures, safety rules, union contracts, environmental policies, or government regulations.",0.2341,62
+2025-08-04,release_2025_09_15,"develop and direct software system testing and validation procedures, programming, and documentation.",0.2337,63
+2025-08-04,release_2025_09_15,"keep records of customer interactions or transactions, recording details of inquiries, complaints, or comments, as well as actions taken.",0.2286,64
+2025-08-04,release_2025_09_15,use models to simulate the behavior of animated objects in the finished sequence.,0.2275,65
+2025-08-04,release_2025_09_15,write computer programs or scripts to be used in querying databases.,0.2263,66
+2025-08-04,release_2025_09_15,"answer customers' questions, and provide information on procedures or policies.",0.2238,67
+2025-08-04,release_2025_09_15,help programmers and systems analysts test and debug new programs.,0.222,68
+2025-08-04,release_2025_09_15,provide feedback and recommendations to developers on software usability and functionality.,0.2174,69
+2025-08-04,release_2025_09_15,assist students who need extra help with their coursework outside of class.,0.2173,70
+2025-08-04,release_2025_09_15,assess the usefulness of pre-developed application packages and adapt them to a user environment.,0.2168,71
+2025-08-04,release_2025_09_15,analyze experimental data and interpret results to write reports and summaries of findings.,0.2146,72
+2025-08-04,release_2025_09_15,"provide private instruction to individual or small groups of students to improve academic performance, improve occupational skills, or prepare for academic or occupational tests.",0.2127,73
+2025-08-04,release_2025_09_15,respond to customer inquiries or complaints.,0.2109,74
+2025-08-04,release_2025_09_15,research and identify potential customers for products or services.,0.2089,75
+2025-08-04,release_2025_09_15,develop instructional materials to be used by educators and instructors.,0.2084,76
+2025-08-04,release_2025_09_15,reinstall software programs or adjust settings on existing software to fix machine malfunctions.,0.2052,77
+2025-08-04,release_2025_09_15,"search electronic sources, such as databases or repositories, or manual sources for information.",0.2044,78
+2025-08-04,release_2025_09_15,"troubleshoot problems involving office equipment, such as computer hardware and software.",0.2019,79
+2025-08-04,release_2025_09_15,"analyze and evaluate security operations to identify risks or opportunities for improvement through auditing, review, or assessment.",0.1991,80
+2025-08-04,release_2025_09_15,"test, maintain, and monitor computer programs and systems, including coordinating the installation of computer programs and systems.",0.1933,81
+2025-08-04,release_2025_09_15,develop or direct software system testing or validation procedures.,0.1923,82
+2025-08-04,release_2025_09_15,"develop instructional materials, such as lesson plans, handouts, or examinations.",0.1918,83
+2025-08-04,release_2025_09_15,"answer customers' questions about products, prices, availability, or credit terms.",0.1886,84
+2025-08-04,release_2025_09_15,contact prospective customers to present information and explain available services.,0.1855,85
+2025-08-04,release_2025_09_15,"analyze operations to evaluate performance of a company or its staff in meeting objectives or to determine areas of potential cost reduction, program improvement, or policy change.",0.1854,86
+2025-08-04,release_2025_09_15,analyze characteristics of animals to identify and classify them.,0.1837,87
+2025-08-04,release_2025_09_15,compile and analyze data obtained from monitoring or diagnostic tests.,0.1829,88
+2025-08-04,release_2025_09_15,"extend existing software programs, web-based interactive tools, or database queries as sequence management and analysis needs evolve.",0.1823,89
+2025-08-04,release_2025_09_15,"process and prepare documents, such as business or government forms and expense reports.",0.1814,90
+2025-08-04,release_2025_09_15,"test and analyze samples to determine their content and characteristics, using laboratory apparatus or testing equipment.",0.1742,91
+2025-08-04,release_2025_09_15,"read manuals, periodicals, and technical reports to learn how to develop programs that meet staff and user requirements.",0.1711,92
+2025-08-04,release_2025_09_15,configure servers to meet functional specifications.,0.1704,93
+2025-08-04,release_2025_09_15,"prepare reports, manuscripts, proposals, and technical manuals for use by other scientists and requestors, such as sponsors and customers.",0.1679,94
+2025-08-04,release_2025_09_15,"perform system analysis, data analysis or programming, using a variety of computer languages and procedures.",0.1665,95
+2025-08-04,release_2025_09_15,"analyze organic or inorganic compounds to determine chemical or physical properties, composition, structure, relationships, or reactions, using chromatography, spectroscopy, or spectrophotometry techniques.",0.1646,96
+2025-08-04,release_2025_09_15,"collect and analyze data on customer demographics, preferences, needs, and buying habits to identify potential markets and factors affecting product demand.",0.1594,97
+2025-08-04,release_2025_09_15,prepare and deliver lectures to undergraduate or graduate students on topics such as how to speak and write a foreign language and the cultural aspects of areas where a particular language is used.,0.1579,98
+2025-08-04,release_2025_09_15,modify and customize commercial programs for internal needs.,0.1536,99
+2025-08-04,release_2025_09_15,"organize material and complete writing assignment according to set standards regarding order, clarity, conciseness, style, and terminology.",0.1522,100
+2025-08-04,release_2025_09_15,modify existing databases and database management systems or direct programmers and analysts to make changes.,0.1507,101
+2025-08-04,release_2025_09_15,"read written materials, such as legal documents, scientific works, or news reports, and rewrite material into specified languages.",0.1489,102
+2025-08-04,release_2025_09_15,"study, examine, and test acquisitions to authenticate their origin, composition, history, and to assess their current value.",0.1483,103
+2025-08-04,release_2025_09_15,"write narrative, dramatic, lyric, or other types of poetry for publication.",0.1468,104
+2025-08-04,release_2025_09_15,"record the exact locations and conditions of artifacts uncovered in diggings or surveys, using drawings and photographs as necessary.",0.1455,105
+2025-08-04,release_2025_09_15,"select and edit documents for publication and display, applying knowledge of subject, literary expression, and presentation techniques.",0.1441,106
+2025-08-04,release_2025_09_15,"study the objectives, promotional policies, or needs of organizations to develop public relations strategies that will influence public opinion or promote ideas, products, or services.",0.143,107
+2025-08-04,release_2025_09_15,"evaluate and grade students' class work, assignments, and papers.",0.1426,108
+2025-08-04,release_2025_09_15,"organize information for publication and for other means of dissemination, such as use in cd-roms or internet sites.",0.1425,109
+2025-08-04,release_2025_09_15,"collect and analyze data, such as studying old records, tallying the number of outpatients entering each day or week, or participating in federal, state, or local population surveys as a census enumerator.",0.1405,110
+2025-08-04,release_2025_09_15,prepare reports and document project activities and data.,0.1391,111
+2025-08-04,release_2025_09_15,process and review employment applications to evaluate qualifications or eligibility of applicants.,0.1349,112
+2025-08-04,release_2025_09_15,"test machines, components, materials, or products to determine characteristics such as performance, strength, or response to stress.",0.1342,113
+2025-08-04,release_2025_09_15,"conduct research in a particular field of knowledge and publish findings in professional journals, books, or electronic media.",0.1324,114
+2025-08-04,release_2025_09_15,design or develop automated testing tools.,0.1315,115
+2025-08-04,release_2025_09_15,develop methods for integrating different products so they work properly together such as customizing commercial databases to fit specific needs.,0.1312,116
+2025-08-04,release_2025_09_15,"determine supplementary virtual features, such as currency, item catalog, menu design, and audio direction.",0.1306,117
+2025-08-04,release_2025_09_15,"direct live broadcasts, films and recordings, or non-broadcast programming for public entertainment or education.",0.1298,118
+2025-08-04,release_2025_09_15,"recommend, select, and help locate or obtain merchandise based on customer needs and desires.",0.127,119
+2025-08-04,release_2025_09_15,conduct quality analyses of data inputs and resulting analyses or predictions.,0.123,120
+2025-08-04,release_2025_09_15,"interact with clients to assist them in gaining insight, defining goals, and planning action to achieve effective personal, social, educational, and vocational development and adjustment.",0.1211,121
+2025-08-04,release_2025_09_15,conduct internet-based and library research.,0.1184,122
+2025-08-04,release_2025_09_15,use nondisciplinary tools and equipment such as a computer.,0.1167,123
+2025-08-04,release_2025_09_15,"examine chemical or biological samples to identify cell structures or to locate bacteria or extraneous material, using a microscope.",0.1162,124
+2025-08-04,release_2025_09_15,"inspect individual parts, assemblies, or installations, using measuring instruments, such as calipers, scales, or micrometers.",0.1122,125
+2025-08-04,release_2025_09_15,"review class material with students by discussing text, working solutions to problems, or reviewing worksheets or other assignments.",0.1119,126
+2025-08-04,release_2025_09_15,"analyze and interpret results from tests such as microbial or parasite tests, urine analyses, hormonal assays, fine needle aspirations (fnas), and polymerase chain reactions (pcrs).",0.1106,127
+2025-08-04,release_2025_09_15,"identify, investigate, or resolve security breaches.",0.1104,128
+2025-08-04,release_2025_09_15,compile and interpret results of tests and analyses.,0.1104,129
+2025-08-04,release_2025_09_15,conduct research to gather information about survey topics.,0.1103,130
+2025-08-04,release_2025_09_15,design and create special programs for tasks such as statistical analysis and data entry and cleaning.,0.1097,131
+2025-08-04,release_2025_09_15,greet customers and ascertain what each customer wants or needs.,0.1096,132
+2025-08-04,release_2025_09_15,"listen to and resolve customer complaints regarding services, products, or personnel.",0.1088,133
+2025-08-04,release_2025_09_15,troubleshoot network or connectivity problems for users or user groups.,0.1079,134
+2025-08-04,release_2025_09_15,confer with clients regarding the nature of the information processing or computation needs a computer program is to address.,0.1056,135
+2025-08-04,release_2025_09_15,"answer customers' questions about products, prices, availability, product uses, and credit terms.",0.1044,136
+2025-08-04,release_2025_09_15,"search for specific sets of stored, typed characters to make changes.",0.1009,137
+2025-08-04,release_2025_09_15,analyze system performance or operational requirements.,0.099,138
+2025-08-04,release_2025_09_15,"gather data on competitors and analyze their prices, sales, and method of marketing and distribution.",0.0989,139
+2025-08-04,release_2025_09_15,analyze data to determine answers to questions from customers or members of the public.,0.0961,140
+2025-08-04,release_2025_09_15,"monitor database performance and perform any necessary maintenance, upgrades, or repairs.",0.096,141
+2025-08-04,release_2025_09_15,monitor and analyze sales promotion results to determine cost effectiveness of promotion campaigns.,0.0951,142
+2025-08-04,release_2025_09_15,"provide information and advice to the public regarding the selection, purchase, and care of products.",0.094,143
+2025-08-04,release_2025_09_15,discuss the treatment of problems with clients.,0.0939,144
+2025-08-04,release_2025_09_15,"code data prior to computer entry, using lists of codes.",0.0937,145
+2025-08-04,release_2025_09_15,analyze information obtained from management to conceptualize and define operational problems.,0.0914,146
+2025-08-04,release_2025_09_15,"generate standard or custom reports summarizing business, financial, or economic data for review by executives, managers, clients, and other stakeholders.",0.0903,147
+2025-08-04,release_2025_09_15,configure security settings or access permissions for groups or individuals.,0.0902,148
+2025-08-04,release_2025_09_15,analyze market conditions to determine optimum times to execute securities transactions.,0.09,149
+2025-08-04,release_2025_09_15,"create finished art work as decoration, or to elucidate or substitute for spoken or written messages.",0.0895,150
+2025-11-13,release_2026_01_15,"modify existing software to correct errors, allow it to adapt to new hardware, or to improve its performance.",9.9607,1
+2025-11-13,release_2026_01_15,"modify existing software to correct errors, to adapt it to new hardware, or to upgrade interfaces and improve performance.",4.5972,2
+2025-11-13,release_2026_01_15,"perform routine system administrative functions such as troubleshooting, back-ups, and upgrades.",3.9479,3
+2025-11-13,release_2026_01_15,"write new programs or modify existing programs to meet customer requirements, using current programming languages and technologies.",3.4722,4
+2025-11-13,release_2026_01_15,"review software documentation to ensure technical accuracy, compliance, or completeness, or to mitigate risks.",2.4141,5
+2025-11-13,release_2026_01_15,"test programs or databases, correct errors, and make necessary modifications.",2.1336,6
+2025-11-13,release_2026_01_15,develop or apply data mining and machine learning algorithms.,1.8482,7
+2025-11-13,release_2026_01_15,analyze user needs and software requirements to determine feasibility of design within time and cost constraints.,1.4664,8
+2025-11-13,release_2026_01_15,"design, build, or maintain web sites, using authoring or scripting languages, content creation tools, management tools, and digital media.",1.2542,9
+2025-11-13,release_2026_01_15,perform security analyses of developed or packaged software components.,1.05,10
+2025-11-13,release_2026_01_15,"write, update, and maintain computer programs or software packages to handle specific jobs such as tracking inventory, storing or retrieving data, or controlling other equipment.",1.0263,11
+2025-11-13,release_2026_01_15,"evaluate code to ensure that it is valid, is properly structured, meets industry standards, and is compatible with browsers, devices, or operating systems.",0.9742,12
+2025-11-13,release_2026_01_15,"review, classify, and record survey data in preparation for computer analysis.",0.9634,13
+2025-11-13,release_2026_01_15,"portray and interpret roles, using speech, gestures, and body movements, to entertain, inform, or instruct radio, film, television, or live audiences.",0.9382,14
+2025-11-13,release_2026_01_15,"read manuals, periodicals, and technical reports to learn how to develop programs that meet staff and user requirements.",0.9073,15
+2025-11-13,release_2026_01_15,"compile and write documentation of program development and subsequent revisions, inserting comments in the coded instructions so others can understand the program.",0.7753,16
+2025-11-13,release_2026_01_15,"diagnose, troubleshoot, and resolve hardware, software, or other network and system problems, and replace defective components when necessary.",0.766,17
+2025-11-13,release_2026_01_15,"document software defects, using a bug tracking system, and report defects to software developers.",0.7579,18
+2025-11-13,release_2026_01_15,"write, analyze, review, and rewrite programs, using workflow chart and diagram, and applying knowledge of computer capabilities, subject matter, and symbolic logic.",0.7144,19
+2025-11-13,release_2026_01_15,"use computers for various applications, such as database management or word processing.",0.6009,20
+2025-11-13,release_2026_01_15,"review and analyze computer printouts and performance indicators to locate code problems, and correct errors by correcting codes.",0.5635,21
+2025-11-13,release_2026_01_15,"prepare, rewrite and edit copy to improve readability, or supervise others who do this work.",0.5455,22
+2025-11-13,release_2026_01_15,"store, retrieve, and manipulate data for analysis of system capabilities and requirements.",0.5006,23
+2025-11-13,release_2026_01_15,provide feedback and recommendations to developers on software usability and functionality.,0.4965,24
+2025-11-13,release_2026_01_15,"develop factors such as themes, plots, characterizations, psychological analyses, historical environments, action, and dialogue, to create material.",0.4767,25
+2025-11-13,release_2026_01_15,contact new or existing customers to discuss how specific products or services can meet their needs.,0.4668,26
+2025-11-13,release_2026_01_15,"conduct logical analyses of business, scientific, engineering, and other technical problems, formulating mathematical models of problems for solution by computers.",0.4566,27
+2025-11-13,release_2026_01_15,correct errors by making appropriate changes and rechecking the program to ensure that the desired results are produced.,0.4531,28
+2025-11-13,release_2026_01_15,"identify, investigate, or resolve security breaches.",0.4184,29
+2025-11-13,release_2026_01_15,"keep records of customer interactions or transactions, recording details of inquiries, complaints, or comments, as well as actions taken.",0.4147,30
+2025-11-13,release_2026_01_15,assess the usefulness of pre-developed application packages and adapt them to a user environment.,0.4119,31
+2025-11-13,release_2026_01_15,"evaluate and grade students' class work, assignments, and papers.",0.4104,32
+2025-11-13,release_2026_01_15,prepare appropriate formatting to data sets as requested.,0.4089,33
+2025-11-13,release_2026_01_15,"perform initial debugging procedures by reviewing configuration files, logs, or code pieces to determine breakdown source.",0.3884,34
+2025-11-13,release_2026_01_15,write supporting code for web applications or web sites.,0.3761,35
+2025-11-13,release_2026_01_15,"compile, record, and code results or data from interview or survey, using computer or specified form.",0.3732,36
+2025-11-13,release_2026_01_15,develop new software applications or customize existing applications to meet specific scientific project needs.,0.3607,37
+2025-11-13,release_2026_01_15,use nondisciplinary tools and equipment such as a computer.,0.3388,38
+2025-11-13,release_2026_01_15,"develop and direct software system testing and validation procedures, programming, and documentation.",0.3207,39
+2025-11-13,release_2026_01_15,"write advertising copy for use by publication, broadcast, or internet media to promote the sale of goods and services.",0.3157,40
+2025-11-13,release_2026_01_15,"perform or direct revision, repair, or expansion of existing programs to increase operating efficiency or adapt to new requirements.",0.3078,41
+2025-11-13,release_2026_01_15,"write original or adapted material for dramas, comedies, puppet shows, narration, or other performances.",0.3049,42
+2025-11-13,release_2026_01_15,classify and catalog items according to content and purpose.,0.3048,43
+2025-11-13,release_2026_01_15,"prepare data for processing by organizing information, checking for any inaccuracies, and adjusting and weighting the raw data.",0.2925,44
+2025-11-13,release_2026_01_15,"troubleshoot problems involving office equipment, such as computer hardware and software.",0.287,45
+2025-11-13,release_2026_01_15,contact prospective customers to present information and explain available services.,0.2807,46
+2025-11-13,release_2026_01_15,"perform system analysis, data analysis or programming, using a variety of computer languages and procedures.",0.2679,47
+2025-11-13,release_2026_01_15,use computer software to generate new images.,0.2668,48
+2025-11-13,release_2026_01_15,"reformat documents, moving paragraphs or columns.",0.2619,49
+2025-11-13,release_2026_01_15,"compile reports, charts, or graphs that describe and interpret findings of analyses.",0.2605,50
+2025-11-13,release_2026_01_15,develop or direct software system testing or validation procedures.,0.2475,51
+2025-11-13,release_2026_01_15,analyze and report computer network security breaches or attempted breaches.,0.241,52
+2025-11-13,release_2026_01_15,develop instructional materials to be used by educators and instructors.,0.2375,53
+2025-11-13,release_2026_01_15,develop or maintain internal or external company web sites.,0.2363,54
+2025-11-13,release_2026_01_15,confer with clients regarding the nature of the information processing or computation needs a computer program is to address.,0.2336,55
+2025-11-13,release_2026_01_15,"answer customers' questions, and provide information on procedures or policies.",0.2307,56
+2025-11-13,release_2026_01_15,help programmers and systems analysts test and debug new programs.,0.2273,57
+2025-11-13,release_2026_01_15,"conduct searches to find needed information, using such sources as the internet.",0.2272,58
+2025-11-13,release_2026_01_15,"confer with customers by telephone or in person to provide information about products or services, take or enter orders, cancel accounts, or obtain details of complaints.",0.2224,59
+2025-11-13,release_2026_01_15,"determine sources of web page or server problems, and take action to correct such problems.",0.2208,60
+2025-11-13,release_2026_01_15,"design, develop and modify software systems, using scientific analysis and mathematical models to predict and measure outcome and consequences of design.",0.2185,61
+2025-11-13,release_2026_01_15,"collect and analyze data on customer demographics, preferences, needs, and buying habits to identify potential markets and factors affecting product demand.",0.2163,62
+2025-11-13,release_2026_01_15,"write, design, or edit web page content, or direct others producing content.",0.2149,63
+2025-11-13,release_2026_01_15,"revise programs or tapes to eliminate errors, and retest programs to check that problems have been solved.",0.2146,64
+2025-11-13,release_2026_01_15,"determine supplementary virtual features, such as currency, item catalog, menu design, and audio direction.",0.2081,65
+2025-11-13,release_2026_01_15,"collect business intelligence data from available industry reports, public information, field reports, or purchased sources.",0.2068,66
+2025-11-13,release_2026_01_15,respond to customer inquiries or complaints.,0.2067,67
+2025-11-13,release_2026_01_15,write computer programs or scripts to be used in querying databases.,0.2063,68
+2025-11-13,release_2026_01_15,assist students who need extra help with their coursework outside of class.,0.2046,69
+2025-11-13,release_2026_01_15,conduct quality analyses of data inputs and resulting analyses or predictions.,0.1945,70
+2025-11-13,release_2026_01_15,research and identify potential customers for products or services.,0.1927,71
+2025-11-13,release_2026_01_15,"develop briefings, brochures, multimedia presentations, web pages, promotional products, technical illustrations, and computer artwork for use in products, technical manuals, literature, newsletters, and slide shows.",0.1886,72
+2025-11-13,release_2026_01_15,use models to simulate the behavior of animated objects in the finished sequence.,0.1868,73
+2025-11-13,release_2026_01_15,"develop instructional materials, such as lesson plans, handouts, or examinations.",0.1859,74
+2025-11-13,release_2026_01_15,"test, maintain, and monitor computer programs and systems, including coordinating the installation of computer programs and systems.",0.1817,75
+2025-11-13,release_2026_01_15,"compose descriptions of merchandise for posting to online storefront, auction sites, or other shopping web sites.",0.1815,76
+2025-11-13,release_2026_01_15,"provide private instruction to individual or small groups of students to improve academic performance, improve occupational skills, or prepare for academic or occupational tests.",0.1812,77
+2025-11-13,release_2026_01_15,"edit, standardize, or make changes to material prepared by other writers or establishment personnel.",0.1799,78
+2025-11-13,release_2026_01_15,"review class material with students by discussing text, working solutions to problems, or reviewing worksheets or other assignments.",0.1794,79
+2025-11-13,release_2026_01_15,"analyze and evaluate security operations to identify risks or opportunities for improvement through auditing, review, or assessment.",0.176,80
+2025-11-13,release_2026_01_15,test system modifications to prepare for implementation.,0.1735,81
+2025-11-13,release_2026_01_15,"analyze organizational, occupational, and industrial data to facilitate organizational functions and provide technical information to business, industry, and government.",0.1723,82
+2025-11-13,release_2026_01_15,modify existing programs to enhance efficiency.,0.1693,83
+2025-11-13,release_2026_01_15,"observe and evaluate students' work to determine progress, provide feedback, and make suggestions for improvement.",0.1685,84
+2025-11-13,release_2026_01_15,"interact with clients to assist them in gaining insight, defining goals, and planning action to achieve effective personal, social, educational, and vocational development and adjustment.",0.1664,85
+2025-11-13,release_2026_01_15,"read written materials, such as legal documents, scientific works, or news reports, and rewrite material into specified languages.",0.1659,86
+2025-11-13,release_2026_01_15,modify existing databases and database management systems or direct programmers and analysts to make changes.,0.1642,87
+2025-11-13,release_2026_01_15,"create, maintain, and enter information into databases.",0.164,88
+2025-11-13,release_2026_01_15,"search for specific sets of stored, typed characters to make changes.",0.1625,89
+2025-11-13,release_2026_01_15,develop application-specific software.,0.1603,90
+2025-11-13,release_2026_01_15,"code, evaluate, or interpret collected study data.",0.1595,91
+2025-11-13,release_2026_01_15,troubleshoot network or connectivity problems for users or user groups.,0.155,92
+2025-11-13,release_2026_01_15,configure servers to meet functional specifications.,0.1538,93
+2025-11-13,release_2026_01_15,"search electronic sources, such as databases or repositories, or manual sources for information.",0.1524,94
+2025-11-13,release_2026_01_15,"create, analyze, report, convert, or transfer data, using specialized applications program software.",0.1463,95
+2025-11-13,release_2026_01_15,enter data into computers for use in analyses or reports.,0.1454,96
+2025-11-13,release_2026_01_15,"answer customers' questions about products, prices, availability, or credit terms.",0.1438,97
+2025-11-13,release_2026_01_15,analyze experimental data and interpret results to write reports and summaries of findings.,0.1432,98
+2025-11-13,release_2026_01_15,evaluate sources of information to determine any limitations in terms of reliability or usability.,0.143,99
+2025-11-13,release_2026_01_15,"manipulate and enhance scanned or digital images to create desired effects, using computers and specialized software.",0.1403,100
+2025-11-13,release_2026_01_15,"develop transactional web applications, using web programming software and knowledge of programming languages, such as hypertext markup language (html) and extensible markup language (xml).",0.1316,101
+2025-11-13,release_2026_01_15,manage user access to systems and equipment through account management and password administration.,0.1289,102
+2025-11-13,release_2026_01_15,seek and provide information to help companies determine their position in the marketplace.,0.1268,103
+2025-11-13,release_2026_01_15,"read, evaluate and edit manuscripts or other materials submitted for publication and confer with authors regarding changes in content, style or organization, or publication.",0.1241,104
+2025-11-13,release_2026_01_15,"process and prepare documents, such as business or government forms and expense reports.",0.124,105
+2025-11-13,release_2026_01_15,"contact prospective customers to determine customer needs, present information, or explain available services.",0.1194,106
+2025-11-13,release_2026_01_15,prepare reports and document project activities and data.,0.1189,107
+2025-11-13,release_2026_01_15,prepare and deliver lectures to undergraduate or graduate students on topics such as how to speak and write a foreign language and the cultural aspects of areas where a particular language is used.,0.118,108
+2025-11-13,release_2026_01_15,configure security settings or access permissions for groups or individuals.,0.1163,109
+2025-11-13,release_2026_01_15,"gather records pertinent to specific problems, review them for completeness and accuracy, and attach records to correspondence as necessary.",0.1156,110
+2025-11-13,release_2026_01_15,"prepare reports, manuscripts, proposals, and technical manuals for use by other scientists and requestors, such as sponsors and customers.",0.1154,111
+2025-11-13,release_2026_01_15,analyze system performance or operational requirements.,0.1143,112
+2025-11-13,release_2026_01_15,administer online purchasing systems.,0.1134,113
+2025-11-13,release_2026_01_15,"compile, sort and verify the accuracy of data before it is entered.",0.1132,114
+2025-11-13,release_2026_01_15,"plan and prepare advertising and promotional material to increase sales of products or services, working with customers, company officials, sales departments, and advertising agencies.",0.1114,115
+2025-11-13,release_2026_01_15,"prepare data analysis listings and activity, performance, or progress reports.",0.1113,116
+2025-11-13,release_2026_01_15,"develop teaching or training materials, such as handouts, study materials, or quizzes.",0.1103,117
+2025-11-13,release_2026_01_15,develop or implement procedures for ongoing web site revision.,0.11,118
+2025-11-13,release_2026_01_15,monitor bug resolution efforts and track successes.,0.1081,119
+2025-11-13,release_2026_01_15,design or develop automated testing tools.,0.1047,120
+2025-11-13,release_2026_01_15,guide clients in the development of skills or strategies for dealing with their problems.,0.1039,121
+2025-11-13,release_2026_01_15,keep informed of industry trends and deals.,0.1022,122
+2025-11-13,release_2026_01_15,"analyze operations to evaluate performance of a company or its staff in meeting objectives or to determine areas of potential cost reduction, program improvement, or policy change.",0.1012,123
+2025-11-13,release_2026_01_15,"record information such as computer operating time, problems that occurred, and actions taken.",0.1008,124
+2025-11-13,release_2026_01_15,analyze market conditions to determine optimum times to execute securities transactions.,0.0995,125
+2025-11-13,release_2026_01_15,compile and analyze data obtained from monitoring or diagnostic tests.,0.099,126
+2025-11-13,release_2026_01_15,"record and compile operational data by completing and maintaining forms, logs, or reports.",0.098,127
+2025-11-13,release_2026_01_15,"provide information and advice to the public regarding the selection, purchase, and care of products.",0.0976,128
+2025-11-13,release_2026_01_15,"implement controls to provide security for operating systems, software, and data.",0.0972,129
+2025-11-13,release_2026_01_15,"integrate and develop visual elements, such as line, space, mass, color, and perspective, to produce desired effects, such as the illustration of ideas, emotions, or moods.",0.0928,130
+2025-11-13,release_2026_01_15,"monitor database performance and perform any necessary maintenance, upgrades, or repairs.",0.0927,131
+2025-11-13,release_2026_01_15,"recommend, select, and help locate or obtain merchandise based on customer needs and desires.",0.0906,132
+2025-11-13,release_2026_01_15,monitor and analyze sales promotion results to determine cost effectiveness of promotion campaigns.,0.0903,133
+2025-11-13,release_2026_01_15,"develop ideas for creating dances, keeping notes and sketches to record influences.",0.0903,134
+2025-11-13,release_2026_01_15,"prepare, manipulate, and manage extensive databases.",0.0897,135
+2025-11-13,release_2026_01_15,monitor use of data files and regulate access to safeguard information in computer files.,0.0884,136
+2025-11-13,release_2026_01_15,"organize information for publication and for other means of dissemination, such as use in cd-roms or internet sites.",0.0883,137
+2025-11-13,release_2026_01_15,study documentation or other information for new scientific or technical products.,0.088,138
+2025-11-13,release_2026_01_15,"design complex graphics and animation, using independent judgment, creativity, and computer equipment.",0.0868,139
+2025-11-13,release_2026_01_15,respond to program error messages by finding and correcting problems or terminating the program.,0.0866,140
+2025-11-13,release_2026_01_15,"conduct research in a particular field of knowledge and publish findings in professional journals, books, or electronic media.",0.0865,141
+2025-11-13,release_2026_01_15,"compile, log, or record testing or operational data for review and further analysis.",0.0865,142
+2025-11-13,release_2026_01_15,"interview job applicants to obtain information on work history, training, education, or job skills.",0.0862,143
+2025-11-13,release_2026_01_15,"analyze information to determine, recommend, and plan layout, including type of computers and peripheral equipment modifications.",0.0848,144
+2025-11-13,release_2026_01_15,"analyze organic or inorganic compounds to determine chemical or physical properties, composition, structure, relationships, or reactions, using chromatography, spectroscopy, or spectrophotometry techniques.",0.0846,145
+2025-11-13,release_2026_01_15,"classify, record, and summarize numerical and financial data to compile and keep financial records, using journals and ledgers or computers.",0.084,146
+2025-11-13,release_2026_01_15,"perform database verifications, using computers.",0.0837,147
+2025-11-13,release_2026_01_15,prepare sales presentations or proposals to explain product specifications or applications.,0.0833,148
+2025-11-13,release_2026_01_15,"obtain and study information about clients' products, needs, problems, advertising history, and business practices to offer effective sales presentations and appropriate product assistance.",0.0832,149
+2025-11-13,release_2026_01_15,create custom illustrations or other graphic elements.,0.0831,150
+2026-02-05,release_2026_03_24,"modify existing software to correct errors, allow it to adapt to new hardware, or to improve its performance.",8.6557,1
+2026-02-05,release_2026_03_24,"perform routine system administrative functions such as troubleshooting, back-ups, and upgrades.",6.726,2
+2026-02-05,release_2026_03_24,"modify existing software to correct errors, to adapt it to new hardware, or to upgrade interfaces and improve performance.",4.0261,3
+2026-02-05,release_2026_03_24,"write new programs or modify existing programs to meet customer requirements, using current programming languages and technologies.",2.8409,4
+2026-02-05,release_2026_03_24,"review software documentation to ensure technical accuracy, compliance, or completeness, or to mitigate risks.",2.809,5
+2026-02-05,release_2026_03_24,"test programs or databases, correct errors, and make necessary modifications.",2.3364,6
+2026-02-05,release_2026_03_24,analyze user needs and software requirements to determine feasibility of design within time and cost constraints.,1.5446,7
+2026-02-05,release_2026_03_24,develop or apply data mining and machine learning algorithms.,1.3955,8
+2026-02-05,release_2026_03_24,"compile and write documentation of program development and subsequent revisions, inserting comments in the coded instructions so others can understand the program.",1.1457,9
+2026-02-05,release_2026_03_24,"read manuals, periodicals, and technical reports to learn how to develop programs that meet staff and user requirements.",1.093,10
+2026-02-05,release_2026_03_24,"document software defects, using a bug tracking system, and report defects to software developers.",1.0801,11
+2026-02-05,release_2026_03_24,perform security analyses of developed or packaged software components.,1.0684,12
+2026-02-05,release_2026_03_24,"design, build, or maintain web sites, using authoring or scripting languages, content creation tools, management tools, and digital media.",0.9841,13
+2026-02-05,release_2026_03_24,"write, update, and maintain computer programs or software packages to handle specific jobs such as tracking inventory, storing or retrieving data, or controlling other equipment.",0.9754,14
+2026-02-05,release_2026_03_24,"review, classify, and record survey data in preparation for computer analysis.",0.9399,15
+2026-02-05,release_2026_03_24,"diagnose, troubleshoot, and resolve hardware, software, or other network and system problems, and replace defective components when necessary.",0.934,16
+2026-02-05,release_2026_03_24,"review and analyze computer printouts and performance indicators to locate code problems, and correct errors by correcting codes.",0.7541,17
+2026-02-05,release_2026_03_24,"portray and interpret roles, using speech, gestures, and body movements, to entertain, inform, or instruct radio, film, television, or live audiences.",0.7365,18
+2026-02-05,release_2026_03_24,"perform initial debugging procedures by reviewing configuration files, logs, or code pieces to determine breakdown source.",0.6486,19
+2026-02-05,release_2026_03_24,"write, analyze, review, and rewrite programs, using workflow chart and diagram, and applying knowledge of computer capabilities, subject matter, and symbolic logic.",0.6301,20
+2026-02-05,release_2026_03_24,"conduct logical analyses of business, scientific, engineering, and other technical problems, formulating mathematical models of problems for solution by computers.",0.6069,21
+2026-02-05,release_2026_03_24,"reformat documents, moving paragraphs or columns.",0.5639,22
+2026-02-05,release_2026_03_24,"store, retrieve, and manipulate data for analysis of system capabilities and requirements.",0.5437,23
+2026-02-05,release_2026_03_24,"identify, investigate, or resolve security breaches.",0.5372,24
+2026-02-05,release_2026_03_24,"use computers for various applications, such as database management or word processing.",0.5344,25
+2026-02-05,release_2026_03_24,provide feedback and recommendations to developers on software usability and functionality.,0.4979,26
+2026-02-05,release_2026_03_24,correct errors by making appropriate changes and rechecking the program to ensure that the desired results are produced.,0.4959,27
+2026-02-05,release_2026_03_24,"evaluate code to ensure that it is valid, is properly structured, meets industry standards, and is compatible with browsers, devices, or operating systems.",0.4815,28
+2026-02-05,release_2026_03_24,"prepare, rewrite and edit copy to improve readability, or supervise others who do this work.",0.4647,29
+2026-02-05,release_2026_03_24,"perform or direct revision, repair, or expansion of existing programs to increase operating efficiency or adapt to new requirements.",0.4577,30
+2026-02-05,release_2026_03_24,prepare appropriate formatting to data sets as requested.,0.4394,31
+2026-02-05,release_2026_03_24,"develop and direct software system testing and validation procedures, programming, and documentation.",0.4287,32
+2026-02-05,release_2026_03_24,research and identify potential customers for products or services.,0.4197,33
+2026-02-05,release_2026_03_24,contact new or existing customers to discuss how specific products or services can meet their needs.,0.3927,34
+2026-02-05,release_2026_03_24,"determine sources of web page or server problems, and take action to correct such problems.",0.3693,35
+2026-02-05,release_2026_03_24,"perform system analysis, data analysis or programming, using a variety of computer languages and procedures.",0.3676,36
+2026-02-05,release_2026_03_24,"design, develop and modify software systems, using scientific analysis and mathematical models to predict and measure outcome and consequences of design.",0.3602,37
+2026-02-05,release_2026_03_24,"develop factors such as themes, plots, characterizations, psychological analyses, historical environments, action, and dialogue, to create material.",0.3559,38
+2026-02-05,release_2026_03_24,"compile, record, and code results or data from interview or survey, using computer or specified form.",0.3553,39
+2026-02-05,release_2026_03_24,"keep records of customer interactions or transactions, recording details of inquiries, complaints, or comments, as well as actions taken.",0.3453,40
+2026-02-05,release_2026_03_24,"prepare data for processing by organizing information, checking for any inaccuracies, and adjusting and weighting the raw data.",0.3156,41
+2026-02-05,release_2026_03_24,develop or direct software system testing or validation procedures.,0.3103,42
+2026-02-05,release_2026_03_24,develop new software applications or customize existing applications to meet specific scientific project needs.,0.3048,43
+2026-02-05,release_2026_03_24,"revise programs or tapes to eliminate errors, and retest programs to check that problems have been solved.",0.295,44
+2026-02-05,release_2026_03_24,"troubleshoot problems involving office equipment, such as computer hardware and software.",0.2849,45
+2026-02-05,release_2026_03_24,use nondisciplinary tools and equipment such as a computer.,0.2804,46
+2026-02-05,release_2026_03_24,write supporting code for web applications or web sites.,0.2801,47
+2026-02-05,release_2026_03_24,"conduct research to extend mathematical knowledge in traditional areas, such as algebra, geometry, probability, and logic.",0.2765,48
+2026-02-05,release_2026_03_24,"conduct searches to find needed information, using such sources as the internet.",0.2647,49
+2026-02-05,release_2026_03_24,"compile reports, charts, or graphs that describe and interpret findings of analyses.",0.2636,50
+2026-02-05,release_2026_03_24,"edit, standardize, or make changes to material prepared by other writers or establishment personnel.",0.2629,51
+2026-02-05,release_2026_03_24,modify existing programs to enhance efficiency.,0.2588,52
+2026-02-05,release_2026_03_24,assess the usefulness of pre-developed application packages and adapt them to a user environment.,0.2569,53
+2026-02-05,release_2026_03_24,develop or maintain internal or external company web sites.,0.2567,54
+2026-02-05,release_2026_03_24,"write advertising copy for use by publication, broadcast, or internet media to promote the sale of goods and services.",0.2524,55
+2026-02-05,release_2026_03_24,contact prospective customers to present information and explain available services.,0.2483,56
+2026-02-05,release_2026_03_24,test system modifications to prepare for implementation.,0.2448,57
+2026-02-05,release_2026_03_24,confer with clients regarding the nature of the information processing or computation needs a computer program is to address.,0.2417,58
+2026-02-05,release_2026_03_24,classify and catalog items according to content and purpose.,0.2367,59
+2026-02-05,release_2026_03_24,analyze and report computer network security breaches or attempted breaches.,0.2356,60
+2026-02-05,release_2026_03_24,"write original or adapted material for dramas, comedies, puppet shows, narration, or other performances.",0.2261,61
+2026-02-05,release_2026_03_24,help programmers and systems analysts test and debug new programs.,0.2244,62
+2026-02-05,release_2026_03_24,"write, design, or edit web page content, or direct others producing content.",0.2207,63
+2026-02-05,release_2026_03_24,write computer programs or scripts to be used in querying databases.,0.2142,64
+2026-02-05,release_2026_03_24,configure servers to meet functional specifications.,0.2098,65
+2026-02-05,release_2026_03_24,"collect business intelligence data from available industry reports, public information, field reports, or purchased sources.",0.2063,66
+2026-02-05,release_2026_03_24,"analyze organizational, occupational, and industrial data to facilitate organizational functions and provide technical information to business, industry, and government.",0.2037,67
+2026-02-05,release_2026_03_24,"test, maintain, and monitor computer programs and systems, including coordinating the installation of computer programs and systems.",0.1976,68
+2026-02-05,release_2026_03_24,use models to simulate the behavior of animated objects in the finished sequence.,0.1927,69
+2026-02-05,release_2026_03_24,"organize material and complete writing assignment according to set standards regarding order, clarity, conciseness, style, and terminology.",0.1911,70
+2026-02-05,release_2026_03_24,"search for specific sets of stored, typed characters to make changes.",0.1846,71
+2026-02-05,release_2026_03_24,"answer customers' questions, and provide information on procedures or policies.",0.1843,72
+2026-02-05,release_2026_03_24,manage user access to systems and equipment through account management and password administration.,0.1829,73
+2026-02-05,release_2026_03_24,monitor bug resolution efforts and track successes.,0.1824,74
+2026-02-05,release_2026_03_24,analyze system performance or operational requirements.,0.1822,75
+2026-02-05,release_2026_03_24,"analyze and evaluate security operations to identify risks or opportunities for improvement through auditing, review, or assessment.",0.182,76
+2026-02-05,release_2026_03_24,assist students who need extra help with their coursework outside of class.,0.1791,77
+2026-02-05,release_2026_03_24,"confer with customers by telephone or in person to provide information about products or services, take or enter orders, cancel accounts, or obtain details of complaints.",0.1752,78
+2026-02-05,release_2026_03_24,"analyze organic or inorganic compounds to determine chemical or physical properties, composition, structure, relationships, or reactions, using chromatography, spectroscopy, or spectrophotometry techniques.",0.1741,79
+2026-02-05,release_2026_03_24,"review class material with students by discussing text, working solutions to problems, or reviewing worksheets or other assignments.",0.1659,80
+2026-02-05,release_2026_03_24,respond to customer inquiries or complaints.,0.1635,81
+2026-02-05,release_2026_03_24,conduct quality analyses of data inputs and resulting analyses or predictions.,0.1605,82
+2026-02-05,release_2026_03_24,troubleshoot network or connectivity problems for users or user groups.,0.1577,83
+2026-02-05,release_2026_03_24,"record information such as computer operating time, problems that occurred, and actions taken.",0.1574,84
+2026-02-05,release_2026_03_24,"read written materials, such as legal documents, scientific works, or news reports, and rewrite material into specified languages.",0.1561,85
+2026-02-05,release_2026_03_24,configure security settings or access permissions for groups or individuals.,0.1535,86
+2026-02-05,release_2026_03_24,develop instructional materials to be used by educators and instructors.,0.152,87
+2026-02-05,release_2026_03_24,"code, evaluate, or interpret collected study data.",0.1483,88
+2026-02-05,release_2026_03_24,"compose descriptions of merchandise for posting to online storefront, auction sites, or other shopping web sites.",0.1479,89
+2026-02-05,release_2026_03_24,"collect and analyze data on customer demographics, preferences, needs, and buying habits to identify potential markets and factors affecting product demand.",0.145,90
+2026-02-05,release_2026_03_24,analyze experimental data and interpret results to write reports and summaries of findings.,0.1448,91
+2026-02-05,release_2026_03_24,modify existing databases and database management systems or direct programmers and analysts to make changes.,0.1439,92
+2026-02-05,release_2026_03_24,"create, maintain, and enter information into databases.",0.141,93
+2026-02-05,release_2026_03_24,develop application-specific software.,0.1404,94
+2026-02-05,release_2026_03_24,analyze market conditions to determine optimum times to execute securities transactions.,0.1396,95
+2026-02-05,release_2026_03_24,"analyze operations to evaluate performance of a company or its staff in meeting objectives or to determine areas of potential cost reduction, program improvement, or policy change.",0.1385,96
+2026-02-05,release_2026_03_24,"interact with clients to assist them in gaining insight, defining goals, and planning action to achieve effective personal, social, educational, and vocational development and adjustment.",0.1382,97
+2026-02-05,release_2026_03_24,"create, analyze, report, convert, or transfer data, using specialized applications program software.",0.1373,98
+2026-02-05,release_2026_03_24,"analyze information to determine, recommend, and plan layout, including type of computers and peripheral equipment modifications.",0.1371,99
+2026-02-05,release_2026_03_24,"implement controls to provide security for operating systems, software, and data.",0.1371,100
+2026-02-05,release_2026_03_24,develop or implement procedures for ongoing web site revision.,0.1353,101
+2026-02-05,release_2026_03_24,"address the relationships of quantities, magnitudes, and forms through the use of numbers and symbols.",0.1351,102
+2026-02-05,release_2026_03_24,use computer software to generate new images.,0.133,103
+2026-02-05,release_2026_03_24,"analyze, interpret, or disseminate system performance data.",0.131,104
+2026-02-05,release_2026_03_24,"evaluate and grade students' class work, assignments, and papers.",0.1304,105
+2026-02-05,release_2026_03_24,"develop briefings, brochures, multimedia presentations, web pages, promotional products, technical illustrations, and computer artwork for use in products, technical manuals, literature, newsletters, and slide shows.",0.1303,106
+2026-02-05,release_2026_03_24,evaluate sources of information to determine any limitations in terms of reliability or usability.,0.1301,107
+2026-02-05,release_2026_03_24,prepare reports and document project activities and data.,0.1286,108
+2026-02-05,release_2026_03_24,"prepare reports, manuscripts, proposals, and technical manuals for use by other scientists and requestors, such as sponsors and customers.",0.1262,109
+2026-02-05,release_2026_03_24,monitor use of data files and regulate access to safeguard information in computer files.,0.1256,110
+2026-02-05,release_2026_03_24,perform risk assessments and execute tests of data processing system to ensure functioning of data processing activities and security measures.,0.1202,111
+2026-02-05,release_2026_03_24,design or develop automated testing tools.,0.1193,112
+2026-02-05,release_2026_03_24,"process and prepare documents, such as business or government forms and expense reports.",0.1193,113
+2026-02-05,release_2026_03_24,enter data into computers for use in analyses or reports.,0.1188,114
+2026-02-05,release_2026_03_24,"answer customers' questions about products, prices, availability, or credit terms.",0.1174,115
+2026-02-05,release_2026_03_24,"provide private instruction to individual or small groups of students to improve academic performance, improve occupational skills, or prepare for academic or occupational tests.",0.116,116
+2026-02-05,release_2026_03_24,"monitor systems for intrusions or denial of service attacks, and report security breaches to appropriate personnel.",0.1144,117
+2026-02-05,release_2026_03_24,"read, evaluate and edit manuscripts or other materials submitted for publication and confer with authors regarding changes in content, style or organization, or publication.",0.1143,118
+2026-02-05,release_2026_03_24,"determine supplementary virtual features, such as currency, item catalog, menu design, and audio direction.",0.1127,119
+2026-02-05,release_2026_03_24,"monitor database performance and perform any necessary maintenance, upgrades, or repairs.",0.1117,120
+2026-02-05,release_2026_03_24,"record and compile operational data by completing and maintaining forms, logs, or reports.",0.1115,121
+2026-02-05,release_2026_03_24,direct software programming and development of documentation.,0.1092,122
+2026-02-05,release_2026_03_24,"manipulate and enhance scanned or digital images to create desired effects, using computers and specialized software.",0.1075,123
+2026-02-05,release_2026_03_24,"develop instructional materials, such as lesson plans, handouts, or examinations.",0.1064,124
+2026-02-05,release_2026_03_24,seek and provide information to help companies determine their position in the marketplace.,0.1057,125
+2026-02-05,release_2026_03_24,"contact prospective customers to determine customer needs, present information, or explain available services.",0.1054,126
+2026-02-05,release_2026_03_24,"gather records pertinent to specific problems, review them for completeness and accuracy, and attach records to correspondence as necessary.",0.1049,127
+2026-02-05,release_2026_03_24,compile and analyze data obtained from monitoring or diagnostic tests.,0.1046,128
+2026-02-05,release_2026_03_24,"search electronic sources, such as databases or repositories, or manual sources for information.",0.1039,129
+2026-02-05,release_2026_03_24,guide clients in the development of skills or strategies for dealing with their problems.,0.1028,130
+2026-02-05,release_2026_03_24,"provide information and advice to the public regarding the selection, purchase, and care of products.",0.1028,131
+2026-02-05,release_2026_03_24,"document and communicate database schemas, using accepted notations.",0.1027,132
+2026-02-05,release_2026_03_24,"organize information for publication and for other means of dissemination, such as use in cd-roms or internet sites.",0.1019,133
+2026-02-05,release_2026_03_24,define the goals of the system and devise flow charts and diagrams describing logical operational steps of programs.,0.1008,134
+2026-02-05,release_2026_03_24,"prepare data analysis listings and activity, performance, or progress reports.",0.1007,135
+2026-02-05,release_2026_03_24,monitor equipment to ensure proper operation.,0.1004,136
+2026-02-05,release_2026_03_24,develop methods for integrating different products so they work properly together such as customizing commercial databases to fit specific needs.,0.0992,137
+2026-02-05,release_2026_03_24,"inform investment decisions by analyzing financial information to forecast business, industry, or economic conditions.",0.0986,138
+2026-02-05,release_2026_03_24,"recommend, select, and help locate or obtain merchandise based on customer needs and desires.",0.097,139
+2026-02-05,release_2026_03_24,"compile, log, or record testing or operational data for review and further analysis.",0.096,140
+2026-02-05,release_2026_03_24,"plan and prepare advertising and promotional material to increase sales of products or services, working with customers, company officials, sales departments, and advertising agencies.",0.0958,141
+2026-02-05,release_2026_03_24,"develop transactional web applications, using web programming software and knowledge of programming languages, such as hypertext markup language (html) and extensible markup language (xml).",0.0937,142
+2026-02-05,release_2026_03_24,"compile, sort and verify the accuracy of data before it is entered.",0.0926,143
+2026-02-05,release_2026_03_24,respond to program error messages by finding and correcting problems or terminating the program.,0.0925,144
+2026-02-05,release_2026_03_24,monitor financial or operational performance of individual investments to ensure portfolios meet risk goals.,0.0918,145
+2026-02-05,release_2026_03_24,"perform searches for qualified job candidates, using sources such as computer databases, networking, internet recruiting resources, media advertisements, job fairs, recruiting firms, or employee referrals.",0.0894,146
+2026-02-05,release_2026_03_24,"conduct research in a particular field of knowledge and publish findings in professional journals, books, or electronic media.",0.0894,147
+2026-02-05,release_2026_03_24,"create supporting documentation, such as metadata and diagrams of entity relationships, business processes, and process flow.",0.0891,148
+2026-02-05,release_2026_03_24,"interview job applicants to obtain information on work history, training, education, or job skills.",0.0878,149
+2026-02-05,release_2026_03_24,evaluate or recommend server hardware or software.,0.0866,150
+2026-04-01,release_2026_06_26,"search electronic sources, such as databases or repositories, or manual sources for information.",4.88,1
+2026-04-01,release_2026_06_26,"review existing or incoming data for currency, accuracy, usefulness, quality, or completeness of documentation.",3.39,2
+2026-04-01,release_2026_06_26,"review files, records, and other documents to obtain information to respond to requests.",1.57,3
+2026-04-01,release_2026_06_26,"identify, analyze, and document problems with program function, output, online screen, or content.",1.56,4
+2026-04-01,release_2026_06_26,"write new programs or modify existing programs to meet customer requirements, using current programming languages and technologies.",1.48,5
+2026-04-01,release_2026_06_26,"edit or rewrite existing written material as necessary, and submit written material for approval by supervisor, editor, or publisher.",1.41,6
+2026-04-01,release_2026_06_26,"examine documents, materials, or products and monitor work processes to assess completeness, accuracy, and conformance to standards and specifications.",1.35,7
+2026-04-01,release_2026_06_26,"edit, standardize, or make changes to material prepared by other writers or establishment personnel.",1.27,8
+2026-04-01,release_2026_06_26,analyze data to determine answers to questions from customers or members of the public.,1.26,9
+2026-04-01,release_2026_06_26,review subject matter of materials to be classified and select classification numbers and headings according to classification systems.,1.21,10
+2026-04-01,release_2026_06_26,"answer customer inquiries or explain cost, availability, policies, and procedures of facilities.",1.16,11
+2026-04-01,release_2026_06_26,locate unusual or unique information in response to specific requests.,1.1,12
+2026-04-01,release_2026_06_26,"prepare, rewrite and edit copy to improve readability, or supervise others who do this work.",1.05,13
+2026-04-01,release_2026_06_26,troubleshoot program and system malfunctions to restore normal functioning.,1.01,14
+2026-04-01,release_2026_06_26,"organize material and complete writing assignment according to set standards regarding order, clarity, conciseness, style, and terminology.",0.95,15
+2026-04-01,release_2026_06_26,"use nondisciplinary tools and equipment, such as a computer.",0.92,16
+2026-04-01,release_2026_06_26,"conduct reference searches, using printed materials and in-house and online databases.",0.92,17
+2026-04-01,release_2026_06_26,review technical documents to ensure completeness and conformance to requirements.,0.91,18
+2026-04-01,release_2026_06_26,"search standard reference materials, including online sources and the internet, to answer patrons' reference questions.",0.89,19
+2026-04-01,release_2026_06_26,compile and interpret results of tests and analyses.,0.81,20
+2026-04-01,release_2026_06_26,"analyze operations to evaluate performance of a company or its staff in meeting objectives or to determine areas of potential cost reduction, program improvement, or policy change.",0.8,21
+2026-04-01,release_2026_06_26,"select material most pertinent to presentation, and organize this material into appropriate formats.",0.77,22
+2026-04-01,release_2026_06_26,"sort or classify information according to guidelines, such as content, purpose, user criteria, or chronological, alphabetical, or numerical order.",0.75,23
+2026-04-01,release_2026_06_26,monitor system operation to detect potential problems.,0.72,24
+2026-04-01,release_2026_06_26,"read written materials, such as legal documents, scientific works, or news reports, and rewrite material into specified languages.",0.68,25
+2026-04-01,release_2026_06_26,"develop factors such as themes, plots, characterizations, psychological analyses, historical environments, action, and dialogue to create material.",0.63,26
+2026-04-01,release_2026_06_26,"apply mathematical theories and techniques to the solution of practical problems in business, engineering, the sciences, or other fields.",0.59,27
+2026-04-01,release_2026_06_26,"create, maintain, and enter information into databases.",0.57,28
+2026-04-01,release_2026_06_26,write supporting code for web applications or web sites.,0.55,29
+2026-04-01,release_2026_06_26,evaluate manufactured products according to specifications and quality standards.,0.54,30
+2026-04-01,release_2026_06_26,"verify facts, dates, and statistics, using standard reference sources.",0.52,31
+2026-04-01,release_2026_06_26,"code, evaluate, or interpret collected study data.",0.51,32
+2026-04-01,release_2026_06_26,analyze problems and take appropriate action to ensure continuous and reliable operation of equipment and systems.,0.46,33
+2026-04-01,release_2026_06_26,"verify the accuracy and validity of data entered in databases, correcting any errors.",0.45,34
+2026-04-01,release_2026_06_26,"electronically sort and compile text and numerical data, retrieving, updating, and merging documents as required.",0.43,35
+2026-04-01,release_2026_06_26,"perform database verifications, using computers.",0.41,36
+2026-04-01,release_2026_06_26,compile and record operational data on forms or in log books.,0.4,37
+2026-04-01,release_2026_06_26,"evaluate sources of information to determine any limitations, in terms of reliability or usability.",0.4,38
+2026-04-01,release_2026_06_26,conduct quality analyses of data inputs and resulting analyses or predictions.,0.36,39
+2026-04-01,release_2026_06_26,"write, analyze, review, and rewrite programs, using workflow chart and diagram, and applying knowledge of computer capabilities, subject matter, and symbolic logic.",0.36,40
+2026-04-01,release_2026_06_26,identify quality problems or areas for improvement and recommend solutions.,0.35,41
+2026-04-01,release_2026_06_26,perform security analyses of developed or packaged software components.,0.34,42
+2026-04-01,release_2026_06_26,"modify existing software to correct errors, adapt it to new hardware, or upgrade interfaces and improve performance.",0.33,43
+2026-04-01,release_2026_06_26,"recommend products to customers, based on customers' needs and interests.",0.33,44
+2026-04-01,release_2026_06_26,write or edit copy for clients.,0.33,45
+2026-04-01,release_2026_06_26,"prepare or organize online storefront marketing material, including product descriptions or subject lines, optimizing content to search engine criteria.",0.33,46
+2026-04-01,release_2026_06_26,correct errors by making appropriate changes and rechecking the program to ensure that the desired results are produced.,0.33,47
+2026-04-01,release_2026_06_26,recommend and provide advice on a wide variety of products and services.,0.33,48
+2026-04-01,release_2026_06_26,"identify problems uncovered by testing or customer feedback, and correct problems or refer problems to appropriate personnel for correction.",0.32,49
+2026-04-01,release_2026_06_26,"modify existing software to correct errors, allow it to adapt to new hardware, or to improve its performance.",0.3,50
+2026-04-01,release_2026_06_26,"generate standard or custom reports summarizing business, financial, or economic data for review by executives, managers, clients, and other stakeholders.",0.3,51
+2026-04-01,release_2026_06_26,"write text, such as stories, articles, editorials, or newsletters.",0.3,52
+2026-04-01,release_2026_06_26,"observe the current system in operation, and gather and analyze information about each of the component problems, using a variety of sources.",0.3,53
+2026-04-01,release_2026_06_26,implement online customer service processes to ensure positive and consistent user experiences.,0.3,54
+2026-04-01,release_2026_06_26,"compile, sort, and verify the accuracy of data before it is entered.",0.29,55
+2026-04-01,release_2026_06_26,"evaluate feasibility of design ideas, based on factors such as appearance, safety, function, serviceability, budget, production costs/methods, and market characteristics.",0.29,56
+2026-04-01,release_2026_06_26,"evaluate product data or design from inspections or reports for conformance to engineering principles, customer requirements, environmental regulations, or quality standards.",0.29,57
+2026-04-01,release_2026_06_26,develop web sites.,0.27,58
+2026-04-01,release_2026_06_26,"archive documents, conduct research, and read copy, using the internet and various computer programs.",0.27,59
+2026-04-01,release_2026_06_26,assess employee performance.,0.26,60
+2026-04-01,release_2026_06_26,analyze system performance or operational requirements.,0.26,61
+2026-04-01,release_2026_06_26,"develop story or content ideas, considering reader or audience appeal.",0.25,62
+2026-04-01,release_2026_06_26,"conduct searches to find needed information, using such sources as the internet.",0.25,63
+2026-04-01,release_2026_06_26,"advise clients or respond to inquiries about financial matters in person or via phone, email, web site, or internet chat.",0.25,64
+2026-04-01,release_2026_06_26,enter data into computers for use in analyses or reports.,0.25,65
+2026-04-01,release_2026_06_26,"develop teaching or training materials, such as handouts, study materials, or quizzes.",0.25,66
+2026-04-01,release_2026_06_26,monitor or analyze market and environmental trends.,0.24,67
+2026-04-01,release_2026_06_26,"track and analyze factors that affect price movement, such as trade policies, weather conditions, political developments, or supply and demand changes.",0.23,68
+2026-04-01,release_2026_06_26,"interpret data on price, yield, stability, future investment-risk trends, economic influences, and other factors affecting investment programs.",0.23,69
+2026-04-01,release_2026_06_26,answer user inquiries regarding computer software or hardware operation to resolve problems.,0.23,70
+2026-04-01,release_2026_06_26,"write fiction or nonfiction prose, such as short stories, novels, biographies, articles, descriptive or critical analyses, and essays.",0.23,71
+2026-04-01,release_2026_06_26,"write, update, and maintain computer programs or software packages to handle specific jobs such as tracking inventory, storing or retrieving data, or controlling other equipment.",0.23,72
+2026-04-01,release_2026_06_26,"translate messages simultaneously or consecutively into specified languages, orally or by using hand signs, maintaining message content, context, and style as much as possible.",0.22,73
+2026-04-01,release_2026_06_26,"create, analyze, report, convert, or transfer data, using specialized applications program software.",0.21,74
+2026-04-01,release_2026_06_26,analyze user needs to determine technical requirements.,0.21,75
+2026-04-01,release_2026_06_26,"review records or reports for clarity and completeness and maintain records or reports, as required under federal law.",0.21,76
+2026-04-01,release_2026_06_26,"perform or direct revision, repair, or expansion of existing programs to increase operating efficiency or adapt to new requirements.",0.21,77
+2026-04-01,release_2026_06_26,"draw conclusions or make predictions, based on data summaries or statistical analyses.",0.21,78
+2026-04-01,release_2026_06_26,"analyze, interpret, or disseminate system performance data.",0.21,79
+2026-04-01,release_2026_06_26,adjust sales scripts to better target the needs and interests of specific individuals.,0.2,80
+2026-04-01,release_2026_06_26,"maintain or update business intelligence tools, databases, dashboards, systems, or methods.",0.2,81
+2026-04-01,release_2026_06_26,evaluate complaint and emergency-request information to determine response requirements.,0.2,82
+2026-04-01,release_2026_06_26,"compute and analyze data, using statistical formulas and computers or calculators.",0.19,83
+2026-04-01,release_2026_06_26,"review and evaluate new and current programs to determine their efficiency, effectiveness, and compliance with state, local, and federal regulations and recommend any necessary modifications.",0.19,84
+2026-04-01,release_2026_06_26,"compile, record, and code results or data from interview or survey, using computer or specified form.",0.19,85
+2026-04-01,release_2026_06_26,"prepare and maintain logs, reports, or other documentation of work performed.",0.19,86
+2026-04-01,release_2026_06_26,"choose subject matter and suitable form to express personal feelings and experiences or ideas, or to narrate stories or events.",0.18,87
+2026-04-01,release_2026_06_26,analyze information obtained from management to conceptualize and define operational problems.,0.18,88
+2026-04-01,release_2026_06_26,"confer with users to analyze, configure, or troubleshoot applications.",0.18,89
+2026-04-01,release_2026_06_26,"write original or adapted material for dramas, comedies, puppet shows, narration, or other performances.",0.18,90
+2026-04-01,release_2026_06_26,"define data requirements, and gather and validate information, applying judgment and statistical tests.",0.18,91
+2026-04-01,release_2026_06_26,"provide information, such as directions, visiting hours, or patient status information to visitors or callers.",0.17,92
+2026-04-01,release_2026_06_26,test software systems or applications for software enhancements or new products.,0.17,93
+2026-04-01,release_2026_06_26,"review project activities and prepare and review research, testing, or operational reports.",0.17,94
+2026-04-01,release_2026_06_26,"monitor changes affecting supply and demand, tracking market conditions, price trends, or futures markets.",0.17,95
+2026-04-01,release_2026_06_26,code documents according to company procedures.,0.17,96
+2026-04-01,release_2026_06_26,"review written, audio, or video copy, and correct errors in content, grammar, or punctuation, following prescribed editorial style and formatting guidelines.",0.17,97
+2026-04-01,release_2026_06_26,monitor program performance to ensure efficient and problem-free operations.,0.17,98
+2026-04-01,release_2026_06_26,"counsel individuals regarding interpersonal, health, financial, or religious problems.",0.16,99
+2026-04-01,release_2026_06_26,"answer customers' questions, and provide information on procedures or policies.",0.16,100
+2026-04-01,release_2026_06_26,"analyze test data to diagnose malfunctions, to determine performance characteristics of systems, or to evaluate effects of system modifications.",0.16,101
+2026-04-01,release_2026_06_26,study and analyze information about alternative courses of action to determine which plan will offer the best outcomes.,0.16,102
+2026-04-01,release_2026_06_26,"write articles, bulletins, sales letters, speeches, and other related informative, marketing and promotional material.",0.16,103
+2026-04-01,release_2026_06_26,revise work to meet editorial approval or to fit time or space requirements.,0.16,104
+2026-04-01,release_2026_06_26,examine incoming or outgoing mail to ensure conformance with regulations.,0.15,105
+2026-04-01,release_2026_06_26,"write and execute scripts to automate tasks, such as parsing large data files.",0.15,106
+2026-04-01,release_2026_06_26,"write advertising material for use by publication, broadcast, or internet media to promote the sale of goods and services.",0.15,107
+2026-04-01,release_2026_06_26,review quality documentation necessary for regulatory submissions and inspections.,0.15,108
+2026-04-01,release_2026_06_26,diagnose problems with installed equipment.,0.15,109
+2026-04-01,release_2026_06_26,"review financial statements, sales or activity reports, or other performance data to measure productivity or goal achievement or to identify areas needing cost reduction or program improvement.",0.14,110
+2026-04-01,release_2026_06_26,"identify relationships and trends in data, as well as any factors that could affect the results of research.",0.14,111
+2026-04-01,release_2026_06_26,"answer customers' questions about products, prices, availability, or credit terms.",0.14,112
+2026-04-01,release_2026_06_26,"prepare data analysis listings and activity, performance, or progress reports.",0.14,113
+2026-04-01,release_2026_06_26,assess the user-interface or usability characteristics of products.,0.14,114
+2026-04-01,release_2026_06_26,"prepare evaluations of software or hardware, and recommend improvements or upgrades.",0.14,115
+2026-04-01,release_2026_06_26,"design, build, or maintain web sites, using authoring or scripting languages, content creation tools, management tools, and digital media.",0.14,116
+2026-04-01,release_2026_06_26,"identify key risks and mitigating factors of potential investments, such as asset types and values, legal and ownership structures, professional reputations, customer bases, or industry segments.",0.14,117
+2026-04-01,release_2026_06_26,"collect information about clients, using techniques such as testing, interviewing, discussion, or observation.",0.13,118
+2026-04-01,release_2026_06_26,review contents of written orders to ensure adherence to legal requirements.,0.13,119
+2026-04-01,release_2026_06_26,"identify security system weaknesses, using penetration tests.",0.13,120
+2026-04-01,release_2026_06_26,answer questions about product features and benefits.,0.13,121
+2026-04-01,release_2026_06_26,"collect information about individuals or clients, using interviews, case histories, observational techniques, and other assessment methods.",0.13,122
+2026-04-01,release_2026_06_26,"portray and interpret roles, using speech, gestures, and body movements, to entertain, inform, or instruct radio, film, television, or live audiences.",0.13,123
+2026-04-01,release_2026_06_26,perform or direct web site updates.,0.13,124
+2026-04-01,release_2026_06_26,"review all regulatory agency submission materials to ensure timeliness, accuracy, comprehensiveness, or compliance with regulatory standards.",0.12,125
+2026-04-01,release_2026_06_26,"analyze research data to determine its significance, using computers.",0.12,126
+2026-04-01,release_2026_06_26,analyze validation test data to determine whether systems or processes have met validation criteria or to identify root causes of production problems.,0.12,127
+2026-04-01,release_2026_06_26,"respond to user email inquiries, or set up automated systems to send responses.",0.12,128
+2026-04-01,release_2026_06_26,code data in preparation for computer entry.,0.12,129
+2026-04-01,release_2026_06_26,conduct predictive or reactive analyses on security measures to support cyber security initiatives.,0.12,130
+2026-04-01,release_2026_06_26,synthesize current business intelligence or trend data to support recommendations for action.,0.12,131
+2026-04-01,release_2026_06_26,prepare appropriate formatting to data sets as requested.,0.12,132
+2026-04-01,release_2026_06_26,prepare reports to provide answers in response to specific problems.,0.12,133
+2026-04-01,release_2026_06_26,"collect information about clients through interviews, observation, or tests.",0.12,134
+2026-04-01,release_2026_06_26,"read source documents such as canceled checks, sales reports, or bills, and enter data in specific data fields or onto tapes or disks for subsequent entry, using keyboards or scanners.",0.11,135
+2026-04-01,release_2026_06_26,respond to customer inquiries or complaints.,0.11,136
+2026-04-01,release_2026_06_26,receive and respond to customer complaints.,0.11,137
+2026-04-01,release_2026_06_26,"review or update web page content or links in a timely manner, using appropriate tools.",0.11,138
+2026-04-01,release_2026_06_26,write new functions or applications in programming languages to conduct analyses.,0.11,139
+2026-04-01,release_2026_06_26,"find, retrieve, and make copies of information from files in response to requests and deliver information to authorized users.",0.11,140
+2026-04-01,release_2026_06_26,compare encoded tapes or computer printouts with original part specifications and blueprints to verify accuracy of instructions.,0.11,141
+2026-04-01,release_2026_06_26,"analyze, manipulate, or process large sets of data using statistical software.",0.11,142
+2026-04-01,release_2026_06_26,"develop instructional materials, such as lesson plans, handouts, or examinations.",0.11,143
+2026-04-01,release_2026_06_26,"prepare data for processing by organizing information, checking for inaccuracies, and adjusting and weighting the raw data.",0.11,144
+2026-04-01,release_2026_06_26,compile and analyze test information to determine process or equipment operating efficiency or to diagnose malfunctions.,0.11,145
+2026-04-01,release_2026_06_26,"compile reports, charts, or graphs that describe and interpret findings of analyses.",0.1,146
+2026-04-01,release_2026_06_26,"write to customers in their terms and on their level so that the script, story, or advertisement message is more readily received.",0.1,147
+2026-04-01,release_2026_06_26,"adjust settings for format, page layout, line spacing, and other style requirements.",0.1,148
+2026-04-01,release_2026_06_26,"explain products or services and prices, and answer questions from customers.",0.1,149
+2026-04-01,release_2026_06_26,oversee the daily performance of computer systems.,0.1,150
+2026-05-01,release_2026_06_26,"search electronic sources, such as databases or repositories, or manual sources for information.",5.72,1
+2026-05-01,release_2026_06_26,"review existing or incoming data for currency, accuracy, usefulness, quality, or completeness of documentation.",3.56,2
+2026-05-01,release_2026_06_26,"review files, records, and other documents to obtain information to respond to requests.",1.65,3
+2026-05-01,release_2026_06_26,"identify, analyze, and document problems with program function, output, online screen, or content.",1.62,4
+2026-05-01,release_2026_06_26,"examine documents, materials, or products and monitor work processes to assess completeness, accuracy, and conformance to standards and specifications.",1.45,5
+2026-05-01,release_2026_06_26,"write new programs or modify existing programs to meet customer requirements, using current programming languages and technologies.",1.35,6
+2026-05-01,release_2026_06_26,"answer customer inquiries or explain cost, availability, policies, and procedures of facilities.",1.34,7
+2026-05-01,release_2026_06_26,locate unusual or unique information in response to specific requests.,1.33,8
+2026-05-01,release_2026_06_26,"edit or rewrite existing written material as necessary, and submit written material for approval by supervisor, editor, or publisher.",1.32,9
+2026-05-01,release_2026_06_26,review subject matter of materials to be classified and select classification numbers and headings according to classification systems.,1.15,10
+2026-05-01,release_2026_06_26,"edit, standardize, or make changes to material prepared by other writers or establishment personnel.",1.15,11
+2026-05-01,release_2026_06_26,analyze data to determine answers to questions from customers or members of the public.,1.07,12
+2026-05-01,release_2026_06_26,troubleshoot program and system malfunctions to restore normal functioning.,1.05,13
+2026-05-01,release_2026_06_26,"conduct reference searches, using printed materials and in-house and online databases.",1.05,14
+2026-05-01,release_2026_06_26,"organize material and complete writing assignment according to set standards regarding order, clarity, conciseness, style, and terminology.",1.0,15
+2026-05-01,release_2026_06_26,"search standard reference materials, including online sources and the internet, to answer patrons' reference questions.",0.98,16
+2026-05-01,release_2026_06_26,"use nondisciplinary tools and equipment, such as a computer.",0.95,17
+2026-05-01,release_2026_06_26,"prepare, rewrite and edit copy to improve readability, or supervise others who do this work.",0.91,18
+2026-05-01,release_2026_06_26,"select material most pertinent to presentation, and organize this material into appropriate formats.",0.87,19
+2026-05-01,release_2026_06_26,review technical documents to ensure completeness and conformance to requirements.,0.82,20
+2026-05-01,release_2026_06_26,"sort or classify information according to guidelines, such as content, purpose, user criteria, or chronological, alphabetical, or numerical order.",0.78,21
+2026-05-01,release_2026_06_26,"read written materials, such as legal documents, scientific works, or news reports, and rewrite material into specified languages.",0.76,22
+2026-05-01,release_2026_06_26,compile and interpret results of tests and analyses.,0.74,23
+2026-05-01,release_2026_06_26,"analyze operations to evaluate performance of a company or its staff in meeting objectives or to determine areas of potential cost reduction, program improvement, or policy change.",0.73,24
+2026-05-01,release_2026_06_26,monitor system operation to detect potential problems.,0.67,25
+2026-05-01,release_2026_06_26,"create, maintain, and enter information into databases.",0.61,26
+2026-05-01,release_2026_06_26,"verify facts, dates, and statistics, using standard reference sources.",0.54,27
+2026-05-01,release_2026_06_26,evaluate manufactured products according to specifications and quality standards.,0.53,28
+2026-05-01,release_2026_06_26,"develop factors such as themes, plots, characterizations, psychological analyses, historical environments, action, and dialogue to create material.",0.52,29
+2026-05-01,release_2026_06_26,"verify the accuracy and validity of data entered in databases, correcting any errors.",0.52,30
+2026-05-01,release_2026_06_26,write supporting code for web applications or web sites.,0.51,31
+2026-05-01,release_2026_06_26,"code, evaluate, or interpret collected study data.",0.47,32
+2026-05-01,release_2026_06_26,analyze problems and take appropriate action to ensure continuous and reliable operation of equipment and systems.,0.45,33
+2026-05-01,release_2026_06_26,compile and record operational data on forms or in log books.,0.44,34
+2026-05-01,release_2026_06_26,"perform database verifications, using computers.",0.43,35
+2026-05-01,release_2026_06_26,"electronically sort and compile text and numerical data, retrieving, updating, and merging documents as required.",0.43,36
+2026-05-01,release_2026_06_26,correct errors by making appropriate changes and rechecking the program to ensure that the desired results are produced.,0.43,37
+2026-05-01,release_2026_06_26,"prepare or organize online storefront marketing material, including product descriptions or subject lines, optimizing content to search engine criteria.",0.43,38
+2026-05-01,release_2026_06_26,perform security analyses of developed or packaged software components.,0.42,39
+2026-05-01,release_2026_06_26,implement online customer service processes to ensure positive and consistent user experiences.,0.39,40
+2026-05-01,release_2026_06_26,"evaluate sources of information to determine any limitations, in terms of reliability or usability.",0.39,41
+2026-05-01,release_2026_06_26,"recommend products to customers, based on customers' needs and interests.",0.38,42
+2026-05-01,release_2026_06_26,"write, analyze, review, and rewrite programs, using workflow chart and diagram, and applying knowledge of computer capabilities, subject matter, and symbolic logic.",0.38,43
+2026-05-01,release_2026_06_26,write or edit copy for clients.,0.37,44
+2026-05-01,release_2026_06_26,recommend and provide advice on a wide variety of products and services.,0.36,45
+2026-05-01,release_2026_06_26,"develop story or content ideas, considering reader or audience appeal.",0.36,46
+2026-05-01,release_2026_06_26,identify quality problems or areas for improvement and recommend solutions.,0.34,47
+2026-05-01,release_2026_06_26,"modify existing software to correct errors, allow it to adapt to new hardware, or to improve its performance.",0.34,48
+2026-05-01,release_2026_06_26,"modify existing software to correct errors, adapt it to new hardware, or upgrade interfaces and improve performance.",0.34,49
+2026-05-01,release_2026_06_26,"identify problems uncovered by testing or customer feedback, and correct problems or refer problems to appropriate personnel for correction.",0.33,50
+2026-05-01,release_2026_06_26,"generate standard or custom reports summarizing business, financial, or economic data for review by executives, managers, clients, and other stakeholders.",0.33,51
+2026-05-01,release_2026_06_26,"apply mathematical theories and techniques to the solution of practical problems in business, engineering, the sciences, or other fields.",0.33,52
+2026-05-01,release_2026_06_26,assess employee performance.,0.33,53
+2026-05-01,release_2026_06_26,"observe the current system in operation, and gather and analyze information about each of the component problems, using a variety of sources.",0.33,54
+2026-05-01,release_2026_06_26,"compile, sort, and verify the accuracy of data before it is entered.",0.32,55
+2026-05-01,release_2026_06_26,"write text, such as stories, articles, editorials, or newsletters.",0.3,56
+2026-05-01,release_2026_06_26,"evaluate feasibility of design ideas, based on factors such as appearance, safety, function, serviceability, budget, production costs/methods, and market characteristics.",0.3,57
+2026-05-01,release_2026_06_26,"evaluate product data or design from inspections or reports for conformance to engineering principles, customer requirements, environmental regulations, or quality standards.",0.28,58
+2026-05-01,release_2026_06_26,"archive documents, conduct research, and read copy, using the internet and various computer programs.",0.27,59
+2026-05-01,release_2026_06_26,"advise clients or respond to inquiries about financial matters in person or via phone, email, web site, or internet chat.",0.27,60
+2026-05-01,release_2026_06_26,enter data into computers for use in analyses or reports.,0.27,61
+2026-05-01,release_2026_06_26,answer user inquiries regarding computer software or hardware operation to resolve problems.,0.26,62
+2026-05-01,release_2026_06_26,analyze system performance or operational requirements.,0.26,63
+2026-05-01,release_2026_06_26,"develop teaching or training materials, such as handouts, study materials, or quizzes.",0.26,64
+2026-05-01,release_2026_06_26,monitor or analyze market and environmental trends.,0.24,65
+2026-05-01,release_2026_06_26,"create, analyze, report, convert, or transfer data, using specialized applications program software.",0.24,66
+2026-05-01,release_2026_06_26,"write fiction or nonfiction prose, such as short stories, novels, biographies, articles, descriptive or critical analyses, and essays.",0.24,67
+2026-05-01,release_2026_06_26,"provide information, such as directions, visiting hours, or patient status information to visitors or callers.",0.24,68
+2026-05-01,release_2026_06_26,"review records or reports for clarity and completeness and maintain records or reports, as required under federal law.",0.23,69
+2026-05-01,release_2026_06_26,"maintain or update business intelligence tools, databases, dashboards, systems, or methods.",0.23,70
+2026-05-01,release_2026_06_26,code documents according to company procedures.,0.22,71
+2026-05-01,release_2026_06_26,"conduct searches to find needed information, using such sources as the internet.",0.22,72
+2026-05-01,release_2026_06_26,compile and format image data to increase its usefulness.,0.22,73
+2026-05-01,release_2026_06_26,analyze user needs to determine technical requirements.,0.22,74
+2026-05-01,release_2026_06_26,"draw conclusions or make predictions, based on data summaries or statistical analyses.",0.22,75
+2026-05-01,release_2026_06_26,"write, update, and maintain computer programs or software packages to handle specific jobs such as tracking inventory, storing or retrieving data, or controlling other equipment.",0.21,76
+2026-05-01,release_2026_06_26,"perform or direct revision, repair, or expansion of existing programs to increase operating efficiency or adapt to new requirements.",0.21,77
+2026-05-01,release_2026_06_26,"integrate and develop visual elements, such as line, space, mass, color, and perspective, to produce desired effects, such as the illustration of ideas, emotions, or moods.",0.21,78
+2026-05-01,release_2026_06_26,"compile, record, and code results or data from interview or survey, using computer or specified form.",0.21,79
+2026-05-01,release_2026_06_26,evaluate complaint and emergency-request information to determine response requirements.,0.21,80
+2026-05-01,release_2026_06_26,"translate messages simultaneously or consecutively into specified languages, orally or by using hand signs, maintaining message content, context, and style as much as possible.",0.21,81
+2026-05-01,release_2026_06_26,adjust sales scripts to better target the needs and interests of specific individuals.,0.21,82
+2026-05-01,release_2026_06_26,"analyze, interpret, or disseminate system performance data.",0.21,83
+2026-05-01,release_2026_06_26,"interpret data on price, yield, stability, future investment-risk trends, economic influences, and other factors affecting investment programs.",0.21,84
+2026-05-01,release_2026_06_26,analyze information obtained from management to conceptualize and define operational problems.,0.2,85
+2026-05-01,release_2026_06_26,"prepare and maintain logs, reports, or other documentation of work performed.",0.2,86
+2026-05-01,release_2026_06_26,"define data requirements, and gather and validate information, applying judgment and statistical tests.",0.2,87
+2026-05-01,release_2026_06_26,review quality documentation necessary for regulatory submissions and inspections.,0.2,88
+2026-05-01,release_2026_06_26,monitor program performance to ensure efficient and problem-free operations.,0.2,89
+2026-05-01,release_2026_06_26,"track and analyze factors that affect price movement, such as trade policies, weather conditions, political developments, or supply and demand changes.",0.2,90
+2026-05-01,release_2026_06_26,"compute and analyze data, using statistical formulas and computers or calculators.",0.19,91
+2026-05-01,release_2026_06_26,"review project activities and prepare and review research, testing, or operational reports.",0.19,92
+2026-05-01,release_2026_06_26,"review financial statements, sales or activity reports, or other performance data to measure productivity or goal achievement or to identify areas needing cost reduction or program improvement.",0.18,93
+2026-05-01,release_2026_06_26,"answer customers' questions, and provide information on procedures or policies.",0.18,94
+2026-05-01,release_2026_06_26,"review written, audio, or video copy, and correct errors in content, grammar, or punctuation, following prescribed editorial style and formatting guidelines.",0.18,95
+2026-05-01,release_2026_06_26,"write articles, bulletins, sales letters, speeches, and other related informative, marketing and promotional material.",0.18,96
+2026-05-01,release_2026_06_26,"write advertising material for use by publication, broadcast, or internet media to promote the sale of goods and services.",0.17,97
+2026-05-01,release_2026_06_26,revise work to meet editorial approval or to fit time or space requirements.,0.16,98
+2026-05-01,release_2026_06_26,study and analyze information about alternative courses of action to determine which plan will offer the best outcomes.,0.16,99
+2026-05-01,release_2026_06_26,"answer customers' questions about products, prices, availability, or credit terms.",0.16,100
+2026-05-01,release_2026_06_26,"write and execute scripts to automate tasks, such as parsing large data files.",0.16,101
+2026-05-01,release_2026_06_26,"confer with users to analyze, configure, or troubleshoot applications.",0.15,102
+2026-05-01,release_2026_06_26,"analyze test data to diagnose malfunctions, to determine performance characteristics of systems, or to evaluate effects of system modifications.",0.15,103
+2026-05-01,release_2026_06_26,code data in preparation for computer entry.,0.15,104
+2026-05-01,release_2026_06_26,"monitor changes affecting supply and demand, tracking market conditions, price trends, or futures markets.",0.15,105
+2026-05-01,release_2026_06_26,"prepare data for processing by organizing information, checking for inaccuracies, and adjusting and weighting the raw data.",0.15,106
+2026-05-01,release_2026_06_26,review contents of written orders to ensure adherence to legal requirements.,0.15,107
+2026-05-01,release_2026_06_26,answer questions about product features and benefits.,0.15,108
+2026-05-01,release_2026_06_26,"direct and execute pre-production activities, such as creating moodboards or storyboards and establishing a project timeline.",0.15,109
+2026-05-01,release_2026_06_26,synthesize current business intelligence or trend data to support recommendations for action.,0.15,110
+2026-05-01,release_2026_06_26,"review and evaluate new and current programs to determine their efficiency, effectiveness, and compliance with state, local, and federal regulations and recommend any necessary modifications.",0.15,111
+2026-05-01,release_2026_06_26,respond to customer inquiries or complaints.,0.15,112
+2026-05-01,release_2026_06_26,prepare appropriate formatting to data sets as requested.,0.15,113
+2026-05-01,release_2026_06_26,"review all regulatory agency submission materials to ensure timeliness, accuracy, comprehensiveness, or compliance with regulatory standards.",0.15,114
+2026-05-01,release_2026_06_26,diagnose problems with installed equipment.,0.15,115
+2026-05-01,release_2026_06_26,"identify relationships and trends in data, as well as any factors that could affect the results of research.",0.14,116
+2026-05-01,release_2026_06_26,"design, build, or maintain web sites, using authoring or scripting languages, content creation tools, management tools, and digital media.",0.14,117
+2026-05-01,release_2026_06_26,"choose subject matter and suitable form to express personal feelings and experiences or ideas, or to narrate stories or events.",0.14,118
+2026-05-01,release_2026_06_26,check and analyze operating system or application log files regularly to verify proper system performance.,0.14,119
+2026-05-01,release_2026_06_26,examine incoming or outgoing mail to ensure conformance with regulations.,0.14,120
+2026-05-01,release_2026_06_26,"prepare data analysis listings and activity, performance, or progress reports.",0.14,121
+2026-05-01,release_2026_06_26,receive and respond to customer complaints.,0.14,122
+2026-05-01,release_2026_06_26,"counsel individuals regarding interpersonal, health, financial, or religious problems.",0.13,123
+2026-05-01,release_2026_06_26,perform or direct web site updates.,0.13,124
+2026-05-01,release_2026_06_26,"compose descriptions of merchandise for posting to online storefront, auction sites, or other shopping web sites.",0.13,125
+2026-05-01,release_2026_06_26,"identify key risks and mitigating factors of potential investments, such as asset types and values, legal and ownership structures, professional reputations, customer bases, or industry segments.",0.13,126
+2026-05-01,release_2026_06_26,"collect information about clients, using techniques such as testing, interviewing, discussion, or observation.",0.13,127
+2026-05-01,release_2026_06_26,"read source documents such as canceled checks, sales reports, or bills, and enter data in specific data fields or onto tapes or disks for subsequent entry, using keyboards or scanners.",0.13,128
+2026-05-01,release_2026_06_26,prepare reports to provide answers in response to specific problems.,0.13,129
+2026-05-01,release_2026_06_26,"collect information about individuals or clients, using interviews, case histories, observational techniques, and other assessment methods.",0.13,130
+2026-05-01,release_2026_06_26,"respond to user email inquiries, or set up automated systems to send responses.",0.13,131
+2026-05-01,release_2026_06_26,compile and analyze test information to determine process or equipment operating efficiency or to diagnose malfunctions.,0.12,132
+2026-05-01,release_2026_06_26,"explain products or services and prices, and answer questions from customers.",0.12,133
+2026-05-01,release_2026_06_26,"analyze research data to determine its significance, using computers.",0.12,134
+2026-05-01,release_2026_06_26,"analyze, manipulate, or process large sets of data using statistical software.",0.12,135
+2026-05-01,release_2026_06_26,"collect information about clients through interviews, observation, or tests.",0.12,136
+2026-05-01,release_2026_06_26,prepare and review operational reports or project progress reports.,0.12,137
+2026-05-01,release_2026_06_26,assess the user-interface or usability characteristics of products.,0.12,138
+2026-05-01,release_2026_06_26,"analyze information from interviews, educational and medical records, consultation with other professionals, and diagnostic evaluations to assess clients' abilities, needs, and eligibility for services.",0.12,139
+2026-05-01,release_2026_06_26,"develop instructional materials, such as lesson plans, handouts, or examinations.",0.12,140
+2026-05-01,release_2026_06_26,analyze validation test data to determine whether systems or processes have met validation criteria or to identify root causes of production problems.,0.12,141
+2026-05-01,release_2026_06_26,analyze problems to develop solutions involving computer hardware and software.,0.11,142
+2026-05-01,release_2026_06_26,"schedule and confirm appointments for clients, customers, or supervisors.",0.11,143
+2026-05-01,release_2026_06_26,"review or update web page content or links in a timely manner, using appropriate tools.",0.11,144
+2026-05-01,release_2026_06_26,"retrieve electronic assets from repository for distribution to users, collecting and returning to repository, if necessary.",0.11,145
+2026-05-01,release_2026_06_26,"find, retrieve, and make copies of information from files in response to requests and deliver information to authorized users.",0.11,146
+2026-05-01,release_2026_06_26,"compile reports, charts, or graphs that describe and interpret findings of analyses.",0.11,147
+2026-05-01,release_2026_06_26,"write original or adapted material for dramas, comedies, puppet shows, narration, or other performances.",0.11,148
+2026-05-01,release_2026_06_26,"compose business correspondence for supervisors, managers, and professionals.",0.11,149
+2026-05-01,release_2026_06_26,"write to customers in their terms and on their level so that the script, story, or advertisement message is more readily received.",0.11,150

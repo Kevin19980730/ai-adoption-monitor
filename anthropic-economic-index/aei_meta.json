@@ -1,0 +1,64 @@
+{
+ "source": "https://huggingface.co/datasets/Anthropic/EconomicIndex",
+ "license": "CC-BY",
+ "releases": [
+  {
+   "release": "release_2025_09_15",
+   "file": "release_2025_09_15/data/intermediate/aei_raw_1p_api_2025-08-04_to_2025-08-11.csv",
+   "schema": "raw",
+   "periods": [
+    {
+     "start": "2025-08-04",
+     "end": "2025-08-11"
+    }
+   ],
+   "scope": "1P API sample (Claude Code inclusion not stated)"
+  },
+  {
+   "release": "release_2026_01_15",
+   "file": "release_2026_01_15/data/intermediate/aei_raw_1p_api_2025-11-13_to_2025-11-20.csv",
+   "schema": "raw",
+   "periods": [
+    {
+     "start": "2025-11-13",
+     "end": "2025-11-20"
+    }
+   ],
+   "scope": "1P API sample (Claude Code inclusion not stated)"
+  },
+  {
+   "release": "release_2026_03_24",
+   "file": "release_2026_03_24/data/aei_raw_1p_api_2026-02-05_to_2026-02-12.csv",
+   "schema": "raw",
+   "periods": [
+    {
+     "start": "2026-02-05",
+     "end": "2026-02-12"
+    }
+   ],
+   "scope": "1P API sample (Claude Code inclusion not stated)"
+  },
+  {
+   "release": "release_2026_06_26",
+   "file": "release_2026_06_26/data/aei_1p_api_2026-06-26.csv",
+   "schema": "monthly",
+   "periods": [
+    {
+     "start": "2026-04-01",
+     "end": "2026-05-01"
+    },
+    {
+     "start": "2026-05-01",
+     "end": "2026-06-01"
+    }
+   ],
+   "scope": "1P API excluding Claude Code (stated)"
+  }
+ ],
+ "notes": {
+  "break": "The 2026-06-26 release moved to calendar months and states that it excludes Claude Code; earlier releases are one-week samples that do not say. Treat the step between Feb 2026 and Apr 2026 as a definition change, not a trend.",
+  "automation": "Automation = directive + feedback loop; augmentation = task iteration + learning + validation; each as a share of the two together.",
+  "occupations": "Share of all sampled API records by SOC major group. Older releases derived from O*NET task shares (split equally across the groups listing a task); the latest release publishes them."
+ },
+ "last_run": "2026-11-17T03:34:52"
+}

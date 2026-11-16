@@ -32,6 +32,8 @@ SOURCES = {
     "Ramp tokens": ("ramp", 21, 8, "weekly"),
     "Ramp AI Index adoption": ("rampadopt", 50, 15, "monthly"),
     "Databricks AI Index": ("databricks", 21, 15, "weekly"),
+    "Menlo enterprise survey": ("menlo", 400, 60, "annual report"),
+    "Anthropic Economic Index": ("aei", 150, 30, "irregular releases (about quarterly)"),
     "Silicon Data GPU prices": ("gpu", 5, 1, "daily"),
     "FRED credit & rates": ("credit", 6, 1, "daily"),
     "npm downloads": ("assistants", 6, 1, "daily"),
@@ -107,6 +109,19 @@ def series():
     if not ds.empty:
         add("dbx_p50", "Median user's weekly token spend (Databricks)", "Databricks AI Index",
             _pts((pd.to_datetime(ds.week) + pd.Timedelta(days=6)).dt.strftime("%Y-%m-%d"), ds.p50), "usd_small", "rel")
+    mv = _csv("menlo-enterprise-ai/menlo_points.csv")
+    if not mv.empty:
+        a = mv[(mv.metric == "llm_api_share") & (mv.category == "Anthropic")]
+        dates = a.period.astype(str).map(lambda p: "2025-06-30" if p == "mid-2025" else f"{p}-09-30")
+        add("menlo_anth", "Anthropic share of enterprise LLM API spend (Menlo)", "Menlo enterprise survey", _pts(dates, a.value / 100), "share", "pp")
+        dsp = mv[mv.metric == "deployment_spend"]
+        add("menlo_spend", "Enterprise AI deployment spend (Menlo)", "Menlo enterprise survey",
+            _pts(dsp.period.astype(str) + "-09-30", dsp.value * 1e9), "usd", "rel")
+    ae = _csv("anthropic-economic-index/aei_api_overall.csv")
+    if not ae.empty:
+        for m, nm in (("use_case_work_pct", "Work share of Claude API use (Anthropic EI)"), ("automation_pct", "Automation share of Claude API use (Anthropic EI)")):
+            g = ae[ae.metric == m]
+            add("aei_" + m.split("_")[0], nm, "Anthropic Economic Index", _pts(g.period_end, g.value / 100), "share", "pp")
     osh = _csv("openrouter_data/openrouter_open_share.csv")
     if not osh.empty:
         add("or_open_tok", "Open-weights share of OpenRouter tokens", "OpenRouter model mix", _pts(osh.as_of, osh.open_token_share), "share", "pp")

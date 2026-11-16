@@ -1,0 +1,134 @@
+report_date,report,metric,category,period,value,unit,where,source_url
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Anthropic,2023,12,pct,Chart: Enterprise LLM API Market Share by Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,OpenAI,2023,50,pct,Chart: Enterprise LLM API Market Share by Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Google,2023,7,pct,Chart: Enterprise LLM API Market Share by Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Meta Llama,2023,16,pct,Chart: Enterprise LLM API Market Share by Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Other,2023,15,pct,Chart: Enterprise LLM API Market Share by Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Anthropic,2024,24,pct,Chart: Enterprise LLM API Market Share by Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,OpenAI,2024,34,pct,Chart: Enterprise LLM API Market Share by Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Google,2024,12,pct,Chart: Enterprise LLM API Market Share by Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Meta Llama,2024,16,pct,Chart: Enterprise LLM API Market Share by Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Other,2024,14,pct,Chart: Enterprise LLM API Market Share by Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2025-07-31,2025 Mid-Year LLM Market Update,llm_api_share,Anthropic,mid-2025,32,pct,Text: Anthropic is the new top player in enterprise AI markets with 32%,https://menlovc.com/perspective/2025-mid-year-llm-market-update/
+2025-07-31,2025 Mid-Year LLM Market Update,llm_api_share,OpenAI,mid-2025,25,pct,"Text: OpenAI holds 25%, down from 50% in 2023",https://menlovc.com/perspective/2025-mid-year-llm-market-update/
+2025-07-31,2025 Mid-Year LLM Market Update,llm_api_share,Google,mid-2025,20,pct,"Text: Google has taken third place, claiming 20% of enterprise usage",https://menlovc.com/perspective/2025-mid-year-llm-market-update/
+2025-07-31,2025 Mid-Year LLM Market Update,coding_share,Anthropic,mid-2025,42,pct,Text: Claude ... capturing 42% market share (code generation),https://menlovc.com/perspective/2025-mid-year-llm-market-update/
+2025-07-31,2025 Mid-Year LLM Market Update,coding_share,OpenAI,mid-2025,21,pct,Text: more than double OpenAI's (21%),https://menlovc.com/perspective/2025-mid-year-llm-market-update/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Anthropic,2025,40,pct,Chart: Enterprise LLM API Market Share by Spend (also 2025 report text),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,OpenAI,2025,27,pct,Chart: Enterprise LLM API Market Share by Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Google,2025,21,pct,Chart: Enterprise LLM API Market Share by Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Meta Llama,2025,8,pct,Chart: Enterprise LLM API Market Share by Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Other,2025,4,pct,Chart: unlabelled segment = 100 - 40 - 27 - 21 - 8,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Anthropic,2026,55,pct,Chart + text: Anthropic's share ... increased from 40% to 55%,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,OpenAI,2026,31,pct,Chart + text: OpenAI's from 27% to 31%,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Google,2026,9,pct,Chart + text: Google's fell from 21% to 9%,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,llm_api_share,Other,2026,5,pct,Chart: Meta Llama + other not labelled (100 - 55 - 31 - 9); text: near-frontier + open-source just under 5%,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,deployment_spend,Total,2023,1.7,usd_b,Chart + text: Global Enterprise AI Deployment Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,deployment_spend,Total,2024,8.5,usd_b,Chart + text,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,deployment_spend,Total,2025,33.0,usd_b,Chart + text,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,deployment_spend,Total,2026,176.8,usd_b,"Chart + text: by September 2026, annualised run rate",https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,development_spend,Total,2026,102.5,usd_b,Text: $102.5B on building models (up 5.3x),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_by_category,Foundation models + inference,2025,12.5,usd_b,Chart: Enterprise AI Spend by Category 2025 vs 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_by_category,Foundation models + inference,2026,94.2,usd_b,Chart: Enterprise AI Spend by Category 2025 vs 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_by_category,AI infrastructure,2025,1.5,usd_b,Chart: Enterprise AI Spend by Category 2025 vs 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_by_category,AI infrastructure,2026,5.3,usd_b,Chart: Enterprise AI Spend by Category 2025 vs 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_by_category,AI assistants + productivity,2025,8.4,usd_b,Chart: Enterprise AI Spend by Category 2025 vs 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_by_category,AI assistants + productivity,2026,25.0,usd_b,Chart: Enterprise AI Spend by Category 2025 vs 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_by_category,Coding,2025,4.4,usd_b,Chart: Enterprise AI Spend by Category 2025 vs 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_by_category,Coding,2026,34.0,usd_b,Chart: Enterprise AI Spend by Category 2025 vs 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_by_category,Other apps,2025,6.1,usd_b,Chart: Enterprise AI Spend by Category 2025 vs 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_by_category,Other apps,2026,18.3,usd_b,Chart: Enterprise AI Spend by Category 2025 vs 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_by_category,Training compute,2025,15.3,usd_b,Chart: Enterprise AI Spend by Category 2025 vs 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_by_category,Training compute,2026,87.2,usd_b,Chart: Enterprise AI Spend by Category 2025 vs 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_by_category,Training data + services,2025,4.0,usd_b,Chart: Enterprise AI Spend by Category 2025 vs 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_by_category,Training data + services,2026,15.3,usd_b,Chart: Enterprise AI Spend by Category 2025 vs 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,frontier_lab_spend,API,2025,11.2,usd_b,Chart: Enterprise Spend on Frontier Labs vs the Rest,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,frontier_lab_spend,First-party apps,2025,5.3,usd_b,Chart: unlabelled segment = 33.0 - 11.2 - 16.5,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,frontier_lab_spend,Everyone else,2025,16.5,usd_b,Chart: Enterprise Spend on Frontier Labs vs the Rest,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,frontier_lab_spend,API,2026,82.7,usd_b,Chart: Enterprise Spend on Frontier Labs vs the Rest,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,frontier_lab_spend,First-party apps,2026,40.0,usd_b,Chart + text: labs' first-party apps now total $40.0B,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,frontier_lab_spend,Everyone else,2026,54.1,usd_b,Chart: Enterprise Spend on Frontier Labs vs the Rest,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_spend_share,Frontier,Q3 2025,35,pct,Chart: Frontier Models Are Gaining Share - Share of Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_spend_share,Mid-tier,Q3 2025,24,pct,Chart: Share of Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_spend_share,Small,Q3 2025,9,pct,Chart: Share of Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_spend_share,Older models,Q3 2025,23,pct,Chart: Share of Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_spend_share,Specialized,Q3 2025,3,pct,Chart: unlabelled segment = 100 - other tiers,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_spend_share,Open-source,Q3 2025,6,pct,Chart: Share of Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_spend_share,Frontier,Q3 2026,63,pct,Chart + text: Share of Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_spend_share,Mid-tier,Q3 2026,13,pct,Chart: Share of Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_spend_share,Small,Q3 2026,4,pct,Chart: Share of Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_spend_share,Older models,Q3 2026,15,pct,Chart: Share of Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_spend_share,Specialized,Q3 2026,1,pct,Chart: unlabelled segment = 100 - other tiers,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_spend_share,Open-source,Q3 2026,4,pct,Chart + text: Share of Spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_token_share,Frontier,Q3 2025,18,pct,Chart: Share of Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_token_share,Mid-tier,Q3 2025,17,pct,Chart: Share of Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_token_share,Small,Q3 2025,29,pct,Chart + text: Share of Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_token_share,Older models,Q3 2025,20,pct,Chart: Share of Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_token_share,Specialized,Q3 2025,5,pct,Chart: Share of Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_token_share,Open-source,Q3 2025,11,pct,Chart + text: Share of Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_token_share,Frontier,Q3 2026,42,pct,Chart + text: Share of Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_token_share,Mid-tier,Q3 2026,13,pct,Chart: Share of Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_token_share,Small,Q3 2026,13,pct,Chart + text: Share of Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_token_share,Older models,Q3 2026,12,pct,Chart: Share of Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_token_share,Specialized,Q3 2026,1,pct,Chart: unlabelled segment = 100 - other tiers,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,tier_token_share,Open-source,Q3 2026,19,pct,Chart + text: Share of Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,monthly_tokens,Open-source,Sep 2025,0.1,quadrillion,Chart: Monthly Token Volume,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,monthly_tokens,Closed-source,Sep 2025,1.0,quadrillion,Chart: Monthly Token Volume,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,monthly_tokens,Open-source,Sep 2026,2.9,quadrillion,Chart + text: Monthly Token Volume,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,monthly_tokens,Closed-source,Sep 2026,12.3,quadrillion,Chart: Monthly Token Volume (total 15.226),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,price_per_m,Open-source,Sep 2025,0.45,usd,Chart: Average Price Per Million Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,price_per_m,Closed-source,Sep 2025,0.92,usd,Chart: Average Price Per Million Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,price_per_m,Open-source,Sep 2026,0.13,usd,Chart + text: Average Price Per Million Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,price_per_m,Closed-source,Sep 2026,0.70,usd,Chart + text: Average Price Per Million Tokens,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_spend,Coding,2026,34.0,usd_b,Chart: 2026 Application AI Spend (+7.7x),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_spend,Chatbots,2026,25.0,usd_b,Chart: 2026 Application AI Spend (+3.0x),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_spend,Healthcare,2026,3.7,usd_b,Chart: 2026 Application AI Spend (+2.5x),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_spend,Customer success,2026,2.7,usd_b,Chart: 2026 Application AI Spend (+4.3x),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_spend,Legal,2026,1.8,usd_b,Chart: 2026 Application AI Spend (+2.8x),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_spend,IT,2026,1.6,usd_b,Chart: 2026 Application AI Spend (+2.3x),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_spend,Creators,2026,1.5,usd_b,Chart: 2026 Application AI Spend (+5.0x),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_spend,Sales,2026,1.4,usd_b,Chart: 2026 Application AI Spend (+3.6x),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_spend,Marketing,2026,1.2,usd_b,Chart: 2026 Application AI Spend (+1.8x),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_spend,Human resources,2026,0.9,usd_b,Chart: 2026 Application AI Spend (+2.5x),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_spend,Government,2026,0.9,usd_b,Chart: 2026 Application AI Spend (+2.6x),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_spend,Financial services,2026,0.8,usd_b,Chart: 2026 Application AI Spend (+8.0x),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_spend,Design,2026,0.6,usd_b,Chart: 2026 Application AI Spend (new in 2026),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_spend,Other,2026,1.8,usd_b,Chart: 2026 Application AI Spend (+2.5x),https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_growth,Coding,2026,7.7,x,Chart: YoY growth,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_growth,Chatbots,2026,3.0,x,Chart: YoY growth,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_growth,Healthcare,2026,2.5,x,Chart: YoY growth,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_growth,Customer success,2026,4.3,x,Chart: YoY growth,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_growth,Legal,2026,2.8,x,Chart: YoY growth,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_growth,IT,2026,2.3,x,Chart: YoY growth,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_growth,Creators,2026,5.0,x,Chart: YoY growth,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_growth,Sales,2026,3.6,x,Chart: YoY growth,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_growth,Marketing,2026,1.8,x,Chart: YoY growth,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_growth,Human resources,2026,2.5,x,Chart: YoY growth,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_growth,Government,2026,2.6,x,Chart: YoY growth,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_growth,Financial services,2026,8.0,x,Chart: YoY growth,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,app_growth,Other,2026,2.5,x,Chart: YoY growth,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,coding_spend,Claude Code + Codex,2026,24.0,usd_b,Text: Claude Code and Codex account for $24.0B (70%) of coding spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,coding_spend,Rest of coding market,2026,10.1,usd_b,Text: The rest of the market grew 2.9x to $10.1B,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,enterprise_adoption,Enterprises using AI,2025,55,pct,Text: adoption among enterprises rose only from 55% to 65%,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,enterprise_adoption,Enterprises using AI,2026,65,pct,Text: adoption among enterprises rose only from 55% to 65%,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_vs_plan,Average actual (x 2025),2026,4.7,x,Chart + text: reported spending averaged 4.7x last year's level,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_vs_plan,Average planned (x 2025),2026,1.9,x,Chart + text: against a planned 1.9x,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_vs_plan,Median actual (x 2025),2026,2.2,x,Chart + text: median spend reached 2.2x,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,spend_vs_plan,Median planned (x 2025),2026,1.8,x,Chart + text: against a 1.8x expectation,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,funding_source,New budgets,2026,55,pct,Text: new budgets funded 55% of incremental AI spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,funding_source,Software budgets (stayed with incumbents),2026,13,pct,Text: most (13%) stayed with incumbents,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,funding_source,Software budgets (moved to AI-native),2026,9,pct,Text: only 9% ($12.6B) moved to AI-native vendors,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,ai_native_share,Application layer,2025,63,pct,Text: AI-native providers ... up from 63% and 44% last year,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,ai_native_share,Application layer,2026,77,pct,Text: AI-native providers now capture 77% of application-layer spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,ai_native_share,Infrastructure layer,2025,44,pct,Text: up from 63% and 44% last year,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,ai_native_share,Infrastructure layer,2026,90,pct,Text: and 90% of infrastructure-layer spend,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,builder_adoption,Post-training,2025,6,pct,Text + chart: post-training adoption 6% in 2025,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,builder_adoption,Post-training,2026,10,pct,Text + chart: 10% in 2026,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,builder_adoption,Code sandboxes,2025,11,pct,Text: code sandbox adoption jumped from 11% to 40%,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,builder_adoption,Code sandboxes,2026,40,pct,Text: code sandbox adoption jumped from 11% to 40%,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,builder_adoption,Search,2025,5,pct,Text: search from 5% to 30%,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,builder_adoption,Search,2026,30,pct,Text: search from 5% to 30%,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,builder_adoption,Browser infrastructure,2025,4,pct,Text: browser infrastructure from 4% to 14%,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,builder_adoption,Browser infrastructure,2026,14,pct,Text: browser infrastructure from 4% to 14%,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,builder_adoption,Agents,2025,27,pct,Text: compared with 27% of startup deployments in 2025,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/
+2026-11-03,2026 State of Enterprise AI,builder_adoption,Agents,2026,74,pct,Text: 74% of builders use agents,https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/

@@ -1,0 +1,109 @@
+period_start,release,soc_code,major_group,pct,method
+2025-08-04,release_2025_09_15,15,Computer and Mathematical,43.9005,derived from O*NET tasks
+2025-08-04,release_2025_09_15,43,Office and Administrative Support,9.7362,derived from O*NET tasks
+2025-08-04,release_2025_09_15,19,"Life, Physical, and Social Science",7.1111,derived from O*NET tasks
+2025-08-04,release_2025_09_15,27,"Arts, Design, Entertainment, Sports, and Media",5.1972,derived from O*NET tasks
+2025-08-04,release_2025_09_15,25,Educational Instruction and Library,3.6054,derived from O*NET tasks
+2025-08-04,release_2025_09_15,41,Sales and Related,3.5745,derived from O*NET tasks
+2025-08-04,release_2025_09_15,13,Business and Financial Operations,3.3206,derived from O*NET tasks
+2025-08-04,release_2025_09_15,11,Management,2.965,derived from O*NET tasks
+2025-08-04,release_2025_09_15,51,Production,2.0317,derived from O*NET tasks
+2025-08-04,release_2025_09_15,17,Architecture and Engineering,1.9679,derived from O*NET tasks
+2025-08-04,release_2025_09_15,29,Healthcare Practitioners and Technical,1.633,derived from O*NET tasks
+2025-08-04,release_2025_09_15,49,"Installation, Maintenance, and Repair",0.5131,derived from O*NET tasks
+2025-08-04,release_2025_09_15,39,Personal Care and Service,0.3981,derived from O*NET tasks
+2025-08-04,release_2025_09_15,21,Community and Social Service,0.386,derived from O*NET tasks
+2025-08-04,release_2025_09_15,53,Transportation and Material Moving,0.3024,derived from O*NET tasks
+2025-08-04,release_2025_09_15,33,Protective Service,0.2707,derived from O*NET tasks
+2025-08-04,release_2025_09_15,47,Construction and Extraction,0.2695,derived from O*NET tasks
+2025-08-04,release_2025_09_15,23,Legal,0.2173,derived from O*NET tasks
+2025-08-04,release_2025_09_15,31,Healthcare Support,0.1683,derived from O*NET tasks
+2025-08-04,release_2025_09_15,35,Food Preparation and Serving Related,0.11,derived from O*NET tasks
+2025-08-04,release_2025_09_15,45,"Farming, Fishing, and Forestry",0.094,derived from O*NET tasks
+2025-08-04,release_2025_09_15,37,Building and Grounds Cleaning and Maintenance,0.0657,derived from O*NET tasks
+2025-11-13,release_2026_01_15,15,Computer and Mathematical,45.6703,derived from O*NET tasks
+2025-11-13,release_2026_01_15,43,Office and Administrative Support,13.3653,derived from O*NET tasks
+2025-11-13,release_2026_01_15,27,"Arts, Design, Entertainment, Sports, and Media",5.5761,derived from O*NET tasks
+2025-11-13,release_2026_01_15,19,"Life, Physical, and Social Science",4.076,derived from O*NET tasks
+2025-11-13,release_2026_01_15,41,Sales and Related,3.7804,derived from O*NET tasks
+2025-11-13,release_2026_01_15,25,Educational Instruction and Library,3.5995,derived from O*NET tasks
+2025-11-13,release_2026_01_15,13,Business and Financial Operations,3.115,derived from O*NET tasks
+2025-11-13,release_2026_01_15,11,Management,2.9648,derived from O*NET tasks
+2025-11-13,release_2026_01_15,17,Architecture and Engineering,1.2917,derived from O*NET tasks
+2025-11-13,release_2026_01_15,29,Healthcare Practitioners and Technical,1.018,derived from O*NET tasks
+2025-11-13,release_2026_01_15,51,Production,0.9725,derived from O*NET tasks
+2025-11-13,release_2026_01_15,33,Protective Service,0.5406,derived from O*NET tasks
+2025-11-13,release_2026_01_15,21,Community and Social Service,0.4647,derived from O*NET tasks
+2025-11-13,release_2026_01_15,39,Personal Care and Service,0.403,derived from O*NET tasks
+2025-11-13,release_2026_01_15,49,"Installation, Maintenance, and Repair",0.3734,derived from O*NET tasks
+2025-11-13,release_2026_01_15,47,Construction and Extraction,0.2327,derived from O*NET tasks
+2025-11-13,release_2026_01_15,53,Transportation and Material Moving,0.2235,derived from O*NET tasks
+2025-11-13,release_2026_01_15,31,Healthcare Support,0.1665,derived from O*NET tasks
+2025-11-13,release_2026_01_15,23,Legal,0.144,derived from O*NET tasks
+2025-11-13,release_2026_01_15,35,Food Preparation and Serving Related,0.1236,derived from O*NET tasks
+2025-11-13,release_2026_01_15,45,"Farming, Fishing, and Forestry",0.1008,derived from O*NET tasks
+2025-11-13,release_2026_01_15,37,Building and Grounds Cleaning and Maintenance,0.0766,derived from O*NET tasks
+2026-02-05,release_2026_03_24,15,Computer and Mathematical,46.5957,derived from O*NET tasks
+2026-02-05,release_2026_03_24,43,Office and Administrative Support,15.8587,derived from O*NET tasks
+2026-02-05,release_2026_03_24,27,"Arts, Design, Entertainment, Sports, and Media",4.7286,derived from O*NET tasks
+2026-02-05,release_2026_03_24,19,"Life, Physical, and Social Science",3.9819,derived from O*NET tasks
+2026-02-05,release_2026_03_24,41,Sales and Related,3.7204,derived from O*NET tasks
+2026-02-05,release_2026_03_24,13,Business and Financial Operations,3.184,derived from O*NET tasks
+2026-02-05,release_2026_03_24,11,Management,3.0996,derived from O*NET tasks
+2026-02-05,release_2026_03_24,25,Educational Instruction and Library,2.7976,derived from O*NET tasks
+2026-02-05,release_2026_03_24,17,Architecture and Engineering,1.6619,derived from O*NET tasks
+2026-02-05,release_2026_03_24,51,Production,1.0995,derived from O*NET tasks
+2026-02-05,release_2026_03_24,29,Healthcare Practitioners and Technical,0.8988,derived from O*NET tasks
+2026-02-05,release_2026_03_24,33,Protective Service,0.4849,derived from O*NET tasks
+2026-02-05,release_2026_03_24,21,Community and Social Service,0.4497,derived from O*NET tasks
+2026-02-05,release_2026_03_24,49,"Installation, Maintenance, and Repair",0.3499,derived from O*NET tasks
+2026-02-05,release_2026_03_24,39,Personal Care and Service,0.3298,derived from O*NET tasks
+2026-02-05,release_2026_03_24,47,Construction and Extraction,0.277,derived from O*NET tasks
+2026-02-05,release_2026_03_24,53,Transportation and Material Moving,0.1717,derived from O*NET tasks
+2026-02-05,release_2026_03_24,23,Legal,0.1626,derived from O*NET tasks
+2026-02-05,release_2026_03_24,31,Healthcare Support,0.1376,derived from O*NET tasks
+2026-02-05,release_2026_03_24,45,"Farming, Fishing, and Forestry",0.11,derived from O*NET tasks
+2026-02-05,release_2026_03_24,37,Building and Grounds Cleaning and Maintenance,0.0967,derived from O*NET tasks
+2026-02-05,release_2026_03_24,35,Food Preparation and Serving Related,0.0909,derived from O*NET tasks
+2026-04-01,release_2026_06_26,15,Computer and Mathematical,27.27,published
+2026-04-01,release_2026_06_26,27,"Arts, Design, Entertainment, Sports, and Media",12.83,published
+2026-04-01,release_2026_06_26,43,Office and Administrative Support,11.28,published
+2026-04-01,release_2026_06_26,11,Management,6.17,published
+2026-04-01,release_2026_06_26,25,Educational Instruction and Library,5.86,published
+2026-04-01,release_2026_06_26,19,"Life, Physical, and Social Science",4.32,published
+2026-04-01,release_2026_06_26,13,Business and Financial Operations,4.3,published
+2026-04-01,release_2026_06_26,17,Architecture and Engineering,3.96,published
+2026-04-01,release_2026_06_26,41,Sales and Related,3.34,published
+2026-04-01,release_2026_06_26,39,Personal Care and Service,1.72,published
+2026-04-01,release_2026_06_26,33,Protective Service,1.64,published
+2026-04-01,release_2026_06_26,49,"Installation, Maintenance, and Repair",1.06,published
+2026-04-01,release_2026_06_26,21,Community and Social Service,1.06,published
+2026-04-01,release_2026_06_26,29,Healthcare Practitioners and Technical,1.01,published
+2026-04-01,release_2026_06_26,51,Production,0.99,published
+2026-04-01,release_2026_06_26,53,Transportation and Material Moving,0.68,published
+2026-04-01,release_2026_06_26,31,Healthcare Support,0.32,published
+2026-04-01,release_2026_06_26,35,Food Preparation and Serving Related,0.31,published
+2026-04-01,release_2026_06_26,23,Legal,0.28,published
+2026-04-01,release_2026_06_26,47,Construction and Extraction,0.07,published
+2026-05-01,release_2026_06_26,15,Computer and Mathematical,28.17,published
+2026-05-01,release_2026_06_26,27,"Arts, Design, Entertainment, Sports, and Media",12.64,published
+2026-05-01,release_2026_06_26,43,Office and Administrative Support,11.92,published
+2026-05-01,release_2026_06_26,11,Management,6.28,published
+2026-05-01,release_2026_06_26,25,Educational Instruction and Library,6.16,published
+2026-05-01,release_2026_06_26,13,Business and Financial Operations,4.63,published
+2026-05-01,release_2026_06_26,19,"Life, Physical, and Social Science",4.29,published
+2026-05-01,release_2026_06_26,17,Architecture and Engineering,3.97,published
+2026-05-01,release_2026_06_26,41,Sales and Related,3.72,published
+2026-05-01,release_2026_06_26,39,Personal Care and Service,1.95,published
+2026-05-01,release_2026_06_26,33,Protective Service,1.71,published
+2026-05-01,release_2026_06_26,49,"Installation, Maintenance, and Repair",1.1,published
+2026-05-01,release_2026_06_26,51,Production,1.05,published
+2026-05-01,release_2026_06_26,21,Community and Social Service,1.03,published
+2026-05-01,release_2026_06_26,53,Transportation and Material Moving,0.8,published
+2026-05-01,release_2026_06_26,29,Healthcare Practitioners and Technical,0.76,published
+2026-05-01,release_2026_06_26,31,Healthcare Support,0.41,published
+2026-05-01,release_2026_06_26,23,Legal,0.36,published
+2026-05-01,release_2026_06_26,35,Food Preparation and Serving Related,0.36,published
+2026-05-01,release_2026_06_26,45,"Farming, Fishing, and Forestry",0.1,published
+2026-05-01,release_2026_06_26,47,Construction and Extraction,0.08,published
+2026-05-01,release_2026_06_26,37,Building and Grounds Cleaning and Maintenance,0.07,published

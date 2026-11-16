@@ -1,0 +1,734 @@
+period_start,release,level,request,pct
+2025-08-04,release_2025_09_15,detail,Refactor and restructure software code architecture,2.7113
+2025-08-04,release_2025_09_15,detail,Create marketing content and business strategy across industries,2.6962
+2025-08-04,release_2025_09_15,detail,Develop and support specialized business software applications,2.2358
+2025-08-04,release_2025_09_15,detail,Extract and convert document data into structured formats,2.1665
+2025-08-04,release_2025_09_15,detail,Develop cybersecurity protocols and conduct software security audits,2.1633
+2025-08-04,release_2025_09_15,detail,Debug and develop software testing code and infrastructure,1.9805
+2025-08-04,release_2025_09_15,detail,Assist with software development implementation and technical workflows,1.9059
+2025-08-04,release_2025_09_15,detail,Test AI system capabilities across various functional domains,1.8563
+2025-08-04,release_2025_09_15,detail,Configure and develop AI systems and frameworks for technical applications,1.8066
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot financial and payment processing software systems,1.4848
+2025-08-04,release_2025_09_15,detail,Troubleshoot and fix technical software and hardware problems,1.3454
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot database functionality in software applications,1.3279
+2025-08-04,release_2025_09_15,detail,Develop content classification and categorization systems,1.2703
+2025-08-04,release_2025_09_15,detail,Modify and design web interface layouts and styling,1.2566
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot mobile application code and interfaces,1.2451
+2025-08-04,release_2025_09_15,detail,Debug and fix web application UI rendering and styling issues,1.1881
+2025-08-04,release_2025_09_15,detail,"Develop educational content, platforms, and learning resources",1.1558
+2025-08-04,release_2025_09_15,detail,Simulate professional business interactions and recruitment processes,1.1487
+2025-08-04,release_2025_09_15,detail,Assist with software version control and code review tasks,1.1455
+2025-08-04,release_2025_09_15,detail,Create and manage technical documentation for software systems,1.1051
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot software authentication systems,1.0489
+2025-08-04,release_2025_09_15,detail,Draft and manage diverse communication across professional and creative contexts,0.9704
+2025-08-04,release_2025_09_15,detail,"Provide healthcare documentation, clinical advice, and medical technology support",0.9347
+2025-08-04,release_2025_09_15,detail,Translate and format text between languages with specific guidelines,0.9171
+2025-08-04,release_2025_09_15,detail,Debug and resolve software build and compilation errors,0.9026
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot software authentication and access control systems,0.8889
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot audio-visual software systems,0.8867
+2025-08-04,release_2025_09_15,detail,Assist with creative writing and literary content development,0.8802
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot data processing and monitoring systems,0.85
+2025-08-04,release_2025_09_15,detail,Design and develop software UI components and frontend architecture,0.8402
+2025-08-04,release_2025_09_15,detail,Extract and process file paths from command-line operations,0.8288
+2025-08-04,release_2025_09_15,detail,Develop trading strategies and financial market analysis tools,0.8286
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot file system operations in software applications,0.7968
+2025-08-04,release_2025_09_15,detail,Legal document analysis and professional legal advice services,0.7443
+2025-08-04,release_2025_09_15,detail,Develop business process automation and management frameworks,0.7279
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot email notification systems and infrastructure,0.6974
+2025-08-04,release_2025_09_15,detail,Debug and fix TypeScript errors and type safety issues,0.6724
+2025-08-04,release_2025_09_15,detail,"Assist with career development, job applications, and professional advancement",0.6627
+2025-08-04,release_2025_09_15,detail,Video game development and debugging assistance,0.6473
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot data visualization software and dashboards,0.6364
+2025-08-04,release_2025_09_15,detail,"Debug and fix software development errors, especially in web applications",0.6335
+2025-08-04,release_2025_09_15,detail,Transportation logistics and vehicle technology management assistance,0.6019
+2025-08-04,release_2025_09_15,detail,Generate and analyze journalistic content and news articles,0.581
+2025-08-04,release_2025_09_15,detail,Design and develop UI/UX visual elements and digital assets,0.5808
+2025-08-04,release_2025_09_15,detail,Process and transform structured JSON data for analysis and applications,0.5795
+2025-08-04,release_2025_09_15,detail,Design and develop professional business websites and web applications,0.5619
+2025-08-04,release_2025_09_15,detail,Resolve software dependency and package management issues,0.5569
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot web application backend and API systems,0.5516
+2025-08-04,release_2025_09_15,detail,Solve mathematical problems and develop scientific simulation tools,0.5403
+2025-08-04,release_2025_09_15,detail,Fix code errors and implement software monitoring systems,0.533
+2025-08-04,release_2025_09_15,detail,Debug and optimize computational algorithms and scientific code,0.5277
+2025-08-04,release_2025_09_15,detail,Develop automated software testing for UI and authentication,0.5217
+2025-08-04,release_2025_09_15,detail,Implement and troubleshoot software search functionality,0.5078
+2025-08-04,release_2025_09_15,detail,Create and optimize digital marketing strategies for business growth,0.4875
+2025-08-04,release_2025_09_15,detail,Develop web scraping tools for data extraction and analysis,0.4789
+2025-08-04,release_2025_09_15,detail,Develop and evaluate computer vision and image analysis systems,0.4716
+2025-08-04,release_2025_09_15,detail,Troubleshoot and optimize predictive modeling and ML systems,0.4676
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot API endpoints and GraphQL services,0.4658
+2025-08-04,release_2025_09_15,detail,Optimize and debug software performance and concurrency issues,0.4655
+2025-08-04,release_2025_09_15,detail,Evaluate content and prospects using assessment rubrics and frameworks,0.4636
+2025-08-04,release_2025_09_15,detail,Find and manage real estate property listings and rentals,0.4388
+2025-08-04,release_2025_09_15,detail,Fix and develop web form validation and submission code,0.4373
+2025-08-04,release_2025_09_15,detail,Extract and analyze financial document data for reporting,0.4339
+2025-08-04,release_2025_09_15,detail,Troubleshoot and develop network connectivity and management systems,0.4295
+2025-08-04,release_2025_09_15,detail,Configure and manage cloud infrastructure deployments,0.424
+2025-08-04,release_2025_09_15,detail,Provide mental health and crisis support,0.4209
+2025-08-04,release_2025_09_15,detail,Develop productivity and time management software applications,0.3899
+2025-08-04,release_2025_09_15,detail,Develop business analytics systems and database queries,0.3569
+2025-08-04,release_2025_09_15,detail,Docker and Kubernetes containerization configuration and troubleshooting,0.3464
+2025-08-04,release_2025_09_15,detail,Develop sustainable technology for renewable energy and agriculture,0.336
+2025-08-04,release_2025_09_15,detail,Configure and evaluate AI customer support automation systems,0.3279
+2025-08-04,release_2025_09_15,detail,Assist with web application deployment and server troubleshooting,0.3123
+2025-08-04,release_2025_09_15,detail,Process personal identification data and professional contact information,0.3059
+2025-08-04,release_2025_09_15,detail,Troubleshoot and develop software job scheduling and message queue systems,0.3028
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot real-time chat communication systems,0.2893
+2025-08-04,release_2025_09_15,detail,Debug and develop image processing code for web applications,0.2695
+2025-08-04,release_2025_09_15,detail,Implement and troubleshoot web application data components,0.2649
+2025-08-04,release_2025_09_15,detail,Develop blockchain and cryptocurrency software systems,0.2557
+2025-08-04,release_2025_09_15,detail,Debug and develop web UI interactions and animations,0.2493
+2025-08-04,release_2025_09_15,detail,Guide software internationalization and localization implementation,0.2441
+2025-08-04,release_2025_09_15,detail,Generate travel itineraries and develop AI travel planning systems,0.2344
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot geospatial mapping software,0.2326
+2025-08-04,release_2025_09_15,detail,Extract text from images using OCR technology,0.2255
+2025-08-04,release_2025_09_15,detail,Develop computational food systems for recipe and nutrition analysis,0.2035
+2025-08-04,release_2025_09_15,detail,Configure and troubleshoot software development environments,0.2002
+2025-08-04,release_2025_09_15,detail,Fix responsive website design for mobile compatibility,0.1385
+2025-08-04,release_2025_09_15,detail,Develop and debug social media platform code,0.1304
+2025-08-04,release_2025_09_15,detail,Develop and troubleshoot browser extensions and web automation,0.1259
+2025-08-04,release_2025_09_15,detail,Implement and troubleshoot software analytics tracking systems,0.1235
+2025-08-04,release_2025_09_15,detail,Website analysis for content classification and security assessment,0.1077
+2025-08-04,release_2025_09_15,detail,Provide automotive information and vehicle management assistance,0.1063
+2025-08-04,release_2025_09_15,detail,Configure and troubleshoot SSL/TLS certificates for secure communications,0.0589
+2025-08-04,release_2025_09_15,top,Resolve software development technical issues and workflow problems,6.0565
+2025-08-04,release_2025_09_15,top,Debug and develop web application frontend code and components,6.0449
+2025-08-04,release_2025_09_15,top,Develop and manage professional business software and service systems,5.2449
+2025-08-04,release_2025_09_15,top,"Develop, configure and evaluate AI systems across domains",5.1643
+2025-08-04,release_2025_09_15,top,Software development troubleshooting and optimization assistance,4.9237
+2025-08-04,release_2025_09_15,top,"Create professional marketing, business, and journalistic content",4.735
+2025-08-04,release_2025_09_15,top,Develop and troubleshoot data extraction and analytics systems,4.4429
+2025-08-04,release_2025_09_15,top,Develop data extraction and conversion tools for multiple sources,2.8709
+2025-08-04,release_2025_09_15,top,Develop and debug automated software testing infrastructure,2.5022
+2025-08-04,release_2025_09_15,top,Web security assessment and digital communications protection,2.3298
+2025-08-04,release_2025_09_15,top,Develop financial software and trading analysis tools,2.3134
+2025-08-04,release_2025_09_15,top,Develop and troubleshoot software authentication and access control systems,1.9378
+2025-08-04,release_2025_09_15,top,Process and evaluate professional business and recruitment data,1.9182
+2025-08-04,release_2025_09_15,top,Design and develop web interface UI/UX elements,1.8373
+2025-08-04,release_2025_09_15,top,Implement and troubleshoot software database and search functionality,1.8357
+2025-08-04,release_2025_09_15,top,Generate and manage technical documentation and terminology,1.7027
+2025-08-04,release_2025_09_15,top,Develop computational tools for scientific and sustainability applications,1.6075
+2025-08-04,release_2025_09_15,top,Provide medical and mental health support,1.3557
+2025-08-04,release_2025_09_15,top,Mobile app development and code troubleshooting,1.2451
+2025-08-04,release_2025_09_15,top,Provide language translation and software localization assistance,1.1612
+2025-08-04,release_2025_09_15,top,Develop educational content and learning platforms,1.1558
+2025-08-04,release_2025_09_15,top,Develop and troubleshoot IT infrastructure systems,1.1269
+2025-08-04,release_2025_09_15,top,Assist with cloud infrastructure and containerization deployment,1.0826
+2025-08-04,release_2025_09_15,top,Develop and troubleshoot backend web APIs and services,1.0174
+2025-08-04,release_2025_09_15,top,Develop and troubleshoot audio-visual software systems,0.8867
+2025-08-04,release_2025_09_15,top,Support for creative writing and literary content creation,0.8802
+2025-08-04,release_2025_09_15,top,Assist with job applications and career advancement,0.6627
+2025-08-04,release_2025_09_15,top,Develop and troubleshoot data visualization software and dashboards,0.6364
+2025-08-04,release_2025_09_15,top,Develop and troubleshoot real-time chat applications,0.2893
+2025-08-04,release_2025_09_15,top,Develop blockchain and cryptocurrency software,0.2557
+2025-08-04,release_2025_09_15,top,Develop and troubleshoot geospatial mapping software,0.2326
+2025-11-13,release_2026_01_15,detail,Debug and fix technical issues in web/mobile application codebases,3.492
+2025-11-13,release_2026_01_15,detail,Extract and convert unstructured data into structured JSON/HTML formats,2.2039
+2025-11-13,release_2026_01_15,detail,"Write, debug, and fix automated software tests and testing infrastructure",2.1021
+2025-11-13,release_2026_01_15,detail,Develop and manage industry-specific business software and operational systems,2.0205
+2025-11-13,release_2026_01_15,detail,Develop full-stack web applications and software systems with custom features,1.9099
+2025-11-13,release_2026_01_15,detail,Develop and test AI conversational systems and chatbot applications,1.7584
+2025-11-13,release_2026_01_15,detail,"Refactor, debug, and restructure software code and project architecture",1.5145
+2025-11-13,release_2026_01_15,detail,"Support B2B sales processes, lead generation, and startup fundraising activities",1.3815
+2025-11-13,release_2026_01_15,detail,Debug and develop multimedia software applications and processing systems,1.2332
+2025-11-13,release_2026_01_15,detail,Generate and optimize marketing content for commercial campaigns and e-commerce,1.2291
+2025-11-13,release_2026_01_15,detail,"Modify and implement web application UI components, styling, and layouts",1.2189
+2025-11-13,release_2026_01_15,detail,Debug and fix frontend UI bugs in web and mobile applications,1.194
+2025-11-13,release_2026_01_15,detail,"Create and refine professional documents, presentations, and written communications",1.0724
+2025-11-13,release_2026_01_15,detail,Automate code reviews and fix quality issues in pull requests,1.0683
+2025-11-13,release_2026_01_15,detail,"Develop and debug authentication, authorization, and security systems",1.0393
+2025-11-13,release_2026_01_15,detail,Provide academic tutoring and educational support across multiple subjects,1.0043
+2025-11-13,release_2026_01_15,detail,Initialize code search assistant for codebase exploration,0.9743
+2025-11-13,release_2026_01_15,detail,Extract and structure financial data from documents into standardized formats,0.9734
+2025-11-13,release_2026_01_15,detail,"Create educational, religious, creative writing, and wellness content",0.9468
+2025-11-13,release_2026_01_15,detail,Develop and debug mobile applications with full-stack features,0.8912
+2025-11-13,release_2026_01_15,detail,Create and optimize AI-powered digital marketing content and campaigns,0.8898
+2025-11-13,release_2026_01_15,detail,Process and analyze medical records and clinical healthcare data,0.8363
+2025-11-13,release_2026_01_15,detail,"Analyze social media for sentiment, toxicity, and misinformation",0.8089
+2025-11-13,release_2026_01_15,detail,"Develop, operate, and troubleshoot e-commerce websites and business systems",0.7988
+2025-11-13,release_2026_01_15,detail,Debug and fix messaging and communication system issues,0.7825
+2025-11-13,release_2026_01_15,detail,"Assist with SQL database queries, debugging, optimization, and development",0.776
+2025-11-13,release_2026_01_15,detail,Conduct business research and generate intelligence reports across industries,0.7719
+2025-11-13,release_2026_01_15,detail,"Debug and configure cloud infrastructure, storage systems, and development tooling",0.7386
+2025-11-13,release_2026_01_15,detail,Automate recruitment processes and candidate evaluation systems,0.7035
+2025-11-13,release_2026_01_15,detail,"Develop and maintain gaming software, RPGs, and gambling applications",0.6979
+2025-11-13,release_2026_01_15,detail,"Assist with academic research, data analysis, and scientific computing tasks",0.6914
+2025-11-13,release_2026_01_15,detail,"Assist with software development, AI agent systems, and project management",0.6887
+2025-11-13,release_2026_01_15,detail,Translate text between languages and evaluate translation quality,0.658
+2025-11-13,release_2026_01_15,detail,Develop and debug automated financial trading bots and signal systems,0.6558
+2025-11-13,release_2026_01_15,detail,Develop and maintain database code and architecture,0.6277
+2025-11-13,release_2026_01_15,detail,Develop financial technology applications and investment analysis tools,0.5945
+2025-11-13,release_2026_01_15,detail,Debug and develop command-line tools and parsing systems,0.5844
+2025-11-13,release_2026_01_15,detail,Develop travel booking systems and plan hospitality accommodations,0.5587
+2025-11-13,release_2026_01_15,detail,Develop and debug industrial automation and embedded systems software,0.549
+2025-11-13,release_2026_01_15,detail,Extract and structure news and social media data for analysis,0.533
+2025-11-13,release_2026_01_15,detail,"Design, build, and debug workflow automation and AI agent systems",0.5329
+2025-11-13,release_2026_01_15,detail,Develop and optimize AI/ML models and NLP systems,0.5302
+2025-11-13,release_2026_01_15,detail,Develop CRM systems and automate business workflow processes,0.5282
+2025-11-13,release_2026_01_15,detail,Execute git version control commands and manage software repositories,0.5234
+2025-11-13,release_2026_01_15,detail,Debug and troubleshoot software errors and infrastructure issues,0.5029
+2025-11-13,release_2026_01_15,detail,"Create, debug, and configure data visualizations and dashboard applications",0.4642
+2025-11-13,release_2026_01_15,detail,Develop real estate CRM software and automate property management operations,0.4599
+2025-11-13,release_2026_01_15,detail,Debug machine learning code and scientific computing libraries,0.455
+2025-11-13,release_2026_01_15,detail,Automate appointment scheduling and calendar management across multiple contexts,0.4378
+2025-11-13,release_2026_01_15,detail,"Analyze, extract, and structure legal documents and provide legal research",0.4227
+2025-11-13,release_2026_01_15,detail,"Analyze codebases and develop parsers, interpreters, and development tools",0.4212
+2025-11-13,release_2026_01_15,detail,"Debug and optimize software performance, memory, and application issues",0.4183
+2025-11-13,release_2026_01_15,detail,Conduct automated security audits and vulnerability analysis of code repositories,0.4095
+2025-11-13,release_2026_01_15,detail,"Provide customer support across payment, telecom, and retail service functions",0.4054
+2025-11-13,release_2026_01_15,detail,Deploy web applications and build CI/CD pipeline infrastructure,0.4005
+2025-11-13,release_2026_01_15,detail,Evaluate code quality and test web application security,0.3923
+2025-11-13,release_2026_01_15,detail,Analyze business and marketing analytics data for strategic insights,0.3842
+2025-11-13,release_2026_01_15,detail,Debug and configure containerized applications and orchestration deployments,0.369
+2025-11-13,release_2026_01_15,detail,Develop and test healthcare and mental health AI software systems,0.3666
+2025-11-13,release_2026_01_15,detail,Review and evaluate code changes in pull requests,0.365
+2025-11-13,release_2026_01_15,detail,Develop payment processing and authentication systems for web applications,0.3608
+2025-11-13,release_2026_01_15,detail,"Implement and debug monitoring, logging, and observability infrastructure",0.3371
+2025-11-13,release_2026_01_15,detail,Configure and troubleshoot network infrastructure and communication systems,0.3264
+2025-11-13,release_2026_01_15,detail,"Assist with cybersecurity operations, threat analysis, and compliance management",0.3137
+2025-11-13,release_2026_01_15,detail,Help with spreadsheet automation,0.3116
+2025-11-13,release_2026_01_15,detail,Debug and improve technical documentation and rendering systems,0.3046
+2025-11-13,release_2026_01_15,detail,Develop automotive business operations and transportation booking software,0.2985
+2025-11-13,release_2026_01_15,detail,Debug and implement validation code for business and web applications,0.297
+2025-11-13,release_2026_01_15,detail,Build web scrapers to extract and analyze product pricing data,0.2926
+2025-11-13,release_2026_01_15,detail,Debug data pipeline ETL and Python data analysis issues,0.2399
+2025-11-13,release_2026_01_15,detail,Extract and structure data from insurance policy documents,0.239
+2025-11-13,release_2026_01_15,detail,Process and extract information from business and legal documents,0.2387
+2025-11-13,release_2026_01_15,detail,Develop fitness applications and process sports performance content,0.1736
+2025-11-13,release_2026_01_15,detail,Develop and debug location-based web application features,0.1687
+2025-11-13,release_2026_01_15,detail,Debug and fix payment processing system integration and transaction errors,0.1623
+2025-11-13,release_2026_01_15,detail,Develop and use AI systems for tax document processing and consultation,0.1458
+2025-11-13,release_2026_01_15,detail,Execute file operations and shell commands through terminal automation,0.1409
+2025-11-13,release_2026_01_15,detail,Build and manage subscription billing and membership systems,0.1149
+2025-11-13,release_2026_01_15,detail,Remove unused and deprecated code from software codebases,0.1101
+2025-11-13,release_2026_01_15,detail,Process environmental and ESG data and conduct sustainability research,0.1095
+2025-11-13,release_2026_01_15,detail,"Develop and debug blockchain applications, smart contracts, and cryptocurrency infrastructure",0.1052
+2025-11-13,release_2026_01_15,detail,Develop and debug image/video processing and computer vision software,0.1004
+2025-11-13,release_2026_01_15,detail,Identify frequently-modified core application files from version control history,0.0891
+2025-11-13,release_2026_01_15,detail,Debug and implement GraphQL APIs and graph data structure code,0.0569
+2025-11-13,release_2026_01_15,top,"Debug and develop web, mobile, and full-stack software applications",11.4646
+2025-11-13,release_2026_01_15,top,"Extract and structure data from documents, web sources, and command outputs",7.8072
+2025-11-13,release_2026_01_15,top,Automate and improve software development workflows and code quality,5.8651
+2025-11-13,release_2026_01_15,top,Analyze codebases and perform git version control operations,4.9401
+2025-11-13,release_2026_01_15,top,"Develop, debug, and optimize AI/ML systems and applications",4.4321
+2025-11-13,release_2026_01_15,top,"Automate business operations, CRM systems, and workflow processes",3.511
+2025-11-13,release_2026_01_15,top,Develop and maintain specialized software across multiple industry applications,3.4411
+2025-11-13,release_2026_01_15,top,"Debug and configure infrastructure, networks, and cloud systems",3.1974
+2025-11-13,release_2026_01_15,top,Provide academic support and create educational and wellness content,2.6424
+2025-11-13,release_2026_01_15,top,Generate and optimize AI-powered marketing content for commercial campaigns,2.1189
+2025-11-13,release_2026_01_15,top,"Help with database development, SQL queries, data pipelines, and visualization dashboards",2.1078
+2025-11-13,release_2026_01_15,top,"Assist with professional writing, spreadsheet automation, and translation tasks",2.042
+2025-11-13,release_2026_01_15,top,"Develop and debug authentication, security, and payment processing systems",1.5624
+2025-11-13,release_2026_01_15,top,Conduct security testing and vulnerability analysis of systems and code,1.5303
+2025-11-13,release_2026_01_15,top,"Process and analyze specialized professional data across environmental, legal, and healthcare domains",1.3686
+2025-11-13,release_2026_01_15,top,"Develop and debug fintech, trading bots, and blockchain applications",1.3555
+2025-11-13,release_2026_01_15,top,Conduct business research and analyze data for strategic insights,1.1561
+2025-11-13,release_2026_01_15,top,Develop and manage e-commerce and subscription business systems,0.9137
+2025-11-13,release_2026_01_15,top,"Develop booking systems for travel, transportation, and hospitality services",0.8572
+2025-11-13,release_2026_01_15,top,"Analyze social media for sentiment, toxicity, and misinformation",0.8089
+2025-11-13,release_2026_01_15,top,"Provide customer support across payment, telecom, and retail service functions",0.4054
+2026-02-05,release_2026_03_24,detail,Develop chatbots and train AI to display compressed first-person reasoning,4.2675
+2026-02-05,release_2026_03_24,detail,"Develop, debug, and customize web applications and website features",3.9227
+2026-02-05,release_2026_03_24,detail,Develop and maintain business software applications across multiple industries,2.7079
+2026-02-05,release_2026_03_24,detail,"Refactor, debug, and restructure existing software codebases",2.3909
+2026-02-05,release_2026_03_24,detail,"Generate and optimize marketing, advertising, and promotional content across media formats",2.246
+2026-02-05,release_2026_03_24,detail,"Develop, deploy, and troubleshoot AI and machine learning systems",2.2355
+2026-02-05,release_2026_03_24,detail,Provide comprehensive academic assistance and educational content creation across multiple subjects,2.0619
+2026-02-05,release_2026_03_24,detail,"Automate B2B sales prospecting, lead qualification, and cold outreach campaigns",2.0304
+2026-02-05,release_2026_03_24,detail,"Debug and troubleshoot cloud infrastructure, DevOps pipelines, and system configuration",1.904
+2026-02-05,release_2026_03_24,detail,"Create, debug, and improve automated software tests and testing infrastructure",1.8565
+2026-02-05,release_2026_03_24,detail,Debug and fix technical issues in web and software applications,1.7187
+2026-02-05,release_2026_03_24,detail,Configure and manage autonomous AI agent workflow automation systems,1.6507
+2026-02-05,release_2026_03_24,detail,Develop automated trading bots and prediction systems for financial markets,1.6207
+2026-02-05,release_2026_03_24,detail,"Edit, rewrite, and condense diverse documents and AI reasoning outputs",1.614
+2026-02-05,release_2026_03_24,detail,Conduct code reviews and configure code quality tools,1.5172
+2026-02-05,release_2026_03_24,detail,"Develop and debug multimedia applications including games, streaming, audio, and voice systems",1.4387
+2026-02-05,release_2026_03_24,detail,Extract and convert unstructured data into structured JSON/HTML formats,1.3314
+2026-02-05,release_2026_03_24,detail,"Assist with SQL queries, database design, optimization, and data management",1.2763
+2026-02-05,release_2026_03_24,detail,"Implement and troubleshoot monitoring, observability, and alerting systems",1.2681
+2026-02-05,release_2026_03_24,detail,Implement and debug authentication and authorization systems for web applications,1.2022
+2026-02-05,release_2026_03_24,detail,Analyze business data and manage marketing analytics across multiple sources,1.1365
+2026-02-05,release_2026_03_24,detail,"Automate and develop CRM, email, spreadsheet, and task management business systems",1.0386
+2026-02-05,release_2026_03_24,detail,Create and manage technical and business documentation,1.0248
+2026-02-05,release_2026_03_24,detail,Automate document classification and email organization systems,0.9903
+2026-02-05,release_2026_03_24,detail,Evaluate and assess content quality against rubrics and standards,0.9694
+2026-02-05,release_2026_03_24,detail,"Assist with cybersecurity operations, threat detection, and infrastructure security tasks",0.9462
+2026-02-05,release_2026_03_24,detail,Provide comprehensive business consulting and strategic management assistance,0.9184
+2026-02-05,release_2026_03_24,detail,Extract and standardize financial data from banking and invoice documents,0.8697
+2026-02-05,release_2026_03_24,detail,Extract structured data and file paths from technical text,0.865
+2026-02-05,release_2026_03_24,detail,Process and analyze medical data from clinical documents and research,0.8365
+2026-02-05,release_2026_03_24,detail,"Extract and analyze text, objects, and content from images and documents",0.8124
+2026-02-05,release_2026_03_24,detail,Draft and manage business correspondence and meeting documentation,0.8049
+2026-02-05,release_2026_03_24,detail,Debug and develop mobile and web applications with coding assistance,0.7808
+2026-02-05,release_2026_03_24,detail,"Extract and structure data from business, legal, and government documents",0.776
+2026-02-05,release_2026_03_24,detail,"Debug and implement backend APIs, integrations, and networking systems",0.7563
+2026-02-05,release_2026_03_24,detail,"Manage appointments, scheduling, and calendar automation systems",0.7263
+2026-02-05,release_2026_03_24,detail,Develop and optimize e-commerce websites and product operations,0.7248
+2026-02-05,release_2026_03_24,detail,Conduct security vulnerability analysis and code reviews of software,0.6698
+2026-02-05,release_2026_03_24,detail,Manage git version control operations and repository workflows,0.6546
+2026-02-05,release_2026_03_24,detail,"Debug and optimize software systems, applications, and performance issues",0.6516
+2026-02-05,release_2026_03_24,detail,Troubleshoot and manage Kubernetes containerized applications and learn container orchestration,0.6441
+2026-02-05,release_2026_03_24,detail,"Assist with real estate business operations, analysis, and document processing",0.5729
+2026-02-05,release_2026_03_24,detail,Develop travel booking systems and plan trips with accommodation research,0.546
+2026-02-05,release_2026_03_24,detail,Perform file system operations and command-line automation tasks,0.539
+2026-02-05,release_2026_03_24,detail,Develop healthcare and fitness software applications and systems,0.5278
+2026-02-05,release_2026_03_24,detail,"Analyze text content for sentiment, toxicity, and safety moderation",0.5194
+2026-02-05,release_2026_03_24,detail,Assist with academic research across scientific disciplines and citation management,0.4994
+2026-02-05,release_2026_03_24,detail,Conduct corporate research and financial analysis for specific companies,0.4778
+2026-02-05,release_2026_03_24,detail,"Develop and debug blockchain, cryptocurrency, and AI agent applications",0.4111
+2026-02-05,release_2026_03_24,detail,Build AI tools for social media platform management,0.4025
+2026-02-05,release_2026_03_24,detail,Provide financial information on investments and personal finance,0.3668
+2026-02-05,release_2026_03_24,detail,"Explain programming concepts, languages, and software engineering practices",0.3604
+2026-02-05,release_2026_03_24,detail,Debug and fix software bugs in code,0.3557
+2026-02-05,release_2026_03_24,detail,Develop and implement backend payment processing and financial transaction systems,0.3412
+2026-02-05,release_2026_03_24,detail,Assist with legal practice tasks including contract review and litigation workflows,0.3261
+2026-02-05,release_2026_03_24,detail,Search and extract code patterns and file paths from codebases,0.3251
+2026-02-05,release_2026_03_24,detail,Initialize read-only AI coding assistants for codebase exploration,0.3162
+2026-02-05,release_2026_03_24,detail,Develop transportation booking software and automotive dealership business operations,0.3065
+2026-02-05,release_2026_03_24,detail,"Provide customer support for payments, billing, and general retail service",0.2706
+2026-02-05,release_2026_03_24,detail,"Develop code for 3D modeling, CAD, and engineering design applications",0.2478
+2026-02-05,release_2026_03_24,detail,Build and debug subscription billing and membership management systems,0.2187
+2026-02-05,release_2026_03_24,detail,Translate diverse content types between languages with specific style guidelines,0.2177
+2026-02-05,release_2026_03_24,detail,Solve mathematics problems and evaluate student work,0.2049
+2026-02-05,release_2026_03_24,detail,Translate text and evaluate translation quality with formatting,0.1925
+2026-02-05,release_2026_03_24,detail,Create and debug web scraping scripts to extract data from websites,0.1892
+2026-02-05,release_2026_03_24,detail,Identify frequently-modified core application files from version control history,0.176
+2026-02-05,release_2026_03_24,detail,Configure and troubleshoot WiFi networks and smart home devices,0.1617
+2026-02-05,release_2026_03_24,detail,Extract and structure data from insurance policy documents,0.1573
+2026-02-05,release_2026_03_24,detail,Assist with academic work relating to mental health clinical documentation and psychology,0.1554
+2026-02-05,release_2026_03_24,detail,Debug and manage local file system and directory operations,0.1534
+2026-02-05,release_2026_03_24,detail,"Create and configure data visualizations, charts, and interactive graphs",0.1461
+2026-02-05,release_2026_03_24,detail,Provide shopping advice for technology products and book-related assistance,0.1339
+2026-02-05,release_2026_03_24,detail,Assist with grading student work and create assessment systems,0.1301
+2026-02-05,release_2026_03_24,detail,Develop and use AI systems for tax document processing and consultation,0.1269
+2026-02-05,release_2026_03_24,detail,"Debug, create, modify, and optimize shell and automation scripts",0.1153
+2026-02-05,release_2026_03_24,detail,Navigate and filter code repositories to locate and analyze files,0.0918
+2026-02-05,release_2026_03_24,detail,Remove unused and deprecated code from software codebases,0.0899
+2026-02-05,release_2026_03_24,detail,Configure and troubleshoot AI coding assistant permissions and access,0.0632
+2026-02-05,release_2026_03_24,detail,"Implement, debug, and manage feature flag systems in software",0.0539
+2026-02-05,release_2026_03_24,top,"Assist with software development, debugging, and code management tasks",15.5227
+2026-02-05,release_2026_03_24,top,"Develop, deploy, and troubleshoot AI and machine learning systems",14.7289
+2026-02-05,release_2026_03_24,top,"Extract and structure data from websites, documents, images, and code",9.5924
+2026-02-05,release_2026_03_24,top,Automate business operations and develop enterprise software systems,6.5177
+2026-02-05,release_2026_03_24,top,"Assist with IT infrastructure, DevOps, and system administration tasks",5.5263
+2026-02-05,release_2026_03_24,top,"Develop, debug, and customize web applications and website features",3.9227
+2026-02-05,release_2026_03_24,top,"Provide academic assistance for teaching, grading, research, and clinical documentation",3.0517
+2026-02-05,release_2026_03_24,top,Create marketing content and AI tools for social media management,2.6485
+2026-02-05,release_2026_03_24,top,"Provide business consulting, corporate research, and data analytics services",2.5327
+2026-02-05,release_2026_03_24,top,Build cryptocurrency trading bots and blockchain AI applications,2.0318
+2026-02-05,release_2026_03_24,top,"Translate, edit, and rewrite text across languages with quality control",2.0242
+2026-02-05,release_2026_03_24,top,Draft and manage business correspondence and technical documentation,1.8297
+2026-02-05,release_2026_03_24,top,Build backend systems for payments and user authentication,1.5434
+2026-02-05,release_2026_03_24,top,"Develop web-based business platforms for subscriptions, e-commerce, and travel booking",1.4895
+2026-02-05,release_2026_03_24,top,"Develop and debug multimedia applications including games, streaming, audio, and voice systems",1.4387
+2026-02-05,release_2026_03_24,top,Assist with database management and data visualization tasks,1.4224
+2026-02-05,release_2026_03_24,top,Analyze software security vulnerabilities and test injection detection,1.054
+2026-02-05,release_2026_03_24,top,"Analyze text content for sentiment, toxicity, and safety moderation",0.5194
+2026-02-05,release_2026_03_24,top,"Provide information on finance, technology shopping, and books",0.5007
+2026-02-05,release_2026_03_24,top,Assist with legal practice tasks including contract review and litigation workflows,0.3261
+2026-02-05,release_2026_03_24,top,"Provide customer support for payments, billing, and retail service",0.2706
+2026-04-01,release_2026_06_26,detail,Business operations,9.68
+2026-04-01,release_2026_06_26,detail,Structured extraction,6.04
+2026-04-01,release_2026_06_26,detail,Automated pipelines,3.86
+2026-04-01,release_2026_06_26,detail,Web front-end,3.51
+2026-04-01,release_2026_06_26,detail,Taxonomy tagging,3.24
+2026-04-01,release_2026_06_26,detail,Prompt engineering,3.2
+2026-04-01,release_2026_06_26,detail,Customer support and service,3.02
+2026-04-01,release_2026_06_26,detail,Company and deal research,2.71
+2026-04-01,release_2026_06_26,detail,Promotional writing,2.47
+2026-04-01,release_2026_06_26,detail,Quant trading,2.08
+2026-04-01,release_2026_06_26,detail,Code design,2.05
+2026-04-01,release_2026_06_26,detail,Git workflow,1.5
+2026-04-01,release_2026_06_26,detail,Data analysis,1.39
+2026-04-01,release_2026_06_26,detail,Server infrastructure,1.34
+2026-04-01,release_2026_06_26,detail,Conversation and meeting intelligence,1.34
+2026-04-01,release_2026_06_26,detail,AI agent design,1.29
+2026-04-01,release_2026_06_26,detail,Homework,1.29
+2026-04-01,release_2026_06_26,detail,Empty inputs,1.19
+2026-04-01,release_2026_06_26,detail,Test writing and running,1.15
+2026-04-01,release_2026_06_26,detail,API debugging,1.13
+2026-04-01,release_2026_06_26,detail,Starting a business,1.13
+2026-04-01,release_2026_06_26,detail,CRM,1.12
+2026-04-01,release_2026_06_26,detail,AI app building,1.1
+2026-04-01,release_2026_06_26,detail,Summarizing,1.1
+2026-04-01,release_2026_06_26,detail,AI image generation,1.01
+2026-04-01,release_2026_06_26,detail,Translation,0.98
+2026-04-01,release_2026_06_26,detail,Gaming,0.95
+2026-04-01,release_2026_06_26,detail,Entity detection,0.9
+2026-04-01,release_2026_06_26,detail,Formatted writing,0.88
+2026-04-01,release_2026_06_26,detail,Quality scoring,0.86
+2026-04-01,release_2026_06_26,detail,Companionship and conversation,0.75
+2026-04-01,release_2026_06_26,detail,Backend architecture,0.73
+2026-04-01,release_2026_06_26,detail,Software development — other,0.7
+2026-04-01,release_2026_06_26,detail,Software how-to,0.67
+2026-04-01,release_2026_06_26,detail,Research and evidence,0.64
+2026-04-01,release_2026_06_26,detail,Harm screening,0.6
+2026-04-01,release_2026_06_26,detail,Hobbies and lifestyle — other,0.57
+2026-04-01,release_2026_06_26,detail,Business compliance,0.57
+2026-04-01,release_2026_06_26,detail,Instructional design,0.53
+2026-04-01,release_2026_06_26,detail,Threat detection,0.51
+2026-04-01,release_2026_06_26,detail,Math and CS theory,0.48
+2026-04-01,release_2026_06_26,detail,Shell and systems code,0.46
+2026-04-01,release_2026_06_26,detail,Booking and scheduling,0.46
+2026-04-01,release_2026_06_26,detail,Buying and investing,0.46
+2026-04-01,release_2026_06_26,detail,AI self-knowledge,0.45
+2026-04-01,release_2026_06_26,detail,Editing and rewriting,0.44
+2026-04-01,release_2026_06_26,detail,Emotional Wellbeing and Support,0.44
+2026-04-01,release_2026_06_26,detail,Slide decks,0.42
+2026-04-01,release_2026_06_26,detail,Image reading,0.41
+2026-04-01,release_2026_06_26,detail,Industry and sector knowledge,0.37
+2026-04-01,release_2026_06_26,detail,Scoring and rating,0.37
+2026-04-01,release_2026_06_26,detail,Document transformation,0.37
+2026-04-01,release_2026_06_26,detail,Consistency checking,0.36
+2026-04-01,release_2026_06_26,detail,Offensive security,0.34
+2026-04-01,release_2026_06_26,detail,Debugging,0.33
+2026-04-01,release_2026_06_26,detail,Publishing and announcements,0.33
+2026-04-01,release_2026_06_26,detail,Reference documentation,0.33
+2026-04-01,release_2026_06_26,detail,Workplace writing,0.31
+2026-04-01,release_2026_06_26,detail,Reference and fact-finding,0.31
+2026-04-01,release_2026_06_26,detail,Trend tracking,0.3
+2026-04-01,release_2026_06_26,detail,Financial modeling,0.3
+2026-04-01,release_2026_06_26,detail,ML and data science,0.29
+2026-04-01,release_2026_06_26,detail,UI and layout review,0.28
+2026-04-01,release_2026_06_26,detail,AI evaluation and risk,0.27
+2026-04-01,release_2026_06_26,detail,Dashboards and charts,0.26
+2026-04-01,release_2026_06_26,detail,Fiction writing,0.26
+2026-04-01,release_2026_06_26,detail,Business process and operations — other,0.25
+2026-04-01,release_2026_06_26,detail,Auditing Content,0.23
+2026-04-01,release_2026_06_26,detail,Finding the best price,0.22
+2026-04-01,release_2026_06_26,detail,Self-presentation writing,0.22
+2026-04-01,release_2026_06_26,detail,Sales outreach writing,0.22
+2026-04-01,release_2026_06_26,detail,Code security review,0.21
+2026-04-01,release_2026_06_26,detail,Data storage,0.21
+2026-04-01,release_2026_06_26,detail,Niche publishing,0.19
+2026-04-01,release_2026_06_26,detail,Alert routing,0.19
+2026-04-01,release_2026_06_26,detail,Login and permissions,0.18
+2026-04-01,release_2026_06_26,detail,Account and billing,0.18
+2026-04-01,release_2026_06_26,detail,Personal records,0.16
+2026-04-01,release_2026_06_26,detail,Language and linguistics,0.16
+2026-04-01,release_2026_06_26,detail,Entitlements and rules,0.16
+2026-04-01,release_2026_06_26,detail,Clarifying user intent,0.15
+2026-04-01,release_2026_06_26,detail,Security operations,0.14
+2026-04-01,release_2026_06_26,detail,Dev environment setup,0.14
+2026-04-01,release_2026_06_26,detail,Real-time lookups,0.14
+2026-04-01,release_2026_06_26,detail,Sales and revenue ops — other,0.13
+2026-04-01,release_2026_06_26,detail,Ad and traffic diagnosis,0.13
+2026-04-01,release_2026_06_26,detail,Accounting and bookkeeping,0.13
+2026-04-01,release_2026_06_26,detail,Science,0.12
+2026-04-01,release_2026_06_26,detail,Politics and public record,0.12
+2026-04-01,release_2026_06_26,detail,Media discovery,0.12
+2026-04-01,release_2026_06_26,detail,Medical Questions,0.12
+2026-04-01,release_2026_06_26,detail,Wellness and fitness,0.11
+2026-04-01,release_2026_06_26,detail,Activity summarization,0.11
+2026-04-01,release_2026_06_26,detail,Bilingual drafting,0.1
+2026-04-01,release_2026_06_26,detail,Digital forensics,0.1
+2026-04-01,release_2026_06_26,detail,Regulatory rules,0.1
+2026-04-01,release_2026_06_26,detail,Coding tools,0.1
+2026-04-01,release_2026_06_26,detail,Config files,0.09
+2026-04-01,release_2026_06_26,detail,Reverse engineering,0.08
+2026-04-01,release_2026_06_26,detail,Geopolitics and strategy,0.08
+2026-04-01,release_2026_06_26,detail,Destination research,0.08
+2026-04-01,release_2026_06_26,detail,Self-reflection,0.07
+2026-04-01,release_2026_06_26,detail,Reasoning traces,0.07
+2026-04-01,release_2026_06_26,detail,Business ideation,0.06
+2026-04-01,release_2026_06_26,detail,Litigation,0.06
+2026-04-01,release_2026_06_26,detail,Cooking,0.06
+2026-04-01,release_2026_06_26,detail,Spoken writing,0.05
+2026-04-01,release_2026_06_26,detail,Desktop apps,0.05
+2026-04-01,release_2026_06_26,detail,CLI output simulation,0.05
+2026-04-01,release_2026_06_26,detail,Numerical and scientific methods,0.05
+2026-04-01,release_2026_06_26,detail,Certification and training,0.05
+2026-04-01,release_2026_06_26,detail,Account setup,0.04
+2026-04-01,release_2026_06_26,detail,Education and learning — other,0.04
+2026-04-01,release_2026_06_26,detail,Nature and materials,0.04
+2026-04-01,release_2026_06_26,detail,Fashion shopping,0.04
+2026-04-01,release_2026_06_26,detail,Algorithms,0.04
+2026-04-01,release_2026_06_26,detail,Devops and infrastructure — other,0.04
+2026-04-01,release_2026_06_26,detail,AI industry,0.04
+2026-04-01,release_2026_06_26,detail,Home furnishing and decor,0.04
+2026-04-01,release_2026_06_26,detail,Personal ai assistant — other,0.03
+2026-04-01,release_2026_06_26,detail,Cosmetics and Personal Care,0.03
+2026-04-01,release_2026_06_26,detail,Career interview prep,0.03
+2026-04-01,release_2026_06_26,detail,Device setup,0.03
+2026-04-01,release_2026_06_26,detail,Hardware and electronics,0.03
+2026-04-01,release_2026_06_26,detail,Property and ownership,0.03
+2026-04-01,release_2026_06_26,detail,Career navigation,0.03
+2026-04-01,release_2026_06_26,detail,Relocation and travel,0.03
+2026-04-01,release_2026_06_26,detail,Philosophy,0.03
+2026-04-01,release_2026_06_26,detail,Social science,0.03
+2026-04-01,release_2026_06_26,detail,Career planning,0.02
+2026-04-01,release_2026_06_26,detail,Cryptography and credentials,0.02
+2026-04-01,release_2026_06_26,detail,Hardening and configuration,0.02
+2026-04-01,release_2026_06_26,detail,Education pathways,0.02
+2026-04-01,release_2026_06_26,detail,Outdoor and garden,0.02
+2026-04-01,release_2026_06_26,detail,Ad campaigns,0.02
+2026-04-01,release_2026_06_26,detail,Travel logistics,0.02
+2026-04-01,release_2026_06_26,detail,Grant writing,0.02
+2026-04-01,release_2026_06_26,detail,Law study,0.02
+2026-04-01,release_2026_06_26,detail,Literary analysis,0.02
+2026-04-01,release_2026_06_26,detail,Spirituality and metaphysical practices,0.02
+2026-04-01,release_2026_06_26,detail,Opinion writing,0.02
+2026-04-01,release_2026_06_26,detail,Entertainment and Recreation,0.02
+2026-04-01,release_2026_06_26,detail,Data wrangling,0.02
+2026-04-01,release_2026_06_26,detail,Document processing and extraction — other,0.01
+2026-04-01,release_2026_06_26,detail,Document authenticity,0.01
+2026-04-01,release_2026_06_26,detail,Home renovation,0.01
+2026-04-01,release_2026_06_26,detail,Word choice and writing,0.01
+2026-04-01,release_2026_06_26,detail,BI software learning,0.01
+2026-04-01,release_2026_06_26,detail,Criminal and property law,0.01
+2026-04-01,release_2026_06_26,detail,Gift buying,0.01
+2026-04-01,release_2026_06_26,detail,Buying and selling secondhand,0.01
+2026-04-01,release_2026_06_26,detail,Physical crafting,0.01
+2026-04-01,release_2026_06_26,detail,Grooming and style,0.01
+2026-04-01,release_2026_06_26,detail,Rights and freedoms,0.01
+2026-04-01,release_2026_06_26,detail,Personal messages,0.01
+2026-04-01,release_2026_06_26,detail,3D modeling and printing,0.01
+2026-04-01,release_2026_06_26,detail,Parts sourcing,0.01
+2026-04-01,release_2026_06_26,detail,Clinical roleplay,0.01
+2026-04-01,release_2026_06_26,detail,Making music,0.01
+2026-04-01,release_2026_06_26,detail,Memory retrieval,0.01
+2026-04-01,release_2026_06_26,detail,Government filings,0.01
+2026-04-01,release_2026_06_26,detail,Crafting and construction,0.01
+2026-04-01,release_2026_06_26,detail,Animal behavior,0.01
+2026-04-01,release_2026_06_26,detail,Home tech setup,0.01
+2026-04-01,release_2026_06_26,detail,Home routines,0.01
+2026-04-01,release_2026_06_26,detail,Vehicles and motors,0.01
+2026-04-01,release_2026_06_26,detail,Research and intelligence — other,0.0
+2026-04-01,release_2026_06_26,detail,Business telephony,0.0
+2026-04-01,release_2026_06_26,detail,Art history,0.0
+2026-04-01,release_2026_06_26,detail,Infant care,0.0
+2026-04-01,release_2026_06_26,detail,Product compatibility,0.0
+2026-04-01,release_2026_06_26,detail,Packing and travel prep,0.0
+2026-04-01,release_2026_06_26,detail,Transport rules,0.0
+2026-04-01,release_2026_06_26,detail,Banking history,0.0
+2026-04-01,release_2026_06_26,detail,Meta — other,0.0
+2026-04-01,release_2026_06_26,detail,Physical properties,0.0
+2026-04-01,release_2026_06_26,detail,Court appeals,0.0
+2026-04-01,release_2026_06_26,detail,Print publishing,0.0
+2026-04-01,release_2026_06_26,detail,Astronomy,0.0
+2026-04-01,release_2026_06_26,detail,Wine,0.0
+2026-04-01,release_2026_06_26,detail,Cybersecurity and threat detection — other,0.0
+2026-04-01,release_2026_06_26,top,Software Development,17.98
+2026-04-01,release_2026_06_26,top,Document Processing & Extraction,13.46
+2026-04-01,release_2026_06_26,top,Business Process & Operations,9.93
+2026-04-01,release_2026_06_26,top,Content Creation & Copywriting,9.14
+2026-04-01,release_2026_06_26,top,DevOps & Infrastructure Operations,6.05
+2026-04-01,release_2026_06_26,top,Data Analysis & Business Intelligence,4.72
+2026-04-01,release_2026_06_26,top,Sales & Revenue Operations,4.2
+2026-04-01,release_2026_06_26,top,Trust & Safety / Platform Integrity,3.48
+2026-04-01,release_2026_06_26,top,Research & Intelligence,3.32
+2026-04-01,release_2026_06_26,top,Customer Support & Service Operations,3.02
+2026-04-01,release_2026_06_26,top,Education & Learning,2.78
+2026-04-01,release_2026_06_26,top,Hobbies & Lifestyle,2.44
+2026-04-01,release_2026_06_26,top,Other / Unclear,1.86
+2026-04-01,release_2026_06_26,top,Knowledge Retrieval & Enterprise Search,1.68
+2026-04-01,release_2026_06_26,top,Cybersecurity & Threat Detection,1.42
+2026-04-01,release_2026_06_26,top,Conversation & Meeting Intelligence,1.34
+2026-04-01,release_2026_06_26,top,Personal AI Assistant,1.19
+2026-04-01,release_2026_06_26,top,Compliance & Regulatory,0.8
+2026-04-01,release_2026_06_26,top,Companionship & General Conversation,0.75
+2026-04-01,release_2026_06_26,top,"Existential, Relational, and Emotional Support",0.7
+2026-05-01,release_2026_06_26,detail,Business operations,11.17
+2026-05-01,release_2026_06_26,detail,Structured extraction,6.75
+2026-05-01,release_2026_06_26,detail,Automated pipelines,3.79
+2026-05-01,release_2026_06_26,detail,Customer support and service,3.66
+2026-05-01,release_2026_06_26,detail,Web front-end,3.56
+2026-05-01,release_2026_06_26,detail,Company and deal research,3.1
+2026-05-01,release_2026_06_26,detail,Taxonomy tagging,2.9
+2026-05-01,release_2026_06_26,detail,Promotional writing,2.52
+2026-05-01,release_2026_06_26,detail,Prompt engineering,2.39
+2026-05-01,release_2026_06_26,detail,Quant trading,2.13
+2026-05-01,release_2026_06_26,detail,Code design,2.08
+2026-05-01,release_2026_06_26,detail,Data analysis,1.61
+2026-05-01,release_2026_06_26,detail,Git workflow,1.6
+2026-05-01,release_2026_06_26,detail,AI agent design,1.57
+2026-05-01,release_2026_06_26,detail,AI output evaluation,1.57
+2026-05-01,release_2026_06_26,detail,API debugging,1.56
+2026-05-01,release_2026_06_26,detail,Empty inputs,1.44
+2026-05-01,release_2026_06_26,detail,Conversation and meeting intelligence,1.34
+2026-05-01,release_2026_06_26,detail,Server infrastructure,1.31
+2026-05-01,release_2026_06_26,detail,CRM,1.27
+2026-05-01,release_2026_06_26,detail,Starting a business,1.24
+2026-05-01,release_2026_06_26,detail,Summarizing,1.19
+2026-05-01,release_2026_06_26,detail,Translation,1.08
+2026-05-01,release_2026_06_26,detail,Formatted writing,1.07
+2026-05-01,release_2026_06_26,detail,Homework,1.06
+2026-05-01,release_2026_06_26,detail,Test writing and running,1.06
+2026-05-01,release_2026_06_26,detail,Quality scoring,1.04
+2026-05-01,release_2026_06_26,detail,Entity detection,0.94
+2026-05-01,release_2026_06_26,detail,AI image generation,0.92
+2026-05-01,release_2026_06_26,detail,AI app building,0.88
+2026-05-01,release_2026_06_26,detail,Video scripts,0.88
+2026-05-01,release_2026_06_26,detail,Backend architecture,0.82
+2026-05-01,release_2026_06_26,detail,Companionship and conversation,0.77
+2026-05-01,release_2026_06_26,detail,Gaming,0.76
+2026-05-01,release_2026_06_26,detail,Research and evidence,0.75
+2026-05-01,release_2026_06_26,detail,Software how-to,0.74
+2026-05-01,release_2026_06_26,detail,Harm screening,0.69
+2026-05-01,release_2026_06_26,detail,Business compliance,0.69
+2026-05-01,release_2026_06_26,detail,Publishing and announcements,0.59
+2026-05-01,release_2026_06_26,detail,Software development — other,0.57
+2026-05-01,release_2026_06_26,detail,Threat detection,0.55
+2026-05-01,release_2026_06_26,detail,Editing and rewriting,0.54
+2026-05-01,release_2026_06_26,detail,Booking and scheduling,0.53
+2026-05-01,release_2026_06_26,detail,Instructional design,0.52
+2026-05-01,release_2026_06_26,detail,Auditing Content,0.51
+2026-05-01,release_2026_06_26,detail,AI self-knowledge,0.51
+2026-05-01,release_2026_06_26,detail,Shell and systems code,0.51
+2026-05-01,release_2026_06_26,detail,ML and data science,0.5
+2026-05-01,release_2026_06_26,detail,Buying and investing,0.47
+2026-05-01,release_2026_06_26,detail,Document transformation,0.45
+2026-05-01,release_2026_06_26,detail,AI evaluation and risk,0.45
+2026-05-01,release_2026_06_26,detail,Reference and fact-finding,0.43
+2026-05-01,release_2026_06_26,detail,Hobbies and lifestyle — other,0.41
+2026-05-01,release_2026_06_26,detail,Image reading,0.4
+2026-05-01,release_2026_06_26,detail,Consistency checking,0.39
+2026-05-01,release_2026_06_26,detail,Math and CS theory,0.38
+2026-05-01,release_2026_06_26,detail,Workplace writing,0.38
+2026-05-01,release_2026_06_26,detail,Industry and sector knowledge,0.37
+2026-05-01,release_2026_06_26,detail,Emotional Wellbeing and Support,0.35
+2026-05-01,release_2026_06_26,detail,Scoring and rating,0.34
+2026-05-01,release_2026_06_26,detail,Financial modeling,0.34
+2026-05-01,release_2026_06_26,detail,Trend tracking,0.33
+2026-05-01,release_2026_06_26,detail,Code security review,0.32
+2026-05-01,release_2026_06_26,detail,Debugging,0.31
+2026-05-01,release_2026_06_26,detail,Fiction writing,0.3
+2026-05-01,release_2026_06_26,detail,Reference documentation,0.29
+2026-05-01,release_2026_06_26,detail,Sales outreach writing,0.28
+2026-05-01,release_2026_06_26,detail,Slide decks,0.28
+2026-05-01,release_2026_06_26,detail,Finding the best price,0.27
+2026-05-01,release_2026_06_26,detail,Dashboards and charts,0.27
+2026-05-01,release_2026_06_26,detail,Offensive security,0.27
+2026-05-01,release_2026_06_26,detail,Clarifying user intent,0.26
+2026-05-01,release_2026_06_26,detail,Entitlements and rules,0.25
+2026-05-01,release_2026_06_26,detail,UI and layout review,0.24
+2026-05-01,release_2026_06_26,detail,Business process and operations — other,0.24
+2026-05-01,release_2026_06_26,detail,Self-presentation writing,0.23
+2026-05-01,release_2026_06_26,detail,Niche publishing,0.23
+2026-05-01,release_2026_06_26,detail,Alert routing,0.23
+2026-05-01,release_2026_06_26,detail,Data storage,0.23
+2026-05-01,release_2026_06_26,detail,Personal records,0.21
+2026-05-01,release_2026_06_26,detail,Account and billing,0.2
+2026-05-01,release_2026_06_26,detail,Politics and public record,0.19
+2026-05-01,release_2026_06_26,detail,Accounting and bookkeeping,0.19
+2026-05-01,release_2026_06_26,detail,Login and permissions,0.18
+2026-05-01,release_2026_06_26,detail,Language and linguistics,0.18
+2026-05-01,release_2026_06_26,detail,Ad and traffic diagnosis,0.17
+2026-05-01,release_2026_06_26,detail,Sales and revenue ops — other,0.15
+2026-05-01,release_2026_06_26,detail,Real-time lookups,0.15
+2026-05-01,release_2026_06_26,detail,Activity summarization,0.14
+2026-05-01,release_2026_06_26,detail,Regulatory rules,0.13
+2026-05-01,release_2026_06_26,detail,Security operations,0.13
+2026-05-01,release_2026_06_26,detail,Medical Questions,0.13
+2026-05-01,release_2026_06_26,detail,Bilingual drafting,0.12
+2026-05-01,release_2026_06_26,detail,Wellness and fitness,0.12
+2026-05-01,release_2026_06_26,detail,Dev environment setup,0.11
+2026-05-01,release_2026_06_26,detail,Litigation,0.11
+2026-05-01,release_2026_06_26,detail,Coding tools,0.11
+2026-05-01,release_2026_06_26,detail,Reverse engineering,0.1
+2026-05-01,release_2026_06_26,detail,Config files,0.1
+2026-05-01,release_2026_06_26,detail,Media discovery,0.1
+2026-05-01,release_2026_06_26,detail,Science,0.09
+2026-05-01,release_2026_06_26,detail,Geopolitics and strategy,0.09
+2026-05-01,release_2026_06_26,detail,Reasoning traces,0.09
+2026-05-01,release_2026_06_26,detail,Digital forensics,0.09
+2026-05-01,release_2026_06_26,detail,Destination research,0.09
+2026-05-01,release_2026_06_26,detail,Self-reflection,0.07
+2026-05-01,release_2026_06_26,detail,Cooking,0.07
+2026-05-01,release_2026_06_26,detail,Certification and training,0.07
+2026-05-01,release_2026_06_26,detail,Spoken writing,0.06
+2026-05-01,release_2026_06_26,detail,Business ideation,0.06
+2026-05-01,release_2026_06_26,detail,Fashion shopping,0.05
+2026-05-01,release_2026_06_26,detail,CLI output simulation,0.05
+2026-05-01,release_2026_06_26,detail,Nature and materials,0.05
+2026-05-01,release_2026_06_26,detail,Numerical and scientific methods,0.05
+2026-05-01,release_2026_06_26,detail,Education and learning — other,0.04
+2026-05-01,release_2026_06_26,detail,Account setup,0.04
+2026-05-01,release_2026_06_26,detail,Desktop apps,0.04
+2026-05-01,release_2026_06_26,detail,Home furnishing and decor,0.04
+2026-05-01,release_2026_06_26,detail,Property and ownership,0.04
+2026-05-01,release_2026_06_26,detail,Devops and infrastructure — other,0.04
+2026-05-01,release_2026_06_26,detail,AI industry,0.04
+2026-05-01,release_2026_06_26,detail,Personal ai assistant — other,0.03
+2026-05-01,release_2026_06_26,detail,Cryptography and credentials,0.03
+2026-05-01,release_2026_06_26,detail,Device setup,0.03
+2026-05-01,release_2026_06_26,detail,Cosmetics and Personal Care,0.03
+2026-05-01,release_2026_06_26,detail,Hardware and electronics,0.03
+2026-05-01,release_2026_06_26,detail,Career interview prep,0.03
+2026-05-01,release_2026_06_26,detail,Relocation and travel,0.03
+2026-05-01,release_2026_06_26,detail,Social science,0.03
+2026-05-01,release_2026_06_26,detail,Career navigation,0.03
+2026-05-01,release_2026_06_26,detail,Philosophy,0.03
+2026-05-01,release_2026_06_26,detail,Hardening and configuration,0.02
+2026-05-01,release_2026_06_26,detail,Career planning,0.02
+2026-05-01,release_2026_06_26,detail,Ad campaigns,0.02
+2026-05-01,release_2026_06_26,detail,Outdoor and garden,0.02
+2026-05-01,release_2026_06_26,detail,Travel logistics,0.02
+2026-05-01,release_2026_06_26,detail,Education pathways,0.02
+2026-05-01,release_2026_06_26,detail,Law study,0.02
+2026-05-01,release_2026_06_26,detail,Personal messages,0.02
+2026-05-01,release_2026_06_26,detail,3D modeling and printing,0.02
+2026-05-01,release_2026_06_26,detail,Grant writing,0.02
+2026-05-01,release_2026_06_26,detail,Entertainment and Recreation,0.02
+2026-05-01,release_2026_06_26,detail,Algorithms,0.02
+2026-05-01,release_2026_06_26,detail,Spirituality and metaphysical practices,0.02
+2026-05-01,release_2026_06_26,detail,Clinical roleplay,0.02
+2026-05-01,release_2026_06_26,detail,Animal behavior,0.02
+2026-05-01,release_2026_06_26,detail,Literary analysis,0.02
+2026-05-01,release_2026_06_26,detail,Opinion writing,0.02
+2026-05-01,release_2026_06_26,detail,Data wrangling,0.02
+2026-05-01,release_2026_06_26,detail,Gift buying,0.01
+2026-05-01,release_2026_06_26,detail,BI software learning,0.01
+2026-05-01,release_2026_06_26,detail,Home renovation,0.01
+2026-05-01,release_2026_06_26,detail,Document processing and extraction — other,0.01
+2026-05-01,release_2026_06_26,detail,Word choice and writing,0.01
+2026-05-01,release_2026_06_26,detail,Grooming and style,0.01
+2026-05-01,release_2026_06_26,detail,Buying and selling secondhand,0.01
+2026-05-01,release_2026_06_26,detail,Criminal and property law,0.01
+2026-05-01,release_2026_06_26,detail,Workflow diagrams,0.01
+2026-05-01,release_2026_06_26,detail,Physical crafting,0.01
+2026-05-01,release_2026_06_26,detail,Making music,0.01
+2026-05-01,release_2026_06_26,detail,Home tech setup,0.01
+2026-05-01,release_2026_06_26,detail,Rights and freedoms,0.01
+2026-05-01,release_2026_06_26,detail,Physical properties,0.01
+2026-05-01,release_2026_06_26,detail,Wine,0.01
+2026-05-01,release_2026_06_26,detail,Memory retrieval,0.01
+2026-05-01,release_2026_06_26,detail,Parts sourcing,0.01
+2026-05-01,release_2026_06_26,detail,Banking history,0.01
+2026-05-01,release_2026_06_26,detail,Crafting and construction,0.01
+2026-05-01,release_2026_06_26,detail,Home routines,0.01
+2026-05-01,release_2026_06_26,detail,Vehicles and motors,0.01
+2026-05-01,release_2026_06_26,detail,Government filings,0.01
+2026-05-01,release_2026_06_26,detail,Research and intelligence — other,0.0
+2026-05-01,release_2026_06_26,detail,Business telephony,0.0
+2026-05-01,release_2026_06_26,detail,Transport rules,0.0
+2026-05-01,release_2026_06_26,detail,Packing and travel prep,0.0
+2026-05-01,release_2026_06_26,detail,Art history,0.0
+2026-05-01,release_2026_06_26,detail,Child development,0.0
+2026-05-01,release_2026_06_26,detail,Product compatibility,0.0
+2026-05-01,release_2026_06_26,detail,Astronomy,0.0
+2026-05-01,release_2026_06_26,detail,Infant care,0.0
+2026-05-01,release_2026_06_26,detail,Meta — other,0.0
+2026-05-01,release_2026_06_26,detail,Court appeals,0.0
+2026-05-01,release_2026_06_26,detail,Cybersecurity and threat detection — other,0.0
+2026-05-01,release_2026_06_26,detail,Print publishing,0.0
+2026-05-01,release_2026_06_26,top,Software Development,17.97
+2026-05-01,release_2026_06_26,top,Document Processing & Extraction,14.3
+2026-05-01,release_2026_06_26,top,Business Process & Operations,11.41
+2026-05-01,release_2026_06_26,top,Content Creation & Copywriting,9.62
+2026-05-01,release_2026_06_26,top,DevOps & Infrastructure Operations,5.96
+2026-05-01,release_2026_06_26,top,Data Analysis & Business Intelligence,5.1
+2026-05-01,release_2026_06_26,top,Sales & Revenue Operations,4.82
+2026-05-01,release_2026_06_26,top,Research & Intelligence,3.86
+2026-05-01,release_2026_06_26,top,Customer Support & Service Operations,3.66
+2026-05-01,release_2026_06_26,top,Trust & Safety / Platform Integrity,2.81
+2026-05-01,release_2026_06_26,top,Education & Learning,2.47
+2026-05-01,release_2026_06_26,top,Other / Unclear,2.28
+2026-05-01,release_2026_06_26,top,Hobbies & Lifestyle,2.12
+2026-05-01,release_2026_06_26,top,Knowledge Retrieval & Enterprise Search,2.0
+2026-05-01,release_2026_06_26,top,Cybersecurity & Threat Detection,1.52
+2026-05-01,release_2026_06_26,top,Personal AI Assistant,1.39
+2026-05-01,release_2026_06_26,top,Conversation & Meeting Intelligence,1.34
+2026-05-01,release_2026_06_26,top,Compliance & Regulatory,1.04
+2026-05-01,release_2026_06_26,top,Companionship & General Conversation,0.77
+2026-05-01,release_2026_06_26,top,"Existential, Relational, and Emotional Support",0.59

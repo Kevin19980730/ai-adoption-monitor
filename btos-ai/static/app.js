@@ -1192,17 +1192,17 @@ function stackCols(host, weeks, layers, opt) {
   const ymax = opt.max ?? Math.max(...tot) * 1.02;
   const bw = (W - M.l - M.r) / n, Y = v => H - M.b - v / ymax * (H - M.t - M.b);
   niceTicks(0, ymax, 4).forEach(v => { el("line", {x1: M.l, x2: W - M.r, y1: Y(v), y2: Y(v), stroke: "var(--grid)"}, svg); el("text", {x: M.l - 6, y: Y(v) + 4, "text-anchor": "end"}, svg, opt.yFmt(v)); });
-  const every = Math.ceil(n / (narrow ? 4 : 8));
+  const every = n <= 6 ? 1 : Math.ceil(n / (narrow ? 4 : 8));
   weeks.forEach((w, i) => {
     const x = M.l + i * bw, g = el("g", null, svg);
     let acc = 0;
     layers.forEach(L => { const v = L.values[i] || 0; if (v > 0) el("rect", {x: x + bw * 0.12, width: bw * 0.76, y: Y(acc + v), height: Math.max(Y(acc) - Y(acc + v) - 0.5, 0), fill: L.color}, g); acc += v; });
-    if (i % every === 0 || i === n - 1) el("text", {x: x + bw / 2, y: H - M.b + 16, "text-anchor": "middle"}, svg, dShort(w));
+    if (i % every === 0 || i === n - 1) el("text", {x: x + bw / 2, y: H - M.b + 16, "text-anchor": "middle"}, svg, (opt.xLab || dShort)(w));
     const hit = el("rect", {x, y: M.t, width: bw, height: H - M.t - M.b, fill: "transparent"}, svg);
     hit.addEventListener("pointermove", ev => {
       g.style.opacity = 0.8;
       const rows = layers.map(L => [L, L.values[i]]).filter(r => r[1] != null && r[1] > 0).reverse();
-      tipShow([tipTitle("Week of " + fmtDate(T(w)))].concat(rows.map(([L, v]) => { const r = tipRow(L.color, opt.yFmt(v), L.name); r.querySelector("i").style.borderTopWidth = "8px"; return r; })), ev.clientX, ev.clientY);
+      tipShow([tipTitle(opt.tip ? opt.tip(w) : "Week of " + fmtDate(T(w)))].concat(rows.map(([L, v]) => { const r = tipRow(L.color, opt.yFmt(v), L.name); r.querySelector("i").style.borderTopWidth = "8px"; return r; })), ev.clientX, ev.clientY);
     });
     hit.addEventListener("pointerleave", () => { g.style.opacity = 1; tipHide(); });
   });
@@ -1356,6 +1356,157 @@ async function loadDatabricks() {
   ["#dbx-pool", "#dbx-meas", "#dbx-detail"].forEach(id => $(id).addEventListener("change", drawDbx));
   ["#dbx-fam", "#dbx-y", "#dbx-panel"].forEach(id => $(id).addEventListener("change", drawDbxCoding));
   drawDbx();
+}
+
+/* ================================================================ Menlo Ventures: enterprise AI spend (annual survey) */
+const MV_COL = {Anthropic: "var(--s4)", OpenAI: "var(--s1)", Google: "var(--s2)", "Meta Llama": "var(--s3)", Other: "var(--s5)"};
+const bnB = v => v == null ? "–" : "$" + (v >= 10 ? v.toFixed(1) : v.toFixed(1)) + "B";
+async function loadMenlo() {
+  const [M, R, D] = await Promise.all([api("/api/menlo"), api("/api/ramp").catch(() => null), api("/api/databricks").catch(() => null)]);
+  const X = M.metrics; if (!X.llm_api_share) { $("#mv-tiles").textContent = "No Menlo data - see menlo-enterprise-ai/menlo_points.csv."; return; }
+  const st = M.status || {};
+  $("#mv-status").textContent = st.not_in_data && st.not_in_data.length ? `New Menlo report not yet transcribed: ${st.not_in_data.map(n => n.title).join("; ")}.` : (st.checked ? `Checked for new reports ${st.checked.slice(0, 10)}: none missing.` : "");
+  const get = (m, cat, per) => (X[m] || []).find(r => r.category === cat && String(r.period) === String(per))?.value;
+  // tiles
+  const host = $("#mv-tiles"); host.replaceChildren();
+  const tile = (t, v, d, s, cls) => { const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, t); h("div", {class: "v"}, a, v); if (d) { const dd = h("div", {class: "d"}, a); h("span", {class: cls || "up"}, dd, d[0]); dd.appendChild(document.createTextNode(" " + d[1])); } h("div", {class: "s"}, a, s); };
+  tile("Enterprise AI deployment spend", bnB(get("deployment_spend", "Total", 2026)), [`▲ ${(get("deployment_spend", "Total", 2026) / get("deployment_spend", "Total", 2025)).toFixed(1)}×`, "vs 2025"], "Run rate, Sep 2026 · Menlo market model");
+  tile("Anthropic share of enterprise LLM API spend", get("llm_api_share", "Anthropic", 2026) + "%", ["▲ " + pp(get("llm_api_share", "Anthropic", 2026) - get("llm_api_share", "Anthropic", 2025)), `vs 2025 · OpenAI ${get("llm_api_share", "OpenAI", 2026)}%, Google ${get("llm_api_share", "Google", 2026)}%`], "2026 survey, spend-weighted");
+  const fl = ["API", "First-party apps"].reduce((s, c) => s + get("frontier_lab_spend", c, 2026), 0), tot = fl + get("frontier_lab_spend", "Everyone else", 2026);
+  tile("Frontier labs' share of deployment spend", Math.round(fl / tot * 100) + "%", ["▲ +19.0pp", "vs 2025 (50%)"], `Anthropic + OpenAI + Google: ${bnB(fl)} of ${bnB(tot)}`);
+  tile("Open-source share of tokens vs spend", get("tier_token_share", "Open-source", "Q3 2026") + "% / " + get("tier_spend_share", "Open-source", "Q3 2026") + "%",
+    ["▲ " + pp(get("tier_token_share", "Open-source", "Q3 2026") - get("tier_token_share", "Open-source", "Q3 2025")), "tokens vs Q3 2025"], `Avg price $${get("price_per_m", "Open-source", "Sep 2026")} vs $${get("price_per_m", "Closed-source", "Sep 2026")} per M (closed)`);
+
+  // three sources side by side
+  const tri = [];
+  tri.push({src: "Menlo Ventures", what: "Enterprise LLM API spend share (survey, spend-weighted)", when: "2026 survey (Sep)", a: get("llm_api_share", "Anthropic", 2026), o: get("llm_api_share", "OpenAI", 2026), g: get("llm_api_share", "Google", 2026)});
+  if (R && R.weeks && R.weeks.length) {
+    const i = R.weeks.length - 1, S = R.by.token_spend, V = R.by.token_volume, ts = sum(R.makers.map(m => S[m][i])), tv = sum(R.makers.map(m => V[m][i]));
+    tri.push({src: "Ramp", what: "Billed API spend share (firms on Ramp Token Spend Management)", when: "Week of " + fmtDate(T(R.weeks[i])), a: S.Anthropic[i] / ts * 100, o: S.OpenAI[i] / ts * 100, g: S.Google[i] / ts * 100});
+    tri.push({src: "Ramp", what: "Token share, same firms", when: "Week of " + fmtDate(T(R.weeks[i])), a: V.Anthropic[i] / tv * 100, o: V.OpenAI[i] / tv * 100, g: V.Google[i] / tv * 100});
+  }
+  if (D && D.weeks && D.weeks.length) {
+    const i = D.weeks.length - 1, ms = (c, g) => sum((D.charts[c].groups.find(x => x.group === g)?.labels || []).map(l => l.values[i] || 0));
+    tri.push({src: "Databricks", what: "Wallet share at list prices, proprietary models (Unity Gateway)", when: "Week of " + fmtDate(T(D.weeks[i])), a: ms("wallet_share_prop", "Anthropic"), o: ms("wallet_share_prop", "OpenAI"), g: null, gnote: `${ms("wallet_share_prop", "Other proprietary").toFixed(1)}% Gemini + Grok`});
+    tri.push({src: "Databricks", what: "Token share, proprietary models", when: "Week of " + fmtDate(T(D.weeks[i])), a: ms("token_share_prop", "Anthropic"), o: ms("token_share_prop", "OpenAI"), g: null, gnote: `${ms("token_share_prop", "Other proprietary").toFixed(1)}% Gemini + Grok`});
+  }
+  table($("#mv-tri"), [{label: "Source", key: "src"}, {label: "Measure", key: "what"}, {label: "As of", key: "when"}, {label: "Anthropic", n: 1, get: r => p100(r.a)}, {label: "OpenAI", n: 1, get: r => p100(r.o)},
+    {label: "Google", n: 1, get: r => r.g != null ? p100(r.g) : r.gnote || "–"}, {label: "Anthropic ÷ OpenAI", n: 1, get: r => (r.a / r.o).toFixed(2) + "×"}], tri);
+
+  // API share by year (stacked)
+  const per = ["2023", "2024", "mid-2025", "2025", "2026"], labs = ["Anthropic", "OpenAI", "Google", "Meta Llama", "Other"];
+  const L = labs.map(c => ({name: c, color: MV_COL[c], values: per.map(p => get("llm_api_share", c, p) ?? null)}));
+  legend("lg-mv-api", L.map(l => ({name: l.name, color: l.color, kind: "dot"})));
+  const rowsA = X.llm_api_share;
+  view("c-mv-api", hst => stackCols(hst, per, L, {height: 300, yFmt: v => p100(v, 0), max: 100, xLab: p => p, tip: p => p === "mid-2025" ? "Mid-2025 (top three only)" : p}),
+    hst => table(hst, [{label: "Period", key: "period"}, {label: "Lab", key: "category"}, {label: "Share", n: 1, get: r => r.value + "%"}, {label: "Report", key: "report"}, {label: "Where", key: "where"}], rowsA));
+  const sp = X.deployment_spend.map(r => ({key: r.period, label: String(r.period) + (r.period == 2026 ? " (Sep run rate)" : ""), value: r.value, color: "var(--s1)", note: r.where}));
+  view("c-mv-spend", hst => hbar(hst, sp, {fmt: bnB, valueLabel: "deployment spend"}),
+    hst => table(hst, [{label: "Year", key: "period"}, {label: "USD bn", n: 1, key: "value"}, {label: "Where", key: "where"}], X.deployment_spend));
+  // categories
+  const cats = [...new Set(X.spend_by_category.map(r => r.category))];
+  const cr = cats.map(c => ({key: c, label: c, value: get("spend_by_category", c, 2026), tick: get("spend_by_category", c, 2025),
+    color: /Training/.test(c) ? "var(--s3)" : /Foundation|infrastructure/.test(c) ? "var(--s1)" : "var(--s2)", note: `2025 ${bnB(get("spend_by_category", c, 2025))} → 2026 ${bnB(get("spend_by_category", c, 2026))} (${(get("spend_by_category", c, 2026) / get("spend_by_category", c, 2025)).toFixed(1)}×)`}));
+  view("c-mv-cat", hst => hbar(hst, cr, {fmt: bnB, tickLabel: "2025", valueLabel: "2026"}),
+    hst => table(hst, [{label: "Category", key: "label"}, {label: "2025", n: 1, get: r => bnB(r.tick)}, {label: "2026", n: 1, get: r => bnB(r.value)}, {label: "Growth", n: 1, get: r => (r.value / r.tick).toFixed(1) + "×"}], cr));
+  // tiers
+  const tiers = ["Frontier", "Mid-tier", "Small", "Older models", "Specialized", "Open-source"], TC = ["var(--s4)", "var(--s2)", "var(--s5)", "var(--muted)", "var(--ink-2)", "var(--s3)"];
+  const cols = ["Spend Q3 '25", "Spend Q3 '26", "Tokens Q3 '25", "Tokens Q3 '26"], src = [["tier_spend_share", "Q3 2025"], ["tier_spend_share", "Q3 2026"], ["tier_token_share", "Q3 2025"], ["tier_token_share", "Q3 2026"]];
+  const TL = tiers.map((t, i) => ({name: t, color: TC[i], values: src.map(([m, p]) => get(m, t, p) ?? 0)}));
+  legend("lg-mv-tier", TL.map(l => ({name: l.name, color: l.color, kind: "dot"})));
+  view("c-mv-tier", hst => stackCols(hst, cols, TL, {height: 300, yFmt: v => p100(v, 0), max: 100, xLab: c => c, tip: c => c}),
+    hst => table(hst, [{label: "Tier", key: "name"}].concat(cols.map((c, j) => ({label: c, n: 1, get: r => r.values[j] + "%"}))), TL));
+  // apps
+  const ar = X.app_spend.map(r => ({key: r.category, label: r.category, value: r.value, color: r.category === "Coding" ? "var(--s4)" : "var(--s1)",
+    note: (get("app_growth", r.category, 2026) ? `+${get("app_growth", r.category, 2026)}× y/y` : "new in 2026")}));
+  view("c-mv-app", hst => hbar(hst, ar, {fmt: bnB, valueLabel: "2026 spend"}),
+    hst => table(hst, [{label: "Category", key: "label"}, {label: "USD bn", n: 1, get: r => r.value.toFixed(1)}, {label: "Growth", n: 1, key: "note"}], ar));
+  // other readings
+  const other = ["enterprise_adoption", "spend_vs_plan", "funding_source", "ai_native_share", "monthly_tokens", "price_per_m", "builder_adoption", "coding_spend", "coding_share", "development_spend"]
+    .flatMap(m => (X[m] || []).map(r => ({...r, metric: m})));
+  const unit = r => r.unit === "pct" ? r.value + "%" : r.unit === "x" ? r.value + "×" : r.unit === "usd_b" ? bnB(r.value) : r.unit === "usd" ? "$" + r.value.toFixed(2) : r.unit === "quadrillion" ? r.value + " quadrillion / month" : r.value;
+  const nm = {enterprise_adoption: "Enterprise adoption", spend_vs_plan: "2026 spend vs 2025", funding_source: "Who funds incremental AI spend", ai_native_share: "AI-native vendors' share", monthly_tokens: "Monthly API tokens", price_per_m: "Avg price per M tokens", builder_adoption: "AI builders using", coding_spend: "Coding market split", coding_share: "Code-generation share (mid-2025)", development_spend: "Model development spend"};
+  table($("#mv-other"), [{label: "Measure", get: r => nm[r.metric] || r.metric}, {label: "Item", key: "category"}, {label: "Period", key: "period"}, {label: "Value", n: 1, get: unit}, {label: "Where", key: "where"}], other);
+}
+
+/* ================================================================ Anthropic Economic Index: first-party API use */
+async function loadAei() {
+  const A = await api("/api/aei");
+  if (!A.periods.length) { $("#aei-tiles").textContent = "No AEI data yet - run anthropic-economic-index/aei_update.py."; return; }
+  const P = A.periods, n = P.length, last = n - 1, O = A.overall;
+  const plab = p => p.schema === "monthly" ? MON[+p.period_start.slice(5, 7) - 1] + " " + p.period_start.slice(0, 4) : "Week of " + dShort(p.period_start) + " " + p.period_start.slice(0, 4);
+  const pmid = p => T(p.period_start) + (p.schema === "monthly" ? 14 : 3) * 864e5;
+  $("#aei-run").textContent = A.last_run ? "last checked " + A.last_run.replace("T", " ").slice(0, 16) : "";
+  const v = (m, i) => (O[m] || [])[i];
+  // tiles: latest vs previous period in the same regime
+  const host = $("#aei-tiles"); host.replaceChildren();
+  const tile = (t, val, m, fmtD, s) => {
+    const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, t); h("div", {class: "v"}, a, val);
+    if (m && v(m, last - 1) != null && P[last - 1].schema === P[last].schema) { const d = v(m, last) - v(m, last - 1), dd = h("div", {class: "d"}, a); h("span", {class: Math.abs(d) < 0.05 ? "" : d > 0 ? "up" : "down"}, dd, fmtD(d)); dd.appendChild(document.createTextNode(" vs " + plab(P[last - 1]))); }
+    h("div", {class: "s"}, a, s); const sp = m ? spark((O[m] || []).slice(-6), "var(--s1)") : null; if (sp) a.appendChild(sp);
+  };
+  const ppd = d => (d >= 0 ? "▲ " : "▼ ") + pp(d);
+  tile("API use that is work", p100(v("use_case_work_pct", last)), "use_case_work_pct", ppd, plab(P[last]) + ` · personal ${p100(v("use_case_personal_pct", last))}`);
+  tile("Automation share of API use", p100(v("automation_pct", last)), "automation_pct", ppd, plab(P[last]) + " · directive + feedback loop");
+  const cm = A.occupations.find(o => o.group === "Computer and Mathematical");
+  if (cm) tile("Computer & math occupations' share", p100(cm.values[last]), null, null, `${plab(P[last])} · ${p100(cm.values[last - 2])} in ${plab(P[last - 2])} incl. Claude Code`);
+  tile("Task time: human alone vs with AI", (v("human_only_time_mean", last) || 0).toFixed(1) + " h → " + (v("human_with_ai_time_mean", last) || 0).toFixed(1) + " min", null, null, plab(P[last]) + ` · AI autonomy ${(v("ai_autonomy_mean", last) || 0).toFixed(2)} / 5`);
+
+  // automation vs augmentation (break mark between regimes)
+  const brk = P.findIndex((p, i) => i && p.schema !== P[i - 1].schema);
+  const marks = brk > 0 ? [{x: (pmid(P[brk - 1]) + pmid(P[brk])) / 2, label: "Claude Code excluded →"}] : [];
+  const line = (m, name, color) => ({name, color, markers: true, points: P.map((p, i) => ({x: pmid(p), y: v(m, i) ?? null}))});
+  const AU = [line("automation_pct", "Automation", "var(--s4)"), line("augmentation_pct", "Augmentation", "var(--s1)")];
+  $("#aei-auto-sub").textContent = A.notes.automation || "";
+  legend("lg-aei-auto", AU.map(s => ({name: s.name, color: s.color})));
+  const ptab = (cols) => hst => table(hst, [{label: "Period", get: i => plab(P[i])}, {label: "Release", get: i => P[i].release.replace("release_", "")}].concat(cols), P.map((_, i) => i).reverse());
+  view("c-aei-auto", hst => lineChart(hst, AU, {height: 280, yFmt: v => p100(v, 0), yMin: 0, yMax: 100, mode: "cross", endLabels: false, marks, title: x => plab(P.find(p => pmid(p) === x) || P[0])}),
+    ptab(AU.map(s => ({label: s.name, n: 1, get: i => p100(s.points[i].y)}))));
+  const UC = [line("use_case_work_pct", "Work", "var(--s1)"), line("use_case_personal_pct", "Personal", "var(--s2)"), line("use_case_coursework_pct", "Coursework", "var(--s3)")];
+  legend("lg-aei-use", UC.map(s => ({name: s.name, color: s.color})));
+  view("c-aei-use", hst => lineChart(hst, UC, {height: 280, yFmt: v => p100(v, 0), yMin: 0, mode: "cross", endLabels: false, marks, title: x => plab(P.find(p => pmid(p) === x) || P[0])}),
+    ptab(UC.map(s => ({label: s.name, n: 1, get: i => p100(s.points[i].y)}))));
+
+  // occupations
+  const sp = $("#aei-occ-p"), sc = $("#aei-occ-c");
+  if (!sp.options.length) {
+    P.forEach((p, i) => { h("option", {value: i}, sp, plab(p)); h("option", {value: i}, sc, plab(p)); });
+    sp.value = last; sc.value = last - 1;
+    [sp, sc].forEach(s => s.addEventListener("change", drawOcc));
+  }
+  function drawOcc() {
+    const i = +sp.value, j = +sc.value, cross = P[i].schema !== P[j].schema;
+    $("#aei-occ-sub").textContent = `Share of all sampled API records by SOC major group (unclassified records stay in the total). Bar = ${plab(P[i])}, tick = ${plab(P[j])}.` +
+      (cross ? " These two periods straddle the Claude Code break, so the gap is mostly a definition change." : "") + " Older releases are derived from O*NET task shares; the latest release publishes the groups directly.";
+    const rows = A.occupations.filter(o => o.values[i] != null).sort((a, b) => b.values[i] - a.values[i]).map(o => ({key: o.group, label: o.group, value: o.values[i], tick: o.values[j], color: "var(--s1)",
+      note: `${plab(P[j])}: ${p100(o.values[j])}`}));
+    view("c-aei-occ", hst => hbar(hst, rows, {fmt: v => p100(v, 1), tickLabel: plab(P[j]), valueLabel: plab(P[i])}),
+      hst => table(hst, [{label: "Occupation group", key: "group"}].concat(P.map((p, k) => ({label: plab(p), n: 1, get: o => p100(o.values[k])}))), A.occupations));
+  }
+  drawOcc();
+
+  // collaboration patterns
+  const CP = [["directive", "Directive", "var(--s4)"], ["feedback_loop", "Feedback loop", "var(--s2)"], ["task_iteration", "Task iteration", "var(--s1)"], ["learning", "Learning", "var(--s3)"], ["validation", "Validation", "var(--s6)"], ["none", "None / unclear", "var(--muted)"]]
+    .map(([k, nm, c]) => ({name: nm, color: c, values: P.map((_, i) => v(`collaboration_${k}_pct`, i) ?? 0)}));
+  legend("lg-aei-collab", CP.map(l => ({name: l.name, color: l.color, kind: "dot"})));
+  const lab = P.map(plab);
+  view("c-aei-collab", hst => stackCols(hst, lab, CP, {height: 300, yFmt: v => p100(v, 0), max: 100, xLab: s => s.replace("Week of ", ""), tip: s => s}),
+    hst => table(hst, [{label: "Pattern", key: "name"}].concat(lab.map((l, i) => ({label: l, n: 1, get: r => p100(r.values[i])}))), CP));
+  // task size table + small chart
+  const TM = [["human_only_time_mean", "Human alone (hours)", x => x.toFixed(2)], ["human_with_ai_time_mean", "Human with AI (minutes)", x => x.toFixed(1)], ["ai_autonomy_mean", "AI autonomy (1–5)", x => x.toFixed(2)],
+    ["human_education_years_mean", "Education the task needs (years)", x => x.toFixed(1)], ["multitasking_pct", "Records with several tasks", x => p100(x)], ["task_success_pct", "Task judged successful", x => p100(x)]];
+  const tsr = TM.map(([m, nm, f]) => ({nm, f, vals: P.map((_, i) => v(m, i))}));
+  const tt = hst => table(hst, [{label: "Measure", key: "nm"}].concat(P.map((p, i) => ({label: plab(p), n: 1, get: r => r.vals[i] == null ? "–" : r.f(r.vals[i])}))), tsr);
+  view("c-aei-time", tt, tt);
+  // tasks + requests
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  $("#aei-task-sub").textContent = `Share of ${plab(P[last])} API records by O*NET task. Tick = ${plab(P[last - 1])}.`;
+  const tr = A.tasks.slice(0, 15).map(t => ({key: t.task, label: cap(t.task), value: t.values[last], tick: t.values[last - 1], color: "var(--s1)", note: cap(t.task)}));
+  view("c-aei-task", hst => hbar(hst, tr, {fmt: v => p100(v, 2), tickLabel: plab(P[last - 1]), valueLabel: "share of records"}),
+    hst => table(hst, [{label: "Task", get: t => cap(t.task)}].concat(P.map((p, i) => ({label: plab(p), n: 1, get: t => p100(t.values[i], 2)}))), A.tasks));
+  const rr = A.requests.map(r => ({key: r.request, label: r.request, value: r.pct, color: "var(--s2)"}));
+  view("c-aei-req", hst => hbar(hst, rr, {fmt: v => p100(v, 1), valueLabel: "share of records"}),
+    hst => table(hst, [{label: "Request topic", key: "request"}, {label: "Share", n: 1, get: r => p100(r.pct)}], A.requests));
 }
 
 /* ================================================================ token economics (fin, "AI Semiconductor Endgame IV") */
@@ -2080,7 +2231,7 @@ function loadData() {
   refreshStatus();
 }
 
-const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, databricks: loadDatabricks, tokenecon: loadTokenEcon, pot: loadPot, rampadopt: loadRampAdopt, arr: loadArr, circular: loadCircular, population: loadPopulation, coverage: loadCoverage, data: loadData};
+const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, databricks: loadDatabricks, menlo: loadMenlo, aei: loadAei, tokenecon: loadTokenEcon, pot: loadPot, rampadopt: loadRampAdopt, arr: loadArr, circular: loadCircular, population: loadPopulation, coverage: loadCoverage, data: loadData};
 async function boot(again) {
   META = await api("/api/meta");
   document.body.classList.toggle("hosted", !!META.hosted);

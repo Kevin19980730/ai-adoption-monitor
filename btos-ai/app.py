@@ -10,6 +10,8 @@ One page over four sources, all read from files so it runs with no Claude:
                                            monthly share of businesses paying for AI + AI spend per employee
   databricks-ai-index/dbx_*.csv            Databricks AI Index (Unity Gateway): token / wallet share by model, multi-provider
                                            use, open-weight share, user spend percentiles, coding cost/quality benchmark
+  menlo-enterprise-ai/menlo_points.csv     Menlo Ventures enterprise AI report numbers, curated with where each came from
+  anthropic-economic-index/aei_api_*.csv   Anthropic Economic Index first-party API usage, every release
   bofa-capex-cycles/exhibit2_*.csv        BofA Exhibit 2 capex cycles, read from the PDF's vector chart
   credit-spreads/macro_daily.csv          ICE BofA BB / CCC HY OAS (FRED + Wayback history), US 10y real yield,
                                            term premium and nominal yield (FRED)
@@ -777,6 +779,58 @@ def databricks():
     pubs = dbx_csv("dbx_publications.csv")
     return jsonify({"weeks": weeks, "charts": charts, "spend": spend, "coding": coding,
                     "pubs": records(pubs.fillna("")) if not pubs.empty else [], "last_run": meta.get("last_run")})
+
+
+# ---------------------------------------------------------------- Menlo Ventures: enterprise AI spend survey (curated, annual)
+MVD = HERE.parent / "menlo-enterprise-ai"
+
+
+@app.route("/api/menlo")
+def menlo():
+    p = MVD / "menlo_points.csv"
+    pts = cached("mv:points", [p], lambda: pd.read_csv(p) if p.exists() else pd.DataFrame())
+    if pts.empty:
+        return jsonify({"metrics": {}})
+    out = {}
+    for m, g in pts.groupby("metric", sort=False):
+        out[m] = records(g[["report_date", "report", "category", "period", "value", "unit", "where", "source_url"]])
+    st = MVD / "menlo_status.json"
+    status = cached("mv:status", [st], lambda: json.loads(st.read_text(encoding="utf-8")) if st.exists() else {})
+    return jsonify({"metrics": out, "status": status, "latest_report": pts.report_date.max()})
+
+
+# ---------------------------------------------------------------- Anthropic Economic Index: first-party API usage
+AED = HERE.parent / "anthropic-economic-index"
+
+
+def aei_csv(name):
+    p = AED / name
+    return cached("aei:" + name, [p], lambda: pd.read_csv(p) if p.exists() else pd.DataFrame())
+
+
+@app.route("/api/aei")
+def aei():
+    o = aei_csv("aei_api_overall.csv")
+    if o.empty:
+        return jsonify({"periods": []})
+    mp = AED / "aei_meta.json"
+    meta = cached("aei:meta", [mp], lambda: json.loads(mp.read_text(encoding="utf-8")) if mp.exists() else {})
+    per = o.drop_duplicates("period_start").sort_values("period_start")[["period_start", "period_end", "release", "schema"]]
+    periods = records(per)
+    P = list(per.period_start)
+    piv = o.pivot_table(index="metric", columns="period_start", values="value", aggfunc="first")
+    overall = {m: [clean(r.get(d)) for d in P] for m, r in piv.iterrows()}
+    oc = aei_csv("aei_api_occupations.csv")
+    op = oc.pivot_table(index="major_group", columns="period_start", values="pct", aggfunc="sum")
+    occ = sorted(({"group": g, "values": [clean(r.get(d)) for d in P]} for g, r in op.iterrows()), key=lambda x: -(x["values"][-1] or 0))
+    tk = aei_csv("aei_api_tasks.csv")
+    tp = tk.pivot_table(index="task", columns="period_start", values="pct", aggfunc="first")
+    last = P[-1]
+    tasks = [{"task": t, "values": [clean(r.get(d)) for d in P]} for t, r in tp.sort_values(last, ascending=False).iterrows() if pd.notna(r.get(last))][:25]
+    rq = aei_csv("aei_api_requests.csv")
+    req = records(rq[(rq.period_start == last) & (rq.level == "top")].sort_values("pct", ascending=False)) if not rq.empty else []
+    return jsonify({"periods": periods, "overall": overall, "occupations": occ, "tasks": tasks, "requests": req,
+                    "notes": meta.get("notes", {}), "releases": meta.get("releases", []), "last_run": meta.get("last_run")})
 
 
 # ---------------------------------------------------------------- token economics (fin, "AI Semiconductor Endgame IV")

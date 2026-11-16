@@ -242,3 +242,6 @@ td:first-child { white-space: nowrap; }
 .dbx-pubs a { font-weight: 600; }
 .dbx-pubs span { font-size: 13px; }
 @media (max-width: 600px) { .dbx-pubs li { grid-template-columns: 1fr; } .dbx-pubs time { grid-row: auto; } }
+
+/* standalone tables (outside .chart) scroll sideways on narrow screens */
+.tbl-wrap .tbl-view { overflow-x: auto; max-height: 560px; overflow-y: auto; }

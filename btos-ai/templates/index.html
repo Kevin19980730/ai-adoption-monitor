@@ -38,6 +38,7 @@
         <a href="#tokens" role="tab" data-tab="tokens">Tokens (OpenRouter)</a>
         <a href="#ramp" role="tab" data-tab="ramp">Business tokens (Ramp)</a>
         <a href="#databricks" role="tab" data-tab="databricks">Enterprise tokens (Databricks)</a>
+        <a href="#menlo" role="tab" data-tab="menlo">Enterprise spend (Menlo)</a>
         <a href="#tokenecon" role="tab" data-tab="tokenecon">Token economics</a>
         <a href="#pot" role="tab" data-tab="pot">Price of thought (Epoch)</a></div>
       <div class="tab-group" role="group" aria-label="End user layer"><span class="tg-label">End user</span>
@@ -45,6 +46,7 @@
         <a href="#assistants" role="tab" data-tab="assistants">AI assistants</a>
         <a href="#firms" role="tab" data-tab="firms">Firms (BTOS)</a>
         <a href="#rampadopt" role="tab" data-tab="rampadopt">Firms paying for AI (Ramp)</a>
+        <a href="#aei" role="tab" data-tab="aei">Enterprise API use (Anthropic EI)</a>
         <a href="#workers" role="tab" data-tab="workers">Workers (RPS)</a>
         <a href="#compare" role="tab" data-tab="compare">Firms vs workers</a>
         <a href="#fed" role="tab" data-tab="fed">Fed note</a></div>
@@ -452,6 +454,106 @@
     <ul class="dbx-pubs" id="dbx-pubs"></ul>
   </div>
   <p class="muted small">Source: <a href="https://developers.databricks.com/ai-index" target="_blank" rel="noopener">developers.databricks.com/ai-index</a>, data embedded in the page. Scraped weekly by databricks-ai-index/dbx_update.py · <span id="dbx-run"></span></p>
+</section>
+
+<!-- ===================================================== MENLO VENTURES -->
+<section id="tab-menlo" class="tab" hidden>
+  <div class="tiles" id="mv-tiles"></div>
+  <div class="note warn"><h3><span class="ico" aria-hidden="true">!</span> A survey-based market model, updated once a year</h3>
+    <p>Menlo Ventures&rsquo; annual report: a survey of about 400 US enterprise decision-makers (Morning Consult, Sep 2026), plus a bottom-up market model. LLM shares are <b>spend</b> shares weighted by respondents&rsquo; AI budgets. Menlo is an Anthropic investor. Its charts are images, so every number here was transcribed from the report&rsquo;s text or charts; each table row says which. <span id="mv-status"></span></p></div>
+  <div class="card">
+    <div class="card-head"><div><h2>Three views of the enterprise model race</h2><p class="muted">Latest reading from each source. They measure different things, so compare directions, not levels.</p></div></div>
+    <div id="mv-tri" class="tbl-wrap"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Enterprise LLM API share by spend</h2><p class="muted">Menlo estimate, by year. Mid-2025 is from Menlo&rsquo;s July 2025 update, which gave the top three labs only.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-mv-api">Table</button></div>
+      <div class="legend" id="lg-mv-api"></div>
+      <div class="chart" id="c-mv-api"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Enterprise AI deployment spend</h2><p class="muted">Annualised run rate, USD billions (2026 = September). Excludes spend on training models.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-mv-spend">Table</button></div>
+      <div class="chart" id="c-mv-spend"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2>Where the AI budget goes</h2><p class="muted">USD billions, 2026 (bar) vs 2025 (tick). Deployment = infrastructure + applications; development = training.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-mv-cat">Table</button></div>
+    <div class="chart" id="c-mv-cat"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Model tiers: share of spend vs tokens</h2><p class="muted">Q3 2025 vs Q3 2026. Frontier and open-source gain; small closed models lose.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-mv-tier">Table</button></div>
+      <div class="legend" id="lg-mv-tier"></div>
+      <div class="chart" id="c-mv-tier"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Application spend by category, 2026</h2><p class="muted">USD billions. Hover for year-on-year growth.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-mv-app">Table</button></div>
+      <div class="chart" id="c-mv-app"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2>Other survey readings</h2><p class="muted">Adoption, budgets, open-source economics and builder tooling.</p></div></div>
+    <div id="mv-other" class="tbl-wrap"></div>
+  </div>
+  <p class="muted small">Source: Menlo Ventures, <a href="https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/" target="_blank" rel="noopener">2026: The State of Enterprise AI</a> and earlier reports. Curated in menlo-enterprise-ai/menlo_points.csv; menlo_check.py flags new reports weekly.</p>
+</section>
+
+<!-- ===================================================== ANTHROPIC ECONOMIC INDEX (1P API) -->
+<section id="tab-aei" class="tab" hidden>
+  <div class="tiles" id="aei-tiles"></div>
+  <div class="note warn"><h3><span class="ico" aria-hidden="true">!</span> Series break in the June 2026 release</h3>
+    <p>Anthropic&rsquo;s first-party API traffic: businesses and developers building on Claude, classified by task with privacy-preserving methods. Earlier releases are one-week samples. The June 2026 release moved to calendar months and <b>excludes Claude Code</b>, so coding&rsquo;s share drops and &ldquo;directive&rdquo; automation jumps. Read changes <b>within</b> each regime: Aug 2025 &rarr; Feb 2026, and Apr &rarr; May 2026. It covers Anthropic&rsquo;s customers only, not the market.</p></div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Automation vs augmentation</h2><p class="muted" id="aei-auto-sub"></p></div>
+        <button class="btn small tbl-toggle" data-for="c-aei-auto">Table</button></div>
+      <div class="legend" id="lg-aei-auto"></div>
+      <div class="chart" id="c-aei-auto"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>What the API is used for</h2><p class="muted">Share of sampled API records classified as work, personal or coursework. Not published for Aug 2025.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-aei-use">Table</button></div>
+      <div class="legend" id="lg-aei-use"></div>
+      <div class="chart" id="c-aei-use"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2>API use by occupation group</h2><p class="muted" id="aei-occ-sub"></p></div>
+      <button class="btn small tbl-toggle" data-for="c-aei-occ">Table</button></div>
+    <div class="filters inner"><label>Period <select id="aei-occ-p"></select></label><label>Tick = <select id="aei-occ-c"></select></label></div>
+    <div class="chart" id="c-aei-occ"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Collaboration patterns</h2><p class="muted">Share of all sampled records by how the human and Claude split the work.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-aei-collab">Table</button></div>
+      <div class="legend" id="lg-aei-collab"></div>
+      <div class="chart" id="c-aei-collab"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Task size and autonomy</h2><p class="muted">Model estimates per record: hours a human alone would need, minutes with AI, and AI autonomy on a 1&ndash;5 scale.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-aei-time">Table</button></div>
+      <div id="c-aei-time" class="chart"></div>
+    </div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Top API tasks, latest month</h2><p class="muted" id="aei-task-sub"></p></div>
+        <button class="btn small tbl-toggle" data-for="c-aei-task">Table</button></div>
+      <div class="chart" id="c-aei-task"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Request topics, latest month</h2><p class="muted">Anthropic&rsquo;s own grouping of what API callers ask for (top level).</p></div>
+        <button class="btn small tbl-toggle" data-for="c-aei-req">Table</button></div>
+      <div class="chart" id="c-aei-req"></div>
+    </div>
+  </div>
+  <p class="muted small">Source: <a href="https://huggingface.co/datasets/Anthropic/EconomicIndex" target="_blank" rel="noopener">Anthropic Economic Index</a> (CC-BY), 1P API files from every release. Refreshed weekly by anthropic-economic-index/aei_update.py · <span id="aei-run"></span></p>
 </section>
 
 <!-- ===================================================== TOKEN ECONOMICS -->
