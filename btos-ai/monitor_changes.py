@@ -31,6 +31,7 @@ SOURCES = {
     "OpenRouter": ("tokens", 16, 1, "weekly"),
     "Ramp tokens": ("ramp", 21, 8, "weekly"),
     "Ramp AI Index adoption": ("rampadopt", 50, 15, "monthly"),
+    "Databricks AI Index": ("databricks", 21, 15, "weekly"),
     "Silicon Data GPU prices": ("gpu", 5, 1, "daily"),
     "FRED credit & rates": ("credit", 6, 1, "daily"),
     "npm downloads": ("assistants", 6, 1, "daily"),
@@ -95,6 +96,17 @@ def series():
         add("ramp_px", "Blended price paid per M tokens (Ramp)", "Ramp tokens", _pts(px.index, px.values), "per_m", "rel", up_good=False)
         sh = (an / v).reindex(v.index).fillna(0)
         add("ramp_anth", "Anthropic share of business tokens (Ramp)", "Ramp tokens", _pts(sh.index, sh.values), "share", "pp")
+    d = _csv("databricks-ai-index/dbx_share_weekly.csv")
+    if not d.empty:
+        d = d.assign(week_end=(pd.to_datetime(d.week) + pd.Timedelta(days=6)).dt.strftime("%Y-%m-%d"))
+        g = lambda ch, **k: d[(d.chart == ch) & pd.concat([d[c] == v for c, v in k.items()], axis=1).all(axis=1)].groupby("week_end").value.sum() / 100
+        add("dbx_open", "Open-weight share of tokens (Databricks)", "Databricks AI Index", _pts(*zip(*g("open_weight_share", label="Open-weight").items())), "share", "pp")
+        add("dbx_multi", "Companies using 2+ model providers (Databricks)", "Databricks AI Index", _pts(*zip(*g("providers_used", label="2+ providers").items())), "share", "pp")
+        add("dbx_anth", "Anthropic share of proprietary tokens (Databricks)", "Databricks AI Index", _pts(*zip(*g("token_share_prop", group="Anthropic").items())), "share", "pp")
+    ds = _csv("databricks-ai-index/dbx_spend_weekly.csv")
+    if not ds.empty:
+        add("dbx_p50", "Median user's weekly token spend (Databricks)", "Databricks AI Index",
+            _pts((pd.to_datetime(ds.week) + pd.Timedelta(days=6)).dt.strftime("%Y-%m-%d"), ds.p50), "usd_small", "rel")
     osh = _csv("openrouter_data/openrouter_open_share.csv")
     if not osh.empty:
         add("or_open_tok", "Open-weights share of OpenRouter tokens", "OpenRouter model mix", _pts(osh.as_of, osh.open_token_share), "share", "pp")

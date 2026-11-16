@@ -1,0 +1,309 @@
+{
+ "source": "https://developers.databricks.com/ai-index",
+ "charts": {
+  "token_share_prop": {
+   "title": "Unity Gateway Token Share - Proprietary Models",
+   "slug": "token-share",
+   "updated": "2026-11-02",
+   "y_axis": "% of token volume",
+   "colors": {
+    "Gemini, Grok": "#6366f1",
+    "Older OpenAI Models": "#6ac5af",
+    "GPT 5 Nano": "#4fbba1",
+    "GPT 5.6 Sol": "#34b192",
+    "GPT 6 Luna": "#19a684",
+    "GPT 6 Sol": "#0f9775",
+    "GPT 6 Astra": "#0d8467",
+    "GPT 6.1 Sol": "#0b7259",
+    "Older Anthropic Models": "#e6a692",
+    "Opus 4.8": "#e2987f",
+    "Sonnet 5": "#de896d",
+    "Opus 5": "#da7a5b",
+    "Sonnet 5.5": "#c76d50",
+    "Opus 5.5": "#af6046",
+    "Fable 5.1": "#98533d"
+   },
+   "note": "Input plus output tokens routed through Unity Gateway, including traffic routed to external model providers.",
+   "order": [
+    {
+     "group": "Anthropic",
+     "labels": [
+      "Fable 5.1",
+      "Opus 5.5",
+      "Sonnet 5.5",
+      "Opus 5",
+      "Sonnet 5",
+      "Opus 4.8",
+      "Older Anthropic Models"
+     ]
+    },
+    {
+     "group": "OpenAI",
+     "labels": [
+      "GPT 6.1 Sol",
+      "GPT 6 Astra",
+      "GPT 6 Sol",
+      "GPT 6 Luna",
+      "GPT 5.6 Sol",
+      "GPT 5 Nano",
+      "Older OpenAI Models"
+     ]
+    },
+    {
+     "group": "Other proprietary",
+     "labels": [
+      "Gemini, Grok"
+     ]
+    }
+   ]
+  },
+  "wallet_share_prop": {
+   "title": "Unity Gateway Wallet Share - Proprietary Models",
+   "slug": "wallet-share",
+   "updated": "2026-11-02",
+   "y_axis": "% of spend",
+   "colors": {
+    "Gemini, Grok": "#6366f1",
+    "Older OpenAI Models": "#6ac5af",
+    "GPT 5 Nano": "#4fbba1",
+    "GPT 5.6 Sol": "#34b192",
+    "GPT 6 Luna": "#19a684",
+    "GPT 6 Sol": "#0f9775",
+    "GPT 6 Astra": "#0d8467",
+    "GPT 6.1 Sol": "#0b7259",
+    "Older Anthropic Models": "#e6a692",
+    "Opus 4.8": "#e2987f",
+    "Sonnet 5": "#de896d",
+    "Opus 5": "#da7a5b",
+    "Sonnet 5.5": "#c76d50",
+    "Opus 5.5": "#af6046",
+    "Fable 5.1": "#98533d"
+   },
+   "note": "Tokens priced at each provider's published list price, with cache reads at the cache-read rate. Includes traffic routed to external model providers; not what Databricks bills.",
+   "order": [
+    {
+     "group": "Anthropic",
+     "labels": [
+      "Fable 5.1",
+      "Opus 5.5",
+      "Sonnet 5.5",
+      "Opus 5",
+      "Sonnet 5",
+      "Opus 4.8",
+      "Older Anthropic Models"
+     ]
+    },
+    {
+     "group": "OpenAI",
+     "labels": [
+      "GPT 6.1 Sol",
+      "GPT 6 Astra",
+      "GPT 6 Sol",
+      "GPT 6 Luna",
+      "GPT 5.6 Sol",
+      "GPT 5 Nano",
+      "Older OpenAI Models"
+     ]
+    },
+    {
+     "group": "Other proprietary",
+     "labels": [
+      "Gemini, Grok"
+     ]
+    }
+   ]
+  },
+  "token_share_open": {
+   "title": "Unity Gateway Token Share - Open-Weight Models",
+   "slug": "open-source-token-share",
+   "updated": "2026-11-02",
+   "y_axis": "% of token volume",
+   "colors": {
+    "Other": "#f59e0b",
+    "Older Moonshot Models": "#999999",
+    "Kimi K3": "#141414",
+    "Older DeepSeek Models": "#b7abfb",
+    "DS V4 Flash": "#7d67f8",
+    "DS V4.1 Flash": "#4d3cad",
+    "Older Zhipu Models": "#ee9dbc",
+    "GLM 5.2": "#ea85ab",
+    "GLM 5.3": "#ce6d91",
+    "GLM 5.3 Flash": "#a25673"
+   },
+   "note": "Input plus output tokens routed through Unity Gateway, including traffic routed to external model providers.",
+   "order": [
+    {
+     "group": "Zhipu",
+     "labels": [
+      "GLM 5.3 Flash",
+      "GLM 5.3",
+      "GLM 5.2",
+      "Older Zhipu Models"
+     ]
+    },
+    {
+     "group": "DeepSeek",
+     "labels": [
+      "DS V4.1 Flash",
+      "DS V4 Flash",
+      "Older DeepSeek Models"
+     ]
+    },
+    {
+     "group": "Moonshot",
+     "labels": [
+      "Kimi K3",
+      "Older Moonshot Models"
+     ]
+    },
+    {
+     "group": "Other open-weight",
+     "labels": [
+      "Other"
+     ]
+    }
+   ]
+  },
+  "providers_used": {
+   "title": "Companies Using Multiple Model Providers with Unity Gateway",
+   "slug": "providers-used",
+   "updated": "2026-11-02",
+   "y_axis": "% of active companies",
+   "colors": {
+    "4+ providers": "#173f73",
+    "3+ providers": "#2a78d6",
+    "2+ providers": "#79abe8"
+   },
+   "note": "Among companies active each week, counts every provider a company has used since July 20, 2026. Gemini and Gemma count as one provider, as do GPT and GPT-OSS.",
+   "order": [
+    {
+     "group": "Companies using",
+     "labels": [
+      "2+ providers",
+      "3+ providers",
+      "4+ providers"
+     ]
+    }
+   ]
+  },
+  "open_weight_share": {
+   "title": "Unity Gateway Token Share - Proprietary vs Open-Weight",
+   "slug": "open-weight-share",
+   "updated": "2026-11-02",
+   "y_axis": "% of token volume",
+   "colors": {
+    "Open-weight": "#2a78d6",
+    "Proprietary": "#a9c8ef"
+   },
+   "note": "Input plus output tokens to Databricks-hosted models on Unity Gateway. Open-weight: GLM, Kimi, DeepSeek, Qwen, Llama, GPT-OSS and Gemma; the rest is proprietary (Claude, GPT, Gemini and Grok).",
+   "order": [
+    {
+     "group": "Model type",
+     "labels": [
+      "Proprietary",
+      "Open-weight"
+     ]
+    }
+   ]
+  },
+  "spend": {
+   "title": "Unity Gateway User Spend Percentiles (Weekly)",
+   "slug": "spend",
+   "updated": "2026-11-02",
+   "labels": {
+    "p50": "Median",
+    "p90": "P90",
+    "p99": "P99"
+   },
+   "note": "Each user's input, cached and output tokens priced at each provider's published list price; human users only."
+  },
+  "wallet_share_open": {
+   "title": "Unity Gateway Wallet Share - Open-Weight Models",
+   "slug": "open-source-wallet-share",
+   "updated": "2026-11-02",
+   "y_axis": "% of spend",
+   "colors": {
+    "Other": "#f59e0b",
+    "Older Moonshot Models": "#999999",
+    "Kimi K3": "#141414",
+    "Older DeepSeek Models": "#b7abfb",
+    "DS V4 Flash": "#7d67f8",
+    "DS V4.1 Flash": "#4d3cad",
+    "Older Zhipu Models": "#ee9dbc",
+    "GLM 5.2": "#ea85ab",
+    "GLM 5.3": "#ce6d91",
+    "GLM 5.3 Flash": "#a25673"
+   },
+   "note": "Tokens priced at each provider's published list price, with cache reads at the cache-read rate. Includes traffic routed to external model providers; not what Databricks bills.",
+   "order": [
+    {
+     "group": "Zhipu",
+     "labels": [
+      "GLM 5.3 Flash",
+      "GLM 5.3",
+      "GLM 5.2",
+      "Older Zhipu Models"
+     ]
+    },
+    {
+     "group": "DeepSeek",
+     "labels": [
+      "DS V4.1 Flash",
+      "DS V4 Flash",
+      "Older DeepSeek Models"
+     ]
+    },
+    {
+     "group": "Moonshot",
+     "labels": [
+      "Kimi K3",
+      "Older Moonshot Models"
+     ]
+    },
+    {
+     "group": "Other open-weight",
+     "labels": [
+      "Other"
+     ]
+    }
+   ]
+  }
+ },
+ "coding": {
+  "title": "Cost per Task vs Quality",
+  "updated": "2026-11-10",
+  "note": "Built from internal benchmarks on the Databricks codebase. Each model is shown in the harness, Claude Code or Codex, that sits closest to the frontier.",
+  "families": {
+   "Anthropic": "#d97757",
+   "DeepSeek": "#6e56f7",
+   "Google": "#4285f4",
+   "Meta": "#0866ff",
+   "Moonshot": "#1c1c1c",
+   "OpenAI": "#10a37f",
+   "Reflection AI": "#1e3207",
+   "SpaceXSI": "#000000",
+   "Zhipu": "#e87ba4"
+  },
+  "panels": {
+   "quality": {
+    "title": "Highest Quality",
+    "caption": "Top 10 models, ranked by highest pass rate on the coding benchmark.",
+    "axis": "Pass rate (%)",
+    "unit": "percent"
+   },
+   "time": {
+    "title": "Shortest Time per Task",
+    "caption": "Top 10 models, ranked by shortest average time to finish a task (minutes).",
+    "axis": "Average time per task (minutes)",
+    "unit": "minutes"
+   },
+   "cost": {
+    "title": "Lowest Cost per Task",
+    "caption": "Top 10 models, ranked by lowest average cost per task (USD).",
+    "axis": "Average cost per task (USD)",
+    "unit": "usd"
+   }
+  }
+ },
+ "last_run": "2026-11-17T03:04:51"
+}

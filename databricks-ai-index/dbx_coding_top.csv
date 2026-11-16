@@ -1,0 +1,31 @@
+as_of,panel,rank,label,harness,vendor,value,unit
+2026-11-10,cost,1,GPT 6 Luna,Claude Code,OpenAI,0.053,usd
+2026-11-10,cost,2,GPT 6.1 Terra,Claude Code,OpenAI,0.12,usd
+2026-11-10,cost,3,Claude Haiku 5.5,Claude Code,Anthropic,0.158,usd
+2026-11-10,cost,4,GLM 5.3 Flash,Claude Code,Zhipu,0.178,usd
+2026-11-10,cost,5,Beam-501B-A23B,Codex,Reflection AI,0.222,usd
+2026-11-10,cost,6,Claude Sonnet 5.5,Claude Code,Anthropic,0.331,usd
+2026-11-10,cost,7,Muse Spark Open,Claude Code,Meta,0.424,usd
+2026-11-10,cost,8,DeepSeek V4.1 Flash 1017,Claude Code,DeepSeek,0.505,usd
+2026-11-10,cost,9,GPT 6.1 Sol,Claude Code,OpenAI,0.598,usd
+2026-11-10,cost,10,Kimi K3.1 Pro,Claude Code,Moonshot,0.974,usd
+2026-11-10,quality,1,Claude Fable 5.1,Claude Code,Anthropic,96.0,percent
+2026-11-10,quality,2,Muse Wonder,Codex,Meta,94.9,percent
+2026-11-10,quality,3,DeepSeek V4.1 Flash 1017,Codex,DeepSeek,93.1,percent
+2026-11-10,quality,4,GLM 5.3,Claude Code,Zhipu,93.1,percent
+2026-11-10,quality,5,Claude Fable 5.2,Claude Code,Anthropic,92.6,percent
+2026-11-10,quality,6,GPT 6 Astra,Claude Code,OpenAI,92.0,percent
+2026-11-10,quality,7,GPT 6.1 Sol,Codex,OpenAI,92.0,percent
+2026-11-10,quality,8,Kimi K3.1 Pro,Claude Code,Moonshot,91.4,percent
+2026-11-10,quality,9,Gemini 4 carbon,Claude Code,Google,90.3,percent
+2026-11-10,quality,10,Claude Opus 5.5,Claude Code,Anthropic,89.1,percent
+2026-11-10,time,1,GPT 6.1 Terra,Codex,OpenAI,3.0,minutes
+2026-11-10,time,2,Beam-501B-A23B,Codex,Reflection AI,3.8,minutes
+2026-11-10,time,3,Muse Wonder,Codex,Meta,5.2,minutes
+2026-11-10,time,4,Claude Sonnet 5.5,Claude Code,Anthropic,5.4,minutes
+2026-11-10,time,5,GPT 6 Astra,Codex,OpenAI,9.5,minutes
+2026-11-10,time,6,GPT 6.1 Sol,Codex,OpenAI,10.3,minutes
+2026-11-10,time,7,Claude Haiku 5.5,Claude Code,Anthropic,10.8,minutes
+2026-11-10,time,8,GPT 6 Luna,Claude Code,OpenAI,11.0,minutes
+2026-11-10,time,9,Claude Opus 5.5,Claude Code,Anthropic,18.0,minutes
+2026-11-10,time,10,Grok 4.7,Codex,SpaceXSI,19.5,minutes

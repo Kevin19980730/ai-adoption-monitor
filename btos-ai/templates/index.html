@@ -37,6 +37,7 @@
         <a href="#arr" role="tab" data-tab="arr">Lab ARR (OpenAI &amp; Anthropic)</a>
         <a href="#tokens" role="tab" data-tab="tokens">Tokens (OpenRouter)</a>
         <a href="#ramp" role="tab" data-tab="ramp">Business tokens (Ramp)</a>
+        <a href="#databricks" role="tab" data-tab="databricks">Enterprise tokens (Databricks)</a>
         <a href="#tokenecon" role="tab" data-tab="tokenecon">Token economics</a>
         <a href="#pot" role="tab" data-tab="pot">Price of thought (Epoch)</a></div>
       <div class="tab-group" role="group" aria-label="End user layer"><span class="tg-label">End user</span>
@@ -309,6 +310,20 @@
     </div>
   </div>
   <div class="card">
+    <div class="card-head"><div><h2>Tokens by company</h2>
+      <p class="muted" id="tok-co-sub">Tokens per UTC day for each model maker, from the chart on its OpenRouter page (openrouter.ai/openai, /anthropic, /google, /x-ai, /meta &hellip;), pulled daily for every maker. Meta = Muse (meta) + Llama (meta-llama).</p></div>
+      <button class="btn small tbl-toggle" data-for="c-tok-co">Table</button></div>
+    <div class="filters inner">
+      <label>View <select id="tok-co-view"><option value="daily">Daily (7-day average)</option><option value="weekly">Weekly (full weeks)</option></select></label>
+      <label>Measure <select id="tok-co-meas"><option value="tokens">Tokens</option><option value="share">Share of all OpenRouter tokens</option></select></label>
+      <label>Scale <select id="tok-co-scale"><option value="lin">Linear</option><option value="log">Log</option></select></label>
+    </div>
+    <div class="filters inner" id="tok-co-pick"></div>
+    <div class="legend" id="lg-tok-co"></div>
+    <div class="chart" id="c-tok-co"></div>
+    <div id="tok-co-table" style="margin-top:12px"></div>
+  </div>
+  <div class="card">
     <div class="card-head"><div><h2>Whose models carry the tokens &mdash; share of each week by lab origin</h2>
       <p class="muted">The nine models OpenRouter names each week, grouped by the lab that made them. All other models are &ldquo;not named&rdquo;, because OpenRouter only names the top nine. Shares jump when a model enters or leaves the named nine. Stealth models are unannounced, often a big lab testing under a code name.</p></div>
       <button class="btn small tbl-toggle" data-for="c-tok-origin">Table</button></div>
@@ -368,6 +383,75 @@
     <div class="legend" id="lg-rp-top"></div>
     <div class="chart" id="c-rp-top"></div>
   </div>
+</section>
+
+<!-- ===================================================== DATABRICKS AI INDEX -->
+<section id="tab-databricks" class="tab" hidden>
+  <div class="tiles" id="dbx-tiles"></div>
+  <div class="note warn"><h3><span class="ico" aria-hidden="true">!</span> Shares of one gateway, not the market</h3>
+    <p>Aggregated, anonymised traffic from thousands of enterprises that route model calls through Databricks&rsquo; Unity Gateway, including calls it forwards to outside providers. Databricks publishes <b>shares</b> and per-user spend only, no token levels. &ldquo;Wallet share&rdquo; prices every token at the provider&rsquo;s list price (cache reads at the cache-read rate), not what Databricks bills. The page shows a rolling 16 weeks; this monitor keeps every week it has scraped since <span id="dbx-first"></span>.</p></div>
+  <div class="card">
+    <div class="card-head"><div><h2 id="dbx-mix-title">Token share by model</h2>
+      <p class="muted" id="dbx-mix-sub"></p></div>
+      <button class="btn small tbl-toggle" data-for="c-dbx-mix">Table</button></div>
+    <div class="filters inner">
+      <label>Models <select id="dbx-pool"><option value="prop">Proprietary</option><option value="open">Open-weight</option></select></label>
+      <label>Measure <select id="dbx-meas"><option value="token">Token share</option><option value="wallet">Wallet share (list-price spend)</option></select></label>
+      <label>Detail <select id="dbx-detail"><option value="model">By model</option><option value="maker">By maker</option></select></label>
+    </div>
+    <div class="legend" id="lg-dbx-mix"></div>
+    <div class="chart" id="c-dbx-mix"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Companies using several model providers</h2><p class="muted" id="dbx-prov-sub"></p></div>
+        <button class="btn small tbl-toggle" data-for="c-dbx-prov">Table</button></div>
+      <div class="legend" id="lg-dbx-prov"></div>
+      <div class="chart" id="c-dbx-prov"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Open-weight share of tokens</h2><p class="muted" id="dbx-ow-sub"></p></div>
+        <button class="btn small tbl-toggle" data-for="c-dbx-ow">Table</button></div>
+      <div class="legend" id="lg-dbx-ow"></div>
+      <div class="chart" id="c-dbx-ow"></div>
+    </div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Token spend per user, per week</h2><p class="muted" id="dbx-spend-sub"></p></div>
+        <button class="btn small tbl-toggle" data-for="c-dbx-spend">Table</button></div>
+      <div class="legend" id="lg-dbx-spend"></div>
+      <div class="chart" id="c-dbx-spend"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Proprietary tokens vs spend, by maker</h2><p class="muted">Latest week. A maker whose wallet share is above its token share sells pricier tokens than the average in this mix.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-dbx-tw">Table</button></div>
+      <div class="legend" id="lg-dbx-tw"></div>
+      <div class="chart" id="c-dbx-tw"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2>Coding agents: cost per task vs quality</h2><p class="muted" id="dbx-code-sub"></p></div>
+      <button class="btn small tbl-toggle" data-for="c-dbx-code">Table</button></div>
+    <div class="filters inner">
+      <label>Model family <select id="dbx-fam"><option value="">All</option></select></label>
+      <label>Y axis <select id="dbx-y"><option value="quality">Pass rate</option><option value="avg_latency_min">Minutes per task</option><option value="avg_turns">Turns per task</option></select></label>
+    </div>
+    <div class="legend" id="lg-dbx-code"></div>
+    <div class="chart" id="c-dbx-code"></div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2 id="dbx-top-title">Top 10 coding models</h2><p class="muted" id="dbx-top-sub"></p></div>
+      <button class="btn small tbl-toggle" data-for="c-dbx-top">Table</button></div>
+    <div class="filters inner"><label>Rank by <select id="dbx-panel"><option value="quality">Highest quality</option><option value="time">Shortest time per task</option><option value="cost">Lowest cost per task</option></select></label></div>
+    <div class="legend" id="lg-dbx-top"></div>
+    <div class="chart" id="c-dbx-top"></div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2>Databricks publications on AI usage and cost</h2><p class="muted">Listed on the AI Index page.</p></div></div>
+    <ul class="dbx-pubs" id="dbx-pubs"></ul>
+  </div>
+  <p class="muted small">Source: <a href="https://developers.databricks.com/ai-index" target="_blank" rel="noopener">developers.databricks.com/ai-index</a>, data embedded in the page. Scraped weekly by databricks-ai-index/dbx_update.py · <span id="dbx-run"></span></p>
 </section>
 
 <!-- ===================================================== TOKEN ECONOMICS -->

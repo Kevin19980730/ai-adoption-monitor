@@ -1,0 +1,21 @@
+as_of,name,model,harness,vendor,quality,cost,avg_turns,avg_latency_min
+2026-11-10,Beam-501B-A23B (claude code),Beam-501B-A23B,Claude Code,Reflection AI,77.7,0.419,66.3,13.5
+2026-11-10,Claude Fable 5.1 (claude code),Claude Fable 5.1,Claude Code,Anthropic,96.0,7.471,15.7,22.4
+2026-11-10,Claude Fable 5.2 (claude code),Claude Fable 5.2,Claude Code,Anthropic,92.6,5.693,43.2,49.9
+2026-11-10,Claude Haiku 5.5 (claude code),Claude Haiku 5.5,Claude Code,Anthropic,85.1,0.158,31.4,10.8
+2026-11-10,Claude Opus 5.5 (claude code),Claude Opus 5.5,Claude Code,Anthropic,89.1,1.616,29.8,18.0
+2026-11-10,Claude Sonnet 5.5 (claude code),Claude Sonnet 5.5,Claude Code,Anthropic,88.0,0.331,16.2,5.4
+2026-11-10,DeepSeek V4.1 Flash 1017 (codex),DeepSeek V4.1 Flash 1017,Codex,DeepSeek,93.1,1.021,65.1,43.5
+2026-11-10,GLM 5.3 (claude code),GLM 5.3,Claude Code,Zhipu,93.1,2.396,94.3,38.0
+2026-11-10,GLM 5.3 Flash (claude code),GLM 5.3 Flash,Claude Code,Zhipu,89.1,0.178,68.9,33.2
+2026-11-10,GPT 6 Astra (claude code),GPT 6 Astra,Claude Code,OpenAI,92.0,3.281,22.6,11.9
+2026-11-10,GPT 6 Luna (claude code),GPT 6 Luna,Claude Code,OpenAI,89.1,0.053,37.1,11.0
+2026-11-10,GPT 6.1 Sol (codex),GPT 6.1 Sol,Codex,OpenAI,92.0,0.759,33.6,10.3
+2026-11-10,GPT 6.1 Terra (claude code),GPT 6.1 Terra,Claude Code,OpenAI,89.1,0.12,15.0,5.3
+2026-11-10,Gemini 3.8 Flash (codex),Gemini 3.8 Flash,Codex,Google,82.9,11.968,140.2,53.5
+2026-11-10,Gemini 4 carbon (claude code),Gemini 4 carbon,Claude Code,Google,90.3,1.903,62.0,26.6
+2026-11-10,Gemini Argon 4 (codex),Gemini Argon 4,Codex,Google,85.7,4.844,42.9,23.4
+2026-11-10,Grok 4.7 (codex),Grok 4.7,Codex,SpaceXSI,82.3,1.698,29.8,19.5
+2026-11-10,Kimi K3.1 Pro (claude code),Kimi K3.1 Pro,Claude Code,Moonshot,91.4,0.974,27.7,24.4
+2026-11-10,Muse Spark Open (claude code),Muse Spark Open,Claude Code,Meta,80.6,0.424,19.7,37.8
+2026-11-10,Muse Wonder (codex),Muse Wonder,Codex,Meta,94.9,1.532,34.3,5.2

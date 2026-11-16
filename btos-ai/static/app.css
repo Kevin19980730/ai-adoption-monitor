@@ -69,10 +69,10 @@ code { font-size: 12px; background: var(--surface-2); padding: 1px 4px; border-r
 .tabs { display: flex; flex-wrap: wrap; gap: 2px 2px; }
 @media (max-width: 700px) { .tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; } }
 /* tabs grouped by layer: Macro / Infrastructure / Model / End user */
-.tab-group { display: flex; align-items: center; gap: 2px; padding-right: 10px; margin-right: 8px; border-right: 1px solid var(--ring); }
+.tab-group { display: flex; flex-wrap: wrap; align-items: center; gap: 2px; padding-right: 10px; margin-right: 8px; border-right: 1px solid var(--ring); min-width: 0; max-width: 100%; }
 .tab-group:last-child { border-right: 0; }
 .tg-label { font-size: 10.5px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); padding: 0 4px 0 2px; white-space: nowrap; }
-@media (max-width: 700px) { .tab-group { flex: none; } }
+@media (max-width: 700px) { .tab-group { flex: none; flex-wrap: nowrap; max-width: none; } }
 .tabs a { padding: 8px 12px; color: var(--ink-2); text-decoration: none; border-bottom: 2px solid transparent; white-space: nowrap; font-weight: 500; }
 .tabs a:hover { color: var(--ink); background: var(--surface-2); }
 .tabs a[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
@@ -233,3 +233,12 @@ td:first-child { white-space: nowrap; }
 .fresh a:hover { text-decoration: underline; }
 .fresh .when { color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; }
 .fresh .st-stale .when, .fresh .st-missing .when { color: var(--critical); font-weight: 600; }
+
+/* Databricks publications list */
+.dbx-pubs { list-style: none; margin: 0; padding: 0; }
+.dbx-pubs li { display: grid; grid-template-columns: 7.5rem 1fr; column-gap: 16px; padding: 10px 0; border-top: 1px solid var(--ring); }
+.dbx-pubs li:first-child { border-top: 0; }
+.dbx-pubs time { color: var(--muted); font-size: 12.5px; font-variant-numeric: tabular-nums; grid-row: span 2; }
+.dbx-pubs a { font-weight: 600; }
+.dbx-pubs span { font-size: 13px; }
+@media (max-width: 600px) { .dbx-pubs li { grid-template-columns: 1fr; } .dbx-pubs time { grid-row: auto; } }

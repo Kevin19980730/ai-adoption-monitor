@@ -8,6 +8,8 @@ One page over four sources, all read from files so it runs with no Claude:
                                            enterprise seat estimates (edited by hand)
   ramp-ai-index/*.csv                      Ramp AI Index business token volume / spend / prices, and the
                                            monthly share of businesses paying for AI + AI spend per employee
+  databricks-ai-index/dbx_*.csv            Databricks AI Index (Unity Gateway): token / wallet share by model, multi-provider
+                                           use, open-weight share, user spend percentiles, coding cost/quality benchmark
   bofa-capex-cycles/exhibit2_*.csv        BofA Exhibit 2 capex cycles, read from the PDF's vector chart
   credit-spreads/macro_daily.csv          ICE BofA BB / CCC HY OAS (FRED + Wayback history), US 10y real yield,
                                            term premium and nominal yield (FRED)
@@ -438,6 +440,24 @@ def openrouter():
                     "requests": records(req.fillna("")) if not req.empty else []})
 
 
+@app.route("/api/openrouter-companies")
+def openrouter_companies():
+    """Daily tokens by company (openrouter_companies.py: every openrouter.ai/<author> page chart)."""
+    co = or_csv("openrouter_company_daily_tokens.csv")
+    mod = or_csv("openrouter_company_model_daily.csv")
+    if co.empty:
+        return jsonify({"daily": []})
+    full_days = sorted(co[co.partial == 0].date.unique())
+    l7, p7 = full_days[-7:], full_days[-14:-7]
+    top = {}
+    if not mod.empty:
+        m = mod[mod.date.isin(l7) & (mod.model != "Others")].groupby(["company", "model"]).tokens.sum().reset_index()
+        for c, g in m.sort_values("tokens", ascending=False).groupby("company", sort=False):
+            top[c] = {"model": g.model.iloc[0], "tokens": int(g.tokens.iloc[0])}
+    return jsonify({"daily": records(co), "top_model": top, "last7": l7, "prev7": p7,
+                    "weekly_total": records(or_csv("openrouter_weekly_totals.csv").fillna(""))})
+
+
 # ---------------------------------------------------------------- Silicon Data GPU rental indices
 SDD = HERE.parent / "silicon-data"
 SD_META = {  # index -> label, unit, segment (mirrors silicon_update.INDEX; silicon_indices.json, written each run, wins)
@@ -697,6 +717,66 @@ def ramp_adoption():
     for (dim, key), g in (pe.sort_values("month").groupby(["dimension", "key"]) if not pe.empty else []):
         spend.setdefault(dim, {})[key] = records(g.drop(columns=["dimension", "key"]))
     return jsonify({"groups": groups, "spend": spend, "last": a.month.max()})
+
+
+# ---------------------------------------------------------------- Databricks AI Index: enterprise tokens on Unity Gateway
+DBD = HERE.parent / "databricks-ai-index"
+
+
+def dbx_csv(name):
+    p = DBD / name
+    return cached("dbx:" + name, [p], lambda: pd.read_csv(p) if p.exists() else pd.DataFrame())
+
+
+def dbx_meta():
+    p = DBD / "dbx_meta.json"
+    return cached("dbx:meta", [p], lambda: json.loads(p.read_text(encoding="utf-8")) if p.exists() else {})
+
+
+@app.route("/api/databricks")
+def databricks():
+    """Databricks AI Index: token / wallet share by model (proprietary and open-weight), multi-provider use,
+    open-weight share, weekly spend per user, and the coding cost/quality benchmark. Weekly history accumulates
+    in the CSVs (the page itself shows a rolling 16 weeks)."""
+    w = dbx_csv("dbx_share_weekly.csv")
+    meta = dbx_meta()
+    if w.empty:
+        return jsonify({"weeks": []})
+    weeks = sorted(w.week.unique())
+    charts = {}
+    for key, g in w.groupby("chart"):
+        info = meta.get("charts", {}).get(key, {})
+        piv = g.pivot_table(index=["group", "label"], columns="week", values="value", aggfunc="first")
+        order = info.get("order") or [{"group": grp, "labels": list(sub.index.get_level_values(1))} for grp, sub in piv.groupby(level=0)]
+        groups = []
+        for o in order:
+            labs = []
+            for lab in o["labels"]:
+                if (o["group"], lab) in piv.index:
+                    r = piv.loc[(o["group"], lab)]
+                    labs.append({"label": lab, "color": info.get("colors", {}).get(lab), "values": [clean(r.get(wk)) for wk in weeks]})
+            if labs:
+                groups.append({"group": o["group"], "labels": labs})
+        charts[key] = {"title": info.get("title"), "note": info.get("note"), "updated": info.get("updated"),
+                       "y_axis": info.get("y_axis"), "groups": groups}
+    sp = dbx_csv("dbx_spend_weekly.csv")
+    spend = {}
+    if not sp.empty:
+        sp = sp.set_index("week").reindex(weeks)
+        spend = {k: [clean(v) for v in sp[k]] for k in ("p50", "p90", "p99") if k in sp}
+        spend["note"] = meta.get("charts", {}).get("spend", {}).get("note")
+    cm, ct = dbx_csv("dbx_coding_models.csv"), dbx_csv("dbx_coding_top.csv")
+    coding = {}
+    if not cm.empty:
+        last = cm.as_of.max()
+        coding = {"as_of": last, "dates": sorted(cm.as_of.unique()), "models": records(cm[cm.as_of == last]),
+                  "top": {p: records(g.sort_values("rank")) for p, g in ct[ct.as_of == ct.as_of.max()].groupby("panel")} if not ct.empty else {},
+                  **{k: v for k, v in meta.get("coding", {}).items() if k in ("note", "families", "panels")}}
+        if len(coding["dates"]) > 1:  # previous benchmark run, for the "vs last run" column
+            coding["prev"] = records(cm[cm.as_of == coding["dates"][-2]])
+    pubs = dbx_csv("dbx_publications.csv")
+    return jsonify({"weeks": weeks, "charts": charts, "spend": spend, "coding": coding,
+                    "pubs": records(pubs.fillna("")) if not pubs.empty else [], "last_run": meta.get("last_run")})
 
 
 # ---------------------------------------------------------------- token economics (fin, "AI Semiconductor Endgame IV")
@@ -1012,6 +1092,14 @@ def overview():
                           "prev": float(t.iloc[-5]), "delta_label": "vs 4 weeks earlier", "unit": "tokens",
                           "date": f"Week of {nice_date(t.index[-1])}", "source": "Ramp AI Index, Token Spend Management firms",
                           "spark": [float(x) for x in t.tail(26)]})
+    dw = dbx_csv("dbx_share_weekly.csv")
+    if not dw.empty:
+        ow = dw[(dw.chart == "open_weight_share") & (dw.label == "Open-weight")].sort_values("week")
+        if len(ow) > 5:
+            tiles.append({"id": "dbx_open", "title": "Open-weight share of enterprise tokens (Databricks)", "value": float(ow.value.iloc[-1]) / 100,
+                          "prev": float(ow.value.iloc[-5]) / 100, "delta_label": "vs 4 weeks earlier",
+                          "date": f"Week of {nice_date(ow.week.iloc[-1])}", "source": "Databricks AI Index, Databricks-hosted models on Unity Gateway",
+                          "spark": [float(v) / 100 for v in ow.value.tail(26)]})
     hy = hy_frame()
     if not hy.empty:
         tile_meta = [(sid, f"{short} high-yield spread (OAS)", "ICE BofA via FRED") for sid, (short, _) in HY_META.items()] + \

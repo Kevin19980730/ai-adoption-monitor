@@ -374,7 +374,7 @@ async function loadOverview() {
   $("#chg-days").addEventListener("change", loadChanges);
   const d = await api("/api/overview");
   const host = $("#tiles"); host.replaceChildren();
-  const link = {btos7: "#firms", btos24: "#firms", ChatGPT: "#assistants", "Gemini app": "#assistants", codex: "#assistants", openrouter: "#tokens", ramp: "#ramp", capex: "#capex", hy_BAMLH0A1HYBB: "#credit", hy_BAMLH0A3HYC: "#credit", hy_DFII10: "#credit", hy_THREEFYTP10: "#credit", arr_Anthropic: "#arr", arr_OpenAI: "#arr", pop_ms: "#population", pop_best: "#population", rampadopt: "#rampadopt"};
+  const link = {btos7: "#firms", btos24: "#firms", ChatGPT: "#assistants", "Gemini app": "#assistants", codex: "#assistants", openrouter: "#tokens", ramp: "#ramp", capex: "#capex", hy_BAMLH0A1HYBB: "#credit", hy_BAMLH0A3HYC: "#credit", hy_DFII10: "#credit", hy_THREEFYTP10: "#credit", arr_Anthropic: "#arr", arr_OpenAI: "#arr", pop_ms: "#population", pop_best: "#population", rampadopt: "#rampadopt", dbx_open: "#databricks"};
   d.tiles.forEach(t => {
     const a = h("a", {class: "tile", href: link[t.id] || "#workers"}, host);
     h("div", {class: "t"}, a, t.title);
@@ -808,6 +808,59 @@ async function loadTokens() {
   if (!OR.totals.length) { $("#tok-tiles").textContent = "No OpenRouter data yet - run the weekly update."; return; }
   $("#tok-scale").addEventListener("change", drawTokens);
   drawTokens();
+  loadTokenCompanies();
+}
+
+/* tokens by company: every openrouter.ai/<author> page chart (openrouter_data/openrouter_companies.py) */
+let ORC = null, ORC_PICK = ["OpenAI", "Anthropic", "Google", "xAI", "Meta", "DeepSeek"];
+async function loadTokenCompanies() {
+  ORC = await api("/api/openrouter-companies");
+  if (!ORC.daily.length) { $("#tok-co-sub").textContent += " No data yet - run openrouter_companies.py."; return; }
+  ["#tok-co-view", "#tok-co-meas", "#tok-co-scale"].forEach(s => $(s).addEventListener("change", drawTokenCompanies));
+  drawTokenCompanies();
+}
+function drawTokenCompanies() {
+  const D = ORC.daily, view_ = $("#tok-co-view").value, share = $("#tok-co-meas").value === "share", log = $("#tok-co-scale").value === "log" && !share;
+  const partial = new Set(D.filter(r => r.partial).map(r => r.date));
+  // only days most makers cover (Meta alone has Wayback days before the other pages' 90-day window)
+  const nCo = {}; D.forEach(r => { nCo[r.date] = (nCo[r.date] || 0) + 1; });
+  const days = Object.keys(nCo).filter(d => !partial.has(d) && nCo[d] >= 10).sort(), inDays = new Set(days);
+  const by = {}, dayTot = {};
+  D.forEach(r => { if (!inDays.has(r.date)) return; (by[r.company] = by[r.company] || {})[r.date] = r.tokens; dayTot[r.date] = (dayTot[r.date] || 0) + r.tokens; });
+  const sum = (c, ds) => ds.reduce((a, d) => a + ((by[c] || {})[d] || 0), 0);
+  const l7 = ORC.last7, p7 = ORC.prev7, all7 = l7.reduce((a, d) => a + (dayTot[d] || 0), 0);
+  const comps = Object.keys(by).sort((a, b) => sum(b, l7) - sum(a, l7));
+  // company picker: up to 6 lines (one colour each)
+  const pick = $("#tok-co-pick"); pick.replaceChildren(); h("span", {class: "muted"}, pick, "Companies (up to 6): ");
+  comps.filter(c => sum(c, l7) > 0).slice(0, 16).forEach(c => {
+    const lab = h("label", {style: "margin-right:10px;white-space:nowrap"}, pick);
+    const cb = h("input", {type: "checkbox"}, lab); cb.checked = ORC_PICK.includes(c);
+    cb.addEventListener("change", () => { ORC_PICK = cb.checked ? [...ORC_PICK, c].slice(-6) : ORC_PICK.filter(x => x !== c); drawTokenCompanies(); });
+    lab.appendChild(document.createTextNode(" " + c));
+  });
+  const sel = ORC_PICK.filter(c => by[c]);
+  const COL = ["var(--s1)", "var(--s2)", "var(--s3)", "var(--s4)", "var(--s5)", "var(--s6)"];
+  let S, title;
+  if (view_ === "weekly") {
+    const wk = {}; days.forEach(d => { const t = T(d), w = t - ((new Date(t).getUTCDay() + 6) % 7) * 864e5; (wk[w] = wk[w] || []).push(d); });
+    const weeks = Object.keys(wk).map(Number).sort((a, b) => a - b).filter(w => wk[w].length === 7);
+    S = sel.map((c, i) => ({name: c, color: COL[i], points: weeks.map(w => { const v = sum(c, wk[w]), t = wk[w].reduce((a, d) => a + dayTot[d], 0); return {x: w, y: share ? v / t : v}; })}));
+    title = x => "Week of " + fmtDate(x);
+  } else {
+    S = sel.map((c, i) => ({name: c, color: COL[i], points: days.slice(6).map((d, k) => { const w = days.slice(k, k + 7), v = sum(c, w), t = w.reduce((a, x) => a + dayTot[x], 0); return {x: T(d), y: share ? v / t : v / 7}; })}));
+    title = x => "7 days to " + fmtDate(x);
+  }
+  legend("lg-tok-co", S.map(s => ({name: s.name, color: s.color})));
+  const yFmt = share ? v => pct(v, v < 0.1 ? 1 : 0) : tok;
+  view("c-tok-co", hst => lineChart(hst, S, {height: 340, yFmt, log, yMin: log ? 1e9 : 0, mode: "near", title, aria: "OpenRouter tokens by company"}),
+    hst => table(hst, [{label: "Date (UTC)", key: "date"}].concat(sel.map(c => ({label: c, n: 1, get: r => tok((by[c] || {})[r.date] || null)}))).concat([{label: "All makers", n: 1, get: r => tok(dayTot[r.date])}]),
+      days.slice().reverse().map(d => ({date: d}))));
+  const chg = (a, b) => b ? (a >= b ? "+" : "") + ((a / b - 1) * 100).toFixed(1) + "%" : "new";
+  table($("#tok-co-table"), [{label: "Company", key: "c"}, {label: "Last 7 days", n: 1, get: r => tok(r.a)}, {label: "Share", n: 1, get: r => pct(r.a / all7)},
+    {label: "Prior 7 days", n: 1, get: r => r.b ? tok(r.b) : "–"}, {label: "Change", n: 1, get: r => chg(r.a, r.b)}, {label: "Biggest model, last 7 days", get: r => r.top}],
+    comps.map(c => ({c, a: sum(c, l7), b: sum(c, p7), top: ORC.top_model[c] ? ORC.top_model[c].model + " (" + tok(ORC.top_model[c].tokens) + ")" : "–"})).filter(r => r.a || r.b));
+  $("#tok-co-sub").textContent = `Tokens per UTC day for each model maker, from the chart on its OpenRouter page (openrouter.ai/openai, /anthropic, /google, /x-ai, /meta …), pulled daily for all ${comps.length} makers. Meta = Muse (meta) + Llama (meta-llama). ` +
+    `Last 7 full days: ${fmtDate(T(l7[0]))} – ${fmtDate(T(l7[l7.length - 1]))}. Each page shows only ~90 days, so the stored history grows from ${fmtDate(T(days[0]))}; the makers together come to 98–99.9% of OpenRouter's weekly total in recent weeks (the rest is delisted makers). The day still in progress is left out.`;
 }
 
 /* ================================================================ Lab ARR (OpenAI & Anthropic) */
@@ -1121,6 +1174,188 @@ async function loadRamp() {
   const sel = $("#rp-px-maker"); Object.keys(RP.prices).forEach(m => h("option", {value: m}, sel, m));
   ["#rp-metric", "#rp-mode", "#rp-scale", "#rp-range", "#rp-px-maker"].forEach(id => $(id).addEventListener("change", drawRamp));
   drawRamp();
+}
+
+/* ================================================================ Databricks AI Index (enterprise tokens on Unity Gateway) */
+let DBX = null;
+const DBX_MAKER = {Anthropic: "var(--s4)", OpenAI: "var(--s1)", "Other proprietary": "var(--s5)", Zhipu: "var(--s2)", DeepSeek: "var(--s3)", Moonshot: "var(--s6)", "Other open-weight": "var(--s5)"};
+const DBX_FAM = {Anthropic: "#d97757", OpenAI: "#10a37f", Google: "#4285f4", Meta: "#22b8cf", DeepSeek: "#7c66f8", Zhipu: "#e87ba4", Moonshot: "var(--ink-2)", "Reflection AI": "#9ccc65", SpaceXSI: "var(--muted)"};  /* Databricks family colours; near-black ones swapped so they show in dark mode */
+const p100 = (v, d = 1) => v == null ? "–" : v.toFixed(d) + "%";
+
+/* stacked weekly columns. layers bottom-up: [{name, color, values}] (values in % of total) */
+function stackCols(host, weeks, layers, opt) {
+  host.replaceChildren();
+  const W = Math.max(300, host.clientWidth || 900), H = opt.height || 340, narrow = W < 600;
+  const M = {l: 44, r: 10, t: 12, b: 30};
+  const svg = el("svg", {viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": opt.aria || "stacked column chart"}, host);
+  const n = weeks.length, tot = weeks.map((_, i) => sum(layers.map(L => L.values[i] || 0)));
+  const ymax = opt.max ?? Math.max(...tot) * 1.02;
+  const bw = (W - M.l - M.r) / n, Y = v => H - M.b - v / ymax * (H - M.t - M.b);
+  niceTicks(0, ymax, 4).forEach(v => { el("line", {x1: M.l, x2: W - M.r, y1: Y(v), y2: Y(v), stroke: "var(--grid)"}, svg); el("text", {x: M.l - 6, y: Y(v) + 4, "text-anchor": "end"}, svg, opt.yFmt(v)); });
+  const every = Math.ceil(n / (narrow ? 4 : 8));
+  weeks.forEach((w, i) => {
+    const x = M.l + i * bw, g = el("g", null, svg);
+    let acc = 0;
+    layers.forEach(L => { const v = L.values[i] || 0; if (v > 0) el("rect", {x: x + bw * 0.12, width: bw * 0.76, y: Y(acc + v), height: Math.max(Y(acc) - Y(acc + v) - 0.5, 0), fill: L.color}, g); acc += v; });
+    if (i % every === 0 || i === n - 1) el("text", {x: x + bw / 2, y: H - M.b + 16, "text-anchor": "middle"}, svg, dShort(w));
+    const hit = el("rect", {x, y: M.t, width: bw, height: H - M.t - M.b, fill: "transparent"}, svg);
+    hit.addEventListener("pointermove", ev => {
+      g.style.opacity = 0.8;
+      const rows = layers.map(L => [L, L.values[i]]).filter(r => r[1] != null && r[1] > 0).reverse();
+      tipShow([tipTitle("Week of " + fmtDate(T(w)))].concat(rows.map(([L, v]) => { const r = tipRow(L.color, opt.yFmt(v), L.name); r.querySelector("i").style.borderTopWidth = "8px"; return r; })), ev.clientX, ev.clientY);
+    });
+    hit.addEventListener("pointerleave", () => { g.style.opacity = 1; tipHide(); });
+  });
+}
+
+/* cost (log x) vs a y metric; the Pareto frontier (cheapest for a given pass rate) is drawn as a step line */
+function frontierChart(host, models, yKey, opt) {
+  host.replaceChildren();
+  const W = Math.max(300, host.clientWidth || 900), H = Math.min(540, Math.max(360, W * 0.5)), narrow = W < 600;
+  const M = {l: 54, r: 24, t: 14, b: 44};
+  const svg = el("svg", {viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "cost per task versus " + opt.yLabel}, host);
+  const xs = models.map(m => m.cost), ys = models.map(m => m[yKey]);
+  const lx0 = Math.log10(Math.min(...xs) / 1.5), lx1 = Math.log10(Math.max(...xs) * 1.5);
+  const y0 = Math.max(0, Math.min(...ys) - (Math.max(...ys) - Math.min(...ys)) * 0.12), y1 = Math.max(...ys) + (Math.max(...ys) - Math.min(...ys)) * 0.08 + 0.1;
+  const X = v => M.l + (Math.log10(v) - lx0) / (lx1 - lx0) * (W - M.l - M.r), Y = v => H - M.b - (v - y0) / (y1 - y0) * (H - M.t - M.b);
+  niceTicks(y0, y1, 5).forEach(v => { el("line", {x1: M.l, x2: W - M.r, y1: Y(v), y2: Y(v), stroke: "var(--grid)"}, svg); el("text", {x: M.l - 8, y: Y(v) + 4, "text-anchor": "end"}, svg, opt.yFmt(v)); });
+  [0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50].filter(v => Math.log10(v) >= lx0 && Math.log10(v) <= lx1).forEach(v => {
+    el("line", {x1: X(v), x2: X(v), y1: M.t, y2: H - M.b, stroke: "var(--grid)"}, svg); el("text", {x: X(v), y: H - M.b + 16, "text-anchor": "middle"}, svg, "$" + v);
+  });
+  el("text", {x: (M.l + W - M.r) / 2, y: H - 6, "text-anchor": "middle", class: "lab"}, svg, "Average cost per task (USD, log scale)");
+  el("text", {x: 14, y: (M.t + H - M.b) / 2, "text-anchor": "middle", class: "lab", transform: `rotate(-90 14 ${(M.t + H - M.b) / 2})`}, svg, opt.yLabel);
+  if (yKey === "quality") {  // frontier over the shown models
+    const f = [...models].sort((a, b) => a.cost - b.cost).filter((m, i, arr) => arr.slice(0, i).every(o => o.quality < m.quality));
+    let d = ""; f.forEach((m, i) => { d += (i ? ` H${X(m.cost)} V${Y(m.quality)}` : `M${X(m.cost)},${Y(m.quality)}`); });
+    if (f.length > 1) el("path", {d, fill: "none", stroke: "var(--ink-2)", "stroke-width": 1.5, "stroke-dasharray": "4 3"}, svg);
+  }
+  const placed = [];
+  [...models].sort((a, b) => b[yKey] - a[yKey]).forEach(m => {
+    const cx = X(m.cost), cy = Y(m[yKey]), col = DBX_FAM[m.vendor] || "var(--s5)";
+    el("circle", {cx, cy, r: 6, fill: col, stroke: "var(--surface)", "stroke-width": 2}, svg);
+    if (!narrow) {
+      const w = m.model.length * 6.2, lx = cx + 9 + w > W - M.r ? cx - 9 - w : cx + 9, ly = cy + 4;
+      if (!placed.some(q => Math.abs(q.y - ly) < 13 && lx < q.x + q.w && lx + w > q.x)) { placed.push({x: lx, y: ly, w}); el("text", {x: lx, y: ly, class: "lab", stroke: "var(--surface)", "stroke-width": 4, "paint-order": "stroke", "stroke-linejoin": "round"}, svg, m.model); }
+    }
+    const hit = el("circle", {cx, cy, r: 13, fill: "transparent"}, svg);
+    hit.addEventListener("pointermove", ev => tipShow([tipTitle(m.model), h("div", {class: "extra"}, null, `${m.vendor} · run in ${m.harness}`),
+      tipRow(col, p100(m.quality), "pass rate"), tipRow(null, "$" + m.cost.toFixed(3), "per task"),
+      tipRow(null, m.avg_latency_min.toFixed(1) + " min", "per task"), tipRow(null, m.avg_turns.toFixed(1), "turns per task")], ev.clientX, ev.clientY));
+    hit.addEventListener("pointerleave", tipHide);
+  });
+}
+
+function drawDbx() {
+  const D = DBX, W = D.weeks, n = W.length, C = D.charts, last = n - 1, b4 = Math.max(0, n - 5);
+  const flat = c => (C[c]?.groups || []).flatMap(g => g.labels.map(l => ({...l, group: g.group})));
+  const makerSum = (c, grp, i) => sum(flat(c).filter(l => l.group === grp).map(l => l.values[i] || 0));
+  // tiles
+  const host = $("#dbx-tiles"); host.replaceChildren();
+  const tile = (title, val, dl, sub, series, link) => {
+    const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, title); h("div", {class: "v"}, a, val);
+    if (dl != null) { const dd = h("div", {class: "d"}, a); h("span", {class: Math.abs(dl) < 0.05 ? "" : dl > 0 ? "up" : "down"}, dd, Math.abs(dl) < 0.05 ? "● unchanged" : (dl > 0 ? "▲ " : "▼ ") + pp(dl)); dd.appendChild(document.createTextNode(" vs 4 weeks earlier")); }
+    h("div", {class: "s"}, a, sub); const sp = spark(series, "var(--s1)"); if (sp) a.appendChild(sp);
+  };
+  const wk = "Week of " + fmtDate(T(W[last]));
+  const ow = flat("open_weight_share").find(l => l.label === "Open-weight")?.values || [];
+  tile("Open-weight share of tokens", p100(ow[last]), ow[last] - ow[b4], wk + " · Databricks-hosted models", ow);
+  const p2 = flat("providers_used").find(l => l.label === "2+ providers")?.values || [], p3 = flat("providers_used").find(l => l.label === "3+ providers")?.values || [];
+  tile("Companies using 2+ providers", p100(p2[last]), p2[last] - p2[b4], `${wk} · 3+ providers: ${p100(p3[last])}`, p2);
+  const an = W.map((_, i) => makerSum("token_share_prop", "Anthropic", i)), anw = W.map((_, i) => makerSum("wallet_share_prop", "Anthropic", i));
+  tile("Anthropic share of proprietary tokens", p100(an[last]), an[last] - an[b4], `${wk} · OpenAI ${p100(makerSum("token_share_prop", "OpenAI", last))} · Anthropic wallet share ${p100(anw[last])}`, an);
+  const sp = D.spend;
+  if (sp.p50) {
+    const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, "Median user's weekly token spend"); h("div", {class: "v"}, a, "$" + sp.p50[last].toFixed(2));
+    const g = sp.p50[last] / sp.p50[b4] - 1, dd = h("div", {class: "d"}, a);
+    h("span", {class: g >= 0 ? "up" : "down"}, dd, (g >= 0 ? "▲ " : "▼ ") + (Math.abs(g) * 100).toFixed(0) + "%"); dd.appendChild(document.createTextNode(` vs 4 weeks earlier · P90 $${sp.p90[last].toFixed(0)} · P99 $${sp.p99[last].toFixed(0)}`));
+    h("div", {class: "s"}, a, wk + " · list prices, human users"); const s2 = spark(sp.p50, "var(--s1)"); if (s2) a.appendChild(s2);
+  }
+
+  // model / maker mix
+  const pool = $("#dbx-pool").value, meas = $("#dbx-meas").value, byMaker = $("#dbx-detail").value === "maker";
+  const key = `${meas}_share_${pool}`, ch = C[key];
+  $("#dbx-mix-title").textContent = `${meas === "token" ? "Token" : "Wallet"} share by ${byMaker ? "maker" : "model"}, ${pool === "prop" ? "proprietary" : "open-weight"} models`;
+  $("#dbx-mix-sub").textContent = `${ch.note} Each week sums to 100%. Updated ${fmtDate(T(ch.updated))}.`;
+  // bottom-up: legend order reversed so the first maker sits at the bottom
+  let layers = byMaker ? ch.groups.map(g => ({name: g.group, color: DBX_MAKER[g.group] || "var(--s5)", values: W.map((_, i) => sum(g.labels.map(l => l.values[i] || 0)))}))
+    : ch.groups.flatMap(g => g.labels.map(l => ({name: l.label + (g.group.startsWith("Other") ? "" : ` (${g.group})`), short: l.label, color: l.color || DBX_MAKER[g.group], values: l.values})));
+  layers = layers.reverse();
+  legend("lg-dbx-mix", [...layers].reverse().map(L => ({name: L.short || L.name, color: L.color, kind: "dot"})));
+  view("c-dbx-mix", hst => stackCols(hst, W, layers, {height: 360, yFmt: v => p100(v, 0), max: 100}),
+    hst => table(hst, [{label: "Week", get: i => W[i]}].concat([...layers].reverse().map(L => ({label: L.name, n: 1, get: i => p100(L.values[i])}))), W.map((_, i) => i).reverse()));
+
+  // providers used + open-weight share
+  const lineOf = (c, nm, color) => { const l = flat(c).find(x => x.label === nm); return {name: nm, color, markers: false, points: W.map((w, i) => ({x: T(w), y: l?.values[i] ?? null}))}; };
+  const PV = [lineOf("providers_used", "2+ providers", "var(--s1)"), lineOf("providers_used", "3+ providers", "var(--s2)"), lineOf("providers_used", "4+ providers", "var(--s3)")];
+  $("#dbx-prov-sub").textContent = C.providers_used.note;
+  legend("lg-dbx-prov", PV.map(s => ({name: s.name, color: s.color})));
+  view("c-dbx-prov", hst => lineChart(hst, PV, {height: 280, yFmt: v => p100(v, 0), yMin: 0, mode: "cross", endLabels: false, title: x => "Week of " + fmtDate(x)}),
+    hst => table(hst, [{label: "Week", get: i => W[i]}].concat(PV.map(s => ({label: s.name, n: 1, get: i => p100(s.points[i].y)}))), W.map((_, i) => i).reverse()));
+  const OW = [lineOf("open_weight_share", "Open-weight", "var(--s1)")];
+  $("#dbx-ow-sub").textContent = C.open_weight_share.note;
+  legend("lg-dbx-ow", []);
+  view("c-dbx-ow", hst => lineChart(hst, OW, {height: 280, yFmt: v => p100(v, 0), yMin: 0, mode: "cross", endLabels: false, title: x => "Week of " + fmtDate(x)}),
+    hst => table(hst, [{label: "Week", get: i => W[i]}, {label: "Open-weight", n: 1, get: i => p100(OW[0].points[i].y)}, {label: "Proprietary", n: 1, get: i => p100(OW[0].points[i].y == null ? null : 100 - OW[0].points[i].y)}], W.map((_, i) => i).reverse()));
+
+  // spend percentiles
+  if (sp.p50) {
+    const SP = [["P99", "p99", "var(--s3)"], ["P90", "p90", "var(--s2)"], ["Median", "p50", "var(--s1)"]].map(([nm, k, c]) => ({name: nm, color: c, markers: false, points: W.map((w, i) => ({x: T(w), y: sp[k][i]}))}));
+    $("#dbx-spend-sub").textContent = sp.note + " Log scale.";
+    legend("lg-dbx-spend", SP.map(s => ({name: s.name, color: s.color})));
+    const f$ = v => v == null ? "–" : "$" + (v >= 10 ? Math.round(v) : v.toFixed(2));
+    view("c-dbx-spend", hst => lineChart(hst, SP, {height: 280, yFmt: f$, log: true, mode: "cross", endLabels: false, title: x => "Week of " + fmtDate(x)}),
+      hst => table(hst, [{label: "Week", get: i => W[i]}].concat(SP.map(s => ({label: s.name, n: 1, get: i => f$(s.points[i].y)}))), W.map((_, i) => i).reverse()));
+  }
+
+  // token vs wallet share by maker (proprietary, latest week)
+  const TW = C.token_share_prop.groups.map(g => ({key: g.group, label: g.group, value: makerSum("wallet_share_prop", g.group, last) / 100,
+    tick: makerSum("token_share_prop", g.group, last) / 100, color: DBX_MAKER[g.group] || "var(--s5)",
+    note: `Token share ${p100(makerSum("token_share_prop", g.group, last))} · wallet share ${p100(makerSum("wallet_share_prop", g.group, last))}`}));
+  legend("lg-dbx-tw", [{name: "Bar = wallet share", color: "var(--s1)", kind: "dot"}, {name: "Tick = token share", color: "var(--ink)"}]);
+  view("c-dbx-tw", hst => hbar(hst, TW, {fmt: v => pct(v, 1), tickLabel: "Token share", valueLabel: "wallet share", max: 1}),
+    hst => table(hst, [{label: "Maker", key: "label"}, {label: "Token share", n: 1, get: r => pct(r.tick)}, {label: "Wallet share", n: 1, get: r => pct(r.value)},
+      {label: "Price vs mix average", n: 1, get: r => r.tick ? (r.value / r.tick).toFixed(2) + "×" : "–"}], TW));
+
+  drawDbxCoding();
+}
+
+function drawDbxCoding() {
+  const cd = DBX.coding; if (!cd.models) return;
+  const fam = $("#dbx-fam").value, yKey = $("#dbx-y").value;
+  const M = cd.models.filter(m => !fam || m.vendor === fam);
+  const yLab = {quality: "Pass rate (%)", avg_latency_min: "Average minutes per task", avg_turns: "Average turns per task"}[yKey];
+  const yFmt = yKey === "quality" ? v => p100(v, 0) : v => v.toFixed(0);
+  $("#dbx-code-sub").textContent = `Databricks' internal benchmark built from real coding tasks on its own codebase. Updated ${fmtDate(T(cd.as_of))}. ${cd.note || ""}${yKey === "quality" ? " Dashed line = cost/quality frontier (no cheaper model scores higher)." : ""}`;
+  legend("lg-dbx-code", [...new Set(M.map(m => m.vendor))].sort().map(v => ({name: v, color: DBX_FAM[v] || "var(--s5)", kind: "dot"})));
+  const prev = Object.fromEntries((cd.prev || []).map(m => [m.name, m]));
+  const onF = new Set([...cd.models].sort((a, b) => a.cost - b.cost).filter((m, i, arr) => arr.slice(0, i).every(o => o.quality < m.quality)).map(m => m.name));
+  view("c-dbx-code", hst => frontierChart(hst, M, yKey, {yLabel: yLab, yFmt}),
+    hst => table(hst, [{label: "Model", key: "model"}, {label: "Maker", key: "vendor"}, {label: "Harness", key: "harness"}, {label: "Pass rate", n: 1, get: r => p100(r.quality)},
+      {label: "$ / task", n: 1, get: r => "$" + r.cost.toFixed(3)}, {label: "Min / task", n: 1, get: r => r.avg_latency_min.toFixed(1)}, {label: "Turns", n: 1, get: r => r.avg_turns.toFixed(1)},
+      {label: "Frontier", get: r => onF.has(r.name) ? "yes" : ""}].concat(cd.prev ? [{label: "Pass rate vs last run", n: 1, get: r => prev[r.name] ? pp(r.quality - prev[r.name].quality) : "new"}] : []),
+      [...M].sort((a, b) => b.quality - a.quality || a.cost - b.cost)));
+  // top-10 panels
+  const pk = $("#dbx-panel").value, P = (cd.top || {})[pk] || [], pm = (cd.panels || {})[pk] || {};
+  const fmt = pk === "cost" ? v => "$" + (v < 1 ? v.toFixed(3) : v.toFixed(2)) : pk === "time" ? v => v.toFixed(1) + " min" : v => p100(v, 1);
+  $("#dbx-top-title").textContent = pm.title || "Top 10 coding models";
+  $("#dbx-top-sub").textContent = (pm.caption || "") + " Each model in the harness it ran in; the same model can rank in both.";
+  legend("lg-dbx-top", [...new Set(P.map(r => r.vendor))].map(v => ({name: v, color: DBX_FAM[v] || "var(--s5)", kind: "dot"})));
+  const rows = P.map(r => ({key: r.rank + r.label, label: `${r.label} (${r.harness})`, value: r.value, color: DBX_FAM[r.vendor] || "var(--s5)", note: r.vendor}));
+  view("c-dbx-top", hst => hbar(hst, rows, {fmt, valueLabel: pm.axis || ""}),
+    hst => table(hst, [{label: "Rank", key: "rank"}, {label: "Model", key: "label"}, {label: "Harness", key: "harness"}, {label: "Maker", key: "vendor"}, {label: pm.axis || "Value", n: 1, get: r => fmt(r.value)}], P));
+}
+
+async function loadDatabricks() {
+  DBX = await api("/api/databricks");
+  if (!DBX.weeks.length) { $("#dbx-tiles").textContent = "No Databricks data yet - run databricks-ai-index/dbx_update.py."; return; }
+  $("#dbx-first").textContent = fmtDate(T(DBX.weeks[0]));
+  $("#dbx-run").textContent = DBX.last_run ? "last scraped " + DBX.last_run.replace("T", " ").slice(0, 16) : "";
+  const fs = $("#dbx-fam"); [...new Set((DBX.coding.models || []).map(m => m.vendor))].sort().forEach(v => h("option", {value: v}, fs, v));
+  const ul = $("#dbx-pubs"); ul.replaceChildren();
+  DBX.pubs.forEach(p => { const li = h("li", null, ul); h("time", null, li, fmtDate(T(p.date))); const a = h("a", {href: p.url, target: "_blank", rel: "noopener"}, li, p.title); if (p.description) h("span", {class: "muted"}, li, p.description); });
+  ["#dbx-pool", "#dbx-meas", "#dbx-detail"].forEach(id => $(id).addEventListener("change", drawDbx));
+  ["#dbx-fam", "#dbx-y", "#dbx-panel"].forEach(id => $(id).addEventListener("change", drawDbxCoding));
+  drawDbx();
 }
 
 /* ================================================================ token economics (fin, "AI Semiconductor Endgame IV") */
@@ -1845,7 +2080,7 @@ function loadData() {
   refreshStatus();
 }
 
-const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, tokenecon: loadTokenEcon, pot: loadPot, rampadopt: loadRampAdopt, arr: loadArr, circular: loadCircular, population: loadPopulation, coverage: loadCoverage, data: loadData};
+const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, databricks: loadDatabricks, tokenecon: loadTokenEcon, pot: loadPot, rampadopt: loadRampAdopt, arr: loadArr, circular: loadCircular, population: loadPopulation, coverage: loadCoverage, data: loadData};
 async function boot(again) {
   META = await api("/api/meta");
   document.body.classList.toggle("hosted", !!META.hosted);
