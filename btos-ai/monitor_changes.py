@@ -48,9 +48,33 @@ SOURCES = {
 IRREGULAR = {"Lab ARR", "AI assistant disclosures", "Circular financing deals"}
 
 
+_READ = set()  # every CSV series() reads, so its cache can be checked against file mtimes
+
+
 def _csv(rel, **kw):
     p = WS / rel
+    _READ.add(p)
     return pd.read_csv(p, low_memory=False, **kw) if p.exists() else pd.DataFrame()
+
+
+_SER_LOCK = threading.Lock()
+_SER_CACHE = {"key": None, "val": None}
+
+
+def _mtimes():
+    return tuple(sorted((str(p), p.stat().st_mtime if p.exists() else 0) for p in _READ))
+
+
+def series():
+    """Cached _build_series(): rebuilt only when one of the CSVs it read changes. The lock makes
+    concurrent requests (/api/changes + /api/freshness fire together) share one build instead of
+    each reading ~25 CSVs at once, which ran the 512 MB Render free instance out of memory."""
+    with _SER_LOCK:
+        key = _mtimes() if _READ else None
+        if key is None or key != _SER_CACHE["key"]:
+            val = _build_series()
+            _SER_CACHE.update(key=_mtimes(), val=val)
+        return _SER_CACHE["val"]
 
 
 def _pts(dates, values):
@@ -59,7 +83,7 @@ def _pts(dates, values):
     return s
 
 
-def series():
+def _build_series():
     """[{id, name, source, fmt, delta, up_good, s (date-indexed pd.Series)}]
     delta: rel = % change, pp = share 0-1 in percentage points, pp100 = value already in % (pp),
     bp = rate in % shown in basis points, x = ratio change."""
