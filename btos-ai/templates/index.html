@@ -326,6 +326,21 @@
     <div id="tok-co-table" style="margin-top:12px"></div>
   </div>
   <div class="card">
+    <div class="card-head"><div><h2>Revenue by company &mdash; what customers pay for tokens on OpenRouter</h2>
+      <p class="muted" id="tok-rev-sub">Daily paid tokens per model &times; OpenRouter&rsquo;s effective (cache-weighted) price, summed by model maker.</p></div>
+      <button class="btn small tbl-toggle" data-for="c-tok-rev">Table</button></div>
+    <div class="filters inner">
+      <label>View <select id="tok-rev-view"><option value="daily">Daily (7-day average)</option><option value="weekly">Weekly (full weeks)</option></select></label>
+      <label>Measure <select id="tok-rev-meas"><option value="rev">Revenue ($)</option><option value="share">Share of OpenRouter revenue</option><option value="ppm">Blended $ per 1M paid tokens</option></select></label>
+      <label>Scale <select id="tok-rev-scale"><option value="lin">Linear</option><option value="log">Log</option></select></label>
+      <a class="btn small" id="tok-rev-xlsx" href="/openrouter/revenue-workbook" hidden>Workbook (cited xlsx)</a>
+    </div>
+    <div class="filters inner" id="tok-rev-pick"></div>
+    <div class="legend" id="lg-tok-rev"></div>
+    <div class="chart" id="c-tok-rev"></div>
+    <div id="tok-rev-table" style="margin-top:12px"></div>
+  </div>
+  <div class="card">
     <div class="card-head"><div><h2>Whose models carry the tokens &mdash; share of each week by lab origin</h2>
       <p class="muted">The nine models OpenRouter names each week, grouped by the lab that made them. All other models are &ldquo;not named&rdquo;, because OpenRouter only names the top nine. Shares jump when a model enters or leaves the named nine. Stealth models are unannounced, often a big lab testing under a code name.</p></div>
       <button class="btn small tbl-toggle" data-for="c-tok-origin">Table</button></div>

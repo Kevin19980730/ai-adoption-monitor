@@ -460,6 +460,35 @@ def openrouter_companies():
                     "weekly_total": records(or_csv("openrouter_weekly_totals.csv").fillna(""))})
 
 
+@app.route("/api/openrouter-revenue")
+def openrouter_revenue():
+    """Implied customer spend by company (openrouter_revenue.py: model-activity tokens x effective prices)."""
+    co = or_csv("openrouter_company_revenue_daily.csv")
+    mod = or_csv("openrouter_model_revenue_recent.csv")
+    if co.empty:
+        return jsonify({"daily": []})
+    full_days = sorted(co[co.partial == 0].date.unique())
+    l7, p7 = full_days[-7:], full_days[-14:-7]
+    top, basis = {}, {}
+    if not mod.empty:
+        m = mod[mod.date.isin(l7)].groupby(["company", "model"]).revenue_usd.sum().reset_index()
+        for c, g in m.sort_values("revenue_usd", ascending=False).groupby("company", sort=False):
+            top[c] = {"model": g.model.iloc[0], "revenue": float(g.revenue_usd.iloc[0]) / max(len(l7), 1)}
+        b = mod[mod.date.isin(l7)].groupby("basis").revenue_usd.sum()
+        basis = {k: float(v) for k, v in b.items()}
+    books = sorted((ORD / "exports").glob("*_OpenRouter revenue by company.xlsx"))
+    return jsonify({"daily": records(co), "top_model": top, "last7": l7, "prev7": p7, "basis": basis,
+                    "xlsx": books[-1].name if books else None})
+
+
+@app.route("/openrouter/revenue-workbook")
+def openrouter_revenue_workbook():
+    books = sorted((ORD / "exports").glob("*_OpenRouter revenue by company.xlsx"))
+    if not books:
+        abort(404)
+    return send_file(books[-1], as_attachment=True, download_name=books[-1].name, max_age=0)
+
+
 # ---------------------------------------------------------------- Silicon Data GPU rental indices
 SDD = HERE.parent / "silicon-data"
 SD_META = {  # index -> label, unit, segment (mirrors silicon_update.INDEX; silicon_indices.json, written each run, wins)

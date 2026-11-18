@@ -809,6 +809,69 @@ async function loadTokens() {
   $("#tok-scale").addEventListener("change", drawTokens);
   drawTokens();
   loadTokenCompanies();
+  loadTokenRevenue();
+}
+
+/* revenue by company: model-activity tokens x effective prices (openrouter_data/openrouter_revenue.py) */
+const revMoney = v => v == null ? "–" : v >= 1e9 ? "$" + (v / 1e9).toFixed(2) + "B" : usdN(v);
+let ORV = null, ORV_PICK = ["Anthropic", "OpenAI", "Google", "DeepSeek", "xAI", "Meta"];
+async function loadTokenRevenue() {
+  ORV = await api("/api/openrouter-revenue");
+  if (!ORV.daily.length) { $("#tok-rev-sub").textContent += " No data yet - run openrouter_revenue.py."; return; }
+  if (ORV.xlsx) { $("#tok-rev-xlsx").hidden = false; $("#tok-rev-xlsx").title = ORV.xlsx; }
+  ["#tok-rev-view", "#tok-rev-meas", "#tok-rev-scale"].forEach(s => $(s).addEventListener("change", drawTokenRevenue));
+  drawTokenRevenue();
+}
+function drawTokenRevenue() {
+  const D = ORV.daily, view_ = $("#tok-rev-view").value, meas = $("#tok-rev-meas").value, log = $("#tok-rev-scale").value === "log" && meas !== "share";
+  const days = [...new Set(D.filter(r => !r.partial).map(r => r.date))].sort(), inDays = new Set(days);
+  const R = {}, K = {}, dayR = {}, dayK = {};
+  D.forEach(r => { if (!inDays.has(r.date)) return; (R[r.company] = R[r.company] || {})[r.date] = r.revenue_usd; (K[r.company] = K[r.company] || {})[r.date] = r.tokens;
+    dayR[r.date] = (dayR[r.date] || 0) + r.revenue_usd; dayK[r.date] = (dayK[r.date] || 0) + r.tokens; });
+  const sR = (c, ds) => ds.reduce((a, d) => a + ((R[c] || {})[d] || 0), 0), sK = (c, ds) => ds.reduce((a, d) => a + ((K[c] || {})[d] || 0), 0);
+  const tR = ds => ds.reduce((a, d) => a + (dayR[d] || 0), 0), tK = ds => ds.reduce((a, d) => a + (dayK[d] || 0), 0);
+  const l7 = ORV.last7, p7 = ORV.prev7, n7 = l7.length || 1;
+  const comps = Object.keys(R).sort((a, b) => sR(b, l7) - sR(a, l7));
+  const pick = $("#tok-rev-pick"); pick.replaceChildren(); h("span", {class: "muted"}, pick, "Companies (up to 6): ");
+  comps.filter(c => sR(c, l7) > 0).slice(0, 16).forEach(c => {
+    const lab = h("label", {style: "margin-right:10px;white-space:nowrap"}, pick);
+    const cb = h("input", {type: "checkbox"}, lab); cb.checked = ORV_PICK.includes(c);
+    cb.addEventListener("change", () => { ORV_PICK = cb.checked ? [...ORV_PICK, c].slice(-6) : ORV_PICK.filter(x => x !== c); drawTokenRevenue(); });
+    lab.appendChild(document.createTextNode(" " + c));
+  });
+  const sel = ORV_PICK.filter(c => R[c]);
+  const COL = ["var(--s1)", "var(--s2)", "var(--s3)", "var(--s4)", "var(--s5)", "var(--s6)"];
+  const val = (c, ds, per) => meas === "share" ? sR(c, ds) / tR(ds) : meas === "ppm" ? (sK(c, ds) ? sR(c, ds) / sK(c, ds) * 1e6 : null) : sR(c, ds) / per;
+  let S, title;
+  if (view_ === "weekly") {
+    const wk = {}; days.forEach(d => { const t = T(d), w = t - ((new Date(t).getUTCDay() + 6) % 7) * 864e5; (wk[w] = wk[w] || []).push(d); });
+    const weeks = Object.keys(wk).map(Number).sort((a, b) => a - b).filter(w => wk[w].length === 7);
+    S = sel.map((c, i) => ({name: c, color: COL[i], points: weeks.map(w => ({x: w, y: val(c, wk[w], 1)}))}));
+    title = x => "Week of " + fmtDate(x);
+  } else {
+    S = sel.map((c, i) => ({name: c, color: COL[i], points: days.slice(6).map((d, k) => ({x: T(d), y: val(c, days.slice(k, k + 7), 7)}))}));
+    title = x => "7 days to " + fmtDate(x);
+  }
+  legend("lg-tok-rev", S.map(s => ({name: s.name, color: s.color})));
+  const yFmt = meas === "share" ? v => pct(v, v < 0.1 ? 1 : 0) : meas === "ppm" ? v => "$" + (v < 0.1 ? v.toFixed(3) : v.toFixed(2)) : revMoney;
+  view("c-tok-rev", hst => lineChart(hst, S, {height: 340, yFmt, log, yMin: log ? (meas === "ppm" ? 0.01 : 1e3) : 0, mode: "near", title, aria: "OpenRouter revenue by company"}),
+    hst => table(hst, [{label: "Date (UTC)", key: "date"}].concat(sel.map(c => ({label: c, n: 1, get: r => revMoney((R[c] || {})[r.date] ?? null)}))).concat([{label: "All makers", n: 1, get: r => revMoney(dayR[r.date])}]),
+      days.slice().reverse().map(d => ({date: d}))));
+  const chg = (a, b) => b ? (a >= b ? "+" : "") + ((a / b - 1) * 100).toFixed(1) + "%" : "new";
+  const all7 = tR(l7), allK = tK(l7);
+  const rows = comps.map(c => ({c, a: sR(c, l7), b: sR(c, p7), k: sK(c, l7), top: ORV.top_model[c]})).filter(r => r.a || r.b);
+  rows.push({c: "All makers", a: all7, b: tR(p7), k: allK, top: null, tot: true});
+  table($("#tok-rev-table"), [{label: "Company", get: r => r.tot ? h("b", null, null, r.c) : r.c},
+    {label: "Revenue / day, last 7 days", n: 1, get: r => revMoney(r.a / n7)}, {label: "Annualised", n: 1, get: r => revMoney(r.a / n7 * 365)},
+    {label: "Share of revenue", n: 1, get: r => pct(r.a / all7)}, {label: "Share of paid tokens", n: 1, get: r => pct(r.k / allK)},
+    {label: "$ / 1M tokens", n: 1, get: r => r.k ? "$" + (r.a / r.k * 1e6).toFixed(3) : "–"},
+    {label: "Change vs prior 7 days", n: 1, get: r => p7.length === 7 ? chg(r.a, r.b) : "–"},
+    {label: "Biggest earner, last 7 days", get: r => r.top ? r.top.model + " (" + revMoney(r.top.revenue) + "/day)" : ""}], rows);
+  const lb = (ORV.basis || {})["list+cache"] || 0, eb = (ORV.basis || {}).effective || 0;
+  $("#tok-rev-sub").textContent = `Implied customer spend: each paid model's daily prompt and completion tokens (OpenRouter model-activity; completion includes reasoning) × OpenRouter's "weighted average" effective price — what customers actually paid over the last 3 days, net of prompt caching (cache hits are often 80–95%, so effective input runs far below list). ` +
+    `Last 7 full days ${fmtDate(T(l7[0]))} – ${fmtDate(T(l7[l7.length - 1]))}: ${revMoney(all7 / n7)} a day, ${revMoney(all7 / n7 * 365)} annualised. ` +
+    `Free models are left out (they earn nothing; paid tokens are ~91% of all tokens), as are per-request search/image fees and OpenRouter's own credit fee. ${lb ? pct(lb / (lb + eb), 2) + " of revenue uses list price with cache hits (no effective price shown, e.g. :batch). " : ""}` +
+    `The money goes to whichever provider served the call (the maker's API or a host like Vertex, Bedrock, Fireworks), not always the maker. Model activity covers ~31 days, so history grows from ${fmtDate(T(days[0]))}; price snapshots start 18 Nov 2026, and earlier days use that first snapshot. ${p7.length < 7 ? "the prior-week change appears once 14 full days are stored." : ""}`;
 }
 
 /* tokens by company: every openrouter.ai/<author> page chart (openrouter_data/openrouter_companies.py) */
