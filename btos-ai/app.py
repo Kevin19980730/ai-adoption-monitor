@@ -316,7 +316,9 @@ def btos_rank():
                      "ma4": clean(m4.at[code, "mean"]) if code in m4.index and m4.at[code, "count"] == 4 else None,
                      "v1": clean(old.get(code))})
     ref = dates.set_index("smpdt").ref_end.to_dict()
+    pub = dates.set_index("smpdt").published.to_dict()
     return jsonify({"level": lv, "q": q, "last": int(last), "last_date": clean(ref.get(last)),
+                    "last_published": clean(pub.get(last)),
                     "prev": int(prev) if prev else None, "v1_end": clean(v1last), "rows": rows})
 
 
@@ -358,7 +360,9 @@ def firmworker():
         f = pd.DataFrame(both)
         rho = clean(f.firm.rank().corr(f.worker.rank()))
     ref = dates.set_index("smpdt").ref_end.to_dict()
+    pub = dates.set_index("smpdt").published.to_dict()
     return jsonify({"rows": rows, "rho": rho, "btos": int(last), "btos_date": clean(ref.get(last)),
+                    "btos_published": clean(pub.get(last)),
                     "wave": clean(gt.wave.max()) if gt is not None else None})
 
 
@@ -1111,12 +1115,15 @@ def overview():
     gt = tracker()
     nat = df[(df.level == "National") & (df.answer == "Yes") & (df.ver == "v2")].sort_values("smpdt")
     ref = dates.set_index("smpdt").ref_end.to_dict()
+    pub = dates.set_index("smpdt").published.to_dict()
     tiles = []
     for q, title in ((7, "US firms using AI"), (24, "US firms expecting to use AI within 6 months")):
         s = nat[nat.qid == q]
         tiles.append({"id": f"btos{q}", "title": title, "value": clean(s.estimate.iloc[-1]),
                       "prev": clean(s.estimate.iloc[-2]), "delta_label": "vs prior fortnight",
-                      "date": f"Fortnight ending {nice_date(clean(ref.get(s.smpdt.iloc[-1])))}",
+                      "date": f"Fortnight ending {nice_date(clean(ref.get(s.smpdt.iloc[-1])))}"
+                              + (f" · published {nice_date(clean(pub.get(s.smpdt.iloc[-1])))}"
+                                 if pd.notna(pub.get(s.smpdt.iloc[-1])) else ""),
                       "source": "Census BTOS, any business function",
                       "spark": [clean(v) for v in s.estimate]})
     if gt is not None:

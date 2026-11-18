@@ -506,7 +506,7 @@ async function drawFirmRank() {
   const host = $("#c-firm-rank"); host.classList.add("loading");
   const d = await api(`/api/btos/rank?level=${encodeURIComponent(lv)}&q=${q}&sector=${$("#r-sector-wrap").hidden ? "" : sec}`);
   $("#fr-title").textContent = `${lv}: share of firms that ${QLABEL[q]}`;
-  $("#fr-sub").textContent = `Fortnight ending ${fmtDate(T(d.last_date))} (period ${d.last}). ${d.rows.length} rows.`;
+  $("#fr-sub").textContent = `Fortnight ending ${fmtDate(T(d.last_date))}${d.last_published ? ` · published ${fmtDate(T(d.last_published))}` : ""} (period ${d.last}). ${d.rows.length} rows.`;
   const sort = $("#r-sort").value;
   const rows = d.rows.map(r => {
     const key = lv + ":" + r.code, s = FIRM.sel.find(x => x.key === key);
@@ -616,7 +616,7 @@ async function loadWorkers() {
 /* ================================================================ compare */
 async function loadCompare() {
   const d = await api("/api/firmworker");
-  $("#cmp-sub").textContent = `BTOS fortnight ending ${fmtDate(T(d.btos_date))} vs GenAI Adoption Tracker ${fmtMonth(T(d.wave))} survey · Spearman rank correlation across sectors: ${d.rho == null ? "–" : d.rho.toFixed(2)}`;
+  $("#cmp-sub").textContent = `BTOS fortnight ending ${fmtDate(T(d.btos_date))}${d.btos_published ? ` (published ${fmtDate(T(d.btos_published))})` : ""} vs GenAI Adoption Tracker ${fmtMonth(T(d.wave))} survey · Spearman rank correlation across sectors: ${d.rho == null ? "–" : d.rho.toFixed(2)}`;
   const SHORT = {"11": "Agriculture", "21": "Mining", "22": "Utilities", "23": "Construction", "31": "Manufacturing", "42": "Wholesale", "44": "Retail", "48": "Transport & warehousing",
     "51": "Information", "52": "Finance", "53": "Real estate", "54": "Professional services", "55": "Management of cos.", "56": "Admin & support", "61": "Education", "62": "Health care",
     "71": "Arts & recreation", "72": "Accommodation & food", "81": "Other services"};
