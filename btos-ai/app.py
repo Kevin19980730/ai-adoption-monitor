@@ -1180,7 +1180,7 @@ def overview():
         if len(t) > 5:
             tiles.append({"id": "ramp", "title": "Business tokens per week (Ramp sample)", "value": float(t.iloc[-1]),
                           "prev": float(t.iloc[-5]), "delta_label": "vs 4 weeks earlier", "unit": "tokens",
-                          "date": f"Week of {nice_date(t.index[-1])}", "source": "Ramp AI Index, Token Spend Management firms",
+                          "date": f"Week ending {nice_date(dt.date.fromisoformat(t.index[-1][:10]) + dt.timedelta(days=6))}", "source": "Ramp AI Index, Token Spend Management firms",
                           "spark": [float(x) for x in t.tail(26)]})
     dw = dbx_csv("dbx_share_weekly.csv")
     if not dw.empty:

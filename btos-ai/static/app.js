@@ -9,6 +9,8 @@ const api = u => fetch(u).then(r => { if (!r.ok) throw new Error(u + " " + r.sta
 
 const T = s => Date.UTC(+s.slice(0, 4), +s.slice(5, 7) - 1, s.length > 7 ? +s.slice(8, 10) : 15);
 const fmtDate = ms => { const d = new Date(ms); return d.getUTCDate() + " " + MON[d.getUTCMonth()] + " " + d.getUTCFullYear(); };
+/* Ramp weeks are stored by their Monday start; Ramp itself names a week by its Sunday end */
+const wkEnd = ms => fmtDate(ms + 6 * 864e5), wkEndIso = s => new Date(T(s) + 6 * 864e5).toISOString().slice(0, 10);
 const fmtMonth = ms => { const d = new Date(ms); return MON[d.getUTCMonth()] + " " + d.getUTCFullYear(); };
 const pct = (v, d = 1) => v == null ? "–" : (v * 100).toFixed(d) + "%";
 const pp = v => v == null ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(1) + "pp";
@@ -1172,7 +1174,7 @@ function drawRamp() {
     if (before) { const g = now / before - 1, dd = h("div", {class: "d"}, a); h("span", {class: (g >= 0) === upGood ? "up" : "down"}, dd, (g >= 0 ? "▲ " : "▼ ") + (Math.abs(g) * 100).toFixed(1) + "%"); dd.appendChild(document.createTextNode(" vs 4 weeks earlier")); }
     h("div", {class: "s"}, a, sub); const sp = spark(series.slice(-26), "var(--s1)"); if (sp) a.appendChild(sp);
   };
-  const wk = `Week of ${fmtDate(T(W[n - 1]))}`;
+  const wk = `Week ending ${wkEnd(T(W[n - 1]))}`;
   tile("Tokens per week", tokN(totV[n - 1]), totV[n - 1], totV[n - 5], wk, totV);
   tile("Token spend per week", usdN(totS[n - 1]), totS[n - 1], totS[n - 5], wk, totS);
   const bl = W.map((_, i) => totV[i] ? totS[i] / totV[i] * 1e6 : null);
@@ -1199,8 +1201,8 @@ function drawRamp() {
   $("#rp-main-title").textContent = (metric === "price" ? "Blended price paid per million tokens" : (share ? "Share of weekly " : "Weekly ") + (metric === "token_spend" ? "token spend" : "token volume")) + " by model maker";
   legend("lg-rp-main", series.map(s => ({name: s.name, color: s.color})));
   const log = $("#rp-scale").value === "log" && !share;
-  view("c-rp-main", hst => lineChart(hst, series, {height: 360, yFmt: fmt, log, yMin: share ? 0 : null, yMax: share ? 1 : null, mode: "cross", title: x => "Week of " + fmtDate(x)}),
-    hst => table(hst, [{label: "Week", get: k => W[k]}].concat(series.map(s => ({label: s.name, n: 1, get: k => fmt(s.points[k - i0].y)}))), W.map((_, k) => k).slice(i0).reverse()));
+  view("c-rp-main", hst => lineChart(hst, series, {height: 360, yFmt: fmt, log, yMin: share ? 0 : null, yMax: share ? 1 : null, mode: "cross", title: x => "Week ending " + wkEnd(x)}),
+    hst => table(hst, [{label: "Week ending", get: k => wkEndIso(W[k])}].concat(series.map(s => ({label: s.name, n: 1, get: k => fmt(s.points[k - i0].y)}))), W.map((_, k) => k).slice(i0).reverse()));
 
   // price paid by token type (trailing 7 days)
   const P = RP.prices[$("#rp-px-maker").value] || [];
@@ -1219,8 +1221,8 @@ function drawRamp() {
 
   // top models in the latest week
   const top = RP.top.slice(0, 20), tv = totV[n - 1], tvPrior = totV[n - 5];
-  $("#rp-top-title").textContent = `Top ${top.length} of ${RP.n_models} models by tokens, week of ${fmtDate(T(RP.last))}`;
-  $("#rp-top-sub").textContent = `Bar = share of the week's tokens. Tick = the same model's share four weeks earlier (week of ${fmtDate(T(RP.prior))}). Colour = model maker.`;
+  $("#rp-top-title").textContent = `Top ${top.length} of ${RP.n_models} models by tokens, week ending ${wkEnd(T(RP.last))}`;
+  $("#rp-top-sub").textContent = `Bar = share of the week's tokens. Tick = the same model's share four weeks earlier (week ending ${wkEnd(T(RP.prior))}). Colour = model maker.`;
   const grp = m => RP_COL[m] ? m : "Other makers";
   legend("lg-rp-top", RP.makers.filter(m => top.some(r => grp(r.maker) === m)).map(m => ({name: m, color: RP_COL[m], kind: "dot"})));
   const ppm = r => r.spend && r.tokens ? r.spend / r.tokens * 1e6 : null;
@@ -1448,8 +1450,8 @@ async function loadMenlo() {
   tri.push({src: "Menlo Ventures", what: "Enterprise LLM API spend share (survey, spend-weighted)", when: "2026 survey (Sep)", a: get("llm_api_share", "Anthropic", 2026), o: get("llm_api_share", "OpenAI", 2026), g: get("llm_api_share", "Google", 2026)});
   if (R && R.weeks && R.weeks.length) {
     const i = R.weeks.length - 1, S = R.by.token_spend, V = R.by.token_volume, ts = sum(R.makers.map(m => S[m][i])), tv = sum(R.makers.map(m => V[m][i]));
-    tri.push({src: "Ramp", what: "Billed API spend share (firms on Ramp Token Spend Management)", when: "Week of " + fmtDate(T(R.weeks[i])), a: S.Anthropic[i] / ts * 100, o: S.OpenAI[i] / ts * 100, g: S.Google[i] / ts * 100});
-    tri.push({src: "Ramp", what: "Token share, same firms", when: "Week of " + fmtDate(T(R.weeks[i])), a: V.Anthropic[i] / tv * 100, o: V.OpenAI[i] / tv * 100, g: V.Google[i] / tv * 100});
+    tri.push({src: "Ramp", what: "Billed API spend share (firms on Ramp Token Spend Management)", when: "Week ending " + wkEnd(T(R.weeks[i])), a: S.Anthropic[i] / ts * 100, o: S.OpenAI[i] / ts * 100, g: S.Google[i] / ts * 100});
+    tri.push({src: "Ramp", what: "Token share, same firms", when: "Week ending " + wkEnd(T(R.weeks[i])), a: V.Anthropic[i] / tv * 100, o: V.OpenAI[i] / tv * 100, g: V.Google[i] / tv * 100});
   }
   if (D && D.weeks && D.weeks.length) {
     const i = D.weeks.length - 1, ms = (c, g) => sum((D.charts[c].groups.find(x => x.group === g)?.labels || []).map(l => l.values[i] || 0));
@@ -1628,8 +1630,8 @@ function drawTeElastic() {
   const S1 = [["Tokens", "v", "var(--s1)"], ["Spend", "s", "var(--s4)"], ["Price per token", "p", "var(--s2)"]].map(([nm, k, c]) => ({name: nm, color: c, markers: false, points: idx.map(r => ({x: T(r.d), y: r[k]}))}));
   legend("lg-te-idx", S1.map(s => ({name: s.name, color: s.color})));
   const t0 = fmtDate(T(b.d));
-  view("c-te-idx", hst => lineChart(hst, S1, {height: 300, log: true, yFmt: v => v >= 100 ? Math.round(v) : v.toFixed(v < 10 ? 1 : 0), mode: "cross", endLabels: false, title: x => (src === "ramp" ? "Week of " : "7 days to ") + fmtDate(x) + ` (index, ${t0} = 100)`}),
-    hst => table(hst, [{label: src === "ramp" ? "Week" : "7 days to", key: "d"}, {label: "Tokens", n: 1, get: r => tokN(r.vol)}, {label: "Spend", n: 1, get: r => usdN(r.spend)}, {label: "$ / M tokens", n: 1, get: r => perM(r.spend / r.vol * 1e6)}], [...P].reverse()));
+  view("c-te-idx", hst => lineChart(hst, S1, {height: 300, log: true, yFmt: v => v >= 100 ? Math.round(v) : v.toFixed(v < 10 ? 1 : 0), mode: "cross", endLabels: false, title: x => (src === "ramp" ? "Week ending " + wkEnd(x) : "7 days to " + fmtDate(x)) + ` (index, ${t0} = 100)`}),
+    hst => table(hst, [{label: src === "ramp" ? "Week ending" : "7 days to", get: r => src === "ramp" ? wkEndIso(r.d) : r.d}, {label: "Tokens", n: 1, get: r => tokN(r.vol)}, {label: "Spend", n: 1, get: r => usdN(r.spend)}, {label: "$ / M tokens", n: 1, get: r => perM(r.spend / r.vol * 1e6)}], [...P].reverse()));
   const E = R.filter(r => r.dv != null), ys = E.map(r => r.el).filter(v => v != null);
   const S2 = [{name: "Elasticity", color: "var(--s1)", points: E.map(r => ({x: T(r.d), y: r.el, note: `tokens ${signPct(Math.expm1(r.dv))}, price ${signPct(Math.expm1(r.dp))}, spend ${signPct(Math.expm1(r.ds))} since ${r.base}`}))},
     {name: "1 = spend flat", color: "var(--axis)", dash: true, markers: false, points: E.map(r => ({x: T(r.d), y: 1}))}];
