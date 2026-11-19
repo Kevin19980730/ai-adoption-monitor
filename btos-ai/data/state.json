@@ -1,7 +1,7 @@
 {
- "latest_smpdt": 202622,
- "published": "2026-11-05",
+ "latest_smpdt": 202623,
+ "published": "2026-11-19",
  "tracker_digest": "8ec8a121ccc16585",
- "workbook": "output\\20261105_AI adoption metrics (BTOS + GenAI tracker).xlsx",
- "built": "2026-11-06T07:02:16"
+ "workbook": "output\\20261119_AI adoption metrics (BTOS + GenAI tracker).xlsx",
+ "built": "2026-11-20T07:02:29"
 }
