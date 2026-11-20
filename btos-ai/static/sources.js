@@ -26,6 +26,8 @@ const OR_MODELS = ["OpenRouter model list & prices", "https://openrouter.ai/api/
 const RP_PAGE = "https://ramp.com/data/ai-index";  /* adoption datasets sit in the page payload, no separate endpoint */
 const RP_VOL = ["Ramp tokenVolumes", RAMP + "tokenVolumes"], RP_PX = ["Ramp tokenPrices", RAMP + "tokenPrices"];
 const DBX = [["Databricks AI Index (chart data embedded in page)", "https://developers.databricks.com/ai-index"]];
+const VGX = [["Vercel AI Gateway open-data export, labs (CC BY 4.0)", "https://vercel.com/api/ai/leaderboard-export?dataset=labs&modality=all&format=csv"], ["Leaderboard page", "https://vercel.com/ai-gateway/leaderboards/labs"]];
+const OCD = [["OpenCode Data (data embedded in page)", "https://opencode.ai/data/"]];
 const MENLO = [["Menlo, 2026 State of Enterprise AI", "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/"]];
 const AEI = [["Anthropic Economic Index dataset (Hugging Face)", "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main"]];
 
@@ -43,8 +45,8 @@ const SOURCES = {
   "c-fed3": [["Census BTOS Employment Size Class.xlsx", CEN + "Employment%20Size%20Class.xlsx"], FED_NOTE],
   "c-fed4": [["Census BTOS Sector.xlsx", CEN + "Sector.xlsx"], FED_NOTE],
   "c-a-codex": [["npm @openai/codex downloads", NPM + "@openai/codex"]],
-  "c-a-npm": [["npm @openai/codex", NPM + "@openai/codex"], ["@anthropic-ai/claude-code", NPM + "@anthropic-ai/claude-code"], ["@muse-code/sdk", NPM + "@muse-code/sdk"]],
-  "c-a-npmd": [["npm @openai/codex", NPM + "@openai/codex"], ["@anthropic-ai/claude-code", NPM + "@anthropic-ai/claude-code"], ["@muse-code/sdk", NPM + "@muse-code/sdk"]],
+  "c-a-npm": [["npm @openai/codex", NPM + "@openai/codex"], ["@anthropic-ai/claude-code", NPM + "@anthropic-ai/claude-code"], ["@muse-code/sdk", NPM + "@muse-code/sdk"], ["opencode-ai", NPM + "opencode-ai"]],
+  "c-a-npmd": [["npm @openai/codex", NPM + "@openai/codex"], ["@anthropic-ai/claude-code", NPM + "@anthropic-ai/claude-code"], ["@muse-code/sdk", NPM + "@muse-code/sdk"], ["opencode-ai", NPM + "opencode-ai"]],
   "c-tok-total": [OR_CHART],
   "c-tok-req": [OR_REQ],
   "c-tok-tpr": [OR_CHART, OR_REQ],
@@ -63,6 +65,7 @@ const SOURCES = {
   "c-ra-pepm": [["Ramp AI Index page (data embedded in page)", RP_PAGE]],
   "c-ra-cut": [["Ramp AI Index page (data embedded in page)", RP_PAGE]],
   "c-ra-state": [["Ramp AI Index page (data embedded in page)", RP_PAGE]],
+  "c-vg-mix": VGX, "c-vg-line": VGX, "c-vg-tw": VGX, "c-oc-mix": OCD, "c-oc-users": OCD, "c-oc-ret": OCD, "c-oc-cost": OCD, "c-oc-geo": OCD,
   "c-dbx-mix": DBX, "c-dbx-prov": DBX, "c-dbx-ow": DBX, "c-dbx-spend": DBX, "c-dbx-tw": DBX, "c-dbx-code": DBX, "c-dbx-top": DBX,
   "c-mv-api": [...MENLO, ["2025 Mid-Year LLM Market Update", "https://menlovc.com/perspective/2025-mid-year-llm-market-update/"]],
   "c-mv-spend": MENLO, "c-mv-cat": MENLO, "c-mv-tier": MENLO, "c-mv-app": MENLO,

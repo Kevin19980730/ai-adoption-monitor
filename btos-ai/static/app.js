@@ -679,16 +679,16 @@ function drawAssist() {
   view("c-a-codex", hst => lineChart(hst, S2, {height: 280, yFmt: v => usersM(v), mode: "near"}),
     hst => table(hst, [{label: "Date", key: "date"}, {label: "Users", key: "users_m", n: 1, fmt: usersM}, {label: "Scope", key: "scope"}, {label: "As stated", key: "metric_as_stated"}, {label: "Who", key: "who"}], [...cx].reverse()));
   const nlog = $("#npm-scale").value === "log", notes = Object.fromEntries(AS.npm_notes.map(n => [n.month, n.note]));
-  const NPM = [["Codex CLI", ENTITY_COLOR.OpenAI], ["Claude Code", ENTITY_COLOR.Anthropic], ["Muse Code SDK", ENTITY_COLOR.Meta]];
-  const S3 = ["codex_installs_per_day_corrected", "claude_code_downloads_per_day", "muse_code_sdk_downloads_per_day"].map((k, i) => ({name: NPM[i][0], color: NPM[i][1], points: AS.npm.filter(r => r[k] != null).map(r => ({x: T(r.month), y: r[k], note: notes[r.month] || null}))}));
+  const NPM = [["Codex CLI", ENTITY_COLOR.OpenAI], ["Claude Code", ENTITY_COLOR.Anthropic], ["Muse Code SDK", ENTITY_COLOR.Meta], ["OpenCode", "var(--s5)"]];
+  const S3 = ["codex_installs_per_day_corrected", "claude_code_downloads_per_day", "muse_code_sdk_downloads_per_day", "opencode_downloads_per_day"].map((k, i) => ({name: NPM[i][0], color: NPM[i][1], points: AS.npm.filter(r => r[k] != null).map(r => ({x: T(r.month), y: r[k], note: notes[r.month] || null}))}));
   legend("lg-a-npm", S3.map(s => ({name: s.name, color: s.color})));
   view("c-a-npm", hst => lineChart(hst, S3, {height: 280, yFmt: perDay, log: nlog, yMin: nlog ? 100 : 0, title: x => fmtMonth(x)}),
-    hst => table(hst, [{label: "Month", key: "month"}, {label: "Codex / day", key: "codex_installs_per_day_corrected", n: 1, fmt: perDay}, {label: "Claude Code / day", key: "claude_code_downloads_per_day", n: 1, fmt: perDay}, {label: "Muse Code SDK / day", key: "muse_code_sdk_downloads_per_day", n: 1, fmt: perDay}, {label: "Note", get: r => notes[r.month] || ""}], AS.npm));
+    hst => table(hst, [{label: "Month", key: "month"}, {label: "Codex / day", key: "codex_installs_per_day_corrected", n: 1, fmt: perDay}, {label: "Claude Code / day", key: "claude_code_downloads_per_day", n: 1, fmt: perDay}, {label: "Muse Code SDK / day", key: "muse_code_sdk_downloads_per_day", n: 1, fmt: perDay}, {label: "OpenCode / day", key: "opencode_downloads_per_day", n: 1, fmt: perDay}, {label: "Note", get: r => notes[r.month] || ""}], AS.npm));
   const dlog = $("#npmd-scale").value === "log";
-  const S4 = ["codex_installs_corrected", "claude_code_downloads", "muse_code_sdk_downloads"].map((k, i) => ({name: NPM[i][0], color: NPM[i][1], points: AS.npm_daily.filter(r => r[k] != null).map(r => ({x: T(r.day), y: r[k], hollow: k === "muse_code_sdk_downloads" && !r.muse_code_sdk_raw}))}));
+  const S4 = ["codex_installs_corrected", "claude_code_downloads", "muse_code_sdk_downloads", "opencode_downloads"].map((k, i) => ({name: NPM[i][0], color: NPM[i][1], points: AS.npm_daily.filter(r => r[k] != null).map(r => ({x: T(r.day), y: r[k], hollow: k === "muse_code_sdk_downloads" && !r.muse_code_sdk_raw}))}));
   legend("lg-a-npmd", S4.map(s => ({name: s.name, color: s.color})));
   view("c-a-npmd", hst => lineChart(hst, S4, {height: 300, yFmt: perDay, log: dlog, yMin: dlog ? 50 : 0, title: x => fmtDate(x)}),
-    hst => table(hst, [{label: "Day", key: "day"}, {label: "Codex", key: "codex_installs_corrected", n: 1, fmt: perDay}, {label: "Claude Code", key: "claude_code_downloads", n: 1, fmt: perDay}, {label: "Muse Code SDK", key: "muse_code_sdk_downloads", n: 1, fmt: perDay}, {label: "Muse raw", key: "muse_code_sdk_raw", n: 1, fmt: v => v == null ? "–" : v === 0 ? "0 (gap, interpolated)" : perDay(v)}], [...AS.npm_daily].reverse()));
+    hst => table(hst, [{label: "Day", key: "day"}, {label: "Codex", key: "codex_installs_corrected", n: 1, fmt: perDay}, {label: "Claude Code", key: "claude_code_downloads", n: 1, fmt: perDay}, {label: "Muse Code SDK", key: "muse_code_sdk_downloads", n: 1, fmt: perDay}, {label: "OpenCode", key: "opencode_downloads", n: 1, fmt: perDay}, {label: "Muse raw", key: "muse_code_sdk_raw", n: 1, fmt: v => v == null ? "–" : v === 0 ? "0 (gap, interpolated)" : perDay(v)}], [...AS.npm_daily].reverse()));
   const seats = AS.seats.filter(r => r.low_m != null && r.high_m != null && r.estimate_m < 100);
   const colorOf = n => /Microsoft|GitHub/.test(n) ? "var(--neutral-bar)" : /OpenAI/.test(n) ? ENTITY_COLOR.OpenAI : /Google|Gemini/.test(n) ? ENTITY_COLOR.Google : /Anthropic/.test(n) ? ENTITY_COLOR.Anthropic : "var(--neutral-bar)";
   const rows = seats.map(r => ({label: r.company_product, value: r.estimate_m, lo: r.low_m, hi: r.high_m, tick: r.last_disclosed_m, color: colorOf(r.company_product), note: r.basis + (r.last_disclosed_date ? ` (last disclosed ${r.last_disclosed_date})` : "")})).sort((a, b) => b.value - a.value);
@@ -1421,6 +1421,158 @@ async function loadDatabricks() {
   ["#dbx-pool", "#dbx-meas", "#dbx-detail"].forEach(id => $(id).addEventListener("change", drawDbx));
   ["#dbx-fam", "#dbx-y", "#dbx-panel"].forEach(id => $(id).addEventListener("change", drawDbxCoding));
   drawDbx();
+}
+
+/* ================================================================ shared: top-N layers + colours for share-of-mix tabs */
+const MIX_FIXED = {OpenAI: "var(--s1)", Google: "var(--s2)", Meta: "var(--s3)", Anthropic: "var(--s4)"};
+const MIX_POOL = ["var(--s5)", "var(--s6)", "var(--s2)", "var(--s3)", "var(--s1)", "var(--s4)"];
+function mixColours(names) {
+  const used = new Set(names.filter(n => MIX_FIXED[n]).map(n => MIX_FIXED[n])), pool = MIX_POOL.filter(c => !used.has(c)), out = {};
+  let i = 0;
+  names.forEach(n => { out[n] = /^Other/.test(n) ? "var(--muted)" : MIX_FIXED[n] || pool[i++ % pool.length]; });
+  return out;
+}
+/* series [{name, values}] (ordered, biggest first) -> top n + one "Other" layer (sums the rest incl. any existing Other) */
+function topLayers(series, n, otherName) {
+  const named = series.filter(x => !/^Other/i.test(x.name)), top = named.slice(0, n), rest = series.filter(x => !top.includes(x));
+  const len = series[0] ? series[0].values.length : 0;
+  const other = {name: otherName || "Other", values: Array.from({length: len}, (_, i) => rest.reduce((a, x) => a + (x.values[i] || 0), 0))};
+  return rest.length ? [...top, other] : top;
+}
+/* average daily values into Monday-start weeks */
+function weekly(days, layers) {
+  const wk = d => { const t = T(d), dow = (new Date(t).getUTCDay() + 6) % 7; return new Date(t - dow * 864e5).toISOString().slice(0, 10); };
+  const weeks = [...new Set(days.map(wk))], idx = weeks.map(w => days.map((d, i) => wk(d) === w ? i : -1).filter(i => i >= 0));
+  return {weeks, n: idx.map(ix => ix.length), layers: layers.map(L => ({...L, values: idx.map(ix => { const v = ix.map(i => L.values[i]).filter(v => v != null); return v.length ? sum(v) / v.length : null; })}))};
+}
+
+/* ================================================================ Vercel AI Gateway: share by lab */
+let VG = null;
+async function loadVercel() {
+  VG = await api("/api/vercel-labs");
+  if (!VG.days.length) { $("#vg-tiles").textContent = "No Vercel data - run vercel_ai_gateway_leaderboard/update.py."; return; }
+  $("#vg-first").textContent = fmtDate(T(VG.first));
+  $("#vg-run").textContent = "latest day " + fmtDate(T(VG.last)) + (VG.observed ? ", pulled " + VG.observed.replace("T", " ").slice(0, 16) : "");
+  ["#vg-meas", "#vg-mod", "#vg-per"].forEach(id => $(id).addEventListener("change", drawVercel));
+  const host = $("#vg-tiles"); host.replaceChildren();
+  const avg = (k, slug, a, b) => { const L = (VG.series[k] || []).find(x => x.slug === slug); if (!L) return null; const v = L.values.slice(a, b).filter(x => x != null); return v.length ? sum(v) / v.length : null; };
+  const lead = VG.series["all:tokens"][0];
+  [[lead.slug, lead.name + " (#1 by tokens)"], ["anthropic", "Anthropic"], ["openai", "OpenAI"], ["google", "Google"]].forEach(([slug, nm], i) => {
+    if (i && slug === lead.slug) return;
+    const t = avg("all:tokens", slug, -7), sp = avg("all:spend", slug, -7), pv = avg("all:tokens", slug, -14, -7);
+    if (t == null) return;
+    const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, nm + ", token share, 7 days");
+    h("div", {class: "v"}, a, p100(t));
+    h("div", {class: "s"}, a, "spend share " + p100(sp) + (pv != null ? " · " + (t - pv >= 0 ? "+" : "") + (t - pv).toFixed(1) + " pt vs prior 7 days" : ""));
+  });
+  drawVercel();
+}
+function drawVercel() {
+  const met = $("#vg-meas").value, mod = $("#vg-mod").value, per = $("#vg-per").value;
+  const S = VG.series[mod + ":" + met] || [];
+  const layers = topLayers(S, 7, "Other labs"), col = mixColours(layers.map(L => L.name));
+  layers.forEach(L => L.color = col[L.name]);
+  $("#vg-mix-title").textContent = "Share of gateway " + met + " by lab";
+  let xs = VG.days, Ls = layers, tip = d => fmtDate(T(d));
+  if (per === "week") {
+    const w = weekly(VG.days, layers); xs = w.weeks; Ls = w.layers;
+    tip = d => { const n = w.n[w.weeks.indexOf(d)]; return "Week of " + fmtDate(T(d)) + (n < 7 ? " (" + n + " days so far)" : ""); };
+  }
+  $("#vg-mix-sub").textContent = (mod === "all" ? "All modalities" : "Text models only") + ", " + (per === "week" ? "average daily share per week (Mon–Sun)" : "daily") + ". Top 7 labs by the last 7 days; the rest are grouped.";
+  legend("lg-vg-mix", Ls.map(L => ({name: L.name, color: L.color, kind: "dot"})));
+  view("c-vg-mix", hst => stackCols(hst, xs, [...Ls].reverse(), {height: 340, max: 100, yFmt: v => v.toFixed(0) + "%", tip, xLab: dShort}),
+    hst => table(hst, [{label: per === "week" ? "Week of" : "Day", get: r => r.d}, ...Ls.map(L => ({label: L.name, n: 1, get: r => p100(L.values[r.i])}))], xs.map((d, i) => ({d, i})).reverse()));
+  // lines: top 5 labs, 7-day average
+  const top = layers.filter(L => !/^Other/.test(L.name)).slice(0, 5);
+  const roll = v => v.map((_, i) => { const w = v.slice(Math.max(0, i - 6), i + 1).filter(x => x != null); return i < 6 || !w.length ? null : sum(w) / w.length; });
+  const R = top.map(L => roll(L.values));
+  const LS = top.map((L, k) => ({name: L.name, color: L.color, points: R[k].map((y, i) => ({x: T(VG.days[i]), y})).filter(p => p.y != null)}));
+  $("#vg-line-sub").textContent = "Share of gateway " + met + ", 7-day average, top 5 labs.";
+  legend("lg-vg-line", LS.map(x => ({name: x.name, color: x.color})));
+  view("c-vg-line", hst => lineChart(hst, LS, {height: 300, yFmt: v => v.toFixed(0) + "%", mode: "cross", title: x => fmtDate(x)}),
+    hst => table(hst, [{label: "Day", get: r => r.d}, ...top.map((L, k) => ({label: L.name, n: 1, get: r => p100(R[k][r.i])}))], VG.days.map((d, i) => ({d, i})).reverse()));
+  // tokens vs spend, last 7 days (all modalities)
+  const A = VG.series["all:tokens"], B = VG.series["all:spend"];
+  const m7 = L => { const v = (L ? L.values.slice(-7) : []).filter(x => x != null); return v.length ? sum(v) / v.length : null; };
+  const rows = A.filter(L => L.slug !== "other").map(L => ({label: L.name, tok: m7(L), sp: m7(B.find(x => x.slug === L.slug))}))
+    .filter(r => r.tok != null && (r.tok >= 0.5 || (r.sp || 0) >= 0.5)).slice(0, 14);
+  const tc = mixColours(rows.map(r => r.label));
+  legend("lg-vg-tw", [{name: "Spend share (bar)", color: "var(--s1)", kind: "dot"}, {name: "Token share (tick)", color: "var(--ink)"}]);
+  view("c-vg-tw", hst => hbar(hst, rows.map(r => ({label: r.label, value: r.sp, tick: r.tok, color: tc[r.label]})), {fmt: v => p100(v), valueLabel: "spend share", tickLabel: "Token share"}),
+    hst => table(hst, [{label: "Lab", key: "label"}, {label: "Token share", n: 1, get: r => p100(r.tok)}, {label: "Spend share", n: 1, get: r => p100(r.sp)},
+      {label: "Spend ÷ tokens", n: 1, get: r => r.tok ? (r.sp / r.tok).toFixed(2) + "×" : "–"}], rows));
+}
+
+/* ================================================================ OpenCode Data: coding-agent tokens */
+let OC = null;
+const tT = v => v == null ? "–" : v >= 10 ? v.toFixed(1) + "T" : v >= 1 ? v.toFixed(2) + "T" : (v * 1000).toFixed(0) + "B";
+const kU = v => v == null ? "–" : v >= 1e6 ? (v / 1e6).toFixed(2) + "M" : (v / 1e3).toFixed(0) + "k";
+async function loadOpencode() {
+  OC = await api("/api/opencode");
+  if (!OC.days.length) { $("#oc-tiles").textContent = "No OpenCode data - run opencode-data/oc_update.py."; return; }
+  $("#oc-first").textContent = fmtDate(T(OC.days[0]));
+  $("#oc-run").textContent = OC.meta.last_run ? "last scraped " + OC.meta.last_run + " (page updated " + (OC.meta.updatedAt || "").replace("T", " ").slice(0, 16) + " UTC)" : "";
+  ["#oc-detail", "#oc-meas"].forEach(id => $(id).addEventListener("change", drawOcMix));
+  const full = OC.days.map((d, i) => i).filter(i => !OC.partial.includes(OC.days[i]));
+  const lastI = full[full.length - 1], l7 = full.slice(-7), p7 = full.slice(-14, -7);
+  const s7 = (arr, ix) => sum(ix.map(i => arr[i] || 0));
+  const host = $("#oc-tiles"); host.replaceChildren();
+  const tile = (t, v, sub) => { const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, t); h("div", {class: "v"}, a, v); h("div", {class: "s"}, a, sub); };
+  const t7 = s7(OC.total_tokens, l7), tp = s7(OC.total_tokens, p7);
+  tile("Tokens, last 7 days", tT(t7), p7.length === 7 ? (t7 >= tp ? "+" : "") + ((t7 / tp - 1) * 100).toFixed(0) + "% vs prior 7 days" : "");
+  tile("Tokens on " + dShort(OC.days[lastI]), tT(OC.total_tokens[lastI]), "latest full UTC day");
+  tile("Daily users, summed over models", kU(OC.total_users[lastI]), dShort(OC.days[lastI]) + " (double-counts multi-model users)");
+  const mk = OC.makers.filter(x => !/^Other/.test(x.name));
+  if (mk.length) tile("Top maker, last 7 days", mk[0].name, (s7(mk[0].values, l7) / t7 * 100).toFixed(0) + "% of tokens");
+  const meta = OC.makers.find(x => x.name === "Meta");
+  if (meta) tile("Meta (Muse Spark) share", p100(s7(meta.values, l7) / t7 * 100), "of tokens, last 7 days");
+  drawOcMix();
+  // daily users, stacked by model
+  const ULs = topLayers(OC.user_models, 6, "Other models"), uc = mixColours(ULs.map(L => L.name));
+  ULs.forEach(L => L.color = uc[L.name]);
+  const fd = full.map(i => OC.days[i]), pick = L => ({...L, values: full.map(i => L.values[i])});
+  legend("lg-oc-users", ULs.map(L => ({name: L.name, color: L.color, kind: "dot"})));
+  view("c-oc-users", hst => stackCols(hst, fd, [...ULs].reverse().map(pick), {height: 300, yFmt: kU, tip: d => fmtDate(T(d)), xLab: dShort}),
+    hst => table(hst, [{label: "Day", get: r => r.d}, {label: "Sum over models", n: 1, get: r => kU(OC.total_users[r.i])}, ...ULs.map(L => ({label: L.name, n: 1, get: r => kU(L.values[r.i])}))], full.map(i => ({d: OC.days[i], i})).reverse()));
+  const S = OC.snapshot || {};
+  const num = v => v === "" || v == null ? null : +v;
+  const ret = (S.retention || []).map(r => ({...r, rate: num(r.rate), n: num(r.eligibleUserWeeks)})).sort((a, b) => b.rate - a.rate);
+  $("#oc-ret-sub").textContent = "Share of a model's users in one week who use it again the next week. Snapshot " + (OC.snapshot_as_of || "") + ".";
+  const rc = mixColours([...new Set(ret.map(r => r.author))]);
+  view("c-oc-ret", hst => hbar(hst, ret.map(r => ({label: r.name || r.key, value: r.rate, color: rc[r.author], note: r.author + " · " + kU(r.n) + " user-weeks"})), {fmt: v => v == null ? "–" : v.toFixed(1) + "%", valueLabel: "retained next week"}),
+    hst => table(hst, [{label: "Model", get: r => r.name || r.key}, {label: "Maker", key: "author"}, {label: "Retention", n: 1, get: r => r.rate.toFixed(1) + "%"}, {label: "User-weeks", n: 1, get: r => kU(r.n)}], ret));
+  const cost = (S.session_cost || []).map(r => ({key: r.key, cost: num(r.cost), tok: num(r.tokens)})).sort((a, b) => b.cost - a.cost);
+  view("c-oc-cost", hst => hbar(hst, cost.map(r => ({label: r.key, value: r.cost, color: "var(--s1)", note: (r.tok / 1e6).toFixed(1) + "M tokens per session"})), {fmt: v => v == null ? "–" : "$" + (v < 0.1 ? v.toFixed(3) : v.toFixed(2)), valueLabel: "per session"}),
+    hst => table(hst, [{label: "Model", key: "key"}, {label: "Cost / session", n: 1, get: r => "$" + r.cost.toFixed(4)}, {label: "Tokens / session", n: 1, get: r => (r.tok / 1e6).toFixed(2) + "M"}], cost));
+  const CN = {CN: "China", US: "United States", IN: "India", DE: "Germany", BR: "Brazil", JP: "Japan", RU: "Russia", ID: "Indonesia", SG: "Singapore", FR: "France", ES: "Spain", HK: "Hong Kong", VN: "Vietnam", NL: "Netherlands", GB: "United Kingdom", KR: "South Korea", TW: "Taiwan", CA: "Canada", TR: "Turkey", PL: "Poland", IT: "Italy", UA: "Ukraine", AU: "Australia", MX: "Mexico"};
+  const geo = (S.country || []).map(r => ({c: r.key, rank: num(r.rank), tok: num(r.tokens), sh: num(r.share)})).sort((a, b) => a.rank - b.rank);
+  view("c-oc-geo", hst => hbar(hst, geo.slice(0, 15).map(r => ({label: CN[r.c] || r.c, value: r.sh, color: "var(--s3)", note: tT(r.tok) + " tokens"})), {fmt: v => v == null ? "–" : v.toFixed(1) + "%", valueLabel: "share of tokens"}),
+    hst => table(hst, [{label: "#", key: "rank"}, {label: "Country", get: r => CN[r.c] || r.c}, {label: "Tokens", n: 1, get: r => tT(r.tok)}, {label: "Share", n: 1, get: r => r.sh.toFixed(1) + "%"}], geo));
+  const price = Object.fromEntries((S.token_price || []).map(r => [r.key, r])), cache = Object.fromEntries((S.cache || []).map(r => [r.key, r]));
+  const board = (S.leaderboard_weekly || []).map(r => ({...r, rank: num(r.rank), tokens: num(r.tokens), change: num(r.change)})).sort((a, b) => a.rank - b.rank);
+  table($("#oc-board"), [{label: "#", key: "rank"}, {label: "Model", get: r => r.name || r.key}, {label: "Maker", key: "author"},
+    {label: "Tokens, 7 days", n: 1, get: r => tT(r.tokens / 1000)}, {label: "vs prior week", n: 1, get: r => r.change == null ? "new" : (r.change > 0 ? "+" : "") + r.change + "%"},
+    {label: "$ / 1M in · out", n: 1, get: r => price[r.key] ? "$" + (+price[r.key].input).toFixed(2) + " · $" + (+price[r.key].output).toFixed(2) : "–"},
+    {label: "Cached input", n: 1, get: r => cache[r.key] ? (+cache[r.key].ratio).toFixed(1) + "%" : "–"}], board);
+}
+function drawOcMix() {
+  const det = $("#oc-detail").value, meas = $("#oc-meas").value;
+  const src = det === "maker" ? OC.makers : OC.models;
+  const full = OC.days.map((d, i) => i).filter(i => !OC.partial.includes(OC.days[i]));
+  let layers = topLayers(src, det === "maker" ? 6 : 7, det === "maker" ? "Other makers" : "Other models");
+  const col = mixColours(layers.map(L => L.name));
+  layers.forEach(L => L.color = col[L.name]);
+  const tot = OC.total_tokens;
+  if (meas === "share") layers = layers.map(L => ({...L, values: L.values.map((v, i) => v == null || !tot[i] ? null : v / tot[i] * 100)}));
+  const fmt = meas === "share" ? (v => v.toFixed(0) + "%") : tT;
+  const what = det === "maker" ? "model maker" : "model";
+  $("#oc-mix-title").textContent = meas === "share" ? "Share of OpenCode tokens by " + what : "OpenCode tokens per day by " + what;
+  $("#oc-mix-sub").textContent = (det === "model" ? "OpenCode publishes its current top 9 models per day plus an Other bucket, so a model that has left the top 9 sits in Other. " : "OpenCode groups makers outside its top 8 as Other. ") + "Full UTC days only.";
+  const fd = full.map(i => OC.days[i]), pick = L => ({...L, values: full.map(i => L.values[i])});
+  legend("lg-oc-mix", layers.map(L => ({name: L.name, color: L.color, kind: "dot"})));
+  view("c-oc-mix", hst => stackCols(hst, fd, [...layers].reverse().map(pick), {height: 340, max: meas === "share" ? 100 : undefined, yFmt: fmt, tip: d => fmtDate(T(d)), xLab: dShort}),
+    hst => table(hst, [{label: "Day", get: r => r.d}, {label: "Total", n: 1, get: r => tT(tot[r.i])},
+      ...layers.map(L => ({label: L.name, n: 1, get: r => L.values[r.i] == null ? "–" : (meas === "share" ? L.values[r.i].toFixed(1) + "%" : tT(L.values[r.i]))}))], full.map(i => ({d: OC.days[i], i})).reverse()));
 }
 
 /* ================================================================ Menlo Ventures: enterprise AI spend (annual survey) */
@@ -2300,7 +2452,7 @@ function loadData() {
   refreshStatus();
 }
 
-const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, databricks: loadDatabricks, menlo: loadMenlo, aei: loadAei, tokenecon: loadTokenEcon, pot: loadPot, rampadopt: loadRampAdopt, arr: loadArr, circular: loadCircular, population: loadPopulation, coverage: loadCoverage, data: loadData};
+const LOADERS = {overview: loadOverview, firms: loadFirms, workers: loadWorkers, compare: loadCompare, fed: loadFed, assistants: loadAssistants, tokens: loadTokens, gpu: loadGpu, credit: loadCredit, capex: capexTab, hcapex: capexTab, ramp: loadRamp, databricks: loadDatabricks, vercel: loadVercel, opencode: loadOpencode, menlo: loadMenlo, aei: loadAei, tokenecon: loadTokenEcon, pot: loadPot, rampadopt: loadRampAdopt, arr: loadArr, circular: loadCircular, population: loadPopulation, coverage: loadCoverage, data: loadData};
 async function boot(again) {
   META = await api("/api/meta");
   document.body.classList.toggle("hosted", !!META.hosted);

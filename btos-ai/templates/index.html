@@ -38,6 +38,8 @@
         <a href="#tokens" role="tab" data-tab="tokens">Tokens (OpenRouter)</a>
         <a href="#ramp" role="tab" data-tab="ramp">Business tokens (Ramp)</a>
         <a href="#databricks" role="tab" data-tab="databricks">Enterprise tokens (Databricks)</a>
+        <a href="#vercel" role="tab" data-tab="vercel">Gateway share by lab (Vercel)</a>
+        <a href="#opencode" role="tab" data-tab="opencode">Coding-agent tokens (OpenCode)</a>
         <a href="#menlo" role="tab" data-tab="menlo">Enterprise spend (Menlo)</a>
         <a href="#tokenecon" role="tab" data-tab="tokenecon">Token economics</a>
         <a href="#pot" role="tab" data-tab="pot">Price of thought (Epoch)</a></div>
@@ -261,7 +263,7 @@
       <div class="chart" id="c-a-codex"></div>
     </div>
     <div class="card">
-      <div class="card-head"><div><h2>Coding agents on npm, installs per day</h2><p class="muted">Monthly average. Codex is corrected for double-counting from 11 Feb 2026. Claude Code&rsquo;s npm install was deprecated on 21 Jan 2026, so npm understates it more each month. Meta&rsquo;s Muse Code CLI installs with a curl script from dev.meta.ai and has no public count, so its official npm SDK (<code>@muse-code/sdk</code>, first published 31 Aug 2026) stands in for it.</p></div>
+      <div class="card-head"><div><h2>Coding agents on npm, installs per day</h2><p class="muted">Monthly average. Codex is corrected for double-counting from 11 Feb 2026. Claude Code&rsquo;s npm install was deprecated on 21 Jan 2026, so npm understates it more each month. Meta&rsquo;s Muse Code CLI installs with a curl script from dev.meta.ai and has no public count, so its official npm SDK (<code>@muse-code/sdk</code>, first published 31 Aug 2026) stands in for it. OpenCode (<code>opencode-ai</code>) ships its platform builds as separate packages, so it is not double-counted; it also installs by curl script and Homebrew, so npm is a floor.</p></div>
         <button class="btn small tbl-toggle" data-for="c-a-npm">Table</button></div>
       <div class="filters inner"><label>Scale <select id="npm-scale"><option value="log">Log</option><option value="lin">Linear</option></select></label></div>
       <div class="legend" id="lg-a-npm"></div>
@@ -469,6 +471,86 @@
     <ul class="dbx-pubs" id="dbx-pubs"></ul>
   </div>
   <p class="muted small">Source: <a href="https://developers.databricks.com/ai-index" target="_blank" rel="noopener">developers.databricks.com/ai-index</a>, data embedded in the page. Scraped weekly by databricks-ai-index/dbx_update.py · <span id="dbx-run"></span></p>
+</section>
+
+<!-- ===================================================== VERCEL AI GATEWAY: SHARE BY LAB -->
+<section id="tab-vercel" class="tab" hidden>
+  <div class="tiles" id="vg-tiles"></div>
+  <div class="note warn"><h3><span class="ico" aria-hidden="true">!</span> Shares of one gateway, not the market</h3>
+    <p>Vercel&rsquo;s AI Gateway routes developers&rsquo; model calls (mostly apps built on Vercel) to each lab. Vercel publishes each lab&rsquo;s <b>daily percentage share</b> of gateway tokens, spend and requests, never volumes, so a falling share can still be growing usage. Spend prices tokens at what the gateway charges, so a lab whose spend share is above its token share sells dearer tokens. Vercel&rsquo;s export keeps a rolling ~61 days; the leaderboard app archives every day since <span id="vg-first"></span>.</p></div>
+  <div class="card">
+    <div class="card-head"><div><h2 id="vg-mix-title">Share by lab</h2><p class="muted" id="vg-mix-sub"></p></div>
+      <button class="btn small tbl-toggle" data-for="c-vg-mix">Table</button></div>
+    <div class="filters inner">
+      <label>Measure <select id="vg-meas"><option value="tokens">Tokens</option><option value="spend">Spend</option><option value="requests">Requests</option></select></label>
+      <label>Models <select id="vg-mod"><option value="all">All modalities</option><option value="text">Text only</option></select></label>
+      <label>Period <select id="vg-per"><option value="week">Weekly average</option><option value="day">Daily</option></select></label>
+    </div>
+    <div class="legend" id="lg-vg-mix"></div>
+    <div class="chart" id="c-vg-mix"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Top labs over time</h2><p class="muted" id="vg-line-sub"></p></div>
+        <button class="btn small tbl-toggle" data-for="c-vg-line">Table</button></div>
+      <div class="legend" id="lg-vg-line"></div>
+      <div class="chart" id="c-vg-line"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Tokens vs spend, last 7 days</h2><p class="muted">Each lab&rsquo;s share of gateway tokens and of gateway spend (all modalities). Spend above tokens = pricier tokens than the gateway average.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-vg-tw">Table</button></div>
+      <div class="legend" id="lg-vg-tw"></div>
+      <div class="chart" id="c-vg-tw"></div>
+    </div>
+  </div>
+  <p class="muted small">Source: <a href="https://vercel.com/ai-gateway/leaderboards/labs" target="_blank" rel="noopener">vercel.com/ai-gateway/leaderboards/labs</a>, open-data export (CC BY 4.0), archived daily at 07:45 by vercel_ai_gateway_leaderboard/update.py · <span id="vg-run"></span></p>
+</section>
+
+<!-- ===================================================== OPENCODE DATA: CODING-AGENT TOKENS -->
+<section id="tab-opencode" class="tab" hidden>
+  <div class="tiles" id="oc-tiles"></div>
+  <div class="note warn"><h3><span class="ico" aria-hidden="true">!</span> One open-source coding agent&rsquo;s traffic</h3>
+    <p>OpenCode is an open-source terminal coding agent. Its own data page counts tokens (input, output, reasoning and cached) and approximate daily users across OpenCode sessions, by model, aggregated hourly in UTC days. The mix leans heavily to cheap open-weight models (often free promotions in OpenCode Zen), so it says more about what price-sensitive developers run in agents than about frontier-model demand. About 97% of input tokens are cache reads. The page keeps a rolling ~56 days; this monitor keeps every day it has scraped since <span id="oc-first"></span>. Today&rsquo;s UTC day is still filling in and is left out of the charts.</p></div>
+  <div class="card">
+    <div class="card-head"><div><h2 id="oc-mix-title">Tokens per day</h2><p class="muted" id="oc-mix-sub"></p></div>
+      <button class="btn small tbl-toggle" data-for="c-oc-mix">Table</button></div>
+    <div class="filters inner">
+      <label>Detail <select id="oc-detail"><option value="maker">By model maker</option><option value="model">By model</option></select></label>
+      <label>Measure <select id="oc-meas"><option value="tok">Tokens (T/day)</option><option value="share">Share of tokens</option></select></label>
+    </div>
+    <div class="legend" id="lg-oc-mix"></div>
+    <div class="chart" id="c-oc-mix"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Daily users, summed across models</h2><p class="muted">OpenCode&rsquo;s daily unique users per model, stacked. Someone who used two models that day counts twice, so read the trend, not the level.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-oc-users">Table</button></div>
+      <div class="legend" id="lg-oc-users"></div>
+      <div class="chart" id="c-oc-users"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Weekly retention by model</h2><p class="muted" id="oc-ret-sub"></p></div>
+        <button class="btn small tbl-toggle" data-for="c-oc-ret">Table</button></div>
+      <div class="chart" id="c-oc-ret"></div>
+    </div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><div><h2>Average cost per session</h2><p class="muted">List-price cost of an average OpenCode session on each model (OpenCode model catalog prices), latest snapshot.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-oc-cost">Table</button></div>
+      <div class="chart" id="c-oc-cost"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h2>Tokens by country, last 7 days</h2><p class="muted">Top 15 of the countries OpenCode lists.</p></div>
+        <button class="btn small tbl-toggle" data-for="c-oc-geo">Table</button></div>
+      <div class="chart" id="c-oc-geo"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-head"><div><h2>Leaderboard, last 7 days</h2><p class="muted">Every model OpenCode ranks this week, with list price per 1M tokens and cache share where published.</p></div></div>
+    <div id="oc-board"></div>
+  </div>
+  <p class="muted small">Source: <a href="https://opencode.ai/data/" target="_blank" rel="noopener">opencode.ai/data</a> (OpenCode Data, Anomaly Innovations), data embedded in the page. Scraped daily by opencode-data/oc_update.py · <span id="oc-run"></span></p>
 </section>
 
 <!-- ===================================================== MENLO VENTURES -->

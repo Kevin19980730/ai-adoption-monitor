@@ -32,6 +32,8 @@ SOURCES = {
     "Ramp tokens": ("ramp", 21, 8, "weekly"),
     "Ramp AI Index adoption": ("rampadopt", 50, 15, "monthly"),
     "Databricks AI Index": ("databricks", 21, 15, "weekly"),
+    "Vercel AI Gateway": ("vercel", 4, 1, "daily"),
+    "OpenCode Data": ("opencode", 4, 1, "daily"),
     "Menlo enterprise survey": ("menlo", 400, 60, "annual report"),
     "Anthropic Economic Index": ("aei", 150, 30, "irregular releases (about quarterly)"),
     "Silicon Data GPU prices": ("gpu", 5, 1, "daily"),
@@ -129,6 +131,20 @@ def _build_series():
         add("dbx_open", "Open-weight share of tokens (Databricks)", "Databricks AI Index", _pts(*zip(*g("open_weight_share", label="Open-weight").items())), "share", "pp")
         add("dbx_multi", "Companies using 2+ model providers (Databricks)", "Databricks AI Index", _pts(*zip(*g("providers_used", label="2+ providers").items())), "share", "pp")
         add("dbx_anth", "Anthropic share of proprietary tokens (Databricks)", "Databricks AI Index", _pts(*zip(*g("token_share_prop", group="Anthropic").items())), "share", "pp")
+    oc = _csv("opencode-data/oc_daily.csv")
+    if not oc.empty:
+        t = oc[(oc.kind == "tokens_t") & (oc.model == "_total") & (oc.partial == 0)].sort_values("date")
+        w = t.set_index(pd.to_datetime(t.date)).value.rolling("7D").sum()[6:]  # 7-day total, needs a full week
+        add("oc_tok", "OpenCode tokens, 7 days to date", "OpenCode Data", _pts(w.index.strftime("%Y-%m-%d"), w.values * 1e12), "tokens", "rel")
+    vg = WS / "vercel_ai_gateway_leaderboard" / "history.csv"
+    vgr = "vercel_ai_gateway_leaderboard/" + ("history.csv" if vg.exists() else "labs_share_history.csv")
+    v = _csv(vgr)
+    if not v.empty:
+        a = v[(v.dataset == "labs") & (v.modality == "all") & (v.name == "anthropic")]
+        for met, nm in (("tokens", "Anthropic share of Vercel AI Gateway tokens"), ("spend", "Anthropic share of Vercel AI Gateway spend")):
+            g = a[a.metric == met].groupby("date").share_percent.sum().sort_index()
+            g = g.rolling(7).mean().dropna() / 100
+            add("vg_anth_" + met, nm + " (7-day avg)", "Vercel AI Gateway", _pts(g.index, g.values), "share", "pp")
     ds = _csv("databricks-ai-index/dbx_spend_weekly.csv")
     if not ds.empty:
         add("dbx_p50", "Median user's weekly token spend (Databricks)", "Databricks AI Index",

@@ -1,0 +1,18 @@
+{
+ "updatedAt": "2026-11-20T08:13:17.000Z",
+ "first_day": "2026-09-26",
+ "last_full_day": "2026-11-19",
+ "partial_day": "2026-11-20",
+ "last_run": "2026-11-20 16:20",
+ "source": "https://opencode.ai/data/",
+ "lab_paths": {
+  "DeepSeek": "/data/deepseek",
+  "MiniMax": "/data/minimax",
+  "Meta": "/data/meta",
+  "Xiaomi": "/data/xiaomi",
+  "Zhipu": "/data/zhipuai",
+  "NVIDIA": "/data/nvidia",
+  "Tencent": "/data/tencent",
+  "Reflection": "/data/reflection"
+ }
+}

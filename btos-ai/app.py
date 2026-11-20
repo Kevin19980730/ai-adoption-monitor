@@ -814,6 +814,93 @@ def databricks():
                     "pubs": records(pubs.fillna("")) if not pubs.empty else [], "last_run": meta.get("last_run")})
 
 
+# ---------------------------------------------------------------- OpenCode Data: coding-agent token mix (daily, rolling ~56 days merged)
+OCD = HERE.parent / "opencode-data"
+
+
+def oc_csv(name):
+    p = OCD / name
+    return cached("oc:" + name, [p], lambda: pd.read_csv(p) if p.exists() else pd.DataFrame())
+
+
+@app.route("/api/opencode")
+def opencode():
+    """OpenCode Data (opencode.ai/data): daily tokens by model and by model maker, daily users per model,
+    plus the latest snapshot of leaderboard / retention / cache / session cost / price / countries.
+    History accumulates in opencode-data/*.csv (the page keeps ~56 UTC days)."""
+    d, mk, sn = oc_csv("oc_daily.csv"), oc_csv("oc_market.csv"), oc_csv("oc_snapshot.csv")
+    mp = OCD / "oc_meta.json"
+    meta = json.loads(mp.read_text(encoding="utf-8")) if mp.exists() else {}
+    if d.empty:
+        return jsonify({"days": []})
+    days = sorted(d.date.unique())
+    partial = sorted(d.loc[d.partial == 1, "date"].unique())
+
+    def pivot(frame, key, val):
+        pv = frame.pivot_table(index=key, columns="date", values=val, aggfunc="first").reindex(columns=days)
+        last7 = [x for x in days if x not in partial][-7:]
+        order = pv[last7].sum(axis=1).sort_values(ascending=False).index
+        return [{"name": k, "values": [clean(v) for v in pv.loc[k]]} for k in order]
+
+    tok, usr = d[d.kind == "tokens_t"], d[d.kind == "users"]
+    out = {"days": days, "partial": partial, "meta": meta,
+           "total_tokens": pivot(tok[tok.model == "_total"], "model", "value")[0]["values"],
+           "total_users": pivot(usr[usr.model == "_total"], "model", "value")[0]["values"],
+           "models": pivot(tok[tok.model != "_total"], "model", "value"),
+           "user_models": pivot(usr[usr.model != "_total"], "model", "value"),
+           "makers": pivot(mk, "author", "tokens_t") if not mk.empty else [],
+           "maker_share": pivot(mk, "author", "share_pct") if not mk.empty else []}
+    if not sn.empty:
+        last = sn[sn.as_of == sn.as_of.max()]
+        snap = {}
+        for t, g in last.groupby("table"):
+            rows = g.pivot_table(index="key", columns="field", values="value", aggfunc="first").reset_index()
+            snap[t] = records(rows.fillna(""))
+        out["snapshot"], out["snapshot_as_of"] = snap, sn.as_of.max()
+    return jsonify(out)
+
+
+# ---------------------------------------------------------------- Vercel AI Gateway: share by lab (daily, archive since 2026-06-15)
+VGD = HERE.parent / "vercel_ai_gateway_leaderboard"
+VG_NAMES = {"zai": "Z.ai (Zhipu)", "openai": "OpenAI", "deepseek": "DeepSeek", "xai": "xAI", "spacexai": "SpaceX AI",
+            "moonshotai": "Moonshot", "minimax": "MiniMax", "nvidia": "NVIDIA", "typesafe-ai": "Typesafe AI",
+            "thinkingmachines": "Thinking Machines", "bfl": "Black Forest Labs", "klingai": "Kling AI",
+            "elevenlabs": "ElevenLabs", "arcee-ai": "Arcee AI", "stepfun": "StepFun", "bytedance": "ByteDance"}
+
+
+def vg_name(s):
+    return VG_NAMES.get(s, s.replace("-", " ").title())
+
+
+@app.route("/api/vercel-labs")
+def vercel_labs():
+    """Vercel AI Gateway leaderboard, labs dataset: each lab's daily % share of gateway tokens / spend / requests.
+    Shares only (Vercel publishes no volumes). Read from the leaderboard app's group-atomic archive history.csv,
+    which its own 07:45 task refreshes."""
+    p = VGD / "history.csv"
+    if not p.exists():  # hosted copy: publish_site.py ships only the labs rows (history.csv is ~6 MB)
+        p = VGD / "labs_share_history.csv"
+    h = cached("vg:history", [p], lambda: pd.read_csv(p) if p.exists() else pd.DataFrame())
+    if h.empty:
+        return jsonify({"days": []})
+    lab = h[(h.dataset == "labs") & h.modality.isin(["all", "text"]) & h.metric.isin(["tokens", "spend", "requests"])]
+    days = sorted(lab.date.unique())
+    out = {}
+    # labs that ever reached 1% of tokens, spend OR requests in that modality keep their own row (so a cheap lab
+    # big in tokens still shows its tiny spend share); the rest -> "Other labs"
+    big = lab[lab.share_percent >= 1.0].groupby("modality").name.agg(set).to_dict()
+    for (mod, met), g in lab.groupby(["modality", "metric"]):
+        pv = g.pivot_table(index="name", columns="date", values="share_percent", aggfunc="sum").reindex(columns=days)
+        keep = pv.index.isin(list(big.get(mod, set())))
+        rest = pv[~keep].sum(axis=0, min_count=1)
+        order = pv[keep][days[-7:]].mean(axis=1).sort_values(ascending=False).index
+        labs = [{"name": vg_name(k), "slug": k, "values": [clean(v) for v in pv.loc[k]]} for k in order]
+        labs.append({"name": "Other labs", "slug": "other", "values": [clean(v) for v in rest]})
+        out[f"{mod}:{met}"] = labs
+    return jsonify({"days": days, "series": out, "first": days[0], "last": days[-1],
+                    "observed": str(h.observed_at.dropna().astype(str).max())})
+
+
 # ---------------------------------------------------------------- Menlo Ventures: enterprise AI spend survey (curated, annual)
 MVD = HERE.parent / "menlo-enterprise-ai"
 
