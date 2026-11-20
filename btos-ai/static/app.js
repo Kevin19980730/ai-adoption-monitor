@@ -948,11 +948,11 @@ function drawArr() {
   const S = [];
   ["OpenAI", "Anthropic"].forEach(co => {
     const pts = AR.points.filter(p => p.company === co && p.kind === "run_rate").sort((a, b) => a.date.localeCompare(b.date));
-    const solid = r => /Confident/i.test(r.confidence) || /Company disclosure/i.test(r.source_type);
+    const solid = r => !/guidance/i.test(r.source_type) && (/Confident/i.test(r.confidence) || /Company disclosure/i.test(r.source_type));
     S.push({name: co, color: LAB_COLOR[co], points: pts.map(r => ({x: T(r.date), y: r.value_usd, hollow: !solid(r),
       note: [r.label, r.confidence || "no rating", r.source_type, r.report_date ? "reported " + r.report_date : "", r.note].filter(Boolean).join(" · ")}))});
     const ex = AR.points.find(p => p.company === co && p.kind === "extrapolation");
-    if (showX && ex && pts.length) S.push({name: co + " year-end extrapolation", short: co + " 2026E", color: LAB_COLOR[co], dash: true, endLabel: false,
+    if (showX && ex && pts.length && pts[pts.length - 1].date < ex.date) S.push({name: co + " year-end extrapolation", short: co + " 2026E", color: LAB_COLOR[co], dash: true, endLabel: false,
       points: [{x: T(pts[pts.length - 1].date), y: pts[pts.length - 1].value_usd}, {x: T(ex.date), y: ex.value_usd, hollow: true, note: ex.note}]});
     // company guidance: a quarter's revenue is shown annualised (× 4) at mid-quarter, i.e. the quarter's average run-rate
     const gd = AR.points.filter(p => p.company === co && p.kind === "guidance").sort((a, b) => a.date.localeCompare(b.date));
@@ -961,7 +961,7 @@ function drawArr() {
         return {x: q ? T(g.date) - 46 * 864e5 : T(g.date), y: g.value_usd * (q ? 4 : 1), hollow: true,
           note: [g.label, q ? `${bn(g.value_usd)} quarterly revenue × 4 = ${bn(g.value_usd * 4)} average run-rate over the quarter` : "", g.note].filter(Boolean).join(" · ")}; }))});
   });
-  legend("lg-arr", [{name: "OpenAI", color: LAB_COLOR.OpenAI}, {name: "Anthropic", color: LAB_COLOR.Anthropic}].concat(showX ? [{name: "Workbook year-end extrapolation", color: "var(--ink-2)", dash: true}] : [])
+  legend("lg-arr", [{name: "OpenAI", color: LAB_COLOR.OpenAI}, {name: "Anthropic", color: LAB_COLOR.Anthropic}].concat(showX && S.some(s => /extrapolation/.test(s.name)) ? [{name: "Workbook year-end extrapolation", color: "var(--ink-2)", dash: true}] : [])
     .concat(showG && AR.points.some(p => p.kind === "guidance") ? [{name: "Company guidance", color: "var(--ink-2)", dash: true}] : []));
   view("c-arr", hst => lineChart(hst, S, {height: 360, yFmt: bn, log, yMin: log ? 2e7 : 0, mode: "near"}),
     hst => table(hst, [{label: "Date", key: "date"}, {label: "Company", key: "company"}, {label: "Run-rate", key: "value_usd", n: 1, fmt: bn}, {label: "Type", key: "rev_type"}, {label: "Confidence", key: "confidence"}, {label: "Source type", key: "source_type"}, {label: "Reported", key: "report_date"},
