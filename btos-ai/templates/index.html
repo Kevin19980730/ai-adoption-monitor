@@ -821,10 +821,11 @@
   <div class="tiles" id="arr-tiles"></div>
   <div class="card">
     <div class="card-head"><div><h2>Annualised revenue run-rate, OpenAI vs Anthropic</h2>
-      <p class="muted">Each point is a reported run-rate (last month's revenue × 12, or company-stated ARR). Filled = company disclosure or rated <i>Confident</i>; hollow = media report rated <i>Likely</i>, or no source on file. The dashed stub is the workbook's year-end extrapolation, not a reported figure.</p></div>
+      <p class="muted">Each point is a reported run-rate (last month's revenue × 12, or company-stated ARR). Filled = company disclosure or rated <i>Confident</i>; hollow = media report rated <i>Likely</i>, or no source on file. The dashed stub is the workbook's year-end extrapolation, not a reported figure. The dotted stub runs to company guidance; a quarterly revenue guide is shown × 4 at mid-quarter (the quarter's average run-rate).</p></div>
       <button class="btn small tbl-toggle" data-for="c-arr">Table</button></div>
     <div class="filters inner"><label>Scale <select id="arr-scale"><option value="log">Log</option><option value="lin">Linear</option></select></label>
-      <label class="check"><input type="checkbox" id="arr-extrap" checked> Show year-end extrapolation</label></div>
+      <label class="check"><input type="checkbox" id="arr-extrap" checked> Show year-end extrapolation</label>
+      <label class="check"><input type="checkbox" id="arr-guide" checked> Show company guidance</label></div>
     <div class="legend" id="lg-arr"></div>
     <div class="chart" id="c-arr"></div>
   </div>

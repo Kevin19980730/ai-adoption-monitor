@@ -180,7 +180,7 @@ function lineChart(host, series, opt) {
     }
     let d = "", pen = false;
     s.points.forEach(p => { if (p.y == null) { pen = false; return; } d += (pen ? "L" : "M") + X(p.x).toFixed(1) + "," + Y(p.y).toFixed(1); pen = true; });
-    el("path", {d, fill: "none", stroke: s.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round", "stroke-dasharray": s.dash ? "5 4" : null}, svg);
+    el("path", {d, fill: "none", stroke: s.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round", "stroke-dasharray": s.dash ? (typeof s.dash === "string" ? s.dash : "5 4") : null}, svg);
     if (s.markers !== false) s.points.forEach(p => { if (p.y == null || p.corner) return;
       el("circle", {cx: X(p.x), cy: Y(p.y), r: s.points.length > 40 ? 0 : s.points.length > 15 ? 2.5 : 3.5, fill: p.hollow ? "var(--surface)" : s.color, stroke: p.hollow ? s.color : "var(--surface)", "stroke-width": p.hollow ? 2 : 1.5}, svg); });
   });
@@ -944,7 +944,7 @@ function drawArr() {
     h("div", {class: "s"}, a, `On ${fmtDate(T(st.ratio.date))} (last date both have data; log-interpolated)` + (AR.crossover ? ` · Anthropic passed OpenAI around ${fmtMonth(T(AR.crossover))}` : "")); }
   if (st.Anthropic && st.OpenAI) { const a = h("div", {class: "tile"}, host); h("div", {class: "t"}, a, "Combined, latest each"); h("div", {class: "v"}, a, bn(st.Anthropic.value + st.OpenAI.value)); h("div", {class: "s"}, a, "Sum of each lab's latest reported run-rate (dates differ)"); }
 
-  const log = $("#arr-scale").value === "log", showX = $("#arr-extrap").checked;
+  const log = $("#arr-scale").value === "log", showX = $("#arr-extrap").checked, showG = $("#arr-guide").checked;
   const S = [];
   ["OpenAI", "Anthropic"].forEach(co => {
     const pts = AR.points.filter(p => p.company === co && p.kind === "run_rate").sort((a, b) => a.date.localeCompare(b.date));
@@ -954,8 +954,15 @@ function drawArr() {
     const ex = AR.points.find(p => p.company === co && p.kind === "extrapolation");
     if (showX && ex && pts.length) S.push({name: co + " year-end extrapolation", short: co + " 2026E", color: LAB_COLOR[co], dash: true, endLabel: false,
       points: [{x: T(pts[pts.length - 1].date), y: pts[pts.length - 1].value_usd}, {x: T(ex.date), y: ex.value_usd, hollow: true, note: ex.note}]});
+    // company guidance: a quarter's revenue is shown annualised (× 4) at mid-quarter, i.e. the quarter's average run-rate
+    const gd = AR.points.filter(p => p.company === co && p.kind === "guidance").sort((a, b) => a.date.localeCompare(b.date));
+    if (showG && gd.length && pts.length) S.push({name: co + " company guidance", short: co + " guide", color: LAB_COLOR[co], dash: "1 4", endLabel: false,
+      points: [{x: T(pts[pts.length - 1].date), y: pts[pts.length - 1].value_usd}].concat(gd.map(g => { const q = /quarter/i.test(g.period_type);
+        return {x: q ? T(g.date) - 46 * 864e5 : T(g.date), y: g.value_usd * (q ? 4 : 1), hollow: true,
+          note: [g.label, q ? `${bn(g.value_usd)} quarterly revenue × 4 = ${bn(g.value_usd * 4)} average run-rate over the quarter` : "", g.note].filter(Boolean).join(" · ")}; }))});
   });
-  legend("lg-arr", [{name: "OpenAI", color: LAB_COLOR.OpenAI}, {name: "Anthropic", color: LAB_COLOR.Anthropic}].concat(showX ? [{name: "Workbook year-end extrapolation", color: "var(--ink-2)", dash: true}] : []));
+  legend("lg-arr", [{name: "OpenAI", color: LAB_COLOR.OpenAI}, {name: "Anthropic", color: LAB_COLOR.Anthropic}].concat(showX ? [{name: "Workbook year-end extrapolation", color: "var(--ink-2)", dash: true}] : [])
+    .concat(showG && AR.points.some(p => p.kind === "guidance") ? [{name: "Company guidance", color: "var(--ink-2)", dash: true}] : []));
   view("c-arr", hst => lineChart(hst, S, {height: 360, yFmt: bn, log, yMin: log ? 2e7 : 0, mode: "near"}),
     hst => table(hst, [{label: "Date", key: "date"}, {label: "Company", key: "company"}, {label: "Run-rate", key: "value_usd", n: 1, fmt: bn}, {label: "Type", key: "rev_type"}, {label: "Confidence", key: "confidence"}, {label: "Source type", key: "source_type"}, {label: "Reported", key: "report_date"},
       {label: "Source", get: r => r.source1 ? h("a", {href: r.source1, target: "_blank", rel: "noopener noreferrer"}, null, (r.source1.match(/\/\/(?:www\.)?([^/]+)/) || [, "link"])[1]) : (r.note || "–")}, {label: "Quote", get: r => (r.quote || "").slice(0, 220)}],
@@ -966,8 +973,8 @@ function drawArr() {
   view("c-arr-land", hst => hbar(hst, land.map(r => ({label: r.name, value: r.arr_musd * 1e6, color: lc(r.name), note: `${r.date}` + (r.share !== "" ? ` · ${pct(+r.share)} of listed total` : "") + (r.gross_margin !== "" ? ` · gross margin ${typeof r.gross_margin === "number" ? pct(r.gross_margin, 0) : r.gross_margin}` : "")})), {fmt: bn, valueLabel: "ARR"}),
     hst => table(hst, [{label: "Lab / product", key: "name"}, {label: "As of", key: "date"}, {label: "ARR", key: "arr_musd", n: 1, fmt: v => bn(v * 1e6)}, {label: "Share", key: "share", n: 1, fmt: v => v === "" ? "–" : pct(+v)}, {label: "Gross margin", get: r => r.gross_margin === "" ? "–" : typeof r.gross_margin === "number" ? pct(r.gross_margin, 0) : r.gross_margin}], [...AR.landscape].sort((a, b) => b.arr_musd - a.arr_musd)));
 
-  table($("#arr-other"), [{label: "Date", key: "date"}, {label: "Company", key: "company"}, {label: "Measure", get: r => r.kind === "recognized" ? `Recognised revenue (${(r.period_type || "period").toLowerCase()})` : `Segment ARR`}, {label: "Value", key: "value_usd", n: 1, fmt: bn}, {label: "What", get: r => r.label}],
-    AR.points.filter(p => p.kind === "recognized" || p.kind === "segment").sort((a, b) => b.date.localeCompare(a.date)));
+  table($("#arr-other"), [{label: "Date", key: "date"}, {label: "Company", key: "company"}, {label: "Measure", get: r => r.kind === "recognized" ? `Recognised revenue (${(r.period_type || "period").toLowerCase()})` : r.kind === "guidance" ? `Company guidance: ${(r.rev_type || "").toLowerCase()}` : `Segment ARR`}, {label: "Value", key: "value_usd", n: 1, fmt: bn}, {label: "What", get: r => [r.label, r.note].filter(Boolean).join(" · ")}],
+    AR.points.filter(p => p.kind === "recognized" || p.kind === "segment" || p.kind === "guidance").sort((a, b) => b.date.localeCompare(a.date)));
   table($("#arr-gw"), [{label: "Date", key: "date"}, {label: "Company", key: "company"}, {label: "Run-rate", key: "value_usd", n: 1, fmt: bn}, {label: "Compute (GW)", key: "compute_gw", n: 1}, {label: "Inference (GW)", key: "inference_gw", n: 1}, {label: "Inference revenue / GW", key: "inference_rev_per_gw_bn", n: 1, fmt: v => v === "" ? "–" : "$" + (+v).toFixed(1) + "B"}],
     AR.points.filter(p => p.compute_gw !== "" && p.kind === "run_rate").sort((a, b) => b.date.localeCompare(a.date)));
 }
@@ -1050,7 +1057,7 @@ function drawArrGrowth() {
 async function loadArr() {
   AR = await api("/api/arr");
   if (!AR.points.length) { $("#arr-tiles").textContent = "No ARR data yet - run ai-lab-arr/arr_update.py."; return; }
-  ["#arr-scale", "#arr-extrap"].forEach(s => $(s).addEventListener("change", drawArr));
+  ["#arr-scale", "#arr-extrap", "#arr-guide"].forEach(s => $(s).addEventListener("change", drawArr));
   ["#arr-tr-freq", "#arr-tr-meas", "#arr-scale"].forEach(s => $(s).addEventListener("change", drawArrTrend));
   $("#arr-mm-smooth").addEventListener("change", drawArrGrowth);
   renderArrReview(); drawArr(); drawArrTrend(); drawArrGrowth();
