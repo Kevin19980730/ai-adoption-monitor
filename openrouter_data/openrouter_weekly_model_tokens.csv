@@ -79,7 +79,7 @@ week,model,author,tokens,partial
 2025-11-24,google/gemini-2.0-flash-001,google,168291362347,0
 2025-11-24,google/gemini-3-pro-preview-20251117,google,154705440509,0
 2025-11-24,google/gemini-2.5-flash-lite,google,151423355216,0
-2025-12-01,Others,,3023733707868,0
+2025-12-01,Others,,3023015917099,0
 2025-12-01,x-ai/grok-code-fast-1,x-ai,878555435971,0
 2025-12-01,x-ai/grok-4.1-fast:free,x-ai,585015423470,0
 2025-12-01,anthropic/claude-4.5-sonnet-20250929,anthropic,429159402329,0
@@ -89,7 +89,7 @@ week,model,author,tokens,partial
 2025-12-01,google/gemini-2.0-flash-001,google,165256172246,0
 2025-12-01,google/gemini-2.5-pro,google,162065233898,0
 2025-12-01,x-ai/grok-4-fast,x-ai,161876440865,0
-2025-12-08,Others,,3062471941313,0
+2025-12-08,Others,,3062218425367,0
 2025-12-08,x-ai/grok-code-fast-1,x-ai,618469718813,0
 2025-12-08,google/gemini-2.5-flash,google,453242014019,0
 2025-12-08,anthropic/claude-4.5-sonnet-20250929,anthropic,430777771586,0
@@ -99,7 +99,7 @@ week,model,author,tokens,partial
 2025-12-08,google/gemini-2.5-flash-lite,google,168402695203,0
 2025-12-08,x-ai/grok-4-fast,x-ai,159985083087,0
 2025-12-08,google/gemini-2.5-pro,google,155321637073,0
-2025-12-15,Others,,3295602940648,0
+2025-12-15,Others,,3295596960068,0
 2025-12-15,x-ai/grok-code-fast-1,x-ai,517261241082,0
 2025-12-15,google/gemini-2.5-flash,google,438708651368,0
 2025-12-15,anthropic/claude-4.5-sonnet-20250929,anthropic,416299356874,0
@@ -109,7 +109,7 @@ week,model,author,tokens,partial
 2025-12-15,google/gemini-2.0-flash-001,google,184561836303,0
 2025-12-15,google/gemini-2.5-flash-lite,google,182341260426,0
 2025-12-15,xiaomi/mimo-v2-flash-20251210:free,xiaomi,170776227913,0
-2025-12-22,Others,,2968812286339,0
+2025-12-22,Others,,2968805322744,0
 2025-12-22,x-ai/grok-code-fast-1,x-ai,481948335409,0
 2025-12-22,xiaomi/mimo-v2-flash-20251210:free,xiaomi,378754384454,0
 2025-12-22,google/gemini-2.5-flash,google,377291061962,0
@@ -119,7 +119,7 @@ week,model,author,tokens,partial
 2025-12-22,x-ai/grok-4.1-fast,x-ai,199151935829,0
 2025-12-22,anthropic/claude-4.5-opus-20251124,anthropic,183314603079,0
 2025-12-22,google/gemini-2.5-flash-lite,google,157726837504,0
-2025-12-29,Others,,2919870880893,0
+2025-12-29,Others,,2919853335204,0
 2025-12-29,x-ai/grok-code-fast-1,x-ai,409114561828,0
 2025-12-29,google/gemini-2.5-flash,google,352492796625,0
 2025-12-29,deepseek/deepseek-v3.2-20251201,deepseek,352169109488,0
@@ -129,7 +129,7 @@ week,model,author,tokens,partial
 2025-12-29,x-ai/grok-4.1-fast,x-ai,196109774226,0
 2025-12-29,anthropic/claude-4.5-opus-20251124,anthropic,177921941194,0
 2025-12-29,google/gemini-2.5-flash-lite,google,164978482852,0
-2026-01-05,Others,,3152156938599,0
+2026-01-05,Others,,3152148057800,0
 2026-01-05,anthropic/claude-4.5-sonnet-20250929,anthropic,530610171817,0
 2026-01-05,x-ai/grok-code-fast-1,x-ai,412784694715,0
 2026-01-05,xiaomi/mimo-v2-flash-20251210:free,xiaomi,397319307841,0
@@ -139,7 +139,7 @@ week,model,author,tokens,partial
 2026-01-05,deepseek/deepseek-v3.2-20251201,deepseek,311288088430,0
 2026-01-05,google/gemini-2.5-flash-lite,google,253468096928,0
 2026-01-05,x-ai/grok-4.1-fast,x-ai,241297445504,0
-2026-01-12,Others,,3540054997443,0
+2026-01-12,Others,,3540050009984,0
 2026-01-12,anthropic/claude-4.5-opus-20251124,anthropic,622642470552,0
 2026-01-12,anthropic/claude-4.5-sonnet-20250929,anthropic,615133712040,0
 2026-01-12,xiaomi/mimo-v2-flash-20251210:free,xiaomi,546049737672,0
@@ -149,7 +149,7 @@ week,model,author,tokens,partial
 2026-01-12,google/gemini-2.5-flash,google,376492238774,0
 2026-01-12,deepseek/deepseek-v3.2-20251201,deepseek,354989002611,0
 2026-01-12,x-ai/grok-4.1-fast,x-ai,283549381448,0
-2026-01-19,Others,,3454729917465,0
+2026-01-19,Others,,3454711206933,0
 2026-01-19,anthropic/claude-4.5-sonnet-20250929,anthropic,713132098351,0
 2026-01-19,xiaomi/mimo-v2-flash-20251210:free,xiaomi,575094656309,0
 2026-01-19,x-ai/grok-code-fast-1,x-ai,539747530096,0
@@ -159,7 +159,7 @@ week,model,author,tokens,partial
 2026-01-19,anthropic/claude-4.5-opus-20251124,anthropic,363860628252,0
 2026-01-19,x-ai/grok-4.1-fast,x-ai,282628544406,0
 2026-01-19,google/gemini-2.5-flash-lite,google,266962657002,0
-2026-01-26,Others,,4093614471177,0
+2026-01-26,Others,,4093599697203,0
 2026-01-26,anthropic/claude-4.5-sonnet-20250929,anthropic,774547335543,0
 2026-01-26,google/gemini-3-flash-preview-20251217,google,688836171168,0
 2026-01-26,deepseek/deepseek-v3.2-20251201,deepseek,507333780688,0
@@ -169,7 +169,7 @@ week,model,author,tokens,partial
 2026-01-26,moonshotai/kimi-k2.5-0127,moonshotai,359303717844,0
 2026-01-26,x-ai/grok-4.1-fast,x-ai,316457561436,0
 2026-01-26,openai/gpt-oss-120b,openai,304442038445,0
-2026-02-02,Others,,4582219877492,0
+2026-02-02,Others,,4582201374926,0
 2026-02-02,moonshotai/kimi-k2.5-0127,moonshotai,1158732930908,0
 2026-02-02,google/gemini-3-flash-preview-20251217,google,763783933324,0
 2026-02-02,anthropic/claude-4.5-sonnet-20250929,anthropic,705481897429,0
@@ -179,7 +179,7 @@ week,model,author,tokens,partial
 2026-02-02,anthropic/claude-4.5-opus-20251124,anthropic,369782947073,0
 2026-02-02,x-ai/grok-4.1-fast,x-ai,344786863728,0
 2026-02-02,google/gemini-2.5-flash-lite,google,343595255951,0
-2026-02-09,Others,,5962515526377,0
+2026-02-09,Others,,5962506644980,0
 2026-02-09,minimax/minimax-m2.5-20260211,minimax,1438446017172,0
 2026-02-09,moonshotai/kimi-k2.5-0127,moonshotai,1295857489162,0
 2026-02-09,google/gemini-3-flash-preview-20251217,google,775913082169,0
@@ -189,7 +189,7 @@ week,model,author,tokens,partial
 2026-02-09,x-ai/grok-4.1-fast,x-ai,556795772174,0
 2026-02-09,anthropic/claude-4.6-opus-20260205,anthropic,523687912384,0
 2026-02-09,google/gemini-2.5-flash,google,450389022307,0
-2026-02-16,Others,,5639033150390,0
+2026-02-16,Others,,5639012939629,0
 2026-02-16,minimax/minimax-m2.5-20260211,minimax,2570426255378,0
 2026-02-16,moonshotai/kimi-k2.5-0127,moonshotai,1036388353348,0
 2026-02-16,google/gemini-3-flash-preview-20251217,google,858773075468,0
@@ -199,7 +199,7 @@ week,model,author,tokens,partial
 2026-02-16,anthropic/claude-4.6-opus-20260205,anthropic,642879385684,0
 2026-02-16,anthropic/claude-4.5-sonnet-20250929,anthropic,534086153166,0
 2026-02-16,arcee-ai/trinity-large-preview:free,arcee-ai,449290564622,0
-2026-02-23,Others,,6540780090465,0
+2026-02-23,Others,,6540744281083,0
 2026-02-23,minimax/minimax-m2.5-20260211,minimax,1625442992101,0
 2026-02-23,google/gemini-3-flash-preview-20251217,google,1027301048775,0
 2026-02-23,deepseek/deepseek-v3.2-20251201,deepseek,799864437550,0
@@ -209,7 +209,7 @@ week,model,author,tokens,partial
 2026-02-23,x-ai/grok-4.1-fast,x-ai,594741811287,0
 2026-02-23,arcee-ai/trinity-large-preview:free,arcee-ai,537106865199,0
 2026-02-23,anthropic/claude-4.5-sonnet-20250929,anthropic,529049750120,0
-2026-03-02,Others,,6969153913046,0
+2026-03-02,Others,,6969145057815,0
 2026-03-02,minimax/minimax-m2.5-20260211,minimax,1863862322159,0
 2026-03-02,google/gemini-3-flash-preview-20251217,google,1042788149999,0
 2026-03-02,deepseek/deepseek-v3.2-20251201,deepseek,831497917353,0
@@ -219,7 +219,7 @@ week,model,author,tokens,partial
 2026-03-02,anthropic/claude-4.6-sonnet-20260217,anthropic,679687926923,0
 2026-03-02,x-ai/grok-4.1-fast,x-ai,614542866815,0
 2026-03-02,arcee-ai/trinity-large-preview:free,arcee-ai,526366028712,0
-2026-03-09,Others,,8238138634271,0
+2026-03-09,Others,,8238130025898,0
 2026-03-09,minimax/minimax-m2.5-20260211,minimax,1747235642978,0
 2026-03-09,stepfun/step-3.5-flash:free,stepfun,1340325199219,0
 2026-03-09,deepseek/deepseek-v3.2-20251201,deepseek,1036108388599,0
@@ -229,7 +229,7 @@ week,model,author,tokens,partial
 2026-03-09,openrouter/hunter-alpha,openrouter,665677892611,0
 2026-03-09,google/gemini-2.5-flash,google,561461180291,0
 2026-03-09,moonshotai/kimi-k2.5-0127,moonshotai,559481288982,0
-2026-03-16,Others,,10004477546338,0
+2026-03-16,Others,,10004468367710,0
 2026-03-16,xiaomi/mimo-v2-pro-20260318,xiaomi,1490889230665,0
 2026-03-16,stepfun/step-3.5-flash:free,stepfun,1478698121257,0
 2026-03-16,minimax/minimax-m2.5-20260211,minimax,1298293090489,0
@@ -239,7 +239,7 @@ week,model,author,tokens,partial
 2026-03-16,anthropic/claude-4.6-opus-20260205,anthropic,973536759725,0
 2026-03-16,google/gemini-3-flash-preview-20251217,google,936992864996,0
 2026-03-16,openrouter/hunter-alpha,openrouter,915850383552,0
-2026-03-23,Others,,9821440020562,0
+2026-03-23,Others,,9821417585912,0
 2026-03-23,xiaomi/mimo-v2-pro-20260318,xiaomi,3946528663437,0
 2026-03-23,stepfun/step-3.5-flash:free,stepfun,1484868226097,0
 2026-03-23,minimax/minimax-m2.7-20260318,minimax,1284321949429,0
@@ -249,7 +249,7 @@ week,model,author,tokens,partial
 2026-03-23,google/gemini-3-flash-preview-20251217,google,968332980979,0
 2026-03-23,z-ai/glm-5-turbo-20260315,z-ai,964789263192,0
 2026-03-23,minimax/minimax-m2.5-20260211,minimax,905847627573,0
-2026-03-30,Others,,11022908538798,0
+2026-03-30,Others,,11022895771177,0
 2026-03-30,qwen/qwen3.6-plus-04-02:free,qwen,4600778695301,0
 2026-03-30,xiaomi/mimo-v2-pro-20260318,xiaomi,3075697429178,0
 2026-03-30,qwen/qwen3.6-plus-preview:free,qwen,1640268925383,0
@@ -259,7 +259,7 @@ week,model,author,tokens,partial
 2026-03-30,anthropic/claude-4.6-sonnet-20260217,anthropic,1032269887695,0
 2026-03-30,anthropic/claude-4.6-opus-20260205,anthropic,1016536598150,0
 2026-03-30,google/gemini-3-flash-preview-20251217,google,979555999040,0
-2026-04-06,Others,,11090188353078,0
+2026-04-06,Others,,11090172990360,0
 2026-04-06,qwen/qwen3.6-plus-04-02:free,qwen,1663454147264,0
 2026-04-06,deepseek/deepseek-v3.2-20251201,deepseek,1266925587296,0
 2026-04-06,anthropic/claude-4.6-opus-20260205,anthropic,1193340329942,0
@@ -269,7 +269,7 @@ week,model,author,tokens,partial
 2026-04-06,google/gemini-3-flash-preview-20251217,google,1062679747314,0
 2026-04-06,nvidia/nemotron-3-super-120b-a12b-20230311:free,nvidia,658754619735,0
 2026-04-06,xiaomi/mimo-v2-pro-20260318,xiaomi,605710580136,0
-2026-04-13,Others,,11124445083576,0
+2026-04-13,Others,,11124430929094,0
 2026-04-13,anthropic/claude-4.6-sonnet-20260217,anthropic,1380904443289,0
 2026-04-13,deepseek/deepseek-v3.2-20251201,deepseek,1279545315597,0
 2026-04-13,anthropic/claude-4.6-opus-20260205,anthropic,1218729940297,0
@@ -279,7 +279,7 @@ week,model,author,tokens,partial
 2026-04-13,minimax/minimax-m2.7-20260318,minimax,959756684781,0
 2026-04-13,google/gemini-2.5-flash-lite,google,593873833207,0
 2026-04-13,x-ai/grok-4.1-fast,x-ai,572132828528,0
-2026-04-20,Others,,12545013359668,0
+2026-04-20,Others,,12544975654128,0
 2026-04-20,moonshotai/kimi-k2.6-20260420,moonshotai,1580692059875,0
 2026-04-20,anthropic/claude-4.6-sonnet-20260217,anthropic,1355844165448,0
 2026-04-20,deepseek/deepseek-v3.2-20251201,deepseek,1274992880096,0
@@ -289,7 +289,7 @@ week,model,author,tokens,partial
 2026-04-20,x-ai/grok-4.1-fast,x-ai,745771584900,0
 2026-04-20,stepfun/step-3.5-flash,stepfun,720118153198,0
 2026-04-20,anthropic/claude-4.6-opus-20260205,anthropic,684507999574,0
-2026-04-27,Others,,12618466922678,0
+2026-04-27,Others,,12618418347519,0
 2026-04-27,tencent/hy3-preview-20260421:free,tencent,3031227447921,0
 2026-04-27,moonshotai/kimi-k2.6-20260420,moonshotai,1811791095354,0
 2026-04-27,anthropic/claude-4.6-sonnet-20260217,anthropic,1344034901583,0
@@ -299,7 +299,7 @@ week,model,author,tokens,partial
 2026-04-27,stepfun/step-3.5-flash,stepfun,750526540997,0
 2026-04-27,minimax/minimax-m2.7-20260318,minimax,727960465614,0
 2026-04-27,deepseek/deepseek-v4-flash-20260423,deepseek,703323210254,0
-2026-05-04,Others,,14030553038434,0
+2026-05-04,Others,,14030487128599,0
 2026-05-04,tencent/hy3-preview-20260421:free,tencent,2676587886276,0
 2026-05-04,moonshotai/kimi-k2.6-20260420,moonshotai,1613682885848,0
 2026-05-04,anthropic/claude-4.6-sonnet-20260217,anthropic,1451951786344,0
@@ -309,7 +309,7 @@ week,model,author,tokens,partial
 2026-05-04,deepseek/deepseek-v3.2-20251201,deepseek,867229931231,0
 2026-05-04,tencent/hy3-preview-20260421,tencent,856331701786,0
 2026-05-04,deepseek/deepseek-v4-pro-20260423,deepseek,815625270944,0
-2026-05-11,Others,,14088118799003,0
+2026-05-11,Others,,14088040867804,0
 2026-05-11,tencent/hy3-preview-20260421,tencent,2655590909703,0
 2026-05-11,deepseek/deepseek-v4-flash-20260423,deepseek,2062273457044,0
 2026-05-11,anthropic/claude-4.6-sonnet-20260217,anthropic,1545920378055,0
@@ -319,7 +319,7 @@ week,model,author,tokens,partial
 2026-05-11,deepseek/deepseek-v3.2-20251201,deepseek,1025365344299,0
 2026-05-11,openrouter/owl-alpha,openrouter,894787042736,0
 2026-05-11,deepseek/deepseek-v4-pro-20260423,deepseek,892757745368,0
-2026-05-18,Others,,13631347336888,0
+2026-05-18,Others,,13631325498770,0
 2026-05-18,deepseek/deepseek-v4-flash-20260423,deepseek,3425801372074,0
 2026-05-18,tencent/hy3-preview-20260421,tencent,3070579522313,0
 2026-05-18,anthropic/claude-4.7-opus-20260416,anthropic,1938029560451,0
@@ -329,7 +329,7 @@ week,model,author,tokens,partial
 2026-05-18,deepseek/deepseek-v4-pro-20260423,deepseek,1075466495844,0
 2026-05-18,deepseek/deepseek-v3.2-20251201,deepseek,979400603857,0
 2026-05-18,stepfun/step-3.5-flash,stepfun,662463171168,0
-2026-05-25,Others,,14761417436395,0
+2026-05-25,Others,,14761401931589,0
 2026-05-25,deepseek/deepseek-v4-flash-20260423,deepseek,3108137494077,0
 2026-05-25,tencent/hy3-preview-20260421,tencent,3026675656298,0
 2026-05-25,anthropic/claude-4.7-opus-20260416,anthropic,2323905161870,0
@@ -339,7 +339,7 @@ week,model,author,tokens,partial
 2026-05-25,deepseek/deepseek-v4-pro-20260423,deepseek,1253518790688,0
 2026-05-25,xiaomi/mimo-v2.5-pro-20260422,xiaomi,1243780903758,0
 2026-05-25,deepseek/deepseek-v3.2-20251201,deepseek,1040683134867,0
-2026-06-01,Others,,16803187511620,0
+2026-06-01,Others,,16803179432479,0
 2026-06-01,deepseek/deepseek-v4-flash-20260423,deepseek,3684392865603,0
 2026-06-01,tencent/hy3-preview-20260421,tencent,2942430891368,0
 2026-06-01,minimax/minimax-m3-20260531,minimax,2498675822874,0
@@ -349,7 +349,7 @@ week,model,author,tokens,partial
 2026-06-01,deepseek/deepseek-v4-pro-20260423,deepseek,1697215087209,0
 2026-06-01,anthropic/claude-4.7-opus-20260416,anthropic,1439419759263,0
 2026-06-01,deepseek/deepseek-v3.2-20251201,deepseek,1167633883587,0
-2026-06-08,Others,,18006893360137,0
+2026-06-08,Others,,18006811912437,0
 2026-06-08,deepseek/deepseek-v4-flash-20260423,deepseek,4412513967312,0
 2026-06-08,minimax/minimax-m3-20260531,minimax,4323092389266,0
 2026-06-08,tencent/hy3-preview-20260421,tencent,4136427003731,0
@@ -359,7 +359,7 @@ week,model,author,tokens,partial
 2026-06-08,anthropic/claude-4.6-sonnet-20260217,anthropic,2125470610419,0
 2026-06-08,deepseek/deepseek-v4-pro-20260423,deepseek,1956845496757,0
 2026-06-08,anthropic/claude-4.8-opus-20260528,anthropic,1245386230150,0
-2026-06-15,Others,,19525088979631,0
+2026-06-15,Others,,19525088021035,0
 2026-06-15,deepseek/deepseek-v4-flash-20260423,deepseek,4934471373992,0
 2026-06-15,xiaomi/mimo-v2.5-20260422,xiaomi,3941404557942,0
 2026-06-15,minimax/minimax-m3-20260531,minimax,3771225109466,0
@@ -369,7 +369,7 @@ week,model,author,tokens,partial
 2026-06-15,anthropic/claude-4.7-opus-20260416,anthropic,2524757915175,0
 2026-06-15,anthropic/claude-4.8-opus-20260528,anthropic,1692328166904,0
 2026-06-15,anthropic/claude-4.6-sonnet-20260217,anthropic,1536240333111,0
-2026-06-22,Others,,18608241430604,0
+2026-06-22,Others,,18608239403750,0
 2026-06-22,deepseek/deepseek-v4-flash-20260423,deepseek,4658198982371,0
 2026-06-22,xiaomi/mimo-v2.5-20260422,xiaomi,4482079077718,0
 2026-06-22,minimax/minimax-m3-20260531,minimax,3744275964225,0
@@ -379,7 +379,7 @@ week,model,author,tokens,partial
 2026-06-22,z-ai/glm-5.2-20260616,z-ai,2107624510576,0
 2026-06-22,deepseek/deepseek-v4-pro-20260423,deepseek,2041204735168,0
 2026-06-22,anthropic/claude-4.8-opus-20260528,anthropic,1906133005964,0
-2026-06-29,Others,,18983778666077,0
+2026-06-29,Others,,18983777618284,0
 2026-06-29,deepseek/deepseek-v4-flash-20260423,deepseek,5339678745733,0
 2026-06-29,xiaomi/mimo-v2.5-20260422,xiaomi,4381056827095,0
 2026-06-29,minimax/minimax-m3-20260531,minimax,4112339614972,0
@@ -389,7 +389,7 @@ week,model,author,tokens,partial
 2026-06-29,anthropic/claude-4.7-opus-20260416,anthropic,2190998016200,0
 2026-06-29,anthropic/claude-4.8-opus-20260528,anthropic,2091800208986,0
 2026-06-29,stepfun/step-3.7-flash-20260528,stepfun,1554123864396,0
-2026-07-06,Others,,18711834211908,0
+2026-07-06,Others,,18711831218062,0
 2026-07-06,tencent/hy3-20260706:free,tencent,6133686335963,0
 2026-07-06,xiaomi/mimo-v2.5-20260422,xiaomi,5947323873332,0
 2026-07-06,deepseek/deepseek-v4-flash-20260423,deepseek,5223444016292,0
@@ -399,7 +399,7 @@ week,model,author,tokens,partial
 2026-07-06,anthropic/claude-4.7-opus-20260416,anthropic,2255204782563,0
 2026-07-06,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,nvidia,2040782485317,0
 2026-07-06,anthropic/claude-4.8-opus-20260528,anthropic,2031431603600,0
-2026-07-13,Others,,18969345435218,0
+2026-07-13,Others,,18969344904835,0
 2026-07-13,tencent/hy3-20260706:free,tencent,11516528897206,0
 2026-07-13,xiaomi/mimo-v2.5-20260422,xiaomi,9319513129034,0
 2026-07-13,deepseek/deepseek-v4-flash-20260423,deepseek,5384952769104,0
@@ -409,7 +409,7 @@ week,model,author,tokens,partial
 2026-07-13,deepseek/deepseek-v4-pro-20260423,deepseek,2710492738036,0
 2026-07-13,anthropic/claude-4.7-opus-20260416,anthropic,2171127937003,0
 2026-07-13,anthropic/claude-4.8-opus-20260528,anthropic,2070416265177,0
-2026-07-20,Others,,22737287795892,0
+2026-07-20,Others,,22737287348767,0
 2026-07-20,xiaomi/mimo-v2.5-20260422,xiaomi,10463362117544,0
 2026-07-20,deepseek/deepseek-v4-flash-20260423,deepseek,6370682795644,0
 2026-07-20,tencent/hy3-20260706,tencent,3944653512792,0
@@ -419,7 +419,7 @@ week,model,author,tokens,partial
 2026-07-20,minimax/minimax-m3-20260531,minimax,2048490367495,0
 2026-07-20,stepfun/step-3.7-flash-20260528,stepfun,1918581048619,0
 2026-07-20,tencent/hy3-20260706:free,tencent,1759474080557,0
-2026-07-27,Others,,24284610299453,0
+2026-07-27,Others,,24284609726450,0
 2026-07-27,deepseek/deepseek-v4-flash-20260423,deepseek,7220350124001,0
 2026-07-27,xiaomi/mimo-v2.5-20260422,xiaomi,6304949281665,0
 2026-07-27,tencent/hy3-20260706,tencent,4824580734626,0
@@ -429,7 +429,7 @@ week,model,author,tokens,partial
 2026-07-27,minimax/minimax-m3-20260531,minimax,1957494046128,0
 2026-07-27,openai/gpt-5.6-luna-20260709,openai,1945077160070,0
 2026-07-27,stepfun/step-3.7-flash-20260528,stepfun,1655820310083,0
-2026-08-03,Others,,25627684627213,0
+2026-08-03,Others,,25627683446505,0
 2026-08-03,deepseek/deepseek-v4-flash-20260731,deepseek,8826076422544,0
 2026-08-03,tencent/hy3-20260706,tencent,8050128586848,0
 2026-08-03,deepseek/deepseek-v4-flash-20260423,deepseek,5880433122513,0
@@ -439,7 +439,7 @@ week,model,author,tokens,partial
 2026-08-03,deepseek/deepseek-v4-pro-20260423,deepseek,2611842929533,0
 2026-08-03,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,nvidia,2406946248889,0
 2026-08-03,google/gemini-3.6-flash-20260721,google,2328788777091,0
-2026-08-10,Others,,28259381845996,0
+2026-08-10,Others,,28259381327104,0
 2026-08-10,deepseek/deepseek-v4-flash-20260731,deepseek,11180297061770,0
 2026-08-10,tencent/hy3-20260706,tencent,9953312056288,0
 2026-08-10,openai/gpt-5.6-luna-20260709,openai,5311298774780,0
@@ -449,7 +449,7 @@ week,model,author,tokens,partial
 2026-08-10,deepseek/deepseek-v4-pro-20260423,deepseek,2735410078617,0
 2026-08-10,anthropic/claude-opus-5-20260723,anthropic,2666233498928,0
 2026-08-10,google/gemini-3.6-flash-20260721,google,2284003301839,0
-2026-08-17,Others,,31705112267227,0
+2026-08-17,Others,,31705111618414,0
 2026-08-17,deepseek/deepseek-v4-flash-20260731,deepseek,11575903419310,0
 2026-08-17,stealth/ox-alpha,stealth,11568381011704,0
 2026-08-17,xiaomi/mimo-v2.5-20260422,xiaomi,9939125656206,0
@@ -459,7 +459,7 @@ week,model,author,tokens,partial
 2026-08-17,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,nvidia,4747004837950,0
 2026-08-17,z-ai/glm-5.2-20260616,z-ai,3417049669494,0
 2026-08-17,deepseek/deepseek-v4-pro-20260423,deepseek,1850678695713,0
-2026-08-24,Others,,40788479721208,0
+2026-08-24,Others,,40788472891184,0
 2026-08-24,stealth/ox-alpha,stealth,15680990601876,0
 2026-08-24,deepseek/deepseek-v4-flash-20260731,deepseek,12306317505933,0
 2026-08-24,xiaomi/mimo-v2.5-20260422,xiaomi,9136732539589,0
@@ -469,7 +469,7 @@ week,model,author,tokens,partial
 2026-08-24,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,nvidia,5326068933306,0
 2026-08-24,deepseek/deepseek-v4-flash-20260423,deepseek,5203474902685,0
 2026-08-24,google/gemini-3.7-flash-20260813,google,3948118817100,0
-2026-08-31,Others,,42243218913356,0
+2026-08-31,Others,,42243214313950,0
 2026-08-31,tencent/hy4-preview-20260827,tencent,14673075368091,0
 2026-08-31,openai/gpt-5.6-luna-20260709,openai,12937740557751,0
 2026-08-31,z-ai/glm-5.3-flash-20260826,z-ai,12393672516492,0
@@ -479,7 +479,7 @@ week,model,author,tokens,partial
 2026-08-31,tencent/hy3-20260706,tencent,3992205549751,0
 2026-08-31,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,nvidia,3635736020240,0
 2026-08-31,z-ai/glm-5.3-20260816,z-ai,3023483716071,0
-2026-09-07,Others,,43889062125102,0
+2026-09-07,Others,,43889061498881,0
 2026-09-07,openai/gpt-5.6-luna-20260709,openai,18180069685336,0
 2026-09-07,tencent/hy4-preview-20260827,tencent,16816059139299,0
 2026-09-07,z-ai/glm-5.3-flash-20260826,z-ai,11889774258650,0
@@ -489,7 +489,7 @@ week,model,author,tokens,partial
 2026-09-07,deepseek/deepseek-v4-flash-20260423,deepseek,4357735509201,0
 2026-09-07,tencent/hy3-20260706,tencent,3797478551822,0
 2026-09-07,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,nvidia,3560545223417,0
-2026-09-14,Others,,47264433913759,0
+2026-09-14,Others,,47256903313318,0
 2026-09-14,deepseek/deepseek-v4.1-flash-20260910,deepseek,15768633499918,0
 2026-09-14,z-ai/glm-5.3-flash-20260826,z-ai,14071219856176,0
 2026-09-14,tencent/hy4-preview-20260827,tencent,12517195032750,0
@@ -499,7 +499,7 @@ week,model,author,tokens,partial
 2026-09-14,tencent/hy3-20260706,tencent,4780910580939,0
 2026-09-14,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,nvidia,4493945596793,0
 2026-09-14,deepseek/deepseek-v4-flash-20260423,deepseek,3772797649173,0
-2026-09-21,Others,,55570503829007,0
+2026-09-21,Others,,55566043108641,0
 2026-09-21,deepseek/deepseek-v4.1-flash-20260910,deepseek,19575670827452,0
 2026-09-21,z-ai/glm-5.3-flash-20260826,z-ai,16316686693493,0
 2026-09-21,stealth/space-bunny-alpha,stealth,13858497514441,0
@@ -509,7 +509,7 @@ week,model,author,tokens,partial
 2026-09-21,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,nvidia,5674549227811,0
 2026-09-21,xiaomi/mimo-v2.6-flash-20260921,xiaomi,5505234830438,0
 2026-09-21,deepseek/deepseek-v4-flash-20260423,deepseek,3350844430590,0
-2026-09-28,Others,,53519164188296,0
+2026-09-28,Others,,53517195962507,0
 2026-09-28,stealth/space-bunny-alpha,stealth,38658763612352,0
 2026-09-28,deepseek/deepseek-v4.1-flash-20260910,deepseek,25608029388834,0
 2026-09-28,z-ai/glm-5.3-flash-20260826,z-ai,9732668253839,0
@@ -519,7 +519,7 @@ week,model,author,tokens,partial
 2026-09-28,deepseek/deepseek-v4-flash-20260731,deepseek,5990517901577,0
 2026-09-28,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,nvidia,5648852275329,0
 2026-09-28,openai/gpt-5.6-luna-20260709,openai,4374411504469,0
-2026-10-05,Others,,66172547623725,0
+2026-10-05,Others,,66171472407312,0
 2026-10-05,deepseek/deepseek-v4.1-flash-20260910,deepseek,40971869015231,0
 2026-10-05,z-ai/glm-5.3-flash-20260826,z-ai,12235184702466,0
 2026-10-05,xiaomi/mimo-v2.6-flash-20260921,xiaomi,11457070514918,0
@@ -529,7 +529,7 @@ week,model,author,tokens,partial
 2026-10-05,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,nvidia,6873162638434,0
 2026-10-05,anthropic/claude-opus-5.5-20260921,anthropic,5018569961964,0
 2026-10-05,deepseek/deepseek-v4-flash-20260731,deepseek,4916025088059,0
-2026-10-12,Others,,67378365546741,0
+2026-10-12,Others,,67378151888733,0
 2026-10-12,deepseek/deepseek-v4.1-flash-20260910,deepseek,32756943780311,0
 2026-10-12,z-ai/glm-5.3-flash-20260826,z-ai,12215345680735,0
 2026-10-12,stepfun/step-5-preview-20261008,stepfun,11468435758992,0
@@ -539,7 +539,7 @@ week,model,author,tokens,partial
 2026-10-12,anthropic/claude-opus-5.5-20260921,anthropic,6175814284325,0
 2026-10-12,z-ai/glm-5.3-20260816,z-ai,5187314802958,0
 2026-10-12,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,nvidia,4968221393112,0
-2026-10-19,Others,,72043155169661,0
+2026-10-19,Others,,72043132027308,0
 2026-10-19,deepseek/deepseek-v4.1-flash-20261017,deepseek,33553214082541,0
 2026-10-19,deepseek/deepseek-v4.1-flash-20260910,deepseek,17992473054984,0
 2026-10-19,minimax/minimax-m3.1-flash-20261019:free,minimax,13675271306027,0
@@ -549,7 +549,7 @@ week,model,author,tokens,partial
 2026-10-19,anthropic/claude-opus-5.5-20260921,anthropic,8267279230661,0
 2026-10-19,xiaomi/mimo-v2.6-flash-20260921,xiaomi,6072249420046,0
 2026-10-19,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,nvidia,5851377118709,0
-2026-10-26,Others,,73398984537945,0
+2026-10-26,Others,,73398973141576,0
 2026-10-26,deepseek/deepseek-v4.1-flash-20261017,deepseek,48079890441131,0
 2026-10-26,z-ai/glm-5.3-flash-20260826,z-ai,15006485719554,0
 2026-10-26,deepseek/deepseek-v4.1-flash-20260910,deepseek,14873506577897,0
@@ -559,19 +559,18 @@ week,model,author,tokens,partial
 2026-10-26,stepfun/step-5-preview-20261008,stepfun,6247360967876,0
 2026-10-26,minimax/minimax-m3.1-flash-20261019,minimax,6232630008717,0
 2026-10-26,openai/gpt-5.6-luna-20260709,openai,4328174569794,0
-2026-11-02,Others,,79266321941142,0
+2026-11-02,Others,,75361177481863,0
 2026-11-02,deepseek/deepseek-v4.1-flash-20261017,deepseek,56035872700207,0
 2026-11-02,deepseek/deepseek-v4.1-flash-20260910,deepseek,17608846481207,0
 2026-11-02,z-ai/glm-5.3-flash-20260826,z-ai,13220234787161,0
-2026-11-02,tencent/hy4-20261104,tencent,12796848748151,0
 2026-11-02,openai/gpt-6-luna-20260922,openai,7205202237191,0
 2026-11-02,stepfun/step-5-preview-20261008,stepfun,7199438374485,0
 2026-11-02,anthropic/claude-opus-5.5-20260921,anthropic,6770883842864,0
 2026-11-02,minimax/minimax-m3.1-flash-20261019,minimax,5006097633322,0
 2026-11-02,moonshotai/kimi-k3.1-pro-20261023,moonshotai,4369995915337,0
-2026-11-09,Others,,77252060291795,0
+2026-11-02,stealth/crouton-alpha,stealth,4264207944532,0
+2026-11-09,Others,,74244697332331,0
 2026-11-09,deepseek/deepseek-v4.1-flash-20261017,deepseek,59226957518681,0
-2026-11-09,tencent/hy4-20261104,tencent,18121868313164,0
 2026-11-09,deepseek/deepseek-v4.1-flash-20260910,deepseek,15545126927844,0
 2026-11-09,z-ai/glm-5.3-flash-20260826,z-ai,11903059258880,0
 2026-11-09,openai/gpt-6-luna-20260922,openai,7850806739142,0
@@ -579,13 +578,24 @@ week,model,author,tokens,partial
 2026-11-09,stepfun/step-5-preview-20261008,stepfun,6410275896570,0
 2026-11-09,xiaomi/mimo-v2.6-flash-20260921,xiaomi,4228020833267,0
 2026-11-09,z-ai/glm-5.3-20260816,z-ai,3758045975594,0
-2026-11-16,tencent/hy4-flash-20261116,tencent,68734604540333,1
-2026-11-16,Others,,50522708114298,1
-2026-11-16,deepseek/deepseek-v4.1-flash-20261017,deepseek,37289293421727,1
-2026-11-16,deepseek/deepseek-v4.1-flash-20260910,deepseek,9531650559866,1
-2026-11-16,z-ai/glm-5.3-flash-20260826,z-ai,6559875529988,1
-2026-11-16,openai/gpt-6-luna-20260922,openai,5614105079111,1
-2026-11-16,tencent/hy4-20261104,tencent,4989829501817,1
-2026-11-16,anthropic/claude-opus-5.5-20260921,anthropic,4759580130440,1
-2026-11-16,stepfun/step-5-preview-20261008,stepfun,3025526406440,1
-2026-11-16,xiaomi/mimo-v2.6-flash-20260921,xiaomi,2378858908426,1
+2026-11-09,openai/gpt-6.1-sol-20260929,openai,3707400389614,0
+2026-11-16,Others,,79709781787877,0
+2026-11-16,deepseek/deepseek-v4.1-flash-20261017,deepseek,65041975336324,0
+2026-11-16,deepseek/deepseek-v4.1-flash-20260910,deepseek,15352008057795,0
+2026-11-16,z-ai/glm-5.3-flash-20260826,z-ai,12230807138540,0
+2026-11-16,tencent/hy4-flash-20261116,tencent,10214736573544,0
+2026-11-16,openai/gpt-6-luna-20260922,openai,8308291317044,0
+2026-11-16,anthropic/claude-opus-5.5-20260921,anthropic,6965800814097,0
+2026-11-16,minimax/minimax-m3.1-flash-20261019,minimax,4294465436527,0
+2026-11-16,moonshotai/kimi-k3.1-pro-20261023,moonshotai,4066510055787,0
+2026-11-16,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,nvidia,3925205838529,0
+2026-11-23,Others,,2461592858913,1
+2026-11-23,deepseek/deepseek-v4.1-flash-20261017,deepseek,1869332118087,1
+2026-11-23,z-ai/glm-5.3-flash-20260826,z-ai,548627454792,1
+2026-11-23,tencent/hy4-flash-20261116,tencent,527460162850,1
+2026-11-23,deepseek/deepseek-v4.1-flash-20260910,deepseek,451961132691,1
+2026-11-23,stepfun/step-5-preview-20261008,stepfun,367962457899,1
+2026-11-23,openai/gpt-6-luna-20260922,openai,190123063126,1
+2026-11-23,anthropic/claude-opus-5.5-20260921,anthropic,185487353738,1
+2026-11-23,minimax/minimax-m3.1-flash-20261019,minimax,167595467469,1
+2026-11-23,baidu/ernie-5.5-flash-preview-20261110:free,baidu,126358107032,1

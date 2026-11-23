@@ -1,5 +1,5 @@
 {
-"built": "2026-11-20T08:12:09",
+"built": "2026-11-23T14:36:35",
 "quarters": [
 "2023Q1",
 "2023Q2",
@@ -4459,7 +4459,7 @@
 "2025Q4": 9.0,
 "2026Q1": 27.677,
 "2026Q2": 57.191,
-"2026Q3": 74.0
+"2026Q3": 71.0
 },
 "sources": {
 "2024Q1": {
@@ -4503,8 +4503,8 @@
 "url": "https://www.anthropic.com/news/series-h"
 },
 "2026Q3": {
-"text": "(source: ARR tracker quarter-end value (last point Sep 2026 74B, ) - point from the Research workbook 'Anthropic & OpenAI ARR trend' (ai-lab-arr/source), no external link, 2026-09-30)",
-"url": null
+"text": "(source: ARR tracker quarter-end value (last point Sep 2026 71B (S-1/A implied), Company disclosure), 2026-11-17, link)",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm"
 }
 }
 },
@@ -4529,7 +4529,7 @@
 "2025Q4": 1.9293749999999998,
 "2026Q1": 4.584625,
 "2026Q2": 10.6085,
-"2026Q3": 16.398875
+"2026Q3": 16.023875
 },
 "sources": {}
 },
@@ -5639,5 +5639,5 @@
 "sources": {}
 }
 ],
-"workbook": "20261120_AI capex coverage tracker.xlsx"
+"workbook": "20261123_AI capex coverage tracker.xlsx"
 }
