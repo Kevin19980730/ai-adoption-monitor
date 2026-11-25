@@ -80,7 +80,7 @@ const SOURCES = {
   "c-pot-sota": [["Epoch benchmark_data.zip", "https://epoch.ai/data/benchmark_data.zip"], OR_MODELS],
   "c-pot-roll": [["Epoch benchmark_data.zip", "https://epoch.ai/data/benchmark_data.zip"], OR_MODELS],
   "c-pot-new": [OR_MODELS],
-  "c-gpu-price": [["Silicon Data index hub (H100 / A100 / H200 / B200 / B300 / MI300X cards)", SD]],
+  "c-gpu-price": [["Silicon Data index hub (H100 / A100 / H200 / B200 / B300 / MI300X neo-cloud; H100 / A100 hyperscaler cards)", SD]],
   "c-gpu-token": [["Silicon Data index hub (LLM Token Expenditure + B200 cards)", SD]],
   "c-gpu-hyp": [["Silicon Data hub (hyperscaler cards)", SD]],
   "c-gpu-llm": [["Silicon Data index hub (LLM Token Expenditure, open / proprietary cards)", SD]],

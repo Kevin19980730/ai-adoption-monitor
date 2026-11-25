@@ -1066,6 +1066,7 @@ async function loadArr() {
 /* ================================================================ GPU prices (Silicon Data) */
 let SD = null;
 const usd = v => v == null ? "–" : "$" + v.toFixed(2);
+const GPU_HYP = [["H100-HYP", "var(--s1)"], ["B200-HYP", "var(--s2)"], ["A100-HYP", "var(--s3)"]];
 const GPU_ORDER = [["SDH100RT", "var(--s1)"], ["SDB200RT", "var(--s2)"], ["SDA100RT", "var(--s3)"], ["H200", "var(--s4)"], ["B300", "var(--s5)"], ["MI300X", "var(--s6)"]];
 const chgPct = (a, b) => a == null || b == null || !b ? null : a / b - 1;
 /* Overview: actual LLM token cost (left axis) and B200 rental (right axis) on one chart */
@@ -1110,10 +1111,14 @@ function drawGpu() {
   ["SDH100RT", "H100-HYP", "SDB200RT", "SDA100RT", "SDLLMTK", "LLM-OPEN", "LLM-PROP", "GDDR6"].forEach(k => L[k] && tile(L[k], L[k].rev_per_gw_bn ? ` · ≈ $${L[k].rev_per_gw_bn.toFixed(1)}B / GW / yr` : ""));
 
   const days = +$("#gpu-range").value, end = Math.max(...SD.latest.map(r => T(r.date))), start = days ? end - days * 864e5 : null;
-  const S = GPU_ORDER.filter(([k]) => SD.series[k]).map(([k, col]) => ({name: SD.series[k].label, color: col,
-    points: SD.series[k].points.filter(p => !start || T(p[0]) >= start).map(p => ({x: T(p[0]), y: p[1], note: p[2] === "site" ? "from silicondata.com" : null}))}))
+  const seg = $("#gpu-seg").value;  // neo | hyp | both
+  const mkS = (k, col, hypS) => ({name: SD.series[k].label + (seg === "both" ? (hypS ? " hyperscaler" : " neo-cloud") : ""), color: col, dash: hypS && seg === "both",
+    points: SD.series[k].points.filter(p => !start || T(p[0]) >= start).map(p => ({x: T(p[0]), y: p[1], note: p[2] === "site" ? "from silicondata.com" : null}))});
+  const S = [].concat(seg === "hyp" ? [] : GPU_ORDER.filter(([k]) => SD.series[k]).map(([k, col]) => mkS(k, col, false)),
+    seg === "neo" ? [] : GPU_HYP.filter(([k]) => SD.series[k]).map(([k, col]) => mkS(k, col, true)))
     .filter(s => s.points.length);
-  legend("lg-gpu-price", S.map(s => ({name: s.name, color: s.color})));
+  $("#gpu-price-title").textContent = "GPU rental price indices, " + {neo: "neo-cloud", hyp: "hyperscaler", both: "neo-cloud vs hyperscaler"}[seg];
+  legend("lg-gpu-price", S.map(s => ({name: s.name, color: s.color, dash: s.dash})));
   view("c-gpu-price", hst => lineChart(hst, S, {height: 340, yFmt: v => "$" + v.toFixed(2), yMin: 0, mode: "cross", title: x => fmtDate(x)}),
     hst => { const dates = [...new Set(S.flatMap(s => s.points.map(p => p.x)))].sort((a, b) => b - a);
       const look = Object.fromEntries(S.map(s => [s.name, Object.fromEntries(s.points.map(p => [p.x, p.y]))]));
@@ -1162,6 +1167,7 @@ async function loadGpu() {
   SD = await api("/api/silicon");
   if (!SD.latest.length) { $("#gpu-tiles").textContent = "No Silicon Data yet - run silicon-data/silicon_update.py."; return; }
   $("#gpu-range").addEventListener("change", drawGpu);
+  $("#gpu-seg").addEventListener("change", drawGpu);
   drawGpu();
 }
 
