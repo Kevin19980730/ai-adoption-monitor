@@ -1,9 +1,9 @@
 {
- "built": "2026-11-23T15:23",
+ "built": "2026-11-27T07:02",
  "epoch_cutoff": "2026-08-02",
- "update_through": "2026-11-18",
- "hub_file": "20261123_benchmark_data.zip",
- "price_file": "20261123_openrouter_models.json",
+ "update_through": "2026-11-20",
+ "hub_file": "20261127_benchmark_data.zip",
+ "price_file": "20261127_openrouter_models.json",
  "labels": {
   "aime": "AIME (OTIS Mock)",
   "chess": "Chess Puzzles",
@@ -302,24 +302,24 @@
  "updated": {
   "aime": {
    "start": "2023-03",
-   "end": "2026-11-18",
-   "model_free": 44.31343228487981,
-   "share_moved": 0.4624380574826561,
-   "linear": 38.5974080038112,
-   "bt": 47.13935962313555,
-   "lam_a": 0.3454487361722547,
-   "lam_t": -3.584116792583925,
-   "n": 5662,
+   "end": "2026-11-20",
+   "model_free": 43.050309284945854,
+   "share_moved": 0.43966712898751736,
+   "linear": 37.68648457693643,
+   "bt": 46.275822944387414,
+   "lam_a": 0.331664115654442,
+   "lam_t": -3.6009601399642284,
+   "n": 5750,
    "post_sota": [
-    86.46886343179699,
-    73.4264976947463,
-    59.904778902139796,
-    47.90570869905218,
-    37.96498806364967,
-    29.9734166066956,
-    23.628649555444458,
-    18.582534708695153,
-    14.541636671647451
+    86.12319605204344,
+    72.86615664063638,
+    59.21119520345317,
+    47.196141235694924,
+    37.32567724410034,
+    29.43008143994582,
+    23.20572108362473,
+    18.28344439622944,
+    14.365082628481973
    ]
   },
   "chess": {
@@ -347,67 +347,67 @@
   "fm13": {
    "start": "2023-11",
    "end": "2026-11-18",
-   "model_free": 67.64368715086556,
+   "model_free": 67.55154099685925,
    "share_moved": 0.6875460574797347,
-   "linear": 55.873497724765755,
-   "bt": 65.52555378442469,
-   "lam_a": 0.31983618943221237,
-   "lam_t": 0.9570961361822099,
+   "linear": 55.83202053709593,
+   "bt": 65.4200652282215,
+   "lam_a": 0.31811537890212643,
+   "lam_t": 0.9432904460243222,
    "n": 3505,
    "post_sota": [
-    73.14164678991311,
-    71.22226149032349,
-    69.09139239838402,
-    66.03597844012667,
-    62.31004769414016,
-    58.21523663439181,
-    53.66289157287682,
-    49.501025793218126,
-    45.74090219503123
+    73.03742045705604,
+    71.10832244031351,
+    68.96956874371871,
+    65.91555758675395,
+    62.19761213565012,
+    58.11457755325552,
+    53.5787185872588,
+    49.42975300685004,
+    45.67892615646139
    ]
   },
   "gpqa": {
    "start": "2023-03",
-   "end": "2026-11-18",
-   "model_free": 45.0822978876838,
-   "share_moved": 0.4340697273041077,
-   "linear": 32.5840520741921,
-   "bt": 46.74841823045184,
-   "lam_a": 0.6747197681822441,
-   "lam_t": -1.9968357358767979,
-   "n": 6475,
+   "end": "2026-11-20",
+   "model_free": 44.328719537332404,
+   "share_moved": 0.435959317359076,
+   "linear": 32.35135073395231,
+   "bt": 46.25367302253248,
+   "lam_a": 0.6575572639244005,
+   "lam_t": -1.9861544126315105,
+   "n": 6482,
    "post_sota": [
-    82.90412637130748,
-    73.12097246907042,
-    63.4670670147828,
-    54.51030496086007,
-    46.49222608575444,
-    39.46954670986822,
-    33.4026860320767,
-    28.207355151873582,
-    23.783269899467296
+    82.36138087190504,
+    72.47408649808051,
+    62.81668176974414,
+    53.9257527382822,
+    46.00970086060786,
+    39.16620773528491,
+    33.144608005340935,
+    28.04882225692267,
+    23.71001401851399
    ]
   },
   "mystery": {
    "start": "2023-06",
    "end": "2026-11-18",
-   "model_free": 48.08578913965995,
+   "model_free": 47.99959004178941,
    "share_moved": 0.2795436022819886,
-   "linear": 40.290483676982305,
-   "bt": 54.01850268571325,
-   "lam_a": 0.225720075906217,
-   "lam_t": 2.299150352632788,
+   "linear": 40.38079825465189,
+   "bt": 54.50811802173765,
+   "lam_a": 0.23010004999448974,
+   "lam_t": 2.3486213941071883,
    "n": 1801,
    "post_sota": [
-    58.053523361631235,
-    57.58792242433247,
-    56.64458934332697,
-    55.69782371733827,
-    54.149729040714725,
-    52.65738111224927,
-    51.345312016388554,
-    49.63989342356112,
-    48.76025969311416
+    58.845451830025695,
+    58.396019141933145,
+    57.47708278059164,
+    56.181205215851904,
+    55.091377428116296,
+    53.120227840920094,
+    51.802399929263075,
+    50.0796531921744,
+    49.20391180278673
    ]
   },
   "fm_2025_02_private": {
@@ -546,24 +546,24 @@
  "sensitivity": {
   "half": {
    "aime": {
-    "model_free": 45.47205199726195,
-    "bt": 47.69879642763826
+    "model_free": 43.786205180626425,
+    "bt": 46.60823789781
    },
    "chess": {
     "model_free": 42.96237768104104,
     "bt": 43.36780468504633
    },
    "fm13": {
-    "model_free": 69.76249414152241,
-    "bt": 68.98101919623446
+    "model_free": 69.55221559866732,
+    "bt": 68.79078931465405
    },
    "gpqa": {
-    "model_free": 46.29600840035659,
-    "bt": 47.549202096497744
+    "model_free": 45.131247539217846,
+    "bt": 46.85646080952123
    },
    "mystery": {
-    "model_free": 50.463440764816035,
-    "bt": 60.973572952094024
+    "model_free": 50.37249716530996,
+    "bt": 61.56094727877509
    },
    "fm_2025_02_private": {
     "model_free": 43.30147645003274,
@@ -592,24 +592,24 @@
   },
   "double": {
    "aime": {
-    "model_free": 43.293330478745375,
-    "bt": 46.664111767385386
+    "model_free": 42.4995557660505,
+    "bt": 46.03841434736544
    },
    "chess": {
     "model_free": 42.96237768104104,
     "bt": 43.36780468504633
    },
    "fm13": {
-    "model_free": 66.06247637994191,
-    "bt": 62.88811690981011
+    "model_free": 66.05015583636785,
+    "bt": 62.86822044446949
    },
    "gpqa": {
-    "model_free": 44.34012367376086,
-    "bt": 46.224549042376054
+    "model_free": 43.59550702760049,
+    "bt": 45.73586678864751
    },
    "mystery": {
-    "model_free": 45.96125301109676,
-    "bt": 47.95408352941131
+    "model_free": 45.87152630306629,
+    "bt": 48.37665587144046
    },
    "fm_2025_02_private": {
     "model_free": 43.30147645003274,
@@ -644,25 +644,25 @@
    "bt": 46.98008938993008
   },
   "upd": {
-   "model_free": 50.64014210702253,
-   "linear": 41.13796407332663,
-   "bt": 52.07945512577508
+   "model_free": 50.23809846876721,
+   "linear": 40.93042961008078,
+   "bt": 51.90853507108737
   },
   "rep4": {
    "model_free": 47.915381982225824,
    "bt": 47.84656837318032
   },
   "upd4": {
-   "model_free": 52.39231950990273,
-   "bt": 54.03933169117015
+   "model_free": 51.907112147035605,
+   "bt": 53.834328304777834
   },
   "half": {
-   "model_free": 52.1753514259075,
-   "bt": 54.8286885839426
+   "model_free": 51.59151352362682,
+   "bt": 54.60492715780458
   },
   "double": {
-   "model_free": 49.44726669340358,
-   "bt": 49.96045772892151
+   "model_free": 49.1510515966145,
+   "bt": 49.82925227605296
   }
  },
  "post_sota_avg": {
@@ -678,15 +678,15 @@
    32.39594330564215
   ],
   "upd": [
-   72.70246689722725,
-   65.50090344475345,
-   59.45761226838027,
-   54.339245068658634,
-   49.8166626995608,
-   45.884647047928574,
-   42.469166530803605,
-   39.471471624993995,
-   37.07949441373567
+   72.4760997710164,
+   65.29770871698429,
+   59.3004750368944,
+   54.166636608812446,
+   49.80202935420031,
+   45.82715335016402,
+   42.448841031587314,
+   39.48947858605175,
+   37.1364741238317
   ]
  },
  "rolling_rep": [
@@ -876,22 +876,22 @@
   },
   {
    "quarter": "2024Q3",
-   "avg": 43.72892798680154,
+   "avg": 43.80977360376639,
    "n": 5,
    "aime": 72.01178269615693,
    "chess": 4.750362525976948,
    "fm13": 0.0,
-   "gpqa": 53.56140386223258,
+   "gpqa": 53.894042322050026,
    "mystery": 54.42692914013918
   },
   {
    "quarter": "2024Q4",
-   "avg": 69.98629944307825,
+   "avg": 69.95683189390066,
    "n": 5,
    "aime": 83.06882973851101,
    "chess": 32.97255627935455,
    "fm13": 91.7624772739388,
-   "gpqa": 73.94677637970337,
+   "gpqa": 73.81862929621687,
    "mystery": 0.0
   },
   {
@@ -906,62 +906,62 @@
   },
   {
    "quarter": "2025Q2",
-   "avg": 37.07276911237513,
+   "avg": 38.23406711237145,
    "n": 5,
-   "aime": 44.92408720194789,
+   "aime": 49.39490535194948,
    "chess": 48.193150825650854,
    "fm13": 54.11941280271619,
-   "gpqa": 19.175069130284584,
+   "gpqa": 19.857160643623615,
    "mystery": 6.745475421674274
   },
   {
    "quarter": "2025Q3",
-   "avg": 26.509297385448384,
+   "avg": 25.261076545628637,
    "n": 5,
-   "aime": 24.458292629679445,
+   "aime": 17.50169767041244,
    "chess": 30.22665397883405,
    "fm13": 34.024708048432885,
-   "gpqa": 7.784314606727449,
+   "gpqa": 8.141621388503529,
    "mystery": 33.150289379612495
   },
   {
    "quarter": "2025Q4",
-   "avg": 33.28166625040241,
+   "avg": 33.1533997567649,
    "n": 5,
    "aime": 2.77087957631289,
    "chess": 44.09719426688833,
    "fm13": 31.752482691196615,
-   "gpqa": 19.368180728978924,
+   "gpqa": 18.590118447886216,
    "mystery": 55.80199373910136
   },
   {
    "quarter": "2026Q1",
-   "avg": 49.08149315487959,
+   "avg": 49.309289000177294,
    "n": 5,
-   "aime": 28.78264915578489,
+   "aime": 29.60192823289267,
    "chess": 62.00585825012554,
    "fm13": 38.32248455445635,
-   "gpqa": 29.48928365518335,
+   "gpqa": 30.250067293739292,
    "mystery": 70.91334044265413
   },
   {
    "quarter": "2026Q2",
-   "avg": 59.13921441171195,
+   "avg": 57.913319161860684,
    "n": 5,
-   "aime": 19.20336509969991,
+   "aime": 12.954332201757035,
    "chess": 56.60197965300087,
-   "fm13": 91.7829921124628,
-   "gpqa": 31.962905788421068,
-   "mystery": 41.8953476227667
+   "fm13": 91.69982355306908,
+   "gpqa": 27.650582364771115,
+   "mystery": 41.79183110845821
   },
   {
    "quarter": "2026Q3",
-   "avg": 50.542367506219875,
+   "avg": 46.862417645689526,
    "n": 4,
-   "aime": 31.828866324982673,
-   "fm13": 57.09981428696527,
-   "gpqa": 26.9183597586682,
-   "mystery": 72.0059768219885
+   "aime": 20.114086563412325,
+   "fm13": 56.870322876200284,
+   "gpqa": 18.50710382775661,
+   "mystery": 71.60505711645591
   }
  ],
  "records": [
@@ -1365,7 +1365,7 @@
    "benchmark": "mystery",
    "level": 0.25,
    "date": "2026-09-09",
-   "cost": 0.009250776586800001,
+   "cost": 0.0094179592962,
    "model": "deepseek-v4.1-flash",
    "effort": "max",
    "source": "estimated"
@@ -1390,6 +1390,38 @@
   }
  ],
  "points": [
+  {
+   "model": "inkling-2-mini",
+   "effort": "xhigh",
+   "benchmark": "aime",
+   "releasedate": "2026-11-20",
+   "acc_raw": 0.925,
+   "cost_est": 0.005678144999999999,
+   "method": "peer",
+   "predecessor": "",
+   "cost_pred": null,
+   "cost_peer": 0.005678144999999999,
+   "n_peers": 9,
+   "openrouter_id": "thinkingmachines/inkling-2-mini",
+   "p_in": 0.075,
+   "p_out": 0.3
+  },
+  {
+   "model": "qwen4-max",
+   "effort": "xhigh",
+   "benchmark": "aime",
+   "releasedate": "2026-11-16",
+   "acc_raw": 1.0,
+   "cost_est": 0.08097601687499999,
+   "method": "peer",
+   "predecessor": "",
+   "cost_pred": null,
+   "cost_peer": 0.08097601687499999,
+   "n_peers": 11,
+   "openrouter_id": "qwen/qwen4-max",
+   "p_in": 1.4249999999999998,
+   "p_out": 4.2749999999999995
+  },
   {
    "model": "gemini-4-neon",
    "effort": "xhigh",
@@ -1492,15 +1524,15 @@
    "benchmark": "aime",
    "releasedate": "2026-10-17",
    "acc_raw": 0.9944444444444444,
-   "cost_est": 0.010384859999999997,
+   "cost_est": 0.005192429999999999,
    "method": "peer",
    "predecessor": "",
    "cost_pred": null,
-   "cost_peer": 0.010384859999999997,
+   "cost_peer": 0.005192429999999999,
    "n_peers": 3,
    "openrouter_id": "deepseek/deepseek-v4.1-flash-1017",
-   "p_in": 0.3,
-   "p_out": 1.2
+   "p_in": 0.15,
+   "p_out": 0.6
   },
   {
    "model": "Muse-Spark-Open-816B-A42B",
@@ -1572,15 +1604,15 @@
    "benchmark": "aime",
    "releasedate": "2026-09-09",
    "acc_raw": 0.9833333333333332,
-   "cost_est": 0.005586115800000001,
+   "cost_est": 0.0056870697,
    "method": "peer",
    "predecessor": "",
    "cost_pred": null,
-   "cost_peer": 0.005586115800000001,
+   "cost_peer": 0.0056870697,
    "n_peers": 6,
    "openrouter_id": "deepseek/deepseek-v4.1-flash",
-   "p_in": 0.049800000000000004,
-   "p_out": 0.19920000000000002
+   "p_in": 0.050699999999999995,
+   "p_out": 0.20279999999999998
   },
   {
    "model": "claude-haiku-5-5",
@@ -1796,15 +1828,15 @@
    "benchmark": "aime",
    "releasedate": "2026-08-20",
    "acc_raw": 0.9388888888888888,
-   "cost_est": 0.0013573049000000002,
+   "cost_est": 0.00862864,
    "method": "peer",
    "predecessor": "",
    "cost_pred": null,
-   "cost_peer": 0.0013573049000000002,
+   "cost_peer": 0.00862864,
    "n_peers": 7,
    "openrouter_id": "z-ai/glm-5.3-flash",
-   "p_in": 0.0399,
-   "p_out": 0.0784
+   "p_in": 0.15,
+   "p_out": 0.5
   },
   {
    "model": "glm-5.3",
@@ -1828,15 +1860,15 @@
    "benchmark": "aime",
    "releasedate": "2026-08-13",
    "acc_raw": 0.9861111111111112,
-   "cost_est": 0.09782364796785423,
+   "cost_est": 0.1094007643524911,
    "method": "blend",
    "predecessor": "deepseek-v4-pro (high)",
-   "cost_pred": 0.098382108,
-   "cost_peer": 0.097268358,
+   "cost_pred": 0.1100658573,
+   "cost_peer": 0.10873969035,
    "n_peers": 8,
    "openrouter_id": "deepseek/deepseek-v4-pro-0813",
-   "p_in": 1.32,
-   "p_out": 3.9600000000000004
+   "p_in": 0.111,
+   "p_out": 4.4399999999999995
   },
   {
    "model": "gemini-3.7-flash",
@@ -1885,6 +1917,22 @@
    "openrouter_id": "x-ai/grok-4.6",
    "p_in": 2.0,
    "p_out": 6.0
+  },
+  {
+   "model": "qwen4-max",
+   "effort": "xhigh",
+   "benchmark": "fm13",
+   "releasedate": "2026-11-16",
+   "acc_raw": 0.7859649122807018,
+   "cost_est": 0.3704074426875,
+   "method": "peer",
+   "predecessor": "",
+   "cost_pred": null,
+   "cost_peer": 0.3704074426875,
+   "n_peers": 10,
+   "openrouter_id": "qwen/qwen4-max",
+   "p_in": 1.4249999999999998,
+   "p_out": 4.2749999999999995
   },
   {
    "model": "gemini-4-neon",
@@ -1988,15 +2036,15 @@
    "benchmark": "fm13",
    "releasedate": "2026-10-17",
    "acc_raw": 0.712280701754386,
-   "cost_est": 0.08753319781744233,
+   "cost_est": 0.043766598908721165,
    "method": "blend",
    "predecessor": "deepseek-v4-flash-0731 (max)",
-   "cost_pred": 0.0829846044,
-   "cost_peer": 0.092331111,
+   "cost_pred": 0.0414923022,
+   "cost_peer": 0.0461655555,
    "n_peers": 11,
    "openrouter_id": "deepseek/deepseek-v4.1-flash-1017",
-   "p_in": 0.3,
-   "p_out": 1.2
+   "p_in": 0.15,
+   "p_out": 0.6
   },
   {
    "model": "Muse-Spark-Open-816B-A42B",
@@ -2068,15 +2116,15 @@
    "benchmark": "fm13",
    "releasedate": "2026-09-09",
    "acc_raw": 0.6736842105263158,
-   "cost_est": 0.01468659902319557,
+   "cost_est": 0.014952019487470183,
    "method": "blend",
    "predecessor": "deepseek-v4-flash-0731 (max)",
-   "cost_pred": 0.0137754443304,
-   "cost_peer": 0.0156580205832,
+   "cost_pred": 0.014024398143599999,
+   "cost_peer": 0.0159409968588,
    "n_peers": 12,
    "openrouter_id": "deepseek/deepseek-v4.1-flash",
-   "p_in": 0.049800000000000004,
-   "p_out": 0.19920000000000002
+   "p_in": 0.050699999999999995,
+   "p_out": 0.20279999999999998
   },
   {
    "model": "claude-haiku-5-5",
@@ -2292,15 +2340,15 @@
    "benchmark": "fm13",
    "releasedate": "2026-08-20",
    "acc_raw": 0.5578947368421052,
-   "cost_est": 0.016098831544999997,
+   "cost_est": 0.058712623,
    "method": "peer",
    "predecessor": "",
    "cost_pred": null,
-   "cost_peer": 0.016098831544999997,
+   "cost_peer": 0.058712623,
    "n_peers": 14,
    "openrouter_id": "z-ai/glm-5.3-flash",
-   "p_in": 0.0399,
-   "p_out": 0.0784
+   "p_in": 0.15,
+   "p_out": 0.5
   },
   {
    "model": "glm-5.3",
@@ -2324,15 +2372,15 @@
    "benchmark": "fm13",
    "releasedate": "2026-08-13",
    "acc_raw": 0.6456140350877193,
-   "cost_est": 0.3835863071565609,
+   "cost_est": 0.30598913067374767,
    "method": "blend",
    "predecessor": "deepseek-v4-pro (max)",
-   "cost_pred": 0.35891569560000003,
-   "cost_peer": 0.40995269040000004,
+   "cost_pred": 0.3161884845,
+   "cost_peer": 0.2961187794,
    "n_peers": 14,
    "openrouter_id": "deepseek/deepseek-v4-pro-0813",
-   "p_in": 1.32,
-   "p_out": 3.9600000000000004
+   "p_in": 0.111,
+   "p_out": 4.4399999999999995
   },
   {
    "model": "gemini-3.7-flash",
@@ -2365,6 +2413,38 @@
    "openrouter_id": "x-ai/grok-4.6",
    "p_in": 2.0,
    "p_out": 6.0
+  },
+  {
+   "model": "inkling-2-mini",
+   "effort": "xhigh",
+   "benchmark": "gpqa",
+   "releasedate": "2026-11-20",
+   "acc_raw": 0.8680555555555556,
+   "cost_est": 0.001972938,
+   "method": "peer",
+   "predecessor": "",
+   "cost_pred": null,
+   "cost_peer": 0.001972938,
+   "n_peers": 11,
+   "openrouter_id": "thinkingmachines/inkling-2-mini",
+   "p_in": 0.075,
+   "p_out": 0.3
+  },
+  {
+   "model": "qwen4-max",
+   "effort": "xhigh",
+   "benchmark": "gpqa",
+   "releasedate": "2026-11-16",
+   "acc_raw": 0.9400252525252524,
+   "cost_est": 0.028155663,
+   "method": "peer",
+   "predecessor": "",
+   "cost_pred": null,
+   "cost_peer": 0.028155663,
+   "n_peers": 13,
+   "openrouter_id": "qwen/qwen4-max",
+   "p_in": 1.4249999999999998,
+   "p_out": 4.2749999999999995
   },
   {
    "model": "gemini-4-neon",
@@ -2468,15 +2548,15 @@
    "benchmark": "gpqa",
    "releasedate": "2026-10-17",
    "acc_raw": 0.9318181818181818,
-   "cost_est": 0.0071278910999999995,
+   "cost_est": 0.0035639455499999998,
    "method": "peer",
    "predecessor": "",
    "cost_pred": null,
-   "cost_peer": 0.0071278910999999995,
+   "cost_peer": 0.0035639455499999998,
    "n_peers": 4,
    "openrouter_id": "deepseek/deepseek-v4.1-flash-1017",
-   "p_in": 0.3,
-   "p_out": 1.2
+   "p_in": 0.15,
+   "p_out": 0.6
   },
   {
    "model": "Muse-Spark-Open-816B-A42B",
@@ -2532,15 +2612,15 @@
    "benchmark": "gpqa",
    "releasedate": "2026-09-09",
    "acc_raw": 0.8983585858585859,
-   "cost_est": 0.0012598071336,
+   "cost_est": 0.0012825747323999999,
    "method": "peer",
    "predecessor": "",
    "cost_pred": null,
-   "cost_peer": 0.0012598071336,
+   "cost_peer": 0.0012825747323999999,
    "n_peers": 7,
    "openrouter_id": "deepseek/deepseek-v4.1-flash",
-   "p_in": 0.049800000000000004,
-   "p_out": 0.19920000000000002
+   "p_in": 0.050699999999999995,
+   "p_out": 0.20279999999999998
   },
   {
    "model": "claude-haiku-5-5",
@@ -2708,15 +2788,15 @@
    "benchmark": "gpqa",
    "releasedate": "2026-08-20",
    "acc_raw": 0.9015151515151516,
-   "cost_est": 0.000492282775,
+   "cost_est": 0.0031055314999999997,
    "method": "peer",
    "predecessor": "",
    "cost_pred": null,
-   "cost_peer": 0.000492282775,
+   "cost_peer": 0.0031055314999999997,
    "n_peers": 8,
    "openrouter_id": "z-ai/glm-5.3-flash",
-   "p_in": 0.0399,
-   "p_out": 0.0784
+   "p_in": 0.15,
+   "p_out": 0.5
   },
   {
    "model": "glm-5.3",
@@ -2740,15 +2820,15 @@
    "benchmark": "gpqa",
    "releasedate": "2026-08-13",
    "acc_raw": 0.9166666666666666,
-   "cost_est": 0.03612046208270158,
+   "cost_est": 0.04002988825647291,
    "method": "blend",
    "predecessor": "deepseek-v4-pro (high)",
-   "cost_pred": 0.0518479808,
-   "cost_peer": 0.025163714400000002,
+   "cost_pred": 0.057802355799999997,
+   "cost_peer": 0.027721914299999997,
    "n_peers": 9,
    "openrouter_id": "deepseek/deepseek-v4-pro-0813",
-   "p_in": 1.32,
-   "p_out": 3.9600000000000004
+   "p_in": 0.111,
+   "p_out": 4.4399999999999995
   },
   {
    "model": "gemini-3.7-flash",
@@ -2797,6 +2877,22 @@
    "openrouter_id": "x-ai/grok-4.6",
    "p_in": 2.0,
    "p_out": 6.0
+  },
+  {
+   "model": "qwen4-max",
+   "effort": "xhigh",
+   "benchmark": "mystery",
+   "releasedate": "2026-11-16",
+   "acc_raw": 0.36,
+   "cost_est": 0.214359636375,
+   "method": "peer",
+   "predecessor": "",
+   "cost_pred": null,
+   "cost_peer": 0.214359636375,
+   "n_peers": 3,
+   "openrouter_id": "qwen/qwen4-max",
+   "p_in": 1.4249999999999998,
+   "p_out": 4.2749999999999995
   },
   {
    "model": "gemini-4-neon",
@@ -2900,15 +2996,15 @@
    "benchmark": "mystery",
    "releasedate": "2026-10-17",
    "acc_raw": 0.49,
-   "cost_est": 0.0446708823,
+   "cost_est": 0.02233544115,
    "method": "peer",
    "predecessor": "",
    "cost_pred": null,
-   "cost_peer": 0.0446708823,
+   "cost_peer": 0.02233544115,
    "n_peers": 4,
    "openrouter_id": "deepseek/deepseek-v4.1-flash-1017",
-   "p_in": 0.3,
-   "p_out": 1.2
+   "p_in": 0.15,
+   "p_out": 0.6
   },
   {
    "model": "muse-wonder-1.0",
@@ -2964,15 +3060,15 @@
    "benchmark": "mystery",
    "releasedate": "2026-09-09",
    "acc_raw": 0.43,
-   "cost_est": 0.009250776586800001,
+   "cost_est": 0.0094179592962,
    "method": "peer",
    "predecessor": "",
    "cost_pred": null,
-   "cost_peer": 0.009250776586800001,
+   "cost_peer": 0.0094179592962,
    "n_peers": 5,
    "openrouter_id": "deepseek/deepseek-v4.1-flash",
-   "p_in": 0.049800000000000004,
-   "p_out": 0.19920000000000002
+   "p_in": 0.050699999999999995,
+   "p_out": 0.20279999999999998
   },
   {
    "model": "claude-haiku-5-5",
@@ -3188,15 +3284,15 @@
    "benchmark": "mystery",
    "releasedate": "2026-08-20",
    "acc_raw": 0.08,
-   "cost_est": 0.0036280165149999996,
+   "cost_est": 0.019557529,
    "method": "peer",
    "predecessor": "",
    "cost_pred": null,
-   "cost_peer": 0.0036280165149999996,
+   "cost_peer": 0.019557529,
    "n_peers": 6,
    "openrouter_id": "z-ai/glm-5.3-flash",
-   "p_in": 0.0399,
-   "p_out": 0.0784
+   "p_in": 0.15,
+   "p_out": 0.5
   },
   {
    "model": "deepseek-v4-pro-0813",
@@ -3204,15 +3300,15 @@
    "benchmark": "mystery",
    "releasedate": "2026-08-13",
    "acc_raw": 0.43,
-   "cost_est": 0.15559438620000002,
+   "cost_est": 0.1423921098,
    "method": "peer",
    "predecessor": "",
    "cost_pred": null,
-   "cost_peer": 0.15559438620000002,
+   "cost_peer": 0.1423921098,
    "n_peers": 6,
    "openrouter_id": "deepseek/deepseek-v4-pro-0813",
-   "p_in": 1.32,
-   "p_out": 3.9600000000000004
+   "p_in": 0.111,
+   "p_out": 4.4399999999999995
   },
   {
    "model": "gemini-3.7-flash",
@@ -3248,6 +3344,7 @@
   }
  ],
  "skipped": [
+  "muse-ember-1.0_max (aime): no OpenRouter price",
   "kimi-k3.1-pro-together_max (aime): no OpenRouter price",
   "doubao-seed-evolving_high (aime): no OpenRouter price",
   "mistral-large-4-0-oss_high (aime): no OpenRouter price",
@@ -3257,6 +3354,7 @@
   "doubao-seed-evolving_high (gpqa): no OpenRouter price",
   "mistral-large-4-0-oss_high (gpqa): no OpenRouter price",
   "claude-opus-5-5-fallback_max (gpqa): no OpenRouter price",
+  "muse-ember-1.0_max (mystery): no OpenRouter price",
   "kimi-k3.1-pro-together_max (mystery): no OpenRouter price",
   "mistral-large-4-0-oss_high (mystery): no OpenRouter price"
  ]

@@ -60,5 +60,5 @@
   "automation": "Automation = directive + feedback loop; augmentation = task iteration + learning + validation; each as a share of the two together.",
   "occupations": "Share of all sampled API records by SOC major group. Older releases derived from O*NET task shares (split equally across the groups listing a task); the latest release publishes them."
  },
- "last_run": "2026-11-23T15:20:49"
+ "last_run": "2026-11-27T07:02:15"
 }
