@@ -2277,11 +2277,11 @@ date,company,author,model,tokens,partial
 2026-08-28,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,38028852,0
 2026-08-28,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,34499854,0
 2026-08-28,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,6095466,0
-2026-08-28,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-08-28,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-08-28,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-08-28,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-08-28,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-08-28,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-08-28,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-08-28,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-08-28,Cohere,cohere,cohere/north-mini-code-20260617:free,15703845810,0
 2026-08-28,Cohere,cohere,cohere/command-r-08-2024,14475257,0
 2026-08-28,Cohere,cohere,cohere/command-r7b-12-2024,12292314,0
@@ -2504,11 +2504,11 @@ date,company,author,model,tokens,partial
 2026-08-29,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,34138897,0
 2026-08-29,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-lite-20260309,32254942,0
 2026-08-29,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,12428961,0
-2026-08-29,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-08-29,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-08-29,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-08-29,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-08-29,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-08-29,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-08-29,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-08-29,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-08-29,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-08-29,Cohere,cohere,cohere/north-mini-code-20260617:free,12257243673,0
 2026-08-29,Cohere,cohere,cohere/command-a-03-2025,58899366,0
 2026-08-29,Cohere,cohere,cohere/command-r-08-2024,42796672,0
@@ -2516,8 +2516,8 @@ date,company,author,model,tokens,partial
 2026-08-29,Cohere,cohere,cohere/north-mini-code-20260617,2635898,0
 2026-08-29,Cohere,cohere,cohere/command-r-plus-08-2024,2194169,0
 2026-08-29,Cohere,cohere,cohere/rerank-4-pro,0,0
-2026-08-29,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-08-29,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-08-29,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-08-29,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1372084924913,0
 2026-08-29,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,663247324200,0
 2026-08-29,DeepSeek,deepseek,deepseek/deepseek-v4-pro-20260423,210832905140,0
@@ -2728,20 +2728,20 @@ date,company,author,model,tokens,partial
 2026-08-30,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,35393962,0
 2026-08-30,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,30999941,0
 2026-08-30,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,10661878,0
-2026-08-30,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-08-30,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-08-30,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-08-30,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-08-30,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-08-30,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-08-30,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-08-30,Cohere,cohere,cohere/north-mini-code-20260617:free,12469481348,0
 2026-08-30,Cohere,cohere,cohere/command-r7b-12-2024,37614782,0
 2026-08-30,Cohere,cohere,cohere/command-r-08-2024,20882403,0
 2026-08-30,Cohere,cohere,cohere/command-a-03-2025,4754739,0
 2026-08-30,Cohere,cohere,cohere/north-mini-code-20260617,2286092,0
 2026-08-30,Cohere,cohere,cohere/command-r-plus-08-2024,1899109,0
-2026-08-30,Cohere,cohere,cohere/rerank-v3.5,0,0
-2026-08-30,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-08-30,Cohere,cohere,cohere/rerank-4-fast,0,0
+2026-08-30,Cohere,cohere,cohere/rerank-4-pro,0,0
+2026-08-30,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-08-30,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1439645900160,0
 2026-08-30,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,674321451836,0
 2026-08-30,DeepSeek,deepseek,deepseek/deepseek-v4-pro-20260423,200519709382,0
@@ -2954,10 +2954,10 @@ date,company,author,model,tokens,partial
 2026-08-31,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,25426854,0
 2026-08-31,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,15836302,0
 2026-08-31,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-08-31,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-08-31,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-08-31,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-08-31,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-08-31,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-08-31,Cohere,cohere,cohere/north-mini-code-20260617:free,16347965875,0
 2026-08-31,Cohere,cohere,cohere/command-r7b-12-2024,43462113,0
 2026-08-31,Cohere,cohere,cohere/command-a-03-2025,28663925,0
@@ -3181,19 +3181,19 @@ date,company,author,model,tokens,partial
 2026-09-01,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,28619269,0
 2026-09-01,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,28571400,0
 2026-09-01,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-09-01,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-01,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-09-01,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-09-01,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-01,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-09-01,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-01,Cohere,cohere,cohere/north-mini-code-20260617:free,14392675311,0
 2026-09-01,Cohere,cohere,cohere/command-r7b-12-2024,38380898,0
 2026-09-01,Cohere,cohere,cohere/command-r-08-2024,20025932,0
 2026-09-01,Cohere,cohere,cohere/command-a-03-2025,15083359,0
 2026-09-01,Cohere,cohere,cohere/command-r-plus-08-2024,4140414,0
 2026-09-01,Cohere,cohere,cohere/north-mini-code-20260617,3070974,0
-2026-09-01,Cohere,cohere,cohere/rerank-4-pro,0,0
-2026-09-01,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-01,Cohere,cohere,cohere/rerank-4-fast,0,0
+2026-09-01,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-09-01,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-01,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1633618836237,0
 2026-09-01,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,792305220829,0
 2026-09-01,DeepSeek,deepseek,deepseek/deepseek-v4-pro-20260423,214528761252,0
@@ -3408,20 +3408,20 @@ date,company,author,model,tokens,partial
 2026-09-02,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,62688613,0
 2026-09-02,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,38275150,0
 2026-09-02,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,22729717,0
-2026-09-02,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-09-02,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-09-02,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-09-02,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-02,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-09-02,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-09-02,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-09-02,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-09-02,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-02,Cohere,cohere,cohere/north-mini-code-20260617:free,15778343916,0
 2026-09-02,Cohere,cohere,cohere/command-r7b-12-2024,32541908,0
 2026-09-02,Cohere,cohere,cohere/command-r-08-2024,18505503,0
 2026-09-02,Cohere,cohere,cohere/command-a-03-2025,11019982,0
 2026-09-02,Cohere,cohere,cohere/command-r-plus-08-2024,2338060,0
 2026-09-02,Cohere,cohere,cohere/north-mini-code-20260617,2121315,0
-2026-09-02,Cohere,cohere,cohere/rerank-4-pro,0,0
-2026-09-02,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-02,Cohere,cohere,cohere/rerank-4-fast,0,0
+2026-09-02,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-09-02,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-02,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1728912524247,0
 2026-09-02,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,798327433150,0
 2026-09-02,DeepSeek,deepseek,deepseek/deepseek-v4-pro-20260423,205281925754,0
@@ -3639,8 +3639,8 @@ date,company,author,model,tokens,partial
 2026-09-03,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,21768136,0
 2026-09-03,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-03,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-09-03,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-03,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-09-03,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-03,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-03,Cohere,cohere,cohere/north-mini-code-20260617:free,15160915565,0
 2026-09-03,Cohere,cohere,cohere/command-r7b-12-2024,18578503,0
@@ -3648,9 +3648,9 @@ date,company,author,model,tokens,partial
 2026-09-03,Cohere,cohere,cohere/command-a-03-2025,7089290,0
 2026-09-03,Cohere,cohere,cohere/north-mini-code-20260617,2632890,0
 2026-09-03,Cohere,cohere,cohere/command-r-plus-08-2024,1999726,0
+2026-09-03,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-03,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-03,Cohere,cohere,cohere/rerank-4-pro,0,0
-2026-09-03,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-03,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1913443637145,0
 2026-09-03,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,787058518989,0
 2026-09-03,DeepSeek,deepseek,deepseek/deepseek-v4-pro-20260423,206898472775,0
@@ -3778,8 +3778,8 @@ date,company,author,model,tokens,partial
 2026-09-03,Thinking Machines,thinkingmachines,thinkingmachines/inkling-small-20260730:free,12834237376,0
 2026-09-03,Thinking Machines,thinkingmachines,thinkingmachines/inkling-20260715,10894230576,0
 2026-09-03,Thinking Machines,thinkingmachines,thinkingmachines/inkling-small-20260730,1019734028,0
-2026-09-03,Thinking Machines,thinkingmachines,thinkingmachines/inkling-20260715:batch,21,0
 2026-09-03,Thinking Machines,thinkingmachines,thinkingmachines/inkling-small-20260730:batch,21,0
+2026-09-03,Thinking Machines,thinkingmachines,thinkingmachines/inkling-20260715:batch,21,0
 2026-09-03,Upstage,upstage,upstage/solar-pro4-20260810,146405786109,0
 2026-09-03,Upstage,upstage,upstage/solar-pro-3,2373835,0
 2026-09-03,Writer,writer,writer/palmyra-x5-20250428,6636276,0
@@ -3871,18 +3871,18 @@ date,company,author,model,tokens,partial
 2026-09-04,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,29402603,0
 2026-09-04,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-04,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-09-04,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-09-04,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-04,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-09-04,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-09-04,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-04,Cohere,cohere,cohere/north-mini-code-20260617:free,13631217501,0
 2026-09-04,Cohere,cohere,cohere/command-r7b-12-2024,29773507,0
 2026-09-04,Cohere,cohere,cohere/command-r-08-2024,20857037,0
 2026-09-04,Cohere,cohere,cohere/command-a-03-2025,5580206,0
 2026-09-04,Cohere,cohere,cohere/command-r-plus-08-2024,4312343,0
 2026-09-04,Cohere,cohere,cohere/north-mini-code-20260617,1788894,0
-2026-09-04,Cohere,cohere,cohere/rerank-4-fast,0,0
-2026-09-04,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-04,Cohere,cohere,cohere/rerank-4-pro,0,0
+2026-09-04,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-09-04,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-04,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,2238811523617,0
 2026-09-04,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,760911072222,0
 2026-09-04,DeepSeek,deepseek,deepseek/deepseek-v4-pro-20260423,159532852650,0
@@ -4101,11 +4101,11 @@ date,company,author,model,tokens,partial
 2026-09-05,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-pro-20260812,67567557,0
 2026-09-05,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,49079466,0
 2026-09-05,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,45620480,0
-2026-09-05,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-09-05,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-09-05,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-05,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-09-05,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-05,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-09-05,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-09-05,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-05,Cohere,cohere,cohere/north-mini-code-20260617:free,11864037570,0
 2026-09-05,Cohere,cohere,cohere/command-r7b-12-2024,70276008,0
 2026-09-05,Cohere,cohere,cohere/command-r-08-2024,11581291,0
@@ -4113,8 +4113,8 @@ date,company,author,model,tokens,partial
 2026-09-05,Cohere,cohere,cohere/north-mini-code-20260617,4119760,0
 2026-09-05,Cohere,cohere,cohere/command-r-plus-08-2024,2642396,0
 2026-09-05,Cohere,cohere,cohere/rerank-v3.5,0,0
-2026-09-05,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-05,Cohere,cohere,cohere/rerank-4-fast,0,0
+2026-09-05,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-05,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1732594234286,0
 2026-09-05,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,668913736680,0
 2026-09-05,DeepSeek,deepseek,deepseek/deepseek-v4-pro-20260423,122190238487,0
@@ -4164,7 +4164,7 @@ date,company,author,model,tokens,partial
 2026-09-05,Microsoft,microsoft,microsoft/mai-image-2.5-pro-20260723,3216073,0
 2026-09-05,Microsoft,microsoft,microsoft/mai-voice-2,419774,0
 2026-09-05,Microsoft,microsoft,microsoft/mai-voice-2-flash-20260723,54895,0
-2026-09-05,Microsoft,microsoft,microsoft/mai-transcribe-1.5,0,0
+2026-09-05,Microsoft,microsoft,microsoft/mai-transcribe-2-20260903,0,0
 2026-09-05,Microsoft,microsoft,Others,0,0
 2026-09-05,MiniMax,minimax,minimax/minimax-m3-20260531:free,789652687626,0
 2026-09-05,MiniMax,minimax,minimax/minimax-m3-20260531,186672879593,0
@@ -4332,10 +4332,10 @@ date,company,author,model,tokens,partial
 2026-09-06,ByteDance,bytedance-seed,bytedance-seed/seed-2-1-turbo-20260810,46183706,0
 2026-09-06,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-lite-20260309,27320786,0
 2026-09-06,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,18678996,0
-2026-09-06,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-06,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-09-06,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-06,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-09-06,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-09-06,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-06,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-06,Cohere,cohere,cohere/north-mini-code-20260617:free,15017537875,0
 2026-09-06,Cohere,cohere,cohere/north-mini-code-20260617,36076803,0
@@ -4343,9 +4343,9 @@ date,company,author,model,tokens,partial
 2026-09-06,Cohere,cohere,cohere/command-r-08-2024,29434829,0
 2026-09-06,Cohere,cohere,cohere/command-a-03-2025,9570522,0
 2026-09-06,Cohere,cohere,cohere/command-r-plus-08-2024,1075131,0
+2026-09-06,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-06,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-06,Cohere,cohere,cohere/rerank-v3.5,0,0
-2026-09-06,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-06,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1520532796335,0
 2026-09-06,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,626624764221,0
 2026-09-06,DeepSeek,deepseek,deepseek/deepseek-v4-pro-20260423,126373181897,0
@@ -4563,17 +4563,17 @@ date,company,author,model,tokens,partial
 2026-09-07,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,25269229,0
 2026-09-07,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-07,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-09-07,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-07,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-07,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-09-07,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-07,Cohere,cohere,cohere/north-mini-code-20260617:free,15319696131,0
 2026-09-07,Cohere,cohere,cohere/north-mini-code-20260617,38600677,0
 2026-09-07,Cohere,cohere,cohere/command-r-08-2024,24715858,0
 2026-09-07,Cohere,cohere,cohere/command-r7b-12-2024,17805286,0
 2026-09-07,Cohere,cohere,cohere/command-a-03-2025,13303079,0
 2026-09-07,Cohere,cohere,cohere/command-r-plus-08-2024,2631534,0
-2026-09-07,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-07,Cohere,cohere,cohere/rerank-4-fast,0,0
+2026-09-07,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-07,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-07,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1576698141626,0
 2026-09-07,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,675694267638,0
@@ -4794,18 +4794,18 @@ date,company,author,model,tokens,partial
 2026-09-08,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,45520345,0
 2026-09-08,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,37669614,0
 2026-09-08,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-09-08,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-09-08,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-08,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-08,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-09-08,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-09-08,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-08,Cohere,cohere,cohere/north-mini-code-20260617:free,18425042998,0
 2026-09-08,Cohere,cohere,cohere/command-r-08-2024,47249160,0
 2026-09-08,Cohere,cohere,cohere/command-r7b-12-2024,18788704,0
 2026-09-08,Cohere,cohere,cohere/command-a-03-2025,8638340,0
 2026-09-08,Cohere,cohere,cohere/north-mini-code-20260617,7112941,0
 2026-09-08,Cohere,cohere,cohere/command-r-plus-08-2024,1735417,0
-2026-09-08,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-08,Cohere,cohere,cohere/rerank-4-pro,0,0
+2026-09-08,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-08,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-08,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1721613635988,0
 2026-09-08,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,675685390547,0
@@ -4856,7 +4856,7 @@ date,company,author,model,tokens,partial
 2026-09-08,Microsoft,microsoft,microsoft/mai-image-2.5-pro-20260723,1279611,0
 2026-09-08,Microsoft,microsoft,microsoft/mai-voice-2,605716,0
 2026-09-08,Microsoft,microsoft,microsoft/mai-voice-2-flash-20260723,109811,0
-2026-09-08,Microsoft,microsoft,microsoft/mai-transcribe-1.5,0,0
+2026-09-08,Microsoft,microsoft,microsoft/mai-transcribe-2-20260903,0,0
 2026-09-08,Microsoft,microsoft,Others,0,0
 2026-09-08,MiniMax,minimax,minimax/minimax-m3-20260531,225769208002,0
 2026-09-08,MiniMax,minimax,minimax/minimax-m2.7-20260318,9486352905,0
@@ -5027,19 +5027,19 @@ date,company,author,model,tokens,partial
 2026-09-09,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,60030142,0
 2026-09-09,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,42194782,0
 2026-09-09,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,24008120,0
-2026-09-09,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-09-09,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-09-09,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-09,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-09-09,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-09,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-09-09,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-09-09,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-09,Cohere,cohere,cohere/north-mini-code-20260617:free,17637729035,0
 2026-09-09,Cohere,cohere,cohere/command-r7b-12-2024,100234424,0
 2026-09-09,Cohere,cohere,cohere/command-r-08-2024,13706028,0
 2026-09-09,Cohere,cohere,cohere/command-a-03-2025,8287035,0
 2026-09-09,Cohere,cohere,cohere/north-mini-code-20260617,7129549,0
 2026-09-09,Cohere,cohere,cohere/command-r-plus-08-2024,2597736,0
-2026-09-09,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-09,Cohere,cohere,cohere/rerank-4-pro,0,0
+2026-09-09,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-09,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-09,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1618860272576,0
 2026-09-09,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,645268517224,0
@@ -5262,20 +5262,20 @@ date,company,author,model,tokens,partial
 2026-09-10,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,55094066,0
 2026-09-10,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,29004516,0
 2026-09-10,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,28430716,0
-2026-09-10,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-09-10,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-10,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-09-10,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-09-10,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-10,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-09-10,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-09-10,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-10,Cohere,cohere,cohere/north-mini-code-20260617:free,17260845914,0
 2026-09-10,Cohere,cohere,cohere/command-r7b-12-2024,37277390,0
 2026-09-10,Cohere,cohere,cohere/command-r-08-2024,21606767,0
 2026-09-10,Cohere,cohere,cohere/command-a-03-2025,9505596,0
 2026-09-10,Cohere,cohere,cohere/north-mini-code-20260617,8008182,0
 2026-09-10,Cohere,cohere,cohere/command-r-plus-08-2024,5065265,0
-2026-09-10,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-10,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-10,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-09-10,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-10,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1949990851916,0
 2026-09-10,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,703354448295,0
 2026-09-10,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,678686144342,0
@@ -5326,7 +5326,7 @@ date,company,author,model,tokens,partial
 2026-09-10,Microsoft,microsoft,microsoft/mai-image-2.5-pro-20260723,2971352,0
 2026-09-10,Microsoft,microsoft,microsoft/mai-voice-2,386787,0
 2026-09-10,Microsoft,microsoft,microsoft/mai-voice-2-flash-20260723,123924,0
-2026-09-10,Microsoft,microsoft,microsoft/mai-transcribe-2-20260903,0,0
+2026-09-10,Microsoft,microsoft,microsoft/mai-transcribe-1.5,0,0
 2026-09-10,Microsoft,microsoft,Others,0,0
 2026-09-10,MiniMax,minimax,minimax/minimax-m3-20260531,233746793607,0
 2026-09-10,MiniMax,minimax,minimax/minimax-m2.7-20260318,9697126505,0
@@ -5498,10 +5498,10 @@ date,company,author,model,tokens,partial
 2026-09-11,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,75415864,0
 2026-09-11,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,31907124,0
 2026-09-11,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,27757865,0
-2026-09-11,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-09-11,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-09-11,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-11,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-09-11,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-09-11,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-09-11,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-11,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-11,Cohere,cohere,cohere/north-mini-code-20260617:free,16669819437,0
 2026-09-11,Cohere,cohere,cohere/command-r7b-12-2024,37262655,0
@@ -5510,8 +5510,8 @@ date,company,author,model,tokens,partial
 2026-09-11,Cohere,cohere,cohere/north-mini-code-20260617,6076263,0
 2026-09-11,Cohere,cohere,cohere/command-r-plus-08-2024,3591464,0
 2026-09-11,Cohere,cohere,cohere/rerank-4-pro,0,0
-2026-09-11,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-11,Cohere,cohere,cohere/rerank-4-fast,0,0
+2026-09-11,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-11,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1909849336222,0
 2026-09-11,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,1536367792104,0
 2026-09-11,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,632142353026,0
@@ -5562,7 +5562,7 @@ date,company,author,model,tokens,partial
 2026-09-11,Microsoft,microsoft,microsoft/mai-image-2.5-pro-20260723,1477231,0
 2026-09-11,Microsoft,microsoft,microsoft/mai-voice-2,320769,0
 2026-09-11,Microsoft,microsoft,microsoft/mai-voice-2-flash-20260723,203819,0
-2026-09-11,Microsoft,microsoft,microsoft/mai-transcribe-2-20260903,0,0
+2026-09-11,Microsoft,microsoft,microsoft/mai-transcribe-1.5,0,0
 2026-09-11,Microsoft,microsoft,Others,0,0
 2026-09-11,MiniMax,minimax,minimax/minimax-m3-20260531,204939970032,0
 2026-09-11,MiniMax,minimax,minimax/minimax-m2.7-20260318,8657972576,0
@@ -5734,11 +5734,11 @@ date,company,author,model,tokens,partial
 2026-09-12,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-lite-20260309,34683804,0
 2026-09-12,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,23747062,0
 2026-09-12,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,10804430,0
-2026-09-12,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-09-12,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-09-12,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-12,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-12,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-09-12,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-09-12,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-09-12,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-12,Cohere,cohere,cohere/north-mini-code-20260617:free,14943320203,0
 2026-09-12,Cohere,cohere,cohere/command-r7b-12-2024,60320125,0
 2026-09-12,Cohere,cohere,cohere/command-r-08-2024,17598782,0
@@ -5799,7 +5799,7 @@ date,company,author,model,tokens,partial
 2026-09-12,Microsoft,microsoft,microsoft/mai-image-2.6-20260904,2670231,0
 2026-09-12,Microsoft,microsoft,microsoft/mai-voice-2,245885,0
 2026-09-12,Microsoft,microsoft,microsoft/mai-voice-2-flash-20260723,157266,0
-2026-09-12,Microsoft,microsoft,microsoft/mai-transcribe-2-20260903,0,0
+2026-09-12,Microsoft,microsoft,microsoft/mai-transcribe-1.5,0,0
 2026-09-12,Microsoft,microsoft,Others,0,0
 2026-09-12,MiniMax,minimax,minimax/minimax-m3-20260531,180952746332,0
 2026-09-12,MiniMax,minimax,minimax/minimax-m2.7-20260318,8499328791,0
@@ -5973,20 +5973,20 @@ date,company,author,model,tokens,partial
 2026-09-13,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,27951586,0
 2026-09-13,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,25735060,0
 2026-09-13,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,23591290,0
-2026-09-13,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-09-13,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-09-13,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-09-13,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-13,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-09-13,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-09-13,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-09-13,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-09-13,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-13,Cohere,cohere,cohere/north-mini-code-20260617:free,17598316427,0
 2026-09-13,Cohere,cohere,cohere/command-r7b-12-2024,39542339,0
 2026-09-13,Cohere,cohere,cohere/command-r-08-2024,13420285,0
 2026-09-13,Cohere,cohere,cohere/command-a-03-2025,5461174,0
 2026-09-13,Cohere,cohere,cohere/command-r-plus-08-2024,2814757,0
 2026-09-13,Cohere,cohere,cohere/north-mini-code-20260617,1760647,0
-2026-09-13,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-13,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-13,Cohere,cohere,cohere/rerank-4-pro,0,0
+2026-09-13,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-13,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1441764456890,0
 2026-09-13,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,1294618265169,0
 2026-09-13,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,519252847480,0
@@ -6037,7 +6037,7 @@ date,company,author,model,tokens,partial
 2026-09-13,Microsoft,microsoft,microsoft/mai-image-2.6-20260904,1946633,0
 2026-09-13,Microsoft,microsoft,microsoft/mai-voice-2-flash-20260723,332650,0
 2026-09-13,Microsoft,microsoft,microsoft/mai-voice-2,183127,0
-2026-09-13,Microsoft,microsoft,microsoft/mai-transcribe-2-20260903,0,0
+2026-09-13,Microsoft,microsoft,microsoft/mai-transcribe-1.5,0,0
 2026-09-13,Microsoft,microsoft,Others,0,0
 2026-09-13,MiniMax,minimax,minimax/minimax-m3-20260531,174851444482,0
 2026-09-13,MiniMax,minimax,minimax/minimax-m2.7-20260318,7235496580,0
@@ -6211,11 +6211,11 @@ date,company,author,model,tokens,partial
 2026-09-14,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,33524476,0
 2026-09-14,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,27706532,0
 2026-09-14,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,8506104,0
+2026-09-14,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-09-14,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-14,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-14,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-09-14,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-14,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-09-14,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-14,Cohere,cohere,cohere/north-mini-code-20260617:free,17150901731,0
 2026-09-14,Cohere,cohere,cohere/command-r7b-12-2024,40495704,0
 2026-09-14,Cohere,cohere,cohere/command-r-08-2024,13390119,0
@@ -6452,20 +6452,20 @@ date,company,author,model,tokens,partial
 2026-09-15,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,35054777,0
 2026-09-15,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,19217132,0
 2026-09-15,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,16825667,0
-2026-09-15,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-15,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-09-15,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-09-15,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-15,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-09-15,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-09-15,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-09-15,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-15,Cohere,cohere,cohere/north-mini-code-20260617:free,17215752460,0
 2026-09-15,Cohere,cohere,cohere/command-r7b-12-2024,37458517,0
 2026-09-15,Cohere,cohere,cohere/command-r-08-2024,16140426,0
 2026-09-15,Cohere,cohere,cohere/command-a-03-2025,8684334,0
 2026-09-15,Cohere,cohere,cohere/north-mini-code-20260617,6059243,0
 2026-09-15,Cohere,cohere,cohere/command-r-plus-08-2024,2208303,0
-2026-09-15,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-15,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-15,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-09-15,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-15,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,1799484922582,0
 2026-09-15,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1506862691028,0
 2026-09-15,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,668011906315,0
@@ -6517,7 +6517,7 @@ date,company,author,model,tokens,partial
 2026-09-15,Microsoft,microsoft,microsoft/mai-image-2.5-pro-20260723,3229459,0
 2026-09-15,Microsoft,microsoft,microsoft/mai-voice-2,444546,0
 2026-09-15,Microsoft,microsoft,microsoft/mai-voice-2-flash-20260723,181260,0
-2026-09-15,Microsoft,microsoft,microsoft/mai-transcribe-1.5,0,0
+2026-09-15,Microsoft,microsoft,microsoft/mai-transcribe-2-20260903,0,0
 2026-09-15,Microsoft,microsoft,Others,0,0
 2026-09-15,MiniMax,minimax,minimax/minimax-m3-20260531,222635815484,0
 2026-09-15,MiniMax,minimax,minimax/minimax-m2.7-20260318,11104626910,0
@@ -6691,11 +6691,11 @@ date,company,author,model,tokens,partial
 2026-09-16,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,37289658,0
 2026-09-16,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,35485873,0
 2026-09-16,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,28903025,0
-2026-09-16,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-09-16,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-16,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-16,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-16,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-09-16,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-09-16,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-16,Cohere,cohere,cohere/north-mini-code-20260617:free,17257474386,0
 2026-09-16,Cohere,cohere,cohere/command-r7b-12-2024,31091553,0
 2026-09-16,Cohere,cohere,cohere/command-r-08-2024,18653389,0
@@ -6931,20 +6931,20 @@ date,company,author,model,tokens,partial
 2026-09-17,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,43173342,0
 2026-09-17,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,22253473,0
 2026-09-17,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,15762846,0
-2026-09-17,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-09-17,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-17,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-09-17,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-17,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-09-17,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-09-17,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-09-17,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-17,Cohere,cohere,cohere/north-mini-code-20260617:free,19597690796,0
 2026-09-17,Cohere,cohere,cohere/command-r7b-12-2024,36131676,0
 2026-09-17,Cohere,cohere,cohere/command-r-08-2024,17672078,0
 2026-09-17,Cohere,cohere,cohere/command-a-03-2025,6039477,0
 2026-09-17,Cohere,cohere,cohere/command-r-plus-08-2024,2681944,0
 2026-09-17,Cohere,cohere,cohere/north-mini-code-20260617,1629557,0
-2026-09-17,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-17,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-17,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-09-17,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-17,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,2250990777624,0
 2026-09-17,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1327505194194,0
 2026-09-17,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,555784110039,0
@@ -7170,10 +7170,10 @@ date,company,author,model,tokens,partial
 2026-09-18,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,45106797,0
 2026-09-18,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,20345860,0
 2026-09-18,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,4576657,0
-2026-09-18,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-09-18,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-18,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-18,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-09-18,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-09-18,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-18,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-18,Cohere,cohere,cohere/north-mini-code-20260617:free,16887600161,0
 2026-09-18,Cohere,cohere,cohere/command-r7b-12-2024,34785620,0
@@ -7181,9 +7181,9 @@ date,company,author,model,tokens,partial
 2026-09-18,Cohere,cohere,cohere/command-r-08-2024,13693134,0
 2026-09-18,Cohere,cohere,cohere/command-r-plus-08-2024,7019738,0
 2026-09-18,Cohere,cohere,cohere/north-mini-code-20260617,2182497,0
+2026-09-18,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-18,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-18,Cohere,cohere,cohere/rerank-4-pro,0,0
-2026-09-18,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-18,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,2621995119219,0
 2026-09-18,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1190061791485,0
 2026-09-18,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731:free,742744282698,0
@@ -7234,7 +7234,7 @@ date,company,author,model,tokens,partial
 2026-09-18,Microsoft,microsoft,microsoft/mai-image-2.5-pro-20260723,580418,0
 2026-09-18,Microsoft,microsoft,microsoft/mai-voice-2,391495,0
 2026-09-18,Microsoft,microsoft,microsoft/mai-voice-2-flash-20260723,151743,0
-2026-09-18,Microsoft,microsoft,microsoft/mai-transcribe-1.5,0,0
+2026-09-18,Microsoft,microsoft,microsoft/mai-transcribe-2-20260903,0,0
 2026-09-18,Microsoft,microsoft,Others,0,0
 2026-09-18,MiniMax,minimax,minimax/minimax-m3-20260531,218835420673,0
 2026-09-18,MiniMax,minimax,minimax/minimax-m2.7-20260318,10496941460,0
@@ -7410,10 +7410,10 @@ date,company,author,model,tokens,partial
 2026-09-19,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,23252619,0
 2026-09-19,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,4170028,0
 2026-09-19,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-09-19,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-09-19,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-19,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-19,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-09-19,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-09-19,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-19,Cohere,cohere,cohere/north-mini-code-20260617:free,14875552665,0
 2026-09-19,Cohere,cohere,cohere/command-r7b-12-2024,35045533,0
 2026-09-19,Cohere,cohere,cohere/command-r-08-2024,14097812,0
@@ -7648,11 +7648,11 @@ date,company,author,model,tokens,partial
 2026-09-20,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,35715724,0
 2026-09-20,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,30824287,0
 2026-09-20,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,24975325,0
-2026-09-20,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-09-20,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-20,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-20,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-09-20,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-20,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-09-20,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-20,Cohere,cohere,cohere/north-mini-code-20260617:free,16188967420,0
 2026-09-20,Cohere,cohere,cohere/command-r7b-12-2024,27024710,0
 2026-09-20,Cohere,cohere,cohere/command-r-08-2024,14226704,0
@@ -7712,7 +7712,7 @@ date,company,author,model,tokens,partial
 2026-09-20,Microsoft,microsoft,microsoft/mai-voice-2,309407,0
 2026-09-20,Microsoft,microsoft,microsoft/mai-image-2.5-pro-20260723,245184,0
 2026-09-20,Microsoft,microsoft,microsoft/mai-voice-2-flash-20260723,202665,0
-2026-09-20,Microsoft,microsoft,microsoft/mai-transcribe-2-20260903,0,0
+2026-09-20,Microsoft,microsoft,microsoft/mai-transcribe-1.5,0,0
 2026-09-20,Microsoft,microsoft,Others,0,0
 2026-09-20,MiniMax,minimax,minimax/minimax-m3-20260531,179790059978,0
 2026-09-20,MiniMax,minimax,minimax/minimax-m2.7-20260318,9105309794,0
@@ -7888,19 +7888,19 @@ date,company,author,model,tokens,partial
 2026-09-21,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,42942874,0
 2026-09-21,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,3471252,0
 2026-09-21,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-09-21,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-09-21,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-21,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-21,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-09-21,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-09-21,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-21,Cohere,cohere,cohere/north-mini-code-20260617:free,17764358820,0
 2026-09-21,Cohere,cohere,cohere/command-r7b-12-2024,21694204,0
 2026-09-21,Cohere,cohere,cohere/command-r-08-2024,14830424,0
 2026-09-21,Cohere,cohere,cohere/command-a-03-2025,9500827,0
 2026-09-21,Cohere,cohere,cohere/command-r-plus-08-2024,2105021,0
 2026-09-21,Cohere,cohere,cohere/north-mini-code-20260617,2094905,0
-2026-09-21,Cohere,cohere,cohere/rerank-v3.5,0,0
-2026-09-21,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-21,Cohere,cohere,cohere/rerank-4-pro,0,0
+2026-09-21,Cohere,cohere,cohere/rerank-4-fast,0,0
+2026-09-21,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-21,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,2431719459493,0
 2026-09-21,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1206123550663,0
 2026-09-21,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,529315316586,0
@@ -7952,7 +7952,7 @@ date,company,author,model,tokens,partial
 2026-09-21,Microsoft,microsoft,microsoft/mai-voice-2,437342,0
 2026-09-21,Microsoft,microsoft,microsoft/mai-image-2.5-pro-20260723,424319,0
 2026-09-21,Microsoft,microsoft,microsoft/mai-voice-2-flash-20260723,210046,0
-2026-09-21,Microsoft,microsoft,microsoft/mai-transcribe-2-20260903,0,0
+2026-09-21,Microsoft,microsoft,microsoft/mai-transcribe-1.5,0,0
 2026-09-21,Microsoft,microsoft,Others,0,0
 2026-09-21,MiniMax,minimax,minimax/minimax-m3-20260531,219164499779,0
 2026-09-21,MiniMax,minimax,minimax/minimax-m2.7-20260318,9542833155,0
@@ -8133,8 +8133,8 @@ date,company,author,model,tokens,partial
 2026-09-22,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,34682059,0
 2026-09-22,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,27432052,0
 2026-09-22,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-09-22,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-22,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-09-22,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-22,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-22,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-22,Cohere,cohere,cohere/north-mini-code-20260617:free,19053516266,0
@@ -8379,10 +8379,10 @@ date,company,author,model,tokens,partial
 2026-09-23,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,34084172,0
 2026-09-23,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,12108523,0
 2026-09-23,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-09-23,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-23,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-23,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-23,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-09-23,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-23,Cohere,cohere,cohere/north-mini-code-20260617:free,18311975762,0
 2026-09-23,Cohere,cohere,cohere/command-r7b-12-2024,45082240,0
 2026-09-23,Cohere,cohere,cohere/command-r-08-2024,14982394,0
@@ -8390,8 +8390,8 @@ date,company,author,model,tokens,partial
 2026-09-23,Cohere,cohere,cohere/command-a-plus-05-2026,4586957,0
 2026-09-23,Cohere,cohere,cohere/north-mini-code-20260617,2121145,0
 2026-09-23,Cohere,cohere,cohere/command-r-plus-08-2024,1906840,0
+2026-09-23,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-23,Cohere,cohere,cohere/rerank-4-pro,0,0
-2026-09-23,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-23,Cohere,cohere,Others,0,0
 2026-09-23,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,2809507461498,0
 2026-09-23,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1200912439316,0
@@ -8625,11 +8625,11 @@ date,company,author,model,tokens,partial
 2026-09-24,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,34843531,0
 2026-09-24,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,26702774,0
 2026-09-24,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,25945467,0
-2026-09-24,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-09-24,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-24,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-09-24,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-24,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-24,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-09-24,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-24,Cohere,cohere,cohere/north-mini-code-20260617:free,17620461104,0
 2026-09-24,Cohere,cohere,cohere/command-r7b-12-2024,56156976,0
 2026-09-24,Cohere,cohere,cohere/command-a-plus-05-2026,25950240,0
@@ -8690,7 +8690,7 @@ date,company,author,model,tokens,partial
 2026-09-24,Microsoft,microsoft,microsoft/mai-image-2.5-pro-20260723,729733,0
 2026-09-24,Microsoft,microsoft,microsoft/mai-voice-2,673062,0
 2026-09-24,Microsoft,microsoft,microsoft/mai-voice-2-flash-20260723,186821,0
-2026-09-24,Microsoft,microsoft,microsoft/mai-transcribe-2-20260903,0,0
+2026-09-24,Microsoft,microsoft,microsoft/mai-transcribe-1.5,0,0
 2026-09-24,Microsoft,microsoft,Others,0,0
 2026-09-24,MiniMax,minimax,minimax/minimax-m3-20260531,210187157982,0
 2026-09-24,MiniMax,minimax,minimax/minimax-m2.7-20260318,10148744621,0
@@ -8874,11 +8874,11 @@ date,company,author,model,tokens,partial
 2026-09-25,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,16859858,0
 2026-09-25,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,8057066,0
 2026-09-25,ByteDance,bytedance-seed,Others,22967,0
+2026-09-25,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-09-25,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-09-25,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-25,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-25,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-09-25,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-09-25,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-09-25,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-25,Cohere,cohere,cohere/north-mini-code-20260617:free,17927878256,0
 2026-09-25,Cohere,cohere,cohere/command-a-plus-05-2026,103781132,0
 2026-09-25,Cohere,cohere,cohere/command-r7b-12-2024,51991060,0
@@ -8886,7 +8886,7 @@ date,company,author,model,tokens,partial
 2026-09-25,Cohere,cohere,cohere/command-a-03-2025,17022300,0
 2026-09-25,Cohere,cohere,cohere/north-mini-code-20260617,3640037,0
 2026-09-25,Cohere,cohere,cohere/command-r-plus-08-2024,3598609,0
-2026-09-25,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-09-25,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-25,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-25,Cohere,cohere,Others,0,0
 2026-09-25,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,2964159850392,0
@@ -9020,8 +9020,8 @@ date,company,author,model,tokens,partial
 2026-09-25,Thinking Machines,thinkingmachines,thinkingmachines/inkling-small-20260730:free,15356275935,0
 2026-09-25,Thinking Machines,thinkingmachines,thinkingmachines/inkling-20260715,4083914138,0
 2026-09-25,Thinking Machines,thinkingmachines,thinkingmachines/inkling-small-20260730,394544500,0
-2026-09-25,Thinking Machines,thinkingmachines,thinkingmachines/inkling-20260715:batch,460,0
 2026-09-25,Thinking Machines,thinkingmachines,thinkingmachines/inkling-small-20260730:batch,460,0
+2026-09-25,Thinking Machines,thinkingmachines,thinkingmachines/inkling-20260715:batch,460,0
 2026-09-25,Upstage,upstage,upstage/solar-pro4-20260810,214114762125,0
 2026-09-25,Upstage,upstage,upstage/solar-mini4-20260922,28118309011,0
 2026-09-25,Upstage,upstage,upstage/solar-pro-3,25551261,0
@@ -9130,9 +9130,9 @@ date,company,author,model,tokens,partial
 2026-09-26,ByteDance,bytedance-seed,Others,139230,0
 2026-09-26,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-26,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-09-26,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-26,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-09-26,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-09-26,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-26,Cohere,cohere,cohere/north-mini-code-20260617:free,16487886204,0
 2026-09-26,Cohere,cohere,cohere/command-a-plus-05-2026,99691213,0
 2026-09-26,Cohere,cohere,cohere/command-r7b-12-2024,90909738,0
@@ -9141,7 +9141,7 @@ date,company,author,model,tokens,partial
 2026-09-26,Cohere,cohere,cohere/north-mini-code-20260617,2310682,0
 2026-09-26,Cohere,cohere,cohere/command-r-plus-08-2024,1885372,0
 2026-09-26,Cohere,cohere,cohere/rerank-4-fast,0,0
-2026-09-26,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-09-26,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-26,Cohere,cohere,Others,0,0
 2026-09-26,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,2451574001771,0
 2026-09-26,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,1085804508442,0
@@ -9374,11 +9374,11 @@ date,company,author,model,tokens,partial
 2026-09-27,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,9529352,0
 2026-09-27,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,3951769,0
 2026-09-27,ByteDance,bytedance-seed,Others,211435,0
-2026-09-27,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-27,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-09-27,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-09-27,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-27,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-09-27,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-09-27,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-09-27,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-27,Cohere,cohere,cohere/north-mini-code-20260617:free,15709267259,0
 2026-09-27,Cohere,cohere,cohere/command-r7b-12-2024,85357607,0
 2026-09-27,Cohere,cohere,cohere/command-a-plus-05-2026,84220439,0
@@ -9439,7 +9439,7 @@ date,company,author,model,tokens,partial
 2026-09-27,Microsoft,microsoft,microsoft/mai-voice-2,421028,0
 2026-09-27,Microsoft,microsoft,microsoft/mai-image-2.5-pro-20260723,278255,0
 2026-09-27,Microsoft,microsoft,microsoft/mai-voice-2-flash-20260723,75883,0
-2026-09-27,Microsoft,microsoft,microsoft/mai-transcribe-2-20260903,0,0
+2026-09-27,Microsoft,microsoft,microsoft/mai-transcribe-1.5,0,0
 2026-09-27,Microsoft,microsoft,Others,0,0
 2026-09-27,MiniMax,minimax,minimax/minimax-m3-20260531,175384412405,0
 2026-09-27,MiniMax,minimax,minimax/minimax-m2.7-20260318,8488209229,0
@@ -9621,11 +9621,11 @@ date,company,author,model,tokens,partial
 2026-09-28,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,13317126,0
 2026-09-28,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,11927094,0
 2026-09-28,ByteDance,bytedance-seed,Others,193855,0
+2026-09-28,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-09-28,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-28,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-09-28,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-09-28,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-28,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-09-28,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-28,Cohere,cohere,cohere/north-mini-code-20260617:free,17966163593,0
 2026-09-28,Cohere,cohere,cohere/command-a-plus-05-2026,279976168,0
 2026-09-28,Cohere,cohere,cohere/command-r7b-12-2024,57248212,0
@@ -9634,7 +9634,7 @@ date,company,author,model,tokens,partial
 2026-09-28,Cohere,cohere,cohere/command-r-plus-08-2024,5082906,0
 2026-09-28,Cohere,cohere,cohere/north-mini-code-20260617,1879636,0
 2026-09-28,Cohere,cohere,cohere/rerank-4-pro,0,0
-2026-09-28,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-09-28,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-09-28,Cohere,cohere,Others,0,0
 2026-09-28,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,3681553673810,0
 2026-09-28,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,948299816031,0
@@ -9873,10 +9873,10 @@ date,company,author,model,tokens,partial
 2026-09-29,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,8435327,0
 2026-09-29,ByteDance,bytedance-seed,Others,251157,0
 2026-09-29,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-09-29,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-09-29,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-09-29,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-29,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-09-29,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-09-29,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-09-29,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-09-29,Cohere,cohere,cohere/north-mini-code-20260617:free,19304941611,0
 2026-09-29,Cohere,cohere,cohere/command-a-plus-05-2026,100502861,0
 2026-09-29,Cohere,cohere,cohere/command-r-08-2024,41177347,0
@@ -9884,8 +9884,8 @@ date,company,author,model,tokens,partial
 2026-09-29,Cohere,cohere,cohere/command-r-plus-08-2024,5391127,0
 2026-09-29,Cohere,cohere,cohere/command-a-03-2025,4803994,0
 2026-09-29,Cohere,cohere,cohere/north-mini-code-20260617,1825497,0
+2026-09-29,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-29,Cohere,cohere,cohere/rerank-4-fast,0,0
-2026-09-29,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-09-29,Cohere,cohere,Others,0,0
 2026-09-29,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,3918021317885,0
 2026-09-29,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,945806096452,0
@@ -10120,11 +10120,11 @@ date,company,author,model,tokens,partial
 2026-09-30,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,27686573,0
 2026-09-30,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,13332911,0
 2026-09-30,ByteDance,bytedance-seed,Others,183962,0
-2026-09-30,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-30,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-09-30,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-30,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-09-30,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-09-30,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-09-30,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-09-30,Cohere,cohere,cohere/north-mini-code-20260617:free,17347544016,0
 2026-09-30,Cohere,cohere,cohere/command-a-plus-05-2026,216136007,0
 2026-09-30,Cohere,cohere,cohere/command-r7b-12-2024,32855433,0
@@ -10133,7 +10133,7 @@ date,company,author,model,tokens,partial
 2026-09-30,Cohere,cohere,cohere/command-r-plus-08-2024,3238595,0
 2026-09-30,Cohere,cohere,cohere/north-mini-code-20260617,3033778,0
 2026-09-30,Cohere,cohere,cohere/rerank-4-pro,0,0
-2026-09-30,Cohere,cohere,cohere/rerank-4-fast,0,0
+2026-09-30,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-09-30,Cohere,cohere,Others,0,0
 2026-09-30,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,3491740784985,0
 2026-09-30,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,968247430381,0
@@ -10369,10 +10369,10 @@ date,company,author,model,tokens,partial
 2026-10-01,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,31285901,0
 2026-10-01,ByteDance,bytedance-seed,Others,4857332,0
 2026-10-01,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-10-01,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-01,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-10-01,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-10-01,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-01,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-10-01,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-01,Cohere,cohere,cohere/north-mini-code-20260617:free,15396543594,0
 2026-10-01,Cohere,cohere,cohere/command-a-plus-05-2026,154460868,0
 2026-10-01,Cohere,cohere,cohere/command-r7b-12-2024,23171894,0
@@ -10381,7 +10381,7 @@ date,company,author,model,tokens,partial
 2026-10-01,Cohere,cohere,cohere/north-mini-code-20260617,1719927,0
 2026-10-01,Cohere,cohere,cohere/command-r-plus-08-2024,1557738,0
 2026-10-01,Cohere,cohere,cohere/rerank-v3.5,0,0
-2026-10-01,Cohere,cohere,cohere/rerank-4-pro,0,0
+2026-10-01,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-10-01,Cohere,cohere,Others,0,0
 2026-10-01,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,3549621885108,0
 2026-10-01,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,922176936919,0
@@ -10622,11 +10622,11 @@ date,company,author,model,tokens,partial
 2026-10-02,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,72289610,0
 2026-10-02,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,34154583,0
 2026-10-02,ByteDance,bytedance-seed,Others,19276184,0
-2026-10-02,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-10-02,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-10-02,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-02,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-10-02,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-02,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-10-02,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-10-02,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-02,Cohere,cohere,cohere/north-mini-code-20260617:free,14405219617,0
 2026-10-02,Cohere,cohere,cohere/command-a-plus-05-2026,97852475,0
 2026-10-02,Cohere,cohere,cohere/command-r7b-12-2024,24017239,0
@@ -10634,8 +10634,8 @@ date,company,author,model,tokens,partial
 2026-10-02,Cohere,cohere,cohere/command-a-03-2025,6793389,0
 2026-10-02,Cohere,cohere,cohere/command-r-plus-08-2024,5836693,0
 2026-10-02,Cohere,cohere,cohere/north-mini-code-20260617,2129376,0
+2026-10-02,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-10-02,Cohere,cohere,cohere/rerank-4-fast,0,0
-2026-10-02,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-10-02,Cohere,cohere,Others,0,0
 2026-10-02,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,3639968543713,0
 2026-10-02,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,748320159972,0
@@ -10874,10 +10874,10 @@ date,company,author,model,tokens,partial
 2026-10-03,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,19684565,0
 2026-10-03,ByteDance,bytedance-seed,Others,1846180,0
 2026-10-03,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-10-03,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-03,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-10-03,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-03,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-10-03,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-10-03,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-03,Cohere,cohere,cohere/north-mini-code-20260617:free,13303896091,0
 2026-10-03,Cohere,cohere,cohere/command-a-plus-05-2026,91831604,0
 2026-10-03,Cohere,cohere,cohere/command-a-03-2025,38044710,0
@@ -10885,8 +10885,8 @@ date,company,author,model,tokens,partial
 2026-10-03,Cohere,cohere,cohere/command-r7b-12-2024,12161281,0
 2026-10-03,Cohere,cohere,cohere/north-mini-code-20260617,4478009,0
 2026-10-03,Cohere,cohere,cohere/command-r-plus-08-2024,2462027,0
-2026-10-03,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-10-03,Cohere,cohere,cohere/rerank-4-fast,0,0
+2026-10-03,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-10-03,Cohere,cohere,Others,0,0
 2026-10-03,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,3908004568634,0
 2026-10-03,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,708744857634,0
@@ -11125,11 +11125,11 @@ date,company,author,model,tokens,partial
 2026-10-04,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,70551361,0
 2026-10-04,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,24723601,0
 2026-10-04,ByteDance,bytedance-seed,Others,5372441,0
-2026-10-04,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-04,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-04,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-10-04,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-04,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-10-04,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-10-04,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-04,Cohere,cohere,cohere/north-mini-code-20260617:free,14696580355,0
 2026-10-04,Cohere,cohere,cohere/command-a-plus-05-2026,244982757,0
 2026-10-04,Cohere,cohere,cohere/command-r-plus-08-2024,25009578,0
@@ -11138,7 +11138,7 @@ date,company,author,model,tokens,partial
 2026-10-04,Cohere,cohere,cohere/command-r7b-12-2024,11334024,0
 2026-10-04,Cohere,cohere,cohere/north-mini-code-20260617,1592882,0
 2026-10-04,Cohere,cohere,cohere/rerank-4-fast,0,0
-2026-10-04,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-10-04,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-10-04,Cohere,cohere,Others,0,0
 2026-10-04,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,3419118614699,0
 2026-10-04,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,748922604188,0
@@ -11377,11 +11377,11 @@ date,company,author,model,tokens,partial
 2026-10-05,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,89763646,0
 2026-10-05,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,30633722,0
 2026-10-05,ByteDance,bytedance-seed,Others,24527233,0
-2026-10-05,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-10-05,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-10-05,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-05,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-10-05,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-05,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-10-05,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-10-05,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-05,Cohere,cohere,cohere/north-mini-code-20260617:free,16705899085,0
 2026-10-05,Cohere,cohere,cohere/command-a-plus-05-2026,198163933,0
 2026-10-05,Cohere,cohere,cohere/command-r-08-2024,29549614,0
@@ -11631,10 +11631,10 @@ date,company,author,model,tokens,partial
 2026-10-06,ByteDance,bytedance-seed,Others,71264748,0
 2026-10-06,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,28623632,0
 2026-10-06,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-10-06,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-10-06,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-10-06,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-06,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-10-06,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-10-06,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-10-06,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-06,Cohere,cohere,cohere/north-mini-code-20260617:free,23819497446,0
 2026-10-06,Cohere,cohere,cohere/command-a-plus-05-2026,175478624,0
 2026-10-06,Cohere,cohere,cohere/command-r7b-12-2024,33948153,0
@@ -11642,8 +11642,8 @@ date,company,author,model,tokens,partial
 2026-10-06,Cohere,cohere,cohere/command-a-03-2025,14194070,0
 2026-10-06,Cohere,cohere,cohere/command-r-plus-08-2024,14077903,0
 2026-10-06,Cohere,cohere,cohere/north-mini-code-20260617,1686834,0
+2026-10-06,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-10-06,Cohere,cohere,cohere/rerank-4-fast,0,0
-2026-10-06,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-10-06,Cohere,cohere,Others,0,0
 2026-10-06,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,5107369530557,0
 2026-10-06,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,837950302682,0
@@ -11883,11 +11883,11 @@ date,company,author,model,tokens,partial
 2026-10-07,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,67530403,0
 2026-10-07,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,38321954,0
 2026-10-07,ByteDance,bytedance-seed,Others,16184611,0
-2026-10-07,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-10-07,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-10-07,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-10-07,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-07,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-10-07,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-10-07,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-10-07,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-10-07,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-07,Cohere,cohere,cohere/north-mini-code-20260617:free,23455112053,0
 2026-10-07,Cohere,cohere,cohere/command-a-plus-05-2026,85761631,0
 2026-10-07,Cohere,cohere,cohere/command-r7b-12-2024,61996004,0
@@ -11895,8 +11895,8 @@ date,company,author,model,tokens,partial
 2026-10-07,Cohere,cohere,cohere/command-a-03-2025,3497569,0
 2026-10-07,Cohere,cohere,cohere/command-r-plus-08-2024,2250543,0
 2026-10-07,Cohere,cohere,cohere/north-mini-code-20260617,2080927,0
-2026-10-07,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-10-07,Cohere,cohere,cohere/rerank-4-pro,0,0
+2026-10-07,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-10-07,Cohere,cohere,Others,0,0
 2026-10-07,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,7519071502688,0
 2026-10-07,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,713519147914,0
@@ -12137,11 +12137,11 @@ date,company,author,model,tokens,partial
 2026-10-08,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,28365112,0
 2026-10-08,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,16622800,0
 2026-10-08,ByteDance,bytedance-seed,Others,12557558,0
+2026-10-08,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-10-08,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-08,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-08,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-08,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-10-08,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-10-08,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-08,Cohere,cohere,cohere/north-mini-code-20260617:free,26302194181,0
 2026-10-08,Cohere,cohere,cohere/command-a-plus-05-2026,66884398,0
 2026-10-08,Cohere,cohere,cohere/command-r-08-2024,21184585,0
@@ -12150,7 +12150,7 @@ date,company,author,model,tokens,partial
 2026-10-08,Cohere,cohere,cohere/command-r-plus-08-2024,3616064,0
 2026-10-08,Cohere,cohere,cohere/north-mini-code-20260617,2595342,0
 2026-10-08,Cohere,cohere,cohere/rerank-4-fast,0,0
-2026-10-08,Cohere,cohere,cohere/rerank-4-pro,0,0
+2026-10-08,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-10-08,Cohere,cohere,Others,0,0
 2026-10-08,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,5537053240684,0
 2026-10-08,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,668102669414,0
@@ -12391,9 +12391,9 @@ date,company,author,model,tokens,partial
 2026-10-09,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,17299861,0
 2026-10-09,ByteDance,bytedance-seed,Others,10429655,0
 2026-10-09,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-10-09,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-09,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-09,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-10-09,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-09,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-09,Cohere,cohere,cohere/north-mini-code-20260617:free,29567687647,0
 2026-10-09,Cohere,cohere,cohere/command-a-plus-05-2026,399088538,0
@@ -12644,11 +12644,11 @@ date,company,author,model,tokens,partial
 2026-10-10,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,27930906,0
 2026-10-10,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,23492694,0
 2026-10-10,ByteDance,bytedance-seed,Others,3302178,0
-2026-10-10,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-10-10,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-10-10,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-10,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-10,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-10-10,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-10-10,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-10-10,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-10,Cohere,cohere,cohere/north-mini-code-20260617:free,21194116676,0
 2026-10-10,Cohere,cohere,cohere/command-r7b-12-2024,113154333,0
 2026-10-10,Cohere,cohere,cohere/command-a-plus-05-2026,53927299,0
@@ -12898,11 +12898,11 @@ date,company,author,model,tokens,partial
 2026-10-11,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,39036945,0
 2026-10-11,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,28990268,0
 2026-10-11,ByteDance,bytedance-seed,Others,2884685,0
-2026-10-11,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-11,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-10-11,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-11,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-11,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-10-11,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-10-11,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-11,Cohere,cohere,cohere/north-mini-code-20260617:free,22998463485,0
 2026-10-11,Cohere,cohere,cohere/command-a-plus-05-2026,120091742,0
 2026-10-11,Cohere,cohere,cohere/command-r7b-12-2024,41632990,0
@@ -12911,7 +12911,7 @@ date,company,author,model,tokens,partial
 2026-10-11,Cohere,cohere,cohere/command-a-03-2025,3250317,0
 2026-10-11,Cohere,cohere,cohere/command-r-plus-08-2024,2010812,0
 2026-10-11,Cohere,cohere,cohere/rerank-4-pro,0,0
-2026-10-11,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-10-11,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-10-11,Cohere,cohere,Others,0,0
 2026-10-11,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,5679999203741,0
 2026-10-11,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,620184195288,0
@@ -13164,7 +13164,7 @@ date,company,author,model,tokens,partial
 2026-10-12,Cohere,cohere,cohere/north-mini-code-20260617,4465752,0
 2026-10-12,Cohere,cohere,cohere/command-r-plus-08-2024,3430291,0
 2026-10-12,Cohere,cohere,cohere/rerank-4-fast,0,0
-2026-10-12,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-10-12,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-10-12,Cohere,cohere,Others,0,0
 2026-10-12,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,6020103411859,0
 2026-10-12,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,601058335287,0
@@ -13409,10 +13409,10 @@ date,company,author,model,tokens,partial
 2026-10-13,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,18891982,0
 2026-10-13,ByteDance,bytedance-seed,Others,17878815,0
 2026-10-13,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-10-13,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-13,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-10-13,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-13,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-10-13,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-10-13,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-13,Cohere,cohere,cohere/north-mini-code-20260617:free,28415405318,0
 2026-10-13,Cohere,cohere,cohere/command-a-plus-05-2026,92941831,0
 2026-10-13,Cohere,cohere,cohere/command-a-03-2025,33974807,0
@@ -13663,9 +13663,9 @@ date,company,author,model,tokens,partial
 2026-10-14,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,20892824,0
 2026-10-14,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,10047514,0
 2026-10-14,ByteDance,bytedance-seed,Others,9814558,0
-2026-10-14,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-14,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-14,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-10-14,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-14,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-14,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-14,Cohere,cohere,cohere/north-mini-code-20260617:free,41117740802,0
@@ -13675,8 +13675,8 @@ date,company,author,model,tokens,partial
 2026-10-14,Cohere,cohere,cohere/command-a-03-2025,12044404,0
 2026-10-14,Cohere,cohere,cohere/command-r-plus-08-2024,6212907,0
 2026-10-14,Cohere,cohere,cohere/north-mini-code-20260617,5915405,0
-2026-10-14,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-10-14,Cohere,cohere,cohere/rerank-4-fast,0,0
+2026-10-14,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-10-14,Cohere,cohere,Others,0,0
 2026-10-14,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,4475607013116,0
 2026-10-14,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,995992235525,0
@@ -13920,10 +13920,10 @@ date,company,author,model,tokens,partial
 2026-10-15,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,59250579,0
 2026-10-15,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,22542485,0
 2026-10-15,ByteDance,bytedance-seed,Others,15788246,0
-2026-10-15,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-15,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-15,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-15,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-10-15,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-15,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-15,Cohere,cohere,cohere/north-mini-code-20260617:free,42407287066,0
 2026-10-15,Cohere,cohere,cohere/command-a-plus-05-2026,289708282,0
@@ -14179,11 +14179,11 @@ date,company,author,model,tokens,partial
 2026-10-16,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,19301393,0
 2026-10-16,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,13279429,0
 2026-10-16,ByteDance,bytedance-seed,Others,10716785,0
-2026-10-16,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-10-16,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-10-16,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-16,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-10-16,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-16,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-10-16,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-10-16,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-16,Cohere,cohere,cohere/north-mini-code-20260617:free,31871243364,0
 2026-10-16,Cohere,cohere,cohere/command-a-plus-05-2026,995242291,0
 2026-10-16,Cohere,cohere,cohere/command-r7b-12-2024,62717516,0
@@ -14192,7 +14192,7 @@ date,company,author,model,tokens,partial
 2026-10-16,Cohere,cohere,cohere/command-a-03-2025,6534024,0
 2026-10-16,Cohere,cohere,cohere/command-r-plus-08-2024,6180312,0
 2026-10-16,Cohere,cohere,cohere/rerank-4-pro,0,0
-2026-10-16,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-10-16,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-10-16,Cohere,cohere,Others,0,0
 2026-10-16,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,5413376462134,0
 2026-10-16,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,620535167693,0
@@ -14442,11 +14442,11 @@ date,company,author,model,tokens,partial
 2026-10-17,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,20855496,0
 2026-10-17,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,18994610,0
 2026-10-17,ByteDance,bytedance-seed,Others,5506849,0
-2026-10-17,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-17,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-10-17,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-17,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-17,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-10-17,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-10-17,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-17,Cohere,cohere,cohere/north-mini-code-20260617:free,24020349307,0
 2026-10-17,Cohere,cohere,cohere/command-a-plus-05-2026,45007858,0
 2026-10-17,Cohere,cohere,cohere/command-r7b-12-2024,29255476,0
@@ -14454,8 +14454,8 @@ date,company,author,model,tokens,partial
 2026-10-17,Cohere,cohere,cohere/north-mini-code-20260617,13259241,0
 2026-10-17,Cohere,cohere,cohere/command-r-plus-08-2024,5593603,0
 2026-10-17,Cohere,cohere,cohere/command-a-03-2025,1619697,0
-2026-10-17,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-10-17,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-10-17,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-10-17,Cohere,cohere,Others,0,0
 2026-10-17,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,4011074882084,0
 2026-10-17,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20261017,671568407932,0
@@ -14706,11 +14706,11 @@ date,company,author,model,tokens,partial
 2026-10-18,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,20731115,0
 2026-10-18,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,16186062,0
 2026-10-18,ByteDance,bytedance-seed,Others,6441410,0
-2026-10-18,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-18,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-10-18,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-18,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-18,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-10-18,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-10-18,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-18,Cohere,cohere,cohere/north-mini-code-20260617:free,20489348358,0
 2026-10-18,Cohere,cohere,cohere/command-r7b-12-2024,55180522,0
 2026-10-18,Cohere,cohere,cohere/command-a-plus-05-2026,50398641,0
@@ -14719,7 +14719,7 @@ date,company,author,model,tokens,partial
 2026-10-18,Cohere,cohere,cohere/command-r-plus-08-2024,3029449,0
 2026-10-18,Cohere,cohere,cohere/north-mini-code-20260617,2986936,0
 2026-10-18,Cohere,cohere,cohere/rerank-4-pro,0,0
-2026-10-18,Cohere,cohere,cohere/rerank-4-fast,0,0
+2026-10-18,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-10-18,Cohere,cohere,Others,0,0
 2026-10-18,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20261017,3040634926534,0
 2026-10-18,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,2623031517129,0
@@ -14969,10 +14969,10 @@ date,company,author,model,tokens,partial
 2026-10-19,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,40469806,0
 2026-10-19,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,21360876,0
 2026-10-19,ByteDance,bytedance-seed,Others,9816824,0
-2026-10-19,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-19,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-10-19,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-19,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-10-19,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-10-19,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-19,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-19,Cohere,cohere,cohere/north-mini-code-20260617:free,19739467968,0
 2026-10-19,Cohere,cohere,cohere/command-a-plus-05-2026,158635918,0
@@ -14982,7 +14982,7 @@ date,company,author,model,tokens,partial
 2026-10-19,Cohere,cohere,cohere/command-r-plus-08-2024,4140978,0
 2026-10-19,Cohere,cohere,cohere/north-mini-code-20260617,2634795,0
 2026-10-19,Cohere,cohere,cohere/rerank-v3.5,0,0
-2026-10-19,Cohere,cohere,cohere/rerank-4-pro,0,0
+2026-10-19,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-10-19,Cohere,cohere,Others,0,0
 2026-10-19,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20261017,3611787153188,0
 2026-10-19,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,2802773382962,0
@@ -15232,11 +15232,11 @@ date,company,author,model,tokens,partial
 2026-10-20,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,40801220,0
 2026-10-20,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,20514963,0
 2026-10-20,ByteDance,bytedance-seed,Others,6564868,0
-2026-10-20,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-10-20,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-10-20,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-10-20,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-20,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-10-20,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-10-20,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-10-20,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-10-20,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-20,Cohere,cohere,cohere/north-mini-code-20260617:free,18970488659,0
 2026-10-20,Cohere,cohere,cohere/command-a-plus-05-2026,81590696,0
 2026-10-20,Cohere,cohere,cohere/command-r7b-12-2024,32446700,0
@@ -15244,8 +15244,8 @@ date,company,author,model,tokens,partial
 2026-10-20,Cohere,cohere,cohere/command-a-03-2025,6989976,0
 2026-10-20,Cohere,cohere,cohere/command-r-plus-08-2024,4912344,0
 2026-10-20,Cohere,cohere,cohere/north-mini-code-20260617,922029,0
+2026-10-20,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-10-20,Cohere,cohere,cohere/rerank-4-fast,0,0
-2026-10-20,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-10-20,Cohere,cohere,Others,0,0
 2026-10-20,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20261017,4150519319140,0
 2026-10-20,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,2760544057714,0
@@ -15494,11 +15494,11 @@ date,company,author,model,tokens,partial
 2026-10-21,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,28598598,0
 2026-10-21,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,12199288,0
 2026-10-21,ByteDance,bytedance-seed,Others,5548084,0
-2026-10-21,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-10-21,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-21,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-21,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-10-21,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-21,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-10-21,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-21,Cohere,cohere,cohere/north-mini-code-20260617:free,17948495453,0
 2026-10-21,Cohere,cohere,cohere/command-a-plus-05-2026,762333798,0
 2026-10-21,Cohere,cohere,cohere/command-r7b-12-2024,18830461,0
@@ -15506,8 +15506,8 @@ date,company,author,model,tokens,partial
 2026-10-21,Cohere,cohere,cohere/command-a-03-2025,9694276,0
 2026-10-21,Cohere,cohere,cohere/command-r-plus-08-2024,4255894,0
 2026-10-21,Cohere,cohere,cohere/north-mini-code-20260617,2209140,0
+2026-10-21,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-10-21,Cohere,cohere,cohere/rerank-4-fast,0,0
-2026-10-21,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-10-21,Cohere,cohere,Others,0,0
 2026-10-21,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20261017,4984608777958,0
 2026-10-21,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,2855583884068,0
@@ -15758,11 +15758,11 @@ date,company,author,model,tokens,partial
 2026-10-22,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,21583395,0
 2026-10-22,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,9225057,0
 2026-10-22,ByteDance,bytedance-seed,Others,5023912,0
-2026-10-22,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-10-22,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-22,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-10-22,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-10-22,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-22,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-10-22,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-10-22,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-22,Cohere,cohere,cohere/north-mini-code-20260617:free,20049297064,0
 2026-10-22,Cohere,cohere,cohere/command-a-plus-05-2026,59383365,0
 2026-10-22,Cohere,cohere,cohere/command-r7b-12-2024,23888110,0
@@ -15770,8 +15770,8 @@ date,company,author,model,tokens,partial
 2026-10-22,Cohere,cohere,cohere/command-a-03-2025,9039901,0
 2026-10-22,Cohere,cohere,cohere/command-r-plus-08-2024,5501717,0
 2026-10-22,Cohere,cohere,cohere/north-mini-code-20260617,1808619,0
+2026-10-22,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-10-22,Cohere,cohere,cohere/rerank-4-fast,0,0
-2026-10-22,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-10-22,Cohere,cohere,Others,0,0
 2026-10-22,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20261017,5209085564144,0
 2026-10-22,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,2930690137250,0
@@ -16024,10 +16024,10 @@ date,company,author,model,tokens,partial
 2026-10-23,ByteDance,bytedance-seed,Others,51225726,0
 2026-10-23,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,25007068,0
 2026-10-23,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-10-23,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-10-23,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-10-23,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-23,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-10-23,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-10-23,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-10-23,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-23,Cohere,cohere,cohere/north-mini-code-20260617:free,23526397327,0
 2026-10-23,Cohere,cohere,cohere/command-a-plus-05-2026,30227593,0
 2026-10-23,Cohere,cohere,cohere/command-r7b-12-2024,24168093,0
@@ -16035,8 +16035,8 @@ date,company,author,model,tokens,partial
 2026-10-23,Cohere,cohere,cohere/command-a-03-2025,8190582,0
 2026-10-23,Cohere,cohere,cohere/command-r-plus-08-2024,7448492,0
 2026-10-23,Cohere,cohere,cohere/north-mini-code-20260617,1757731,0
-2026-10-23,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-10-23,Cohere,cohere,cohere/rerank-4-fast,0,0
+2026-10-23,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-10-23,Cohere,cohere,Others,0,0
 2026-10-23,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20261017,5047915249241,0
 2026-10-23,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,2483375610213,0
@@ -16288,11 +16288,11 @@ date,company,author,model,tokens,partial
 2026-10-24,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,61156029,0
 2026-10-24,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,25030276,0
 2026-10-24,ByteDance,bytedance-seed,Others,6585849,0
+2026-10-24,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-24,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-10-24,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-24,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-24,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-10-24,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-10-24,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-24,Cohere,cohere,cohere/north-mini-code-20260617:free,22585614340,0
 2026-10-24,Cohere,cohere,cohere/command-a-plus-05-2026,42946234,0
 2026-10-24,Cohere,cohere,cohere/command-r-08-2024,14798950,0
@@ -16300,8 +16300,8 @@ date,company,author,model,tokens,partial
 2026-10-24,Cohere,cohere,cohere/command-r-plus-08-2024,9206708,0
 2026-10-24,Cohere,cohere,cohere/command-a-03-2025,7629308,0
 2026-10-24,Cohere,cohere,cohere/north-mini-code-20260617,1786359,0
-2026-10-24,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-10-24,Cohere,cohere,cohere/rerank-4-fast,0,0
+2026-10-24,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-10-24,Cohere,cohere,Others,0,0
 2026-10-24,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20261017,4781179874821,0
 2026-10-24,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,2249887235983,0
@@ -16553,11 +16553,11 @@ date,company,author,model,tokens,partial
 2026-10-25,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,30125690,0
 2026-10-25,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,26186079,0
 2026-10-25,ByteDance,bytedance-seed,Others,22020462,0
+2026-10-25,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-10-25,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-25,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-25,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-10-25,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-25,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-10-25,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-25,Cohere,cohere,cohere/north-mini-code-20260617:free,22129211277,0
 2026-10-25,Cohere,cohere,cohere/command-a-plus-05-2026,143261882,0
 2026-10-25,Cohere,cohere,cohere/command-a-03-2025,21812896,0
@@ -16565,7 +16565,7 @@ date,company,author,model,tokens,partial
 2026-10-25,Cohere,cohere,cohere/command-r7b-12-2024,12343640,0
 2026-10-25,Cohere,cohere,cohere/command-r-plus-08-2024,5019001,0
 2026-10-25,Cohere,cohere,cohere/north-mini-code-20260617,1148265,0
-2026-10-25,Cohere,cohere,cohere/rerank-4-pro,0,0
+2026-10-25,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-10-25,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-10-25,Cohere,cohere,Others,0,0
 2026-10-25,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20261017,5768118144049,0
@@ -16821,11 +16821,11 @@ date,company,author,model,tokens,partial
 2026-10-26,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,44592125,0
 2026-10-26,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,34406093,0
 2026-10-26,ByteDance,bytedance-seed,Others,33063602,0
-2026-10-26,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-26,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-10-26,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-26,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-26,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-10-26,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-10-26,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-26,Cohere,cohere,cohere/north-mini-code-20260617:free,24071565510,0
 2026-10-26,Cohere,cohere,cohere/command-a-plus-05-2026,174051451,0
 2026-10-26,Cohere,cohere,cohere/command-r7b-12-2024,14136902,0
@@ -17092,8 +17092,8 @@ date,company,author,model,tokens,partial
 2026-10-27,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-27,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-27,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-10-27,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-27,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-10-27,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-27,Cohere,cohere,cohere/north-mini-code-20260617:free,23417512392,0
 2026-10-27,Cohere,cohere,cohere/command-a-plus-05-2026,342178927,0
 2026-10-27,Cohere,cohere,cohere/command-r7b-12-2024,14117175,0
@@ -17358,10 +17358,10 @@ date,company,author,model,tokens,partial
 2026-10-28,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,31209127,0
 2026-10-28,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,13131390,0
 2026-10-28,ByteDance,bytedance-seed,Others,11592220,0
-2026-10-28,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-28,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-10-28,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-28,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-10-28,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-10-28,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-28,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-28,Cohere,cohere,cohere/north-mini-code-20260617:free,23914210142,0
 2026-10-28,Cohere,cohere,cohere/command-a-plus-05-2026,181240800,0
@@ -17628,10 +17628,10 @@ date,company,author,model,tokens,partial
 2026-10-29,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,72272751,0
 2026-10-29,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,16194763,0
 2026-10-29,ByteDance,bytedance-seed,Others,2468007,0
-2026-10-29,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-29,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-29,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-10-29,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-10-29,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-29,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-10-29,Cohere,cohere,cohere/north-mini-code-20260617:free,29954018093,0
 2026-10-29,Cohere,cohere,cohere/command-a-plus-05-2026,255366951,0
@@ -17898,10 +17898,10 @@ date,company,author,model,tokens,partial
 2026-10-30,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,77647923,0
 2026-10-30,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,30370792,0
 2026-10-30,ByteDance,bytedance-seed,Others,11660526,0
-2026-10-30,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-10-30,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-30,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-30,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-10-30,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-10-30,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-30,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-10-30,Cohere,cohere,cohere/north-mini-code-20260617:free,31805032067,0
 2026-10-30,Cohere,cohere,cohere/command-a-plus-05-2026,177890254,0
@@ -17910,8 +17910,8 @@ date,company,author,model,tokens,partial
 2026-10-30,Cohere,cohere,cohere/north-mini-code-20260617,12450231,0
 2026-10-30,Cohere,cohere,cohere/command-r7b-12-2024,11966551,0
 2026-10-30,Cohere,cohere,cohere/command-r-plus-08-2024,3043041,0
-2026-10-30,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-10-30,Cohere,cohere,cohere/rerank-4-fast,0,0
+2026-10-30,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-10-30,Cohere,cohere,Others,0,0
 2026-10-30,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20261017,8163709696915,0
 2026-10-30,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,1826817188350,0
@@ -18168,10 +18168,10 @@ date,company,author,model,tokens,partial
 2026-10-31,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,8440338,0
 2026-10-31,ByteDance,bytedance-seed,Others,2012043,0
 2026-10-31,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-10-31,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-10-31,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-10-31,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-31,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-10-31,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-10-31,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-10-31,Cohere,cohere,cohere/north-mini-code-20260617:free,30674333142,0
 2026-10-31,Cohere,cohere,cohere/command-a-plus-05-2026,66669595,0
 2026-10-31,Cohere,cohere,cohere/command-r7b-12-2024,14315547,0
@@ -18180,7 +18180,7 @@ date,company,author,model,tokens,partial
 2026-10-31,Cohere,cohere,cohere/command-a-03-2025,4241119,0
 2026-10-31,Cohere,cohere,cohere/command-r-plus-08-2024,2696492,0
 2026-10-31,Cohere,cohere,cohere/rerank-4-fast,0,0
-2026-10-31,Cohere,cohere,cohere/rerank-4-pro,0,0
+2026-10-31,Cohere,cohere,cohere/rerank-v3.5,0,0
 2026-10-31,Cohere,cohere,Others,0,0
 2026-10-31,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20261017,7094390179753,0
 2026-10-31,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,1669373066820,0
@@ -18436,9 +18436,9 @@ date,company,author,model,tokens,partial
 2026-11-01,ByteDance,bytedance-seed,bytedance-seed/seed-1.6-20250625,13698314,0
 2026-11-01,ByteDance,bytedance-seed,Others,5855303,0
 2026-11-01,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-11-01,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-01,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-11-01,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-11-01,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-01,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-01,Cohere,cohere,cohere/north-mini-code-20260617:free,32988523433,0
 2026-11-01,Cohere,cohere,cohere/command-a-plus-05-2026,67494607,0
@@ -18447,8 +18447,8 @@ date,company,author,model,tokens,partial
 2026-11-01,Cohere,cohere,cohere/north-mini-code-20260617,13854279,0
 2026-11-01,Cohere,cohere,cohere/command-r-plus-08-2024,5540725,0
 2026-11-01,Cohere,cohere,cohere/command-a-03-2025,4528726,0
-2026-11-01,Cohere,cohere,cohere/rerank-4-pro,0,0
 2026-11-01,Cohere,cohere,cohere/rerank-v3.5,0,0
+2026-11-01,Cohere,cohere,cohere/rerank-4-fast,0,0
 2026-11-01,Cohere,cohere,Others,0,0
 2026-11-01,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20261017,6004258462568,0
 2026-11-01,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,2139663015197,0
@@ -18703,11 +18703,11 @@ date,company,author,model,tokens,partial
 2026-11-02,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,46871397,0
 2026-11-02,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,11001577,0
 2026-11-02,ByteDance,bytedance-seed,Others,7004964,0
-2026-11-02,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-11-02,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-02,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-11-02,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-02,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-11-02,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-11-02,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-11-02,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-02,Cohere,cohere,cohere/north-mini-code-20260617:free,35047226844,0
 2026-11-02,Cohere,cohere,cohere/command-a-plus-05-2026,704229714,0
 2026-11-02,Cohere,cohere,cohere/command-r7b-12-2024,45534419,0
@@ -18971,11 +18971,11 @@ date,company,author,model,tokens,partial
 2026-11-03,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,60571009,0
 2026-11-03,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,3661928,0
 2026-11-03,ByteDance,bytedance-seed,Others,2460405,0
-2026-11-03,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-03,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-11-03,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-11-03,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-11-03,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-11-03,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-11-03,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-03,Cohere,cohere,cohere/north-mini-code-20260617:free,34208768101,0
 2026-11-03,Cohere,cohere,cohere/command-a-plus-05-2026,609781080,0
 2026-11-03,Cohere,cohere,cohere/command-r7b-12-2024,48947311,0
@@ -19240,10 +19240,10 @@ date,company,author,model,tokens,partial
 2026-11-04,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,71075425,0
 2026-11-04,ByteDance,bytedance-seed,Others,6020401,0
 2026-11-04,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-11-04,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-04,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-04,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-11-04,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-11-04,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-04,Cohere,cohere,cohere/north-mini-code-20260617:free,27398639384,0
 2026-11-04,Cohere,cohere,cohere/rerank-5-pro-20261028,264585847,0
 2026-11-04,Cohere,cohere,cohere/rerank-5-fast-20261028,225798674,0
@@ -19513,8 +19513,8 @@ date,company,author,model,tokens,partial
 2026-11-05,ByteDance,bytedance-seed,Others,36526526,0
 2026-11-05,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-05,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-11-05,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-05,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-11-05,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-05,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-05,Cohere,cohere,cohere/north-mini-code-20260617:free,28087084652,0
 2026-11-05,Cohere,cohere,cohere/rerank-5-pro-20261028,796266263,0
@@ -19783,11 +19783,11 @@ date,company,author,model,tokens,partial
 2026-11-06,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,43387757,0
 2026-11-06,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,17106302,0
 2026-11-06,ByteDance,bytedance-seed,Others,3042175,0
+2026-11-06,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-11-06,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-06,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-06,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-11-06,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-11-06,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-11-06,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-06,Cohere,cohere,cohere/north-mini-code-20260617:free,26624753810,0
 2026-11-06,Cohere,cohere,cohere/rerank-5-fast-20261028,1023337235,0
 2026-11-06,Cohere,cohere,cohere/rerank-5-pro-20261028,745121741,0
@@ -19863,7 +19863,7 @@ date,company,author,model,tokens,partial
 2026-11-06,MiniMax,minimax,minimax/speech-2.8-turbo-20260716,96706,0
 2026-11-06,MiniMax,minimax,minimax/speech-2.8-hd-20260716,88216,0
 2026-11-06,MiniMax,minimax,minimax/minimax-m3-20260531:batch,218,0
-2026-11-06,MiniMax,minimax,minimax/hailuo-3-max-20260901,0,0
+2026-11-06,MiniMax,minimax,minimax/hailuo-2.3-20260420,0,0
 2026-11-06,MiniMax,minimax,Others,0,0
 2026-11-06,Mistral,mistralai,mistralai/mistral-nemo,39909695104,0
 2026-11-06,Mistral,mistralai,mistralai/mistral-large-4-0-20261006,33497086500,0
@@ -20054,11 +20054,11 @@ date,company,author,model,tokens,partial
 2026-11-07,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,54439020,0
 2026-11-07,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,18649934,0
 2026-11-07,ByteDance,bytedance-seed,Others,12300305,0
-2026-11-07,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-11-07,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-11-07,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-11-07,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-07,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-11-07,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-11-07,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-11-07,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-07,Cohere,cohere,cohere/north-mini-code-20260617:free,24392922357,0
 2026-11-07,Cohere,cohere,cohere/rerank-5-pro-20261028,728489573,0
 2026-11-07,Cohere,cohere,cohere/rerank-5-fast-20261028,488071515,0
@@ -20136,7 +20136,7 @@ date,company,author,model,tokens,partial
 2026-11-07,MiniMax,minimax,minimax/minimax-m3-20260531:batch,771896,0
 2026-11-07,MiniMax,minimax,minimax/speech-2.8-hd-20260716,148727,0
 2026-11-07,MiniMax,minimax,minimax/speech-2.8-turbo-20260716,68986,0
-2026-11-07,MiniMax,minimax,minimax/hailuo-3-max-20260901,0,0
+2026-11-07,MiniMax,minimax,minimax/hailuo-03-20260730,0,0
 2026-11-07,MiniMax,minimax,Others,0,0
 2026-11-07,Mistral,mistralai,mistralai/mistral-nemo,51211440556,0
 2026-11-07,Mistral,mistralai,mistralai/mistral-large-4-0-20261006,6553632121,0
@@ -20327,9 +20327,9 @@ date,company,author,model,tokens,partial
 2026-11-08,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,4631143,0
 2026-11-08,ByteDance,bytedance-seed,Others,2477947,0
 2026-11-08,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-11-08,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-08,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-08,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
-2026-11-08,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-08,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-11-08,Cohere,cohere,cohere/north-mini-code-20260617:free,24260564114,0
 2026-11-08,Cohere,cohere,cohere/rerank-5-fast-20261028,469829053,0
@@ -20408,7 +20408,7 @@ date,company,author,model,tokens,partial
 2026-11-08,MiniMax,minimax,minimax/minimax-m1,3405491,0
 2026-11-08,MiniMax,minimax,minimax/speech-2.8-hd-20260716,86612,0
 2026-11-08,MiniMax,minimax,minimax/speech-2.8-turbo-20260716,83310,0
-2026-11-08,MiniMax,minimax,minimax/hailuo-3-max-20260901,0,0
+2026-11-08,MiniMax,minimax,minimax/hailuo-03-20260730,0,0
 2026-11-08,MiniMax,minimax,Others,0,0
 2026-11-08,Mistral,mistralai,mistralai/mistral-nemo,60058401952,0
 2026-11-08,Mistral,mistralai,mistralai/mistral-large-4-0-20261006,8303102605,0
@@ -20601,11 +20601,11 @@ date,company,author,model,tokens,partial
 2026-11-09,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,45377974,0
 2026-11-09,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,31379120,0
 2026-11-09,ByteDance,bytedance-seed,Others,10329815,0
-2026-11-09,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-11-09,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-11-09,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-11-09,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-09,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
+2026-11-09,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-11-09,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-11-09,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-11-09,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-09,Cohere,cohere,cohere/north-mini-code-20260617:free,28837820965,0
 2026-11-09,Cohere,cohere,cohere/rerank-5-fast-20261028,730188256,0
 2026-11-09,Cohere,cohere,cohere/rerank-5-pro-20261028,354331576,0
@@ -20683,7 +20683,7 @@ date,company,author,model,tokens,partial
 2026-11-09,MiniMax,minimax,minimax/minimax-m3-20260531:batch,4341907,0
 2026-11-09,MiniMax,minimax,minimax/speech-2.8-turbo-20260716,133645,0
 2026-11-09,MiniMax,minimax,minimax/speech-2.8-hd-20260716,92879,0
-2026-11-09,MiniMax,minimax,minimax/hailuo-2.3-20260420,0,0
+2026-11-09,MiniMax,minimax,minimax/hailuo-03-20260730,0,0
 2026-11-09,MiniMax,minimax,Others,0,0
 2026-11-09,Mistral,mistralai,mistralai/mistral-nemo,48409194887,0
 2026-11-09,Mistral,mistralai,mistralai/mistral-large-4-0-20261006,7384553103,0
@@ -20879,10 +20879,10 @@ date,company,author,model,tokens,partial
 2026-11-10,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,25657739,0
 2026-11-10,ByteDance,bytedance-seed,Others,18741408,0
 2026-11-10,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-11-10,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-11-10,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-11-10,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-10,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-11-10,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-11-10,Cohere,cohere,cohere/north-mini-code-20260617:free,28368394585,0
 2026-11-10,Cohere,cohere,cohere/rerank-5-fast-20261028,620662961,0
 2026-11-10,Cohere,cohere,cohere/rerank-5-pro-20261028,249549455,0
@@ -20960,7 +20960,7 @@ date,company,author,model,tokens,partial
 2026-11-10,MiniMax,minimax,minimax/minimax-h3-image-20261110,3569961,0
 2026-11-10,MiniMax,minimax,minimax/speech-2.8-turbo-20260716,187295,0
 2026-11-10,MiniMax,minimax,minimax/speech-2.8-hd-20260716,72931,0
-2026-11-10,MiniMax,minimax,minimax/hailuo-2.3-20260420,0,0
+2026-11-10,MiniMax,minimax,minimax/hailuo-3-max-20260901,0,0
 2026-11-10,MiniMax,minimax,Others,0,0
 2026-11-10,Mistral,mistralai,mistralai/mistral-nemo,48929574336,0
 2026-11-10,Mistral,mistralai,mistralai/mistral-large-4-0-20261006,14369293332,0
@@ -21157,10 +21157,10 @@ date,company,author,model,tokens,partial
 2026-11-11,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,120367784,0
 2026-11-11,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-code-20260730,2774286,0
 2026-11-11,ByteDance,bytedance-seed,Others,1509199,0
-2026-11-11,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-11-11,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-11-11,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-11,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-11-11,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-11-11,ByteDance,bytedance,bytedance/seedance-1-5-pro-20260320,0,0
 2026-11-11,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-11,Cohere,cohere,cohere/north-mini-code-20260617:free,30766210517,0
 2026-11-11,Cohere,cohere,cohere/rerank-5-fast-20261028,546949209,0
@@ -21439,9 +21439,9 @@ date,company,author,model,tokens,partial
 2026-11-12,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,74395490,0
 2026-11-12,ByteDance,bytedance-seed,bytedance-seed/seedream-5-5-20261112,17328365,0
 2026-11-12,ByteDance,bytedance-seed,bytedance-seed/seed-audio-1-0-20260630,369693,0
-2026-11-12,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-11-12,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-11-12,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-11-12,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-11-12,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-12,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-12,Cohere,cohere,cohere/north-mini-code-20260617:free,27065985391,0
 2026-11-12,Cohere,cohere,cohere/rerank-5-fast-20261028,645047803,0
@@ -21725,9 +21725,9 @@ date,company,author,model,tokens,partial
 2026-11-13,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,54629558,0
 2026-11-13,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,29925097,0
 2026-11-13,ByteDance,bytedance-seed,bytedance-seed/seed-audio-1-0-20260630,190758,0
+2026-11-13,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-13,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-13,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-11-13,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-13,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-13,Cohere,cohere,cohere/north-mini-code-20260617:free,25406724469,0
 2026-11-13,Cohere,cohere,cohere/rerank-5-fast-20261028,897858811,0
@@ -22013,9 +22013,9 @@ date,company,author,model,tokens,partial
 2026-11-14,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,49156464,0
 2026-11-14,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,30199161,0
 2026-11-14,ByteDance,bytedance-seed,bytedance-seed/seed-audio-1-0-20260630,316680,0
-2026-11-14,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-14,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-11-14,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-11-14,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-14,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-14,Cohere,cohere,cohere/north-mini-code-20260617:free,25221593586,0
 2026-11-14,Cohere,cohere,cohere/rerank-5-fast-20261028,487515368,0
@@ -22298,9 +22298,9 @@ date,company,author,model,tokens,partial
 2026-11-15,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,27341097,0
 2026-11-15,ByteDance,bytedance-seed,bytedance-seed/seed-audio-1-0-20260630,333055,0
 2026-11-15,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-11-15,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-15,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-15,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-11-15,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-15,Cohere,cohere,cohere/north-mini-code-20260617:free,24190424087,0
 2026-11-15,Cohere,cohere,cohere/rerank-5-fast-20261028,517751316,0
 2026-11-15,Cohere,cohere,cohere/rerank-5-pro-20261028,250368047,0
@@ -22582,9 +22582,9 @@ date,company,author,model,tokens,partial
 2026-11-16,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,33665997,0
 2026-11-16,ByteDance,bytedance-seed,bytedance-seed/seed-audio-1-0-20260630,370188,0
 2026-11-16,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-11-16,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-11-16,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-11-16,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-11-16,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-11-16,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-16,Cohere,cohere,cohere/north-mini-code-20260617:free,26554531907,0
 2026-11-16,Cohere,cohere,cohere/rerank-5-fast-20261028,870102315,0
 2026-11-16,Cohere,cohere,cohere/rerank-5-pro-20261028,510410286,0
@@ -22862,10 +22862,10 @@ date,company,author,model,tokens,partial
 2026-11-17,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,48540526,0
 2026-11-17,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,45695278,0
 2026-11-17,ByteDance,bytedance-seed,bytedance-seed/seed-audio-1-0-20260630,506135,0
-2026-11-17,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
-2026-11-17,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-11-17,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-17,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-11-17,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-11-17,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
 2026-11-17,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-17,Cohere,cohere,cohere/north-mini-code-20260617:free,27864610056,0
 2026-11-17,Cohere,cohere,cohere/rerank-5-fast-20261028,799470493,0
@@ -23147,11 +23147,11 @@ date,company,author,model,tokens,partial
 2026-11-18,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,70383545,0
 2026-11-18,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,44544849,0
 2026-11-18,ByteDance,bytedance-seed,bytedance-seed/seed-audio-1-0-20260630,363127,0
-2026-11-18,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-11-18,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
-2026-11-18,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-11-18,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-18,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-11-18,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
+2026-11-18,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-11-18,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-11-18,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-11-18,Cohere,cohere,cohere/north-mini-code-20260617:free,27786465270,0
 2026-11-18,Cohere,cohere,cohere/rerank-5-fast-20261028,676717204,0
 2026-11-18,Cohere,cohere,cohere/command-a-plus-05-2026,505582749,0
@@ -23431,10 +23431,10 @@ date,company,author,model,tokens,partial
 2026-11-19,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,61321017,0
 2026-11-19,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,31592980,0
 2026-11-19,ByteDance,bytedance-seed,bytedance-seed/seed-audio-1-0-20260630,264404,0
-2026-11-19,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
+2026-11-19,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-19,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-11-19,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
-2026-11-19,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-11-19,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
 2026-11-19,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-19,Cohere,cohere,cohere/north-mini-code-20260617:free,28915089938,0
 2026-11-19,Cohere,cohere,cohere/rerank-5-fast-20261028,816020799,0
@@ -23717,11 +23717,11 @@ date,company,author,model,tokens,partial
 2026-11-20,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,49737726,0
 2026-11-20,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,34306643,0
 2026-11-20,ByteDance,bytedance-seed,bytedance-seed/seed-audio-1-0-20260630,1055874,0
-2026-11-20,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-11-20,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
-2026-11-20,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
-2026-11-20,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-20,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-11-20,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-11-20,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-11-20,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
+2026-11-20,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-20,Cohere,cohere,cohere/north-mini-code-20260617:free,2376074823,0
 2026-11-20,Cohere,cohere,cohere/rerank-5-fast-20261028,648838412,0
 2026-11-20,Cohere,cohere,cohere/rerank-5-pro-20261028,304950773,0
@@ -24001,11 +24001,11 @@ date,company,author,model,tokens,partial
 2026-11-21,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,40208199,0
 2026-11-21,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,33006367,0
 2026-11-21,ByteDance,bytedance-seed,bytedance-seed/seed-audio-1-0-20260630,249861,0
-2026-11-21,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
-2026-11-21,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-21,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-11-21,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-11-21,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
 2026-11-21,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-11-21,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-11-21,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-21,Cohere,cohere,cohere/rerank-5-fast-20261028,486608256,0
 2026-11-21,Cohere,cohere,cohere/rerank-5-pro-20261028,147270717,0
 2026-11-21,Cohere,cohere,cohere/command-a-plus-05-2026,124648971,0
@@ -24281,10 +24281,10 @@ date,company,author,model,tokens,partial
 2026-11-22,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,38900229,0
 2026-11-22,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,33497548,0
 2026-11-22,ByteDance,bytedance-seed,bytedance-seed/seed-audio-1-0-20260630,315177,0
+2026-11-22,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
 2026-11-22,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-22,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-22,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-11-22,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
 2026-11-22,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-22,Cohere,cohere,cohere/rerank-5-fast-20261028,477805283,0
 2026-11-22,Cohere,cohere,cohere/rerank-5-pro-20261028,165261444,0
@@ -24359,7 +24359,7 @@ date,company,author,model,tokens,partial
 2026-11-22,MiniMax,minimax,minimax/minimax-h3-image-20261110,1384980,0
 2026-11-22,MiniMax,minimax,minimax/speech-2.8-hd-20260716,8117,0
 2026-11-22,MiniMax,minimax,minimax/speech-2.8-turbo-20260716,311,0
-2026-11-22,MiniMax,minimax,minimax/hailuo-3-max-20260901,0,0
+2026-11-22,MiniMax,minimax,minimax/hailuo-03-20260730,0,0
 2026-11-22,MiniMax,minimax,Others,0,0
 2026-11-22,Mistral,mistralai,mistralai/mistral-nemo,61699848689,0
 2026-11-22,Mistral,mistralai,mistralai/mistral-large-4-0-20261006,6480202216,0
@@ -24561,11 +24561,11 @@ date,company,author,model,tokens,partial
 2026-11-23,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,51734676,0
 2026-11-23,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,42219372,0
 2026-11-23,ByteDance,bytedance-seed,bytedance-seed/seed-audio-1-0-20260630,323534,0
-2026-11-23,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
-2026-11-23,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-11-23,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-23,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
+2026-11-23,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-11-23,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-23,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-11-23,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-23,Cohere,cohere,cohere/rerank-5-fast-20261028,1111031352,0
 2026-11-23,Cohere,cohere,cohere/rerank-5-pro-20261028,935557034,0
 2026-11-23,Cohere,cohere,cohere/embed-5-pro-20261029,232424533,0
@@ -24843,11 +24843,11 @@ date,company,author,model,tokens,partial
 2026-11-24,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,38531863,0
 2026-11-24,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,34121787,0
 2026-11-24,ByteDance,bytedance-seed,bytedance-seed/seed-audio-1-0-20260630,372536,0
-2026-11-24,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
-2026-11-24,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-24,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
 2026-11-24,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-11-24,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
 2026-11-24,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-11-24,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-24,Cohere,cohere,cohere/rerank-5-fast-20261028,1090810408,0
 2026-11-24,Cohere,cohere,cohere/embed-5-pro-20261029,464196503,0
 2026-11-24,Cohere,cohere,cohere/rerank-5-pro-20261028,417347805,0
@@ -25126,11 +25126,11 @@ date,company,author,model,tokens,partial
 2026-11-25,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,51224122,0
 2026-11-25,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,29848128,0
 2026-11-25,ByteDance,bytedance-seed,bytedance-seed/seed-audio-1-0-20260630,402002,0
-2026-11-25,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-25,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
 2026-11-25,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
-2026-11-25,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
 2026-11-25,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-11-25,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-11-25,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
 2026-11-25,Cohere,cohere,cohere/rerank-5-fast-20261028,849766526,0
 2026-11-25,Cohere,cohere,cohere/rerank-5-pro-20261028,697135263,0
 2026-11-25,Cohere,cohere,cohere/embed-5-pro-20261029,221999307,0
@@ -25357,282 +25357,420 @@ date,company,author,model,tokens,partial
 2026-11-25,xAI,x-ai,x-ai/grok-4.6-20260810:batch,4252448,0
 2026-11-25,xAI,x-ai,Others,2809463,0
 2026-11-25,xAI,x-ai,x-ai/grok-4.7-20260916:batch,2387945,0
-2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3.8-flash-20260826,139293832834,1
-2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3.6-35b-a3b-20260415,119215494571,1
-2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3.8-27b-20260814,116864037851,1
-2026-11-26,Alibaba (Qwen),qwen,Others,68909728014,1
-2026-11-26,Alibaba (Qwen),qwen,qwen/qwen4-max-20261115,54030200040,1
-2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3.7-flash-20260727,52165409864,1
-2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3-embedding-8b,21594930252,1
-2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3.5-397b-a17b-20260216,10109759495,1
-2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3.7-plus-20260602,8942411022,1
-2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3.8-max-20260902,7677088590,1
-2026-11-26,Amazon,amazon,amazon/nova-micro-v1,2356038382,1
-2026-11-26,Amazon,amazon,amazon/nova-2-lite-v1,186305273,1
-2026-11-26,Amazon,amazon,amazon/nova-lite-v1,146779039,1
-2026-11-26,Amazon,amazon,amazon/titan-embed-text-v2-20261026,17341698,1
-2026-11-26,Amazon,amazon,amazon/nova-pro-v1,13822403,1
-2026-11-26,Amazon,amazon,amazon/titan-embed-text-v1-20261026,1228101,1
-2026-11-26,Amazon,amazon,amazon/titan-embed-image-v1-20261026,6294,1
-2026-11-26,Amazon,amazon,amazon/nova-premier-v1,0,1
-2026-11-26,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.0-flash-20260723,11579827470,1
-2026-11-26,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.1-flash-20261002,5450568964,1
-2026-11-26,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.2-flash-20261113:free,4348498972,1
-2026-11-26,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.0-flash-vl-20260910,391087179,1
-2026-11-26,Ant Group (inclusionAI),inclusionai,inclusionai/lingsante-3.1-air-vl-20261126,229576526,1
-2026-11-26,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.0-tiny-20260806,79307173,1
-2026-11-26,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.2-flash-20261113,3858233,1
-2026-11-26,Anthropic,anthropic,anthropic/claude-opus-5.5-20260921,1026489715233,1
-2026-11-26,Anthropic,anthropic,anthropic/claude-haiku-5.5-20261007,449808821627,1
-2026-11-26,Anthropic,anthropic,anthropic/claude-sonnet-5.5-20260928,360531460960,1
-2026-11-26,Anthropic,anthropic,anthropic/claude-fable-5.2-20261109,110491976042,1
-2026-11-26,Anthropic,anthropic,Others,64467966029,1
-2026-11-26,Anthropic,anthropic,anthropic/claude-sonnet-5-20260630,60273362410,1
-2026-11-26,Anthropic,anthropic,anthropic/claude-4.5-opus-20251124,35924339069,1
-2026-11-26,Anthropic,anthropic,anthropic/claude-opus-5-20260723,26576305889,1
-2026-11-26,Anthropic,anthropic,anthropic/claude-4.6-sonnet-20260217,26377470385,1
-2026-11-26,Anthropic,anthropic,anthropic/claude-4.6-opus-20260205,26166408082,1
-2026-11-26,Baidu,baidu,baidu/ernie-5.5-flash-preview-20261110:free,390624243839,1
-2026-11-26,Baidu,baidu,baidu/ernie-light-dt-1.0-intl-20261110,98349871,1
-2026-11-26,Baidu,baidu,baidu/ernie-5.5-flash-preview-20261110,18276350,1
-2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-lite-20260309,6711147727,1
-2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seed-2-1-turbo-20260810,3162636094,1
-2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seedream-5-5-20261112,379832654,1
-2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-flash-20261001,347548319,1
-2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-mini-20260224,271184117,1
-2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seedream-4.5-20251203,150920581,1
-2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-pro-20260812,79074014,1
-2026-11-26,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,66846425,1
-2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,34456343,1
-2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seed-tts-3-0-20261125,332044,1
-2026-11-26,ByteDance,bytedance-seed,Others,249354,1
-2026-11-26,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,1
-2026-11-26,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,1
-2026-11-26,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,1
-2026-11-26,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,1
-2026-11-26,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,1
-2026-11-26,Cohere,cohere,cohere/rerank-5-fast-20261028,847343514,1
-2026-11-26,Cohere,cohere,cohere/rerank-5-pro-20261028,713814470,1
-2026-11-26,Cohere,cohere,cohere/embed-5-pro-20261029,242580849,1
-2026-11-26,Cohere,cohere,cohere/embed-5-fast-20261029,165207134,1
-2026-11-26,Cohere,cohere,cohere/command-a-plus-05-2026,72070099,1
-2026-11-26,Cohere,cohere,cohere/command-r7b-12-2024,49472464,1
-2026-11-26,Cohere,cohere,cohere/command-r-08-2024,10693297,1
-2026-11-26,Cohere,cohere,cohere/command-r-plus-08-2024,7313889,1
-2026-11-26,Cohere,cohere,cohere/command-a-03-2025,4642861,1
-2026-11-26,Cohere,cohere,Others,0,1
-2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20261017,12683657241781,1
-2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,1883295261191,1
-2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,374537067264,1
-2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,241722256410,1
-2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v4-pro-20260813,96753968012,1
-2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v4-pro-20260423,79026274690,1
-2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v3.2-20251201,38513026803,1
-2026-11-26,DeepSeek,deepseek,Others,13960389536,1
-2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v4-flash-vision-exp-20260821,9478643418,1
-2026-11-26,DeepSeek,deepseek,deepseek/deepseek-chat-v3.1,6315717963,1
-2026-11-26,Google,google,google/gemini-4-neon-20261118,422602438678,1
-2026-11-26,Google,google,google/gemini-3.8-flash-20260902,232834681073,1
-2026-11-26,Google,google,Others,222120953537,1
-2026-11-26,Google,google,google/gemini-4-carbon-20261110,153714482625,1
-2026-11-26,Google,google,google/gemini-4-argon-20261013,101354698466,1
-2026-11-26,Google,google,google/gemma-4-26b-a4b-it-20260403,97569282422,1
-2026-11-26,Google,google,google/gemini-3-flash-preview-20251217,87275937130,1
-2026-11-26,Google,google,google/gemma-4-31b-it-20260402,85186280133,1
-2026-11-26,Google,google,google/gemini-3.1-flash-lite-20260507,76010115659,1
-2026-11-26,Google,google,google/gemini-4-hydrogen-20261112,75374656616,1
-2026-11-26,IBM,ibm-granite,ibm-granite/granite-4.2-8b-20260831,1546782642,1
-2026-11-26,Liquid AI,liquid,liquid/d1-ultra-20261015,93999300848,1
-2026-11-26,Liquid AI,liquid,liquid/d1.2-20261116,11373439873,1
-2026-11-26,Liquid AI,liquid,liquid/lfm-3-1.7b-20261106:free,8510485240,1
-2026-11-26,Liquid AI,liquid,liquid/d1.2-ultra-20261116,4665160912,1
-2026-11-26,Liquid AI,liquid,liquid/lfm-2.5-24b-a2b-20261012,128818588,1
-2026-11-26,Liquid AI,liquid,liquid/lfm-3-1.7b-20261106,99093686,1
-2026-11-26,Meta,meta,meta/muse-spark-1.3-contributor-20260902,473679587643,1
-2026-11-26,Meta,meta,meta/muse-ember-20261109,159151090392,1
-2026-11-26,Meta,meta,meta/muse-wonder-20261012,21239159581,1
-2026-11-26,Meta,meta,meta/muse-spark-1.3-20260902,7453781223,1
-2026-11-26,Meta,meta,meta/muse-spark-open-20261015,5400605398,1
-2026-11-26,Meta,meta-llama,meta-llama/llama-3.1-8b-instruct,4163161206,1
-2026-11-26,Meta,meta,meta/muse-spark-1.2-contributor-20260805,3562923492,1
-2026-11-26,Meta,meta-llama,meta-llama/llama-3.3-70b-instruct,3443534648,1
-2026-11-26,Meta,meta,meta/muse-glimmer-30b-20260810,1496236213,1
-2026-11-26,Meta,meta-llama,meta-llama/llama-4-maverick-17b-128e-instruct,1430509582,1
-2026-11-26,Meta,meta-llama,meta-llama/llama-4-scout-17b-16e-instruct,760296252,1
-2026-11-26,Meta,meta,meta/muse-spark-1.2-20260805,665184192,1
-2026-11-26,Meta,meta-llama,meta-llama/llama-guard-4-12b,374339153,1
-2026-11-26,Meta,meta-llama,meta-llama/llama-3.1-70b-instruct,271171744,1
-2026-11-26,Meta,meta,meta/muse-spark-1.1-20260709,254328242,1
-2026-11-26,Meta,meta,Others,189210874,1
-2026-11-26,Meta,meta-llama,meta-llama/llama-3.2-3b-instruct,44618215,1
-2026-11-26,Microsoft,microsoft,microsoft/microsoft-decision-1-20261009,10125232150,1
-2026-11-26,Microsoft,microsoft,microsoft/microsoft-decision-1.1-20261117,3364638855,1
-2026-11-26,Microsoft,microsoft,microsoft/phi-4,97284803,1
-2026-11-26,Microsoft,microsoft,microsoft/mai-image-2.7-flash-20261117,19324918,1
-2026-11-26,Microsoft,microsoft,microsoft/mai-image-2.7-20261117,10452765,1
-2026-11-26,Microsoft,microsoft,microsoft/mai-image-2.6-20260904,6795110,1
-2026-11-26,Microsoft,microsoft,microsoft/mai-image-2.6-flash-20260904,5401043,1
-2026-11-26,Microsoft,microsoft,microsoft/mai-image-2.5,1604089,1
-2026-11-26,Microsoft,microsoft,Others,922011,1
-2026-11-26,Microsoft,microsoft,microsoft/mai-voice-2,524839,1
-2026-11-26,MiniMax,minimax,minimax/minimax-m3.1-flash-20261019,662197689917,1
-2026-11-26,MiniMax,minimax,minimax/minimax-m3-20260531,61411624432,1
-2026-11-26,MiniMax,minimax,minimax/minimax-m2.5-20260211,1191561940,1
-2026-11-26,MiniMax,minimax,minimax/minimax-m2.7-20260318,570965706,1
-2026-11-26,MiniMax,minimax,minimax/minimax-h3-image-20261110,772153,1
-2026-11-26,MiniMax,minimax,minimax/minimax-m3-20260531:batch,314570,1
-2026-11-26,MiniMax,minimax,minimax/minimax-h3-image-highspeed-20261110,93290,1
-2026-11-26,MiniMax,minimax,minimax/speech-2.8-hd-20260716,10450,1
-2026-11-26,MiniMax,minimax,minimax/speech-2.8-turbo-20260716,569,1
-2026-11-26,MiniMax,minimax,Others,0,1
-2026-11-26,Mistral,mistralai,mistralai/mistral-nemo,50479277198,1
-2026-11-26,Mistral,mistralai,mistralai/mistral-large-4-0-20261006,10466728549,1
-2026-11-26,Mistral,mistralai,mistralai/mistral-small-3.2-24b-instruct-2506,3279439705,1
-2026-11-26,Mistral,mistralai,mistralai/mistral-small-2603,2198280967,1
-2026-11-26,Mistral,mistralai,Others,1658077493,1
-2026-11-26,Mistral,mistralai,mistralai/ministral-8b-2512,639700191,1
-2026-11-26,Mistral,mistralai,mistralai/ministral-3b-2512,622535264,1
-2026-11-26,Mistral,mistralai,mistralai/mistral-small-24b-instruct-2501,514604798,1
-2026-11-26,Mistral,mistralai,mistralai/devstral-2512,442509726,1
-2026-11-26,Mistral,mistralai,mistralai/mistral-embed-2312,404992721,1
-2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k3.1-pro-20261023,737614473461,1
-2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k3-20260715,101927552289,1
-2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k2.6-20260420,10681723474,1
-2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k2.7-code-20260612,8225213366,1
-2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k2.5-0127,3873603966,1
-2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k2,27776182,1
-2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k3.1-pro-20261023:batch,12672789,1
-2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k2-0905,5341246,1
-2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k3-20260715:batch,1774,1
-2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,553716420605,1
-2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3.5-super-vl-20261015:free,306376902198,1
-2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3.5-lightning-20260807:free,53653931463,1
-2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428:free,26421631092,1
-2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3.5-super-vl-20261015,18171020744,1
-2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3.5-lightning-20260807,2805536198,1
-2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3-ultra-550b-a55b-20260604,2560791820,1
-2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3-nano-30b-a3b,1100595710,1
-2026-11-26,NVIDIA,nvidia,Others,997070486,1
-2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3-super-120b-a12b-20230311,848610788,1
-2026-11-26,Nous Research,nousresearch,nousresearch/hermes-4-405b,192344393,1
-2026-11-26,OpenAI,openai,openai/gpt-6-luna-20260922,1199699180077,1
-2026-11-26,OpenAI,openai,Others,242513307577,1
-2026-11-26,OpenAI,openai,openai/gpt-6.1-sol-20260929,237104636015,1
-2026-11-26,OpenAI,openai,openai/gpt-6.2-sol-20261117,196751771467,1
-2026-11-26,OpenAI,openai,openai/gpt-5.6-luna-20260709,136539775598,1
-2026-11-26,OpenAI,openai,openai/gpt-6.1-terra-20261026,109681941477,1
-2026-11-26,OpenAI,openai,openai/gpt-6-luna-pro-20260922,84235518938,1
-2026-11-26,OpenAI,openai,openai/gpt-6.2-astra-20261117,80919514181,1
-2026-11-26,OpenAI,openai,openai/gpt-oss-120b,46708796582,1
-2026-11-26,OpenAI,openai,openai/gpt-6-sol-20260922,31384412963,1
-2026-11-26,Perplexity,perplexity,perplexity/pplx-decider-v1.3-20261112:free,108127511334,1
-2026-11-26,Perplexity,perplexity,perplexity/pplx-decider-v1.2-20261016,56296988162,1
-2026-11-26,Perplexity,perplexity,perplexity/pplx-decider-flash-v1.2-20261016,2049736775,1
-2026-11-26,Perplexity,perplexity,perplexity/pplx-embed-v1-0.6B,1227336300,1
-2026-11-26,Perplexity,perplexity,perplexity/pplx-decider-flash-v1.3-20261112:free,918422165,1
-2026-11-26,Perplexity,perplexity,perplexity/sonar,482236967,1
-2026-11-26,Perplexity,perplexity,perplexity/pplx-embed-v2-context-0.6b-20261120,477500806,1
-2026-11-26,Perplexity,perplexity,perplexity/pplx-embed-v1-4B,422126566,1
-2026-11-26,Perplexity,perplexity,perplexity/pplx-embed-v2-context-9b-20261120,265783119,1
-2026-11-26,Perplexity,perplexity,Others,204325191,1
-2026-11-26,Reflection AI,reflection,reflection/beam-1.0-501b-a23b-20261016,10966391759,1
-2026-11-26,Reka,rekaai,rekaai/reka-flash-3,11565108,1
-2026-11-26,Reka,rekaai,rekaai/reka-edge-2603,7379501,1
-2026-11-26,Sakana AI,sakana,sakana/fugu-max-20260911,104805043,1
-2026-11-26,Sakana AI,sakana,sakana/fugu-ultra-20260615,11877173,1
-2026-11-26,Sakana AI,sakana,sakana/fugu-ultra-v2-20260911,5166440,1
-2026-11-26,Sakana AI,sakana,sakana/namazu-20260811,2232221,1
-2026-11-26,StepFun,stepfun,stepfun/step-5-preview-20261008,479808064493,1
-2026-11-26,StepFun,stepfun,stepfun/step-3.7-flash-20260528,1202554396,1
-2026-11-26,Tencent,tencent,tencent/hy4-flash-20261116,4104856357707,1
-2026-11-26,Tencent,tencent,tencent/hy4-20261104,173841496487,1
-2026-11-26,Tencent,tencent,tencent/hy4-preview-20260827,7716990928,1
-2026-11-26,Tencent,tencent,tencent/hy3-20260706,3162096437,1
-2026-11-26,Tencent,tencent,tencent/hy-image-v3.5-preview-20260922,260564535,1
-2026-11-26,Tencent,tencent,tencent/hy-mt2-30b-a3b-20260521,35677509,1
-2026-11-26,Tencent,tencent,tencent/hy-mt2-7b-20260521,21800359,1
-2026-11-26,Tencent,tencent,tencent/hy-world-2.1-panorama-20261112,19260742,1
-2026-11-26,Tencent,tencent,tencent/hy-mt2-1.8b-20260521,3065822,1
-2026-11-26,Thinking Machines,thinkingmachines,thinkingmachines/inkling-2-small-20261107,90936130190,1
-2026-11-26,Thinking Machines,thinkingmachines,thinkingmachines/inkling-2-mini-20261120,71133705658,1
-2026-11-26,Thinking Machines,thinkingmachines,thinkingmachines/inkling-small-20260730,1644407606,1
-2026-11-26,Thinking Machines,thinkingmachines,thinkingmachines/inkling-20260715,410626639,1
-2026-11-26,Upstage,upstage,upstage/solar-mini4-20260922,149070277248,1
-2026-11-26,Upstage,upstage,upstage/solar-pro4-20260810,50891830902,1
-2026-11-26,Upstage,upstage,upstage/solar-mini-4-5-20261125,26603927603,1
-2026-11-26,Upstage,upstage,upstage/solar-pro-4-contributor-20261125,791583669,1
-2026-11-26,Upstage,upstage,upstage/solar-decide-flash-20261008,170628169,1
-2026-11-26,Upstage,upstage,upstage/solar-decide-20260928,139480292,1
-2026-11-26,Writer,writer,writer/palmyra-x5-20250428,5093763,1
-2026-11-26,Xiaomi,xiaomi,xiaomi/mimo-v2.6-flash-20260921,371189657382,1
-2026-11-26,Xiaomi,xiaomi,xiaomi/mimo-v2.6-pro-20260921,101974648254,1
-2026-11-26,Xiaomi,xiaomi,xiaomi/mimo-v2.6-pro-ultraspeed-20260921,3471140061,1
-2026-11-26,Xiaomi,xiaomi,xiaomi/mimo-v2.6-flash-mopd-20260927,1321897641,1
-2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-5.3-flash-20260826,1778362911129,1
-2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-5.3-20260816,712657831615,1
-2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-5.2-20260616,125031621736,1
-2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-5.3-flashx-20260918,8690983402,1
-2026-11-26,Zhipu (Z.ai),z-ai,Others,6458531332,1
-2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-5.3-prime-20260921,5332575711,1
-2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-4.7-20251222,4424702214,1
-2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-5-20260211,4328316260,1
-2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-4.6,2165881841,1
-2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-5.1-20260406,2030486504,1
-2026-11-26,aion-labs,aion-labs,aion-labs/aion-3.5-20260923,338001413,1
-2026-11-26,aion-labs,aion-labs,aion-labs/aion-3.5-mini-20260923,308879718,1
-2026-11-26,aion-labs,aion-labs,aion-labs/aion-2.0-20260223,154261420,1
-2026-11-26,aion-labs,aion-labs,aion-labs/aion-3.0-mini-20260707,105580758,1
-2026-11-26,aion-labs,aion-labs,aion-labs/aion-3.0-20260707,94577544,1
-2026-11-26,aion-labs,aion-labs,aion-labs/aion-rp-llama-3.1-8b,1247672,1
-2026-11-26,anthracite-org,anthracite-org,anthracite-org/magnum-v4-72b,28322882,1
-2026-11-26,elorian,elorian,elorian/glimpse-20261016,74204932,1
-2026-11-26,fireworks,fireworks,fireworks/ember-1-20260923,45748697,1
-2026-11-26,gryphe,gryphe,gryphe/mythomax-l2-13b,83396977,1
-2026-11-26,inference-net,inference-net,inference-net/schematron-v2-small-20260902,5084589,1
-2026-11-26,inference-net,inference-net,inference-net/schematron-v2-turbo-20260902,4864780,1
-2026-11-26,kt,kt,kt/midm-k-3.0-pro,28435212,1
-2026-11-26,mancer,mancer,mancer/weaver,1377470,1
-2026-11-26,moondream,moondream,moondream/moondream3.1-9b-a2b-20261013,11906579,1
-2026-11-26,moondream,moondream,moondream/moondream3-preview-20261013,1901792,1
-2026-11-26,moondream,moondream,moondream/parakeet-ultra-20261102,0,1
-2026-11-26,morph,morph,morph/reflex-20261103,120686322,1
-2026-11-26,morph,morph,morph/morph-v3-fast,13109789,1
-2026-11-26,morph,morph,morph/morph-v3-large,2307918,1
-2026-11-26,motif-technologies,motif-technologies,motif-technologies/motif-3,56988943,1
-2026-11-26,nex-agi,nex-agi,nex-agi/nex-n2.5-mini-20260908,1213451406,1
-2026-11-26,nex-agi,nex-agi,nex-agi/nex-n2.6-20261110,509021583,1
-2026-11-26,nex-agi,nex-agi,nex-agi/nex-n2.5-pro-20260907,54100820,1
-2026-11-26,particle-ai,particle-ai,particle-ai/particle-1-20261027:free,52807892747,1
-2026-11-26,particle-ai,particle-ai,particle-ai/particle-1-20261027,10638106470,1
-2026-11-26,perceptron,perceptron,perceptron/perceptron-mk1.5-20260925,18859867,1
-2026-11-26,perceptron,perceptron,perceptron/perceptron-mk1-20260512,4808394,1
-2026-11-26,prism-ml,prism-ml,prism-ml/ternary-bonsai-2-27b-20260918,54432460,1
-2026-11-26,prism-ml,prism-ml,prism-ml/ternary-bonsai-2-9b-20261015,14690177,1
-2026-11-26,radixark,radixark,radixark/daisyrose-27b-20261120,222899070,1
-2026-11-26,recursive,recursive,recursive/flint-v1.0-20261021:free,24291070590,1
-2026-11-26,recursive,recursive,recursive/flint-v1.0-20261021,2215800,1
-2026-11-26,relace,relace,relace/relace-apply-3,3173353,1
-2026-11-26,relace,relace,relace/relace-search-20251208,521511,1
-2026-11-26,ricursiveai,ricursiveai,ricursiveai/ripple-65b-preview-20261104,171561271,1
-2026-11-26,sao10k,sao10k,sao10k/l3-lunaris-8b,583671761,1
-2026-11-26,sao10k,sao10k,sao10k/l3.1-euryale-70b,54788126,1
-2026-11-26,scaledown,scaledown,scaledown/classify-1-20260928,4771791702,1
-2026-11-26,scaledown,scaledown,scaledown/extract-20260928,4656442711,1
-2026-11-26,scaledown,scaledown,scaledown/summarize-20260928,4607482779,1
-2026-11-26,thedrummer,thedrummer,thedrummer/cydonia-24b-v4.1,133819396,1
-2026-11-26,thedrummer,thedrummer,thedrummer/unslopnemo-12b,95270528,1
-2026-11-26,thedrummer,thedrummer,thedrummer/skyfall-36b-v2,22329023,1
-2026-11-26,tngtech,tngtech,tngtech/deepseek-r1t2-chimera,5192474,1
-2026-11-26,typesafe,typesafe,typesafe/jev-1.13-20260917,727338343753,1
-2026-11-26,typesafe,typesafe,typesafe/jev-1.14-20261014,371780163656,1
-2026-11-26,undi95,undi95,undi95/remm-slerp-l2-13b,18180397,1
-2026-11-26,xAI,x-ai,x-ai/grok-4.7-20260916,26112218240,1
-2026-11-26,xAI,x-ai,x-ai/grok-4.5-20260708,13154370442,1
-2026-11-26,xAI,x-ai,x-ai/grok-4.6-20260810,9722744524,1
-2026-11-26,xAI,x-ai,x-ai/grok-4.3-20260430,5071208277,1
-2026-11-26,xAI,x-ai,x-ai/grok-4.20-20260309,2709702725,1
-2026-11-26,xAI,x-ai,x-ai/grok-4.20-multi-agent-20260309,143607268,1
-2026-11-26,xAI,x-ai,x-ai/grok-imagine-image-2.0-20260811,92260907,1
-2026-11-26,xAI,x-ai,x-ai/grok-4.7-20260916:batch,7629820,1
-2026-11-26,xAI,x-ai,x-ai/grok-voice-tts-1.0,1373479,1
-2026-11-26,xAI,x-ai,Others,367019,1
+2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3.8-flash-20260826,148673308431,0
+2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3.6-35b-a3b-20260415,122463167938,0
+2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3.8-27b-20260814,121805422466,0
+2026-11-26,Alibaba (Qwen),qwen,Others,71508329134,0
+2026-11-26,Alibaba (Qwen),qwen,qwen/qwen4-max-20261115,57115067810,0
+2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3.7-flash-20260727,53995241567,0
+2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3-embedding-8b,22462929332,0
+2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3.5-397b-a17b-20260216,10795212886,0
+2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3.7-plus-20260602,9243520482,0
+2026-11-26,Alibaba (Qwen),qwen,qwen/qwen3.8-max-20260902,9066447308,0
+2026-11-26,Amazon,amazon,amazon/nova-micro-v1,2417839459,0
+2026-11-26,Amazon,amazon,amazon/nova-2-lite-v1,199189738,0
+2026-11-26,Amazon,amazon,amazon/nova-lite-v1,148564840,0
+2026-11-26,Amazon,amazon,amazon/titan-embed-text-v2-20261026,17455987,0
+2026-11-26,Amazon,amazon,amazon/nova-pro-v1,13915736,0
+2026-11-26,Amazon,amazon,amazon/titan-embed-text-v1-20261026,1228104,0
+2026-11-26,Amazon,amazon,amazon/titan-embed-image-v1-20261026,6450,0
+2026-11-26,Amazon,amazon,amazon/nova-premier-v1,0,0
+2026-11-26,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.0-flash-20260723,12107046953,0
+2026-11-26,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.1-flash-20261002,5590294415,0
+2026-11-26,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.2-flash-20261113:free,4536198456,0
+2026-11-26,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.0-flash-vl-20260910,397492862,0
+2026-11-26,Ant Group (inclusionAI),inclusionai,inclusionai/lingsante-3.1-air-vl-20261126,270384005,0
+2026-11-26,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.0-tiny-20260806,81075794,0
+2026-11-26,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.2-flash-20261113,3963530,0
+2026-11-26,Anthropic,anthropic,anthropic/claude-opus-5.5-20260921,1057701346054,0
+2026-11-26,Anthropic,anthropic,anthropic/claude-haiku-5.5-20261007,466709591402,0
+2026-11-26,Anthropic,anthropic,anthropic/claude-sonnet-5.5-20260928,373534669056,0
+2026-11-26,Anthropic,anthropic,anthropic/claude-fable-5.2-20261109,114265491905,0
+2026-11-26,Anthropic,anthropic,Others,66023289069,0
+2026-11-26,Anthropic,anthropic,anthropic/claude-sonnet-5-20260630,61557615755,0
+2026-11-26,Anthropic,anthropic,anthropic/claude-4.5-opus-20251124,36011738057,0
+2026-11-26,Anthropic,anthropic,anthropic/claude-4.6-sonnet-20260217,27315891645,0
+2026-11-26,Anthropic,anthropic,anthropic/claude-opus-5-20260723,26968414083,0
+2026-11-26,Anthropic,anthropic,anthropic/claude-4.6-opus-20260205,26629132752,0
+2026-11-26,Baidu,baidu,baidu/ernie-5.5-flash-preview-20261110:free,403645616183,0
+2026-11-26,Baidu,baidu,baidu/ernie-light-dt-1.0-intl-20261110,98938977,0
+2026-11-26,Baidu,baidu,baidu/ernie-5.5-flash-preview-20261110,18701665,0
+2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-lite-20260309,7128195494,0
+2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seed-2-1-turbo-20260810,3472915535,0
+2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seedream-5-5-20261112,394619911,0
+2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-flash-20261001,363965381,0
+2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-mini-20260224,276807087,0
+2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seedream-4.5-20251203,154280829,0
+2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-pro-20260812,82359050,0
+2026-11-26,ByteDance,bytedance,bytedance/ui-tars-1.5-7b,68263226,0
+2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,35235473,0
+2026-11-26,ByteDance,bytedance-seed,bytedance-seed/seed-tts-3-0-20261125,334834,0
+2026-11-26,ByteDance,bytedance-seed,Others,278330,0
+2026-11-26,ByteDance,bytedance,bytedance/seedance-2.5-flash-20261115,0,0
+2026-11-26,ByteDance,bytedance,bytedance/seedance-2.0-mini-20260811,0,0
+2026-11-26,ByteDance,bytedance,bytedance/seedance-2.0-20260414,0,0
+2026-11-26,ByteDance,bytedance,bytedance/seedance-2.0-fast-20260414,0,0
+2026-11-26,ByteDance,bytedance,bytedance/seedance-2.5-20260807,0,0
+2026-11-26,Cohere,cohere,cohere/rerank-5-fast-20261028,909367763,0
+2026-11-26,Cohere,cohere,cohere/rerank-5-pro-20261028,722216649,0
+2026-11-26,Cohere,cohere,cohere/embed-5-pro-20261029,262135108,0
+2026-11-26,Cohere,cohere,cohere/embed-5-fast-20261029,166272627,0
+2026-11-26,Cohere,cohere,cohere/command-a-plus-05-2026,74712501,0
+2026-11-26,Cohere,cohere,cohere/command-r7b-12-2024,60182617,0
+2026-11-26,Cohere,cohere,cohere/command-r-08-2024,11089652,0
+2026-11-26,Cohere,cohere,cohere/command-r-plus-08-2024,8803457,0
+2026-11-26,Cohere,cohere,cohere/command-a-03-2025,4759096,0
+2026-11-26,Cohere,cohere,Others,0,0
+2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20261017,13095262991646,0
+2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v4.1-flash-20260910,1958368237526,0
+2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260731,390789059748,0
+2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v4-flash-20260423,255161577999,0
+2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v4-pro-20260813,101395941286,0
+2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v4-pro-20260423,84045319393,0
+2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v3.2-20251201,40380523373,0
+2026-11-26,DeepSeek,deepseek,Others,14556342791,0
+2026-11-26,DeepSeek,deepseek,deepseek/deepseek-v4-flash-vision-exp-20260821,9772237431,0
+2026-11-26,DeepSeek,deepseek,deepseek/deepseek-chat-v3.1,6667732185,0
+2026-11-26,Google,google,google/gemini-4-neon-20261118,435732735446,0
+2026-11-26,Google,google,google/gemini-3.8-flash-20260902,240521420117,0
+2026-11-26,Google,google,Others,229269860804,0
+2026-11-26,Google,google,google/gemini-4-carbon-20261110,159294271347,0
+2026-11-26,Google,google,google/gemini-4-argon-20261013,105236624138,0
+2026-11-26,Google,google,google/gemma-4-26b-a4b-it-20260403,101393003258,0
+2026-11-26,Google,google,google/gemini-3-flash-preview-20251217,90320173666,0
+2026-11-26,Google,google,google/gemma-4-31b-it-20260402,88811877314,0
+2026-11-26,Google,google,google/gemini-4-hydrogen-20261112,78658379995,0
+2026-11-26,Google,google,google/gemini-3.1-flash-lite-20260507,78293148062,0
+2026-11-26,IBM,ibm-granite,ibm-granite/granite-4.2-8b-20260831,1718109512,0
+2026-11-26,Liquid AI,liquid,liquid/d1-ultra-20261015,98761451594,0
+2026-11-26,Liquid AI,liquid,liquid/d1.2-20261116,11685847052,0
+2026-11-26,Liquid AI,liquid,liquid/lfm-3-1.7b-20261106:free,8773430188,0
+2026-11-26,Liquid AI,liquid,liquid/d1.2-ultra-20261116,4846052334,0
+2026-11-26,Liquid AI,liquid,liquid/lfm-3-1.7b-20261106,129246332,0
+2026-11-26,Liquid AI,liquid,liquid/lfm-2.5-24b-a2b-20261012,129025631,0
+2026-11-26,Meta,meta,meta/muse-spark-1.3-contributor-20260902,494497186167,0
+2026-11-26,Meta,meta,meta/muse-ember-20261109,165598187005,0
+2026-11-26,Meta,meta,meta/muse-wonder-20261012,21647183495,0
+2026-11-26,Meta,meta,meta/muse-spark-1.3-20260902,7574179698,0
+2026-11-26,Meta,meta,meta/muse-spark-open-20261015,5523069268,0
+2026-11-26,Meta,meta-llama,meta-llama/llama-3.1-8b-instruct,4346695842,0
+2026-11-26,Meta,meta-llama,meta-llama/llama-3.3-70b-instruct,3643296175,0
+2026-11-26,Meta,meta,meta/muse-spark-1.2-contributor-20260805,3633839681,0
+2026-11-26,Meta,meta-llama,meta-llama/llama-4-maverick-17b-128e-instruct,1520488372,0
+2026-11-26,Meta,meta,meta/muse-glimmer-30b-20260810,1504855420,0
+2026-11-26,Meta,meta-llama,meta-llama/llama-4-scout-17b-16e-instruct,795559112,0
+2026-11-26,Meta,meta,meta/muse-spark-1.2-20260805,676516016,0
+2026-11-26,Meta,meta-llama,meta-llama/llama-guard-4-12b,395006240,0
+2026-11-26,Meta,meta-llama,meta-llama/llama-3.1-70b-instruct,272536123,0
+2026-11-26,Meta,meta,meta/muse-spark-1.1-20260709,271289662,0
+2026-11-26,Meta,meta,Others,193671872,0
+2026-11-26,Meta,meta-llama,meta-llama/llama-3.2-3b-instruct,47663077,0
+2026-11-26,Microsoft,microsoft,microsoft/microsoft-decision-1-20261009,10658063159,0
+2026-11-26,Microsoft,microsoft,microsoft/microsoft-decision-1.1-20261117,3509166140,0
+2026-11-26,Microsoft,microsoft,microsoft/phi-4,99612890,0
+2026-11-26,Microsoft,microsoft,microsoft/mai-image-2.7-flash-20261117,20898493,0
+2026-11-26,Microsoft,microsoft,microsoft/mai-image-2.7-20261117,11492862,0
+2026-11-26,Microsoft,microsoft,microsoft/mai-image-2.6-20260904,7021517,0
+2026-11-26,Microsoft,microsoft,microsoft/mai-image-2.6-flash-20260904,5861347,0
+2026-11-26,Microsoft,microsoft,microsoft/mai-image-2.5,1653087,0
+2026-11-26,Microsoft,microsoft,Others,962371,0
+2026-11-26,Microsoft,microsoft,microsoft/mai-voice-2,567516,0
+2026-11-26,MiniMax,minimax,minimax/minimax-m3.1-flash-20261019,698365870021,0
+2026-11-26,MiniMax,minimax,minimax/minimax-m3-20260531,65020389939,0
+2026-11-26,MiniMax,minimax,minimax/minimax-m2.5-20260211,1360062024,0
+2026-11-26,MiniMax,minimax,minimax/minimax-m2.7-20260318,613019585,0
+2026-11-26,MiniMax,minimax,minimax/minimax-h3-image-20261110,772153,0
+2026-11-26,MiniMax,minimax,minimax/minimax-m3-20260531:batch,314570,0
+2026-11-26,MiniMax,minimax,minimax/minimax-h3-image-highspeed-20261110,93290,0
+2026-11-26,MiniMax,minimax,minimax/speech-2.8-hd-20260716,10450,0
+2026-11-26,MiniMax,minimax,minimax/speech-2.8-turbo-20260716,569,0
+2026-11-26,MiniMax,minimax,Others,0,0
+2026-11-26,Mistral,mistralai,mistralai/mistral-nemo,53059105669,0
+2026-11-26,Mistral,mistralai,mistralai/mistral-large-4-0-20261006,10869042007,0
+2026-11-26,Mistral,mistralai,mistralai/mistral-small-3.2-24b-instruct-2506,3391054144,0
+2026-11-26,Mistral,mistralai,mistralai/mistral-small-2603,2388990876,0
+2026-11-26,Mistral,mistralai,Others,1707967338,0
+2026-11-26,Mistral,mistralai,mistralai/ministral-8b-2512,656999024,0
+2026-11-26,Mistral,mistralai,mistralai/ministral-3b-2512,642215921,0
+2026-11-26,Mistral,mistralai,mistralai/mistral-small-24b-instruct-2501,533852213,0
+2026-11-26,Mistral,mistralai,mistralai/devstral-2512,465708281,0
+2026-11-26,Mistral,mistralai,mistralai/mistral-medium-3.5-20260430,420501166,0
+2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k3.1-pro-20261023,767880040684,0
+2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k3-20260715,107179635273,0
+2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k2.6-20260420,11132779976,0
+2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k2.7-code-20260612,8546181538,0
+2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k2.5-0127,4037670079,0
+2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k2,33571814,0
+2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k3.1-pro-20261023:batch,16327266,0
+2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k2-0905,9312688,0
+2026-11-26,Moonshot AI,moonshotai,moonshotai/kimi-k3-20260715:batch,1947104,0
+2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,574138785403,0
+2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3.5-super-vl-20261015:free,316994796252,0
+2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3.5-lightning-20260807:free,55379434158,0
+2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428:free,27177434626,0
+2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3.5-super-vl-20261015,18573313617,0
+2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3.5-lightning-20260807,2935308927,0
+2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3-ultra-550b-a55b-20260604,2713994955,0
+2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3-nano-30b-a3b,1121586778,0
+2026-11-26,NVIDIA,nvidia,Others,1021743835,0
+2026-11-26,NVIDIA,nvidia,nvidia/nemotron-3-super-120b-a12b-20230311,914060704,0
+2026-11-26,Nous Research,nousresearch,nousresearch/hermes-4-405b,199043589,0
+2026-11-26,OpenAI,openai,openai/gpt-6-luna-20260922,1247107522193,0
+2026-11-26,OpenAI,openai,Others,251473027300,0
+2026-11-26,OpenAI,openai,openai/gpt-6.1-sol-20260929,244325070463,0
+2026-11-26,OpenAI,openai,openai/gpt-6.2-sol-20261117,203381765117,0
+2026-11-26,OpenAI,openai,openai/gpt-5.6-luna-20260709,140878131826,0
+2026-11-26,OpenAI,openai,openai/gpt-6.1-terra-20261026,113762622942,0
+2026-11-26,OpenAI,openai,openai/gpt-6-luna-pro-20260922,86953975589,0
+2026-11-26,OpenAI,openai,openai/gpt-6.2-astra-20261117,84757068782,0
+2026-11-26,OpenAI,openai,openai/gpt-oss-120b,49118957783,0
+2026-11-26,OpenAI,openai,openai/gpt-6-sol-20260922,31980717015,0
+2026-11-26,Perplexity,perplexity,perplexity/pplx-decider-v1.3-20261112:free,114416701391,0
+2026-11-26,Perplexity,perplexity,perplexity/pplx-decider-v1.2-20261016,58029559488,0
+2026-11-26,Perplexity,perplexity,perplexity/pplx-decider-flash-v1.2-20261016,2187509516,0
+2026-11-26,Perplexity,perplexity,perplexity/pplx-embed-v1-0.6B,1301258687,0
+2026-11-26,Perplexity,perplexity,perplexity/pplx-decider-flash-v1.3-20261112:free,930001903,0
+2026-11-26,Perplexity,perplexity,perplexity/sonar,492412159,0
+2026-11-26,Perplexity,perplexity,perplexity/pplx-embed-v2-context-0.6b-20261120,477632416,0
+2026-11-26,Perplexity,perplexity,perplexity/pplx-embed-v1-4B,440025832,0
+2026-11-26,Perplexity,perplexity,perplexity/pplx-embed-v2-context-9b-20261120,275593037,0
+2026-11-26,Perplexity,perplexity,Others,210789682,0
+2026-11-26,Reflection AI,reflection,reflection/beam-1.0-501b-a23b-20261016,12047073767,0
+2026-11-26,Reka,rekaai,rekaai/reka-flash-3,11595191,0
+2026-11-26,Reka,rekaai,rekaai/reka-edge-2603,7530689,0
+2026-11-26,Sakana AI,sakana,sakana/fugu-max-20260911,122068028,0
+2026-11-26,Sakana AI,sakana,sakana/fugu-ultra-20260615,11895034,0
+2026-11-26,Sakana AI,sakana,sakana/fugu-ultra-v2-20260911,5271604,0
+2026-11-26,Sakana AI,sakana,sakana/namazu-20260811,2262590,0
+2026-11-26,StepFun,stepfun,stepfun/step-5-preview-20261008,479822659773,0
+2026-11-26,StepFun,stepfun,stepfun/step-3.7-flash-20260528,1262628158,0
+2026-11-26,Tencent,tencent,tencent/hy4-flash-20261116,4276815832444,0
+2026-11-26,Tencent,tencent,tencent/hy4-20261104,178577360080,0
+2026-11-26,Tencent,tencent,tencent/hy4-preview-20260827,11381831070,0
+2026-11-26,Tencent,tencent,tencent/hy3-20260706,3257116085,0
+2026-11-26,Tencent,tencent,tencent/hy-image-v3.5-preview-20260922,284640577,0
+2026-11-26,Tencent,tencent,tencent/hy-mt2-30b-a3b-20260521,37776633,0
+2026-11-26,Tencent,tencent,tencent/hy-mt2-7b-20260521,22928999,0
+2026-11-26,Tencent,tencent,tencent/hy-world-2.1-panorama-20261112,19742015,0
+2026-11-26,Tencent,tencent,tencent/hy-mt2-1.8b-20260521,3127655,0
+2026-11-26,Thinking Machines,thinkingmachines,thinkingmachines/inkling-2-small-20261107,96760142459,0
+2026-11-26,Thinking Machines,thinkingmachines,thinkingmachines/inkling-2-mini-20261120,74072147678,0
+2026-11-26,Thinking Machines,thinkingmachines,thinkingmachines/inkling-small-20260730,1649462324,0
+2026-11-26,Thinking Machines,thinkingmachines,thinkingmachines/inkling-20260715,420978103,0
+2026-11-26,Upstage,upstage,upstage/solar-mini4-20260922,154629863036,0
+2026-11-26,Upstage,upstage,upstage/solar-pro4-20260810,51986393278,0
+2026-11-26,Upstage,upstage,upstage/solar-mini-4-5-20261125,27228053426,0
+2026-11-26,Upstage,upstage,upstage/solar-pro-4-contributor-20261125,791985494,0
+2026-11-26,Upstage,upstage,upstage/solar-decide-flash-20261008,170742882,0
+2026-11-26,Upstage,upstage,upstage/solar-decide-20260928,140091706,0
+2026-11-26,Writer,writer,writer/palmyra-x5-20250428,5103206,0
+2026-11-26,Xiaomi,xiaomi,xiaomi/mimo-v2.6-flash-20260921,382829648942,0
+2026-11-26,Xiaomi,xiaomi,xiaomi/mimo-v2.6-pro-20260921,106855312290,0
+2026-11-26,Xiaomi,xiaomi,xiaomi/mimo-v2.6-pro-ultraspeed-20260921,3681650564,0
+2026-11-26,Xiaomi,xiaomi,xiaomi/mimo-v2.6-flash-mopd-20260927,1362900658,0
+2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-5.3-flash-20260826,1872674750475,0
+2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-5.3-20260816,747293318697,0
+2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-5.2-20260616,133291701085,0
+2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-5.3-flashx-20260918,9086763348,0
+2026-11-26,Zhipu (Z.ai),z-ai,Others,6717344233,0
+2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-5.3-prime-20260921,5551356264,0
+2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-4.7-20251222,4735053761,0
+2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-5-20260211,4628852484,0
+2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-4.6,2273737815,0
+2026-11-26,Zhipu (Z.ai),z-ai,z-ai/glm-5.1-20260406,2120918000,0
+2026-11-26,aion-labs,aion-labs,aion-labs/aion-3.5-20260923,367639599,0
+2026-11-26,aion-labs,aion-labs,aion-labs/aion-3.5-mini-20260923,324612346,0
+2026-11-26,aion-labs,aion-labs,aion-labs/aion-2.0-20260223,161518487,0
+2026-11-26,aion-labs,aion-labs,aion-labs/aion-3.0-mini-20260707,108324791,0
+2026-11-26,aion-labs,aion-labs,aion-labs/aion-3.0-20260707,101615579,0
+2026-11-26,aion-labs,aion-labs,aion-labs/aion-rp-llama-3.1-8b,1397088,0
+2026-11-26,anthracite-org,anthracite-org,anthracite-org/magnum-v4-72b,29756473,0
+2026-11-26,elorian,elorian,elorian/glimpse-20261016,74496375,0
+2026-11-26,fireworks,fireworks,fireworks/ember-1-20260923,47217075,0
+2026-11-26,gryphe,gryphe,gryphe/mythomax-l2-13b,88940503,0
+2026-11-26,inference-net,inference-net,inference-net/schematron-v2-small-20260902,5104811,0
+2026-11-26,inference-net,inference-net,inference-net/schematron-v2-turbo-20260902,5068336,0
+2026-11-26,kt,kt,kt/midm-k-3.0-pro,29612987,0
+2026-11-26,mancer,mancer,mancer/weaver,1388841,0
+2026-11-26,moondream,moondream,moondream/moondream3.1-9b-a2b-20261013,12160723,0
+2026-11-26,moondream,moondream,moondream/moondream3-preview-20261013,1908518,0
+2026-11-26,moondream,moondream,moondream/parakeet-ultra-20261102,0,0
+2026-11-26,morph,morph,morph/reflex-20261103,127913889,0
+2026-11-26,morph,morph,morph/morph-v3-fast,13676962,0
+2026-11-26,morph,morph,morph/morph-v3-large,2309954,0
+2026-11-26,motif-technologies,motif-technologies,motif-technologies/motif-3,58011493,0
+2026-11-26,nex-agi,nex-agi,nex-agi/nex-n2.5-mini-20260908,1283821449,0
+2026-11-26,nex-agi,nex-agi,nex-agi/nex-n2.6-20261110,515001425,0
+2026-11-26,nex-agi,nex-agi,nex-agi/nex-n2.5-pro-20260907,64806075,0
+2026-11-26,particle-ai,particle-ai,particle-ai/particle-1-20261027:free,54622319225,0
+2026-11-26,particle-ai,particle-ai,particle-ai/particle-1-20261027,10898096820,0
+2026-11-26,perceptron,perceptron,perceptron/perceptron-mk1.5-20260925,19534986,0
+2026-11-26,perceptron,perceptron,perceptron/perceptron-mk1-20260512,4822528,0
+2026-11-26,prism-ml,prism-ml,prism-ml/ternary-bonsai-2-27b-20260918,56133674,0
+2026-11-26,prism-ml,prism-ml,prism-ml/ternary-bonsai-2-9b-20261015,14926336,0
+2026-11-26,radixark,radixark,radixark/daisyrose-27b-20261120,249370811,0
+2026-11-26,recursive,recursive,recursive/flint-v1.0-20261021:free,25384426426,0
+2026-11-26,recursive,recursive,recursive/flint-v1.0-20261021,2215800,0
+2026-11-26,relace,relace,relace/relace-apply-3,3173353,0
+2026-11-26,relace,relace,relace/relace-search-20251208,521849,0
+2026-11-26,ricursiveai,ricursiveai,ricursiveai/ripple-65b-preview-20261104,179591994,0
+2026-11-26,sao10k,sao10k,sao10k/l3-lunaris-8b,618157760,0
+2026-11-26,sao10k,sao10k,sao10k/l3.1-euryale-70b,57382268,0
+2026-11-26,scaledown,scaledown,scaledown/classify-1-20260928,5163393909,0
+2026-11-26,scaledown,scaledown,scaledown/extract-20260928,5038323792,0
+2026-11-26,scaledown,scaledown,scaledown/summarize-20260928,4760751447,0
+2026-11-26,thedrummer,thedrummer,thedrummer/cydonia-24b-v4.1,144831214,0
+2026-11-26,thedrummer,thedrummer,thedrummer/unslopnemo-12b,101935118,0
+2026-11-26,thedrummer,thedrummer,thedrummer/skyfall-36b-v2,23543790,0
+2026-11-26,tngtech,tngtech,tngtech/deepseek-r1t2-chimera,5537324,0
+2026-11-26,typesafe,typesafe,typesafe/jev-1.13-20260917,741549226251,0
+2026-11-26,typesafe,typesafe,typesafe/jev-1.14-20261014,389796187033,0
+2026-11-26,undi95,undi95,undi95/remm-slerp-l2-13b,18361350,0
+2026-11-26,xAI,x-ai,x-ai/grok-4.7-20260916,26936655444,0
+2026-11-26,xAI,x-ai,x-ai/grok-4.5-20260708,13462819537,0
+2026-11-26,xAI,x-ai,x-ai/grok-4.6-20260810,9938844725,0
+2026-11-26,xAI,x-ai,x-ai/grok-4.3-20260430,5228868461,0
+2026-11-26,xAI,x-ai,x-ai/grok-4.20-20260309,2830217530,0
+2026-11-26,xAI,x-ai,x-ai/grok-4.20-multi-agent-20260309,151174595,0
+2026-11-26,xAI,x-ai,x-ai/grok-imagine-image-2.0-20260811,95457707,0
+2026-11-26,xAI,x-ai,x-ai/grok-4.7-20260916:batch,7629820,0
+2026-11-26,xAI,x-ai,x-ai/grok-voice-tts-1.0,1442962,0
+2026-11-26,xAI,x-ai,Others,367019,0
+2026-11-27,Amazon,amazon,amazon/nova-micro-v1,5923148,1
+2026-11-27,Amazon,amazon,amazon/nova-2-lite-v1,895566,1
+2026-11-27,Amazon,amazon,amazon/nova-lite-v1,220322,1
+2026-11-27,Amazon,amazon,amazon/titan-embed-text-v2-20261026,9925,1
+2026-11-27,Amazon,amazon,amazon/nova-pro-v1,5604,1
+2026-11-27,Amazon,amazon,amazon/titan-embed-image-v1-20261026,30,1
+2026-11-27,Amazon,amazon,amazon/titan-embed-text-v1-20261026,10,1
+2026-11-27,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.0-flash-20260723,86686600,1
+2026-11-27,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.1-flash-20261002,27672856,1
+2026-11-27,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.2-flash-20261113:free,21787655,1
+2026-11-27,Ant Group (inclusionAI),inclusionai,inclusionai/lingsante-3.1-air-vl-20261126,8317554,1
+2026-11-27,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.0-flash-vl-20260910,969997,1
+2026-11-27,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.2-flash-20261113,728219,1
+2026-11-27,Ant Group (inclusionAI),inclusionai,inclusionai/ling-3.0-tiny-20260806,296097,1
+2026-11-27,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-lite-20260309,10826561,1
+2026-11-27,ByteDance,bytedance-seed,bytedance-seed/seed-2-1-turbo-20260810,8337314,1
+2026-11-27,ByteDance,bytedance-seed,bytedance-seed/seedream-5-5-20261112,368021,1
+2026-11-27,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-flash-20261001,308756,1
+2026-11-27,ByteDance,bytedance-seed,bytedance-seed/seed-2.0-mini-20260224,293758,1
+2026-11-27,ByteDance,bytedance-seed,bytedance-seed/seedream-4.5-20251203,175084,1
+2026-11-27,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-pro-20260812,72757,1
+2026-11-27,ByteDance,bytedance-seed,bytedance-seed/seedream-5-0-lite-20260812,68205,1
+2026-11-27,Cohere,cohere,cohere/rerank-5-fast-20261028,8355567,1
+2026-11-27,Cohere,cohere,cohere/command-r7b-12-2024,2513163,1
+2026-11-27,Cohere,cohere,cohere/embed-5-pro-20261029,2484628,1
+2026-11-27,Cohere,cohere,cohere/rerank-5-pro-20261028,1697774,1
+2026-11-27,Cohere,cohere,cohere/command-a-plus-05-2026,188378,1
+2026-11-27,Cohere,cohere,cohere/command-r-08-2024,170335,1
+2026-11-27,Cohere,cohere,cohere/embed-5-fast-20261029,100827,1
+2026-11-27,Cohere,cohere,cohere/command-a-03-2025,11067,1
+2026-11-27,Cohere,cohere,cohere/command-r-plus-08-2024,328,1
+2026-11-27,Cohere,cohere,Others,0,1
+2026-11-27,IBM,ibm-granite,ibm-granite/granite-4.2-8b-20260831,6041945,1
+2026-11-27,Meta,meta-llama,meta-llama/llama-3.1-8b-instruct,53925809,1
+2026-11-27,Meta,meta-llama,meta-llama/llama-3.3-70b-instruct,35964328,1
+2026-11-27,Meta,meta-llama,meta-llama/llama-4-maverick-17b-128e-instruct,31107889,1
+2026-11-27,Meta,meta-llama,meta-llama/llama-4-scout-17b-16e-instruct,5837985,1
+2026-11-27,Meta,meta-llama,meta-llama/llama-guard-4-12b,2467197,1
+2026-11-27,Meta,meta-llama,meta-llama/llama-3.2-3b-instruct,377384,1
+2026-11-27,Meta,meta-llama,meta-llama/llama-3.1-70b-instruct,264450,1
+2026-11-27,Microsoft,microsoft,microsoft/microsoft-decision-1-20261009,47608501,1
+2026-11-27,Microsoft,microsoft,microsoft/microsoft-decision-1.1-20261117,29025621,1
+2026-11-27,Microsoft,microsoft,microsoft/phi-4,257913,1
+2026-11-27,Microsoft,microsoft,microsoft/mai-image-2.7-flash-20261117,177719,1
+2026-11-27,Microsoft,microsoft,microsoft/mai-image-2.7-20261117,121317,1
+2026-11-27,Microsoft,microsoft,microsoft/mai-image-2.6-20260904,27078,1
+2026-11-27,Microsoft,microsoft,microsoft/mai-image-2.6-flash-20260904,17332,1
+2026-11-27,Microsoft,microsoft,microsoft/mai-voice-2,6727,1
+2026-11-27,Microsoft,microsoft,Others,2920,1
+2026-11-27,Microsoft,microsoft,microsoft/mai-voice-2-flash-20260723,1037,1
+2026-11-27,MiniMax,minimax,minimax/minimax-m3.1-flash-20261019,7194482538,1
+2026-11-27,MiniMax,minimax,minimax/minimax-m3-20260531,652165389,1
+2026-11-27,MiniMax,minimax,minimax/minimax-m2.5-20260211,22388018,1
+2026-11-27,MiniMax,minimax,minimax/minimax-m2.7-20260318,11245878,1
+2026-11-27,MiniMax,minimax,minimax/speech-2.8-hd-20260716,6,1
+2026-11-27,MiniMax,minimax,minimax/hailuo-03-20260730,0,1
+2026-11-27,MiniMax,minimax,minimax/hailuo-3-max-20260901,0,1
+2026-11-27,Moonshot AI,moonshotai,moonshotai/kimi-k3.1-pro-20261023,2097844835,1
+2026-11-27,Moonshot AI,moonshotai,moonshotai/kimi-k3-20260715,390200441,1
+2026-11-27,Moonshot AI,moonshotai,moonshotai/kimi-k2.6-20260420,31510555,1
+2026-11-27,Moonshot AI,moonshotai,moonshotai/kimi-k2.7-code-20260612,20303697,1
+2026-11-27,Moonshot AI,moonshotai,moonshotai/kimi-k2.5-0127,11689069,1
+2026-11-27,Moonshot AI,moonshotai,moonshotai/kimi-k2,975993,1
+2026-11-27,Moonshot AI,moonshotai,moonshotai/kimi-k2-0905,343442,1
+2026-11-27,OpenAI,openai,openai/gpt-6-luna-20260922,6219514334,1
+2026-11-27,OpenAI,openai,openai/gpt-6.1-sol-20260929,1083603118,1
+2026-11-27,OpenAI,openai,Others,1064017311,1
+2026-11-27,OpenAI,openai,openai/gpt-6.2-sol-20261117,797293808,1
+2026-11-27,OpenAI,openai,openai/gpt-6-luna-pro-20260922,660656706,1
+2026-11-27,OpenAI,openai,openai/gpt-5.6-luna-20260709,563609271,1
+2026-11-27,OpenAI,openai,openai/gpt-6.1-terra-20261026,557072992,1
+2026-11-27,OpenAI,openai,openai/gpt-6.2-astra-20261117,551915325,1
+2026-11-27,OpenAI,openai,openai/gpt-oss-120b,289936267,1
+2026-11-27,OpenAI,openai,openai/text-embedding-3-small,139709846,1
+2026-11-27,Reflection AI,reflection,reflection/beam-1.0-501b-a23b-20261016,21383622,1
+2026-11-27,Reka,rekaai,rekaai/reka-flash-3,8001,1
+2026-11-27,Reka,rekaai,rekaai/reka-edge-2603,250,1
+2026-11-27,Sakana AI,sakana,sakana/fugu-max-20260911,6457814,1
+2026-11-27,Sakana AI,sakana,sakana/fugu-ultra-v2-20260911,14530,1
+2026-11-27,Sakana AI,sakana,sakana/namazu-20260811,10043,1
+2026-11-27,Sakana AI,sakana,sakana/fugu-ultra-20260615,4101,1
+2026-11-27,StepFun,stepfun,stepfun/step-3.7-flash-20260528,10546351,1
+2026-11-27,StepFun,stepfun,stepfun/step-5-preview-20261008,1088803,1
+2026-11-27,Tencent,tencent,tencent/hy4-flash-20261116,16977466813,1
+2026-11-27,Tencent,tencent,tencent/hy4-20261104,358813553,1
+2026-11-27,Tencent,tencent,tencent/hy4-preview-20260827,230672153,1
+2026-11-27,Tencent,tencent,tencent/hy3-20260706,8387311,1
+2026-11-27,Tencent,tencent,tencent/hy-image-v3.5-preview-20260922,1724155,1
+2026-11-27,Tencent,tencent,tencent/hy-mt2-30b-a3b-20260521,128806,1
+2026-11-27,Tencent,tencent,tencent/hy-mt2-7b-20260521,111856,1
+2026-11-27,Tencent,tencent,tencent/hy-mt2-1.8b-20260521,1209,1
+2026-11-27,Thinking Machines,thinkingmachines,thinkingmachines/inkling-2-small-20261107,983861979,1
+2026-11-27,Thinking Machines,thinkingmachines,thinkingmachines/inkling-2-mini-20261120,655182834,1
+2026-11-27,Thinking Machines,thinkingmachines,thinkingmachines/inkling-small-20260730,3831714,1
+2026-11-27,Thinking Machines,thinkingmachines,thinkingmachines/inkling-20260715,2485407,1
+2026-11-27,Writer,writer,writer/palmyra-x5-20250428,13234,1
+2026-11-27,Xiaomi,xiaomi,xiaomi/mimo-v2.6-flash-20260921,173125532,1
+2026-11-27,Xiaomi,xiaomi,xiaomi/mimo-v2.6-pro-20260921,81525594,1
+2026-11-27,Xiaomi,xiaomi,xiaomi/mimo-v2.6-pro-ultraspeed-20260921,6231431,1
+2026-11-27,Xiaomi,xiaomi,xiaomi/mimo-v2.6-flash-mopd-20260927,3083792,1
+2026-11-27,Zhipu (Z.ai),z-ai,z-ai/glm-5.3-flash-20260826,14607150227,1
+2026-11-27,Zhipu (Z.ai),z-ai,z-ai/glm-5.3-20260816,5514796493,1
+2026-11-27,Zhipu (Z.ai),z-ai,z-ai/glm-5.2-20260616,1301171413,1
+2026-11-27,Zhipu (Z.ai),z-ai,z-ai/glm-5-20260211,50797890,1
+2026-11-27,Zhipu (Z.ai),z-ai,z-ai/glm-5.3-flashx-20260918,48803516,1
+2026-11-27,Zhipu (Z.ai),z-ai,z-ai/glm-4.7-20251222,47995065,1
+2026-11-27,Zhipu (Z.ai),z-ai,Others,36309766,1
+2026-11-27,Zhipu (Z.ai),z-ai,z-ai/glm-5.3-prime-20260921,30860289,1
+2026-11-27,Zhipu (Z.ai),z-ai,z-ai/glm-4.6,21031391,1
+2026-11-27,Zhipu (Z.ai),z-ai,z-ai/glm-5.1-20260406,12336210,1
+2026-11-27,aion-labs,aion-labs,aion-labs/aion-3.5-20260923,4316547,1
+2026-11-27,aion-labs,aion-labs,aion-labs/aion-3.5-mini-20260923,1446618,1
+2026-11-27,aion-labs,aion-labs,aion-labs/aion-3.0-20260707,946775,1
+2026-11-27,aion-labs,aion-labs,aion-labs/aion-2.0-20260223,883649,1
+2026-11-27,aion-labs,aion-labs,aion-labs/aion-3.0-mini-20260707,789863,1
+2026-11-27,aion-labs,aion-labs,aion-labs/aion-rp-llama-3.1-8b,20972,1
+2026-11-27,elorian,elorian,elorian/glimpse-20261016,199055,1
+2026-11-27,gryphe,gryphe,gryphe/mythomax-l2-13b,370367,1
+2026-11-27,inference-net,inference-net,inference-net/schematron-v2-turbo-20260902,6549,1
+2026-11-27,inference-net,inference-net,inference-net/schematron-v2-small-20260902,300,1
+2026-11-27,mancer,mancer,mancer/weaver,290,1
+2026-11-27,motif-technologies,motif-technologies,motif-technologies/motif-3,24,1
+2026-11-27,nex-agi,nex-agi,nex-agi/nex-n2.5-mini-20260908,1411662,1
+2026-11-27,nex-agi,nex-agi,nex-agi/nex-n2.5-pro-20260907,524988,1
+2026-11-27,nex-agi,nex-agi,nex-agi/nex-n2.6-20261110,50578,1
+2026-11-27,particle-ai,particle-ai,particle-ai/particle-1-20261027:free,767916955,1
+2026-11-27,particle-ai,particle-ai,particle-ai/particle-1-20261027,55282936,1
+2026-11-27,perceptron,perceptron,perceptron/perceptron-mk1.5-20260925,50557,1
+2026-11-27,perceptron,perceptron,perceptron/perceptron-mk1-20260512,3450,1
+2026-11-27,prism-ml,prism-ml,prism-ml/ternary-bonsai-2-27b-20260918,33905,1
+2026-11-27,prism-ml,prism-ml,prism-ml/ternary-bonsai-2-9b-20261015,8327,1
+2026-11-27,radixark,radixark,radixark/daisyrose-27b-20261120,214472,1
+2026-11-27,recursive,recursive,recursive/flint-v1.0-20261021:free,75837373,1
+2026-11-27,relace,relace,relace/relace-search-20251208,111,1
+2026-11-27,ricursiveai,ricursiveai,ricursiveai/ripple-65b-preview-20261104,1819679,1
+2026-11-27,tngtech,tngtech,tngtech/deepseek-r1t2-chimera,127153,1
+2026-11-27,typesafe,typesafe,typesafe/jev-1.14-20261014,3462610942,1
+2026-11-27,typesafe,typesafe,typesafe/jev-1.13-20260917,2682718888,1
